@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
   "exerciseSchemaVersion": "4.0",
-  "generatedAt": "2026-07-31T10:17:29.091Z",
-  "basePath": "ejercicios/",
+  "generatedAt": "2026-07-31T11:42:49.015Z",
+  "basePath": "Ejercicios/",
   "exerciseCount": 1,
   "filters": {
     "stages": [
@@ -59,7 +59,7 @@
       "slideCount": 9,
       "reviewedAt": "2026-07-31T10:08:02.819Z",
       "contentHash": "7bb4f07b4dfa7265",
-      "url": "ejercicios/Ejercicios/1_BACH/estudio-de-parametros-para-la-continuidad-de-una-fun_REVISADO%20(1).json"
+      "url": "Ejercicios/1_BACH/estudio-de-parametros-para-la-continuidad-de-una-fun_REVISADO%20(1).json"
     }
   ]
 }
