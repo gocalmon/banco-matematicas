@@ -1412,8 +1412,8 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
         
         
         <button id="btn-bank" class="btn btn-bank" data-tooltip="Buscar y cargar ejercicios del banco">📚 Banco</button>
-        <input type="file" id="bank-catalog-input" accept=".json,application/json">
-        <input type="file" id="bank-exercise-input" accept=".json,application/json">
+        
+        
         
         
         
@@ -1552,15 +1552,12 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                     <div class="bank-empty">Cargando el banco de ejercicios…</div>
                 </div>
 
-                <div class="bank-local-help">
-                    <strong>Prueba local:</strong> si todavía no está publicado en GitHub Pages, puedes importar manualmente
-                    <code>catalogo.json</code>. Si el navegador no permite abrir las rutas locales, usa «Abrir JSON aprobado» para cargar el ejercicio elegido.
-                </div>
+                
             </div>
 
             <div class="bank-footer">
-                <button id="btn-import-bank-catalog" class="btn">📥 Importar catalogo.json</button>
-                <button id="btn-open-approved-json" class="btn">📄 Abrir JSON aprobado</button>
+                
+                
                 <button id="btn-reload-bank" class="btn btn-bank">↻ Recargar catálogo</button>
                 <button id="btn-close-bank-2" class="btn">Cerrar</button>
             </div>
@@ -1854,6 +1851,13 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                 const reviewModal = docClone.getElementById('review-modal');
                 const catalogModal = docClone.getElementById('catalog-modal');
                 const div1 = docClone.getElementById('ui-divider-1');
+                // Controles exclusivamente docentes o de prueba local del banco.
+                // El alumno conserva la carga automática, «Recargar catálogo» y «Cerrar».
+                const bankCatalogInput = docClone.getElementById('bank-catalog-input');
+                const bankExerciseInput = docClone.getElementById('bank-exercise-input');
+                const importBankCatalogBtn = docClone.getElementById('btn-import-bank-catalog');
+                const openApprovedJsonBtn = docClone.getElementById('btn-open-approved-json');
+                const bankLocalHelp = docClone.querySelector('.bank-local-help');
 
                 if (openLabel) openLabel.remove();
                 if (fileInput) fileInput.remove();
@@ -1866,6 +1870,11 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
                 if (reviewModal) reviewModal.remove();
                 if (catalogModal) catalogModal.remove();
                 if (div1) div1.remove();
+                if (bankCatalogInput) bankCatalogInput.remove();
+                if (bankExerciseInput) bankExerciseInput.remove();
+                if (importBankCatalogBtn) importBankCatalogBtn.remove();
+                if (openApprovedJsonBtn) openApprovedJsonBtn.remove();
+                if (bankLocalHelp) bankLocalHelp.remove();
 
                 const scriptTags = docClone.querySelectorAll('script');
                 let targetScript = null;
