@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "exerciseSchemaVersion": "4.0",
-  "generatedAt": "2026-07-31T12:17:39.809Z",
+  "generatedAt": "2026-07-31T12:38:55.046Z",
   "basePath": "ejercicios/",
-  "exerciseCount": 2,
+  "exerciseCount": 3,
   "filters": {
     "stages": [
       "Bachillerato"
@@ -13,18 +13,22 @@
       "2_Bachillerato"
     ],
     "topics": [
+      "Álgebra",
       "Análisis",
       "Programación Lineal"
     ],
     "subtopics": [
       "Continuidad de funciones",
-      "Optimización bidimensional"
+      "Optimización bidimensional",
+      "Sistemas de inecuaciones"
     ],
     "exerciseTypes": [
       "Determinación de parámetros",
-      "Resolución de un problema de programación lineal con dos variables"
+      "Resolución de un problema de programación lineal con dos variables",
+      "Resolución gráfica y analítica"
     ],
     "difficulties": [
+      "basica",
       "media"
     ],
     "protocols": [
@@ -34,6 +38,37 @@
     ]
   },
   "exercises": [
+    {
+      "id": "resolucion-de-un-sistema-de-inecuaciones-lineales-657b675e",
+      "title": "Resolución de un Sistema de Inecuaciones Lineales",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Sistemas de inecuaciones",
+      "exerciseType": "Resolución gráfica y analítica",
+      "protocols": [
+        "A"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Representar gráficamente inecuaciones lineales con dos variables.",
+        "Identificar el semiplano solución mediante el método del punto de prueba.",
+        "Calcular analíticamente el vértice de la región factible intersección."
+      ],
+      "prerequisites": [
+        "Representación de rectas en el plano cartesiano.",
+        "Resolución de sistemas de ecuaciones lineales de 2x2."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-07-31T12:37:37.149Z",
+      "contentHash": "14e3727ae7ebf208",
+      "url": "ejercicios/1_BACH/resolucion-de-un-sistema-de-inecuaciones-lineales_REVISADO.json"
+    },
     {
       "id": "estudio-de-parametros-para-la-continuidad-de-una-fun-e9483ffa",
       "title": "Estudio de parámetros para la continuidad de una función a trozos",
