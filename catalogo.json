@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
   "exerciseSchemaVersion": "4.0",
-  "generatedAt": "2026-07-31T12:05:14.854Z",
-  "basePath": "Ejercicios/",
+  "generatedAt": "2026-07-31T12:17:39.809Z",
+  "basePath": "ejercicios/",
   "exerciseCount": 2,
   "filters": {
     "stages": [
@@ -64,7 +64,7 @@
       "slideCount": 9,
       "reviewedAt": "2026-07-31T10:08:02.819Z",
       "contentHash": "7bb4f07b4dfa7265",
-      "url": "Ejercicios/1_BACH/estudio-de-parametros-para-la-continuidad-de-una-fun_REVISADO%20(1).json"
+      "url": "ejercicios/1_BACH/estudio-de-parametros-para-la-continuidad-de-una-fun_REVISADO%20(1).json"
     },
     {
       "id": "optimizacion-de-una-explotacion-agricola-sostenible-e587fce9",
@@ -97,7 +97,7 @@
       "slideCount": 15,
       "reviewedAt": "2026-07-31T12:01:46.358Z",
       "contentHash": "48804fa983bcab77",
-      "url": "Ejercicios/2_BACH/optimizacion-de-una-explotacion-agricola-sostenible_REVISADO.json"
+      "url": "ejercicios/2_BACH/optimizacion-de-una-explotacion-agricola-sostenible_REVISADO.json"
     }
   ]
 }
