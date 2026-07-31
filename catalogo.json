@@ -1,16 +1,20 @@
 {
   "schemaVersion": "1.0",
   "exerciseSchemaVersion": "4.0",
-  "generatedAt": "2026-07-31T12:38:55.046Z",
+  "generatedAt": "2026-07-31T16:49:59.428Z",
   "basePath": "ejercicios/",
-  "exerciseCount": 3,
+  "exerciseCount": 17,
   "filters": {
     "stages": [
-      "Bachillerato"
+      "Bachillerato",
+      "ESO"
     ],
     "courses": [
       "1_Bachillerato",
-      "2_Bachillerato"
+      "2_Bachillerato",
+      "2_ESO",
+      "3_ESO",
+      "4_ESO"
     ],
     "topics": [
       "Álgebra",
@@ -19,21 +23,47 @@
     ],
     "subtopics": [
       "Continuidad de funciones",
+      "Ecuaciones polinómicas y factorización",
+      "Ecuaciones y polinomios",
+      "Fracciones algebraicas",
+      "Identidades notables y manipulación algebraica",
+      "Modelización polinómica y optimización",
+      "Operaciones con polinomios",
       "Optimización bidimensional",
+      "Polinomios y factorización",
+      "Polinomios y geometría aplicada",
+      "Polinomios y Teorema del Resto",
+      "Polinomios y valor numérico",
       "Sistemas de inecuaciones"
     ],
     "exerciseTypes": [
+      "Cálculo de m.c.d. y m.c.m.",
+      "Cálculo de parámetros",
+      "Cálculo de raíces y factorización",
       "Determinación de parámetros",
+      "Extracción de factor común",
+      "Identidades algebraicas de tipo Olimpiada",
+      "Operaciones combinadas con fracciones algebraicas",
+      "Problema aplicado",
+      "Problema aplicado de geometría y polinomios",
+      "Problema de aplicación del producto de polinomios y evaluación",
+      "Resolución de ecuaciones de grado superior a 2",
       "Resolución de un problema de programación lineal con dos variables",
-      "Resolución gráfica y analítica"
+      "Resolución gráfica y analítica",
+      "Resta de fracciones algebraicas",
+      "Simplificación y factor común",
+      "Suma y resta combinada de fracciones algebraicas",
+      "Suma y resta de polinomios"
     ],
     "difficulties": [
       "basica",
-      "media"
+      "media",
+      "avanzada"
     ],
     "protocols": [
       "A",
       "C",
+      "E",
       "H"
     ]
   },
@@ -133,6 +163,454 @@
       "reviewedAt": "2026-07-31T12:01:46.358Z",
       "contentHash": "48804fa983bcab77",
       "url": "ejercicios/2_BACH/optimizacion-de-una-explotacion-agricola-sostenible_REVISADO.json"
+    },
+    {
+      "id": "extraccion-del-maximo-factor-comun-10ad8238",
+      "title": "Extracción del máximo factor común",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "2_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Operaciones con polinomios",
+      "exerciseType": "Extracción de factor común",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Identificar el máximo factor común numérico utilizando el MCD",
+        "Identificar el máximo factor común literal tomando las letras comunes con el menor exponente",
+        "Extraer el factor común aplicando la propiedad distributiva a la inversa"
+      ],
+      "prerequisites": [
+        "Cálculo del Máximo Común Divisor (MCD)",
+        "Propiedades de las potencias (división con misma base)",
+        "Propiedad distributiva de la multiplicación"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-07-31T15:41:24.986Z",
+      "contentHash": "92ca741483e39852",
+      "url": "ejercicios/2_ESO/extraccion-del-maximo-factor-comun_REVISADO.json"
+    },
+    {
+      "id": "perimetro-de-un-huerto-escolar-4267c449",
+      "title": "Perímetro de un huerto escolar",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "2_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Polinomios y valor numérico",
+      "exerciseType": "Problema aplicado",
+      "protocols": [
+        "C",
+        "E"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Modelizar geométricamente expresiones algebraicas",
+        "Operar y simplificar polinomios",
+        "Calcular el valor numérico de una expresión polinómica en un contexto real"
+      ],
+      "prerequisites": [
+        "Concepto de perímetro de un polígono",
+        "Suma y multiplicación de monomios y binomios",
+        "Sustitución de variables por valores numéricos"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-07-31T15:46:09.312Z",
+      "contentHash": "a6e50c6f8ee3b865",
+      "url": "ejercicios/2_ESO/perimetro-de-un-huerto-escolar_REVISADO.json"
+    },
+    {
+      "id": "suma-y-resta-de-polinomios-con-agrupacion-9b355214",
+      "title": "Suma y resta de polinomios con agrupación",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "2_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Operaciones con polinomios",
+      "exerciseType": "Suma y resta de polinomios",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Identificar y agrupar términos semejantes en polinomios",
+        "Realizar sumas de polinomios de forma analítica y ordenada",
+        "Aplicar correctamente el cambio de signo en la resta de polinomios"
+      ],
+      "prerequisites": [
+        "Suma y resta de números enteros",
+        "Concepto de monomio y término semejante",
+        "Uso de paréntesis y regla de los signos"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-07-31T15:39:26.122Z",
+      "contentHash": "fccca5080ebce01a",
+      "url": "ejercicios/2_ESO/suma-y-resta-de-polinomios-con-agrupacion_REVISADO.json"
+    },
+    {
+      "id": "calculo-de-un-parametro-usando-el-teorema-del-resto-43818d64",
+      "title": "Cálculo de un parámetro usando el Teorema del Resto",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Polinomios y Teorema del Resto",
+      "exerciseType": "Cálculo de parámetros",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Comprender y aplicar el Teorema del Resto en polinomios",
+        "Relacionar el concepto de divisibilidad con un resto igual a cero",
+        "Plantear y resolver ecuaciones lineales para hallar parámetros desconocidos"
+      ],
+      "prerequisites": [
+        "Valor numérico de un polinomio",
+        "Resolución de ecuaciones de primer grado",
+        "Concepto de divisibilidad algebraica"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-07-31T15:54:23.632Z",
+      "contentHash": "b191cfcc7550b94a",
+      "url": "ejercicios/3_ESO/calculo-de-un-parametro-usando-el-teorema-del-resto_REVISADO.json"
+    },
+    {
+      "id": "m-c-d-y-m-c-m-de-una-pareja-de-polinomios-71b6abc3",
+      "title": "M.C.D. y M.C.M. de una pareja de polinomios",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Polinomios y factorización",
+      "exerciseType": "Cálculo de m.c.d. y m.c.m.",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Factorizar polinomios cuadráticos utilizando identidades notables",
+        "Calcular el máximo común divisor (m.c.d.) de dos polinomios",
+        "Calcular el mínimo común múltiplo (m.c.m.) de dos polinomios"
+      ],
+      "prerequisites": [
+        "Identidades notables (diferencia de cuadrados y cuadrado de una resta)",
+        "Concepto de m.c.d. y m.c.m. en números enteros y polinomios"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-07-31T15:55:47.291Z",
+      "contentHash": "7d667175b9dfd997",
+      "url": "ejercicios/3_ESO/m-c-d-y-m-c-m-de-una-pareja-de-polinomios_REVISADO.json"
+    },
+    {
+      "id": "operacion-combinada-con-fracciones-algebraicas-7520fd02",
+      "title": "Operación combinada con fracciones algebraicas",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Fracciones algebraicas",
+      "exerciseType": "Operaciones combinadas con fracciones algebraicas",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Jerarquizar operaciones algebraicas respetando los paréntesis",
+        "Factorizar polinomios mediante la identidad notable de diferencia de cuadrados",
+        "Simplificar productos de fracciones algebraicas cancelando factores comunes"
+      ],
+      "prerequisites": [
+        "Resta de fracciones algebraicas con diferente denominador",
+        "Identidades notables (diferencia de cuadrados)",
+        "Multiplicación de fracciones algebraicas"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-07-31T15:58:17.594Z",
+      "contentHash": "33f5cc15e19434cb",
+      "url": "ejercicios/3_ESO/operacion-combinada-con-fracciones-algebraicas_REVISADO.json"
+    },
+    {
+      "id": "operacion-combinada-con-suma-y-resta-de-fracciones-a-b7c3c23e",
+      "title": "Operación combinada con suma y resta de fracciones algebraicas",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Fracciones algebraicas",
+      "exerciseType": "Suma y resta combinada de fracciones algebraicas",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Factorizar denominadores cuadráticos mediante ecuaciones de segundo grado e identidades notables",
+        "Calcular el mínimo común múltiplo de tres denominadores algebraicos",
+        "Reducir expresiones con sumas y restas de fracciones algebraicas simplificando el resultado final"
+      ],
+      "prerequisites": [
+        "Factorización de trinomios cuadráticos y diferencia de cuadrados",
+        "Cálculo del m.c.m. de polinomios",
+        "Regla de los signos y propiedad distributiva"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-07-31T16:09:09.219Z",
+      "contentHash": "dfbafd49a9ec8757",
+      "url": "ejercicios/3_ESO/operacion-combinada-con-suma-y-resta-de-fracciones-a_REVISADO.json"
+    },
+    {
+      "id": "problema-aplicado-de-optimizacion-modelizacion-c9ad9b0b",
+      "title": "Problema aplicado de Optimización (Modelización)",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Modelización polinómica y optimización",
+      "exerciseType": "Problema aplicado de geometría y polinomios",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Expresar el volumen de un cuerpo geométrico como un polinomio en función de una variable",
+        "Determinar el dominio geométrico válido de una función en un contexto real",
+        "Evaluar e interpretar los resultados numéricos dentro del contexto físico del problema"
+      ],
+      "prerequisites": [
+        "Fórmula del volumen de un paralelepípedo",
+        "Multiplicación y desarrollo de polinomios",
+        "Inecuaciones sencillas para delimitar dominios reales"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-07-31T16:13:19.935Z",
+      "contentHash": "d5955ee90f01cc57",
+      "url": "ejercicios/3_ESO/problema-aplicado-de-optimizacion-modelizacion_REVISADO.json"
+    },
+    {
+      "id": "raices-y-factorizacion-de-un-polinomio-cuadratico-be63e426",
+      "title": "Raíces y factorización de un polinomio cuadrático",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones y polinomios",
+      "exerciseType": "Cálculo de raíces y factorización",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Relacionar las raíces de un polinomio con las soluciones de su ecuación asociada",
+        "Aplicar la fórmula general de resolución de ecuaciones de segundo grado",
+        "Expresar un polinomio cuadrático como producto de factores lineales"
+      ],
+      "prerequisites": [
+        "Evaluación de expresiones algebraicas",
+        "Fórmula de la ecuación de segundo grado completa",
+        "Propiedad distributiva del producto respecto a la suma"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-07-31T15:42:53.429Z",
+      "contentHash": "1fcd1ab017ac27a6",
+      "url": "ejercicios/3_ESO/raices-y-factorizacion-de-un-polinomio-cuadratico_REVISADO.json"
+    },
+    {
+      "id": "resolucion-analitica-de-una-ecuacion-polinomica-de-c-4b4ce42e",
+      "title": "Resolución analítica de una ecuación polinómica de cuarto grado",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones polinómicas y factorización",
+      "exerciseType": "Resolución de ecuaciones de grado superior a 2",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Encontrar raíces enteras y racionales usando la regla de Ruffini y el teorema del resto",
+        "Resolver ecuaciones polinómicas de grado 4 factorizándolas progresivamente",
+        "Identificar el conjunto completo de soluciones reales de una ecuación polinómica"
+      ],
+      "prerequisites": [
+        "Teorema del resto y teoremas de la raíz racional",
+        "Regla de Ruffini para dividir polinomios",
+        "Fórmula general para resolver ecuaciones de segundo grado"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-07-31T16:10:30.690Z",
+      "contentHash": "fd114bfc37065aee",
+      "url": "ejercicios/3_ESO/resolucion-analitica-de-una-ecuacion-polinomica-de-c_REVISADO.json"
+    },
+    {
+      "id": "resta-de-fracciones-algebraicas-con-distinto-denomin-95f7e407",
+      "title": "Resta de fracciones algebraicas con distinto denominador",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Fracciones algebraicas",
+      "exerciseType": "Resta de fracciones algebraicas",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Obtener el mínimo común múltiplo de denominadores algebraicos simples",
+        "Reducir fracciones algebraicas a común denominador",
+        "Realizar la resta de numeradores aplicando correctamente la regla de los signos"
+      ],
+      "prerequisites": [
+        "Operaciones con fracciones numéricas",
+        "Propiedad distributiva y eliminación de paréntesis",
+        "Mínimo común múltiplo de polinomios"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-07-31T15:56:52.863Z",
+      "contentHash": "92c88addb0040473",
+      "url": "ejercicios/3_ESO/resta-de-fracciones-algebraicas-con-distinto-denomin_REVISADO.json"
+    },
+    {
+      "id": "simplificacion-de-una-fraccion-algebraica-eed8978f",
+      "title": "Simplificación de una fracción algebraica",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Fracciones algebraicas",
+      "exerciseType": "Simplificación y factor común",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Determinar el dominio de existencia de una fracción algebraica",
+        "Extraer el máximo factor común de un polinomio",
+        "Simplificar fracciones algebraicas cancelando factores comunes"
+      ],
+      "prerequisites": [
+        "Extracción de factor común en polinomios",
+        "Propiedades de las fracciones equivalentes",
+        "Concepto de división por cero"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-07-31T15:43:55.895Z",
+      "contentHash": "eee0a57e8f136eac",
+      "url": "ejercicios/3_ESO/simplificacion-de-una-fraccion-algebraica_REVISADO.json"
+    },
+    {
+      "id": "volumen-de-un-ortoedro-mediante-producto-de-polinomi-11e9b8bd",
+      "title": "Volumen de un ortoedro mediante producto de polinomios",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Polinomios y geometría aplicada",
+      "exerciseType": "Problema de aplicación del producto de polinomios y evaluación",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Modelizar problemas geométricos mediante el producto de polinomios",
+        "Desarrollar y simplificar multiplicaciones de tres expresiones algebraicas",
+        "Calcular el valor numérico de un polinomio en un contexto de unidades físicas"
+      ],
+      "prerequisites": [
+        "Fórmula del volumen de un ortoedro (largo x ancho x alto)",
+        "Propiedad distributiva del producto respecto de la suma",
+        "Evaluación numérica de polinomios y conversión de unidades"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-07-31T15:59:18.194Z",
+      "contentHash": "42191d71a8f3f6cb",
+      "url": "ejercicios/3_ESO/volumen-de-un-ortoedro-mediante-producto-de-polinomi_REVISADO.json"
+    },
+    {
+      "id": "identidades-de-olimpiada-matematica-manipulacion-alg-09890fd1",
+      "title": "Identidades de Olimpiada Matemática: Manipulación algebraica simétrica",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Identidades notables y manipulación algebraica",
+      "exerciseType": "Identidades algebraicas de tipo Olimpiada",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "avanzada",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Manipular identidades notables binómicas sin necesidad de despejar la incógnita",
+        "Elevar expresiones simétricas al cuadrado y al cubo",
+        "Reconocer patrones algebraicos recíprocos"
+      ],
+      "prerequisites": [
+        "Cuadrado de un binomio",
+        "Cubo de un binomio o producto de expresiones algebraicas",
+        "Propiedad distributiva y simplificación de términos recíprocos"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-07-31T16:46:06.436Z",
+      "contentHash": "e581e2151e5bde3b",
+      "url": "ejercicios/4_ESO/identidades-de-olimpiada-matematica-manipulacion-alg_REVISADO.json"
     }
   ]
 }
