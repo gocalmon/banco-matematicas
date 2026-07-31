@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Sistemas de inecuaciones",
+    "exerciseType": "Resolución gráfica y analítica",
+    "protocols": [
+      "A"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Representar gráficamente inecuaciones lineales con dos variables.",
+      "Identificar el semiplano solución mediante el método del punto de prueba.",
+      "Calcular analíticamente el vértice de la región factible intersección."
+    ],
+    "prerequisites": [
+      "Representación de rectas en el plano cartesiano.",
+      "Resolución de sistemas de ecuaciones lineales de 2x2."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T12:36:33.670Z",
+    "id": "resolucion-de-un-sistema-de-inecuaciones-lineales-657b675e"
+  },
+  "title": "Resolución de un Sistema de Inecuaciones Lineales",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "El problema nos presenta un sistema formado por dos inecuaciones lineales con dos incógnitas. Nuestro objetivo es encontrar el conjunto de todos los puntos del plano que cumplen ambas condiciones al mismo tiempo.",
+      "content": "<p>Resuelve el siguiente sistema de inecuaciones:</p>\n<p>$$\\begin{cases} 3x - y \\le 3 \\\\ x + 2y \\ge 2 \\end{cases}$$</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver este tipo de sistemas, la mejor estrategia es gráfica. Trabajaremos cada inecuación por separado, dibujaremos la línea que hace de frontera y descubriremos qué lado del plano es el correcto. La zona donde ambos lados se crucen será nuestra respuesta.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar la región del plano (conjunto de puntos $(x,y)$) que satisface ambas desigualdades simultáneamente.</p>\n<p><strong>Estrategia justificada:</strong></p>\n<ol>\n<li>Tomaremos cada inecuación de forma individual y la convertiremos en una ecuación para obtener su <strong>recta frontera</strong>.</li>\n<li>Evaluaremos un <strong>punto de prueba</strong> (que no pertenezca a la recta) para determinar cuál de los dos semiplanos cumple la desigualdad.</li>\n<li>Superpondremos ambas regiones. La intersección de los semiplanos será la solución gráfica del sistema.</li>\n<li>Calcularemos <strong>analíticamente</strong> el punto de corte (vértice) resolviendo el sistema de ecuaciones asociado.</li>\n</ol>\n<p><strong>Nota:</strong> A diferencia de los problemas de programación lineal aplicados a cantidades físicas, aquí no tenemos condiciones de no negatividad ($x \\ge 0$, $y \\ge 0$). Por lo tanto, trabajaremos en los cuatro cuadrantes del plano cartesiano.</p>"
+    },
+    {
+      "title": "Primera inecuación: $3x - y \\le 3$",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Empezamos con la primera condición. Calculamos dos puntos para trazar la línea frontera. Luego elegimos un punto cualquiera, como el centro del plano, y probamos si cumple la condición. Como sí la cumple, pintamos todo ese lado.",
+      "content": "<p><strong>Objetivo:</strong> Representar el semiplano solución de $3x - y \\le 3$.</p>\n<ol>\n<li><strong>Recta frontera:</strong> Convertimos la inecuación en igualdad: $3x - y = 3$.\n<ul>\n<li>Si $x = 0 \\implies -y = 3 \\implies y = -3 \\implies (0, -3)$</li>\n<li>Si $y = 0 \\implies 3x = 3 \\implies x = 1 \\implies (1, 0)$</li>\n</ul>\nComo la desigualdad es $\\le$ (incluye el igual), la recta se traza con <strong>línea continua</strong>.</li>\n<li><strong>Semiplano de solución:</strong> Elegimos un punto de prueba que no esté en la recta, por ejemplo, el origen $(0,0)$:\nSustituimos en la inecuación original: $3(0) - 0 \\le 3 \\implies 0 \\le 3$.\nComo $0$ es menor que $3$, la afirmación es <strong>verdadera</strong>. La solución es el semiplano que contiene al origen (sombreado en azul).</li>\n</ol>",
+      "theory": "<p><strong>Regla del punto de prueba:</strong> Para saber qué lado de una recta sombrear, elige un punto $(x_0, y_0)$ cualquiera fuera de ella. Si al sustituir sus coordenadas en la inecuación original se obtiene una desigualdad cierta, el semiplano correcto es el que contiene a ese punto. Si es falsa, es el lado contrario.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='400' height='400' fill='#0f172a' />\n  <!-- Grid (Scale: center 200, 40px = 1 unit) -->\n  <g stroke='#334155' stroke-width='1' opacity='0.5'>\n    <path d='M0,40 L400,40 M0,80 L400,80 M0,120 L400,120 M0,160 L400,160 M0,240 L400,240 M0,280 L400,280 M0,320 L400,320 M0,360 L400,360' />\n    <path d='M40,0 L40,400 M80,0 L80,400 M120,0 L120,400 M160,0 L160,400 M240,0 L240,400 M280,0 L280,400 M320,0 L320,400 M360,0 L360,400' />\n  </g>\n  <!-- Axes -->\n  <line x1='0' y1='200' x2='400' y2='200' stroke-width='2.5' stroke='#fbbf24' />\n  <line x1='200' y1='0' x2='200' y2='400' stroke-width='2.5' stroke='#fbbf24' />\n  <text x='380' y='190' fill='#fbbf24' font-size='14'>X</text>\n  <text x='210' y='20' fill='#fbbf24' font-size='14'>Y</text>\n  <!-- Region 1: 3x - y <= 3 (Shade above/left) -->\n  <polygon points='306.7,0 0,0 0,400 173.3,400' fill='#3b82f6' opacity='0.3' />\n  <!-- Boundary Line 1 -->\n  <line x1='173.3' y1='400' x2='306.7' y2='0' stroke='#3b82f6' stroke-width='2' />\n  <circle cx='240' cy='200' r='4' fill='#3b82f6' />\n  <text x='250' y='195' fill='#3b82f6' font-size='12'>(1,0)</text>\n  <circle cx='200' cy='320' r='4' fill='#3b82f6' />\n  <text x='210' y='315' fill='#3b82f6' font-size='12'>(0,-3)</text>\n  <text x='280' y='60' fill='#3b82f6' font-size='14' transform='rotate(-71.5, 280, 60)'>3x - y = 3</text>\n</svg>"
+    },
+    {
+      "title": "Segunda inecuación: $x + 2y \\ge 2$",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Hacemos lo mismo con la segunda condición. Dibujamos su recta fronteriza. Esta vez, si probamos con el centro del plano, vemos que no cumple la regla, así que tenemos que pintar el lado opuesto. La zona donde se mezclan los dos colores es nuestra región válida.",
+      "content": "<p><strong>Objetivo:</strong> Representar la segunda inecuación y encontrar la intersección final.</p>\n<ol>\n<li><strong>Recta frontera:</strong> $x + 2y = 2$.\n<ul>\n<li>Si $x = 0 \\implies 2y = 2 \\implies y = 1 \\implies (0, 1)$</li>\n<li>Si $y = 0 \\implies x = 2 \\implies (2, 0)$</li>\n</ul>\nLa trazamos también con <strong>línea continua</strong> por el signo $\\ge$.</li>\n<li><strong>Semiplano de solución:</strong> Usamos de nuevo el origen $(0,0)$ como punto de prueba:\nSustituimos: $0 + 2(0) \\ge 2 \\implies 0 \\ge 2$.\nComo $0$ NO es mayor ni igual que $2$, la afirmación es <strong>falsa</strong>. La solución es el semiplano que NO contiene al origen.</li>\n</ol>\n<p><strong>Interpretación visual:</strong> La zona donde se superponen ambos sombreados (en color verde/turquesa) es la <strong>región solución</strong> del sistema.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='400' height='400' fill='#0f172a' />\n  <!-- Grid -->\n  <g stroke='#334155' stroke-width='1' opacity='0.5'>\n    <path d='M0,40 L400,40 M0,80 L400,80 M0,120 L400,120 M0,160 L400,160 M0,240 L400,240 M0,280 L400,280 M0,320 L400,320 M0,360 L400,360' />\n    <path d='M40,0 L40,400 M80,0 L80,400 M120,0 L120,400 M160,0 L160,400 M240,0 L240,400 M280,0 L280,400 M320,0 L320,400 M360,0 L360,400' />\n  </g>\n  <!-- Axes -->\n  <line x1='0' y1='200' x2='400' y2='200' stroke-width='2.5' stroke='#fbbf24' />\n  <line x1='200' y1='0' x2='200' y2='400' stroke-width='2.5' stroke='#fbbf24' />\n  <!-- Region 1 Outline (Dashed context) -->\n  <line x1='173.3' y1='400' x2='306.7' y2='0' stroke='#3b82f6' stroke-width='2' stroke-dasharray='4' opacity='0.5' />\n  <!-- Region 2: x + 2y >= 2 (Shade above/right) -->\n  <polygon points='0,60 400,260 400,0 0,0' fill='#a855f7' opacity='0.2' />\n  <!-- Intersection Region (Overlap) -->\n  <polygon points='306.7,0 0,0 0,60 245.7,182.9' fill='#10b981' opacity='0.5' />\n  <!-- Boundary Line 2 -->\n  <line x1='0' y1='60' x2='400' y2='260' stroke='#a855f7' stroke-width='2' />\n  <circle cx='200' cy='160' r='4' fill='#a855f7' />\n  <text x='210' y='155' fill='#a855f7' font-size='12'>(0,1)</text>\n  <circle cx='280' cy='200' r='4' fill='#a855f7' />\n  <text x='280' y='215' fill='#a855f7' font-size='12'>(2,0)</text>\n  <text x='50' y='75' fill='#a855f7' font-size='14' transform='rotate(26.5, 50, 75)'>x + 2y = 2</text>\n</svg>",
+      "checkpoint": {
+        "question": "¿Por qué es crucial evaluar el punto de prueba en la inecuación original y no en la ecuación de la recta frontera?",
+        "options": [
+          {
+            "text": "Porque sustituir un punto en la ecuación de la recta siempre dará un resultado falso si el punto no pertenece a ella, lo cual no nos indica qué lado sombrear.",
+            "correct": true,
+            "feedback": "¡Exacto! La ecuación $ax+by=c$ solo se cumple para los puntos sobre la línea. Necesitamos la desigualdad original para saber si el área lateral cumple la condición de ser menor ($<$) o mayor ($>$)."
+          },
+          {
+            "text": "Porque el origen siempre hace que las inecuaciones den cero, y cero es un número más fácil de calcular.",
+            "correct": false,
+            "feedback": "El origen simplifica los cálculos, pero se debe usar en la inecuación para evaluar la condición de desigualdad (< o >). Evaluar el origen en la ecuación siempre dará 0 = c (falso si c no es 0)."
+          },
+          {
+            "text": "Porque las ecuaciones de la recta no admiten coordenadas negativas.",
+            "correct": false,
+            "feedback": "Las rectas atraviesan todo el plano cartesiano y pueden evaluarse con cualquier número. El error conceptual está en confundir ecuación (igualdad) con inecuación (desigualdad)."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Cálculo analítico de la intersección",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Gráficamente ya hemos encontrado la solución, que es toda esa zona pintada. Pero en matemáticas siempre buscamos precisión. Vamos a calcular exactamente en qué punto se cruzan las dos líneas fronterizas, que es el vértice de nuestra región solución.",
+      "content": "<p><strong>Objetivo:</strong> Hallar las coordenadas exactas del vértice (punto de corte) que delimita la región solución.</p>\n<p>Planteamos el sistema de ecuaciones lineales con las dos rectas frontera:\n$$\\begin{cases} 3x - y = 3 \\\\ x + 2y = 2 \\end{cases}$$</p>\n<p>Resolvemos por el <strong>método de reducción</strong>. Multiplicamos la primera ecuación por $2$ para eliminar la variable $y$:\n$$\\begin{cases} 6x - 2y = 6 \\\\ x + 2y = 2 \\end{cases}$$</p>\n<p>Sumamos ambas ecuaciones:\n$(6x + x) + (-2y + 2y) = 6 + 2$\n$7x = 8 \\implies \\mathbf{x = \\frac{8}{7}}$</p>\n<p>Sustituimos el valor de $x$ en la primera ecuación original:\n$3\\left(\\frac{8}{7}\\right) - y = 3$\n$\\frac{24}{7} - y = 3 \\implies y = \\frac{24}{7} - 3 = \\frac{24}{7} - \\frac{21}{7} \\implies \\mathbf{y = \\frac{3}{7}}$</p>\n<p><strong>Interpretación:</strong> El vértice de nuestra región solución es exactamente el punto $V\\left(\\frac{8}{7}, \\frac{3}{7}\\right)$. Desde este vértice, la región se expande infinitamente cumpliendo ambas inecuaciones.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los pasos. Convertimos cada inecuación en una línea recta y buscamos qué lado cumplía la condición usando el cero cero como probador. Juntamos las zonas válidas y finalmente calculamos el pico o vértice exacto donde nacen las fronteras resolviendo el sistema de ecuaciones.",
+      "content": "<ol>\n<li><strong>Fronteras individuales:</strong> Convertimos cada inecuación del sistema en una ecuación lineal ($3x-y=3$ y $x+2y=2$) para encontrar y dibujar sus rectas en el plano cartesiano.</li>\n<li><strong>Identificación de semiplanos:</strong> Utilizamos un punto de prueba (el origen $(0,0)$) evaluándolo en cada inecuación original. Así identificamos que debíamos sombrear el lado superior/izquierdo para la primera recta, y el lado superior/derecho para la segunda.</li>\n<li><strong>Intersección gráfica:</strong> Determinamos que la solución final es la zona donde ambas regiones sombreadas se superponen (región no acotada).</li>\n<li><strong>Vértice exacto:</strong> Resolvimos algebraicamente el sistema formado por las dos ecuaciones de frontera, encontrando que la región tiene su vértice o \"esquina\" en el punto $V\\left(\\frac{8}{7}, \\frac{3}{7}\\right)$.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno. Resuelve este nuevo sistema de inecuaciones siguiendo los mismos pasos: dibuja las rectas, halla los semiplanos, sombrea la intersección y calcula el punto de corte exacto. Inténtalo a fondo antes de consultar la solución.",
+      "content": "<p>Resuelve el siguiente sistema de inecuaciones representando gráficamente la región solución y calculando algebraicamente las coordenadas de su vértice:</p>\n<p>$$\\begin{cases} 2x + y \\ge 4 \\\\ x - y \\le 1 \\end{cases}$$</p>",
+      "practiceAnswer": "<p><strong>Solución final:</strong></p>\n<ul>\n<li>La recta frontera 1 ($2x+y=4$) pasa por $(0,4)$ y $(2,0)$. El semiplano válido NO contiene al origen (sombreado hacia la derecha/arriba).</li>\n<li>La recta frontera 2 ($x-y=1$) pasa por $(0,-1)$ y $(1,0)$. El semiplano válido SÍ contiene al origen (sombreado hacia la izquierda/arriba).</li>\n<li>La región solución es el área infinita superior delimitada entre ambas rectas.</li>\n<li>El vértice de la región se halla resolviendo el sistema $2x+y=4$ y $x-y=1$. Al sumar ambas ecuaciones se obtiene $3x=5 \\implies x=\\frac{5}{3}$. Sustituyendo, $y=\\frac{2}{3}$. <strong>Vértice: $V\\left(\\frac{5}{3}, \\frac{2}{3}\\right)$</strong>.</li>\n</ul>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a llevar este concepto visual a un sistema ligeramente diferente, donde aparece el valor absoluto. Piensa en el valor absoluto como una distancia, que se desdobla en dos inecuaciones simultáneas. ¿Cómo cambiará la figura resultante?",
+      "content": "<p>Considera el siguiente sistema que incluye un valor absoluto:</p>\n<p>$$\\begin{cases} |x| \\le 2 \\\\ y \\ge x - 1 \\end{cases}$$</p>\n<p>Recordatorio: La expresión $|x| \\le a$ equivale simultáneamente a las condiciones $x \\le a$ y $x \\ge -a$.</p>\n<p>Desdobla la inecuación del valor absoluto y halla gráficamente la región del plano que cumple todas las condiciones al mismo tiempo. ¿Qué forma tiene y cuáles son sus vértices inferiores?</p>",
+      "practiceAnswer": "<p><strong>Solución final:</strong></p>\n<ul>\n<li>El sistema se expande a tres inecuaciones lineales: $x \\le 2$, $x \\ge -2$, y $y \\ge x - 1$.</li>\n<li>Las dos primeras inecuaciones delimitan una <strong>franja vertical</strong> infinita entre $x = -2$ y $x = 2$.</li>\n<li>La tercera inecuación delimita un semiplano por encima de la recta $y = x - 1$.</li>\n<li>La intersección gráfica (región solución) es una franja vertical sesgada por la parte inferior, que se extiende infinitamente hacia arriba.</li>\n<li>Los vértices inferiores se encuentran donde la recta inferior corta las paredes verticales:\nCorte izquierdo: $x = -2 \\implies y = -2 - 1 = -3 \\implies <strong>V_1(-2, -3)</strong>$.\nCorte derecho: $x = 2 \\implies y = 2 - 1 = 1 \\implies <strong>V_2(2, 1)</strong>$.</li>\n</ul>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T12:37:37.149Z",
+    "updatedAt": "2026-07-31T12:37:37.149Z",
+    "contentHash": "14e3727ae7ebf208",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
