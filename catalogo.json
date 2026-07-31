@@ -1,29 +1,34 @@
 {
   "schemaVersion": "1.0",
   "exerciseSchemaVersion": "4.0",
-  "generatedAt": "2026-07-31T11:42:49.015Z",
+  "generatedAt": "2026-07-31T12:05:14.854Z",
   "basePath": "Ejercicios/",
-  "exerciseCount": 1,
+  "exerciseCount": 2,
   "filters": {
     "stages": [
       "Bachillerato"
     ],
     "courses": [
-      "1_Bachillerato"
+      "1_Bachillerato",
+      "2_Bachillerato"
     ],
     "topics": [
-      "Análisis"
+      "Análisis",
+      "Programación Lineal"
     ],
     "subtopics": [
-      "Continuidad de funciones"
+      "Continuidad de funciones",
+      "Optimización bidimensional"
     ],
     "exerciseTypes": [
-      "Determinación de parámetros"
+      "Determinación de parámetros",
+      "Resolución de un problema de programación lineal con dos variables"
     ],
     "difficulties": [
       "media"
     ],
     "protocols": [
+      "A",
       "C",
       "H"
     ]
@@ -60,6 +65,39 @@
       "reviewedAt": "2026-07-31T10:08:02.819Z",
       "contentHash": "7bb4f07b4dfa7265",
       "url": "Ejercicios/1_BACH/estudio-de-parametros-para-la-continuidad-de-una-fun_REVISADO%20(1).json"
+    },
+    {
+      "id": "optimizacion-de-una-explotacion-agricola-sostenible-e587fce9",
+      "title": "Optimización de una Explotación Agrícola Sostenible",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "2_Bachillerato",
+      "topic": "Programación Lineal",
+      "subtopic": "Optimización bidimensional",
+      "exerciseType": "Resolución de un problema de programación lineal con dos variables",
+      "protocols": [
+        "A"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 45,
+      "learningObjectives": [
+        "Modelizar matemáticamente un problema verbal de optimización de recursos.",
+        "Representar gráficamente inecuaciones lineales y determinar la región factible.",
+        "Identificar restricciones redundantes mediante el análisis gráfico y algebraico.",
+        "Aplicar el método de los vértices para hallar la solución óptima."
+      ],
+      "prerequisites": [
+        "Resolución de sistemas de inecuaciones lineales con dos variables.",
+        "Representación de rectas en el plano cartesiano.",
+        "Cálculo de intersecciones entre rectas."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 15,
+      "reviewedAt": "2026-07-31T12:01:46.358Z",
+      "contentHash": "48804fa983bcab77",
+      "url": "Ejercicios/2_BACH/optimizacion-de-una-explotacion-agricola-sostenible_REVISADO.json"
     }
   ]
 }
