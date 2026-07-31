@@ -177,6 +177,8 @@
         .btn-review.modified { background-color: var(--accent-red); color: white; }
         .btn-catalog { background-color: #14b8a6; color: #042f2e; border: none; }
         .btn-catalog:hover:not(:disabled) { background-color: #2dd4bf; color: #042f2e; }
+        .btn-bank { background-color: #38bdf8; color: #082f49; border: none; }
+        .btn-bank:hover:not(:disabled) { background-color: #7dd3fc; color: #082f49; }
         .btn-hint-ui { background-color: var(--accent-yellow); color: #0f172a; border: none; display: none; }
         .btn-pencil-active { background-color: var(--accent-yellow); color: #0f172a; border: none; }
 
@@ -758,6 +760,191 @@
             font-size: 0.82rem;
             line-height: 1.4;
         }
+
+        /* Explorador del banco: permanece disponible en el visor del alumno. */
+        #bank-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1220;
+            align-items: center;
+            justify-content: center;
+            padding: 14px;
+            box-sizing: border-box;
+            background: rgba(2, 6, 23, 0.94);
+            backdrop-filter: blur(5px);
+        }
+        #bank-modal.open { display: flex; }
+        .bank-dialog {
+            width: min(1180px, 97vw);
+            max-height: 96vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 2px solid var(--accent-blue);
+            border-radius: 14px;
+            background: #0f172a;
+            box-shadow: 0 20px 56px rgba(0,0,0,0.75);
+        }
+        .bank-header, .bank-footer {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 12px 16px;
+            background: #111c31;
+            border-bottom: 1px solid #334155;
+        }
+        .bank-footer {
+            border-top: 1px solid #334155;
+            border-bottom: none;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+        .bank-body {
+            overflow-y: auto;
+            padding: 13px 15px 18px;
+        }
+        #bank-status {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 11px;
+            padding: 8px 11px;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            background: rgba(30, 41, 59, 0.55);
+            color: #cbd5e1;
+            font-size: 0.8rem;
+            line-height: 1.35;
+        }
+        #bank-status.loading { border-color: var(--accent-blue); color: #bae6fd; }
+        #bank-status.success { border-color: var(--accent-green); color: #bbf7d0; }
+        #bank-status.error { border-color: var(--accent-red); color: #fecdd3; }
+        .bank-filters {
+            display: grid;
+            grid-template-columns: minmax(190px, 1.7fr) repeat(4, minmax(125px, 1fr));
+            gap: 8px;
+            margin-bottom: 9px;
+        }
+        .bank-filter {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            min-width: 0;
+        }
+        .bank-filter label {
+            color: #94a3b8;
+            font: 700 0.7rem/1.2 'Segoe UI', sans-serif;
+        }
+        .bank-filter input, .bank-filter select {
+            width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            padding: 7px 8px;
+            border: 1px solid #475569;
+            border-radius: 7px;
+            background: #0f172a;
+            color: #f8fafc;
+            font: 0.8rem/1.3 'Segoe UI', sans-serif;
+        }
+        .bank-filter input:focus, .bank-filter select:focus {
+            outline: 2px solid rgba(56, 189, 248, 0.45);
+            outline-offset: 1px;
+        }
+        .bank-results-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 7px 0 10px;
+            color: #cbd5e1;
+            font-size: 0.8rem;
+        }
+        #bank-result-count { color: var(--accent-yellow); font-weight: 900; }
+        #bank-results {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 11px;
+        }
+        .bank-card {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 12px;
+            border: 1px solid #334155;
+            border-radius: 10px;
+            background: rgba(30, 41, 59, 0.55);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+        }
+        .bank-card:hover { border-color: #38bdf8; background: rgba(30, 41, 59, 0.82); }
+        .bank-card h3 {
+            margin: 0;
+            color: #e0f2fe;
+            font: 900 0.98rem/1.3 'Segoe UI', sans-serif;
+            overflow-wrap: anywhere;
+        }
+        .bank-card-path {
+            color: #94a3b8;
+            font-size: 0.72rem;
+            line-height: 1.3;
+        }
+        .bank-card-badges { display: flex; flex-wrap: wrap; gap: 5px; }
+        .bank-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 3px 6px;
+            border: 1px solid #475569;
+            border-radius: 999px;
+            background: #0f172a;
+            color: #dbeafe;
+            font: 800 0.67rem/1.2 'Segoe UI', sans-serif;
+        }
+        .bank-badge.visual { color: #99f6e4; border-color: #14b8a6; }
+        .bank-badge.protocol { color: #fde68a; border-color: #d97706; }
+        .bank-card-objective {
+            flex: 1;
+            margin: 0;
+            color: #cbd5e1;
+            font-size: 0.78rem;
+            line-height: 1.4;
+        }
+        .bank-card .btn { width: 100%; margin-top: auto; }
+        .bank-empty {
+            grid-column: 1 / -1;
+            padding: 28px 18px;
+            border: 1px dashed #475569;
+            border-radius: 10px;
+            color: #94a3b8;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .bank-local-help {
+            margin-top: 12px;
+            padding: 9px 11px;
+            border: 1px solid #475569;
+            border-radius: 8px;
+            background: rgba(15, 23, 42, 0.65);
+            color: #cbd5e1;
+            font-size: 0.78rem;
+            line-height: 1.4;
+        }
+        @media (max-width: 960px) {
+            .bank-filters { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            .bank-filter:first-child { grid-column: span 2; }
+            #bank-results { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        @media (max-width: 620px) {
+            .bank-filters { grid-template-columns: 1fr; }
+            .bank-filter:first-child { grid-column: auto; }
+            #bank-results { grid-template-columns: 1fr; }
+            .bank-dialog { width: 99vw; max-height: 98vh; }
+        }
         @media (max-width: 680px) {
             .catalog-config { grid-template-columns: 1fr; }
             .catalog-summary { grid-template-columns: 1fr; }
@@ -836,6 +1023,9 @@
     <div id="ui-controls">
         <label for="json-input" class="btn btn-file" id="lbl-open-file" data-tooltip="Carga un archivo .json guardado">📁 Abrir</label>
         <input type="file" id="json-input" accept=".json">
+        <button id="btn-bank" class="btn btn-bank" data-tooltip="Buscar y cargar ejercicios del banco">📚 Banco</button>
+        <input type="file" id="bank-catalog-input" accept=".json,application/json">
+        <input type="file" id="bank-exercise-input" accept=".json,application/json">
         
         <button id="btn-prompt-ai" class="btn btn-ai" data-tooltip="Abre la ventana con el prompt preparado">🤖 Prompt Gemini</button>
         <button id="btn-export-student" class="btn btn-export" disabled data-tooltip="Genera un HTML interactivo para tus alumnos">🎓 Exportar Alumnos</button>
@@ -877,6 +1067,7 @@
                 <p>Para comenzar:</p>
                 <ol class="welcome-instructions">
                     <li>Haz clic en <strong>📁 Abrir</strong> para cargar cualquier archivo <code>.json</code> descargado desde Gemini.</li>
+                    <li>Usa <strong>📚 Banco</strong> para buscar ejercicios publicados por curso, tema o dificultad.</li>
                     <li>Si deseas generar un nuevo ejercicio, pulsa en <strong>🤖 Prompt Gemini</strong> para copiar las instrucciones.</li>
                     <li>Usa <strong>🎓 Exportar Alumnos</strong> para generar una versión lista para enviar.</li>
                     <li>Cuando tengas varios JSON aprobados, usa <strong>🗂️ Catálogo</strong> para preparar el banco de GitHub Pages.</li>
@@ -1096,6 +1287,100 @@
             <div class="catalog-footer">
                 <button id="btn-download-catalog" class="btn btn-catalog" disabled>⬇ Descargar catalogo.json</button>
                 <button id="btn-close-catalog-2" class="btn">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explorador del banco: forma parte tanto del visor docente como del alumno -->
+    <div id="bank-modal" aria-hidden="true">
+        <div class="bank-dialog" role="dialog" aria-modal="true" aria-labelledby="bank-modal-title">
+            <div class="bank-header">
+                <div>
+                    <h2 id="bank-modal-title" style="margin:0;color:#38bdf8;font-size:1.25rem;">📚 Banco de ejercicios</h2>
+                    <div style="margin-top:3px;color:#94a3b8;font-size:0.78rem;">Elige qué quieres practicar y el visor cargará el ejercicio completo.</div>
+                </div>
+                <button id="btn-close-bank" class="btn" aria-label="Cerrar banco de ejercicios">✖</button>
+            </div>
+
+            <div class="bank-body">
+                <div id="bank-status" role="status" aria-live="polite">
+                    <span id="bank-status-text">Preparado para cargar el catálogo.</span>
+                    <span id="bank-source" style="color:#94a3b8;font-family:monospace;font-size:0.7rem;"></span>
+                </div>
+
+                <div class="bank-filters" id="bank-filters">
+                    <div class="bank-filter">
+                        <label for="bank-search">Buscar</label>
+                        <input id="bank-search" type="search" placeholder="Título, objetivo, tema o tipo…" autocomplete="off">
+                    </div>
+                    <div class="bank-filter">
+                        <label for="bank-stage">Etapa</label>
+                        <select id="bank-stage"><option value="">Todas</option></select>
+                    </div>
+                    <div class="bank-filter">
+                        <label for="bank-course">Curso</label>
+                        <select id="bank-course"><option value="">Todos</option></select>
+                    </div>
+                    <div class="bank-filter">
+                        <label for="bank-topic">Tema</label>
+                        <select id="bank-topic"><option value="">Todos</option></select>
+                    </div>
+                    <div class="bank-filter">
+                        <label for="bank-subtopic">Subtema</label>
+                        <select id="bank-subtopic"><option value="">Todos</option></select>
+                    </div>
+                    <div class="bank-filter">
+                        <label for="bank-type">Tipo</label>
+                        <select id="bank-type"><option value="">Todos</option></select>
+                    </div>
+                    <div class="bank-filter">
+                        <label for="bank-difficulty">Dificultad</label>
+                        <select id="bank-difficulty"><option value="">Todas</option></select>
+                    </div>
+                    <div class="bank-filter">
+                        <label for="bank-protocol">Protocolo</label>
+                        <select id="bank-protocol"><option value="">Todos</option></select>
+                    </div>
+                    <div class="bank-filter">
+                        <label for="bank-duration">Duración máxima</label>
+                        <select id="bank-duration">
+                            <option value="">Cualquiera</option>
+                            <option value="15">15 min</option>
+                            <option value="30">30 min</option>
+                            <option value="45">45 min</option>
+                            <option value="60">60 min</option>
+                            <option value="90">90 min</option>
+                        </select>
+                    </div>
+                    <div class="bank-filter">
+                        <label for="bank-visual">Apoyo visual</label>
+                        <select id="bank-visual">
+                            <option value="">Todos</option>
+                            <option value="yes">Con apoyo visual</option>
+                            <option value="no">Sin apoyo visual</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bank-results-header">
+                    <span id="bank-result-count">0 ejercicios</span>
+                    <button id="btn-clear-bank-filters" class="btn" style="font-size:0.75rem;padding:5px 9px;">Limpiar filtros</button>
+                </div>
+                <div id="bank-results">
+                    <div class="bank-empty">Cargando el banco de ejercicios…</div>
+                </div>
+
+                <div class="bank-local-help">
+                    <strong>Prueba local:</strong> si todavía no está publicado en GitHub Pages, puedes importar manualmente
+                    <code>catalogo.json</code>. Si el navegador no permite abrir las rutas locales, usa «Abrir JSON aprobado» para cargar el ejercicio elegido.
+                </div>
+            </div>
+
+            <div class="bank-footer">
+                <button id="btn-import-bank-catalog" class="btn">📥 Importar catalogo.json</button>
+                <button id="btn-open-approved-json" class="btn">📄 Abrir JSON aprobado</button>
+                <button id="btn-reload-bank" class="btn btn-bank">↻ Recargar catálogo</button>
+                <button id="btn-close-bank-2" class="btn">Cerrar</button>
             </div>
         </div>
     </div>
@@ -2693,6 +2978,419 @@ CONTROL FINAL OBLIGATORIO
             setTimeout(() => URL.revokeObjectURL(url), 1000);
         }
 
+        // ================================================================
+        // EXPLORADOR SEGURO DEL BANCO DE EJERCICIOS
+        // ================================================================
+        let bankCatalog = null;
+        let bankCatalogSourceURL = '';
+        let bankCatalogSourceLabel = '';
+        let bankLoading = false;
+
+        function bankRecordErrors(record) {
+            const errors = [];
+            if (!record || typeof record !== 'object' || Array.isArray(record)) {
+                return ['Entrada de ejercicio no válida.'];
+            }
+            [
+                ['id','identificador'], ['title','título'], ['subject','materia'], ['stage','etapa'],
+                ['course','curso'], ['topic','tema'], ['subtopic','subtema'],
+                ['exerciseType','tipo'], ['difficulty','dificultad'], ['reviewedAt','fecha de revisión'], ['url','ruta']
+            ].forEach(([key,label]) => {
+                if (!cleanString(record[key])) errors.push(`Falta ${label}.`);
+            });
+            if (record.subject !== 'Matemáticas') errors.push('La materia no es Matemáticas.');
+            if (!VALID_DIFFICULTIES.includes(record.difficulty)) errors.push('Dificultad no normalizada.');
+            if (!Array.isArray(record.protocols) || !record.protocols.length
+                || record.protocols.some(item => !VALID_PROTOCOLS.includes(item))) {
+                errors.push('Protocolos ausentes o inválidos.');
+            }
+            if (Array.isArray(record.protocols) && new Set(record.protocols).size !== record.protocols.length) {
+                errors.push('Hay protocolos repetidos.');
+            }
+            if (!Array.isArray(record.learningObjectives) || !record.learningObjectives.length) {
+                errors.push('Faltan objetivos de aprendizaje.');
+            } else if (record.learningObjectives.some(item => !cleanString(item))) {
+                errors.push('Hay objetivos de aprendizaje vacíos.');
+            }
+            if (!Array.isArray(record.prerequisites) || !record.prerequisites.length) {
+                errors.push('Faltan prerrequisitos.');
+            } else if (record.prerequisites.some(item => !cleanString(item))) {
+                errors.push('Hay prerrequisitos vacíos.');
+            }
+            if (!Number.isInteger(record.estimatedMinutes) || record.estimatedMinutes <= 0) {
+                errors.push('Duración inválida.');
+            }
+            if (!Number.isInteger(record.slideCount) || record.slideCount <= 0) {
+                errors.push('Número de diapositivas inválido.');
+            }
+            if (!/^[0-9a-f]{16}$/.test(cleanString(record.contentHash))) {
+                errors.push('Huella de contenido inválida.');
+            }
+
+            const rawURL = cleanString(record.url).replace(/\\/g, '/');
+            let decodedURL = rawURL;
+            try { decodedURL = decodeURIComponent(rawURL); } catch (error) { errors.push('La ruta contiene una codificación inválida.'); }
+            if (/^[a-z][a-z0-9+.-]*:/i.test(rawURL) || rawURL.startsWith('/') || rawURL.startsWith('//')) {
+                errors.push('La ruta del ejercicio debe ser relativa.');
+            }
+            if (/[?#]/.test(rawURL) || decodedURL.split('/').some(segment => segment === '.' || segment === '..')) {
+                errors.push('La ruta del ejercicio contiene segmentos no permitidos.');
+            }
+            if (!/\.json$/i.test(decodedURL)) errors.push('La ruta no termina en .json.');
+            return [...new Set(errors)];
+        }
+
+        function bankCatalogErrors(catalog) {
+            const errors = [];
+            if (!catalog || typeof catalog !== 'object' || Array.isArray(catalog)) {
+                return ['La raíz del catálogo no es un objeto JSON.'];
+            }
+            if (catalog.schemaVersion !== CATALOG_SCHEMA_VERSION) {
+                errors.push(`El catálogo no usa el esquema ${CATALOG_SCHEMA_VERSION}.`);
+            }
+            if (catalog.exerciseSchemaVersion !== EXERCISE_SCHEMA_VERSION) {
+                errors.push(`Los ejercicios no declaran el esquema ${EXERCISE_SCHEMA_VERSION}.`);
+            }
+            if (!cleanString(catalog.generatedAt) || Number.isNaN(Date.parse(catalog.generatedAt))) {
+                errors.push('La fecha de generación del catálogo no es válida.');
+            }
+            if (!Array.isArray(catalog.exercises)) {
+                errors.push('Falta el array exercises.');
+                return errors;
+            }
+            if (catalog.exerciseCount !== catalog.exercises.length) {
+                errors.push('El recuento exerciseCount no coincide.');
+            }
+            const ids = new Set();
+            const urls = new Set();
+            catalog.exercises.forEach((record, index) => {
+                bankRecordErrors(record).forEach(error => errors.push(`Ejercicio ${index + 1}: ${error}`));
+                if (cleanString(record && record.id)) {
+                    if (ids.has(record.id)) errors.push(`Identificador duplicado: ${record.id}.`);
+                    ids.add(record.id);
+                }
+                if (cleanString(record && record.url)) {
+                    if (urls.has(record.url)) errors.push(`Ruta duplicada: ${record.url}.`);
+                    urls.add(record.url);
+                }
+            });
+            return [...new Set(errors)];
+        }
+
+        function bankExerciseErrors(data, expectedRecord = null) {
+            const errors = catalogExerciseErrors(data);
+            if (expectedRecord && data && data.meta && data.review) {
+                if (data.meta.id !== expectedRecord.id) errors.push('El identificador no coincide con el catálogo.');
+                if (data.review.contentHash !== expectedRecord.contentHash) errors.push('La huella no coincide con la anunciada en el catálogo.');
+                if (data.title !== expectedRecord.title) errors.push('El título no coincide con el catálogo.');
+                [
+                    ['subject','materia'], ['stage','etapa'], ['course','curso'], ['topic','tema'],
+                    ['subtopic','subtema'], ['exerciseType','tipo'], ['difficulty','dificultad'],
+                    ['estimatedMinutes','duración'], ['slideCount','número de diapositivas'],
+                    ['hasVisualSupport','apoyo visual'], ['hasNearTransfer','transferencia cercana'],
+                    ['hasFarTransfer','transferencia lejana']
+                ].forEach(([key,label]) => {
+                    if (data.meta[key] !== expectedRecord[key]) errors.push(`No coincide ${label}.`);
+                });
+                const sameProtocols = stableStringify(data.meta.protocols) === stableStringify(expectedRecord.protocols);
+                const sameObjectives = stableStringify(data.meta.learningObjectives) === stableStringify(expectedRecord.learningObjectives);
+                const samePrerequisites = stableStringify(data.meta.prerequisites) === stableStringify(expectedRecord.prerequisites);
+                if (!sameProtocols) errors.push('No coinciden los protocolos.');
+                if (!sameObjectives) errors.push('No coinciden los objetivos de aprendizaje.');
+                if (!samePrerequisites) errors.push('No coinciden los prerrequisitos.');
+            }
+            return [...new Set(errors)];
+        }
+
+        function setBankStatus(type, message, source = bankCatalogSourceLabel) {
+            const status = document.getElementById('bank-status');
+            const textElement = document.getElementById('bank-status-text');
+            const sourceElement = document.getElementById('bank-source');
+            if (!status || !textElement || !sourceElement) return;
+            status.className = type || '';
+            textElement.textContent = message;
+            sourceElement.textContent = source || '';
+        }
+
+        function defaultBankCatalogURL() {
+            return new URL('catalogo.json', window.location.href).href;
+        }
+
+        async function fetchStrictJSON(url, description) {
+            const response = await fetch(url, { cache: 'no-store' });
+            if (!response.ok) throw new Error(`${description}: respuesta HTTP ${response.status}.`);
+            const text = await response.text();
+            let data;
+            try {
+                data = JSON.parse(text.replace(/^\uFEFF/, ''));
+            } catch (error) {
+                throw new Error(`${description}: JSON no válido (${error.message}).`);
+            }
+            return { data, responseURL: response.url || url };
+        }
+
+        function fillBankSelect(id, values, emptyLabel) {
+            const select = document.getElementById(id);
+            if (!select) return;
+            const previous = select.value;
+            select.replaceChildren();
+            const emptyOption = document.createElement('option');
+            emptyOption.value = '';
+            emptyOption.textContent = emptyLabel;
+            select.appendChild(emptyOption);
+            uniqueSorted(values).forEach(value => {
+                const option = document.createElement('option');
+                option.value = value;
+                option.textContent = value;
+                select.appendChild(option);
+            });
+            select.value = [...select.options].some(option => option.value === previous) ? previous : '';
+        }
+
+        function populateBankFilters() {
+            const exercises = bankCatalog ? bankCatalog.exercises : [];
+            fillBankSelect('bank-stage', exercises.map(item => item.stage), 'Todas');
+            fillBankSelect('bank-course', exercises.map(item => item.course), 'Todos');
+            fillBankSelect('bank-topic', exercises.map(item => item.topic), 'Todos');
+            fillBankSelect('bank-subtopic', exercises.map(item => item.subtopic), 'Todos');
+            fillBankSelect('bank-type', exercises.map(item => item.exerciseType), 'Todos');
+            fillBankSelect('bank-difficulty', exercises.map(item => item.difficulty), 'Todas');
+            fillBankSelect('bank-protocol', exercises.flatMap(item => item.protocols), 'Todos');
+        }
+
+        function bankFilterValue(id) {
+            const element = document.getElementById(id);
+            return element ? element.value : '';
+        }
+
+        function filteredBankExercises() {
+            if (!bankCatalog) return [];
+            const query = normalizedSemanticText(bankFilterValue('bank-search'));
+            const stage = bankFilterValue('bank-stage');
+            const course = bankFilterValue('bank-course');
+            const topic = bankFilterValue('bank-topic');
+            const subtopic = bankFilterValue('bank-subtopic');
+            const type = bankFilterValue('bank-type');
+            const difficulty = bankFilterValue('bank-difficulty');
+            const protocol = bankFilterValue('bank-protocol');
+            const maxDuration = Number(bankFilterValue('bank-duration')) || Infinity;
+            const visual = bankFilterValue('bank-visual');
+
+            return bankCatalog.exercises.filter(item => {
+                const searchable = normalizedSemanticText([
+                    item.title, item.stage, item.course, item.topic, item.subtopic,
+                    item.exerciseType, ...(item.learningObjectives || []), ...(item.prerequisites || [])
+                ].join(' '));
+                return (!query || searchable.includes(query))
+                    && (!stage || item.stage === stage)
+                    && (!course || item.course === course)
+                    && (!topic || item.topic === topic)
+                    && (!subtopic || item.subtopic === subtopic)
+                    && (!type || item.exerciseType === type)
+                    && (!difficulty || item.difficulty === difficulty)
+                    && (!protocol || item.protocols.includes(protocol))
+                    && item.estimatedMinutes <= maxDuration
+                    && (!visual || (visual === 'yes' ? item.hasVisualSupport === true : item.hasVisualSupport !== true));
+            });
+        }
+
+        function appendBankBadge(container, text, cssClass = '') {
+            const badge = document.createElement('span');
+            badge.className = `bank-badge ${cssClass}`.trim();
+            badge.textContent = text;
+            container.appendChild(badge);
+        }
+
+        function renderBankCards() {
+            const results = document.getElementById('bank-results');
+            const count = document.getElementById('bank-result-count');
+            if (!results || !count) return;
+            results.replaceChildren();
+
+            if (!bankCatalog) {
+                count.textContent = '0 ejercicios';
+                const empty = document.createElement('div');
+                empty.className = 'bank-empty';
+                empty.textContent = 'No hay un catálogo cargado. Puedes reintentar o importar catalogo.json manualmente.';
+                results.appendChild(empty);
+                return;
+            }
+
+            const exercises = filteredBankExercises();
+            count.textContent = `${exercises.length} ${exercises.length === 1 ? 'ejercicio' : 'ejercicios'} de ${bankCatalog.exercises.length}`;
+            if (!exercises.length) {
+                const empty = document.createElement('div');
+                empty.className = 'bank-empty';
+                empty.textContent = 'No hay ejercicios que cumplan todos los filtros. Prueba a eliminar algún criterio.';
+                results.appendChild(empty);
+                return;
+            }
+
+            exercises.forEach(record => {
+                const card = document.createElement('article');
+                card.className = 'bank-card';
+
+                const title = document.createElement('h3');
+                title.textContent = record.title;
+                const path = document.createElement('div');
+                path.className = 'bank-card-path';
+                path.textContent = `${record.stage} · ${record.course} · ${record.topic} · ${record.subtopic}`;
+
+                const badges = document.createElement('div');
+                badges.className = 'bank-card-badges';
+                appendBankBadge(badges, record.difficulty);
+                appendBankBadge(badges, `⏱ ${record.estimatedMinutes} min`);
+                record.protocols.forEach(protocol => appendBankBadge(badges, `Protocolo ${protocol}`, 'protocol'));
+                if (record.hasVisualSupport) appendBankBadge(badges, 'Apoyo visual', 'visual');
+
+                const type = document.createElement('div');
+                type.className = 'bank-card-path';
+                type.textContent = record.exerciseType;
+                const objective = document.createElement('p');
+                objective.className = 'bank-card-objective';
+                objective.textContent = record.learningObjectives[0];
+                const button = document.createElement('button');
+                button.className = 'btn btn-bank';
+                button.textContent = '▶ Trabajar este ejercicio';
+                button.addEventListener('click', () => loadExerciseFromBank(record));
+
+                card.append(title, path, badges, type, objective, button);
+                results.appendChild(card);
+            });
+        }
+
+        function acceptBankCatalog(catalog, sourceURL, sourceLabel) {
+            const errors = bankCatalogErrors(catalog);
+            if (errors.length) {
+                throw new Error(`Catálogo rechazado: ${errors.slice(0, 6).join(' · ')}${errors.length > 6 ? ` · y ${errors.length - 6} error(es) más` : ''}`);
+            }
+            bankCatalog = catalog;
+            bankCatalogSourceURL = sourceURL;
+            bankCatalogSourceLabel = sourceLabel;
+            populateBankFilters();
+            renderBankCards();
+            setBankStatus('success', `Catálogo verificado: ${catalog.exercises.length} ejercicio(s) disponible(s).`, sourceLabel);
+            return catalog;
+        }
+
+        async function loadDefaultBankCatalog() {
+            if (bankLoading) return;
+            bankLoading = true;
+            bankCatalog = null;
+            renderBankCards();
+            const url = defaultBankCatalogURL();
+            setBankStatus('loading', 'Cargando y verificando catalogo.json…', url);
+            try {
+                if (window.location.protocol === 'file:') {
+                    throw new Error('El navegador bloquea la carga automática desde un archivo local. Importa catalogo.json manualmente para probarlo.');
+                }
+                const loaded = await fetchStrictJSON(url, 'No se pudo cargar catalogo.json');
+                acceptBankCatalog(loaded.data, loaded.responseURL, loaded.responseURL);
+            } catch (error) {
+                bankCatalog = null;
+                bankCatalogSourceURL = '';
+                bankCatalogSourceLabel = '';
+                renderBankCards();
+                setBankStatus('error', error.message, 'Usa «Importar catalogo.json» para una prueba local.');
+            } finally {
+                bankLoading = false;
+            }
+        }
+
+        function openBankModal() {
+            const modal = document.getElementById('bank-modal');
+            if (!modal) return;
+            modal.classList.add('open');
+            modal.setAttribute('aria-hidden', 'false');
+            if (bankCatalog) {
+                renderBankCards();
+                setBankStatus('success', `Catálogo verificado: ${bankCatalog.exercises.length} ejercicio(s) disponible(s).`);
+            } else {
+                loadDefaultBankCatalog();
+            }
+        }
+
+        function closeBankModal() {
+            const modal = document.getElementById('bank-modal');
+            if (!modal) return;
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+        }
+
+        function clearBankFilters() {
+            document.querySelectorAll('#bank-filters input, #bank-filters select').forEach(element => {
+                element.value = '';
+            });
+            renderBankCards();
+        }
+
+        function resolveBankExerciseURL(record) {
+            const errors = bankRecordErrors(record);
+            if (errors.length) throw new Error(errors.join(' · '));
+            return new URL(record.url, bankCatalogSourceURL || window.location.href).href;
+        }
+
+        function loadVerifiedBankExerciseData(data, expectedRecord = null) {
+            const errors = bankExerciseErrors(data, expectedRecord);
+            if (errors.length) throw new Error(`Ejercicio rechazado: ${errors.join(' · ')}`);
+            if (!expectedRecord && bankCatalog) {
+                const catalogRecord = bankCatalog.exercises.find(record => record.id === data.meta.id);
+                if (!catalogRecord) throw new Error('El ejercicio aprobado no aparece en el catálogo cargado.');
+                const catalogErrors = bankExerciseErrors(data, catalogRecord);
+                if (catalogErrors.length) throw new Error(`Ejercicio rechazado: ${catalogErrors.join(' · ')}`);
+            }
+            loadJSONData(JSON.stringify(data));
+            closeBankModal();
+            return data;
+        }
+
+        async function loadExerciseFromBank(record) {
+            try {
+                const url = resolveBankExerciseURL(record);
+                if (new URL(url).protocol === 'file:') {
+                    throw new Error('El navegador no permite cargar este ejercicio desde una ruta local. Usa «Abrir JSON aprobado».');
+                }
+                setBankStatus('loading', `Cargando «${record.title}»…`, url);
+                const loaded = await fetchStrictJSON(url, 'No se pudo cargar el ejercicio');
+                loadVerifiedBankExerciseData(loaded.data, record);
+            } catch (error) {
+                setBankStatus('error', error.message, 'El ejercicio no se ha abierto.');
+            }
+        }
+
+        function readSingleJSONFile(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    try {
+                        resolve(JSON.parse(String(reader.result || '').replace(/^\uFEFF/, '')));
+                    } catch (error) {
+                        reject(new Error(`JSON no válido: ${error.message}`));
+                    }
+                };
+                reader.onerror = () => reject(new Error(`No se pudo leer ${file.name}.`));
+                reader.readAsText(file);
+            });
+        }
+
+        async function importBankCatalogFile(file) {
+            try {
+                const catalog = await readSingleJSONFile(file);
+                acceptBankCatalog(catalog, window.location.href, `${file.name} · importación local`);
+            } catch (error) {
+                setBankStatus('error', error.message, file.name);
+            }
+        }
+
+        async function importApprovedExerciseFile(file) {
+            try {
+                const data = await readSingleJSONFile(file);
+                loadVerifiedBankExerciseData(data);
+            } catch (error) {
+                setBankStatus('error', error.message, file.name);
+            }
+        }
+
         function safeExerciseSlug(value) {
             const slug = normalizedSemanticText(value).replace(/_/g, '-').slice(0, 52);
             return slug || 'ejercicio-matematicas';
@@ -3209,6 +3907,9 @@ CONTROL FINAL OBLIGATORIO
         window.contentFingerprint = contentFingerprint;
         window.buildExerciseCatalog = buildExerciseCatalog;
         window.catalogExerciseErrors = catalogExerciseErrors;
+        window.bankCatalogErrors = bankCatalogErrors;
+        window.bankExerciseErrors = bankExerciseErrors;
+        window.loadVerifiedBankExerciseData = loadVerifiedBankExerciseData;
 
         const btnReviewExercise = document.getElementById('btn-review-exercise');
         const btnCloseReview = document.getElementById('btn-close-review');
@@ -3260,6 +3961,52 @@ CONTROL FINAL OBLIGATORIO
         if (catalogModal) {
             catalogModal.addEventListener('click', event => {
                 if (event.target === catalogModal) closeCatalogModal();
+            });
+        }
+
+        const btnBank = document.getElementById('btn-bank');
+        const bankModal = document.getElementById('bank-modal');
+        const btnCloseBank = document.getElementById('btn-close-bank');
+        const btnCloseBank2 = document.getElementById('btn-close-bank-2');
+        const btnReloadBank = document.getElementById('btn-reload-bank');
+        const btnClearBankFilters = document.getElementById('btn-clear-bank-filters');
+        const btnImportBankCatalog = document.getElementById('btn-import-bank-catalog');
+        const btnOpenApprovedJSON = document.getElementById('btn-open-approved-json');
+        const bankCatalogInput = document.getElementById('bank-catalog-input');
+        const bankExerciseInput = document.getElementById('bank-exercise-input');
+
+        if (btnBank) btnBank.addEventListener('click', openBankModal);
+        if (btnCloseBank) btnCloseBank.addEventListener('click', closeBankModal);
+        if (btnCloseBank2) btnCloseBank2.addEventListener('click', closeBankModal);
+        if (btnReloadBank) btnReloadBank.addEventListener('click', loadDefaultBankCatalog);
+        if (btnClearBankFilters) btnClearBankFilters.addEventListener('click', clearBankFilters);
+        if (btnImportBankCatalog && bankCatalogInput) {
+            btnImportBankCatalog.addEventListener('click', () => bankCatalogInput.click());
+        }
+        if (btnOpenApprovedJSON && bankExerciseInput) {
+            btnOpenApprovedJSON.addEventListener('click', () => bankExerciseInput.click());
+        }
+        if (bankCatalogInput) {
+            bankCatalogInput.addEventListener('change', async event => {
+                const file = event.target.files && event.target.files[0];
+                if (file) await importBankCatalogFile(file);
+                event.target.value = '';
+            });
+        }
+        if (bankExerciseInput) {
+            bankExerciseInput.addEventListener('change', async event => {
+                const file = event.target.files && event.target.files[0];
+                if (file) await importApprovedExerciseFile(file);
+                event.target.value = '';
+            });
+        }
+        document.querySelectorAll('#bank-filters input, #bank-filters select').forEach(element => {
+            element.addEventListener('input', renderBankCards);
+            element.addEventListener('change', renderBankCards);
+        });
+        if (bankModal) {
+            bankModal.addEventListener('click', event => {
+                if (event.target === bankModal) closeBankModal();
             });
         }
 
@@ -3811,6 +4558,7 @@ CONTROL FINAL OBLIGATORIO
         window.addEventListener('keydown', (e) => {
             const reviewIsOpen = document.getElementById('review-modal')?.classList.contains('open');
             const catalogIsOpen = document.getElementById('catalog-modal')?.classList.contains('open');
+            const bankIsOpen = document.getElementById('bank-modal')?.classList.contains('open');
             const promptIsOpen = document.getElementById('prompt-modal')?.style.display === 'flex';
             if (e.key === 'Escape' && reviewIsOpen) {
                 e.preventDefault();
@@ -3822,7 +4570,12 @@ CONTROL FINAL OBLIGATORIO
                 closeCatalogModal();
                 return;
             }
-            if (reviewIsOpen || catalogIsOpen || promptIsOpen || /^(INPUT|TEXTAREA|SELECT)$/.test(e.target?.tagName || '')) return;
+            if (e.key === 'Escape' && bankIsOpen) {
+                e.preventDefault();
+                closeBankModal();
+                return;
+            }
+            if (reviewIsOpen || catalogIsOpen || bankIsOpen || promptIsOpen || /^(INPUT|TEXTAREA|SELECT)$/.test(e.target?.tagName || '')) return;
             const key = e.key.toLowerCase();
             if (key === 'c') clearCanvas();
             if (key === 'h') document.body.classList.toggle('hide-ui');
