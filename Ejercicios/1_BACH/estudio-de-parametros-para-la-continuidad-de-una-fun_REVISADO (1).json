@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis",
+    "subtopic": "Continuidad de funciones",
+    "exerciseType": "Determinación de parámetros",
+    "protocols": [
+      "C",
+      "H"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Aplicar la definición de continuidad en un punto mediante límites laterales.",
+      "Plantear un sistema de ecuaciones a partir de condiciones analíticas.",
+      "Interpretar la incompatibilidad de un sistema en el contexto de una función a trozos."
+    ],
+    "prerequisites": [
+      "Cálculo de límites laterales.",
+      "Resolución y clasificación de sistemas de ecuaciones lineales."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T10:07:50.039Z",
+    "id": "estudio-de-parametros-para-la-continuidad-de-una-fun-e9483ffa"
+  },
+  "title": "Estudio de parámetros para la continuidad de una función a trozos",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leamos con atención el problema. Nos dan una función definida en tres tramos y nos piden averiguar si es posible encontrar unos valores muy concretos para las letras a y b, de forma que la función no tenga saltos en ningún punto.",
+      "content": "<p>Justifica si existen valores para los parámetros $a$ y $b$ que hagan continua la función:</p><p>$$f(x) = \\begin{cases} 2x + a & \\text{si } x \\le -1 \\\\ x^2 - b & \\text{si } -1 < x < 2 \\\\ ax + b & \\text{si } x \\ge 2 \\end{cases}$$</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consistirá en analizar los puntos críticos donde la función cambia de forma. Como los tramos individuales son polinomios continuos, todo se reduce a comprobar los empalmes o fronteras.",
+      "content": "<p><strong>¿Qué nos piden?</strong><br>Determinar si existe alguna pareja de valores $(a, b)$ que garantice que $f(x)$ sea continua en todo su dominio ($\\mathbb{R}$).</p><p><strong>Estrategia justificada:</strong></p><ol><li><strong>Analizar el dominio y las ramas:</strong> Cada tramo de $f(x)$ es un polinomio (recta, parábola, recta), por lo que son funciones continuas en sus respectivos intervalos.</li><li><strong>Imponer continuidad en las fronteras:</strong> Los únicos puntos donde la función podría presentar discontinuidades ('saltos') son $x = -1$ y $x = 2$, que son los puntos de cambio de rama.</li><li><strong>Plantear un sistema:</strong> Para que sea continua en esos puntos, los límites laterales y el valor de la función deben coincidir. Obtendremos dos ecuaciones.</li><li><strong>Resolver y concluir:</strong> Resolveremos el sistema resultante para $a$ y $b$ y sacaremos nuestras conclusiones.</li></ol>",
+      "theory": "<p>Una función $f(x)$ es continua en $x=c$ si y solo si:<br>$$\\lim_{x \\to c^-} f(x) = \\lim_{x \\to c^+} f(x) = f(c)$$</p>"
+    },
+    {
+      "title": "Condición de continuidad en x = -1",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Vamos al primer punto de conexión, en equis igual a menos uno. Evaluamos la función y calculamos los límites por la izquierda y por la derecha usando los tramos correspondientes. Para que enganche, ambas partes deben ser iguales.",
+      "content": "<p>Estudiamos el punto de cambio $x = -1$. Para que $f(x)$ sea continua aquí, se debe cumplir:</p><p>$$\\lim_{x \\to -1^-} f(x) = \\lim_{x \\to -1^+} f(x) = f(-1)$$</p><ul><li><strong>Valor de la función:</strong> Usamos la primera rama porque tiene el signo $\\le$:<br>$f(-1) = 2(-1) + a = a - 2$</li><li><strong>Límite por la izquierda ($x < -1$):</strong><br>$$\\lim_{x \\to -1^-} (2x + a) = 2(-1) + a = a - 2$$</li><li><strong>Límite por la derecha ($x > -1$):</strong><br>$$\\lim_{x \\to -1^+} (x^2 - b) = (-1)^2 - b = 1 - b$$</li></ul><p>Igualamos los límites laterales para forzar la continuidad:</p><p>$$a - 2 = 1 - b \\implies a + b = 3$$</p><p>Esta es nuestra <strong>primera ecuación</strong>.</p>",
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'><rect width='400' height='400' fill='#0f172a'/><line x1='150' y1='50' x2='150' y2='350' stroke='#334155' stroke-width='2' stroke-dasharray='5,5'/><text x='150' y='40' fill='#fbbf24' font-family='sans-serif' font-size='16' text-anchor='middle'>x = -1</text><path d='M 50 300 L 150 150' stroke='#38bdf8' stroke-width='3' fill='none'/><path d='M 150 150 Q 200 250 250 100' stroke='#a3e635' stroke-width='3' fill='none'/><circle cx='150' cy='150' r='5' fill='#38bdf8'/><text x='100' y='200' fill='#38bdf8' font-family='sans-serif' font-size='14'>2x + a</text><text x='200' y='140' fill='#a3e635' font-family='sans-serif' font-size='14'>x² - b</text><text x='200' y='380' fill='#94a3b8' font-family='sans-serif' font-size='12' text-anchor='middle'>Representación simbólica del enganche</text></svg>",
+      "checkpoint": {
+        "question": "¿Por qué calculamos f(-1) usando 2x + a y no x² - b?",
+        "options": [
+          {
+            "text": "Porque x = -1 está incluido en el dominio del primer tramo, donde la condición es x ≤ -1.",
+            "correct": true,
+            "feedback": "Correcto. El símbolo de desigualdad '≤' indica que en x = -1 la función toma el valor definido por esa rama."
+          },
+          {
+            "text": "Porque 2x + a es la primera expresión que aparece en la llave.",
+            "correct": false,
+            "feedback": "Falso. La posición de la rama no determina el dominio; es la desigualdad adjunta la que manda."
+          },
+          {
+            "text": "Se puede usar cualquiera de las dos, darán el mismo resultado.",
+            "correct": false,
+            "feedback": "Cuidado. Darán el mismo resultado solo si la función YA es continua, pero precisamente estamos averiguando cómo forzar que lo sea."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Condición de continuidad en x = 2",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Hacemos exactamente lo mismo para el segundo punto de quiebre, en equis igual a 2. Evaluamos límites laterales, los igualamos y obtenemos nuestra segunda ecuación.",
+      "content": "<p>Estudiamos el segundo punto de cambio, $x = 2$. Repetimos el proceso de límites laterales:</p><ul><li><strong>Valor de la función y límite por la derecha ($x \\ge 2$):</strong><br>$$\\lim_{x \\to 2^+} (ax + b) = f(2) = a(2) + b = 2a + b$$</li><li><strong>Límite por la izquierda ($x < 2$):</strong><br>$$\\lim_{x \\to 2^-} (x^2 - b) = 2^2 - b = 4 - b$$</li></ul><p>Igualamos para imponer que los tramos conecten sin salto:</p><p>$$4 - b = 2a + b$$</p><p>Agrupamos las incógnitas $a$ y $b$ a un lado de la igualdad:</p><p>$$2a + 2b = 4$$</p><p>Dividiendo toda la ecuación entre 2 para simplificar, obtenemos:</p><p>$$a + b = 2$$</p><p>Esta es nuestra <strong>segunda ecuación</strong>.</p>",
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'><rect width='400' height='400' fill='#0f172a'/><line x1='250' y1='50' x2='250' y2='350' stroke='#334155' stroke-width='2' stroke-dasharray='5,5'/><text x='250' y='40' fill='#fbbf24' font-family='sans-serif' font-size='16' text-anchor='middle'>x = 2</text><path d='M 150 200 Q 200 300 250 150' stroke='#a3e635' stroke-width='3' fill='none'/><path d='M 250 150 L 350 250' stroke='#f472b6' stroke-width='3' fill='none'/><circle cx='250' cy='150' r='5' fill='#f472b6'/><text x='180' y='240' fill='#a3e635' font-family='sans-serif' font-size='14'>x² - b</text><text x='280' y='180' fill='#f472b6' font-family='sans-serif' font-size='14'>ax + b</text></svg>"
+    },
+    {
+      "title": "Resolución del sistema resultante",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Tenemos dos ecuaciones con las mismas incógnitas. Al agruparlas en un sistema de ecuaciones lineales nos damos cuenta rápidamente de algo muy peculiar.",
+      "content": "<p>Las condiciones de continuidad en ambos puntos nos obligan a que se cumplan, de forma simultánea, las dos ecuaciones halladas. Planteamos el sistema lineal:</p><p>$$\\begin{cases} a + b = 3 \\\\ a + b = 2 \\end{cases}$$</p><p>Observamos las dos ecuaciones.</p><p>La primera afirma que la suma de $a$ y $b$ debe ser $3$.<br>La segunda afirma que la misma suma, $a + b$, debe ser exactamente $2$.</p><p>Esto es matemáticamente imposible. Si intentáramos resolverlo (por ejemplo, restando las ecuaciones), obtendríamos:</p><p>$$(a+b) - (a+b) = 3 - 2 \\implies 0 = 1$$</p><p>Hemos llegado a una contradicción, lo que significa que estamos ante un <strong>Sistema Incompatible (SI)</strong>.</p>",
+      "warning": "<p>En problemas de parámetros, un sistema incompatible no significa que hayas hecho algo mal calculando; significa que el requerimiento pedido en el enunciado (que sea continua en todas partes) es imposible de satisfacer bajo la estructura de esa función.</p>"
+    },
+    {
+      "title": "Interpretación: El salto inevitable",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Como el sistema no tiene solución, significa que no podemos coser los tres trozos a la vez. Si arreglamos el de la izquierda, se rompe el de la derecha, y viceversa. Siempre quedará un hueco o salto en la función.",
+      "content": "<p>La conclusión analítica es firme: <strong>no existen valores reales para $a$ y $b$ que hagan continua la función en toda $\\mathbb{R}$.</strong></p><p>Podemos visualizar por qué ocurre esto. Si elegimos valores para $a$ y $b$ que hagan que el primer empalme funcione (por ejemplo, $a = 2$ y $b = 1$, con lo que $a+b=3$), veamos qué pasa en $x=2$:</p><ul><li>Empalme 1 ($x=-1$): $2(-1)+2 = 0$ y $(-1)^2-1 = 0$. ¡Perfecto, conecta!</li><li>Empalme 2 ($x=2$): Límite izquierdo es $2^2-1 = 3$. Límite derecho es $2(2)+1 = 5$.</li></ul><p>Como vemos en la gráfica para este caso particular, por mucho que forcemos la conexión en la primera frontera, se nos desajusta inevitablemente la segunda, generando una <strong>discontinuidad de salto finito</strong>.</p>",
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'><rect width='400' height='400' fill='#0f172a'/><g stroke='#334155' stroke-width='1'><line x1='0' y1='200' x2='400' y2='200'/><line x1='200' y1='0' x2='200' y2='400'/><line x1='150' y1='0' x2='150' y2='400' stroke-dasharray='4,4'/><line x1='300' y1='0' x2='300' y2='400' stroke-dasharray='4,4'/></g><text x='155' y='380' fill='#fbbf24' font-size='12'>x=-1</text><text x='305' y='380' fill='#fbbf24' font-size='12'>x=2</text><path d='M 50 400 L 150 200' stroke='#38bdf8' stroke-width='3' fill='none'/><path d='M 150 200 Q 200 300 300 50' stroke='#a3e635' stroke-width='3' fill='none'/><circle cx='150' cy='200' r='4' fill='#38bdf8'/><path d='M 300 -50 L 350 -150' stroke='#f472b6' stroke-width='3' fill='none'/><circle cx='300' cy='50' r='4' fill='#0f172a' stroke='#a3e635' stroke-width='2'/><circle cx='300' cy='-50' r='4' fill='#f472b6'/><text x='250' y='30' fill='#ef4444' font-family='sans-serif' font-size='12' font-weight='bold'>Salto irremediable</text><path d='M 285 50 L 285 -50' stroke='#ef4444' stroke-width='2' stroke-dasharray='3,3'/><polygon points='285,-50 281,-40 289,-40' fill='#ef4444'/><polygon points='285,50 281,40 289,40' fill='#ef4444'/></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulemos los pasos para afrontar este tipo de ejercicios: identificar puntos críticos, imponer límites laterales iguales, plantear el sistema algebraico y resolver. Siempre con atención a las conclusiones si el sistema es imposible.",
+      "content": "<ol><li><strong>Identificar fronteras:</strong> Localizamos los valores de $x$ donde la función cambia su expresión ($x = -1$ y $x = 2$).</li><li><strong>Calcular límites laterales:</strong> En cada frontera, evaluamos la expresión correspondiente a la izquierda y a la derecha.</li><li><strong>Imponer continuidad:</strong> Igualamos ambos límites (y el valor de la función) para garantizar que la gráfica \"conecte\".<ul><li>En $x = -1 \\implies a+b=3$</li><li>En $x = 2 \\implies a+b=2$</li></ul></li><li><strong>Resolver y concluir:</strong> Agrupamos las ecuaciones en un sistema algebraico. Al deducir que el sistema es Incompatible (sin solución), concluimos que <strong>no existen</strong> tales parámetros $a$ y $b$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Intenta aplicar los mismos pasos con esta otra función. Esta vez, puede que el sistema sí tenga solución. ¡Pruébalo antes de mirar la respuesta!",
+      "content": "<p>Calcula los valores de $a$ y $b$ para que la siguiente función sea continua en todo su dominio:</p><p>$$g(x) = \\begin{cases} 3x - a & \\text{si } x < 0 \\\\ x^2 + b & \\text{si } 0 \\le x < 2 \\\\ ax - 2 & \\text{si } x \\ge 2 \\end{cases}$$</p><p><em>Plantea las ecuaciones de continuidad en $x=0$ y $x=2$ y resuelve el sistema.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong> $a = 3$, $b = -3$</p><p>Condición en $x=0$: $-a = b$</p><p>Condición en $x=2$: $4 + b = 2a - 2$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Pensemos en la continuidad desde otro ángulo. Imagina un objeto que se mueve por tramos rectos. Para que el recorrido sea uno solo y no pegue un salto en el espacio, las piezas de su trayectoria deben coincidir.",
+      "content": "<p>Un ingeniero diseña el perfil de altitud de una montaña rusa modelado en dos tramos (donde $x$ es la distancia horizontal en metros, y la función es la altura en metros):</p><p>$$A(x) = \\begin{cases} 50 - \\frac{1}{2}x^2 & \\text{si } 0 \\le x < 10 \\\\ m(x - 10) + h & \\text{si } x \\ge 10 \\end{cases}$$</p><p>Se requiere que la pista no tenga saltos (sea continua) y, además, el ingeniero impone que en el punto de conexión ($x=10$) la altura exacta sea de $0$ metros, a ras de suelo.</p><p>Determina los valores necesarios de $m$ y $h$ sin usar derivadas.</p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong> $h = 0$, $m \\in \\mathbb{R}$</p><p>1. Continuidad límite izquierdo en $x=10$: $50 - \\frac{1}{2}(10)^2 = 0$.</p><p>2. Continuidad límite derecho en $x=10$: $m(10 - 10) + h = h$.</p><p>Por tanto, $h = 0$. Como $m$ queda multiplicada por cero en el límite, cualquier valor real de $m$ mantendrá la continuidad (aunque cambiará la inclinación tras tocar el suelo).</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T10:08:02.819Z",
+    "updatedAt": "2026-07-31T10:08:02.819Z",
+    "contentHash": "7bb4f07b4dfa7265",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

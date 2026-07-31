@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0",
+  "exerciseSchemaVersion": "4.0",
+  "generatedAt": "2026-07-31T10:17:29.091Z",
+  "basePath": "ejercicios/",
+  "exerciseCount": 1,
+  "filters": {
+    "stages": [
+      "Bachillerato"
+    ],
+    "courses": [
+      "1_Bachillerato"
+    ],
+    "topics": [
+      "Análisis"
+    ],
+    "subtopics": [
+      "Continuidad de funciones"
+    ],
+    "exerciseTypes": [
+      "Determinación de parámetros"
+    ],
+    "difficulties": [
+      "media"
+    ],
+    "protocols": [
+      "C",
+      "H"
+    ]
+  },
+  "exercises": [
+    {
+      "id": "estudio-de-parametros-para-la-continuidad-de-una-fun-e9483ffa",
+      "title": "Estudio de parámetros para la continuidad de una función a trozos",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis",
+      "subtopic": "Continuidad de funciones",
+      "exerciseType": "Determinación de parámetros",
+      "protocols": [
+        "C",
+        "H"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Aplicar la definición de continuidad en un punto mediante límites laterales.",
+        "Plantear un sistema de ecuaciones a partir de condiciones analíticas.",
+        "Interpretar la incompatibilidad de un sistema en el contexto de una función a trozos."
+      ],
+      "prerequisites": [
+        "Cálculo de límites laterales.",
+        "Resolución y clasificación de sistemas de ecuaciones lineales."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-07-31T10:08:02.819Z",
+      "contentHash": "7bb4f07b4dfa7265",
+      "url": "ejercicios/Ejercicios/1_BACH/estudio-de-parametros-para-la-continuidad-de-una-fun_REVISADO%20(1).json"
+    }
+  ]
+}
