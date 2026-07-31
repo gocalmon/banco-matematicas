@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "2_Bachillerato",
+    "topic": "Programación Lineal",
+    "subtopic": "Optimización bidimensional",
+    "exerciseType": "Resolución de un problema de programación lineal con dos variables",
+    "protocols": [
+      "A"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 45,
+    "learningObjectives": [
+      "Modelizar matemáticamente un problema verbal de optimización de recursos.",
+      "Representar gráficamente inecuaciones lineales y determinar la región factible.",
+      "Identificar restricciones redundantes mediante el análisis gráfico y algebraico.",
+      "Aplicar el método de los vértices para hallar la solución óptima."
+    ],
+    "prerequisites": [
+      "Resolución de sistemas de inecuaciones lineales con dos variables.",
+      "Representación de rectas en el plano cartesiano.",
+      "Cálculo de intersecciones entre rectas."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 15,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T12:01:19.180Z",
+    "id": "optimizacion-de-una-explotacion-agricola-sostenible-e587fce9"
+  },
+  "title": "Optimización de una Explotación Agrícola Sostenible",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver un problema clásico de optimización de recursos. Lee atentamente el enunciado, prestando especial atención a lo que tenemos, a lo que nos limitan y a lo que queremos conseguir.",
+      "content": "<blockquote>\n<p><strong>1. Explotación Agrícola Sostenible:</strong> Un agricultor de Palencia dispone de $50$ hectáreas de terreno. Puede cultivar trigo ($x$) o remolacha ($y$). El trigo requiere una inversión de $200$/ha y $20\\text{ m}^3$ de agua/ha. La remolacha requiere $400$/ha y $80\\text{ m}^3$ de agua/ha. Dispone de un capital máximo de $14\\,000$ y un cupo de agua de $2\\,400\\text{ m}^3$. La PAC impone que la superficie de trigo sea al menos igual a la de remolacha. Si el beneficio es de $500$/ha de trigo y $900$/ha de remolacha, halla la distribución óptima de la finca.</p>\n</blockquote>",
+      "hints": [
+        "Identifica qué representan las variables $x$ e $y$.",
+        "Busca la función que queremos hacer lo más grande o pequeña posible.",
+        "Haz una lista de todas las condiciones que limitan el problema (terreno, dinero, agua, normativa)."
+      ]
+    },
+    {
+      "title": "Planificación y Modelado",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para atacar este problema, usaremos la Programación Lineal. Primero, traduciremos el texto a lenguaje matemático. Definiremos las variables, la función objetivo a maximizar y el sistema de inecuaciones que forma las restricciones.",
+      "content": "<h3>1. Variables de decisión</h3>\n<p>El enunciado ya nos sugiere las variables, que representan las áreas a cultivar (por tanto, no pueden ser negativas):</p>\n<ul>\n<li>$x$: hectáreas dedicadas al cultivo de trigo ($x \\ge 0$).</li>\n<li>$y$: hectáreas dedicadas al cultivo de remolacha ($y \\ge 0$).</li>\n</ul>\n<h3>2. Función Objetivo</h3>\n<p>Queremos maximizar el beneficio total. Sabiendo el beneficio por hectárea de cada cultivo, la función es:</p>\n<p>$$B(x, y) = 500x + 900y$$</p>\n<h3>3. Restricciones del problema</h3>\n<ul>\n<li><strong>Terreno:</strong> El total cultivado no puede superar las hectáreas disponibles.<br>$$x + y \\le 50$$</li>\n<li><strong>Capital:</strong> El coste de inversión está limitado a $14\\,000$.<br>$$200x + 400y \\le 14\\,000$$</li>\n<li><strong>Agua:</strong> El consumo de agua está limitado a $2\\,400\\text{ m}^3$.<br>$$20x + 80y \\le 2\\,400$$</li>\n<li><strong>Normativa PAC:</strong> El trigo debe ser mayor o igual a la remolacha.<br>$$x \\ge y$$</li>\n</ul>\n<p>Nuestro objetivo será dibujar todas estas restricciones para hallar la <strong>región factible</strong> y evaluar los vértices en la función objetivo.</p>"
+    },
+    {
+      "title": "Simplificación de inecuaciones",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Antes de empezar a dibujar, siempre es buena idea simplificar las inecuaciones si es posible. Esto nos facilitará mucho los cálculos posteriores.",
+      "content": "<p>Vamos a simplificar las inecuaciones dividiendo ambos miembros por un número positivo (lo cual no cambia el sentido de la desigualdad):</p>\n<ul>\n<li><strong>Capital:</strong> $$200x + 400y \\le 14\\,000$$<br>Dividimos entre $200$:<br>$$x + 2y \\le 70$$</li>\n<li><strong>Agua:</strong> $$20x + 80y \\le 2\\,400$$<br>Dividimos entre $20$:<br>$$x + 4y \\le 120$$</li>\n<li><strong>PAC:</strong> $$x \\ge y$$<br>Lo escribiremos como:<br>$$x - y \\ge 0$$</li>\n</ul>\n<p><strong>El sistema definitivo de restricciones es:</strong></p>\n<p>$$\\begin{cases} x + y \\le 50 \\\\ x + 2y \\le 70 \\\\ x + 4y \\le 120 \\\\ x - y \\ge 0 \\\\ x \\ge 0, y \\ge 0 \\end{cases}$$</p>",
+      "theory": "<p><strong>Propiedad de las inecuaciones:</strong> Si se dividen o multiplican los dos miembros de una inecuación por un mismo número real positivo, se obtiene una inecuación equivalente con el mismo sentido.</p>"
+    },
+    {
+      "title": "Restricción de Terreno",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Dibujemos la primera restricción: el límite de terreno. Representaremos la recta frontera y determinaremos qué lado cumple la condición.",
+      "content": "<h3>Restricción 1: $x + y \\le 50$</h3>\n<p>La recta frontera es $L_1: x + y = 50$.</p>\n<p>Buscamos dos puntos para dibujarla:</p>\n<ul>\n<li>Si $x = 0 \\Rightarrow y = 50 \\Rightarrow (0, 50)$</li>\n<li>Si $y = 0 \\Rightarrow x = 50 \\Rightarrow (50, 0)$</li>\n</ul>\n<p>Tomamos un punto de prueba que no esté en la recta, por ejemplo el origen $(0,0)$:</p>\n<p>$$0 + 0 \\le 50 \\Rightarrow 0 \\le 50$$</p>\n<p>Como la desigualdad es verdadera, el semiplano solución es el que contiene al punto $(0,0)$. En la gráfica marcamos la zona válida en azul claro.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='400' height='400' fill='#0f172a' />\n  <!-- Grid -->\n  <g stroke='#334155' stroke-width='1' opacity='0.5'>\n    <line x1='40' y1='0' x2='40' y2='360' />\n    <line x1='93.3' y1='0' x2='93.3' y2='360' />\n    <line x1='146.6' y1='0' x2='146.6' y2='360' />\n    <line x1='200' y1='0' x2='200' y2='360' />\n    <line x1='253.3' y1='0' x2='253.3' y2='360' />\n    <line x1='306.6' y1='0' x2='306.6' y2='360' />\n    <line x1='360' y1='0' x2='360' y2='360' />\n    <line x1='40' y1='360' x2='400' y2='360' />\n    <line x1='40' y1='306.6' x2='400' y2='306.6' />\n    <line x1='40' y1='253.3' x2='400' y2='253.3' />\n    <line x1='40' y1='200' x2='400' y2='200' />\n    <line x1='40' y1='146.6' x2='400' y2='146.6' />\n    <line x1='40' y1='93.3' x2='400' y2='93.3' />\n    <line x1='40' y1='40' x2='400' y2='40' />\n  </g>\n  <!-- Axes -->\n  <line x1='40' y1='360' x2='380' y2='360' stroke='#fbbf24' stroke-width='2.5' marker-end='url(#arrow)'/>\n  <line x1='40' y1='360' x2='40' y2='20' stroke='#fbbf24' stroke-width='2.5' marker-end='url(#arrow)'/>\n  <text x='385' y='355' fill='#fbbf24' font-size='14' font-family='sans-serif'>x</text>\n  <text x='25' y='15' fill='#fbbf24' font-size='14' font-family='sans-serif'>y</text>\n  <!-- Labels -->\n  <text x='190' y='380' fill='#94a3b8' font-size='12' font-family='sans-serif'>30</text>\n  <text x='295' y='380' fill='#94a3b8' font-size='12' font-family='sans-serif'>50</text>\n  <text x='20' y='205' fill='#94a3b8' font-size='12' font-family='sans-serif'>30</text>\n  <text x='20' y='98' fill='#94a3b8' font-size='12' font-family='sans-serif'>50</text>\n  <!-- Region x+y<=50 & x>=0, y>=0 -->\n  <polygon points='40,360 306.6,360 40,93.3' fill='#3b82f6' opacity='0.3' />\n  <!-- Line x+y=50 -->\n  <line x1='40' y1='93.3' x2='360' y2='360' stroke='#3b82f6' stroke-width='2' />\n  <text x='310' y='340' fill='#3b82f6' font-size='14' font-family='sans-serif'>x+y=50</text>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='5' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24' />\n    </marker>\n  </defs>\n</svg>"
+    },
+    {
+      "title": "Restricción de Capital",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Añadimos la limitación de dinero. Solapamos esta nueva área con la anterior para ir construyendo nuestra región factible.",
+      "content": "<h3>Restricción 2: $x + 2y \\le 70$</h3>\n<p>La recta frontera es $L_2: x + 2y = 70$.</p>\n<p>Puntos de corte:</p>\n<ul>\n<li>Si $x = 0 \\Rightarrow 2y = 70 \\Rightarrow y = 35 \\Rightarrow (0, 35)$</li>\n<li>Si $y = 0 \\Rightarrow x = 70 \\Rightarrow (70, 0)$</li>\n</ul>\n<p>Comprobamos el punto $(0,0)$:</p>\n<p>$$0 + 2(0) \\le 70 \\Rightarrow 0 \\le 70$$</p>\n<p>La desigualdad es cierta. El semiplano incluye al origen. La nueva región válida (en color morado) es la intersección del área anterior con esta nueva limitación.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='400' height='400' fill='#0f172a' />\n  <!-- Grid -->\n  <g stroke='#334155' stroke-width='1' opacity='0.5'>\n    <line x1='40' y1='0' x2='40' y2='360' />\n    <line x1='93.3' y1='0' x2='93.3' y2='360' />\n    <line x1='146.6' y1='0' x2='146.6' y2='360' />\n    <line x1='200' y1='0' x2='200' y2='360' />\n    <line x1='253.3' y1='0' x2='253.3' y2='360' />\n    <line x1='306.6' y1='0' x2='306.6' y2='360' />\n    <line x1='360' y1='0' x2='360' y2='360' />\n    <line x1='40' y1='360' x2='400' y2='360' />\n    <line x1='40' y1='306.6' x2='400' y2='306.6' />\n    <line x1='40' y1='253.3' x2='400' y2='253.3' />\n    <line x1='40' y1='200' x2='400' y2='200' />\n    <line x1='40' y1='146.6' x2='400' y2='146.6' />\n    <line x1='40' y1='93.3' x2='400' y2='93.3' />\n    <line x1='40' y1='40' x2='400' y2='40' />\n  </g>\n  <!-- Axes -->\n  <line x1='40' y1='360' x2='380' y2='360' stroke='#fbbf24' stroke-width='2.5' marker-end='url(#arrow)'/>\n  <line x1='40' y1='360' x2='40' y2='20' stroke='#fbbf24' stroke-width='2.5' marker-end='url(#arrow)'/>\n  <text x='385' y='355' fill='#fbbf24' font-size='14' font-family='sans-serif'>x</text>\n  <text x='25' y='15' fill='#fbbf24' font-size='14' font-family='sans-serif'>y</text>\n  \n  <!-- Area intersection -->\n  <polygon points='40,360 306.6,360 200,253.3 40,173.3' fill='#a855f7' opacity='0.4' />\n  \n  <!-- Line 1 x+y=50 -->\n  <line x1='40' y1='93.3' x2='360' y2='360' stroke='#3b82f6' stroke-width='2' stroke-dasharray='4' />\n  <!-- Line 2 x+2y=70 -->\n  <line x1='40' y1='173.3' x2='400' y2='360' stroke='#a855f7' stroke-width='2' />\n  <text x='300' y='280' fill='#a855f7' font-size='14' font-family='sans-serif'>x+2y=70</text>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='5' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24' />\n    </marker>\n  </defs>\n</svg>"
+    },
+    {
+      "title": "Restricción de Agua: ¿Es redundante?",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Ahora evaluamos la restricción de agua. Fíjate bien en lo que pasa al dibujarla sobre nuestra zona actual.",
+      "content": "<h3>Restricción 3: $x + 4y \\le 120$</h3>\n<p>Recta frontera $L_3: x + 4y = 120$.</p>\n<ul>\n<li>Si $x = 0 \\Rightarrow 4y = 120 \\Rightarrow y = 30 \\Rightarrow (0, 30)$</li>\n<li>Si $y = 0 \\Rightarrow x = 120 \\Rightarrow (120, 0)$</li>\n</ul>\n<p>Si la dibujamos (línea roja), observamos que <strong>pasa completamente por encima</strong> y por la derecha de nuestra región factible actual delimitada por el terreno y el capital.</p>\n<p>Esto significa que si cumplimos las restricciones de terreno y capital, <strong>siempre</strong> vamos a cumplir la de agua de forma holgada. A este tipo de restricciones se las llama <strong>restricciones redundantes</strong>, ya que no modifican la región factible y podemos prescindir de ellas en los cálculos posteriores.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='400' height='400' fill='#0f172a' />\n  <!-- Grid -->\n  <g stroke='#334155' stroke-width='1' opacity='0.5'>\n    <line x1='40' y1='0' x2='40' y2='360' />\n    <line x1='93.3' y1='0' x2='93.3' y2='360' />\n    <line x1='146.6' y1='0' x2='146.6' y2='360' />\n    <line x1='200' y1='0' x2='200' y2='360' />\n    <line x1='253.3' y1='0' x2='253.3' y2='360' />\n    <line x1='306.6' y1='0' x2='306.6' y2='360' />\n    <line x1='360' y1='0' x2='360' y2='360' />\n    <line x1='40' y1='360' x2='400' y2='360' />\n    <line x1='40' y1='306.6' x2='400' y2='306.6' />\n    <line x1='40' y1='253.3' x2='400' y2='253.3' />\n    <line x1='40' y1='200' x2='400' y2='200' />\n    <line x1='40' y1='146.6' x2='400' y2='146.6' />\n    <line x1='40' y1='93.3' x2='400' y2='93.3' />\n    <line x1='40' y1='40' x2='400' y2='40' />\n  </g>\n  <!-- Axes -->\n  <line x1='40' y1='360' x2='380' y2='360' stroke='#fbbf24' stroke-width='2.5' marker-end='url(#arrow)'/>\n  <line x1='40' y1='360' x2='40' y2='20' stroke='#fbbf24' stroke-width='2.5' marker-end='url(#arrow)'/>\n  <text x='385' y='355' fill='#fbbf24' font-size='14' font-family='sans-serif'>x</text>\n  <text x='25' y='15' fill='#fbbf24' font-size='14' font-family='sans-serif'>y</text>\n  \n  <!-- Area previous -->\n  <polygon points='40,360 306.6,360 200,253.3 40,173.3' fill='#a855f7' opacity='0.4' />\n  \n  <!-- Line 1 and 2 -->\n  <line x1='40' y1='93.3' x2='360' y2='360' stroke='#3b82f6' stroke-width='1' stroke-dasharray='4' />\n  <line x1='40' y1='173.3' x2='400' y2='360' stroke='#a855f7' stroke-width='1' stroke-dasharray='4' />\n  \n  <!-- Line 3 x+4y=120 -->\n  <line x1='40' y1='200' x2='360' y2='280' stroke='#ef4444' stroke-width='2' />\n  <text x='220' y='230' fill='#ef4444' font-size='14' font-family='sans-serif'>x+4y=120</text>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='5' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24' />\n    </marker>\n  </defs>\n</svg>",
+      "checkpoint": {
+        "question": "¿Por qué es matemáticamente imposible que la restricción de agua afecte a nuestra decisión óptima?",
+        "options": [
+          {
+            "text": "Porque el máximo valor que alcanza la expresión x + 4y en la región actual es menor de 120.",
+            "correct": true,
+            "feedback": "¡Exacto! El punto más 'alto' de nuestra región es (30,20). Allí, $30 + 4(20) = 110$, que es estrictamente menor que $120$. Toda la región cumple la inecuación de sobra."
+          },
+          {
+            "text": "Porque el agua es más barata que el terreno y no limita los beneficios.",
+            "correct": false,
+            "feedback": "Es una interpretación económica, pero en matemáticas lo que importa es si la inecuación corta o limita geométricamente el conjunto de soluciones posibles."
+          },
+          {
+            "text": "Porque la recta no pasa por el origen de coordenadas.",
+            "correct": false,
+            "feedback": "Que no pase por el origen no la hace redundante. La restricción de capital tampoco pasa por el origen y sí limita la región."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Restricción de la PAC y Región Factible Final",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Finalmente, incorporamos la norma de la política agraria, que nos exige tener al menos tanto trigo como remolacha. Esto corta nuestra región a la mitad.",
+      "content": "<h3>Restricción 4: $x \\ge y$ (o $x - y \\ge 0$)</h3>\n<p>La recta frontera es $L_4: x = y$.</p>\n<p>Es la bisectriz del primer cuadrante. Pasa por $(0,0)$ y $(50,50)$.</p>\n<p>Tomamos un punto de prueba fuera de esta recta, por ejemplo el punto $(10, 0)$ (solo trigo):</p>\n<p>$$10 \\ge 0$$</p>\n<p>Es verdadero, por lo que el semiplano válido es el situado \"por debajo\" o a la derecha de la bisectriz.</p>\n<p><strong>Región Factible (S):</strong><br>La intersección de las condiciones de terreno, capital, normativa y no negatividad nos da el polígono sombreado en verde. Es una región <strong>acotada y convexa</strong>, por lo que el máximo absoluto existirá seguro y estará en uno de sus vértices.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='400' height='400' fill='#0f172a' />\n  <!-- Grid -->\n  <g stroke='#334155' stroke-width='1' opacity='0.5'>\n    <line x1='40' y1='0' x2='40' y2='360' />\n    <line x1='93.3' y1='0' x2='93.3' y2='360' />\n    <line x1='146.6' y1='0' x2='146.6' y2='360' />\n    <line x1='200' y1='0' x2='200' y2='360' />\n    <line x1='253.3' y1='0' x2='253.3' y2='360' />\n    <line x1='306.6' y1='0' x2='306.6' y2='360' />\n    <line x1='360' y1='0' x2='360' y2='360' />\n    <line x1='40' y1='360' x2='400' y2='360' />\n    <line x1='40' y1='306.6' x2='400' y2='306.6' />\n    <line x1='40' y1='253.3' x2='400' y2='253.3' />\n    <line x1='40' y1='200' x2='400' y2='200' />\n    <line x1='40' y1='146.6' x2='400' y2='146.6' />\n    <line x1='40' y1='93.3' x2='400' y2='93.3' />\n    <line x1='40' y1='40' x2='400' y2='40' />\n  </g>\n  <!-- Axes -->\n  <line x1='40' y1='360' x2='380' y2='360' stroke='#fbbf24' stroke-width='2.5' marker-end='url(#arrow)'/>\n  <line x1='40' y1='360' x2='40' y2='20' stroke='#fbbf24' stroke-width='2.5' marker-end='url(#arrow)'/>\n  <text x='385' y='355' fill='#fbbf24' font-size='14' font-family='sans-serif'>x</text>\n  <text x='25' y='15' fill='#fbbf24' font-size='14' font-family='sans-serif'>y</text>\n  \n  <!-- Final Area: (0,0), (50,0), (30,20), (70/3, 70/3) -->\n  <polygon points='40,360 306.6,360 200,253.3 164.4,235.6' fill='#10b981' opacity='0.5' />\n  \n  <!-- Borders -->\n  <line x1='164.4' y1='235.6' x2='200' y2='253.3' stroke='#a855f7' stroke-width='2' /> <!-- Cap -->\n  <line x1='200' y1='253.3' x2='306.6' y2='360' stroke='#3b82f6' stroke-width='2' /> <!-- Terreno -->\n  <line x1='40' y1='360' x2='306.6' y2='360' stroke='#fbbf24' stroke-width='2' /> <!-- x axis -->\n  \n  <!-- Line 4 x=y -->\n  <line x1='40' y1='360' x2='250' y2='150' stroke='#10b981' stroke-width='2' />\n  <text x='260' y='140' fill='#10b981' font-size='14' font-family='sans-serif'>x=y</text>\n  \n  <!-- Vertex Labels -->\n  <circle cx='40' cy='360' r='4' fill='white'/>\n  <text x='25' y='375' fill='white' font-size='12' font-family='sans-serif'>A</text>\n  <circle cx='306.6' cy='360' r='4' fill='white'/>\n  <text x='310' y='350' fill='white' font-size='12' font-family='sans-serif'>B</text>\n  <circle cx='200' cy='253.3' r='4' fill='white'/>\n  <text x='210' y='250' fill='white' font-size='12' font-family='sans-serif'>C</text>\n  <circle cx='164.4' cy='235.6' r='4' fill='white'/>\n  <text x='140' y='230' fill='white' font-size='12' font-family='sans-serif'>D</text>\n  \n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='5' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24' />\n    </marker>\n  </defs>\n</svg>"
+    },
+    {
+      "title": "Cálculo de los vértices (I)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Con la región dibujada, el siguiente paso es identificar las coordenadas exactas de sus esquinas, o vértices. Algunos son evidentes, pero otros requieren resolver sistemas de ecuaciones.",
+      "content": "<p>La región factible tiene 4 vértices. Vamos a calcularlos resolviendo los sistemas formados por las rectas que se cruzan en cada uno de ellos.</p>\n<p><strong>Vértice A:</strong> Es el origen de coordenadas.<br>$$A = (0, 0)$$</p>\n<p><strong>Vértice B:</strong> Intersección del eje $x$ ($y=0$) y la recta de terreno ($x+y=50$).</p>\n<p>$$\\begin{cases} y = 0 \\\\ x + y = 50 \\end{cases} \\Rightarrow x + 0 = 50 \\Rightarrow x = 50$$</p>\n<p>$$B = (50, 0)$$</p>\n<p><strong>Vértice C:</strong> Intersección de la recta de terreno ($x+y=50$) y la de capital ($x+2y=70$).</p>\n<p>$$\\begin{cases} x + y = 50 \\\\ x + 2y = 70 \\end{cases}$$</p>\n<p>Restamos la primera ecuación a la segunda: $(x+2y) - (x+y) = 70 - 50 \\Rightarrow y = 20$.<br>Sustituimos en la primera: $x + 20 = 50 \\Rightarrow x = 30$.</p>\n<p>$$C = (30, 20)$$</p>"
+    },
+    {
+      "title": "Cálculo de los vértices (II)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Vamos a por el último vértice, donde la restricción de capital choca con la obligación de cultivar el mismo o más trigo que remolacha.",
+      "content": "<p><strong>Vértice D:</strong> Intersección de la recta de capital ($x+2y=70$) y la norma PAC ($x=y$).</p>\n<p>$$\\begin{cases} x + 2y = 70 \\\\ x = y \\end{cases}$$</p>\n<p>Sustituimos $x$ por $y$ en la primera ecuación:</p>\n<p>$$y + 2y = 70 \\Rightarrow 3y = 70 \\Rightarrow y = \\frac{70}{3}$$</p>\n<p>Como $x=y$, entonces $x = \\frac{70}{3}$.</p>\n<p>$$D = \\left( \\frac{70}{3}, \\frac{70}{3} \\right) \\approx (23.33, 23.33)$$</p>\n<p>Ya tenemos los cuatro vértices candidatos a maximizar nuestra función objetivo.</p>",
+      "theory": "<p><strong>Teorema Fundamental de la Programación Lineal:</strong> Si una función lineal objetivo tiene un valor máximo (o mínimo) en una región factible acotada por inecuaciones lineales, ese valor extremo se alcanza en, al menos, un vértice de dicha región.</p>"
+    },
+    {
+      "title": "Evaluación de la Función Objetivo",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ha llegado el momento de la verdad. Evaluaremos nuestra función de beneficios en cada uno de los cuatro vértices que hemos calculado. El que dé el valor más alto será nuestra solución óptima.",
+      "content": "<p>Nuestra función objetivo a maximizar es el beneficio: $B(x, y) = 500x + 900y$.</p>\n<p>Sustituimos las coordenadas de cada vértice $(x, y)$ en la función:</p>\n<ul>\n<li><strong>Vértice A $(0, 0)$:</strong><br>$$B(0, 0) = 500(0) + 900(0) = 0$$</li>\n<li><strong>Vértice B $(50, 0)$:</strong><br>$$B(50, 0) = 500(50) + 900(0) = 25\\,000$$</li>\n<li><strong>Vértice C $(30, 20)$:</strong><br>$$B(30, 20) = 500(30) + 900(20) = 15\\,000 + 18\\,000 = 33\\,000$$</li>\n<li><strong>Vértice D $\\left(\\frac{70}{3}, \\frac{70}{3}\\right)$:</strong><br>$$B\\left(\\frac{70}{3}, \\frac{70}{3}\\right) = 500\\left(\\frac{70}{3}\\right) + 900\\left(\\frac{70}{3}\\right) = 1400 \\cdot \\frac{70}{3} = \\frac{98\\,000}{3} \\approx 32\\,666.67$$</li>\n</ul>\n<p>Comparando los resultados, el valor máximo es $33\\,000$, que se alcanza en el vértice $C$.</p>"
+    },
+    {
+      "title": "Comprobación de la solución",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Como buenos matemáticos, no damos nada por sentado. Vamos a coger nuestra solución, 30 hectáreas de trigo y 20 de remolacha, y comprobaremos si realmente cumple todas y cada una de las condiciones del enunciado original, sin usar las ecuaciones simplificadas.",
+      "content": "<p>Nuestra solución propuesta es: $x = 30$ ha (trigo) y $y = 20$ ha (remolacha).</p>\n<p>Verificamos con los <strong>datos originales</strong> del enunciado:</p>\n<ol>\n<li><strong>Terreno ($50$ ha máximo):</strong> $30 + 20 = 50$ ha. $\\Rightarrow$ Se usan exactamente las $50$ hectáreas. <strong>(Cumple)</strong></li>\n<li><strong>Inversión ($14\\,000$ máximo):</strong> $200(30) + 400(20) = 6\\,000 + 8\\,000 = 14\\,000$. $\\Rightarrow$ Se gasta todo el presupuesto. <strong>(Cumple)</strong></li>\n<li><strong>Agua ($2\\,400\\text{ m}^3$ máximo):</strong> $20(30) + 80(20) = 600 + 1\\,600 = 2\\,200\\text{ m}^3$. $\\Rightarrow$ $2\\,200 \\le 2\\,400$. Sobran $200\\text{ m}^3$ de agua. <strong>(Cumple holgadamente, confirmando que era redundante)</strong></li>\n<li><strong>Normativa PAC ($x \\ge y$):</strong> $30 \\ge 20$. $\\Rightarrow$ Hay más hectáreas de trigo que de remolacha. <strong>(Cumple)</strong></li>\n</ol>\n<p>La solución es matemáticamente sólida y coherente con el mundo físico (las hectáreas no son negativas y están dentro de límites manejables).</p>"
+    },
+    {
+      "title": "Interpretación del Resultado",
+      "layout": "centered",
+      "phase": "interpretar",
+      "narration": "Con los números claros, volvemos a la realidad del agricultor. Le explicaremos su plan de cultivo ideal y los resultados que puede esperar.",
+      "content": "<p><strong>Respuesta Final:</strong></p>\n<p>Para maximizar sus beneficios respetando todas las limitaciones de terreno, presupuesto, agua y la normativa europea, el agricultor debe distribuir su finca de la siguiente manera:</p>\n<ul>\n<li>Plantar <strong>$30$ hectáreas de trigo</strong>.</li>\n<li>Plantar <strong>$20$ hectáreas de remolacha</strong>.</li>\n</ul>\n<p><strong>Consecuencias de esta decisión:</strong></p>\n<ul>\n<li>El <strong>beneficio máximo esperado será de $33\\,000$</strong>.</li>\n<li>Agotará por completo su terreno disponible y su capital de inversión. A estos recursos se les llama <em>recursos críticos</em> o <em>activos</em>, porque son los que realmente están frenando un mayor beneficio.</li>\n<li>Le sobrarán $200\\text{ m}^3$ de agua, lo que le da margen de seguridad ante sequías sin afectar a su beneficio.</li>\n</ul>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos la estrategia global que hemos seguido. Estos pasos te servirán para cualquier problema similar.",
+      "content": "<p>El método seguido se resume en estos pasos:</p>\n<ol>\n<li><strong>Modelado:</strong> Identificamos incógnitas ($x, y$), la función a optimizar ($B(x,y)$) y las restricciones lineales a partir del texto.</li>\n<li><strong>Simplificación y Representación:</strong> Simplificamos las inecuaciones y dibujamos sus rectas frontera. Comprobando un punto (ej. el origen), determinamos qué semiplano es válido para cada una.</li>\n<li><strong>Región Factible:</strong> La intersección de todos los semiplanos (incluyendo la no negatividad) forma el polígono de soluciones posibles. Descartamos visualmente restricciones redundantes (como el agua).</li>\n<li><strong>Vértices:</strong> Calculamos las coordenadas de las esquinas del polígono resolviendo los sistemas de ecuaciones de las rectas que se cortan en ellas.</li>\n<li><strong>Evaluación y Conclusión:</strong> Sustituimos los vértices en la función objetivo. El que da el valor más alto es el máximo. Finalmente, contextualizamos el resultado con las unidades del problema.</li>\n</ol>\n<p><strong>Solución:</strong> $x = 30$ ha de trigo, $y = 20$ ha de remolacha, beneficio $= 33\\,000$.</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora te toca a ti. Usa la misma técnica, paso a paso, para resolver este problema sobre producción de muebles. No mires la solución hasta haberlo intentado.",
+      "content": "<p><strong>Ejercicio:</strong> Una carpintería fabrica sillas y mesas. Cada silla requiere $2$ horas de corte y $1$ hora de montaje, dejando un beneficio de $30$€. Cada mesa requiere $1$ hora de corte y $2$ horas de montaje, dejando un beneficio de $50$€. Diariamente se dispone como máximo de $40$ horas para corte y $50$ horas para montaje. Por un contrato previo, se deben fabricar al menos el doble de sillas que de mesas. ¿Cuántas unidades de cada mueble se deben fabricar para maximizar el beneficio?</p>\n<p><em>Sugerencia: Sigue exactamente las fases de modelado, representación gráfica, cálculo de vértices y evaluación de la función objetivo.</em></p>",
+      "practiceAnswer": "<p><strong>Función a maximizar:</strong> $B(x,y) = 30x + 50y$ ($x$=sillas, $y$=mesas).</p>\n<p><strong>Restricciones:</strong> $2x + y \\le 40$; $x + 2y \\le 50$; $x \\ge 2y$; $x, y \\ge 0$.</p>\n<p><strong>Vértices de la región factible:</strong> $(0,0)$, $(20,0)$ y $(16,8)$. <em>Nota: el punto de corte con montaje $x+2y=50$ y $x=2y$ es $(25, 12.5)$ pero incumple el corte. El vértice real es la intersección de corte ($2x+y=40$) y contrato ($x=2y$) que es $(16,8)$.</em></p>\n<p><strong>Beneficio en (16,8):</strong> $30(16) + 50(8) = 480 + 400 = 880$€.</p>\n<p><strong>Solución óptima:</strong> Fabricar $16$ sillas y $8$ mesas para un beneficio máximo de $880$€.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Piensa más allá. El mismo concepto matemático puede aplicarse a una situación totalmente diferente, como decidir qué comer.",
+      "content": "<p><strong>Ejercicio:</strong> El departamento de nutrición de un hospital debe diseñar una dieta combinando dos preparados, A y B. Cada porción de A cuesta $3$€, aporta $20$g de proteínas y $10$g de grasas. Cada porción de B cuesta $4$€, aporta $10$g de proteínas y $30$g de grasas. La dieta mínima requerida por un paciente es de $80$g de proteínas y $90$g de grasas. ¿Cuántas porciones de cada preparado deben incluirse en la dieta para que el coste sea <strong>mínimo</strong>?</p>\n<p><em>Pista conceptual: El proceso es idéntico, pero cuidado: ahora las restricciones son de mínimos ($\\ge$) en lugar de máximos, lo que cambia la forma de la región factible (será abierta por arriba), y la función objetivo debe minimizarse.</em></p>",
+      "practiceAnswer": "<p><strong>Función a minimizar:</strong> $C(x,y) = 3x + 4y$ ($x$=porciones A, $y$=porciones B).</p>\n<p><strong>Restricciones:</strong> $20x + 10y \\ge 80$; $10x + 30y \\ge 90$; $x, y \\ge 0$. Simplificadas: $2x+y \\ge 8$; $x+3y \\ge 9$.</p>\n<p><strong>Vértices de la región no acotada:</strong> $(0,9)$ [solo B]; $(3,2)$ [intersección]; $(8,0)$ [solo A].</p>\n<p><strong>Evaluación de costes:</strong> $C(0,9) = 36$€; $C(3,2) = 3(3) + 4(2) = 17$€; $C(8,0) = 24$€.</p>\n<p><strong>Solución óptima:</strong> Se deben suministrar $3$ porciones del preparado A y $2$ porciones del preparado B, para conseguir un coste mínimo de $17$€ cumpliendo los aportes nutricionales.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T12:01:46.358Z",
+    "updatedAt": "2026-07-31T12:01:46.358Z",
+    "contentHash": "48804fa983bcab77",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
