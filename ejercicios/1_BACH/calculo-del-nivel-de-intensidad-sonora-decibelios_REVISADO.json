@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra y funciones",
+    "subtopic": "Logaritmos y sus aplicaciones",
+    "exerciseType": "Problema aplicado de acústica",
+    "protocols": [
+      "B",
+      "I"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Aplicar la definición de logaritmo en contextos físicos reales.",
+      "Operar con potencias de base 10.",
+      "Comprender la utilidad de las escalas logarítmicas para comprimir rangos muy amplios de datos."
+    ],
+    "prerequisites": [
+      "Propiedades de las potencias",
+      "Definición y cálculo de logaritmos decimales"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 7,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:21:24.001Z",
+    "id": "calculo-del-nivel-de-intensidad-sonora-decibelios-463fb5b2"
+  },
+  "title": "Cálculo del nivel de intensidad sonora (Decibelios)",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a analizar cómo se mide el sonido. El oído humano percibe intensidades tan dispares que usar una escala lineal sería imposible. Por eso, usamos los decibelios, que se basan en una fórmula matemática con logaritmos.",
+      "content": "<p><strong>Ejercicio 10: Problema aplicado de acústica (Escala logarítmica):</strong> El nivel de intensidad sonora $L$ (medido en decibelios, dB) se relaciona con la intensidad física de la onda $I$ mediante el modelo logarítmico:</p><p>$$L = 10 \\cdot \\log\\left(\\frac{I}{I_0}\\right)$$</p><p>donde $I_0 = 10^{-12}$ W/m² es el umbral mínimo de audición humana. Calcula el nivel de intensidad sonora $L$ en decibelios provocado por un motor que emite una intensidad de $I = 10^{-4}$ W/m².</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "El problema nos da la fórmula y todos los datos necesarios. Nuestra tarea se reduce a sustituir los valores correctamente y aplicar propiedades matemáticas básicas para resolver la ecuación paso a paso.",
+      "content": "<p>Para encontrar el nivel de decibelios del motor, seguiremos estos pasos:</p><ol><li><strong>Identificar los datos:</strong> Tenemos la intensidad del motor ($I$) y la intensidad de referencia ($I_0$).</li><li><strong>Sustituir en la fórmula:</strong> Reemplazaremos las letras $I$ e $I_0$ por sus valores numéricos correspondientes.</li><li><strong>Operar con potencias:</strong> Usaremos la regla de división de potencias con la misma base para simplificar la fracción del argumento del logaritmo.</li><li><strong>Calcular el logaritmo:</strong> Al quedar una potencia de base 10, calcular el logaritmo decimal será muy directo. Finalmente, multiplicaremos por 10.</li></ol>"
+    },
+    {
+      "title": "Paso 1 y 2: Sustitución y propiedades de las potencias",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Primero metemos los datos en la fórmula. Nos queda una división de potencias de base diez. Recuerda que, para dividir potencias con la misma base, se restan los exponentes. ¡Ojo con el signo menos del denominador!",
+      "content": "<p>Partimos de la fórmula original y sustituimos los valores dados:</p><p>$$L = 10 \\cdot \\log\\left(\\frac{10^{-4}}{10^{-12}}\\right)$$</p><p>Ahora, resolvemos la división de potencias dentro del paréntesis. La regla nos dice que $\\frac{a^m}{a^n} = a^{m-n}$.</p><p>En nuestro caso:</p><p>$$\\frac{10^{-4}}{10^{-12}} = 10^{-4 - (-12)}$$</p><p>Operamos los exponentes (menos por menos es más):</p><p>$$-4 + 12 = 8$$</p><p>Por lo tanto, la fracción se simplifica a $10^8$. La fórmula nos queda ahora así:</p><p>$$L = 10 \\cdot \\log(10^8)$$</p>",
+      "warning": "Un error muy común es sumar los exponentes incorrectamente. Restar un número negativo equivale a sumarlo: $-4 - (-12)$ se convierte en $-4 + 12$.",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><text x='200' y='150' fill='#38bdf8' font-family='sans-serif' font-size='36' text-anchor='middle'>10⁻⁴</text><line x1='150' y1='180' x2='250' y2='180' stroke='#94a3b8' stroke-width='4'/><text x='200' y='230' fill='#f43f5e' font-family='sans-serif' font-size='36' text-anchor='middle'>10⁻¹²</text><path d='M280 180 L320 180' stroke='#fbbf24' stroke-width='4' fill='none' marker-end='url(#arrow)'/><defs><marker id='arrow' viewBox='0 0 10 10' refX='5' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/></marker></defs><text x='350' y='190' fill='#10b981' font-family='sans-serif' font-size='36' text-anchor='start'>10⁸</text></svg>"
+    },
+    {
+      "title": "Paso 3 y 4: Cálculo del logaritmo",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Llegamos a la recta final. Tenemos que calcular el logaritmo en base diez de diez a la octava. Por definición, la pregunta que hace el logaritmo es: ¿a qué número elevo la base diez para que me dé diez a la ocho? La respuesta es, obviamente, ocho.",
+      "content": "<p>Continuamos con la expresión obtenida:</p><p>$$L = 10 \\cdot \\log(10^8)$$</p><p>Recordemos la definición fundamental de los logaritmos decimales (base 10, no se escribe). Si $\\log(x) = y$, entonces $10^y = x$.</p><p>Aplicando esto, $\\log(10^8)$ nos pregunta a qué exponente debemos elevar 10 para obtener $10^8$. La respuesta es simplemente el exponente:</p><p>$$\\log(10^8) = 8$$</p><p>Sustituimos esto en nuestra fórmula final:</p><p>$$L = 10 \\cdot 8 = 80$$</p><p><strong>Interpretación:</strong> El motor emite un sonido con un nivel de intensidad de <strong>80 dB</strong>. Esto equivale, aproximadamente, al ruido del tráfico intenso o de un secador de pelo.</p>",
+      "theory": "<p>Propiedad clave de los logaritmos:<br>$\\log_a(a^x) = x$<br>En base 10: $\\log(10^x) = x$</p>",
+      "checkpoint": {
+        "question": "¿Qué nivel de decibelios correspondería al umbral mínimo de audición (cuando $I = I_0$)?",
+        "options": [
+          {
+            "text": "10 dB",
+            "correct": false,
+            "feedback": "No, si sustituyes, el paréntesis no da 10."
+          },
+          {
+            "text": "1 dB",
+            "correct": false,
+            "feedback": "Incorrecto. Revisa el resultado de dividir algo entre sí mismo."
+          },
+          {
+            "text": "0 dB",
+            "correct": true,
+            "feedback": "¡Exacto! Si $I = I_0$, la fracción da 1. Como el $\\log(1) = 0$, entonces $L = 10 \\cdot 0 = 0$ dB."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos lo que hemos hecho. Las escalas logarítmicas, como los decibelios, son una excelente manera de manejar números gigantes y microscópicos usando potencias de 10.",
+      "content": "<ol><li><strong>Sustituir:</strong> Insertamos $I = 10^{-4}$ e $I_0 = 10^{-12}$ en la ecuación $L = 10 \\cdot \\log\\left(\\frac{I}{I_0}\\right)$.</li><li><strong>Simplificar la fracción:</strong> Operamos la división de potencias restando exponentes: $-4 - (-12) = 8$. Obtenemos $\\log(10^8)$.</li><li><strong>Aplicar logaritmo:</strong> Evaluamos $\\log(10^8) = 8$ (el exponente \"baja\").</li><li><strong>Multiplicar:</strong> Finalmente, $L = 10 \\cdot 8 = 80$ dB.</li></ol><p><em>El uso del logaritmo comprime el inmenso rango de intensidades sonoras (desde $10^{-12}$ hasta $10^2$ W/m²) a una escala cómoda y manejable para nosotros, habitualmente de 0 a 140 dB.</em></p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te toca. Usa exactamente el mismo método para encontrar los decibelios de una conversación normal.",
+      "content": "<p>Una conversación normal a un metro de distancia genera una intensidad sonora de aproximadamente $I = 10^{-6}$ W/m².</p><p>Utilizando la misma fórmula ($L = 10 \\cdot \\log\\left(\\frac{I}{I_0}\\right)$) y sabiendo que $I_0 = 10^{-12}$ W/m²:</p><ul><li>Calcula el nivel de intensidad $L$ en decibelios (dB) de dicha conversación.</li></ul><p><em>Realiza las operaciones en tu cuaderno antes de comprobar el resultado.</em></p>",
+      "practiceAnswer": "<p><strong>1. Sustitución:</strong> $L = 10 \\cdot \\log\\left(\\frac{10^{-6}}{10^{-12}}\\right)$</p><p><strong>2. Potencias:</strong> $\\frac{10^{-6}}{10^{-12}} = 10^{-6 - (-12)} = 10^6$</p><p><strong>3. Logaritmo:</strong> $\\log(10^6) = 6$</p><p><strong>4. Resultado final:</strong> $L = 10 \\cdot 6 = 60$ dB.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: cálculo inverso",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a subir el nivel. ¿Qué pasa si te dan los decibelios y te piden la intensidad física de la onda? Vas a tener que deshacer el logaritmo.",
+      "content": "<p>En un concierto de rock, el sonómetro de un técnico marca exactamente $120$ dB (el umbral del dolor para el ser humano).</p><p>Queremos saber cuál es la intensidad física real $I$ de esa onda de sonido en W/m².</p><p>Despeja $I$ de la ecuación original partiendo de $L = 120$ dB:</p><p>$$120 = 10 \\cdot \\log\\left(\\frac{I}{10^{-12}}\\right)$$</p><p><em>Pista: Pasa el 10 dividiendo primero y luego usa la definición matemática de logaritmo decimal para despejar el paréntesis.</em></p>",
+      "practiceAnswer": "<p><strong>1. Dividir entre 10:</strong> $12 = \\log\\left(\\frac{I}{10^{-12}}\\right)$</p><p><strong>2. Deshacer logaritmo (exponenciar en base 10):</strong> Si $\\log(X) = 12$, entonces $X = 10^{12}$.<br>Por tanto: $10^{12} = \\frac{I}{10^{-12}}$</p><p><strong>3. Despejar I:</strong> El $10^{-12}$ pasa multiplicando:<br>$I = 10^{12} \\cdot 10^{-12} = 10^{12-12} = 10^0 = 1$ W/m².</p><p>La intensidad física es de 1 W/m².</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:21:37.196Z",
+    "updatedAt": "2026-08-01T17:21:37.196Z",
+    "contentHash": "91ca8357e366f3b5",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

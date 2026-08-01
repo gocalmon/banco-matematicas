@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis matemático",
+    "subtopic": "Límites y modelización de funciones",
+    "exerciseType": "Problema aplicado",
+    "protocols": [
+      "B",
+      "I"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Interpretar los parámetros de una función logística en un contexto real.",
+      "Calcular valores funcionales para instantes de tiempo específicos.",
+      "Evaluar límites en el infinito para determinar asíntotas horizontales (capacidad de carga).",
+      "Relacionar el comportamiento matemático de la exponencial negativa con su efecto en el modelo."
+    ],
+    "prerequisites": [
+      "Evaluación de funciones",
+      "Cálculo con la función exponencial base 'e'",
+      "Concepto intuitivo de límite en el infinito"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:25:35.018Z",
+    "id": "dinamica-de-poblaciones-el-modelo-logistico-d0c92f80"
+  },
+  "title": "Dinámica de Poblaciones: El Modelo Logístico",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a analizar cómo crece una población en la vida real. A diferencia de un crecimiento exponencial infinito, en la naturaleza los recursos son limitados, por lo que las poblaciones tienden a estabilizarse. Esto se modela a la perfección con la función logística.",
+      "content": "<p><strong>Ejercicio 10: Problema aplicado de Dinámica de Poblaciones (Modelo logístico limitado):</strong> El crecimiento de una población de gamos introducida en una reserva natural protegida sigue el modelo de crecimiento limitado (función logística):</p><p>$$P(t) = \\frac{1200}{1 + 11 \\cdot e^{-0.15t}}$$</p><p>donde $P(t)$ representa el número de individuos y $t$ el tiempo transcurrido medido en años.</p><ul><li><strong>a)</strong> ¿Cuál era la población inicial de gamos en el momento de la creación de la reserva ($t = 0$)?</li><li><strong>b)</strong> Calcula el número de gamos que habrá en la reserva al cabo de 10 años.</li><li><strong>c)</strong> ¿Cuál es el límite teórico máximo de población (capacidad de carga del ecosistema) que puede albergar la reserva a largo plazo? Justifica matemáticamente analizando el comportamiento de la función cuando el tiempo $t$ se hace muy grande ($t \\to \\infty$).</li></ul>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "El problema se divide en tres cálculos distintos, todos basados en la misma fórmula. Sustituiremos la 't' por diferentes valores para ver cómo evoluciona la población desde el principio hasta el futuro lejano.",
+      "content": "<p>Nuestra función es $P(t) = \\frac{1200}{1 + 11 \\cdot e^{-0.15t}}$. Para resolver los apartados, haremos lo siguiente:</p><ol><li><strong>Población inicial (Apartado a):</strong> El momento de creación corresponde a tiempo cero. Sustituiremos $t = 0$ en la función. Recuerda que cualquier número elevado a $0$ es $1$.</li><li><strong>Población a 10 años (Apartado b):</strong> Sustituiremos $t = 10$. Aquí necesitaremos la calculadora para evaluar la potencia de $e$ y dar un resultado aproximado, redondeando al número entero de gamos más cercano.</li><li><strong>Límite teórico (Apartado c):</strong> Evaluaremos el límite de la función cuando $t \\to \\infty$. Analizaremos qué le ocurre a la parte exponencial $e^{-0.15t}$ cuando su exponente se hace infinitamente negativo.</li></ol>"
+    },
+    {
+      "title": "Apartado a): Población inicial",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Para saber con cuántos animales empezamos, hacemos que el tiempo sea cero. La exponencial desaparece mágicamente al convertirse en un uno, y nos queda una división súper sencilla.",
+      "content": "<p>Calculamos $P(0)$ sustituyendo $t = 0$ en la ecuación:</p><p>$$P(0) = \\frac{1200}{1 + 11 \\cdot e^{-0.15 \\cdot 0}}$$</p><p>Como $-0.15 \\cdot 0 = 0$, la expresión se reduce a:</p><p>$$P(0) = \\frac{1200}{1 + 11 \\cdot e^0}$$</p><p>Recordamos que $e^0 = 1$:</p><p>$$P(0) = \\frac{1200}{1 + 11 \\cdot 1} = \\frac{1200}{1 + 11} = \\frac{1200}{12}$$</p><p>$$P(0) = 100$$</p><p><strong>Respuesta:</strong> La población inicial introducida en la reserva fue de <strong>100 gamos</strong>.</p>",
+      "theory": "<p>El instante $t=0$ se conoce como <strong>condición inicial</strong> de un modelo matemático. Es el punto de partida a partir del cual el modelo empieza a predecir el futuro.</p>"
+    },
+    {
+      "title": "Apartado b): Población a los 10 años",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora damos un salto en el tiempo de 10 años. Sustituimos la 't' por diez. Esta vez, nos queda un exponente negativo, por lo que tendremos que echar mano de la calculadora científica para ver cuántos gamos han nacido.",
+      "content": "<p>Calculamos $P(10)$ sustituyendo $t = 10$:</p><p>$$P(10) = \\frac{1200}{1 + 11 \\cdot e^{-0.15 \\cdot 10}}$$</p><p>Multiplicamos en el exponente ($-0.15 \\cdot 10 = -1.5$):</p><p>$$P(10) = \\frac{1200}{1 + 11 \\cdot e^{-1.5}}$$</p><p>Usando una calculadora científica, evaluamos el denominador. $e^{-1.5} \\approx 0.2231$:</p><p>$$P(10) \\approx \\frac{1200}{1 + 11 \\cdot 0.2231}$$<br>$$P(10) \\approx \\frac{1200}{1 + 2.4544}$$<br>$$P(10) \\approx \\frac{1200}{3.4544} \\approx 347.38$$</p><p><strong>Respuesta:</strong> Dado que hablamos de individuos enteros, habrá aproximadamente <strong>347 gamos</strong> al cabo de 10 años.</p>",
+      "warning": "Cuando trabajes con modelos de seres vivos (personas, animales, bacterias), los resultados deben tener sentido físico. Nunca des como resultado \"347.38 gamos\". Debes redondear al número natural más cercano o truncar según el contexto."
+    },
+    {
+      "title": "Apartado c): Capacidad de carga del ecosistema",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Llegamos a la parte más interesante. ¿Qué pasa si dejamos pasar los años hasta el infinito? La exponencial se va haciendo cada vez más pequeña hasta desaparecer por completo. Es entonces cuando vemos el límite de la reserva.",
+      "content": "<p>Para saber el límite a largo plazo, calculamos el límite de la función cuando $t \\to +\\infty$:</p><p>$$\\lim_{t \\to \\infty} \\frac{1200}{1 + 11 \\cdot e^{-0.15t}}$$</p><p>Analicemos el exponente: si $t$ se hace infinitamente grande, entonces $-0.15t$ se hace infinitamente negativo (tiende a $-\\infty$).</p><p>Sabemos por las propiedades de la función exponencial que:</p><p>$$\\lim_{x \\to -\\infty} e^x = 0$$</p><p>Por lo tanto, el término $e^{-0.15t}$ tiende a $0$ a medida que pasa el tiempo. Sustituyendo esto en nuestro límite:</p><p>$$\\lim_{t \\to \\infty} P(t) = \\frac{1200}{1 + 11 \\cdot 0} = \\frac{1200}{1 + 0} = 1200$$</p><p><strong>Respuesta:</strong> El límite teórico máximo (capacidad de carga) es de <strong>1200 gamos</strong>. Matemáticamente, esto representa una <strong>asíntota horizontal</strong> en $y = 1200$.</p>",
+      "checkpoint": {
+        "question": "Observando la fórmula $P(t) = \\frac{K}{1 + C \\cdot e^{-rt}}$, ¿de qué parámetro depende exclusivamente la capacidad de carga (límite máximo) de la población?",
+        "options": [
+          {
+            "text": "Del parámetro C",
+            "correct": false,
+            "feedback": "No, el parámetro 'C' (que en nuestro caso era 11) determina la población inicial, pero desaparece cuando el tiempo tiende a infinito."
+          },
+          {
+            "text": "Del parámetro r (el 0.15)",
+            "correct": false,
+            "feedback": "Incorrecto. 'r' es la tasa de crecimiento intrínseca; indica lo rápido que la población alcanza el límite, pero no cuál es ese límite."
+          },
+          {
+            "text": "Del numerador K",
+            "correct": true,
+            "feedback": "¡Exacto! El numerador es la constante de capacidad de carga. Al desaparecer el término exponencial, el denominador siempre se vuelve 1, dejando a K como el límite máximo."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Resumen de Resolución: El modelo logístico",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "En resumen, este modelo nos cuenta una historia completa: empezamos con 100 gamos, a los 10 años ya son más del triple, y la reserva nunca podrá sostener a más de 1200 gamos porque los recursos se agotarán.",
+      "content": "<p>Hemos analizado el comportamiento de la función $P(t)$ en tres momentos clave, confirmando por qué es un modelo tan útil en biología:</p><ol><li><strong>Inicio ($t=0$):</strong> Evaluando $e^0 = 1$, encontramos la población semilla ($100$ gamos).</li><li><strong>Crecimiento intermedio ($t=10$):</strong> Usando la calculadora, vimos cómo la población empieza a crecer rápidamente (aceleración inicial) llegando a unos $347$ individuos.</li><li><strong>Saturación ($t \\to \\infty$):</strong> Como el exponente es negativo, al avanzar el tiempo la parte exponencial se \"apaga\" (tiende a $0$), dejando al descubierto el límite absoluto del ecosistema: la asíntota $y = 1200$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: modelo epidémico",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "La función logística no solo sirve para animales, sino también para rumores, redes sociales y virus. Intenta analizar este modelo de propagación que te propongo ahora.",
+      "content": "<p>La propagación de una cepa de gripe en una universidad aislada se puede modelar con otra función logística:</p><p>$$I(t) = \\frac{5000}{1 + 99 \\cdot e^{-0.8t}}$$</p><p>donde $I(t)$ es el número de estudiantes infectados y $t$ son los días transcurridos desde que se detectó al primer alumno enfermo.</p><ul><li>Calcula el número de estudiantes infectados en el instante inicial ($t=0$).</li><li>¿Cuál es el número máximo de estudiantes que se infectarán a largo plazo si no se toma ninguna medida?</li></ul>",
+      "practiceAnswer": "<p><strong>1. Instante inicial ($t=0$):</strong><br>$I(0) = \\frac{5000}{1 + 99 \\cdot e^0} = \\frac{5000}{1 + 99 \\cdot 1} = \\frac{5000}{100} = 50$<br>Había 50 estudiantes contagiados en el momento de iniciar el estudio.</p><p><strong>2. Límite máximo ($t \\to \\infty$):</strong><br>El término $e^{-0.8t}$ tenderá a $0$.<br>$\\lim_{t \\to \\infty} I(t) = \\frac{5000}{1 + 99 \\cdot 0} = \\frac{5000}{1} = 5000$<br>A largo plazo, la epidemia afectará a un máximo de 5000 estudiantes (probablemente toda la población del campus).</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: El cálculo inverso (despejar el tiempo)",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a dar un paso más allá. En vez de darte el tiempo para calcular la población, ahora te doy la población para que calcules el tiempo. Para lograrlo, tendrás que deshacer la exponencial usando logaritmos.",
+      "content": "<p>Volvamos a nuestra reserva de gamos con la función original:</p><p>$$P(t) = \\frac{1200}{1 + 11 \\cdot e^{-0.15t}}$$</p><p>Los biólogos consideran que la población es ecológicamente estable cuando alcanza <strong>la mitad de su capacidad de carga</strong>. Sabiendo que el límite era 1200, la mitad es $600$ gamos.</p><p><strong>¿Cuántos años ($t$) deben pasar para que haya exactamente $600$ gamos en la reserva?</strong></p><p><em>Pista: Plantea la ecuación $\\frac{1200}{\\dots} = 600$, despeja paso a paso hasta aislar la base '$e$', y aplica el logaritmo neperiano ($\\ln$) a ambos lados.</em></p>",
+      "practiceAnswer": "<p>Planteamos: $\\frac{1200}{1 + 11 \\cdot e^{-0.15t}} = 600$</p><p>Pasamos el denominador multiplicando y el 600 dividiendo:<br>$\\frac{1200}{600} = 1 + 11 \\cdot e^{-0.15t}$<br>$2 = 1 + 11 \\cdot e^{-0.15t}$</p><p>Aislamos la exponencial:<br>$1 = 11 \\cdot e^{-0.15t}$<br>$\\frac{1}{11} = e^{-0.15t}$</p><p>Aplicamos logaritmo neperiano ($\\ln$) para deshacer la base $e$:<br>$\\ln\\left(\\frac{1}{11}\\right) = -0.15t$</p><p>Despejamos la $t$:<br>$t = \\frac{\\ln(1/11)}{-0.15} \\approx \\frac{-2.398}{-0.15} \\approx 15.98$</p><p>Por tanto, tardará casi exactamente <strong>16 años</strong> en alcanzar los 600 gamos.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:25:49.536Z",
+    "updatedAt": "2026-08-01T17:25:49.536Z",
+    "contentHash": "ad1c253110986e57",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

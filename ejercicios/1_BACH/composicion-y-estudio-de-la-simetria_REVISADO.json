@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis matemático",
+    "subtopic": "Composición y propiedades de las funciones",
+    "exerciseType": "Demostración y cálculo algebraico",
+    "protocols": [
+      "B"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Calcular correctamente la expresión analítica de funciones compuestas.",
+      "Comprender que la composición de funciones no es conmutativa.",
+      "Aplicar la definición algebraica para determinar la simetría par o impar de una función."
+    ],
+    "prerequisites": [
+      "Concepto de composición de funciones",
+      "Sustitución algebraica de variables",
+      "Definición de función par ($f(-x) = f(x)$) e impar ($f(-x) = -f(x)$)"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 7,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:24:41.654Z",
+    "id": "composicion-y-estudio-de-la-simetria-badb2b14"
+  },
+  "title": "Composición y estudio de la simetría",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "En este ejercicio vamos a trabajar con la composición de funciones, que es como meter una función dentro de otra, y luego usaremos el resultado para comprobar si una nueva función es simétrica.",
+      "content": "<p><strong>Ejercicio 8: Composición y simetría:</strong> Dadas las funciones $f(x) = 5^x$ y $g(x) = -x$:</p><ul><li><strong>a)</strong> Obtén la expresión de las funciones compuestas $(f \\circ g)(x)$ y $(g \\circ f)(x)$.</li><li><strong>b)</strong> Demuestra si la función compuesta $h(x) = f(x) + (f \\circ g)(x)$ presenta simetría par, impar o ninguna de ellas.</li></ul>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Vamos a dividir el problema en dos partes claras. Primero, haremos las composiciones teniendo mucho cuidado con quién entra dentro de quién. Después, construiremos la función hache y evaluaremos su simetría sustituyendo la equis por menos equis.",
+      "content": "<p><strong>Estrategia de resolución:</strong></p><ol><li><strong>Apartado a (Composición):</strong> Recordar que $(f \\circ g)(x)$ significa $f(g(x))$. Es decir, tomaremos la expresión de $g(x)$ y la meteremos donde haya una $x$ en la función $f$. Haremos lo mismo al revés para la segunda composición.</li><li><strong>Apartado b (Construcción de $h(x)$):</strong> Usaremos el resultado anterior, $(f \\circ g)(x)$, para escribir la fórmula completa de $h(x)$.</li><li><strong>Apartado b (Test de simetría):</strong> Calcularemos $h(-x)$ cambiando todas las $x$ por $(-x)$.<ul><li>Si el resultado es idéntico a $h(x)$, la simetría es <strong>par</strong>.</li><li>Si el resultado es exactamente el opuesto, es decir, $-h(x)$, la simetría es <strong>impar</strong>.</li><li>Si no ocurre ninguna de las dos, no tiene simetría.</li></ul></li></ol>"
+    },
+    {
+      "title": "Resolución Apartado a: Composición",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Veamos la composición. F compuesta con G significa que la G es la semilla que plantamos dentro de la F. Al hacerlo al revés, vemos que los resultados son completamente distintos. La composición de funciones casi nunca es conmutativa.",
+      "content": "<p>Calculamos la primera composición, $(f \\circ g)(x)$, que se lee \"$f$ compuesta con $g$\" o \"$f$ de $g$ de $x$\":</p><p>$$(f \\circ g)(x) = f(g(x))$$</p><p>Sustituimos $g(x)$ por su valor ($-x$) dentro de $f$:</p><p>$$f(-x) = 5^{-x}$$</p><p>Ahora, calculamos la composición inversa, $(g \\circ f)(x)$:</p><p>$$(g \\circ f)(x) = g(f(x))$$</p><p>Sustituimos $f(x)$ por su valor ($5^x$) dentro de $g$:</p><p>$$g(5^x) = -(5^x) = -5^x$$</p>",
+      "warning": "¡Mucho ojo con el orden! En la notación $(f \\circ g)(x)$, la función que se aplica primero es la que está más a la derecha ($g$), y el resultado entra en la función de la izquierda ($f$).",
+      "theory": "<p>Como hemos comprobado, $5^{-x} \\neq -5^x$. Esto demuestra una propiedad fundamental: <strong>La composición de funciones, por norma general, no es conmutativa</strong>.<br>$(f \\circ g) \\neq (g \\circ f)$</p>"
+    },
+    {
+      "title": "Resolución Apartado b: Simetría",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora construimos nuestra nueva función hache sumando la efe original y la primera composición que calculamos. Para ver su simetría, cambiamos la equis por menos equis. ¡Sorpresa! Al organizar los términos de la suma, nos queda exactamente la misma función con la que empezamos.",
+      "content": "<p>Primero, construimos la función $h(x)$ con los datos obtenidos:</p><p>$$h(x) = f(x) + (f \\circ g)(x)$$<br>$$h(x) = 5^x + 5^{-x}$$</p><p>Para comprobar la simetría, <strong>calculamos $h(-x)$</strong>, sustituyendo cada $x$ por $(-x)$:</p><p>$$h(-x) = 5^{(-x)} + 5^{-(-x)}$$</p><p>Simplificamos los exponentes (menos por menos es más):</p><p>$$h(-x) = 5^{-x} + 5^x$$</p><p>Como la suma es conmutativa ($A + B = B + A$), ordenamos los términos:</p><p>$$h(-x) = 5^x + 5^{-x}$$</p><p>¡Vemos que el resultado es exactamente igual a la función original!</p><p>$$h(-x) = h(x)$$</p><p><strong>Conclusión:</strong> La función $h(x)$ presenta <strong>simetría par</strong>.</p>",
+      "checkpoint": {
+        "question": "¿Qué significaría gráficamente que $h(x)$ tenga simetría par?",
+        "options": [
+          {
+            "text": "Que la gráfica es simétrica respecto al origen de coordenadas (0,0).",
+            "correct": false,
+            "feedback": "No, esa es la interpretación gráfica de la simetría impar."
+          },
+          {
+            "text": "Que si doblamos la gráfica por el eje Y, la mitad derecha coincidirá exactamente con la mitad izquierda.",
+            "correct": true,
+            "feedback": "¡Correcto! La simetría par significa que el eje de ordenadas (eje Y) actúa como un espejo perfecto para la función."
+          },
+          {
+            "text": "Que la función no tiene valores negativos en el eje Y.",
+            "correct": false,
+            "feedback": "Falso. Una función par (como $y = x^2 - 4$) puede tener valores negativos perfectamente."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos. Hemos visto cómo anidar funciones y cómo testear matemáticamente su comportamiento frente al espejo.",
+      "content": "<ol><li><strong>Composición $(f \\circ g)(x)$:</strong> Evaluamos $f(-x)$ y obtuvimos $5^{-x}$.</li><li><strong>Composición $(g \\circ f)(x)$:</strong> Evaluamos $g(5^x)$ y obtuvimos $-5^x$. Quedó claro que el orden importa.</li><li><strong>Definición de $h(x)$:</strong> Escribimos la expresión $h(x) = 5^x + 5^{-x}$.</li><li><strong>Demostración de simetría:</strong> Al calcular $h(-x)$ y simplificar signos, llegamos de vuelta a $5^x + 5^{-x}$. Al cumplirse que $h(-x) = h(x)$, certificamos la <strong>simetría par</strong>.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: otra combinación",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te toca. Vamos a cambiar ligeramente la función hache. Ahora en lugar de sumar, vamos a restar las partes. Comprueba qué simetría tiene ahora.",
+      "content": "<p>Utilizando las mismas funciones $f(x) = 5^x$ y $g(x) = -x$, define una nueva función $k(x)$ restando en lugar de sumando:</p><p>$$k(x) = f(x) - (f \\circ g)(x)$$</p><p>Aplica el mismo test de simetría (calcula $k(-x)$) y determina si esta nueva función tiene simetría par, impar, o ninguna de ellas.</p><p><em>Trabájalo en tu cuaderno antes de mirar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>1. Construimos $k(x)$:</strong><br>$k(x) = 5^x - 5^{-x}$</p><p><strong>2. Calculamos $k(-x)$:</strong><br>$k(-x) = 5^{-x} - 5^{-(-x)}$<br>$k(-x) = 5^{-x} - 5^x$</p><p><strong>3. Comparamos:</strong><br>Vemos que $k(-x)$ no es igual a $k(x)$ (no es par).<br>¿Es impar? Para ser impar, debe ser $-k(x)$.<br>$-k(x) = -(5^x - 5^{-x}) = -5^x + 5^{-x} = 5^{-x} - 5^x$<br>¡Coincide perfectamente! $k(-x) = -k(x)$</p><p><strong>Conclusión:</strong> La función $k(x)$ tiene <strong>simetría impar</strong>.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: El caso de los polinomios",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Los nombres 'par' e 'impar' para la simetría no están puestos al azar. Tienen mucho que ver con los polinomios. Piensa en ello.",
+      "content": "<p>Las funciones compuestas a veces ocultan su simetría, pero en los polinomios (funciones formadas por sumas de potencias de $x$), la simetría es evidente a simple vista.</p><p>Observa estos dos polinomios:</p><ul><li>$P(x) = 3x^4 - 2x^2 + 7$ (Simetría PAR)</li><li>$Q(x) = x^5 - 4x^3 + 2x$ (Simetría IMPAR)</li></ul><p>Sabiendo que un número negativo elevado a una potencia par se vuelve positivo (ej. $(-x)^2 = x^2$), y elevado a una potencia impar mantiene el signo negativo (ej. $(-x)^3 = -x^3$)..</p><p>¿Podrías deducir, sin hacer cálculos formales, si el polinomio $R(x) = x^4 + x^3$ tiene alguna simetría? ¿Por qué se llama simetría \"par\" e \"impar\"?</p>",
+      "practiceAnswer": "<p>Se llaman así precisamente por el comportamiento de los exponentes en los polinomios:</p><ul><li>Si un polinomio tiene <strong>solo exponentes pares</strong> (recordando que el término independiente $7$ equivale a $7x^0$, y $0$ es par), su simetría será par, porque el signo negativo desaparece al evaluar $(-x)$.</li><li>Si un polinomio tiene <strong>solo exponentes impares</strong>, su simetría será impar, porque todos los términos cambian de signo al unísono.</li></ul><p>El polinomio $R(x) = x^4 + x^3$ tiene una mezcla de exponentes (un par y un impar). Al calcular $R(-x)$ obtendríamos $x^4 - x^3$, que no es ni $R(x)$ ni $-R(x)$. Por tanto, <strong>no tiene simetría</strong> (ni par ni impar).</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:24:58.427Z",
+    "updatedAt": "2026-08-01T17:24:58.427Z",
+    "contentHash": "5f6b64c0f4a67d2a",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis",
+    "subtopic": "Funciones y ecuaciones exponenciales",
+    "exerciseType": "Intersección de curvas trascendentes",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Aplicar propiedades de las potencias para simplificar ecuaciones exponenciales.",
+      "Resolver ecuaciones exponenciales mediante cambio de variable a ecuaciones cuadráticas.",
+      "Descartar soluciones no válidas comprobando el dominio de las funciones exponenciales.",
+      "Racionalizar denominadores con binomios irracionales."
+    ],
+    "prerequisites": [
+      "Propiedades de los exponentes y logaritmos.",
+      "Resolución de ecuaciones de segundo grado.",
+      "Racionalización de denominadores."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 12,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T19:19:26.274Z",
+    "id": "interseccion-de-curvas-exponenciales-1b66fc57"
+  },
+  "title": "Intersección de Curvas Exponenciales",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver este ejercicio de intersección de curvas trascendentes, donde debemos encontrar exactamente en qué punto se cruzan dos funciones exponenciales.",
+      "content": "<p><strong>Ejercicio 4: Intersección de curvas trascendentes:</strong> Encuentra analíticamente las coordenadas completas de los puntos de intersección entre las curvas exponenciales dadas por las funciones $f(x) = 2^{x+2} - 7$ y $g(x) = 2^{-x}$.</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para encontrar los puntos donde dos gráficas se cruzan, debemos igualar sus expresiones. Al ser funciones exponenciales de la misma base, utilizaremos un cambio de variable para transformar el problema en una ecuación de segundo grado que sí sabemos resolver.",
+      "content": "<p><strong>Objetivo:</strong> Hallar las coordenadas $(x, y)$ del punto o puntos donde las gráficas de $f(x)$ y $g(x)$ se cortan.</p><p><strong>Estrategia:</strong></p><ol><li><strong>Igualar las funciones:</strong> Plantear la ecuación $f(x) = g(x)$.</li><li><strong>Aplicar propiedades:</strong> Usar las leyes de los exponentes para reescribir la ecuación en función de una única potencia base, $2^x$.</li><li><strong>Cambio de variable:</strong> Sustituir $u = 2^x$ para obtener una ecuación polinómica (cuadrática).</li><li><strong>Resolver y deshacer el cambio:</strong> Hallar el valor de $u$, descartar valores imposibles y calcular $x$ mediante logaritmos.</li><li><strong>Hallar la ordenada:</strong> Sustituir $x$ en una de las funciones para obtener la coordenada $y$ y racionalizar el resultado.</li></ol><p><strong>Contexto:</strong> Encontrar el punto de corte entre curvas exponenciales es idéntico a calcular en qué momento una población en crecimiento poblacional supera o iguala a otra que se encuentra en decaimiento radiactivo o térmico.</p>"
+    },
+    {
+      "title": "Representación gráfica de la situación",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Antes de lanzarnos a los cálculos, observemos las gráficas. Vemos que una curva sube rápidamente mientras que la otra decae. Su intersección es única y ocurre en el primer cuadrante. Nuestro objetivo analítico será encontrar ese punto exacto.",
+      "content": "<p>Ambas funciones son exponenciales y su dominio es $\\mathbb{R}$.</p><ul><li>$f(x) = 2^{x+2} - 7$ es una curva creciente desplazada $2$ unidades a la izquierda y $7$ hacia abajo. Su asíntota horizontal es $y = -7$.</li><li>$g(x) = 2^{-x}$ es una curva decreciente pura con asíntota horizontal $y = 0$.</li></ul><p>Al observar su comportamiento monótono contrario, prevemos un <strong>único punto de intersección</strong> en el primer cuadrante, con una abscisa $x > 0$ y una ordenada $0 < y < 1$.</p>",
+      "visual": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"400\" fill=\"#0f172a\"/><path d=\"M 0 200 L 400 200\" stroke=\"#334155\" stroke-width=\"1\"/><path d=\"M 200 0 L 200 400\" stroke=\"#334155\" stroke-width=\"1\"/><g stroke=\"#334155\" stroke-width=\"0.5\"><line x1=\"0\" y1=\"50\" x2=\"400\" y2=\"50\"/><line x1=\"0\" y1=\"100\" x2=\"400\" y2=\"100\"/><line x1=\"0\" y1=\"150\" x2=\"400\" y2=\"150\"/><line x1=\"0\" y1=\"250\" x2=\"400\" y2=\"250\"/><line x1=\"0\" y1=\"300\" x2=\"400\" y2=\"300\"/><line x1=\"0\" y1=\"350\" x2=\"400\" y2=\"350\"/><line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"400\"/><line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"400\"/><line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"400\"/><line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"400\"/><line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"400\"/><line x1=\"350\" y1=\"0\" x2=\"350\" y2=\"400\"/></g><line x1=\"0\" y1=\"200\" x2=\"400\" y2=\"200\" stroke=\"#fbbf24\" stroke-width=\"2\"/><line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"400\" stroke=\"#fbbf24\" stroke-width=\"2\"/><text x=\"380\" y=\"220\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">X</text><text x=\"210\" y=\"20\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">Y</text><path d=\"M 0 350 L 400 350\" stroke=\"#ef4444\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/><text x=\"10\" y=\"340\" fill=\"#ef4444\" font-family=\"sans-serif\" font-size=\"14\">y = -7</text><path d=\"M 0 348.6 Q 100 345, 150 325 T 200 250 T 250 -100\" stroke=\"#ef4444\" stroke-width=\"2.5\" fill=\"none\"/><path d=\"M -50 -100 Q 150 150, 200 150 T 400 195\" stroke=\"#3b82f6\" stroke-width=\"2.5\" fill=\"none\"/><circle cx=\"222.8\" cy=\"187\" r=\"5\" fill=\"#10b981\"/><text x=\"240\" y=\"180\" fill=\"#10b981\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\">Intersección</text><text x=\"100\" y=\"290\" fill=\"#ef4444\" font-family=\"sans-serif\" font-size=\"14\">f(x)</text><text x=\"260\" y=\"150\" fill=\"#3b82f6\" font-family=\"sans-serif\" font-size=\"14\">g(x)</text></svg>"
+    },
+    {
+      "title": "Paso 1: Planteamiento y aplicación de propiedades",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "El primer paso natural es igualar las dos funciones. Luego, desglosaremos los exponentes usando las leyes de potencias para aislar la base de 2 elevado a x.",
+      "content": "<p><strong>Igualación:</strong></p><p>Igualamos ambas expresiones para buscar los puntos en común:</p><p>$$2^{x+2} - 7 = 2^{-x}$$</p><p><strong>Descomposición de exponentes:</strong></p><p>Aplicamos las propiedades de la potenciación para reescribir los términos y hacer aparecer $2^x$ en solitario:</p><p>$$2^x \\cdot 2^2 - 7 = \\frac{1}{2^x}$$</p><p>$$4 \\cdot 2^x - 7 = \\frac{1}{2^x}$$</p>",
+      "theory": "<p><strong>Propiedades de las potencias utilizadas:</strong></p><ul><li>Producto de bases iguales: $a^{n+m} = a^n \\cdot a^m$</li><li>Exponente negativo: $a^{-n} = \\frac{1}{a^n}$</li></ul>"
+    },
+    {
+      "title": "Paso 2: Cambio de variable",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Para facilitar la resolución, sustituimos la exponencial por una variable nueva. Así, transformamos una ecuación exponencial complicada en una ecuación polinómica tradicional.",
+      "content": "<p>Definimos una nueva variable auxiliar:</p><p>$$u = 2^x$$</p><p>Al ser $2^x$ una función exponencial, sabemos estrictamente que <strong>$u > 0$</strong> para cualquier valor real de $x$. Sustituyendo $u$ en la ecuación anterior obtenemos:</p><p>$$4u - 7 = \\frac{1}{u}$$</p><p>Multiplicamos toda la ecuación por $u$ (sabiendo que $u \\neq 0$) para eliminar el denominador:</p><p>$$4u^2 - 7u = 1$$</p><p>$$4u^2 - 7u - 1 = 0$$</p><p>Hemos transformado la ecuación trascendente en una <strong>ecuación cuadrática</strong> que resolveremos en el siguiente paso.</p>",
+      "warning": "<p>Al multiplicar una ecuación por una variable ($u$), debemos asegurarnos de que esta nunca pueda valer $0$, para no añadir o perder soluciones falsas. En este caso, $u = 2^x > 0$, por lo que es completamente seguro.</p>"
+    },
+    {
+      "title": "Paso 3: Resolución de la ecuación cuadrática",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Resolvemos la ecuación de segundo grado que nos ha quedado. Nos dará dos posibles resultados para u, pero tendremos que analizar si ambos tienen sentido matemático.",
+      "content": "<p>Aplicamos la fórmula general para ecuaciones de segundo grado $au^2 + bu + c = 0$ con $a=4, b=-7, c=-1$:</p><p>$$u = \\frac{-(-7) \\pm \\sqrt{(-7)^2 - 4(4)(-1)}}{2(4)}$$</p><p>$$u = \\frac{7 \\pm \\sqrt{49 + 16}}{8}$$</p><p>$$u = \\frac{7 \\pm \\sqrt{65}}{8}$$</p><p>Obtenemos dos posibles soluciones para $u$:</p><p>$$u_1 = \\frac{7 + \\sqrt{65}}{8} \\quad \\text{y} \\quad u_2 = \\frac{7 - \\sqrt{65}}{8}$$</p><p>Debemos evaluar la validez de estas raíces según nuestra condición inicial $u > 0$.</p>",
+      "checkpoint": {
+        "question": "Sabiendo que $\\sqrt{64} = 8$, por lo que $\\sqrt{65}$ es un valor ligeramente mayor a $8$. ¿Qué ocurre con la raíz $u_2$?",
+        "options": [
+          {
+            "text": "Debe descartarse porque da un resultado negativo, y una potencia base 2 siempre es positiva ($2^x > 0$).",
+            "correct": true,
+            "feedback": "¡Exacto! Como $7 - \\sqrt{65} < 0$, $u_2$ es negativo, lo cual es imposible para $2^x$."
+          },
+          {
+            "text": "Es completamente válida y nos dará una segunda intersección con coordenada $x$ negativa.",
+            "correct": false,
+            "feedback": "Falso. La función $y = 2^x$ tiene rango en $(0, +\\infty)$. No existe un número real $x$ tal que $2^x$ sea negativo."
+          },
+          {
+            "text": "Debe descartarse porque es un número irracional y las coordenadas deben ser números enteros o racionales.",
+            "correct": false,
+            "feedback": "Falso. Las intersecciones de curvas trascendentes frecuentemente arrojan coordenadas irracionales."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 4: Deshacer el cambio de variable y hallar x",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Con el único valor válido para u, deshacemos el cambio. Como la incógnita está en el exponente, aplicamos logaritmos base dos para despejar la equis.",
+      "content": "<p>Descartamos $u_2$ porque es menor que cero. Nos quedamos únicamente con:</p><p>$$2^x = \\frac{7 + \\sqrt{65}}{8}$$</p><p>Para despejar $x$, aplicamos el logaritmo en base 2 en ambos miembros de la ecuación:</p><p>$$x = \\log_2\\left(\\frac{7 + \\sqrt{65}}{8}\\right)$$</p><p>Podemos simplificar esta expresión aplicando la propiedad del logaritmo de un cociente ($\\log_a(\\frac{M}{N}) = \\log_a M - \\log_a N$):</p><p>$$x = \\log_2(7 + \\sqrt{65}) - \\log_2(8)$$</p><p>Sabiendo que $\\log_2(8) = 3$, obtenemos la coordenada $x$ exacta:</p><p>$$x = \\log_2(7 + \\sqrt{65}) - 3$$</p>"
+    },
+    {
+      "title": "Paso 5: Hallar la ordenada y (racionalización)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ya tenemos la coordenada equis, ahora la sustituimos en la función original para hallar la coordenada i. Usaremos g de equis que es más sencilla y racionalizaremos el resultado para expresarlo formalmente.",
+      "content": "<p>Para encontrar la coordenada $y$, sustituimos el valor hallado en la función $g(x) = 2^{-x}$ (es más sencillo que en $f(x)$):</p><p>$$y = 2^{-x} = \\frac{1}{2^x}$$</p><p>Como ya sabíamos que $2^x = \\frac{7 + \\sqrt{65}}{8}$, sustituimos directamente el bloque:</p><p>$$y = \\frac{1}{\\frac{7 + \\sqrt{65}}{8}} = \\frac{8}{7 + \\sqrt{65}}$$</p><p><strong>Racionalización del denominador:</strong></p><p>Multiplicamos numerador y denominador por el conjugado $(7 - \\sqrt{65})$:</p><p>$$y = \\frac{8(7 - \\sqrt{65})}{(7 + \\sqrt{65})(7 - \\sqrt{65})} = \\frac{8(7 - \\sqrt{65})}{7^2 - (\\sqrt{65})^2}$$</p><p>$$y = \\frac{8(7 - \\sqrt{65})}{49 - 65} = \\frac{8(7 - \\sqrt{65})}{-16}$$</p><p>Simplificamos la fracción dividiendo entre $8$ y ajustamos el signo negativo:</p><p>$$y = \\frac{7 - \\sqrt{65}}{-2} = \\frac{\\sqrt{65} - 7}{2}$$</p>"
+    },
+    {
+      "title": "Paso 6: Comprobación analítica",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Siempre es fundamental verificar. Sustituimos la misma equis en la primera función para asegurar que obtenemos exactamente el mismo resultado y así confirmar que nuestra intersección es correcta.",
+      "content": "<p>Verifiquemos que se obtiene el mismo valor de $y$ si lo evaluamos en la otra función, $f(x) = 2^{x+2} - 7$:</p><p>Sustituimos $2^x = \\frac{7 + \\sqrt{65}}{8}$ en la forma expandida $f(x) = 4 \\cdot 2^x - 7$:</p><p>$$y = 4 \\left( \\frac{7 + \\sqrt{65}}{8} \\right) - 7$$</p><p>$$y = \\frac{7 + \\sqrt{65}}{2} - 7$$</p><p>Buscamos denominador común:</p><p>$$y = \\frac{7 + \\sqrt{65}}{2} - \\frac{14}{2}$$</p><p>$$y = \\frac{7 - 14 + \\sqrt{65}}{2} = \\frac{\\sqrt{65} - 7}{2}$$</p><p>El resultado coincide plenamente, confirmando que nuestro cálculo analítico de las coordenadas es correcto.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los pasos dados: primero igualamos, luego hicimos el cambio de variable y resolvimos la ecuación de segundo grado descartando la solución negativa. Finalmente aplicamos logaritmos y racionalizamos la coordenada y.",
+      "content": "<p><strong>Método de Resolución:</strong></p><ol><li><strong>Igualación:</strong> $2^{x+2} - 7 = 2^{-x}$.</li><li><strong>Manipulación algebraica:</strong> Convertir todos los términos a función de $2^x$.</li><li><strong>Cambio de variable:</strong> Usar $u = 2^x$ para generar la ecuación cuadrática $4u^2 - 7u - 1 = 0$.</li><li><strong>Resolución:</strong> Hallar las raíces cuadráticas y <strong>descartar la raíz negativa</strong> por la naturaleza de la función exponencial.</li><li><strong>Deshacer el cambio:</strong> Despejar $x$ aplicando logaritmos y aislar su valor.</li><li><strong>Cálculo de la ordenada:</strong> Sustituir en la función original y <strong>racionalizar</strong> el resultado para dar las coordenadas matemáticas exactas.</li></ol><p><strong>Resultado final:</strong></p><p>El punto de intersección $P(x, y)$ es:</p><p>$$P \\left( \\log_2(7 + \\sqrt{65}) - 3, \\, \\frac{\\sqrt{65} - 7}{2} \\right)$$</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno. Intenta resolver este ejercicio usando exactamente la misma técnica, pero con base tres y datos diferentes. ¡No mires la respuesta hasta terminar!",
+      "content": "<p>Encuentra analíticamente las coordenadas completas del punto de intersección entre las curvas exponenciales dadas por:</p><p>$$f(x) = 3^{x+1} - 8 \\quad \\text{y} \\quad g(x) = 3^{-x}$$</p><p><em>Indicación: Sigue la misma estructura, usa el cambio de variable $u = 3^x$, descarta la raíz no válida, despeja $x$ con un logaritmo base 3 y racionaliza la coordenada $y$. Inténtalo por ti mismo antes de comprobar el resultado.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong></p><p>El único punto de intersección tiene las siguientes coordenadas exactas:</p><p>$$P \\left( \\log_3(4 + \\sqrt{19}) - 1, \\, \\sqrt{19} - 4 \\right)$$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Ahora te desafío a aplicar esta idea de igualación y resolución, pero usando funciones logarítmicas en lugar de exponenciales. La lógica y la validación de dominio son igual de importantes.",
+      "content": "<p>La técnica de igualación y cambio analítico se aplica también a las funciones inversas. Encuentra analíticamente el punto de intersección entre las curvas logarítmicas:</p><p>$$f(x) = \\log_2(x + 3) \\quad \\text{y} \\quad g(x) = 1 - \\log_2(x)$$</p><p><em>Indicación: Iguala ambas funciones, agrupa los logaritmos, aplica la propiedad del logaritmo de un producto y transforma la ecuación logarítmica resultante en su forma exponencial para obtener un polinomio de segundo grado. No olvides verificar el dominio de los logaritmos (argumento estrictamente positivo).</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong></p><p>Tras descartar la solución negativa ($x = \\frac{-3 - \\sqrt{17}}{2}$) porque el argumento del logaritmo debe ser positivo ($x>0$), el punto de intersección es:</p><p>$$P \\left( \\frac{\\sqrt{17} - 3}{2}, \\, 2 - \\log_2(\\sqrt{17} - 3) \\right)$$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T19:19:39.995Z",
+    "updatedAt": "2026-08-01T19:19:39.995Z",
+    "contentHash": "fd37f4cfaf408365",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

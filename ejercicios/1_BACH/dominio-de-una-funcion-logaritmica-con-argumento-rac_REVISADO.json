@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis matemático",
+    "subtopic": "Dominio de funciones e inecuaciones",
+    "exerciseType": "Resolución de inecuaciones racionales",
+    "protocols": [
+      "B"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Identificar la restricción del argumento de una función logarítmica.",
+      "Plantear y resolver una inecuación racional con rigor analítico.",
+      "Representar la solución de una inecuación mediante intervalos y gráficamente."
+    ],
+    "prerequisites": [
+      "Resolución de ecuaciones de segundo grado",
+      "Estudio del signo de polinomios y fracciones algebraicas",
+      "Notación de intervalos"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:22:09.734Z",
+    "id": "dominio-de-una-funcion-logaritmica-con-argumento-rac-bd59ff73"
+  },
+  "title": "Dominio de una función logarítmica con argumento racional",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a calcular el dominio de esta función. Al ser una función logarítmica, lo primero que debemos recordar es que no existen los logaritmos de números negativos, ni el logaritmo de cero.",
+      "content": "<p><strong>Ejercicio 2:</strong> Determina el dominio de definición de la función logarítmica de composición cuadrática:</p><p>$$f(x) = \\log_2 \\left( \\frac{x^2 - 9}{x} \\right)$$</p><p>Resuelve con rigor analítico la inecuación racional correspondiente para delimitar el dominio en forma de intervalos.</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestro objetivo es descubrir para qué valores de equis la expresión de dentro del logaritmo es estrictamente positiva. Para ello, plantearemos una inecuación y estudiaremos sus signos.",
+      "content": "<p>Para encontrar el dominio de $f(x)$, debemos garantizar que el argumento del logaritmo sea estrictamente mayor que cero. Esto nos lleva a plantear la siguiente inecuación racional:</p><p>$$\\frac{x^2 - 9}{x} > 0$$</p><p><strong>Estrategia de resolución:</strong></p><ol><li><strong>Raíces del numerador:</strong> Encontrar los valores que hacen cero la parte de arriba.</li><li><strong>Raíces del denominador:</strong> Encontrar los valores que hacen cero la parte de abajo (donde la función no existe).</li><li><strong>Tabla de signos:</strong> Dividir la recta real en intervalos usando estas raíces y evaluar el signo de la fracción en cada uno.</li><li><strong>Selección:</strong> Quedarnos únicamente con los intervalos donde el resultado sea positivo ($+$).</li></ol>"
+    },
+    {
+      "title": "Paso 1 y 2: Cálculo de raíces",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Primero, buscamos los puntos críticos, que son los lugares donde la expresión vale cero o se rompe. Igualamos a cero el numerador y el denominador por separado.",
+      "content": "<p><strong>1. Raíces del numerador:</strong></p><p>Igualamos el numerador a cero y resolvemos la ecuación de segundo grado incompleta:</p><p>$$x^2 - 9 = 0$$<br>$$x^2 = 9$$<br>$$x = \\pm \\sqrt{9}$$<br>$$x_1 = 3, \\quad x_2 = -3$$</p><p><strong>2. Raíces del denominador:</strong></p><p>Igualamos el denominador a cero. Este paso es directo:</p><p>$$x = 0$$</p><p><em>Nota:</em> En $x = 0$, la fracción matemática no está definida (división por cero), por lo que este punto siempre estará excluido del dominio final, independientemente del tipo de desigualdad.</p>",
+      "warning": "Nunca \"pases la equis multiplicando al otro lado\" en una inecuación racional (como $x^2 - 9 > 0 \\cdot x$). Si $x$ es negativo, el sentido de la desigualdad cambiaría, y como no sabemos su valor, perderíamos parte de la solución.",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='1'><line x1='50' y1='200' x2='350' y2='200'/></g><circle cx='100' cy='200' r='6' fill='#0f172a' stroke='#f43f5e' stroke-width='3'/><text x='100' y='230' fill='#f43f5e' font-family='sans-serif' font-size='16' text-anchor='middle'>-3</text><circle cx='200' cy='200' r='6' fill='#0f172a' stroke='#38bdf8' stroke-width='3'/><text x='200' y='230' fill='#38bdf8' font-family='sans-serif' font-size='16' text-anchor='middle'>0</text><circle cx='300' cy='200' r='6' fill='#0f172a' stroke='#f43f5e' stroke-width='3'/><text x='300' y='230' fill='#f43f5e' font-family='sans-serif' font-size='16' text-anchor='middle'>3</text><text x='200' y='100' fill='#94a3b8' font-family='sans-serif' font-size='16' text-anchor='middle'>Puntos críticos que dividen la recta real</text></svg>"
+    },
+    {
+      "title": "Paso 3: Tabla de signos",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Con nuestros tres puntos críticos, la recta real queda dividida en cuatro trozos. Cogemos un número cualquiera de cada trozo y comprobamos si, al meterlo en la fracción, nos da positivo o negativo.",
+      "content": "<p>Los puntos $x = -3$, $x = 0$ y $x = 3$ dividen la recta real en cuatro intervalos. Evaluamos el signo de la fracción $\\frac{x^2 - 9}{x}$ tomando un valor de prueba en cada uno:</p><ul><li><strong>Intervalo $(-\\infty, -3)$</strong>: probamos con $x = -4$<br>$\\frac{(-4)^2 - 9}{-4} = \\frac{16 - 9}{-4} = \\frac{+7}{-4} = \\boldsymbol{-}$</li><li><strong>Intervalo $(-3, 0)$</strong>: probamos con $x = -1$<br>$\\frac{(-1)^2 - 9}{-1} = \\frac{1 - 9}{-1} = \\frac{-8}{-1} = \\boldsymbol{+}$</li><li><strong>Intervalo $(0, 3)$</strong>: probamos con $x = 1$<br>$\\frac{(1)^2 - 9}{1} = \\frac{1 - 9}{1} = \\frac{-8}{+1} = \\boldsymbol{-}$</li><li><strong>Intervalo $(3, +\\infty)$</strong>: probamos con $x = 4$<br>$\\frac{(4)^2 - 9}{4} = \\frac{16 - 9}{4} = \\frac{+7}{+4} = \\boldsymbol{+}$</li></ul>",
+      "checkpoint": {
+        "question": "En el estudio de signos, ¿por qué es suficiente con probar un solo número de cada intervalo?",
+        "options": [
+          {
+            "text": "Porque las funciones polinómicas y racionales son continuas en sus dominios y solo pueden cambiar de signo al atravesar una raíz o una asíntota.",
+            "correct": true,
+            "feedback": "¡Exacto! El Teorema de Bolzano garantiza que, entre dos ceros (o puntos de discontinuidad), la función no puede cambiar su signo."
+          },
+          {
+            "text": "Porque es una aproximación estadística y la mayoría de los números se comportan igual.",
+            "correct": false,
+            "feedback": "No, las matemáticas analíticas no son aproximaciones. Es una certeza absoluta fundamentada en el comportamiento de las funciones continuas."
+          },
+          {
+            "text": "Porque siempre se alternan los signos: más, menos, más, menos.",
+            "correct": false,
+            "feedback": "Cuidado con esto. Aunque a menudo se alternan, si hay raíces dobles (como un $x^2$ en el denominador), el signo puede repetirse a ambos lados del punto crítico."
+          }
+        ]
+      },
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='2'><line x1='0' y1='200' x2='400' y2='200'/></g><line x1='100' y1='200' x2='200' y2='200' stroke='#10b981' stroke-width='6'/><line x1='300' y1='200' x2='400' y2='200' stroke='#10b981' stroke-width='6'/><line x1='0' y1='200' x2='100' y2='200' stroke='#f43f5e' stroke-width='6'/><line x1='200' y1='200' x2='300' y2='200' stroke='#f43f5e' stroke-width='6'/><circle cx='100' cy='200' r='6' fill='#0f172a' stroke='#f43f5e' stroke-width='3'/><text x='100' y='230' fill='#f43f5e' font-family='sans-serif' font-size='16' text-anchor='middle'>-3</text><circle cx='200' cy='200' r='6' fill='#0f172a' stroke='#38bdf8' stroke-width='3'/><text x='200' y='230' fill='#38bdf8' font-family='sans-serif' font-size='16' text-anchor='middle'>0</text><circle cx='300' cy='200' r='6' fill='#0f172a' stroke='#f43f5e' stroke-width='3'/><text x='300' y='230' fill='#f43f5e' font-family='sans-serif' font-size='16' text-anchor='middle'>3</text><text x='50' y='170' fill='#f43f5e' font-family='sans-serif' font-size='24' font-weight='bold' text-anchor='middle'>-</text><text x='150' y='170' fill='#10b981' font-family='sans-serif' font-size='24' font-weight='bold' text-anchor='middle'>+</text><text x='250' y='170' fill='#f43f5e' font-family='sans-serif' font-size='24' font-weight='bold' text-anchor='middle'>-</text><text x='350' y='170' fill='#10b981' font-family='sans-serif' font-size='24' font-weight='bold' text-anchor='middle'>+</text></svg>"
+    },
+    {
+      "title": "Paso 4: Solución analítica del dominio",
+      "layout": "centered",
+      "phase": "interpretar",
+      "narration": "Como buscábamos que la fracción fuera mayor que cero, seleccionamos las zonas con el signo más. Además, como la desigualdad es estricta, usamos paréntesis en todos los extremos, es decir, intervalos abiertos.",
+      "content": "<p>Nuestra inecuación original era $\\frac{x^2 - 9}{x} > 0$. Por lo tanto, nos interesan exclusivamente los intervalos donde el signo resultante es positivo ($+$).</p><p>Observando nuestra recta real analizada:</p><ul><li>$(-3, 0)$ \\(\\implies\\) Signo $+$</li><li>$(3, +\\infty)$ \\(\\implies\\) Signo $+$</li></ul><p><strong>¿Qué ocurre con los extremos (corchetes o paréntesis)?</strong></p><p>Como la inecuación es <em>estrictamente mayor</em> ($>$), el valor del argumento no puede ser cero. Por tanto, las raíces del numerador ($x=3, x=-3$) no están incluidas. Las raíces del denominador ($x=0$) nunca se incluyen de todas formas. Usaremos paréntesis en todo.</p><p><strong>Solución Final:</strong></p><p>El dominio de la función $f(x)$ es la unión de estos intervalos:</p><p>$$\\text{Dom}(f) = (-3, 0) \\cup (3, +\\infty)$$</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "En resumen, ante un logaritmo con fracciones, el problema se transforma inmediatamente en un estudio de signos de una inecuación racional.",
+      "content": "<ol><li><strong>Reconocer la restricción:</strong> Argumento del logaritmo $> 0$.</li><li><strong>Plantear inecuación:</strong> Extraer el interior de la función y formar $\\frac{P(x)}{Q(x)} > 0$.</li><li><strong>Puntos críticos:</strong> Hallar las raíces del numerador ($x=\\pm3$) y del denominador ($x=0$).</li><li><strong>Estudio del signo:</strong> Dividir la recta real, probar valores intermedios y determinar el signo global de la fracción en cada tramo.</li><li><strong>Redactar la solución:</strong> Unir los intervalos positivos con paréntesis y usar el símbolo de unión ($\\cup$).</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te toca aplicar este mismo proceso. Tienes aquí otra función logarítmica con una fracción. Sigue los cinco pasos y encuentra su dominio.",
+      "content": "<p>Halla el dominio de definición de la siguiente función:</p><p>$$g(x) = \\log_{10} \\left( \\frac{x^2 - 4}{x - 1} \\right)$$</p><ul><li>Calcula las raíces del numerador.</li><li>Calcula la raíz del denominador.</li><li>Construye los intervalos y determina qué signo tiene la fracción en cada uno.</li><li>Escribe el dominio final.</li></ul><p><em>Trabájalo en papel antes de ver la solución.</em></p>",
+      "practiceAnswer": "<p><strong>1. Numerador:</strong> $x^2 - 4 = 0 \\implies x = 2, x = -2$.</p><p><strong>2. Denominador:</strong> $x - 1 = 0 \\implies x = 1$.</p><p><strong>3. Intervalos y signos:</strong> Puntos críticos en $-2, 1, 2$.<br>$(-\\infty, -2) \\implies (-)/(-) = (-)$<br>$(-2, 1) \\implies (+)/(-) = (-)$ <em>¡Error común! Vamos a probar bien:</em> si $x=0$, $\\frac{0-4}{0-1} = \\frac{-4}{-1} = +$<br>$(1, 2) \\implies (+)/(+) = (+)$ <em>¡Error común! Probemos con $x=1.5$:</em> $\\frac{2.25-4}{1.5-1} = \\frac{-}{+} = -$<br>$(2, +\\infty) \\implies (+)/(+) = +$<br>Los signos reales son: $-, +, -, +$.</p><p><strong>4. Dominio final (intervalos $+$):</strong> $\\text{Dom}(g) = (-2, 1) \\cup (2, +\\infty)$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: cambia la restricción",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Piensa cómo cambiaría el problema si, en lugar de un logaritmo, tuviéramos una raíz cuadrada. La inecuación ya no sería la misma.",
+      "content": "<p>Imagina que la función del problema original no fuera un logaritmo, sino una raíz cuadrada:</p><p>$$h(x) = \\sqrt{\\frac{x^2 - 9}{x}}$$</p><p>Las restricciones del dominio de una raíz cuadrada de índice par dictan que su argumento debe ser <strong>mayor o igual a cero</strong> ($\\ge 0$), no estrictamente mayor como en el logaritmo.</p><p>Sabiendo que los intervalos positivos siguen siendo los mismos ($-3$ a $0$, y de $3$ a infinito)...</p><p>¿Cómo cambiaría la escritura matemática del dominio final $\\text{Dom}(h)$ teniendo en cuenta que ahora sí está permitido que el numerador sea cero, pero el denominador sigue sin poder serlo?</p>",
+      "practiceAnswer": "<p>Al permitir que la fracción valga cero, las raíces del numerador sí se incluyen en el dominio, por lo que usaremos <strong>corchetes</strong> para ellas. Sin embargo, la raíz del denominador ($x=0$) sigue siendo una indeterminación matemática y debe mantenerse con <strong>paréntesis</strong>.</p><p>El dominio sería: $\\text{Dom}(h) = [-3, 0) \\cup [3, +\\infty)$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:22:21.427Z",
+    "updatedAt": "2026-08-01T17:22:21.427Z",
+    "contentHash": "639ac476d8ed2534",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

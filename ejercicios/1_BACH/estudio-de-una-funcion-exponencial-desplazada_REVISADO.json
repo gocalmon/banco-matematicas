@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis matemático",
+    "subtopic": "Funciones exponenciales",
+    "exerciseType": "Estudio y representación gráfica",
+    "protocols": [
+      "B"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Identificar los elementos clave de una función exponencial desplazada.",
+      "Calcular analíticamente asíntotas horizontales mediante límites.",
+      "Determinar intersecciones con los ejes coordenados de forma exacta.",
+      "Trazar la gráfica de una función exponencial usando sus elementos analíticos."
+    ],
+    "prerequisites": [
+      "Propiedades de las potencias",
+      "Concepto de asíntota horizontal y cálculo de límites en el infinito",
+      "Sustitución y evaluación de funciones"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:17:54.293Z",
+    "id": "estudio-de-una-funcion-exponencial-desplazada-17e64ae8"
+  },
+  "title": "Estudio de una función exponencial desplazada",
+  "slides": [
+    {
+      "title": "Enunciado original",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leamos con atención el problema. Se nos presenta una función exponencial que ha sufrido desplazamientos, y nos piden encontrar tres elementos clave para poder dibujarla.",
+      "content": "<p><strong>Ejercicio 4:</strong> Dada la función exponencial desplazada $f(x) = 3^{x-1} - 2$:</p><ul><li>a) Halla la ecuación de su asíntota horizontal.</li><li>b) Determina analíticamente su punto de corte con el eje $Y$ (ordenada en el origen).</li><li>c) Representa la gráfica de la función de forma precisa.</li></ul>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Antes de empezar a calcular, trazaremos nuestro plan. Al tratarse de una función exponencial, su dominio será todos los números reales. Nos enfocaremos en los límites, los puntos de corte y puntos adicionales para asegurar la precisión del gráfico.",
+      "content": "<p>Para abordar el estudio de la función exponencial $f(x) = 3^{x-1} - 2$, seguiremos esta estrategia estructurada:</p><ol><li><strong>Análisis previo:</strong> El dominio de cualquier función de la forma $a^{g(x)} + k$ (con $a>0$, $a \\neq 1$ y $g(x)$ polinómica) es todo el conjunto de los números reales, $\\mathbb{R}$. Al ser la base $3 > 1$, se tratará de una función creciente.</li><li><strong>Apartado a:</strong> Para la asíntota horizontal, estudiaremos el comportamiento de la función en los extremos, es decir, calcularemos los límites cuando $x \\to -\\infty$ y $x \\to +\\infty$.</li><li><strong>Apartado b:</strong> Para el corte con el eje vertical (eje $Y$), impondremos la condición analítica $x = 0$ y calcularemos la imagen exacta, operando con fracciones si fuera necesario.</li><li><strong>Apartado c:</strong> Buscaremos puntos de apoyo sencillos adicionales evaluando la función en valores estratégicos de $x$, para finalmente construir la curva completa respetando su monotonía y su asíntota.</li></ol><p><em>Aplicación:</em> Las funciones exponenciales desplazadas se utilizan frecuentemente para modelar situaciones reales donde un crecimiento o decrecimiento tiene un límite o un nivel base distinto de cero, como la temperatura de un objeto que se enfría hasta alcanzar la temperatura ambiente (Ley de enfriamiento de Newton).</p>"
+    },
+    {
+      "title": "a) Asíntota horizontal",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Calculamos el límite de la función cuando la equis tiende a menos infinito. Como la base es mayor que uno, tres elevado a un exponente enormemente negativo tiende a cero, dejando solo el desplazamiento de menos dos.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar la recta horizontal a la que se aproxima la función sin llegar a cruzarla en el infinito.</p><p>Para las funciones exponenciales $y = a^x$ con $a>1$, la asíntota horizontal se encuentra evaluando el límite cuando $x \\to -\\infty$.</p><p>Calculamos el límite:</p><p>$$\\lim_{x \\to -\\infty} f(x) = \\lim_{x \\to -\\infty} (3^{x-1} - 2)$$</p><p>Analizamos el comportamiento del término exponencial:</p><ul><li>Cuando $x \\to -\\infty$, el exponente $(x - 1) \\to -\\infty$.</li><li>Por las propiedades de las potencias, $3^{-\\infty} = \\frac{1}{3^{\\infty}} = \\frac{1}{\\infty} = 0$.</li></ul><p>Sustituyendo esto en nuestro límite inicial:</p><p>$$\\lim_{x \\to -\\infty} f(x) = 0 - 2 = -2$$</p><p><strong>Conclusión:</strong> La ecuación de la asíntota horizontal es la recta $y = -2$.</p>",
+      "theory": "<p>La gráfica de $y = a^x + k$ es la gráfica de $y = a^x$ desplazada $k$ unidades en el eje vertical. Su asíntota horizontal cambia de $y=0$ a $y=k$.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='10' x2='400' y2='10'/><line x1='0' y1='50' x2='400' y2='50'/><line x1='0' y1='90' x2='400' y2='90'/><line x1='0' y1='130' x2='400' y2='130'/><line x1='0' y1='170' x2='400' y2='170'/><line x1='0' y1='210' x2='400' y2='210'/><line x1='0' y1='250' x2='400' y2='250'/><line x1='0' y1='290' x2='400' y2='290'/><line x1='0' y1='330' x2='400' y2='330'/><line x1='0' y1='370' x2='400' y2='370'/><line x1='0' y1='0' x2='0' y2='400'/><line x1='40' y1='0' x2='40' y2='400'/><line x1='80' y1='0' x2='80' y2='400'/><line x1='120' y1='0' x2='120' y2='400'/><line x1='160' y1='0' x2='160' y2='400'/><line x1='200' y1='0' x2='200' y2='400'/><line x1='240' y1='0' x2='240' y2='400'/><line x1='280' y1='0' x2='280' y2='400'/><line x1='320' y1='0' x2='320' y2='400'/><line x1='360' y1='0' x2='360' y2='400'/><line x1='400' y1='0' x2='400' y2='400'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='0' y1='250' x2='400' y2='250'/><line x1='200' y1='0' x2='200' y2='400'/></g><line x1='0' y1='330' x2='400' y2='330' stroke='#a78bfa' stroke-width='2' stroke-dasharray='6,4'/><text x='210' y='325' fill='#a78bfa' font-family='sans-serif' font-size='16'>y = -2</text><text x='380' y='240' fill='#fbbf24' font-family='sans-serif' font-size='16'>X</text><text x='180' y='20' fill='#fbbf24' font-family='sans-serif' font-size='16'>Y</text></svg>"
+    },
+    {
+      "title": "b) Corte con el eje Y",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Para encontrar el cruce con el eje vertical, sustituimos la equis por cero. Hay que tener mucho cuidado con el exponente negativo, ya que indica una fracción.",
+      "content": "<p><strong>Objetivo:</strong> Determinar la ordenada en el origen, el punto exacto donde la gráfica cruza el eje vertical.</p><p>Analíticamente, la intersección con el eje $Y$ siempre se produce cuando la coordenada horizontal es nula, es decir, imponiendo $x = 0$.</p><p>Sustituimos $x=0$ en la función original:</p><p>$$f(0) = 3^{0-1} - 2$$</p><p>$$f(0) = 3^{-1} - 2$$</p><p>Aplicamos la propiedad de la potencia de exponente negativo ($a^{-n} = \\frac{1}{a^n}$):</p><p>$$f(0) = \\frac{1}{3^1} - 2 = \\frac{1}{3} - 2$$</p><p>Para restar, reducimos a común denominador:</p><p>$$f(0) = \\frac{1}{3} - \\frac{6}{3} = -\\frac{5}{3}$$</p><p><strong>Interpretación parcial:</strong> El punto de corte exacto con el eje $Y$ es $(0, -\\frac{5}{3})$. En valor decimal aproximado para guiarnos al dibujar, esto es $(0, -1.67)$.</p>",
+      "warning": "Un error muy común es suponer que el término exponencial vale 0 al sustituir $x=0$. Recuerda que $3^0 = 1$ y $3^{-1} = 1/3$. Solamente un exponente tendiendo a $-\\infty$ anularía la base.",
+      "checkpoint": {
+        "question": "¿Qué sucedería si buscáramos analíticamente el corte con el eje X?",
+        "options": [
+          {
+            "text": "Deberíamos igualar la función a cero: 3^(x-1) - 2 = 0.",
+            "correct": true,
+            "feedback": "Correcto. Para el eje X imponemos y=0. La ecuación sería 3^(x-1) = 2, cuya solución requiere el uso de logaritmos: x - 1 = log_3(2), luego x = 1 + log_3(2)."
+          },
+          {
+            "text": "No se puede calcular analíticamente, solo de forma gráfica.",
+            "correct": false,
+            "feedback": "Incorrecto. Se puede calcular analíticamente usando logaritmos."
+          },
+          {
+            "text": "Daríamos el valor x = 1 para anular el exponente.",
+            "correct": false,
+            "feedback": "Incorrecto. Sustituir x=1 solo nos da otro punto de la gráfica (1, -1), pero no el corte con el eje X."
+          }
+        ]
+      },
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='10' x2='400' y2='10'/><line x1='0' y1='50' x2='400' y2='50'/><line x1='0' y1='90' x2='400' y2='90'/><line x1='0' y1='130' x2='400' y2='130'/><line x1='0' y1='170' x2='400' y2='170'/><line x1='0' y1='210' x2='400' y2='210'/><line x1='0' y1='250' x2='400' y2='250'/><line x1='0' y1='290' x2='400' y2='290'/><line x1='0' y1='330' x2='400' y2='330'/><line x1='0' y1='370' x2='400' y2='370'/><line x1='0' y1='0' x2='0' y2='400'/><line x1='40' y1='0' x2='40' y2='400'/><line x1='80' y1='0' x2='80' y2='400'/><line x1='120' y1='0' x2='120' y2='400'/><line x1='160' y1='0' x2='160' y2='400'/><line x1='200' y1='0' x2='200' y2='400'/><line x1='240' y1='0' x2='240' y2='400'/><line x1='280' y1='0' x2='280' y2='400'/><line x1='320' y1='0' x2='320' y2='400'/><line x1='360' y1='0' x2='360' y2='400'/><line x1='400' y1='0' x2='400' y2='400'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='0' y1='250' x2='400' y2='250'/><line x1='200' y1='0' x2='200' y2='400'/></g><line x1='0' y1='330' x2='400' y2='330' stroke='#a78bfa' stroke-width='2' stroke-dasharray='6,4'/><circle cx='200' cy='316.6' r='5' fill='#f43f5e'/><text x='210' y='312' fill='#f43f5e' font-family='sans-serif' font-size='14'>(0, -5/3)</text></svg>"
+    },
+    {
+      "title": "c) Puntos adicionales y Representación",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Para garantizar un trazo preciso, evaluamos la función en un par de valores extra. Unimos los puntos respetando la asíntota por la izquierda y el crecimiento acelerado por la derecha.",
+      "content": "<p><strong>Objetivo:</strong> Trazar la gráfica combinando la asíntota, el punto de corte y la tendencia exponencial.</p><p>Para mayor precisión, calculamos un par de puntos adicionales escogiendo valores de $x$ que simplifiquen el exponente:</p><ul><li>Si $x=1 \\implies f(1) = 3^{1-1} - 2 = 3^0 - 2 = 1 - 2 = -1$. Obtenemos el punto $(1, -1)$.</li><li>Si $x=2 \\implies f(2) = 3^{2-1} - 2 = 3^1 - 2 = 3 - 2 = 1$. Obtenemos el punto $(2, 1)$.</li><li>Si $x=3 \\implies f(3) = 3^{3-1} - 2 = 3^2 - 2 = 9 - 2 = 7$. Obtenemos el punto $(3, 7)$.</li></ul><p><strong>Construcción:</strong></p><p>Situamos la recta punteada en $y=-2$. Marcamos los puntos obtenidos. Observamos que hacia la izquierda (valores de $x$ negativos), la gráfica desciende lentamente, aplastándose contra la asíntota. Hacia la derecha, superado el eje $Y$, la curva inicia un rápido ascenso vertical típico del crecimiento exponencial.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='10' x2='400' y2='10'/><line x1='0' y1='50' x2='400' y2='50'/><line x1='0' y1='90' x2='400' y2='90'/><line x1='0' y1='130' x2='400' y2='130'/><line x1='0' y1='170' x2='400' y2='170'/><line x1='0' y1='210' x2='400' y2='210'/><line x1='0' y1='250' x2='400' y2='250'/><line x1='0' y1='290' x2='400' y2='290'/><line x1='0' y1='330' x2='400' y2='330'/><line x1='0' y1='370' x2='400' y2='370'/><line x1='0' y1='0' x2='0' y2='400'/><line x1='40' y1='0' x2='40' y2='400'/><line x1='80' y1='0' x2='80' y2='400'/><line x1='120' y1='0' x2='120' y2='400'/><line x1='160' y1='0' x2='160' y2='400'/><line x1='200' y1='0' x2='200' y2='400'/><line x1='240' y1='0' x2='240' y2='400'/><line x1='280' y1='0' x2='280' y2='400'/><line x1='320' y1='0' x2='320' y2='400'/><line x1='360' y1='0' x2='360' y2='400'/><line x1='400' y1='0' x2='400' y2='400'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='0' y1='250' x2='400' y2='250'/><line x1='200' y1='0' x2='200' y2='400'/></g><line x1='0' y1='330' x2='400' y2='330' stroke='#a78bfa' stroke-width='2' stroke-dasharray='6,4'/><path d='M 0 329.5 L 40 328 L 80 326 L 120 322 L 160 310 L 200 316.6 L 240 290 L 280 210 L 300 130 L 320 -30' stroke='#38bdf8' stroke-width='3' fill='none'/><circle cx='200' cy='316.6' r='5' fill='#f43f5e'/><circle cx='240' cy='290' r='5' fill='#10b981'/><circle cx='280' cy='210' r='5' fill='#10b981'/><circle cx='320' cy='-30' r='5' fill='#10b981'/><text x='110' y='315' fill='#f43f5e' font-family='sans-serif' font-size='14'>(0, -5/3)</text><text x='250' y='295' fill='#10b981' font-family='sans-serif' font-size='14'>(1, -1)</text><text x='290' y='215' fill='#10b981' font-family='sans-serif' font-size='14'>(2, 1)</text><text x='15' y='325' fill='#a78bfa' font-family='sans-serif' font-size='14'>y = -2</text></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Hemos analizado cada parte por separado y las hemos unido en la gráfica. Vamos a repasar los pasos que garantizan un estudio correcto de la función exponencial.",
+      "content": "<ol><li><strong>Asíntota horizontal:</strong> Identificamos el término independiente (el desplazamiento vertical). Mediante el cálculo del límite cuando $x \\to -\\infty$, confirmamos que la curva nunca desciende del umbral $y = -2$.</li><li><strong>Ordenada en el origen:</strong> Comprobamos el punto exacto de cruce con el eje vertical forzando $x = 0$, obteniendo y operando fracciones para llegar al valor exacto $-\\frac{5}{3}$.</li><li><strong>Puntos de anclaje:</strong> Evaluamos $x=1$ y $x=2$ para facilitar el dibujo.</li><li><strong>Trazado final:</strong> Unimos los puntos garantizando el comportamiento asintótico hacia la izquierda y el crecimiento exponencial acelerado hacia la derecha.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica exactamente el mismo procedimiento con esta nueva función. Asegúrate de calcular bien las fracciones.",
+      "content": "<p>Dada la función exponencial $g(x) = 2^{x+2} - 3$:</p><ul><li>a) Halla la ecuación de su asíntota horizontal.</li><li>b) Determina analíticamente su punto de corte con el eje $Y$.</li><li>c) Calcula las coordenadas para los puntos donde $x=-1$ y $x=0$.</li></ul><p><em>Realiza todos los cálculos en papel antes de consultar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>a) Asíntota horizontal:</strong> Evaluando $\\lim_{x \\to -\\infty} g(x)$, obtenemos $0 - 3 = -3$. La ecuación es $y = -3$.</p><p><strong>b) Corte eje Y:</strong> Sustituimos $x=0 \\implies g(0) = 2^{0+2} - 3 = 4 - 3 = 1$. El punto es $(0, 1)$.</p><p><strong>c) Puntos adicionales:</strong> Si $x=-1 \\implies g(-1) = 2^{-1+2} - 3 = 2^1 - 3 = -1$. El punto es $(-1, -1)$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Llevemos este modelo a un problema real de ciencias físicas, donde la asíntota adquiere un significado físico concreto.",
+      "content": "<p>Una taza de café recién servida a $90^\\circ \\text{C}$ se deja en una habitación. La temperatura del café en grados Celsius en función del tiempo en minutos, $t \\ge 0$, se puede modelar mediante la función:</p><p>$$T(t) = 70 \\cdot (0.8)^t + 20$$</p><p>Basándote en tus conocimientos de funciones exponenciales y sus asíntotas:</p><ol><li>¿Cuál es la temperatura de la habitación?</li><li>Justifícalo analíticamente usando límites.</li></ol><p><em>Pista: Piensa qué ocurre con la temperatura del café después de mucho, mucho tiempo.</em></p>",
+      "practiceAnswer": "<p><strong>1. Temperatura de la habitación:</strong> $20^\\circ \\text{C}$.</p><p><strong>2. Justificación:</strong> Tras un tiempo infinitamente largo, el café se iguala a la temperatura ambiente. Al ser la base $0.8 < 1$, cuando el tiempo $t \\to +\\infty$, el término $(0.8)^t$ tiende a $0$.</p><p>$\\lim_{t \\to +\\infty} T(t) = 70 \\cdot 0 + 20 = 20$.</p><p>La temperatura desciende acercándose asintóticamente al valor $T = 20$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:18:11.414Z",
+    "updatedAt": "2026-08-01T17:18:11.414Z",
+    "contentHash": "6932a84987afb64f",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

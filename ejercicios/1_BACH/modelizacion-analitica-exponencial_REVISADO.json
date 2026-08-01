@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis",
+    "subtopic": "Funciones exponenciales",
+    "exerciseType": "Modelización analítica",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Relacionar las características geométricas de una gráfica con los parámetros de su ecuación.",
+      "Identificar el efecto del término independiente en las asíntotas horizontales.",
+      "Resolver sistemas de ecuaciones no lineales planteados a partir de puntos de paso de una función."
+    ],
+    "prerequisites": [
+      "Concepto de asíntota horizontal.",
+      "Evaluación de funciones en un punto.",
+      "Resolución de ecuaciones de primer grado y raíces cúbicas."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T19:20:33.623Z",
+    "id": "modelizacion-analitica-exponencial-65fad18f"
+  },
+  "title": "Modelización analítica exponencial",
+  "slides": [
+    {
+      "title": "Enunciado original",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a analizar este ejercicio de modelización donde, a partir de tres pistas geométricas, debemos reconstruir la fórmula completa de una función exponencial.",
+      "content": "<p><strong>Ejercicio 6: Modelización analítica exponencial:</strong> Determina la fórmula de la función exponencial del tipo $f(x) = a \\cdot b^x + c$ sabiendo que presenta una asíntota horizontal en la recta $y = -3$, que corta al eje de ordenadas (eje $Y$) en el punto $(0, -1)$ y que pasa de manera exacta por el punto $(3, 13)$.</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra misión es descubrir el valor de tres números desconocidos: a, b y c. Como tenemos tres datos distintos, los usaremos uno por uno para ir despejando cada letra progresivamente.",
+      "content": "<p><strong>Objetivo:</strong> Hallar los valores exactos de los parámetros $a$, $b$ y $c$ de la función $f(x) = a \\cdot b^x + c$.</p><p><strong>Estrategia de resolución:</strong></p><ol><li><strong>Usar la asíntota horizontal:</strong> El límite de la función cuando la exponencial se anula nos dará directamente el desplazamiento vertical, es decir, el parámetro $c$.</li><li><strong>Usar el corte con el eje Y:</strong> Sustituyendo el punto $(0, -1)$ y el valor de $c$ en la ecuación, podremos despejar el multiplicador $a$.</li><li><strong>Usar el punto de paso extra:</strong> Evaluando la función en $(3, 13)$ y conociendo $a$ y $c$, obtendremos una ecuación polinómica sencilla para despejar la base $b$.</li></ol><p><strong>Contexto:</strong> Este tipo de estructura ($y = a \\cdot b^x + c$) modeliza fenómenos naturales que crecen o decrecen hacia un límite estabilizado, como la temperatura de un café enfriándose hasta alcanzar la temperatura ambiente (la asíntota).</p>"
+    },
+    {
+      "title": "Paso 1: Determinar el parámetro c (Asíntota)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Empezaremos por la asíntota. En una función exponencial simple, el término que se suma o resta al final es el que sube o baja toda la gráfica y, por tanto, nos marca la altura de la asíntota horizontal. Así descubrimos nuestra c.",
+      "content": "<p><strong>Objetivo:</strong> Utilizar la asíntota horizontal $y = -3$ para hallar $c$.</p><p>En una función del tipo $f(x) = a \\cdot b^x + c$ (con $b > 0, b \\neq 1$), el término $b^x$ tiende a cero cuando $x \\to -\\infty$ (si $b > 1$) o cuando $x \\to +\\infty$ (si $0 < b < 1$).</p><p>Por tanto, el límite de la función hacia uno de los extremos es siempre el término independiente:</p><p>$$y = c$$</p><p>Como el enunciado nos dice que la asíntota horizontal está en $y = -3$, deducimos de forma directa que:</p><p>$$c = -3$$</p><p>Nuestra función modelo provisional queda como $f(x) = a \\cdot b^x - 3$.</p>",
+      "theory": "<p><strong>Asíntota de una exponencial trasladada:</strong> Toda función de la forma $f(x) = k \\cdot a^x + C$ tiene como única asíntota horizontal la recta $y = C$, que representa su desplazamiento vertical respecto al origen.</p>",
+      "visual": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"400\" fill=\"#0f172a\"/><path d=\"M 40 280 L 360 280\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M 131 40 L 131 360\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"328\" x2=\"360\" y2=\"328\" stroke=\"#ef4444\" stroke-width=\"2.5\" stroke-dasharray=\"6,6\"/><text x=\"320\" y=\"348\" fill=\"#ef4444\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\">y = -3</text><text x=\"110\" y=\"50\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">Y</text><text x=\"350\" y=\"270\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">X</text></svg>"
+    },
+    {
+      "title": "Paso 2: Determinar el parámetro a (Corte OY)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Ahora que conocemos ce, usamos el punto de corte con el eje vertical. Al evaluar la función en x igual a cero, la exponencial desaparece y podemos despejar la a con una simple ecuación de primer grado.",
+      "content": "<p><strong>Objetivo:</strong> Utilizar el corte con el eje Y $(0, -1)$ para despejar el parámetro $a$.</p><p>Sustituimos el punto en la expresión parcial que ya tenemos, $f(x) = a \\cdot b^x - 3$:</p><p>$$f(0) = -1$$</p><p>$$a \\cdot b^0 - 3 = -1$$</p><p>Sabemos que cualquier base real positiva elevada a cero da como resultado $1$ ($b^0 = 1$). Por tanto:</p><p>$$a \\cdot 1 - 3 = -1$$</p><p>$$a - 3 = -1$$</p><p>$$a = -1 + 3$$</p><p>$$a = 2$$</p><p>Nuestra función va tomando forma: $f(x) = 2 \\cdot b^x - 3$.</p>",
+      "visual": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"400\" fill=\"#0f172a\"/><path d=\"M 40 280 L 360 280\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M 131 40 L 131 360\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"328\" x2=\"360\" y2=\"328\" stroke=\"#ef4444\" stroke-width=\"2.5\" stroke-dasharray=\"6,6\"/><text x=\"320\" y=\"348\" fill=\"#ef4444\" font-family=\"sans-serif\" font-size=\"14\">y = -3</text><circle cx=\"131\" cy=\"296\" r=\"6\" fill=\"#3b82f6\"/><text x=\"145\" y=\"300\" fill=\"#3b82f6\" font-family=\"sans-serif\" font-size=\"14\">(0, -1)</text></svg>",
+      "checkpoint": {
+        "question": "¿Por qué podíamos afirmar con seguridad que $b^0 = 1$ en este problema sin conocer el valor exacto de $b$?",
+        "options": [
+          {
+            "text": "Porque por definición matemática genérica, el parámetro $b$ de cualquier función exponencial pura es estrictamente mayor que $0$ y distinto de $1$.",
+            "correct": true,
+            "feedback": "Correcto. Como $b > 0$, nunca nos topamos con el caso problemático de $0^0$."
+          },
+          {
+            "text": "Porque toda variable, constante o número, incluso el $0$, elevado a $0$ es siempre $1$.",
+            "correct": false,
+            "feedback": "Falso. La expresión $0^0$ es una indeterminación, pero la base de una exponencial nunca es $0$."
+          },
+          {
+            "text": "Porque el problema indica que la función corta al eje Y, forzando a que la base sea $1$.",
+            "correct": false,
+            "feedback": "Falso. Si la base fuera $1$, $f(x) = a\\cdot 1^x + c$ sería una línea recta horizontal constante, no una curva exponencial."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Determinar el parámetro b (Tercer punto)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Con a y ce descubiertos, solo nos queda la base be. Introducimos las coordenadas del último punto que nos dan. Llegaremos a una ecuación donde be está elevada al cubo, así que la resolveremos haciendo una raíz cúbica.",
+      "content": "<p><strong>Objetivo:</strong> Usar el punto de paso $(3, 13)$ para averiguar la base $b$.</p><p>Sustituimos el punto en nuestro modelo $f(x) = 2 \\cdot b^x - 3$:</p><p>$$f(3) = 13$$</p><p>$$2 \\cdot b^3 - 3 = 13$$</p><p>Sumamos $3$ en ambos lados para aislar el término de la potencia:</p><p>$$2 \\cdot b^3 = 16$$</p><p>Dividimos entre $2$:</p><p>$$b^3 = 8$$</p><p>Aplicamos raíz cúbica en ambos miembros. Al ser índice impar, no hay problema de signos ni múltiples ramas:</p><p>$$b = \\sqrt[3]{8}$$</p><p>$$b = 2$$</p><p>El último parámetro es $b = 2$.</p>",
+      "warning": "<p>Cuidado con la jerarquía de las operaciones: en $2 \\cdot b^3$, el exponente afecta solo a $b$. Es un error frecuente multiplicar primero $2 \\cdot b$ y luego elevar al cubo. Primero se aísla la potencia.</p>",
+      "visual": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"400\" fill=\"#0f172a\"/><path d=\"M 40 280 L 360 280\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M 131 40 L 131 360\" stroke=\"#334155\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"328\" x2=\"360\" y2=\"328\" stroke=\"#ef4444\" stroke-width=\"2.5\" stroke-dasharray=\"6,6\"/><circle cx=\"131\" cy=\"296\" r=\"5\" fill=\"#3b82f6\"/><text x=\"145\" y=\"305\" fill=\"#3b82f6\" font-family=\"sans-serif\" font-size=\"14\">(0, -1)</text><circle cx=\"268\" cy=\"72\" r=\"5\" fill=\"#10b981\"/><text x=\"280\" y=\"72\" fill=\"#10b981\" font-family=\"sans-serif\" font-size=\"14\">(3, 13)</text><path d=\"M 40 320 L 85 312 L 131 296 L 177 264 L 223 200 L 268 72\" stroke=\"#fbbf24\" stroke-width=\"2.5\" fill=\"none\"/></svg>"
+    },
+    {
+      "title": "Paso 4: Comprobación analítica del modelo",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Con los tres valores calculados construimos la función final y verificamos que cumpla religiosamente cada una de las condiciones originales del enunciado. Todo debe encajar a la perfección.",
+      "content": "<p>Sustituyendo $a=2, b=2, c=-3$, nuestra función candidata es:</p><p>$$f(x) = 2 \\cdot 2^x - 3$$</p><p>Verifiquemos que cumple las tres exigencias iniciales:</p><ol><li><strong>Asíntota horizontal:</strong> Cuando $x \\to -\\infty$, $2^x \\to 0$. Entonces $f(x) \\to 2(0) - 3 = -3$. Cumple $y = -3$.</li><li><strong>Punto $(0, -1)$:</strong> $f(0) = 2 \\cdot 2^0 - 3 = 2(1) - 3 = -1$. Cumple.</li><li><strong>Punto $(3, 13)$:</strong> $f(3) = 2 \\cdot 2^3 - 3 = 2(8) - 3 = 16 - 3 = 13$. Cumple.</li></ol><p>La ecuación obtenida es sólida y no admite otras soluciones.</p><p><em>Nota: De manera alternativa y elegante, por propiedades de las potencias, podemos agrupar $2^1 \\cdot 2^x$ y expresar la función como $f(x) = 2^{x+1} - 3$.</em></p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos en orden. Primero la asíntota nos dio la constante ce. Después, con la ordenada en el origen despejamos el factor multiplicativo a. Finalmente, evaluando el último punto de paso encontramos la base de la exponencial.",
+      "content": "<p><strong>Método para modelizar funciones paramétricas:</strong></p><ol><li><strong>Asignar características límite:</strong> Identificamos que la asíntota horizontal corresponde directamente al término independiente del modelo exponencial, concluyendo que $c = -3$.</li><li><strong>Sustitución de puntos simples:</strong> Evaluamos el corte con el eje OY $(x=0)$. Su ventaja es que anula la base exponencial ($b^0 = 1$), permitiendo resolver una ecuación lineal sencilla para obtener $a = 2$.</li><li><strong>Resolución por punto general:</strong> Insertamos las coordenadas del tercer punto, sustituyendo $x=3$ e $y=13$. Transformamos la ecuación paramétrica en una ecuación polinómica (tipo $b^3 = 8$) de donde extrajimos que la base es $b=2$.</li><li><strong>Validación:</strong> Escribimos la fórmula y recalculamos límites e imágenes para corroborar.</li></ol><p><strong>Resultado Final Explicito:</strong></p><p>La fórmula de la función es: $$f(x) = 2 \\cdot 2^x - 3 \\quad \\text{o su equivalente} \\quad f(x) = 2^{x+1} - 3$$</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu momento de practicar. Aplica la misma rutina: deduce primero la asíntota, luego el corte en el eje vertical y finalmente la base. Resuélvelo completo antes de comprobar la solución.",
+      "content": "<p>Determina la fórmula de la función exponencial del tipo $f(x) = a \\cdot b^x + c$ sabiendo que:</p><ul><li>Presenta una asíntota horizontal en la recta $y = 5$.</li><li>Corta al eje de ordenadas (eje $Y$) en el punto $(0, 2)$.</li><li>Pasa de manera exacta por el punto $(2, -22)$.</li></ul><p><em>Indicación: Sigue la misma estructura progresiva. Utiliza el comportamiento en el infinito para fijar $c$, el valor en $x=0$ para descubrir $a$, y el último punto para resolver la potencia y hallar $b$. Cuidado con los signos al despejar.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final completo:</strong></p><p>El modelo matemático buscado es $$f(x) = -3 \\cdot 3^x + 5$$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "El concepto de ajustar parámetros geométricamente no es exclusivo de las exponenciales. Atrévete con una función logarítmica usando exactamente la misma filosofía.",
+      "content": "<p>Las funciones logarítmicas son las inversas de las exponenciales y también podemos modelizarlas mediante traslaciones de manera muy similar.</p><p>Encuentra la fórmula de la función logarítmica del tipo $g(x) = a \\cdot \\log_2(x - c)$ sabiendo que:</p><ul><li>Presenta una <strong>asíntota vertical</strong> en la recta $x = 1$.</li><li>Pasa por el punto $(3, 10)$.</li></ul><p><em>Indicación: Piensa en qué valor de $c$ anula el argumento del logaritmo para crear la asíntota vertical (recuerda que el logaritmo tiende a infinito cuando su interior se acerca a cero). Luego, usa el punto para despejar la amplitud $a$.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final completo:</strong></p><p>La asíntota vertical $x=1$ implica que el argumento se anula ahí, luego $c=1$. Sustituyendo $(3, 10)$ se obtiene que $a=10$. El modelo es: $$g(x) = 10 \\cdot \\log_2(x - 1)$$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T19:20:56.273Z",
+    "updatedAt": "2026-08-01T19:20:56.273Z",
+    "contentHash": "261559c89bdc666e",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
