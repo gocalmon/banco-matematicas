@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "2_ESO",
+    "topic": "Funciones y Gráficas",
+    "subtopic": "Expresión analítica y cálculo de imágenes y antiimágenes",
+    "exerciseType": "Resolución de problemas con funciones lineales",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Traducir enunciados verbales a expresiones algebraicas funcionales.",
+      "Comprender la diferencia entre imagen (evaluar la función) y antiimagen (resolver la ecuación).",
+      "Representar gráficamente una función lineal e interpretar puntos en su dominio."
+    ],
+    "prerequisites": [
+      "Traducción al lenguaje algebraico.",
+      "Resolución de ecuaciones lineales de primer grado.",
+      "Uso y representación en el plano cartesiano."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T10:57:15.537Z",
+    "id": "traduccion-algebraica-y-calculo-de-antiimagenes-c2a64138"
+  },
+  "title": "Traducción Algebraica y Cálculo de Antiimágenes",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a analizar este ejercicio, que nos pide transformar texto en matemáticas puras. Lee atentamente lo que le ocurre a cada número real según la regla del problema.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 2:</strong> Una función $g(x)$ asocia a cada número real el doble de su valor disminuido en 3 unidades.</p>\n<ul>\n<li>a) Escribe la expresión algebraica (fórmula) de la función $g(x)$.</li>\n<li>b) Calcula el valor de $x$ cuya imagen es exactamente 11 (es decir, halla la antiimagen).</li>\n</ul>\n</blockquote>",
+      "hints": [
+        "Identifica las palabras clave en la regla verbal: 'el doble de' y 'disminuido en'."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestro objetivo es doble: primero construir la máquina funcional, y segundo, usarla marcha atrás. Es como si supiéramos que una receta necesita el doble de un ingrediente menos tres gramos, y luego nos preguntan cuánto ingrediente original había si al final sobraron 11 gramos.",
+      "content": "<h3>¿Qué nos piden?</h3>\n<ul>\n<li><strong>Apartado a):</strong> Traducir una descripción verbal a una fórmula matemática del tipo $g(x) = ...$</li>\n<li><strong>Apartado b):</strong> Hallar el valor de entrada (la <em>antiimagen</em>, $x$) conociendo el valor de salida (la imagen, $g(x) = 11$).</li>\n</ul>\n<h3>Estrategia</h3>\n<ol>\n<li><strong>Modelar:</strong> Asignaremos a la variable $x$ las operaciones aritméticas que indica el texto, en orden.</li>\n<li><strong>Resolver:</strong> Plantearemos una ecuación igualando la fórmula a 11 y despejaremos $x$.</li>\n<li><strong>Verificar:</strong> Comprobaremos tanto analítica como gráficamente que el resultado es coherente.</li>\n</ol>"
+    },
+    {
+      "title": "Apartado a): Traducción al lenguaje algebraico",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Empezamos tomando un número cualquiera, equis. Primero lo duplicamos, y al resultado le quitamos tres. Esa es nuestra fórmula.",
+      "content": "<p>Vamos a construir la expresión algebraica paso a paso a partir de la frase: <em>«asocia a cada número real el doble de su valor disminuido en 3 unidades»</em>.</p>\n<ol>\n<li>Sea $x$ un número real cualquiera.</li>\n<li><strong>El doble de su valor:</strong> Multiplicamos el número por 2, lo que se escribe como $2x$.</li>\n<li><strong>Disminuido en 3 unidades:</strong> Al resultado anterior le restamos 3, quedando $2x - 3$.</li>\n</ol>\n<p>Por lo tanto, la fórmula que define a nuestra función es:</p>\n<p>$$g(x) = 2x - 3$$</p>\n<p>El dominio de esta función es todo el conjunto de los números reales, $\\mathbb{R}$, ya que podemos multiplicar por 2 y restar 3 a cualquier número sin restricciones.</p>",
+      "theory": "<p><strong>Funciones afines:</strong> Una función de la forma $f(x) = mx + n$ se denomina <em>función afín</em> y su representación gráfica es una línea recta. Aquí, $m = 2$ es la pendiente y $n = -3$ es la ordenada en el origen.</p>"
+    },
+    {
+      "title": "Representación gráfica de $g(x)$",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Si dibujamos la función, vemos que es una recta que sube. Corta al eje vertical en menos tres, porque si la equis es cero, eso es lo que queda.",
+      "content": "<p>Para confirmar el comportamiento de la función $g(x) = 2x - 3$, podemos representarla gráficamente en el plano cartesiano.</p>\n<ul>\n<li><strong>Punto de corte con el eje Y:</strong> Si $x = 0$, $g(0) = 2(0) - 3 = -3$. Obtenemos el punto $(0, -3)$.</li>\n<li><strong>Punto de corte con el eje X:</strong> Si $g(x) = 0$, $2x - 3 = 0 \\Rightarrow 2x = 3 \\Rightarrow x = 1.5$. Obtenemos el punto $(1.5, 0)$.</li>\n</ul>\n<p>La gráfica es una línea recta creciente, ya que la pendiente ($m=2$) es positiva. Por cada unidad que avanzamos a la derecha, la gráfica sube 2 unidades.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Cuadrícula X: x = -2, 0, 2, 4, 6, 8, 10 -> X = 50, 100, 150, 200, 250, 300, 350 -->\n  <line x1='150' y1='50' x2='150' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='200' y1='50' x2='200' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='250' y1='50' x2='250' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='300' y1='50' x2='300' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='350' y1='50' x2='350' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <!-- Cuadrícula Y: y = -5, 0, 5, 10, 15 -> Y = 350, 275, 200, 125, 50 -->\n  <line x1='50' y1='50' x2='350' y2='50' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='125' x2='350' y2='125' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='200' x2='350' y2='200' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='350' x2='350' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <!-- Ejes -->\n  <line x1='100' y1='50' x2='100' y2='350' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <line x1='50' y1='275' x2='350' y2='275' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <text x='340' y='265' fill='#fbbf24' font-size='16' font-family='sans-serif'>X</text>\n  <text x='110' y='60' fill='#fbbf24' font-size='16' font-family='sans-serif'>Y</text>\n  <text x='85' y='290' fill='#fbbf24' font-size='14' font-family='sans-serif'>0</text>\n  <!-- Recta g(x) = 2x - 3. Puntos (-1, -5) -> (75, 350) y (9, 15) -> (325, 50) -->\n  <line x1='75' y1='350' x2='325' y2='50' stroke='#38bdf8' stroke-width='2.5'/>\n  <text x='310' y='45' fill='#38bdf8' font-size='16' font-family='sans-serif'>g(x)</text>\n</svg>"
+    },
+    {
+      "title": "Apartado b): Planteamiento de la antiimagen",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Ahora, el problema nos da el resultado final, once, y nos pregunta cuál fue el número inicial. Esto significa que debemos igualar nuestra fórmula a once y encontrar el valor de equis.",
+      "content": "<p>El apartado b) nos pide: <em>«Calcula el valor de $x$ cuya imagen es exactamente 11 (es decir, halla la antiimagen)».</em></p>\n<p>La <strong>imagen</strong> de un número se obtiene sustituyendo la $x$ en la fórmula (por ejemplo, calcular $g(2)$). Sin embargo, aquí nos dan el resultado final (la imagen) y nos piden buscar el valor original de entrada $x$. Esto es la <strong>antiimagen</strong>.</p>\n<p>Matemáticamente, esto significa que debemos resolver la siguiente ecuación:</p>\n<p>$$g(x) = 11$$</p>\n<p>Sustituyendo $g(x)$ por la expresión que hallamos en el apartado a):</p>\n<p>$$2x - 3 = 11$$</p>",
+      "warning": "<p>Un error muy común es confundir <em>imagen</em> con <em>antiimagen</em>. Si nos pidieran la imagen de 11, calcularíamos $g(11) = 2(11) - 3$. Pero al pedir la <strong>antiimagen</strong>, $11$ es el resultado de la función, no la variable $x$.</p>",
+      "checkpoint": {
+        "question": "¿Qué operación deberíamos hacer si el enunciado pidiera calcular la imagen de 5?",
+        "options": [
+          {
+            "text": "Resolver la ecuación 2x - 3 = 5",
+            "correct": false,
+            "feedback": "Incorrecto. Eso sería calcular la antiimagen de 5, buscando qué valor de x produce un resultado de 5."
+          },
+          {
+            "text": "Sustituir x por 5, calculando g(5) = 2(5) - 3",
+            "correct": true,
+            "feedback": "¡Correcto! Para calcular la imagen de un número, se sustituye ese número en la variable independiente x."
+          },
+          {
+            "text": "Hacer la operación 5 - 3 y luego multiplicar por 2",
+            "correct": false,
+            "feedback": "Incorrecto. Esa no es la función g(x). La función multiplica primero y resta después."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Resolución de la ecuación",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Resolvemos la ecuación sumando tres a ambos lados para dejar el término con equis solo, lo que nos da catorce. Finalmente, dividimos entre dos, y obtenemos que equis es igual a siete.",
+      "content": "<p>Vamos a resolver la ecuación lineal de primer grado paso a paso:</p>\n<p>$$2x - 3 = 11$$</p>\n<p>Para despejar la incógnita $x$, sumamos $3$ en ambos miembros de la ecuación:</p>\n<p>$$2x = 11 + 3$$</p>\n<p>$$2x = 14$$</p>\n<p>Ahora, dividimos ambos miembros entre $2$:</p>\n<p>$$x = \\frac{14}{2}$$</p>\n<p>$$x = 7$$</p>\n<p>Hemos encontrado que la antiimagen de $11$ es $7$.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Ejes básicos -->\n  <line x1='100' y1='50' x2='100' y2='350' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <line x1='50' y1='275' x2='350' y2='275' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <text x='340' y='265' fill='#fbbf24' font-size='16' font-family='sans-serif'>X</text>\n  <text x='110' y='60' fill='#fbbf24' font-size='16' font-family='sans-serif'>Y</text>\n  <!-- Recta g(x) = 2x - 3 -->\n  <line x1='75' y1='350' x2='325' y2='50' stroke='#38bdf8' stroke-width='2.5'/>\n  <!-- Target y=11 (Y_pix = 350 - 15*(11+5) = 110) -->\n  <line x1='100' y1='110' x2='275' y2='110' stroke='#ef4444' stroke-width='2' stroke-dasharray='5,5'/>\n  <text x='65' y='115' fill='#ef4444' font-size='14' font-family='sans-serif'>y=11</text>\n  <circle cx='275' cy='110' r='5' fill='#ef4444'/>\n</svg>"
+    },
+    {
+      "title": "Comprobación y significado",
+      "layout": "split",
+      "phase": "comprobar",
+      "narration": "Para estar seguros, introducimos el siete en nuestra función original. El doble de siete es catorce, y si le restamos tres, llegamos a once. Perfecto, ¡lo logramos! Gráficamente, corresponde al punto siete coma once.",
+      "content": "<p><strong>Comprobación analítica:</strong><br>Si nuestro resultado $x=7$ es correcto, al evaluar la función en ese punto debemos obtener $11$.</p>\n<p>Sustituimos $x = 7$ en $g(x)$:</p>\n<p>$$g(7) = 2(7) - 3$$</p>\n<p>$$g(7) = 14 - 3 = 11$$</p>\n<p>La igualdad se cumple perfectamente.</p>\n<p><strong>Interpretación geométrica:</strong><br>En la gráfica de la función, esto significa que el punto $(7, 11)$ pertenece a la recta. Visualmente, si subimos por $x=7$ hasta encontrar la gráfica y proyectamos hacia el eje vertical, chocaremos exactamente con la altura $y=11$.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Ejes básicos -->\n  <line x1='100' y1='50' x2='100' y2='350' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <line x1='50' y1='275' x2='350' y2='275' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <text x='340' y='265' fill='#fbbf24' font-size='16' font-family='sans-serif'>X</text>\n  <text x='110' y='60' fill='#fbbf24' font-size='16' font-family='sans-serif'>Y</text>\n  <!-- Recta g(x) = 2x - 3 -->\n  <line x1='75' y1='350' x2='325' y2='50' stroke='#38bdf8' stroke-width='2.5'/>\n  <!-- Proyecciones del punto (7, 11) -> (275, 110) -->\n  <line x1='100' y1='110' x2='275' y2='110' stroke='#ef4444' stroke-width='2' stroke-dasharray='5,5'/>\n  <text x='65' y='115' fill='#ef4444' font-size='14' font-family='sans-serif'>y=11</text>\n  <line x1='275' y1='275' x2='275' y2='110' stroke='#ef4444' stroke-width='2' stroke-dasharray='5,5'/>\n  <text x='265' y='295' fill='#ef4444' font-size='14' font-family='sans-serif'>x=7</text>\n  <circle cx='275' cy='110' r='5' fill='#ef4444'/>\n  <text x='285' y='105' fill='#ef4444' font-size='14' font-weight='bold' font-family='sans-serif'>(7, 11)</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumamos el proceso en tres pasos clave: entender el enunciado, escribir la fórmula, y resolver la ecuación para encontrar el valor desconocido.",
+      "content": "<p>Este es el esquema que hemos seguido para resolver el problema completo:</p>\n<ol>\n<li><strong>Modelar la situación:</strong> Traducir el enunciado verbal («doble» = multiplicar por 2; «disminuido» = restar 3) a una expresión algebraica, obteniendo $g(x) = 2x - 3$.</li>\n<li><strong>Planteamiento de la antiimagen:</strong> Comprender que buscar una antiimagen es buscar una incógnita $x$ conociendo el resultado final de la función, por lo que igualamos: $2x - 3 = 11$.</li>\n<li><strong>Resolución y comprobación:</strong> Despejar la incógnita $x$ (sumando 3 y dividiendo por 2) para obtener $x = 7$, y finalmente comprobar sustituyendo de nuevo en la fórmula original para confirmar que llegamos a $11$.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora te toca a ti. Aplica los mismos pasos para esta nueva función. Coge papel y boli, e inténtalo antes de comprobar el resultado.",
+      "content": "<p>Una función $f(x)$ asocia a cada número real la tercera parte de su valor, aumentada en 4 unidades.</p>\n<ul>\n<li>a) Escribe la expresión algebraica de la función $f(x)$.</li>\n<li>b) Calcula el valor de $x$ cuya imagen es exactamente 9 (halla su antiimagen).</li>\n</ul>\n<p><em>Intenta resolver ambos apartados usando el mismo esquema que hemos estudiado antes de mirar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Apartado a:</strong> $f(x) = \\frac{x}{3} + 4$</p>\n<p><strong>Apartado b:</strong> La antiimagen es $x = 15$. Condición: Igualar $\\frac{x}{3} + 4 = 9$ y despejar $x$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Llevemos esto al mundo real. Plantear una ecuación desde un problema cotidiano es exactamente el mismo proceso mental que acabas de dominar.",
+      "content": "<p>Una compañía telefónica cobra una cuota fija mensual de 12 euros, más 0.05 euros por cada minuto hablado en llamadas. Este mes, la factura de Laura asciende a un total de 24.50 euros.</p>\n<p>Usando el concepto de función y antiimagen, plantea la función del coste $C(x)$ respecto a los minutos hablados $x$, y averigua cuántos minutos habló Laura en total.</p>\n<p><em>Plantéalo tú primero: ¿qué es fijo, qué varía, y a qué se iguala el total?</em></p>",
+      "practiceAnswer": "<p>La función de coste es $C(x) = 0.05x + 12$.</p>\n<p>Para hallar los minutos (antiimagen de 24.50), planteamos la ecuación: $0.05x + 12 = 24.50$.</p>\n<p>Resolviendo, $0.05x = 12.50 \\Rightarrow x = 250$. Laura habló <strong>250 minutos</strong>.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T10:57:30.485Z",
+    "updatedAt": "2026-08-01T10:57:30.485Z",
+    "contentHash": "c0d3682ac550cd64",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

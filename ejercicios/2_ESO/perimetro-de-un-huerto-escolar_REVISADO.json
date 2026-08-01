@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "2_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Polinomios y valor numérico",
+    "exerciseType": "Problema aplicado",
+    "protocols": [
+      "C",
+      "E"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Modelizar geométricamente expresiones algebraicas",
+      "Operar y simplificar polinomios",
+      "Calcular el valor numérico de una expresión polinómica en un contexto real"
+    ],
+    "prerequisites": [
+      "Concepto de perímetro de un polígono",
+      "Suma y multiplicación de monomios y binomios",
+      "Sustitución de variables por valores numéricos"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T15:44:53.513Z",
+    "id": "perimetro-de-un-huerto-escolar-4267c449"
+  },
+  "title": "Perímetro de un huerto escolar",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver el ejercicio diez, un problema aplicado sobre un huerto escolar rectangular. Analizaremos cómo expresar su contorno algebraicamente y luego calcularemos su valor concreto.",
+      "content": "<p><strong>Ejercicio 10: Problema aplicado:</strong> Un huerto escolar tiene forma rectangular. Sabemos que la base mide $(x + 4)$ metros y la altura mide $(2x - 1)$ metros. Obtén el polinomio simplificado que representa:</p><ul><li>a) El perímetro total del huerto en función de $x$.</li><li>b) El valor numérico de dicho perímetro si la variable $x$ toma el valor de 5 metros.</li></ul>",
+      "hints": [
+        "Identifica la forma geométrica del huerto.",
+        "Recuerda qué significa el perímetro de una figura plana."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestro plan será, primero, recordar la fórmula del perímetro de un rectángulo. Sustituiremos las expresiones algebraicas dadas y operaremos para simplificar al máximo. Finalmente, cambiaremos la equis por cinco para responder a la segunda pregunta.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ul><li>Expresar el perímetro en función de la variable $x$ mediante un polinomio simplificado.</li><li>Evaluar ese polinomio para $x = 5$ metros.</li></ul><p><strong>Estrategia:</strong></p><ol><li><strong>Representar:</strong> Dibujar el rectángulo y asignar las expresiones dadas a su base y altura.</li><li><strong>Modelizar (apartado a):</strong> Plantear la suma de todos los lados (dos veces la base más dos veces la altura).</li><li><strong>Simplificar:</strong> Aplicar la propiedad distributiva y agrupar términos semejantes.</li><li><strong>Evaluar (apartado b):</strong> Sustituir la variable $x$ por el valor indicado y calcular.</li></ol>"
+    },
+    {
+      "title": "Representación geométrica",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Aquí tenemos un esquema de nuestro huerto. Observa que al ser un rectángulo, los lados opuestos son iguales. Esto nos facilitará calcular el perímetro.",
+      "content": "<p>Visualicemos los datos del problema en un esquema geométrico.</p><p>Sabemos que en un rectángulo:</p><ul><li>Los lados paralelos son de igual longitud.</li><li>La base mide $b = (x + 4)$ metros.</li><li>La altura mide $h = (2x - 1)$ metros.</li></ul><p>El perímetro $P(x)$ es la longitud del contorno total de la figura.</p>",
+      "visual": "<svg viewBox=\"0 0 400 400\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"50\" y=\"100\" width=\"300\" height=\"180\" fill=\"rgba(251, 191, 36, 0.1)\" stroke=\"#fbbf24\" stroke-width=\"3\"/>\n  <text x=\"200\" y=\"310\" fill=\"white\" font-size=\"18\" text-anchor=\"middle\" font-family=\"sans-serif\">Base = x + 4</text>\n  <text x=\"200\" y=\"80\" fill=\"white\" font-size=\"18\" text-anchor=\"middle\" font-family=\"sans-serif\">x + 4</text>\n  <text x=\"30\" y=\"190\" fill=\"white\" font-size=\"18\" text-anchor=\"middle\" transform=\"rotate(-90 30 190)\" font-family=\"sans-serif\">Altura = 2x - 1</text>\n  <text x=\"370\" y=\"190\" fill=\"white\" font-size=\"18\" text-anchor=\"middle\" transform=\"rotate(90 370 190)\" font-family=\"sans-serif\">2x - 1</text>\n</svg>"
+    },
+    {
+      "title": "Apartado a: Polinomio del perímetro",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Para obtener el perímetro, sumamos dos veces la base y dos veces la altura. Multiplicamos aplicando la propiedad distributiva y agrupamos las equis con las equis, y los números con los números.",
+      "content": "<p><strong>Objetivo:</strong> Hallar el polinomio $P(x)$ que representa el perímetro.</p><p>Sustituimos las dimensiones en la fórmula del perímetro:</p><p>$$P(x) = 2 \\cdot \\text{base} + 2 \\cdot \\text{altura}$$</p><p>$$P(x) = 2(x + 4) + 2(2x - 1)$$</p><p>Aplicamos la propiedad distributiva para eliminar los paréntesis:</p><p>$$P(x) = (2x + 8) + (4x - 2)$$</p><p>Agrupamos los términos semejantes (las $x$ por un lado, los términos independientes por otro):</p><p>$$P(x) = (2x + 4x) + (8 - 2)$$</p><p>$$P(x) = 6x + 6$$</p><p><strong>Interpretación:</strong> El perímetro del huerto se expresa como el polinomio simplificado $P(x) = 6x + 6$ metros.</p>",
+      "theory": "<p><strong>Propiedad distributiva:</strong> Para multiplicar un número por una suma o resta, se multiplica el número por cada uno de los términos dentro del paréntesis: $a(b + c) = ab + ac$.</p>",
+      "checkpoint": {
+        "question": "¿Por qué multiplicamos por 2 cada dimensión al calcular el perímetro?",
+        "options": [
+          {
+            "text": "Porque un rectángulo tiene cuatro lados, organizados en dos pares de lados de igual longitud.",
+            "correct": true,
+            "feedback": "¡Exacto! Sumamos la base dos veces y la altura dos veces."
+          },
+          {
+            "text": "Para calcular el área de la figura plana.",
+            "correct": false,
+            "feedback": "El área se calcula multiplicando base por altura, no sumando y multiplicando por dos."
+          },
+          {
+            "text": "Es una regla general de los polinomios.",
+            "correct": false,
+            "feedback": "Proviene de la geometría del rectángulo, no de una regla algebraica abstracta."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Apartado b: Valor numérico",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora que tenemos la fórmula simplificada, sustituimos la equis por el número cinco. Hacemos las operaciones respetando la jerarquía y obtenemos el resultado final, recordando poner las unidades en metros.",
+      "content": "<p><strong>Objetivo:</strong> Calcular el perímetro si $x = 5$ metros.</p><p>Tomamos el polinomio simplificado que obtuvimos en el apartado anterior:</p><p>$$P(x) = 6x + 6$$</p><p>Sustituimos la variable $x$ por el valor $5$:</p><p>$$P(5) = 6 \\cdot (5) + 6$$</p><p>Realizamos primero la multiplicación:</p><p>$$P(5) = 30 + 6$$</p><p>Finalmente, sumamos:</p><p>$$P(5) = 36$$</p><p><strong>Interpretación:</strong> Si $x$ toma el valor de 5 metros, el perímetro total del huerto será de $36$ metros.</p>",
+      "warning": "<p>Al dar el resultado de un problema aplicado, es fundamental incluir las <strong>unidades de medida</strong>. En este caso, como la $x$ está en metros, el perímetro también se mide en metros lineales.</p>"
+    },
+    {
+      "title": "Comprobación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Vamos a asegurarnos de que todo cuadra. Si calculamos cuánto mediría cada lado directamente con el valor de cinco, y sumamos todos los lados, deberíamos obtener el mismo perímetro.",
+      "content": "<p><strong>Objetivo:</strong> Verificar el resultado calculando las dimensiones reales del huerto para $x = 5$.</p><p>Calculamos la longitud de la base si $x = 5$:</p><p>$$\\text{Base} = x + 4 = 5 + 4 = 9 \\text{ m}$$</p><p>Calculamos la longitud de la altura si $x = 5$:</p><p>$$\\text{Altura} = 2x - 1 = 2(5) - 1 = 10 - 1 = 9 \\text{ m}$$</p><p>Con estas dimensiones, calculamos el perímetro sumando los cuatro lados:</p><p>$$\\text{Perímetro} = 2 \\cdot 9 + 2 \\cdot 9 = 18 + 18 = 36 \\text{ m}$$</p><p><strong>Conclusión:</strong> El cálculo directo coincide exactamente con el valor numérico del polinomio simplificado ($36$ m). Además, nos damos cuenta de que para $x=5$, el huerto es en realidad un cuadrado de lado $9$ m (un rectángulo particular).</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los pasos dados: planteamos la expresión del perímetro, aplicamos la distributiva, agrupamos términos y, por último, evaluamos para el valor numérico dado.",
+      "content": "<ol><li><strong>Identificar las dimensiones:</strong> Base $= x + 4$, Altura $= 2x - 1$.</li><li><strong>Plantear la expresión del perímetro:</strong> $P(x) = 2(x + 4) + 2(2x - 1)$.</li><li><strong>Simplificar el polinomio:</strong> Distribuir y agrupar términos semejantes para obtener $P(x) = 6x + 6$.</li><li><strong>Calcular el valor numérico:</strong> Sustituir $x = 5$ en el polinomio simplificado.</li><li><strong>Resultado final:</strong> $P(5) = 36$ metros.</li><li><strong>Verificar:</strong> Calcular los lados individuales ($9$ m y $9$ m) y comprobar que su perímetro coincide.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Resuelve este problema muy parecido antes de ver la solución. Solo cambian los datos.",
+      "content": "<p>Un campo deportivo rectangular tiene una base que mide $(3x - 2)$ metros y una altura de $(x + 5)$ metros. Obtén el polinomio simplificado que representa el perímetro total y halla su valor si $x = 4$ metros.</p><p><em>Intenta resolverlo por completo en tu cuaderno antes de consultar la respuesta final.</em></p>",
+      "practiceAnswer": "<p><strong>Polinomio del perímetro:</strong> $P(x) = 8x + 6$ metros.</p><p><strong>Valor numérico para $x = 4$:</strong> $P(4) = 38$ metros.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a dar un paso más. En lugar del perímetro, ¿podrías encontrar la expresión para la superficie del mismo huerto? ¡Recuerda cómo se calcula!",
+      "content": "<p>Recuperando los datos del problema original (un huerto rectangular con base $(x + 4)$ metros y altura $(2x - 1)$ metros), obtén el polinomio simplificado que representa el <strong>área</strong> total del huerto en función de $x$.</p><p><em>Pista: Recuerda cómo se multiplican dos binomios.</em></p>",
+      "practiceAnswer": "<p>El área de un rectángulo es base por altura.</p><p>$$\\text{Área}(x) = (x + 4) \\cdot (2x - 1)$$</p><p>$$\\text{Área}(x) = 2x^2 - x + 8x - 4$$</p><p>$$\\text{Área}(x) = 2x^2 + 7x - 4 \\text{ metros cuadrados}.$$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T15:46:09.312Z",
+    "updatedAt": "2026-07-31T15:46:09.312Z",
+    "contentHash": "a6e50c6f8ee3b865",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

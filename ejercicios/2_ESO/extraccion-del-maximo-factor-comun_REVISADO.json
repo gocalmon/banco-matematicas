@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "2_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Operaciones con polinomios",
+    "exerciseType": "Extracción de factor común",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Identificar el máximo factor común numérico utilizando el MCD",
+      "Identificar el máximo factor común literal tomando las letras comunes con el menor exponente",
+      "Extraer el factor común aplicando la propiedad distributiva a la inversa"
+    ],
+    "prerequisites": [
+      "Cálculo del Máximo Común Divisor (MCD)",
+      "Propiedades de las potencias (división con misma base)",
+      "Propiedad distributiva de la multiplicación"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T15:40:32.614Z",
+    "id": "extraccion-del-maximo-factor-comun-10ad8238"
+  },
+  "title": "Extracción del máximo factor común",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver el ejercicio 4. Nos pide extraer el máximo factor común posible en dos expresiones algebraicas. Una tiene solo la letra equis, y la otra tiene las letras a y be.",
+      "content": "<p><strong>Ejercicio 4:</strong> Extrae el máximo factor común posible en cada una de las siguientes expresiones algebraicas:</p><ul><li>a) $6x^4 - 9x^3 + 3x^2$</li><li>b) $5a^2b - 10ab^2$</li></ul>",
+      "hints": [
+        "Descompón mentalmente cada número en sus divisores para encontrar el mayor común.",
+        "Fíjate en las letras que se repiten en todos los términos y elige el exponente más pequeño."
+      ]
+    },
+    {
+      "title": "Estrategia para encontrar el factor común",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consistirá en dividir el problema en dos partes para cada apartado. Primero buscaremos el mayor número que divida a todos los coeficientes. Después, buscaremos qué letras se repiten en todos los términos y nos quedaremos con el exponente más pequeño. Finalmente, escribiremos el factor común multiplicando a lo que sobra de cada término.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><p>Extraer el <strong>máximo factor común</strong>. Esto es aplicar la propiedad distributiva a la inversa: transformar una suma o resta en una multiplicación.</p><p><strong>Estrategia de resolución:</strong></p><ol><li><strong>Parte numérica:</strong> Calcular el Máximo Común Divisor (M.C.D.) de los coeficientes.</li><li><strong>Parte literal:</strong> Identificar las variables (letras) que están presentes en <em>todos</em> los términos y tomarlas elevadas al menor exponente que aparezca.</li><li><strong>Extracción:</strong> Escribir el factor común encontrado delante de un paréntesis, y dentro colocar el resultado de dividir cada término original entre dicho factor común.</li></ol>"
+    },
+    {
+      "title": "Apartado a: Identificando el factor",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Comenzamos con el primer polinomio. Analicemos los números 6, 9 y 3. El mayor número que los divide a todos es el 3. Ahora miramos las letras: todos tienen equis, y los exponentes son 4, 3 y 2. Elegimos el menor, que es el 2. Así que nuestro factor común será tres equis al cuadrado.",
+      "content": "<p><strong>Objetivo:</strong> Determinar el máximo factor común de $6x^4 - 9x^3 + 3x^2$.</p><p><strong>1. Parte numérica (coeficientes 6, 9 y 3):</strong></p><p>Buscamos el máximo común divisor: $\\text{M.C.D.}(6, 9, 3) = 3$.</p><p><strong>2. Parte literal (variables $x^4, x^3, x^2$):</strong></p><p>La única letra es la $x$, presente en todos los términos. Sus exponentes son $4$, $3$ y $2$. Tomamos el menor: $x^2$.</p><p><strong>Factor común máximo:</strong> Juntando ambas partes, el factor común que vamos a extraer es $3x^2$.</p>",
+      "theory": "<p><strong>Regla del exponente:</strong> Al extraer factor común literal, siempre se escogen las bases que estén repetidas en <em>todos</em> los términos, elevadas al menor exponente con el que aparezcan en la expresión.</p>"
+    },
+    {
+      "title": "Apartado a: Extrayendo el factor común",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora dividimos cada trozo de nuestro polinomio entre el factor común que acabamos de encontrar. Atención al último término: si dividimos tres equis al cuadrado entre tres equis al cuadrado, nos da uno, no cero.",
+      "content": "<p><strong>Objetivo:</strong> Escribir la expresión factorizada de $6x^4 - 9x^3 + 3x^2$.</p><p>Dividimos cada término de la expresión original entre el factor común $3x^2$:</p><ul><li>Primer término: $\\frac{6x^4}{3x^2} = 2x^{4-2} = 2x^2$</li><li>Segundo término: $\\frac{-9x^3}{3x^2} = -3x^{3-2} = -3x$</li><li>Tercer término: $\\frac{3x^2}{3x^2} = 1$</li></ul><p>Escribimos el factor común multiplicando al polinomio resultante en un paréntesis:</p><p>$$6x^4 - 9x^3 + 3x^2 = 3x^2 (2x^2 - 3x + 1)$$</p>",
+      "warning": "<p>¡Cuidado con el último término! Cuando un término del polinomio original es <strong>exactamente igual</strong> al factor común (como el $3x^2$), al dividirlo da $1$. No desaparece ni se convierte en $0$. Si pusieras un $0$, perderías ese término al volver a multiplicar.</p>"
+    },
+    {
+      "title": "Apartado b: Identificando el factor",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Pasamos al segundo apartado. Aquí los coeficientes son 5 y 10, cuyo máximo divisor común es 5. En las letras tenemos a y be en ambos términos. Elegimos el menor exponente para cada una, resultando simplemente a por be.",
+      "content": "<p><strong>Objetivo:</strong> Determinar el máximo factor común de $5a^2b - 10ab^2$.</p><p><strong>1. Parte numérica (coeficientes 5 y 10):</strong></p><p>Buscamos el máximo común divisor: $\\text{M.C.D.}(5, 10) = 5$.</p><p><strong>2. Parte literal (variables $a^2b$ y $ab^2$):</strong></p><ul><li>Para la letra $a$: aparece como $a^2$ y como $a^1$ (es decir, $a$). El menor exponente es $1$, así que tomamos $a$.</li><li>Para la letra $b$: aparece como $b^1$ y como $b^2$. El menor exponente es $1$, así que tomamos $b$.</li></ul><p><strong>Factor común máximo:</strong> Juntando coeficientes y letras, el factor común es $5ab$.</p>",
+      "checkpoint": {
+        "question": "¿Por qué no podemos extraer un factor común literal de 'a al cuadrado' ($a^2$) en este apartado?",
+        "options": [
+          {
+            "text": "Porque el segundo término ($10ab^2$) solo tiene una letra 'a', por lo que no es posible dividirlo entre $a^2$ de forma exacta dentro de los polinomios.",
+            "correct": true,
+            "feedback": "¡Correcto! El factor extraído no puede tener un grado mayor al que tiene esa variable en cualquiera de los términos."
+          },
+          {
+            "text": "Porque el número 5 no es divisible por 2, que es el exponente de 'a'.",
+            "correct": false,
+            "feedback": "Los coeficientes y los exponentes operan de forma independiente. No se dividen coeficientes entre exponentes."
+          },
+          {
+            "text": "Porque siempre se debe sacar la variable con el exponente más alto para asegurar el 'máximo' factor.",
+            "correct": false,
+            "feedback": "Falso. La palabra 'máximo' implica extraer la mayor cantidad que sea común a *todos*. Si tomas $a^2$, ya no es común al término que solo tiene $a$."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Apartado b: Extrayendo el factor común",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Dividimos cada parte entre cinco a be. En el primer término, se nos va una a y la be entera, quedando solo a. En el segundo término, dividimos 10 entre 5, se va la a entera, y sobra una be.",
+      "content": "<p><strong>Objetivo:</strong> Escribir la expresión factorizada de $5a^2b - 10ab^2$.</p><p>Dividimos cada término entre el factor común $5ab$ restando los exponentes (si no hay exponente, es $1$):</p><ul><li>Primer término: $\\frac{5a^2b}{5ab} = 1 \\cdot a^{2-1} \\cdot b^{1-1} = a^1 \\cdot b^0 = a$</li><li>Segundo término: $\\frac{-10ab^2}{5ab} = -2 \\cdot a^{1-1} \\cdot b^{2-1} = -2 \\cdot a^0 \\cdot b^1 = -2b$</li></ul><p><em>(Recuerda que cualquier número o variable elevado a cero es $1$).</em></p><p>Escribimos el resultado con el factor común delante del paréntesis:</p><p>$$5a^2b - 10ab^2 = 5ab(a - 2b)$$</p>"
+    },
+    {
+      "title": "Comprobación de las extracciones",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Para asegurarnos de que no nos hemos equivocado, aplicamos la propiedad distributiva. Multiplicamos el factor de fuera por cada término de dentro del paréntesis. Si volvemos a la expresión original, nuestro trabajo es correcto.",
+      "content": "<p><strong>Objetivo:</strong> Comprobar los resultados aplicando la propiedad distributiva.</p><p>Una extracción de factor común correcta debe permitirnos recuperar el polinomio original al multiplicar.</p><p><strong>Comprobación del apartado a:</strong></p><p>$$3x^2 \\cdot (2x^2 - 3x + 1) = (3x^2 \\cdot 2x^2) + (3x^2 \\cdot -3x) + (3x^2 \\cdot 1)$$</p><p>$$= 6x^4 - 9x^3 + 3x^2$$</p><p>✅ Recuperamos la expresión original.</p><p><strong>Comprobación del apartado b:</strong></p><p>$$5ab \\cdot (a - 2b) = (5ab \\cdot a) - (5ab \\cdot 2b)$$</p><p>$$= 5a^2b - 10ab^2$$</p><p>✅ Recuperamos la expresión original.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Aquí tenemos un esquema de los pasos a seguir. Buscar el máximo común divisor de los números, buscar las letras comunes con el menor exponente y dividir cada término original para construir el paréntesis.",
+      "content": "<ol><li><strong>Identificar el factor común numérico:</strong> Calcular el M.C.D. de todos los coeficientes.</li><li><strong>Identificar el factor común literal:</strong> Detectar variables comunes en todos los términos y elegir el menor exponente de cada una.</li><li><strong>Componer el factor común total:</strong> Multiplicar el número y las letras halladas.</li><li><strong>Dividir:</strong> Dividir cada término del polinomio original entre el factor común.</li><li><strong>Escribir el resultado:</strong> Colocar el factor común seguido de un paréntesis que contenga la suma o resta de las divisiones obtenidas.</li></ol><p><strong>Resultados finales:</strong></p><ul><li>a) $3x^2 (2x^2 - 3x + 1)$</li><li>b) $5ab(a - 2b)$</li></ul>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Prueba a extraer el factor común de estas expresiones, muy similares a las del ejercicio resuelto.",
+      "content": "<p>Extrae el máximo factor común posible en cada una de las siguientes expresiones algebraicas:</p><ul><li>a) $12y^5 - 18y^3 + 6y^2$</li><li>b) $14x^3y^2 - 7x^2y^3$</li></ul><p><em>Realiza todos los pasos en papel antes de consultar la solución. Recuerda revisar bien qué ocurre si un término es idéntico al factor común.</em></p>",
+      "practiceAnswer": "<p><strong>Resultados finales:</strong></p><p>a) El M.C.D.(12, 18, 6) es 6 y la variable común con menor exponente es $y^2$.<br>$$6y^2(2y^3 - 3y + 1)$$</p><p>b) El M.C.D.(14, 7) es 7 y las variables comunes con menor exponente son $x^2$ e $y^2$.<br>$$7x^2y^2(2x - y)$$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "La extracción de factor común es muy útil en geometría, por ejemplo, para simplificar fórmulas de áreas o volúmenes.",
+      "content": "<p>El área de la superficie total de un cilindro se calcula sumando el área de sus dos bases circulares ($\\pi r^2$ cada una) y el área de su cuerpo lateral ($2\\pi r h$).</p><p>La fórmula que resulta es: $\\text{Área Total} = 2\\pi r^2 + 2\\pi r h$</p><p>Aplica la técnica de extracción del factor común para escribir esta fórmula matemática de forma simplificada, es decir, expresada como un producto.</p><p><em>Considera $\\pi$ y el número 2 como constantes, y $r$ y $h$ como variables.</em></p>",
+      "practiceAnswer": "<p>Los dos términos son $2\\pi r^2$ y $2\\pi r h$.</p><p>El factor común en ambos términos es el bloque completo $2\\pi r$.</p><p>Dividiendo cada término entre el factor común: $\\frac{2\\pi r^2}{2\\pi r} = r$ y $\\frac{2\\pi rh}{2\\pi r} = h$.</p><p><strong>Fórmula factorizada:</strong> $\\text{Área Total} = 2\\pi r (r + h)$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T15:41:24.986Z",
+    "updatedAt": "2026-07-31T15:41:24.986Z",
+    "contentHash": "92ca741483e39852",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

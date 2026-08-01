@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "2_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Operaciones con polinomios",
+    "exerciseType": "Suma y resta de polinomios",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Identificar y agrupar términos semejantes en polinomios",
+      "Realizar sumas de polinomios de forma analítica y ordenada",
+      "Aplicar correctamente el cambio de signo en la resta de polinomios"
+    ],
+    "prerequisites": [
+      "Suma y resta de números enteros",
+      "Concepto de monomio y término semejante",
+      "Uso de paréntesis y regla de los signos"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T15:38:21.893Z",
+    "id": "suma-y-resta-de-polinomios-con-agrupacion-9b355214"
+  },
+  "title": "Suma y resta de polinomios con agrupación",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a abordar el ejercicio dos. Tenemos dos polinomios, pe de equis y cu de equis. Nos piden sumarlos en el primer apartado y restarlos en el segundo, prestando especial atención a cómo agrupamos los términos.",
+      "content": "<p><strong>Ejercicio 2:</strong> Realiza la suma y la resta de los siguientes polinomios indicando paso a paso la agrupación de los términos semejantes:</p><p>$$P(x) = 3x^2 - 5x + 2$$</p><p>$$Q(x) = -x^2 + 2x - 4$$</p><ul><li>a) $P(x) + Q(x)$</li><li>b) $P(x) - Q(x)$</li></ul>",
+      "hints": [
+        "Fíjate en los exponentes de la variable equis; solo puedes sumar o restar aquellos que sean idénticos.",
+        "Ten mucho cuidado con el signo menos delante de un polinomio en el apartado b."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia será escribir cada operación paso a paso. Para sumar, simplemente juntaremos los términos que tengan el mismo grado. Para restar, el paso crítico será cambiar el signo a todos los elementos del segundo polinomio antes de agrupar. Esto es muy útil en la vida real, por ejemplo, cuando calculamos el beneficio restando los costes a los ingresos, donde cada uno sigue una fórmula polinómica.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ul><li>Calcular la suma $P(x) + Q(x)$ agrupando términos semejantes.</li><li>Calcular la resta $P(x) - Q(x)$ siguiendo el mismo proceso de agrupación.</li></ul><p><strong>Estrategia:</strong></p><ol><li><strong>Sustituir:</strong> Escribiremos las expresiones completas de cada polinomio usando paréntesis.</li><li><strong>Eliminar paréntesis:</strong> En la suma, los signos se mantienen. En la resta, aplicaremos el signo negativo a todo el segundo polinomio.</li><li><strong>Agrupar y operar:</strong> Juntaremos los términos con $x^2$, los términos con $x$ y los términos independientes, para finalmente sumar o restar sus coeficientes.</li></ol>"
+    },
+    {
+      "title": "Apartado a: Planteamiento de la suma",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Empezamos con la suma. Escribimos ambos polinomios entre paréntesis para organizarnos. Como es una suma, los signos del segundo polinomio no cambian al quitar los paréntesis.",
+      "content": "<p><strong>Objetivo:</strong> Plantear la suma $P(x) + Q(x)$ y eliminar los paréntesis.</p><p>Escribimos la operación completa:</p><p>$$P(x) + Q(x) = (3x^2 - 5x + 2) + (-x^2 + 2x - 4)$$</p><p>Como el signo que precede al segundo paréntesis es positivo, podemos eliminar los paréntesis manteniendo los signos originales de $Q(x)$:</p><p>$$P(x) + Q(x) = 3x^2 - 5x + 2 - x^2 + 2x - 4$$</p><p><strong>Interpretación parcial:</strong> Tenemos ahora una única expresión algebraica extendida, lista para ser simplificada agrupando las partes que correspondan.</p>",
+      "theory": "<p><strong>Términos semejantes:</strong> Dos monomios son semejantes si tienen exactamente la misma parte literal (mismas variables con mismos exponentes). Solo se pueden sumar o restar monomios semejantes, operando sus coeficientes numéricos y dejando intacta la parte literal.</p>"
+    },
+    {
+      "title": "Apartado a: Agrupación y cálculo",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora toca agrupar. Juntamos las equis al cuadrado por un lado, las equis por otro, y los números sueltos al final. Operamos los números que acompañan a cada letra y obtenemos el polinomio final de la suma.",
+      "content": "<p><strong>Objetivo:</strong> Agrupar los términos semejantes y calcular el resultado de la suma.</p><p>Partimos de la expresión extendida:</p><p>$$3x^2 - 5x + 2 - x^2 + 2x - 4$$</p><p>Reordenamos y agrupamos (sacando factor común la parte literal en cada grupo):</p><p>$$= (3x^2 - x^2) + (-5x + 2x) + (2 - 4)$$</p><p>$$= (3 - 1)x^2 + (-5 + 2)x + (2 - 4)$$</p><p>Realizamos las sumas y restas de los coeficientes:</p><p>$$= 2x^2 + (-3)x + (-2)$$</p><p>$$= 2x^2 - 3x - 2$$</p><p><strong>Interpretación parcial:</strong> El resultado de la suma $P(x) + Q(x)$ es el polinomio de segundo grado $2x^2 - 3x - 2$.</p>"
+    },
+    {
+      "title": "Apartado b: Planteamiento de la resta",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Pasamos a la resta, que requiere mucha más atención. Colocamos el signo menos entre los dos paréntesis. Este signo negativo afectará a todos y cada uno de los términos del polinomio que está detrás.",
+      "content": "<p><strong>Objetivo:</strong> Plantear la resta $P(x) - Q(x)$ y distribuir el signo negativo.</p><p>Escribimos la operación completa con paréntesis:</p><p>$$P(x) - Q(x) = (3x^2 - 5x + 2) - (-x^2 + 2x - 4)$$</p><p>Aplicamos el signo menos al segundo polinomio, invirtiendo todos sus signos (regla de los signos: menos por menos es más, y menos por más es menos):</p><p>$$P(x) - Q(x) = 3x^2 - 5x + 2 + x^2 - 2x + 4$$</p><p><strong>Interpretación parcial:</strong> Al convertir la resta en una suma del polinomio opuesto, evitamos errores al momento de agrupar.</p>",
+      "warning": "<p>El error más común al restar polinomios es cambiar el signo solo al primer término del segundo polinomio. ¡El signo negativo delante de un paréntesis afecta a <strong>todos</strong> los términos del interior!</p>",
+      "checkpoint": {
+        "question": "¿Por qué el término -4 de Q(x) se convierte en +4 al eliminar el paréntesis?",
+        "options": [
+          {
+            "text": "Porque estamos restando, y restar un número negativo equivale a sumar su valor positivo ($- \\cdot - = +$).",
+            "correct": true,
+            "feedback": "¡Correcto! El signo menos actúa multiplicando por -1 a todos los términos del paréntesis."
+          },
+          {
+            "text": "Porque al ser el último término siempre se cambia el signo independientemente de la operación.",
+            "correct": false,
+            "feedback": "El cambio de signo no depende de la posición, sino de la operación de resta que precede al polinomio completo."
+          },
+          {
+            "text": "Porque el 4 es el término independiente y los términos independientes siempre se suman.",
+            "correct": false,
+            "feedback": "Falso. Los términos independientes siguen las mismas reglas algebraicas que los demás términos."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Apartado b: Agrupación y cálculo",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Con los signos ya corregidos, procedemos igual que en la suma. Agrupamos los grados dos, los grados uno y los términos independientes. Hacemos las cuentas y obtenemos el polinomio resta final.",
+      "content": "<p><strong>Objetivo:</strong> Agrupar términos y hallar el polinomio final de la resta.</p><p>Retomamos la expresión obtenida tras aplicar el signo negativo:</p><p>$$3x^2 - 5x + 2 + x^2 - 2x + 4$$</p><p>Agrupamos los términos semejantes:</p><p>$$= (3x^2 + x^2) + (-5x - 2x) + (2 + 4)$$</p><p>$$= (3 + 1)x^2 + (-5 - 2)x + (2 + 4)$$</p><p>Calculamos el interior de los paréntesis:</p><p>$$= 4x^2 + (-7)x + 6$$</p><p>$$= 4x^2 - 7x + 6$$</p><p><strong>Interpretación parcial:</strong> El polinomio resultante de la resta $P(x) - Q(x)$ es $4x^2 - 7x + 6$.</p>"
+    },
+    {
+      "title": "Comprobación de los resultados",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Para estar seguros, vamos a verificar. Si sustituimos la equis por el número uno en los polinomios originales y luego en nuestras soluciones, el resultado numérico tiene que coincidir perfectamente.",
+      "content": "<p><strong>Objetivo:</strong> Verificar los polinomios obtenidos evaluando para un valor concreto, por ejemplo $x = 1$.</p><p>Calculamos $P(1)$ y $Q(1)$:</p><ul><li>$P(1) = 3(1)^2 - 5(1) + 2 = 3 - 5 + 2 = 0$</li><li>$Q(1) = -(1)^2 + 2(1) - 4 = -1 + 2 - 4 = -3$</li></ul><p><strong>Comprobamos apartado a (Suma):</strong></p><ul><li>Valor numérico directo: $P(1) + Q(1) = 0 + (-3) = -3$</li><li>Evaluando en nuestra solución ($2x^2 - 3x - 2$): $2(1)^2 - 3(1) - 2 = 2 - 3 - 2 = -3$. ¡Coincide!</li></ul><p><strong>Comprobamos apartado b (Resta):</strong></p><ul><li>Valor numérico directo: $P(1) - Q(1) = 0 - (-3) = 3$</li><li>Evaluando en nuestra solución ($4x^2 - 7x + 6$): $4(1)^2 - 7(1) + 6 = 4 - 7 + 6 = 3$. ¡Coincide!</li></ul>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos todo el método de un vistazo. Escribir, quitar paréntesis teniendo cuidado con los signos negativos, y agrupar por términos con la misma letra y exponente.",
+      "content": "<ol><li><strong>Suma de polinomios $P(x) + Q(x)$:</strong><ul><li>Se eliminan los paréntesis respetando los signos originales del segundo polinomio.</li><li>Se agrupan términos: $(3 - 1)x^2 + (-5 + 2)x + (2 - 4)$.</li><li><strong>Resultado final a):</strong> $2x^2 - 3x - 2$.</li></ul></li><li><strong>Resta de polinomios $P(x) - Q(x)$:</strong><ul><li>El signo menos cambia todos los signos de $Q(x)$, transformándolo en $+ x^2 - 2x + 4$.</li><li>Se agrupan términos: $(3 + 1)x^2 + (-5 - 2)x + (2 + 4)$.</li><li><strong>Resultado final b):</strong> $4x^2 - 7x + 6$.</li></ul></li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora inténtalo tú. Haz la suma y la resta de estos dos nuevos polinomios paso a paso. No olvides vigilar los signos en la resta.",
+      "content": "<p>Realiza la suma y la resta de los siguientes polinomios indicando la agrupación de términos semejantes:</p><p>$$A(x) = 4x^2 + 2x - 7$$</p><p>$$B(x) = 2x^2 - 5x + 1$$</p><p>Obtén las expresiones simplificadas para:</p><ul><li>a) $A(x) + B(x)$</li><li>b) $A(x) - B(x)$</li></ul><p><em>Intenta resolverlo en tu cuaderno antes de mirar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>a) Suma:</strong> $A(x) + B(x) = 6x^2 - 3x - 6$</p><p><strong>b) Resta:</strong> $A(x) - B(x) = 2x^2 + 7x - 8$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a conectar lo que hemos aprendido con otro contexto. ¿Qué pasaría si estos polinomios representaran las dimensiones de segmentos y nos pidieran calcular distancias? Piénsalo.",
+      "content": "<p>En un circuito, la distancia total que debe recorrer un vehículo es modelada por el polinomio $D(x) = 5x^3 - x^2 + 8x$.</p><p>Si el vehículo ya ha recorrido una distancia representada por el polinomio $R(x) = 2x^3 - 3x^2 + 2x$, ¿cuál es el polinomio que representa la <strong>distancia que le falta por recorrer</strong>?</p><p><em>Pista: Reflexiona sobre qué operación matemática te permite calcular lo que \"falta\" para llegar a un total.</em></p>",
+      "practiceAnswer": "<p>Para hallar lo que falta, hay que restar la distancia recorrida a la distancia total: $D(x) - R(x)$.</p><p>$$5x^3 - x^2 + 8x - (2x^3 - 3x^2 + 2x)$$</p><p><strong>Distancia restante:</strong> $3x^3 + 2x^2 + 6x$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T15:39:26.122Z",
+    "updatedAt": "2026-07-31T15:39:26.122Z",
+    "contentHash": "fccca5080ebce01a",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
