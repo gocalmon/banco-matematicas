@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "exerciseSchemaVersion": "4.0",
-  "generatedAt": "2026-07-31T16:49:59.428Z",
+  "generatedAt": "2026-08-01T11:15:06.140Z",
   "basePath": "ejercicios/",
-  "exerciseCount": 17,
+  "exerciseCount": 41,
   "filters": {
     "stages": [
       "Bachillerato",
@@ -19,14 +19,33 @@
     "topics": [
       "Álgebra",
       "Análisis",
+      "Análisis de Funciones",
+      "Funciones y Gráficas",
+      "Geometría Analítica",
       "Programación Lineal"
     ],
     "subtopics": [
+      "Composición de Funciones",
       "Continuidad de funciones",
+      "Continuidad y Límites Laterales",
+      "Dominio y Recorrido",
+      "Ecuación de la recta",
+      "Ecuaciones de segundo grado",
+      "Ecuaciones Exponenciales",
+      "Ecuaciones irracionales",
+      "Ecuaciones polinómicas",
       "Ecuaciones polinómicas y factorización",
+      "Ecuaciones racionales",
       "Ecuaciones y polinomios",
+      "Expresión analítica y cálculo de imágenes y antiimágenes",
       "Fracciones algebraicas",
+      "Funciones con Valor Absoluto y a Trozos",
+      "Funciones Cuadráticas y Optimización",
+      "Funciones Periódicas",
+      "Funciones Racionales y Asíntotas",
       "Identidades notables y manipulación algebraica",
+      "Inecuaciones",
+      "Modelización Matemática y Funciones Polinómicas",
       "Modelización polinómica y optimización",
       "Operaciones con polinomios",
       "Optimización bidimensional",
@@ -34,20 +53,50 @@
       "Polinomios y geometría aplicada",
       "Polinomios y Teorema del Resto",
       "Polinomios y valor numérico",
-      "Sistemas de inecuaciones"
+      "Puntos de corte con los ejes",
+      "Simetría de una función",
+      "Sistemas de Ecuaciones",
+      "Sistemas de Ecuaciones y Funciones Cuadráticas",
+      "Sistemas de inecuaciones",
+      "Sistemas de Inecuaciones Lineales",
+      "Tasa de Variación Media (TVM)"
     ],
     "exerciseTypes": [
+      "Análisis y cálculo en funciones periódicas",
+      "Cálculo analítico de funciones compuestas y simplificación",
+      "Cálculo analítico de intersecciones en funciones racionales",
+      "Cálculo de asíntotas y esbozo de gráfica",
       "Cálculo de m.c.d. y m.c.m.",
       "Cálculo de parámetros",
+      "Cálculo de parámetros para garantizar la continuidad",
+      "Cálculo de pendiente y ecuación explícita a partir de dos puntos",
       "Cálculo de raíces y factorización",
+      "Cálculo de TVM e interpretación del crecimiento",
+      "Demostración algebraica de simetría par e impar",
+      "Descomposición a trozos y representación gráfica",
+      "Determinación de características a partir de puntos extremos",
       "Determinación de parámetros",
+      "Determinación de parámetros de una parábola a partir de puntos",
       "Extracción de factor común",
       "Identidades algebraicas de tipo Olimpiada",
+      "Modelización geométrica y funciones de coste",
       "Operaciones combinadas con fracciones algebraicas",
       "Problema aplicado",
       "Problema aplicado de geometría y polinomios",
       "Problema de aplicación del producto de polinomios y evaluación",
+      "Problema de optimización con parábolas",
+      "Representación gráfica y cálculo de vértices (Programación Lineal)",
+      "Resolución analítica de ecuación cuadrática completa",
+      "Resolución de ecuación con fracciones algebraicas",
+      "Resolución de ecuación con un radical",
+      "Resolución de ecuación exponencial con cambio de variable",
+      "Resolución de ecuación factorizada",
       "Resolución de ecuaciones de grado superior a 2",
+      "Resolución de inecuación racional mediante tabla de signos",
+      "Resolución de problemas con funciones lineales",
+      "Resolución de sistema de ecuaciones no lineales",
+      "Resolución de sistema de inecuaciones de segundo grado",
+      "Resolución de sistema de inecuaciones lineales con una incógnita",
       "Resolución de un problema de programación lineal con dos variables",
       "Resolución gráfica y analítica",
       "Resta de fracciones algebraicas",
@@ -56,18 +105,218 @@
       "Suma y resta de polinomios"
     ],
     "difficulties": [
+      "introductoria",
       "basica",
       "media",
       "avanzada"
     ],
     "protocols": [
       "A",
+      "B",
       "C",
       "E",
       "H"
     ]
   },
   "exercises": [
+    {
+      "id": "buscando-zonas-comunes-sistemas-de-inecuaciones-31e4b0a0",
+      "title": "Buscando Zonas Comunes: Sistemas de Inecuaciones",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Inecuaciones",
+      "exerciseType": "Resolución de sistema de inecuaciones de segundo grado",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Resolver inecuaciones de segundo grado hallando las raíces y evaluando intervalos",
+        "Distinguir el uso de desigualdades estrictas e inclusivas (paréntesis vs. corchetes)",
+        "Representar gráficamente conjuntos de soluciones en la recta real",
+        "Determinar la intersección de múltiples conjuntos de soluciones"
+      ],
+      "prerequisites": [
+        "Resolución de ecuaciones de segundo grado (completas e incompletas)",
+        "Manejo de intervalos en la recta real",
+        "Concepto de intersección de conjuntos"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T10:23:27.157Z",
+      "contentHash": "e580615b901ed0f5",
+      "url": "ejercicios/1_BACH/buscando-zonas-comunes-sistemas-de-inecuaciones_REVISADO.json"
+    },
+    {
+      "id": "choque-de-curvas-sistemas-no-lineales-0eea4c16",
+      "title": "Choque de Curvas: Sistemas No Lineales",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Sistemas de Ecuaciones",
+      "exerciseType": "Resolución de sistema de ecuaciones no lineales",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Identificar sistemas de ecuaciones no lineales",
+        "Aplicar el método de sustitución como técnica principal de resolución",
+        "Desarrollar y simplificar expresiones algebraicas con productos notables",
+        "Resolver la ecuación de segundo grado resultante para encontrar las soluciones del sistema"
+      ],
+      "prerequisites": [
+        "Resolución de ecuaciones de primer y segundo grado",
+        "Manejo de productos notables (cuadrado de un binomio)",
+        "Método de sustitución elemental"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T10:21:30.285Z",
+      "contentHash": "bc6899b5d66b6263",
+      "url": "ejercicios/1_BACH/choque-de-curvas-sistemas-no-lineales_REVISADO.json"
+    },
+    {
+      "id": "dibujando-fronteras-el-mapa-de-las-inecuaciones-cd48fdcb",
+      "title": "Dibujando Fronteras: El Mapa de las Inecuaciones",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Sistemas de Inecuaciones Lineales",
+      "exerciseType": "Representación gráfica y cálculo de vértices (Programación Lineal)",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Representar inecuaciones lineales de dos variables en el plano cartesiano",
+        "Identificar la región factible como la intersección de varios semiplanos",
+        "Calcular analíticamente los vértices de una región poligonal resolviendo sistemas de ecuaciones",
+        "Vincular la representación gráfica con su solución algebraica"
+      ],
+      "prerequisites": [
+        "Representación gráfica de rectas",
+        "Resolución de sistemas de ecuaciones lineales de 2x2",
+        "Evaluación de desigualdades con puntos de prueba"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-01T10:24:24.791Z",
+      "contentHash": "53c0457a091280c4",
+      "url": "ejercicios/1_BACH/dibujando-fronteras-el-mapa-de-las-inecuaciones_REVISADO.json"
+    },
+    {
+      "id": "ecuacion-racional-con-incognitas-en-el-denominador-8584e202",
+      "title": "Ecuación Racional con Incógnitas en el Denominador",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones racionales",
+      "exerciseType": "Resolución de ecuación con fracciones algebraicas",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Identificar el mínimo común múltiplo (m.c.m.) en polinomios denominadores",
+        "Eliminar denominadores en ecuaciones racionales multiplicando por el m.c.m.",
+        "Desarrollar y simplificar expresiones algebraicas para obtener una ecuación polinómica equivalente",
+        "Descartar soluciones falsas (raíces extrañas) que anulan algún denominador original"
+      ],
+      "prerequisites": [
+        "Identidades notables",
+        "Factorización de polinomios básicos",
+        "Resolución de ecuaciones de segundo grado"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-01T09:58:46.157Z",
+      "contentHash": "0e4e4c8d3433d917",
+      "url": "ejercicios/1_BACH/ecuacion-racional-con-incognitas-en-el-denominador_REVISADO.json"
+    },
+    {
+      "id": "el-disfraz-cuadratico-ecuaciones-exponenciales-dcb11b9d",
+      "title": "El Disfraz Cuadrático: Ecuaciones Exponenciales",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones Exponenciales",
+      "exerciseType": "Resolución de ecuación exponencial con cambio de variable",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Identificar patrones cuadráticos ocultos en ecuaciones exponenciales",
+        "Aplicar correctamente el cambio de variable para simplificar la ecuación",
+        "Resolver la ecuación de segundo grado auxiliar",
+        "Deshacer el cambio de variable para hallar las soluciones reales de la incógnita original"
+      ],
+      "prerequisites": [
+        "Propiedades de las potencias (potencia de una potencia)",
+        "Resolución de ecuaciones de segundo grado",
+        "Concepto básico de logaritmo o resolución mental de exponenciales sencillas"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T10:22:24.313Z",
+      "contentHash": "b9f6ca4b3276025d",
+      "url": "ejercicios/1_BACH/el-disfraz-cuadratico-ecuaciones-exponenciales_REVISADO.json"
+    },
+    {
+      "id": "inecuacion-racional-y-la-tabla-de-signos-cc5b3bbb",
+      "title": "Inecuación Racional y la Tabla de Signos",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Inecuaciones",
+      "exerciseType": "Resolución de inecuación racional mediante tabla de signos",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Identificar las raíces del numerador y del denominador en una expresión racional",
+        "Establecer los intervalos de estudio en la recta real",
+        "Construir y evaluar una tabla de signos para determinar el signo de la fracción",
+        "Discriminar entre intervalos abiertos y cerrados basándose en el símbolo de desigualdad y las restricciones del denominador"
+      ],
+      "prerequisites": [
+        "Resolución de ecuaciones lineales de primer grado",
+        "Operaciones con signos (regla de los signos para la división)",
+        "Representación de intervalos"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T10:08:13.804Z",
+      "contentHash": "60b797609f3d899a",
+      "url": "ejercicios/1_BACH/inecuacion-racional-y-la-tabla-de-signos_REVISADO.json"
+    },
     {
       "id": "resolucion-de-un-sistema-de-inecuaciones-lineales-657b675e",
       "title": "Resolución de un Sistema de Inecuaciones Lineales",
@@ -130,6 +379,369 @@
       "reviewedAt": "2026-07-31T10:08:02.819Z",
       "contentHash": "7bb4f07b4dfa7265",
       "url": "ejercicios/1_BACH/estudio-de-parametros-para-la-continuidad-de-una-fun_REVISADO%20(1).json"
+    },
+    {
+      "id": "calculo-e-interpretacion-de-la-tasa-de-variacion-med-44a48cfd",
+      "title": "Cálculo e Interpretación de la Tasa de Variación Media",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis de Funciones",
+      "subtopic": "Tasa de Variación Media (TVM)",
+      "exerciseType": "Cálculo de TVM e interpretación del crecimiento",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Calcular la Tasa de Variación Media (TVM) de una función cuadrática en un intervalo dado.",
+        "Interpretar el signo de la TVM para determinar si la función crece o decrece en promedio.",
+        "Relacionar la TVM con la pendiente de la recta secante que une dos puntos de la gráfica."
+      ],
+      "prerequisites": [
+        "Evaluación de funciones en un punto dado.",
+        "Operaciones básicas con números enteros y fracciones.",
+        "Concepto intuitivo de crecimiento y decrecimiento de una curva."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T11:07:58.697Z",
+      "contentHash": "01d8c3d88b176496",
+      "url": "ejercicios/1_BACH/calculo-e-interpretacion-de-la-tasa-de-variacion-med_REVISADO.json"
+    },
+    {
+      "id": "composicion-de-funciones-y-simplificacion-55dd4098",
+      "title": "Composición de Funciones y Simplificación",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis de Funciones",
+      "subtopic": "Composición de Funciones",
+      "exerciseType": "Cálculo analítico de funciones compuestas y simplificación",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Comprender el concepto de composición de funciones como 'una función dentro de otra'.",
+        "Calcular (g ∘ f)(x) evaluando la función externa g en la expresión de f(x).",
+        "Calcular (f ∘ g)(x) evaluando la función externa f en la expresión de g(x).",
+        "Simplificar expresiones compuestas algebraicas reduciendo a común denominador cuando sea necesario."
+      ],
+      "prerequisites": [
+        "Evaluación de funciones en expresiones algebraicas.",
+        "Operaciones algebraicas básicas con fracciones (común denominador, simplificación)."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T11:11:32.525Z",
+      "contentHash": "1d3a451aa7c28ddc",
+      "url": "ejercicios/1_BACH/composicion-de-funciones-y-simplificacion_REVISADO.json"
+    },
+    {
+      "id": "continuidad-y-parametros-en-funciones-a-trozos-0b7686bd",
+      "title": "Continuidad y Parámetros en Funciones a Trozos",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis de Funciones",
+      "subtopic": "Continuidad y Límites Laterales",
+      "exerciseType": "Cálculo de parámetros para garantizar la continuidad",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Comprender la condición de continuidad en un punto usando límites laterales.",
+        "Calcular los límites laterales por la izquierda y por la derecha en el punto de frontera.",
+        "Plantear y resolver una ecuación para despejar el parámetro k."
+      ],
+      "prerequisites": [
+        "Concepto de función definida a trozos.",
+        "Cálculo de límites de funciones polinómicas por sustitución directa.",
+        "Resolución de ecuaciones de primer grado."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 7,
+      "reviewedAt": "2026-08-01T11:12:06.063Z",
+      "contentHash": "b451a7a2cb3ac3d8",
+      "url": "ejercicios/1_BACH/continuidad-y-parametros-en-funciones-a-trozos_REVISADO.json"
+    },
+    {
+      "id": "descomposicion-y-graficacion-de-funciones-con-valor--0eb43294",
+      "title": "Descomposición y Graficación de Funciones con Valor Absoluto",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis de Funciones",
+      "subtopic": "Funciones con Valor Absoluto y a Trozos",
+      "exerciseType": "Descomposición a trozos y representación gráfica",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Descomponer una función con valor absoluto en una función definida a trozos estudiando el signo de su interior.",
+        "Representar gráficamente la función resultante aplicando la reflexión sobre el eje X para la parte negativa.",
+        "Identificar puntos notables como raíces (puntos de corte con eje X) y vértices en funciones compuestas."
+      ],
+      "prerequisites": [
+        "Definición matemática de valor absoluto.",
+        "Representación de funciones cuadráticas (parábolas).",
+        "Estudio del signo de un polinomio de segundo grado."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 7,
+      "reviewedAt": "2026-08-01T11:12:43.384Z",
+      "contentHash": "08efdaa1eeffae7b",
+      "url": "ejercicios/1_BACH/descomposicion-y-graficacion-de-funciones-con-valor-_REVISADO.json"
+    },
+    {
+      "id": "estudio-algebraico-de-la-simetria-de-funciones-7fc946db",
+      "title": "Estudio Algebraico de la Simetría de Funciones",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis de Funciones",
+      "subtopic": "Simetría de una función",
+      "exerciseType": "Demostración algebraica de simetría par e impar",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Aplicar el criterio algebraico evaluando f(-x) para determinar la simetría de una función.",
+        "Distinguir el efecto de las potencias pares e impares sobre el signo de la variable.",
+        "Relacionar el resultado algebraico con la simetría geométrica (eje de ordenadas o el origen)."
+      ],
+      "prerequisites": [
+        "Evaluación de expresiones algebraicas.",
+        "Propiedades de las potencias de exponente par e impar con bases negativas.",
+        "Extracción de factor común."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-01T11:05:51.498Z",
+      "contentHash": "d442347d60cdfbf7",
+      "url": "ejercicios/1_BACH/estudio-algebraico-de-la-simetria-de-funciones_REVISADO.json"
+    },
+    {
+      "id": "estudio-y-representacion-de-funciones-racionales-84fd2078",
+      "title": "Estudio y Representación de Funciones Racionales",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis de Funciones",
+      "subtopic": "Funciones Racionales y Asíntotas",
+      "exerciseType": "Cálculo de asíntotas y esbozo de gráfica",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Calcular la asíntota vertical igualando el denominador a cero.",
+        "Calcular la asíntota horizontal comparando los grados de numerador y denominador.",
+        "Hallar los puntos de corte con los ejes coordenados.",
+        "Integrar la información de asíntotas y puntos de corte para esbozar la gráfica de una hipérbola."
+      ],
+      "prerequisites": [
+        "Resolución de ecuaciones de primer grado.",
+        "Concepto de dominio de una función racional.",
+        "Límites básicos en el infinito (intuitivo o formal)."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T11:08:41.850Z",
+      "contentHash": "b031a72ab94fb9a0",
+      "url": "ejercicios/1_BACH/estudio-y-representacion-de-funciones-racionales_REVISADO.json"
+    },
+    {
+      "id": "evaluacion-de-funciones-periodicas-52a03014",
+      "title": "Evaluación de Funciones Periódicas",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis de Funciones",
+      "subtopic": "Funciones Periódicas",
+      "exerciseType": "Análisis y cálculo en funciones periódicas",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Comprender el concepto de función periódica y su periodo (T).",
+        "Aplicar la propiedad fundamental de las funciones periódicas: f(t) = f(t + nT).",
+        "Determinar valores de una función en instantes futuros utilizando la periodicidad."
+      ],
+      "prerequisites": [
+        "Concepto básico de función.",
+        "Operaciones aritméticas elementales (sumas y múltiplos)."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 7,
+      "reviewedAt": "2026-08-01T11:09:40.009Z",
+      "contentHash": "fe786f762a5e8a64",
+      "url": "ejercicios/1_BACH/evaluacion-de-funciones-periodicas_REVISADO.json"
+    },
+    {
+      "id": "familias-de-funciones-determinacion-de-la-parabola-p-fce239dc",
+      "title": "Familias de Funciones: Determinación de la Parábola por Puntos",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis de Funciones",
+      "subtopic": "Sistemas de Ecuaciones y Funciones Cuadráticas",
+      "exerciseType": "Determinación de parámetros de una parábola a partir de puntos",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Planteamiento de un sistema de ecuaciones lineales a partir de puntos de paso de una función.",
+        "Resolución analítica de un sistema de tres ecuaciones con tres incógnitas (a, b, c).",
+        "Determinación de la expresión explícita de una función cuadrática y verificación gráfica de los puntos."
+      ],
+      "prerequisites": [
+        "Evaluación de funciones en un punto $(x, y)$.",
+        "Resolución de sistemas de ecuaciones lineales de primer grado."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 7,
+      "reviewedAt": "2026-08-01T11:13:27.788Z",
+      "contentHash": "96a4f047f1e06545",
+      "url": "ejercicios/1_BACH/familias-de-funciones-determinacion-de-la-parabola-p_REVISADO.json"
+    },
+    {
+      "id": "interseccion-de-funciones-con-los-ejes-cartesianos-a5e466a7",
+      "title": "Intersección de Funciones con los Ejes Cartesianos",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis de Funciones",
+      "subtopic": "Puntos de corte con los ejes",
+      "exerciseType": "Cálculo analítico de intersecciones en funciones racionales",
+      "protocols": [
+        "B"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Comprender el significado geométrico y analítico de los puntos de corte con los ejes.",
+        "Calcular el corte con el eje Y evaluando la función en x=0.",
+        "Calcular los cortes con el eje X resolviendo la ecuación f(x)=0.",
+        "Identificar que en una fracción algebraica, el numerador debe ser cero y verificar que el denominador no se anule."
+      ],
+      "prerequisites": [
+        "Evaluación de expresiones algebraicas.",
+        "Resolución de ecuaciones de segundo grado sencillas.",
+        "Concepto de dominio de una fracción."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T11:07:16.120Z",
+      "contentHash": "e0067d2e8acb1a48",
+      "url": "ejercicios/1_BACH/interseccion-de-funciones-con-los-ejes-cartesianos_REVISADO.json"
+    },
+    {
+      "id": "modelizacion-geometrica-y-analisis-de-costes-de-inge-2b93065b",
+      "title": "Modelización Geométrica y Análisis de Costes de Ingeniería",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis de Funciones",
+      "subtopic": "Modelización Matemática y Funciones Polinómicas",
+      "exerciseType": "Modelización geométrica y funciones de coste",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Deducir expresiones polinómicas a partir de relaciones geométricas (área de un trapecio).",
+        "Construir funciones de coste proporcional basadas en magnitudes geométricas.",
+        "Determinar e interpretar el dominio de definición contextualizado en un problema real de ingeniería."
+      ],
+      "prerequisites": [
+        "Fórmula del área del trapecio.",
+        "Operaciones básicas con polinomios.",
+        "Concepto de dominio de una función y restricciones físicas."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 7,
+      "reviewedAt": "2026-08-01T11:14:14.689Z",
+      "contentHash": "f2764bb40712ea26",
+      "url": "ejercicios/1_BACH/modelizacion-geometrica-y-analisis-de-costes-de-inge_REVISADO.json"
+    },
+    {
+      "id": "optimizacion-cuadratica-maximizando-el-rendimiento-1a7dbd27",
+      "title": "Optimización Cuadrática: Maximizando el Rendimiento",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis de Funciones",
+      "subtopic": "Funciones Cuadráticas y Optimización",
+      "exerciseType": "Problema de optimización con parábolas",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Identificar el vértice de una parábola como el punto de máximo o mínimo absoluto.",
+        "Calcular analíticamente la coordenada X del vértice usando la fórmula x = -b/(2a).",
+        "Calcular la coordenada Y del vértice evaluando la función en X.",
+        "Interpretar los resultados matemáticos en el contexto de un problema real (temperatura y rendimiento)."
+      ],
+      "prerequisites": [
+        "Identificación de los coeficientes a, b y c en una función cuadrática.",
+        "Evaluación de funciones para un valor dado.",
+        "Operaciones aritméticas con decimales y potencias."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T11:10:23.757Z",
+      "contentHash": "5b1c372477f1d6a2",
+      "url": "ejercicios/1_BACH/optimizacion-cuadratica-maximizando-el-rendimiento_REVISADO.json"
     },
     {
       "id": "optimizacion-de-una-explotacion-agricola-sostenible-e587fce9",
@@ -260,6 +872,39 @@
       "reviewedAt": "2026-07-31T15:39:26.122Z",
       "contentHash": "fccca5080ebce01a",
       "url": "ejercicios/2_ESO/suma-y-resta-de-polinomios-con-agrupacion_REVISADO.json"
+    },
+    {
+      "id": "traduccion-algebraica-y-calculo-de-antiimagenes-c2a64138",
+      "title": "Traducción Algebraica y Cálculo de Antiimágenes",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "2_ESO",
+      "topic": "Funciones y Gráficas",
+      "subtopic": "Expresión analítica y cálculo de imágenes y antiimágenes",
+      "exerciseType": "Resolución de problemas con funciones lineales",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Traducir enunciados verbales a expresiones algebraicas funcionales.",
+        "Comprender la diferencia entre imagen (evaluar la función) y antiimagen (resolver la ecuación).",
+        "Representar gráficamente una función lineal e interpretar puntos en su dominio."
+      ],
+      "prerequisites": [
+        "Traducción al lenguaje algebraico.",
+        "Resolución de ecuaciones lineales de primer grado.",
+        "Uso y representación en el plano cartesiano."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-01T10:57:30.485Z",
+      "contentHash": "c0d3682ac550cd64",
+      "url": "ejercicios/2_ESO/traduccion-algebraica-y-calculo-de-antiimagenes_REVISADO.json"
     },
     {
       "id": "calculo-de-un-parametro-usando-el-teorema-del-resto-43818d64",
@@ -485,6 +1130,70 @@
       "url": "ejercicios/3_ESO/resolucion-analitica-de-una-ecuacion-polinomica-de-c_REVISADO.json"
     },
     {
+      "id": "resolucion-de-ecuacion-de-segundo-grado-12e64019",
+      "title": "Resolución de Ecuación de Segundo Grado",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones de segundo grado",
+      "exerciseType": "Resolución analítica de ecuación cuadrática completa",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Identificar los coeficientes de una ecuación cuadrática completa",
+        "Aplicar correctamente la fórmula general de resolución",
+        "Comprender el papel del discriminante",
+        "Interpretar geométricamente las soluciones como cortes con el eje de abscisas"
+      ],
+      "prerequisites": [
+        "Jerarquía de operaciones",
+        "Manejo de signos y raíces cuadradas",
+        "Sustitución de valores en expresiones algebraicas"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-01T09:01:31.001Z",
+      "contentHash": "a9fbc3c402770ce6",
+      "url": "ejercicios/3_ESO/resolucion-de-ecuacion-de-segundo-grado_REVISADO.json"
+    },
+    {
+      "id": "resolucion-de-ecuaciones-factorizadas-08df108d",
+      "title": "Resolución de Ecuaciones Factorizadas",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones polinómicas",
+      "exerciseType": "Resolución de ecuación factorizada",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "introductoria",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Aplicar la propiedad del producto nulo para resolver ecuaciones",
+        "Identificar las raíces de un polinomio a partir de sus factores",
+        "Evitar desarrollos algebraicos innecesarios cuando la ecuación ya está factorizada"
+      ],
+      "prerequisites": [
+        "Resolución de ecuaciones de primer grado",
+        "Concepto de factorización"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-01T09:45:06.268Z",
+      "contentHash": "d84ae3af564ce3c1",
+      "url": "ejercicios/3_ESO/resolucion-de-ecuaciones-factorizadas_REVISADO.json"
+    },
+    {
       "id": "resta-de-fracciones-algebraicas-con-distinto-denomin-95f7e407",
       "title": "Resta de fracciones algebraicas con distinto denominador",
       "subject": "Matemáticas",
@@ -581,6 +1290,101 @@
       "url": "ejercicios/3_ESO/volumen-de-un-ortoedro-mediante-producto-de-polinomi_REVISADO.json"
     },
     {
+      "id": "dominio-y-recorrido-de-una-funcion-acotada-86ead2dd",
+      "title": "Dominio y Recorrido de una Función Acotada",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Funciones y Gráficas",
+      "subtopic": "Dominio y Recorrido",
+      "exerciseType": "Determinación de características a partir de puntos extremos",
+      "protocols": [
+        "B"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Identificar el dominio de una función a partir de las coordenadas horizontales de sus extremos.",
+        "Identificar el recorrido de una función a partir de las coordenadas verticales de sus extremos.",
+        "Expresar conjuntos de números reales utilizando la notación de intervalos."
+      ],
+      "prerequisites": [
+        "Concepto de coordenadas cartesianas (x, y).",
+        "Comprensión básica de los conceptos de dominio e imagen (recorrido).",
+        "Notación de intervalos (abiertos y cerrados)."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T11:03:50.115Z",
+      "contentHash": "0a47bcceddc39a80",
+      "url": "ejercicios/3_ESO/dominio-y-recorrido-de-una-funcion-acotada_REVISADO.json"
+    },
+    {
+      "id": "ecuacion-explicita-de-la-recta-a-partir-de-dos-punto-f05b5c2f",
+      "title": "Ecuación Explícita de la Recta a partir de Dos Puntos",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Geometría Analítica",
+      "subtopic": "Ecuación de la recta",
+      "exerciseType": "Cálculo de pendiente y ecuación explícita a partir de dos puntos",
+      "protocols": [
+        "B"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Calcular la pendiente de una recta a partir de las coordenadas de dos puntos por los que pasa.",
+        "Determinar la ordenada en el origen sustituyendo un punto en la ecuación general.",
+        "Construir la ecuación explícita de la recta y verificarla analítica y gráficamente."
+      ],
+      "prerequisites": [
+        "Operaciones básicas con números enteros.",
+        "Resolución de ecuaciones de primer grado sencillas.",
+        "Concepto de coordenadas cartesianas."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-01T11:04:57.288Z",
+      "contentHash": "949bc766764ec728",
+      "url": "ejercicios/3_ESO/ecuacion-explicita-de-la-recta-a-partir-de-dos-punto_REVISADO.json"
+    },
+    {
+      "id": "ecuacion-simple-con-radicales-032c6019",
+      "title": "Ecuación Simple con Radicales",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones irracionales",
+      "exerciseType": "Resolución de ecuación con un radical",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Aislar el término radical como paso previo indispensable",
+        "Aplicar la elevación al cuadrado para eliminar raíces cuadradas",
+        "Comprender la necesidad obligatoria de comprobar las soluciones en ecuaciones con radicales"
+      ],
+      "prerequisites": [
+        "Transposición de términos en ecuaciones de primer grado",
+        "Propiedades básicas de potencias y raíces"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-01T09:47:28.849Z",
+      "contentHash": "9b04141b0f0c8399",
+      "url": "ejercicios/4_ESO/ecuacion-simple-con-radicales_REVISADO.json"
+    },
+    {
       "id": "identidades-de-olimpiada-matematica-manipulacion-alg-09890fd1",
       "title": "Identidades de Olimpiada Matemática: Manipulación algebraica simétrica",
       "subject": "Matemáticas",
@@ -611,6 +1415,39 @@
       "reviewedAt": "2026-07-31T16:46:06.436Z",
       "contentHash": "e581e2151e5bde3b",
       "url": "ejercicios/4_ESO/identidades-de-olimpiada-matematica-manipulacion-alg_REVISADO.json"
+    },
+    {
+      "id": "sistema-de-inecuaciones-lineales-e659028a",
+      "title": "Sistema de Inecuaciones Lineales",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Inecuaciones",
+      "exerciseType": "Resolución de sistema de inecuaciones lineales con una incógnita",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Resolver inecuaciones lineales de primer grado de forma independiente",
+        "Representar soluciones de inecuaciones en la recta real",
+        "Identificar la intersección de conjuntos numéricos para hallar la solución de un sistema",
+        "Expresar el conjunto solución final utilizando la notación correcta de intervalos"
+      ],
+      "prerequisites": [
+        "Despejar incógnitas en ecuaciones o inecuaciones de primer grado",
+        "Conocer el significado de los símbolos de desigualdad (<, >, ≤, ≥)",
+        "Representación de números en la recta real y notación de intervalos"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T09:57:55.654Z",
+      "contentHash": "4c1c9df5f133b047",
+      "url": "ejercicios/4_ESO/sistema-de-inecuaciones-lineales_REVISADO.json"
     }
   ]
 }
