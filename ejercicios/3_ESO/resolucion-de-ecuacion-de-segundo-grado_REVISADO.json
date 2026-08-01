@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones de segundo grado",
+    "exerciseType": "Resolución analítica de ecuación cuadrática completa",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Identificar los coeficientes de una ecuación cuadrática completa",
+      "Aplicar correctamente la fórmula general de resolución",
+      "Comprender el papel del discriminante",
+      "Interpretar geométricamente las soluciones como cortes con el eje de abscisas"
+    ],
+    "prerequisites": [
+      "Jerarquía de operaciones",
+      "Manejo de signos y raíces cuadradas",
+      "Sustitución de valores en expresiones algebraicas"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T09:00:58.776Z",
+    "id": "resolucion-de-ecuacion-de-segundo-grado-12e64019"
+  },
+  "title": "Resolución de Ecuación de Segundo Grado",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "El ejercicio nos pide resolver una ecuación de segundo grado completa. Fíjate que el enunciado insiste en que indiquemos de forma explícita las dos soluciones reales que vamos a obtener, para lo cual usaremos la fórmula general.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 2:</strong> Resuelve la siguiente ecuación de segundo grado completa aplicando la fórmula general. Indica de forma explícita sus dos soluciones reales:</p>\n<p>$$2x^2 - 5x - 3 = 0$$</p>\n</blockquote>",
+      "hints": [
+        "Asegúrate de que la ecuación esté ordenada y no falte ningún término."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia será, primero, identificar los coeficientes que acompañan a cada término. Después, calcularemos el discriminante para confirmar que efectivamente existen soluciones reales y, por último, aplicaremos la fórmula general para despejar la incógnita equis.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar los valores de $x$ que hacen que la expresión se anule.</p>\n<p><strong>Estrategia:</strong></p>\n<ol>\n<li><strong>Identificar:</strong> Extraer los coeficientes $a$, $b$ y $c$ de la forma general $ax^2 + bx + c = 0$.</li>\n<li><strong>Discriminante:</strong> Calcular $\\Delta = b^2 - 4ac$ para analizar el tipo de soluciones. Como el enunciado anticipa \"dos soluciones reales\", esperamos que sea positivo.</li>\n<li><strong>Fórmula General:</strong> Sustituir en $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$ y separar las dos ramas (suma y resta).</li>\n</ol>\n<p>Esta fórmula nos asegura encontrar todas las soluciones sin necesidad de recurrir al método de completar el cuadrado.</p>"
+    },
+    {
+      "title": "Paso 1: Identificación y Discriminante",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Extraemos los coeficientes con sus signos. ¡Cuidado con el signo negativo del menos cinco y del menos tres! Al calcular el discriminante obtenemos cuarenta y nueve, que al ser mayor que cero confirma que hay dos soluciones distintas.",
+      "content": "<p><strong>1. Identificación de coeficientes:</strong></p>\n<p>Comparamos nuestra ecuación $2x^2 - 5x - 3 = 0$ con la estructura $ax^2 + bx + c = 0$:</p>\n<ul>\n<li>$a = 2$ (coeficiente cuadrático)</li>\n<li>$b = -5$ (coeficiente lineal)</li>\n<li>$c = -3$ (término independiente)</li>\n</ul>\n<p><strong>2. Cálculo del discriminante ($\\Delta$):</strong></p>\n<p>$$ \\Delta = b^2 - 4ac $$</p>\n<p>Sustituimos los valores respetando los signos:</p>\n<p>$$ \\Delta = (-5)^2 - 4 \\cdot (2) \\cdot (-3) $$</p>\n<p>$$ \\Delta = 25 - (-24) $$</p>\n<p>$$ \\Delta = 25 + 24 = 49 $$</p>\n<p>Como $\\Delta = 49 > 0$, la ecuación tiene exactamente <strong>dos soluciones reales y distintas</strong>, tal y como nos adelantaba el enunciado.</p>",
+      "warning": "<p>Un error muy común es olvidar el paréntesis al elevar al cuadrado un número negativo: $-5^2 = -25$, pero $(-5)^2 = 25$. Además, fíjate en el doble signo negativo al multiplicar $-4 \\cdot 2 \\cdot (-3)$, que se convierte en $+24$.</p>"
+    },
+    {
+      "title": "Paso 2: Aplicar la Fórmula General",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Sustituimos todo en la fórmula. Calculamos la raíz cuadrada de cuarenta y nueve, que es siete. De ahí separamos el cálculo en dos caminos: uno sumando siete y otro restando siete, para obtener nuestras dos soluciones finales.",
+      "content": "<p><strong>3. Sustitución y cálculo final:</strong></p>\n<p>Utilizamos la fórmula general con el discriminante ya calculado:</p>\n<p>$$ x = \\frac{-b \\pm \\sqrt{\\Delta}}{2a} $$</p>\n<p>Sustituimos $b = -5$, $a = 2$ y $\\Delta = 49$:</p>\n<p>$$ x = \\frac{-(-5) \\pm \\sqrt{49}}{2 \\cdot 2} $$</p>\n<p>Simplificamos el numerador y el denominador:</p>\n<p>$$ x = \\frac{5 \\pm 7}{4} $$</p>\n<p>Ahora separamos en las dos ramas para encontrar cada solución:</p>\n<ul>\n<li><strong>Primera solución (sumando):</strong><br>$$ x_1 = \\frac{5 + 7}{4} = \\frac{12}{4} = 3 $$</li>\n<li><strong>Segunda solución (restando):</strong><br>$$ x_2 = \\frac{5 - 7}{4} = \\frac{-2}{4} = -\\frac{1}{2} = -0.5 $$</li>\n</ul>",
+      "theory": "<p>La fórmula general es universal para cualquier ecuación de segundo grado. El símbolo $\\pm$ condensa dos operaciones en una, recordando que toda raíz cuadrada de un número real positivo tiene dos raíces, una positiva y otra negativa.</p>",
+      "checkpoint": {
+        "question": "¿Qué sucedería en la fórmula general si el discriminante hubiera sido cero?",
+        "options": [
+          {
+            "text": "La raíz cuadrada de cero es cero, por lo que las ramas de suma y resta darían el mismo resultado, es decir, una única solución doble.",
+            "correct": true,
+            "feedback": "¡Exacto! El término ±0 no cambia el valor, así que la única solución sería x = -b / (2a)."
+          },
+          {
+            "text": "La ecuación no tendría ninguna solución real, porque no se puede calcular.",
+            "correct": false,
+            "feedback": "La raíz cuadrada de cero existe y es cero. La ecuación no tendría soluciones reales solo si el discriminante fuera negativo."
+          },
+          {
+            "text": "Se tendrían que intercambiar los signos de los coeficientes para poder continuar.",
+            "correct": false,
+            "feedback": "No existe ninguna regla que diga que hay que cambiar signos. Un discriminante cero es perfectamente válido y operable."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Comprobación de Soluciones",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Para asegurarnos de que no hay fallos, introducimos las dos soluciones obtenidas en la ecuación original. Si en ambos casos la expresión se anula, el resultado es correcto.",
+      "content": "<p>Toda resolución algebraica debe verificarse. Sustituimos $x_1$ y $x_2$ en la ecuación original $2x^2 - 5x - 3 = 0$.</p>\n<p><strong>Para $x_1 = 3$:</strong></p>\n<p>$$ 2(3)^2 - 5(3) - 3 = 2(9) - 15 - 3 $$</p>\n<p>$$ 18 - 15 - 3 = 18 - 18 = 0 \\quad \\checkmark $$</p>\n<p><strong>Para $x_2 = -\\frac{1}{2}$:</strong></p>\n<p>$$ 2\\left(-\\frac{1}{2}\\right)^2 - 5\\left(-\\frac{1}{2}\\right) - 3 = 2\\left(\\frac{1}{4}\\right) + \\frac{5}{2} - 3 $$</p>\n<p>$$ \\frac{2}{4} + \\frac{5}{2} - 3 = \\frac{1}{2} + \\frac{5}{2} - 3 = \\frac{6}{2} - 3 = 3 - 3 = 0 \\quad \\checkmark $$</p>\n<p>Ambas soluciones satisfacen la igualdad, confirmando que son correctas.</p>"
+    },
+    {
+      "title": "Paso 4: Interpretación Geométrica",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Si representamos gráficamente la función asociada a esta ecuación, veremos una parábola. Las dos soluciones que hemos calculado corresponden exactamente a los puntos donde la parábola cruza el eje horizontal.",
+      "content": "<p>Aunque hemos resuelto la ecuación algebraicamente, es fundamental entender su significado gráfico.</p>\n<p>Si consideramos la función cuadrática $f(x) = 2x^2 - 5x - 3$, su representación gráfica es una <strong>parábola</strong> que se abre hacia arriba (porque $a=2 > 0$).</p>\n<p>Resolver la ecuación $f(x) = 0$ equivale a encontrar los <strong>puntos de corte de la parábola con el eje de las abscisas (eje X)</strong>.</p>\n<p>Como hemos comprobado, la gráfica cruza el eje horizontal exactamente en $x = -0.5$ y $x = 3$.</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" style=\"background-color:#0f172a; border-radius:8px;\">\n  <!-- Ejes -->\n  <line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"#fbbf24\" stroke-width=\"2.5\" marker-end=\"url(#arrowX)\"/>\n  <line x1=\"135\" y1=\"360\" x2=\"135\" y2=\"40\" stroke=\"#fbbf24\" stroke-width=\"2.5\" marker-end=\"url(#arrowY)\"/>\n  <defs>\n    <marker id=\"arrowX\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"arrowY\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n  </defs>\n  <!-- Cuadrícula aproximada -->\n  <line x1=\"135\" y1=\"200\" x2=\"135\" y2=\"360\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\"/>\n  <line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\"/>\n  \n  <!-- Parábola (aproximada con curva cuadrática, x=-0.5 es X=114, x=3 es X=261. Vértice en x=1.25 -> X=187.5, Y=331) -->\n  <path d=\"M 82 50 Q 187.5 480 293 50\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n  \n  <!-- Puntos de corte -->\n  <circle cx=\"114\" cy=\"200\" r=\"5\" fill=\"#ef4444\"/>\n  <circle cx=\"261\" cy=\"200\" r=\"5\" fill=\"#ef4444\"/>\n  \n  <!-- Etiquetas -->\n  <text x=\"80\" y=\"185\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\">x = -1/2</text>\n  <text x=\"265\" y=\"185\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\">x = 3</text>\n  <text x=\"340\" y=\"225\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">X</text>\n  <text x=\"110\" y=\"50\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">Y</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "En resumen, hemos extraído los valores, comprobado el discriminante para asegurar la existencia de soluciones y calculado ambos valores aplicando la fórmula. Una comprobación final nos dio la seguridad de tener el resultado correcto.",
+      "content": "<p>Para resolver correctamente la ecuación $2x^2 - 5x - 3 = 0$, hemos seguido estos pasos lógicos:</p>\n<ol>\n<li><strong>Identificar parámetros:</strong> Obtuvimos $a = 2$, $b = -5$, $c = -3$.</li>\n<li><strong>Evaluar existencia:</strong> Calculamos el discriminante $\\Delta = b^2 - 4ac = 49$, confirmando dos soluciones.</li>\n<li><strong>Aplicar la fórmula:</strong> Utilizamos $x = \\frac{-b \\pm \\sqrt{\\Delta}}{2a}$.</li>\n<li><strong>Separar ramas:</strong> Sumamos y restamos la raíz ($7$) para encontrar cada solución.</li>\n<li><strong>Solución Final:</strong> Las soluciones explícitas reales son $x_1 = 3$ y $x_2 = -\\frac{1}{2}$.</li>\n<li><strong>Comprobar e Interpretar:</strong> Sustituimos para verificar el balance a cero y entendimos que son los cortes con el eje horizontal de su parábola asociada.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Intenta resolver esta otra ecuación utilizando exactamente la misma estructura y pasos. Toma lápiz y papel y no mires la respuesta hasta terminar.",
+      "content": "<p>Resuelve la siguiente ecuación de segundo grado completa aplicando la fórmula general, siguiendo el mismo método de identificación, discriminante y separación de ramas:</p>\n<p>$$3x^2 - 10x + 3 = 0$$</p>\n<p><em>Intenta resolver el ejercicio por completo antes de desplegar la respuesta. ¡Asegúrate de comprobar tus soluciones!</em></p>",
+      "practiceAnswer": "<p>Las soluciones explícitas reales son:</p>\n<ul>\n<li>$x_1 = 3$</li>\n<li>$x_2 = \\frac{1}{3}$</li>\n</ul>\n<p><em>El discriminante es $\\Delta = 64$.</em></p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a llevar este concepto al mundo físico. Un problema de áreas en geometría muchas veces esconde una ecuación de segundo grado. Trata de plantearla y resolverla.",
+      "content": "<p>Un jardinero quiere plantar una zona rectangular de flores que tenga exactamente $3$ metros cuadrados de área. Sabe que el largo del rectángulo debe medir $5$ metros menos que el doble del ancho.</p>\n<p>Si llamamos $x$ al ancho del rectángulo, ¿cuáles son sus dimensiones? (Plantea la ecuación que relaciona los datos e interpreta la solución en el contexto físico).</p>\n<p><em>Plantea la ecuación, resuélvela y piensa si todas las soluciones matemáticas tienen sentido en el mundo real.</em></p>",
+      "practiceAnswer": "<p>La ecuación que se obtiene al igualar el área es el producto de los lados: $x(2x - 5) = 3$, que al desarrollar queda $2x^2 - 5x - 3 = 0$.</p>\n<p>Como hemos resuelto antes, las raíces matemáticas son $x = 3$ y $x = -0.5$. Dado que $x$ representa una distancia física (el ancho), no puede ser negativa. Se descarta $-0.5$.</p>\n<p><strong>Dimensiones finales:</strong></p>\n<ul>\n<li>Ancho: $3$ metros.</li>\n<li>Largo: $2(3) - 5 = 1$ metro.</li>\n</ul>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T09:01:31.001Z",
+    "updatedAt": "2026-08-01T09:01:31.001Z",
+    "contentHash": "a9fbc3c402770ce6",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

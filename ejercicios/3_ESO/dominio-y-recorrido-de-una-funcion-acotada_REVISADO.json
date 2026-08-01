@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Funciones y Gráficas",
+    "subtopic": "Dominio y Recorrido",
+    "exerciseType": "Determinación de características a partir de puntos extremos",
+    "protocols": [
+      "B"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Identificar el dominio de una función a partir de las coordenadas horizontales de sus extremos.",
+      "Identificar el recorrido de una función a partir de las coordenadas verticales de sus extremos.",
+      "Expresar conjuntos de números reales utilizando la notación de intervalos."
+    ],
+    "prerequisites": [
+      "Concepto de coordenadas cartesianas (x, y).",
+      "Comprensión básica de los conceptos de dominio e imagen (recorrido).",
+      "Notación de intervalos (abiertos y cerrados)."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T10:58:20.162Z",
+    "id": "dominio-y-recorrido-de-una-funcion-acotada-86ead2dd"
+  },
+  "title": "Dominio y Recorrido de una Función Acotada",
+  "slides": [
+    {
+      "title": "Enunciado original",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leamos juntos el problema. Nos piden imaginar la gráfica de una función continua que empieza en un punto y termina en otro, para deducir de ahí su dominio y su recorrido.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 4:</strong> A partir de la gráfica de una función imaginaria continua que comienza en el punto $(-4, -2)$ y finaliza en el punto $(5, 3)$ (ambos incluidos):</p>\n<ul>\n<li>a) Indica su dominio de definición expresado en forma de intervalo.</li>\n<li>b) Indica su recorrido o conjunto imagen expresado también en forma de intervalo.</li>\n</ul>\n</blockquote>",
+      "hints": [
+        "Recuerda que el dominio está relacionado con el eje horizontal y el recorrido con el eje vertical.",
+        "Presta atención a la frase 'ambos incluidos' para decidir el tipo de corchetes en el intervalo."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia es separar la información. El punto inicial y el final nos dan las coordenadas límite. Asociaremos la primera coordenada de cada punto al dominio, y la segunda al recorrido.",
+      "content": "<h3>¿Qué nos piden?</h3>\n<p>Debemos encontrar dos intervalos de números reales:</p>\n<ul>\n<li>El <strong>dominio</strong>: todos los valores posibles de la variable independiente (eje X).</li>\n<li>El <strong>recorrido</strong> (o imagen): todos los valores posibles de la variable dependiente (eje Y).</li>\n</ul>\n<h3>Estrategia y supuestos</h3>\n<ol>\n<li>Extraeremos las coordenadas $x$ de los puntos inicial y final para establecer el ancho de la gráfica (dominio).</li>\n<li>Extraeremos las coordenadas $y$ para establecer la altura de la gráfica (recorrido).</li>\n<li>Asumiremos que la función no sube por encima de su punto final ni baja por debajo de su punto inicial, lo cual es lo habitual en este tipo de ejercicios introductorios.</li>\n<li>Usaremos corchetes cerrados $[~]$ porque el enunciado especifica que los puntos están incluidos.</li>\n</ol>"
+    },
+    {
+      "title": "Apartado a: Dominio de definición",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Vamos a calcular el dominio. Nos fijamos solo en las equis. Si la función va desde menos cuatro hasta cinco, ese es exactamente el espacio que ocupa en horizontal. Como los extremos están incluidos, usamos corchetes cerrados.",
+      "content": "<p>El <strong>dominio</strong> de una función es el conjunto de valores que toma la variable independiente, es decir, la $x$. Se lee proyectando la gráfica sobre el eje horizontal.</p>\n<p>Identificamos las coordenadas $x$ de los puntos dados:</p>\n<ul>\n<li>Punto de inicio: $x_{inicial} = -4$</li>\n<li>Punto final: $x_{final} = 5$</li>\n</ul>\n<p>Como la función es <em>continua</em>, existe para todos los valores intermedios. Además, el enunciado indica que ambos extremos están <em>incluidos</em>.</p>\n<p>Por tanto, el dominio es el intervalo cerrado desde $-4$ hasta $5$:</p>\n<p>$$\\text{Dom}(f) = [-4, 5]$$</p>",
+      "theory": "<p><strong>Notación de intervalos:</strong> Se usan corchetes $[~]$ cuando el extremo pertenece al conjunto (intervalo cerrado), y paréntesis $(~)$ cuando no pertenece (intervalo abierto).</p>"
+    },
+    {
+      "title": "Apartado b: Recorrido o conjunto imagen",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora toca el recorrido. Hacemos lo mismo pero mirando las alturas, es decir, el eje vertical. Empieza a una altura de menos dos y termina a una altura de tres. Ese es el rango de valores que alcanza.",
+      "content": "<p>El <strong>recorrido</strong> o imagen de una función es el conjunto de valores que toma la variable dependiente, es decir, la $y$. Se lee proyectando la gráfica sobre el eje vertical.</p>\n<p>Identificamos las coordenadas $y$ de los puntos dados, asumiendo (por ser un ejercicio básico de puntos extremos) que son el mínimo y máximo absolutos de la gráfica:</p>\n<ul>\n<li>Punto más bajo (inicio): $y_{inicial} = -2$</li>\n<li>Punto más alto (final): $y_{final} = 3$</li>\n</ul>\n<p>De nuevo, al ser una función continua y estar los extremos incluidos, la función pasa por todas las alturas intermedias.</p>\n<p>Por tanto, el recorrido es el intervalo cerrado desde $-2$ hasta $3$:</p>\n<p>$$\\text{Rec}(f) = [-2, 3]$$</p>",
+      "warning": "<p>¡Cuidado! En una función real, la curva podría subir a $y=10$ y luego bajar a $y=3$. El recorrido sería más grande. Aquí inferimos que los puntos dados son los extremos absolutos por el contexto introductorio del problema.</p>",
+      "checkpoint": {
+        "question": "¿Qué intervalo representa el recorrido si la función comenzara en (0, 5) y terminara en (10, 1) asumiendo un trayecto directo decreciente?",
+        "options": [
+          {
+            "text": "[0, 10]",
+            "correct": false,
+            "feedback": "Ese sería el dominio (los valores de x), no el recorrido."
+          },
+          {
+            "text": "[5, 1]",
+            "correct": false,
+            "feedback": "Los intervalos siempre se escriben de menor a mayor. El valor más bajo de y es 1."
+          },
+          {
+            "text": "[1, 5]",
+            "correct": true,
+            "feedback": "¡Correcto! El valor más bajo de y es 1, y el más alto es 5, así que el recorrido va de menor a mayor."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Visualización: La función imaginaria",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Fíjate en este gráfico que hemos construido para ilustrar la situación. La sombra azul sobre el eje horizontal es el dominio, y la sombra verde sobre el vertical es el recorrido.",
+      "content": "<p>Vamos a dar vida a esa «función imaginaria». Observa la gráfica generada:</p>\n<ul>\n<li>La curva blanca conecta el punto $(-4, -2)$ con el punto $(5, 3)$.</li>\n<li>La región resaltada en el eje horizontal (eje X) corresponde al <strong>Dominio</strong>: $[-4, 5]$.</li>\n<li>La región resaltada en el eje vertical (eje Y) corresponde al <strong>Recorrido</strong>: $[-2, 3]$.</li>\n</ul>\n<p>Cualquier punto de la curva blanca tiene una coordenada $x$ dentro del dominio y una coordenada $y$ dentro del recorrido.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Cuadrícula X: x = -6 a 6 -->\n  <line x1='50' y1='50' x2='50' y2='350' stroke='#334155' stroke-width='1' opacity='0.3'/>\n  <line x1='100' y1='50' x2='100' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='150' y1='50' x2='150' y2='350' stroke='#334155' stroke-width='1' opacity='0.3'/>\n  <line x1='200' y1='50' x2='200' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='250' y1='50' x2='250' y2='350' stroke='#334155' stroke-width='1' opacity='0.3'/>\n  <line x1='300' y1='50' x2='300' y2='350' stroke='#334155' stroke-width='1' opacity='0.3'/>\n  <line x1='325' y1='50' x2='325' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <!-- Cuadrícula Y: y = -4 a 4 -->\n  <line x1='50' y1='50' x2='350' y2='50' stroke='#334155' stroke-width='1' opacity='0.3'/>\n  <line x1='50' y1='87.5' x2='350' y2='87.5' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='125' x2='350' y2='125' stroke='#334155' stroke-width='1' opacity='0.3'/>\n  <line x1='50' y1='200' x2='350' y2='200' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='275' x2='350' y2='275' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='350' x2='350' y2='350' stroke='#334155' stroke-width='1' opacity='0.3'/>\n  <!-- Resaltado Dominio y Recorrido en los ejes -->\n  <line x1='100' y1='200' x2='325' y2='200' stroke='#3b82f6' stroke-width='10' opacity='0.5'/>\n  <line x1='200' y1='275' x2='200' y2='87.5' stroke='#10b981' stroke-width='10' opacity='0.5'/>\n  <!-- Ejes -->\n  <line x1='200' y1='50' x2='200' y2='350' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <line x1='50' y1='200' x2='350' y2='200' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <text x='340' y='190' fill='#fbbf24' font-size='14' font-family='sans-serif'>X</text>\n  <text x='210' y='60' fill='#fbbf24' font-size='14' font-family='sans-serif'>Y</text>\n  <!-- Proyecciones -->\n  <line x1='100' y1='275' x2='100' y2='200' stroke='#94a3b8' stroke-width='1' stroke-dasharray='4'/>\n  <line x1='100' y1='275' x2='200' y2='275' stroke='#94a3b8' stroke-width='1' stroke-dasharray='4'/>\n  <line x1='325' y1='87.5' x2='325' y2='200' stroke='#94a3b8' stroke-width='1' stroke-dasharray='4'/>\n  <line x1='325' y1='87.5' x2='200' y2='87.5' stroke='#94a3b8' stroke-width='1' stroke-dasharray='4'/>\n  <!-- Curva de la función -->\n  <path d='M 100 275 C 150 275, 250 87.5, 325 87.5' fill='none' stroke='#f8fafc' stroke-width='3'/>\n  <!-- Puntos extremos -->\n  <circle cx='100' cy='275' r='5' fill='#f8fafc'/>\n  <circle cx='325' cy='87.5' r='5' fill='#f8fafc'/>\n  <!-- Etiquetas -->\n  <text x='65' y='295' fill='#f8fafc' font-size='12' font-family='sans-serif'>(-4, -2)</text>\n  <text x='330' y='75' fill='#f8fafc' font-size='12' font-family='sans-serif'>(5, 3)</text>\n  <text x='180' y='215' fill='#3b82f6' font-size='12' font-family='sans-serif'>Dom</text>\n  <text x='210' y='180' fill='#10b981' font-size='12' font-family='sans-serif'>Rec</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Hagamos un resumen. Identificar el dominio y recorrido a partir de los puntos extremos es directo si sabemos qué eje representa cada concepto.",
+      "content": "<p>Este es el método general para obtener el dominio y recorrido a partir de los extremos de una curva continua:</p>\n<ol>\n<li><strong>Identificar coordenadas:</strong> Extraer $x$ e $y$ de los puntos inicial y final.</li>\n<li><strong>Dominio (Eje X):</strong> Construir el intervalo con las coordenadas $x$, de menor a mayor: $[x_{menor}, x_{mayor}]$.</li>\n<li><strong>Recorrido (Eje Y):</strong> Construir el intervalo con las coordenadas $y$, de menor a mayor: $[y_{menor}, y_{mayor}]$.</li>\n<li><strong>Inclusión:</strong> Verificar si los extremos pertenecen (punto cerrado/incluido, usamos $[~]$) o no pertenecen (punto abierto, usamos $(~)$).</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno. Intenta aplicar esta misma técnica con otros puntos antes de ver la solución.",
+      "content": "<p>A partir de la gráfica de una función imaginaria continua que comienza en el punto $(1, -5)$ y finaliza en el punto $(8, 12)$ (ambos incluidos):</p>\n<ul>\n<li>a) Indica su dominio de definición en forma de intervalo.</li>\n<li>b) Indica su recorrido o conjunto imagen en forma de intervalo.</li>\n</ul>\n<p><em>Escribe los intervalos de menor a mayor prestando atención a los corchetes.</em></p>",
+      "practiceAnswer": "<p><strong>Dominio:</strong> $[1, 8]$ (se obtiene de las coordenadas horizontales).</p>\n<p><strong>Recorrido:</strong> $[-5, 12]$ (se obtiene de las coordenadas verticales).</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos esto en el mundo real. Si graficamos la temperatura de un horno a lo largo del tiempo, sus topes marcan exactamente el dominio y el recorrido.",
+      "content": "<p>Un horno industrial se enciende en el minuto $t=0$ estando a una temperatura ambiente de $20\\text{ }^\\circ\\text{C}$. Se calienta continuamente hasta alcanzar los $250\\text{ }^\\circ\\text{C}$ exactos en el minuto $t=45$, momento en el que se apaga y el experimento termina.</p>\n<p>Si la función $T(t)$ representa la temperatura del horno en función del tiempo transcurrido:</p>\n<ul>\n<li>¿Cuál es el dominio de esta función?</li>\n<li>¿Cuál es su recorrido?</li>\n</ul>\n<p><em>Identifica qué variable es la independiente (el tiempo) y cuál la dependiente (la temperatura).</em></p>",
+      "practiceAnswer": "<p><strong>Dominio:</strong> $[0, 45]$ (el experimento dura desde el minuto 0 hasta el 45).</p>\n<p><strong>Recorrido:</strong> $[20, 250]$ (la temperatura varía desde los 20 grados iniciales hasta los 250 grados finales).</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:03:50.115Z",
+    "updatedAt": "2026-08-01T11:03:50.115Z",
+    "contentHash": "0a47bcceddc39a80",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

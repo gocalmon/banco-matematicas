@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Modelización polinómica y optimización",
+    "exerciseType": "Problema aplicado de geometría y polinomios",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Expresar el volumen de un cuerpo geométrico como un polinomio en función de una variable",
+      "Determinar el dominio geométrico válido de una función en un contexto real",
+      "Evaluar e interpretar los resultados numéricos dentro del contexto físico del problema"
+    ],
+    "prerequisites": [
+      "Fórmula del volumen de un paralelepípedo",
+      "Multiplicación y desarrollo de polinomios",
+      "Inecuaciones sencillas para delimitar dominios reales"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T16:12:44.564Z",
+    "id": "problema-aplicado-de-optimizacion-modelizacion-c9ad9b0b"
+  },
+  "title": "Problema aplicado de Optimización (Modelización)",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Llegamos al ejercicio diez, un problema aplicado de geometría y modelización algebraicamente muy interesante. Vamos a construir una caja recortando esquinas cuadradas de lado equis a una lámina de cartón de 20 por 30 centímetros.",
+      "content": "<p><strong>Ejercicio 10: Problema aplicado de Optimización (Modelización):</strong> A partir de una lámina rectangular de cartón rígido de dimensiones $20\\text{ cm} \\times 30\\text{ cm}$, se desea construir una caja abierta (sin tapa) recortando un cuadrado idéntico de lado $x$ en cada una de sus cuatro esquinas y doblando hacia arriba las pestañas laterales restantes.</p><ul><li><strong>a)</strong> Demuestra analíticamente que el polinomio que describe el volumen de la caja resultante es $V(x) = 4x^3 - 100x^2 + 600x$.</li><li><strong>b)</strong> Determina el intervalo físico real (el dominio geométrico válido) dentro del cual puede variar la dimensión $x$.</li><li><strong>c)</strong> Calcula el volumen si $x = 3\\text{ cm}$ y si $x = 12\\text{ cm}$. Explica de forma razonada por qué el segundo valor carece de sentido físico.</li></ul>",
+      "hints": [
+        "Al recortar un cuadrado de lado $x$ en cada esquina, tanto el ancho como la longitud total de la base disminuyen en $2x$.",
+        "El volumen de un prisma rectangular recto equivale al producto de la altura por el ancho y la longitud de la base."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Analicemos las dimensiones de la caja abierta tras recortar y doblar las pestañas. Expresaremos el volumen como producto de tres dimensiones, determinaremos las restricciones físicas para que todas las dimensiones sean positivas, y evaluaremos los casos particulares solicitados.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ol><li>Obtener la fórmula polinómica del volumen $V(x)$.</li><li>Hallar las restricciones de $x$ para que la caja exista físicamente.</li><li>Calcular los volúmenes para $x = 3\\text{ cm}$ y $x = 12\\text{ cm}$ y justificar la validez de cada uno.</li></ol><p><strong>Estrategia paso a paso:</strong></p><ul><li><strong>Dimensiones de la caja:</strong> Ancho $= 20 - 2x$, largo $= 30 - 2x$, altura $= x$.</li><li><strong>Volumen:</strong> Multiplicar $V(x) = x(20 - 2x)(30 - 2x)$ y desarrollar el polinomio.</li><li><strong>Dominio físico:</strong> Exigir que todas las dimensiones sean estrictamente mayores que cero ($x > 0$, $20 - 2x > 0$, $30 - 2x > 0$).</li><li><strong>Evaluación:</strong> Sustituir los valores de $x$ y analizar si caen dentro del dominio válido.</li></ul>"
+    },
+    {
+      "title": "Paso 1: Demostración del polinomio del volumen",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Para construir la caja, al doblar las pestañas la altura será equis, el ancho efectivo será veinte menos dos equis y el largo treinta menos dos equis. Al multiplicar estas tres dimensiones obtenemos el polinomio buscado.",
+      "content": "<p><strong>Objetivo:</strong> Demostrar que $V(x) = 4x^3 - 100x^2 + 600x$.</p><p>Las dimensiones de la caja abierta son:</p><ul><li><strong>Altura ($h$):</strong> $x$</li><li><strong>Ancho ($a$):</strong> $20 - 2x$</li><li><strong>Largo ($l$):</strong> $30 - 2x$</li></ul><p>El volumen del prisma es $V(x) = h \\cdot a \\cdot l$:</p><p>$$V(x) = x(20 - 2x)(30 - 2x)$$</p><p>Multiplicamos primero los binomios:</p><p>$$(20 - 2x)(30 - 2x) = 600 - 40x - 60x + 4x^2 = 4x^2 - 100x + 600$$</p><p>Multiplicamos por la altura $x$:</p><p>$$V(x) = x(4x^2 - 100x + 600) = 4x^3 - 100x^2 + 600x$$</p><p><strong>Q.E.D. (Queda demostrado)</strong></p>",
+      "theory": "<p><strong>Fórmula del volumen:</strong> El volumen de cualquier caja rectangular (ortoedro) es el producto de sus tres dimensiones ortogonales: $V = \\text{largo} \\times \\text{ancho} \\times \\text{altura}$.</p>"
+    },
+    {
+      "title": "Paso 2: Determinar el dominio geométrico válido",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Para que la caja sea real, sus tres dimensiones deben ser números estrictamente positivos. El límite más restrictivo lo impone el lado menor de veinte centímetros, que obliga a que equis sea menor que diez.",
+      "content": "<p><strong>Objetivo:</strong> Hallar el intervalo de valores de $x$ con sentido físico.</p><p>Para que la caja exista, todas sus dimensiones deben ser estrictamente positivas ($> 0$):</p><ol><li><strong>Altura positiva:</strong> $x > 0$</li><li><strong>Ancho positivo:</strong> $20 - 2x > 0 \\implies 2x < 20 \\implies x < 10$</li><li><strong>Largo positivo:</strong> $30 - 2x > 0 \\implies 2x < 30 \\implies x < 15$</li></ol><p>Tomando la intersección de las tres condiciones (la restricción más estricta es $x < 10$):</p><p>$$x \\in (0, 10)\\text{ cm}$$</p><p><strong>Conclusión:</strong> La dimensión $x$ debe estar estrictamente entre $0\\text{ cm}$ y $10\\text{ cm}$.</p>",
+      "warning": "<p><strong>¡Atención!</strong> Si recortamos cuadrados de $10\\text{ cm}$ en una lámina de $20\\text{ cm}$ de ancho, habremos cortado toda la lámina por la mitad y no quedará superficie para doblar la caja ($ancho = 0$).</p>",
+      "checkpoint": {
+        "question": "¿Por qué x no puede tomar el valor de 10 cm ni 0 cm?",
+        "options": [
+          {
+            "text": "Porque en x = 0 no se recorta nada (altura 0) y en x = 10 el ancho se vuelve cero, por lo que en ambos casos el volumen es 0 cm³.",
+            "correct": true,
+            "feedback": "¡Exacto! Ambas situaciones son degeneradas y no forman una caja tridimensional."
+          },
+          {
+            "text": "Porque el cartón se rompe al doblarlo a 10 cm.",
+            "correct": false,
+            "feedback": "Incorrecto. Se trata de una imposibilidad matemática y geométrica sobre las dimensiones."
+          },
+          {
+            "text": "Porque las dimensiones deben ser siempre mayores que 30 cm.",
+            "correct": false,
+            "feedback": "Falso. Las dimensiones originales eran 20 cm x 30 cm, no pueden superar los 10 cm de recorte."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Cálculo numérico e interpretación",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Evaluamos el volumen para los dos valores propuestos. Para equis igual a tres obtenemos mil ocho centímetros cúbicos. Para equis igual a doce nos da un volumen negativo, lo cual carece por completo de sentido físico.",
+      "content": "<p><strong>Objetivo:</strong> Calcular $V(3)$ y $V(12)$ y analizar su sentido físico.</p><p><strong>1. Caso $x = 3\\text{ cm}$:</strong></p><p>Como $3 \\in (0, 10)$, es un valor válido dentro del dominio.</p><p>$$V(3) = 4(3)^3 - 100(3)^2 + 600(3) = 4(27) - 100(9) + 1800$$</p><p>$$V(3) = 108 - 900 + 1800 = 1008\\text{ cm}^3$$</p><p><strong>2. Caso $x = 12\\text{ cm}$:</strong></p><p>$$V(12) = 4(12)^3 - 100(12)^2 + 600(12) = 4(1728) - 100(144) + 7200$$</p><p>$$V(12) = 6912 - 14400 + 7200 = -288\\text{ cm}^3$$</p><p><strong>Explicación razonada:</strong> El valor $x = 12\\text{ cm}$ <strong>carece de sentido físico</strong> porque está fuera del intervalo válido $(0, 10)$. Al intentar recortar $12\\text{ cm}$ en cada lado de un ancho de $20\\text{ cm}$, tendríamos un ancho negativo ($20 - 2(12) = -4\\text{ cm}$), lo cual es geométricamente imposible en el mundo real.</p>"
+    },
+    {
+      "title": "Comprobación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Comprobamos el volumen para equis igual a tres calculando directamente las dimensiones individuales de la caja y multiplicándolas.",
+      "content": "<p><strong>Objetivo:</strong> Validar $V(3)$ calculando las dimensiones de la caja punto a punto.</p><p>Para $x = 3\\text{ cm}$:</p><ul><li><strong>Altura:</strong> $h = 3\\text{ cm}$</li><li><strong>Ancho:</strong> $a = 20 - 2(3) = 20 - 6 = 14\\text{ cm}$</li><li><strong>Largo:</strong> $l = 30 - 2(3) = 30 - 6 = 24\\text{ cm}$</li></ul><p>Multiplicamos las tres dimensiones obtenidas:</p><p>$$V = h \\cdot a \\cdot l = 3 \\cdot 14 \\cdot 24 = 1008\\text{ cm}^3$$</p><p><strong>Conclusión:</strong> El resultado coincide exactamente con los $1008\\text{ cm}^3$ calculados a través del polinomio $V(x)$.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos los hallazgos: el polinomio del volumen surge del producto de las tres dimensiones, el dominio geométrico se acota de cero a diez centímetros por el lado menor, y los valores fuera de dicho rango producen volúmenes absortos o negativos.",
+      "content": "<ol><li><strong>Polinomio del volumen:</strong> $V(x) = x(20-2x)(30-2x) = 4x^3 - 100x^2 + 600x$.</li><li><strong>Dominio válido:</strong> $x \\in (0, 10)\\text{ cm}$ debido a la restricción del lado menor de $20\\text{ cm}$.</li><li><strong>Valores numéricos:</strong> $V(3) = 1008\\text{ cm}^3$ (válido); $V(12) = -288\\text{ cm}^3$ (imposible geométricamente).</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Prueba a resolver un problema idéntico ajustando las dimensiones iniciales de la lámina de cartón a 10 por 20 centímetros.",
+      "content": "<p>A partir de una lámina de cartón de $10\\text{ cm} \\times 20\\text{ cm}$, se recorta un cuadrado de lado $x$ en cada esquina para construir una caja abierta.</p><ol><li>Halla la expresión polinómica del volumen $V(x)$.</li><li>Determina el dominio geométrico válido para $x$.</li></ol><p><em>Haz los cálculos en tu cuaderno antes de consultar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>1. Polinomio:</strong> $V(x) = x(10 - 2x)(20 - 2x) = x(200 - 60x + 4x^2) = 4x^3 - 60x^2 + 200x$.</p><p><strong>2. Dominio válido:</strong> $10 - 2x > 0 \\implies x < 5$, por lo que $x \\in (0, 5)\\text{ cm}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos cómo se aplica esta modelización geométrica en el diseño industrial de recipientes cilíndricos.",
+      "content": "<p>Un tanque de almacenamiento industrial consta de un cilindro central de radio $r$ y altura $h = 10\\text{ m}$. El volumen total en metros cúbicos viene dado por la expresión $V(r) = 10\\pi r^2$.</p><p>Si el radio máximo disponible en la parcela donde se ubicará el tanque es de $5\\text{ metros}$ y la regulación exige que el radio sea mayor a $1\\text{ metro}$, ¿cuál es el rango de volumen permitido en metros cúbicos?</p><p><em>Pista: Determina el intervalo de $r$ y evalúa el volumen en los extremos de dicho intervalo.</em></p>",
+      "practiceAnswer": "<p><strong>1. Dominio permitido del radio:</strong> $r \\in (1, 5)\\text{ metros}$.</p><p><strong>2. Rango de volumen permitido:</strong></p><ul><li>Para $r = 1\\text{ m}$: $V(1) = 10\\pi(1)^2 = 10\\pi \\approx 31,42\\text{ m}^3$</li><li>Para $r = 5\\text{ m}$: $V(5) = 10\\pi(5)^2 = 250\\pi \\approx 785,40\\text{ m}^3$</li></ul><p><strong>Conclusión:</strong> El volumen permitido para el tanque está en el intervalo $(10\\pi, 250\\pi)\\text{ m}^3$, es decir, aproximadamente entre $31,42\\text{ m}^3$ y $785,40\\text{ m}^3$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T16:13:19.935Z",
+    "updatedAt": "2026-07-31T16:13:19.935Z",
+    "contentHash": "d5955ee90f01cc57",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

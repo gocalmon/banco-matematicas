@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones irracionales",
+    "exerciseType": "Resolución de ecuación con un radical",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Aislar el término radical como paso previo indispensable",
+      "Aplicar la elevación al cuadrado para eliminar raíces cuadradas",
+      "Comprender la necesidad obligatoria de comprobar las soluciones en ecuaciones con radicales"
+    ],
+    "prerequisites": [
+      "Transposición de términos en ecuaciones de primer grado",
+      "Propiedades básicas de potencias y raíces"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T09:47:10.233Z",
+    "id": "ecuacion-simple-con-radicales-032c6019"
+  },
+  "title": "Ecuación Simple con Radicales",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "El ejercicio nos pide resolver una ecuación que contiene una raíz cuadrada. Además, el propio enunciado nos da la pista clave: debemos aislar la raíz en uno de los lados antes de hacer cualquier otra operación.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 8:</strong> Resuelve la siguiente ecuación simple con radicales aislando la raíz en un miembro antes de elevar ambos lados al cuadrado:</p>\n<p>$$\\sqrt{x + 2} - 3 = 0$$</p>\n</blockquote>",
+      "hints": [
+        "Identifica qué elementos están fuera de la raíz y molestan para dejarla sola."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia tiene tres fases. Primero, moveremos el número que está restando fuera de la raíz al otro lado de la igualdad. Segundo, elevaremos todo al cuadrado para destruir esa raíz. Por último, despejaremos la incógnita y comprobaremos el resultado.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar el valor de $x$ que satisface la ecuación irracional.</p>\n<p><strong>Estrategia:</strong></p>\n<ol>\n<li><strong>Aislar:</strong> Dejar el término radical $\\sqrt{x + 2}$ completamente solo en el miembro izquierdo.</li>\n<li><strong>Elevar al cuadrado:</strong> Aplicar la potencia $2$ a ambos miembros de la ecuación para neutralizar la raíz cuadrada.</li>\n<li><strong>Resolver:</strong> Despejar $x$ en la sencilla ecuación de primer grado resultante.</li>\n<li><strong>Comprobar (CRÍTICO):</strong> Al elevar al cuadrado podemos introducir soluciones falsas, por lo que es obligatorio verificar el resultado en la ecuación original.</li>\n</ol>"
+    },
+    {
+      "title": "Paso 1: Aislar la raíz",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Para dejar la raíz sola, sumamos tres en ambos lados. Así, el menos tres de la izquierda desaparece y nos queda un tres positivo a la derecha.",
+      "content": "<p>Siguiendo la instrucción del enunciado, el primer paso es <strong>aislar el radical</strong>.</p>\n<p>La ecuación original es:</p>\n<p>$$\\sqrt{x + 2} - 3 = 0$$</p>\n<p>El término $-3$ está fuera de la raíz. Para eliminarlo del miembro izquierdo, sumamos $3$ a ambos lados (o lo pasamos sumando):</p>\n<p>$$\\sqrt{x + 2} = 3$$</p>\n<p>Ahora la raíz está completamente aislada y lista para ser eliminada.</p>",
+      "warning": "<p>Nunca eleves al cuadrado ambos lados antes de aislar la raíz. Si lo haces en $\\sqrt{x+2} - 3 = 0$, tendrías que desarrollar un binomio al cuadrado: $(\\sqrt{x+2} - 3)^2 = x+2 - 6\\sqrt{x+2} + 9$. Lejos de eliminar la raíz, ¡la mantendrías y complicarías el problema!</p>"
+    },
+    {
+      "title": "Paso 2: Elevar al cuadrado",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Como la raíz es cuadrada, la operación inversa es elevar al cuadrado. Al aplicarlo en ambos lados, la raíz de la izquierda se anula con el exponente dos, y a la derecha obtenemos tres al cuadrado, que es nueve.",
+      "content": "<p>Partimos de la ecuación con la raíz aislada:</p>\n<p>$$\\sqrt{x + 2} = 3$$</p>\n<p>Para suprimir la raíz cuadrada, <strong>elevamos al cuadrado ambos miembros</strong> de la ecuación:</p>\n<p>$$(\\sqrt{x + 2})^2 = (3)^2$$</p>\n<p>En el miembro izquierdo, el cuadrado y la raíz se cancelan mutuamente (ya que $x+2$ debe ser positivo para que la raíz sea real). En el derecho, calculamos $3^2$:</p>\n<p>$$x + 2 = 9$$</p>",
+      "theory": "<p>La propiedad fundamental utilizada es $(\\sqrt{A})^2 = A$. Al aplicar una función (elevar al cuadrado) a ambos lados de una igualdad, la igualdad se mantiene. Sin embargo, esta operación no siempre es perfectamente reversible, motivo por el cual la comprobación final es innegociable.</p>",
+      "checkpoint": {
+        "question": "¿Por qué es tan importante comprobar las soluciones al resolver ecuaciones irracionales elevando al cuadrado?",
+        "options": [
+          {
+            "text": "Porque podemos haber cometido un error de cálculo básico al sumar o restar.",
+            "correct": false,
+            "feedback": "Aunque siempre es bueno comprobar errores de cálculo, hay un motivo matemático más profundo relacionado con la operación de elevar al cuadrado."
+          },
+          {
+            "text": "Porque elevar al cuadrado iguala los signos (+ y -), pudiendo inventar soluciones que sirven para la ecuación al cuadrado, pero no para la original.",
+            "correct": true,
+            "feedback": "¡Exacto! Por ejemplo, si tuviéramos raíz de algo igual a -3, al elevar al cuadrado daría 9, y podríamos hallar una x falsa, ya que una raíz cuadrada real (con signo principal) no puede dar -3."
+          },
+          {
+            "text": "Porque las raíces cuadradas siempre tienen dos soluciones, una positiva y una negativa.",
+            "correct": false,
+            "feedback": "Cuidado: el símbolo √ denota la raíz cuadrada principal (positiva o cero). La ecuación x² = 9 tiene dos soluciones, pero √9 es solo 3."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Resolver la ecuación lineal",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora solo queda resolver una ecuación de primer grado muy sencilla. Restamos dos a ambos lados para despejar la equis, y obtenemos que equis es igual a siete.",
+      "content": "<p>Tras eliminar la raíz, nos hemos quedado con una sencilla ecuación de primer grado:</p>\n<p>$$x + 2 = 9$$</p>\n<p>Para despejar $x$, restamos $2$ a ambos lados (o pasamos el $2$ restando al miembro derecho):</p>\n<p>$$x = 9 - 2$$</p>\n<p>$$x = 7$$</p>\n<p>Hemos hallado nuestro candidato a solución: $x = 7$. Falta comprobar si es válido.</p>"
+    },
+    {
+      "title": "Paso 4: Comprobación obligatoria",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Introducimos nuestro siete en la ecuación original. Siete más dos son nueve. La raíz de nueve es tres. Y tres menos tres es cero. ¡Perfecto! La solución es matemáticamente válida.",
+      "content": "<p>Sustituimos nuestro candidato $x = 7$ en la <strong>ecuación original inicial</strong> (no en pasos intermedios):</p>\n<p>$$\\sqrt{x + 2} - 3 = 0$$</p>\n<p>$$\\sqrt{7 + 2} - 3 = 0$$</p>\n<p>$$\\sqrt{9} - 3 = 0$$</p>\n<p>$$3 - 3 = 0$$</p>\n<p>$$0 = 0 \\quad \\checkmark$$</p>\n<p>Como la igualdad se cumple de forma estricta, confirmamos que $x = 7$ es la solución real y válida de nuestra ecuación irracional.</p>"
+    },
+    {
+      "title": "Interpretación Geométrica",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Si dibujamos la función de esta ecuación, vemos que es una curva que nace en x igual a menos dos, porque la raíz no acepta números negativos dentro. La curva va subiendo y cruza exactamente el eje horizontal en x igual a siete, confirmando nuestra solución.",
+      "content": "<p>Geométricamente, resolver la ecuación $\\sqrt{x + 2} - 3 = 0$ equivale a encontrar en qué punto la función $f(x) = \\sqrt{x + 2} - 3$ corta al eje horizontal (donde $y = 0$).</p>\n<ul>\n<li><strong>Dominio:</strong> La raíz exige que lo de dentro sea mayor o igual a cero ($x + 2 \\ge 0 \\Rightarrow x \\ge -2$). La gráfica solo existe a partir de $x = -2$.</li>\n<li><strong>Corte:</strong> Como hemos calculado, el corte exacto se produce en la coordenada $(7, 0)$.</li>\n</ul>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" style=\"background-color:#0f172a; border-radius:8px;\">\n  <!-- Ejes -->\n  <line x1=\"20\" y1=\"250\" x2=\"380\" y2=\"250\" stroke=\"#fbbf24\" stroke-width=\"2.5\" marker-end=\"url(#arrowX)\"/>\n  <line x1=\"100\" y1=\"380\" x2=\"100\" y2=\"20\" stroke=\"#fbbf24\" stroke-width=\"2.5\" marker-end=\"url(#arrowY)\"/>\n  <defs>\n    <marker id=\"arrowX\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"arrowY\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n  </defs>\n  <!-- Cuadrícula aproximada (cada 20px es 1 unidad en X, 40px en Y) -->\n  <line x1=\"60\" y1=\"250\" x2=\"60\" y2=\"380\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\"/>\n  <line x1=\"240\" y1=\"250\" x2=\"240\" y2=\"380\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\"/>\n  \n  <!-- Curva y = sqrt(x+2) - 3 \n       Escala: Origen (100, 250). X: 20px/ud, Y: 40px/ud.\n       x=-2 -> (60, 370)\n       x=2  -> sqrt(4)-3 = -1 -> (140, 290)\n       x=7  -> sqrt(9)-3 = 0 -> (240, 250)\n       x=14 -> sqrt(16)-3 = 1 -> (380, 210) -->\n  <path d=\"M 60 370 Q 100 300 140 290 T 240 250 T 380 210\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n  \n  <!-- Puntos clave -->\n  <circle cx=\"60\" cy=\"370\" r=\"4\" fill=\"#94a3b8\"/>\n  <circle cx=\"240\" cy=\"250\" r=\"5\" fill=\"#ef4444\"/>\n  \n  <!-- Etiquetas -->\n  <text x=\"50\" y=\"390\" fill=\"#94a3b8\" font-family=\"sans-serif\" font-size=\"12\">(-2,-3)</text>\n  <text x=\"235\" y=\"235\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\">7</text>\n  <text x=\"365\" y=\"275\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">X</text>\n  <text x=\"115\" y=\"30\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">Y</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulando nuestro método: hemos aislado la raíz, la hemos destruido elevando al cuadrado, despejamos la variable restante y confirmamos el resultado mediante una comprobación obligatoria.",
+      "content": "<ol>\n<li><strong>Aislar la raíz:</strong> Pasamos el $-3$ sumando al lado derecho: $\\sqrt{x+2} = 3$.</li>\n<li><strong>Elevar al cuadrado:</strong> Aplicamos el exponente $2$ en ambos lados para eliminar el radical: $x+2 = 9$.</li>\n<li><strong>Despejar $x$:</strong> Restamos $2$ en ambos lados para hallar el valor de la incógnita: $x = 7$.</li>\n<li><strong>Comprobar:</strong> Sustituimos $x=7$ en $\\sqrt{x+2}-3=0$ y verificamos que se cumple la identidad $0=0$.</li>\n</ol>\n<p><strong>Solución final confirmada:</strong> $x = 7$.</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora te toca a ti. Aplica exactamente los mismos pasos a esta otra ecuación. No olvides comprobar la respuesta al final.",
+      "content": "<p>Resuelve la siguiente ecuación aislando la raíz en un miembro antes de elevar al cuadrado:</p>\n<p>$$\\sqrt{2x - 1} - 5 = 0$$</p>\n<p><em>Utiliza papel y lápiz. Sigue los cuatro pasos de nuestra hoja de ruta y comprueba tu solución antes de mirar la respuesta.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong> $x = 13$</p>\n<p><em>(Al aislar queda $\\sqrt{2x-1} = 5$; al elevar obtenemos $2x-1 = 25$; despejando $2x = 26 \\Rightarrow x = 13$. Comprobación: $\\sqrt{26-1} - 5 = 5 - 5 = 0$).</em></p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Piensa ahora en física. La fórmula que mide cuánto tarda un péndulo en oscilar tiene una raíz. Vamos a usar la misma lógica algebraica para averiguar su longitud.",
+      "content": "<p>El periodo $T$ (tiempo en completar una oscilación) de un péndulo simple en un planeta determinado está dado por la fórmula:</p>\n<p>$$T = 2\\sqrt{L}$$</p>\n<p>Donde $L$ es la longitud del hilo. Si observamos que el péndulo tarda $6$ segundos en oscilar ($T = 6$), ¿cuánto mide el hilo ($L$)?</p>\n<p><em>Aplica el mismo concepto algebraico: tienes una incógnita dentro de una raíz. Aisla, eleva al cuadrado y resuelve.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong> La longitud del hilo es $L = 9$.</p>\n<p><em>Sustituyendo el dato: $6 = 2\\sqrt{L}$. Aislando el radical dividiendo entre 2: $3 = \\sqrt{L}$. Elevando al cuadrado: $9 = L$.</em></p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T09:47:28.849Z",
+    "updatedAt": "2026-08-01T09:47:28.849Z",
+    "contentHash": "9b04141b0f0c8399",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

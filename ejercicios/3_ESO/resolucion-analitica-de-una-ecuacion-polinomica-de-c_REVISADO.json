@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones polinómicas y factorización",
+    "exerciseType": "Resolución de ecuaciones de grado superior a 2",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Encontrar raíces enteras y racionales usando la regla de Ruffini y el teorema del resto",
+      "Resolver ecuaciones polinómicas de grado 4 factorizándolas progresivamente",
+      "Identificar el conjunto completo de soluciones reales de una ecuación polinómica"
+    ],
+    "prerequisites": [
+      "Teorema del resto y teoremas de la raíz racional",
+      "Regla de Ruffini para dividir polinomios",
+      "Fórmula general para resolver ecuaciones de segundo grado"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T16:09:22.059Z",
+    "id": "resolucion-analitica-de-una-ecuacion-polinomica-de-c-4b4ce42e"
+  },
+  "title": "Resolución analítica de una ecuación polinómica de cuarto grado",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver el ejercicio seis. Se trata de una ecuación polinómica de cuarto grado. Para encontrar sus soluciones reales, aplicaremos factorización sistemática usando el teorema del resto y la regla de Ruffini hasta reducirla a segundo grado.",
+      "content": "<p><strong>Ejercicio 6:</strong> Encuentra de manera analítica todas las soluciones reales (tanto enteras como racionales) de la siguiente ecuación polinómica de cuarto grado utilizando factorización sistemática:</p><p>$$2x^4 - 5x^3 + 5x - 2 = 0$$</p>",
+      "hints": [
+        "Recuerda incluir el coeficiente del término de grado $2$ (que vale $0$) al escribir la tabla de Ruffini: $[2, -5, 0, 5, -2]$.",
+        "Prueba primero con los divisores del término independiente: $\\pm 1, \\pm 2$."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consistirá en buscar raíces enteras paso a paso. Cada raíz encontrada nos permitirá bajar un grado el polinomio mediante la regla de Ruffini. Al llegar a grado dos, resolveremos la ecuación restante mediante la fórmula general.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ul><li>Hallar todas las soluciones reales $x$ que satisfacen la ecuación $2x^4 - 5x^3 + 5x - 2 = 0$.</li></ul><p><strong>Estrategia paso a paso:</strong></p><ol><li><strong>Primera raíz:</strong> Probar divisores de $-2$ ($\\pm 1, \\pm 2$) y aplicar Ruffini para reducir el polinomio a grado $3$.</li><li><strong>Segunda raíz:</strong> Probar divisores en el cociente obtenido para reducir a grado $2$.</li><li><strong>Ecuación de 2.º grado:</strong> Resolver el cociente final $ax^2 + bx + c = 0$ para hallar las dos últimas soluciones (incluyendo racionales no enteras).</li><li><strong>Resumen de soluciones:</strong> Enumerar todas las soluciones de la ecuación.</li></ol>"
+    },
+    {
+      "title": "Paso 1: Primera raíz y división por Ruffini",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Probamos primero con equis igual a uno. Al evaluar el polinomio obtenemos cero, por lo que uno es una solución. Aplicamos Ruffini teniendo cuidado de poner un cero en el término de equis al cuadrado.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar la primera solución $x_1$ y reducir a grado $3$.</p><p>Probamos $x = 1$ en el polinomio $P(x) = 2x^4 - 5x^3 + 0x^2 + 5x - 2$:</p><p>$$P(1) = 2(1)^4 - 5(1)^3 + 0(1)^2 + 5(1) - 2 = 2 - 5 + 0 + 5 - 2 = 0$$</p><p>Como $P(1) = 0$, la primera solución es **$x_1 = 1$**.</p><p>Aplicamos la <strong>regla de Ruffini</strong> con los coeficientes $[2, -5, 0, 5, -2]$ y el valor $1$:</p><ul><li>Bajamos el $2$.</li><li>$2 \\cdot 1 = 2 \\implies -5 + 2 = -3$.</li><li>$-3 \\cdot 1 = -3 \\implies 0 + (-3) = -3$.</li><li>$-3 \\cdot 1 = -3 \\implies 5 + (-3) = 2$.</li><li>$2 \\cdot 1 = 2 \\implies -2 + 2 = 0$ (resto).</li></ul><p>El cociente de grado $3$ obtenido es $Q_1(x) = 2x^3 - 3x^2 - 3x + 2$.</p>",
+      "theory": "<p><strong>Términos ausentes en Ruffini:</strong> Cuando un polinomio no tiene alguno de sus términos (en este caso falta $x^2$), es obligatorio colocar un $0$ en esa posición dentro de la tabla de Ruffini.</p>"
+    },
+    {
+      "title": "Paso 2: Segunda raíz y reducción a grado 2",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora buscamos una raíz para el cociente de grado tres. Si probamos con equis igual a menos uno, el resultado da cero. Volvemos a aplicar Ruffini para llegar a una expresión de segundo grado.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar la segunda solución $x_2$ y reducir a grado $2$.</p><p>Probamos $x = -1$ en el cociente $Q_1(x) = 2x^3 - 3x^2 - 3x + 2$:</p><p>$$Q_1(-1) = 2(-1)^3 - 3(-1)^2 - 3(-1) + 2 = -2 - 3 + 3 + 2 = 0$$</p><p>Como $Q_1(-1) = 0$, la segunda solución es **$x_2 = -1$**.</p><p>Aplicamos Ruffini a los coeficientes $[2, -3, -3, 2]$ con el valor $-1$:</p><ul><li>Bajamos el $2$.</li><li>$2 \\cdot (-1) = -2 \\implies -3 + (-2) = -5$.</li><li>$-5 \\cdot (-1) = 5 \\implies -3 + 5 = 2$.</li><li>$2 \\cdot (-1) = -2 \\implies 2 + (-2) = 0$ (resto).</li></ul><p>El cociente de grado $2$ obtenido es $Q_2(x) = 2x^2 - 5x + 2$.</p>"
+    },
+    {
+      "title": "Paso 3: Raíces restantes y conjunto de soluciones",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Igualamos a cero la ecuación cuadrática dos equis al cuadrado menos cinco equis más dos. La resolvemos con la fórmula general y obtenemos las dos últimas soluciones: dos y un medio.",
+      "content": "<p><strong>Objetivo:</strong> Resolver la ecuación de segundo grado $2x^2 - 5x + 2 = 0$.</p><p>Aplicamos la fórmula cuadrática con $a = 2$, $b = -5$ y $c = 2$:</p><p>$$x = \\frac{-(-5) \\pm \\sqrt{(-5)^2 - 4(2)(2)}}{2(2)} = \\frac{5 \\pm \\sqrt{25 - 16}}{4} = \\frac{5 \\pm 3}{4}$$</p><p>Obtenemos las dos soluciones restantes:</p><ul><li>**$x_3 = \\frac{5 + 3}{4} = \\frac{8}{4} = 2$**</li><li>**$x_4 = \\frac{5 - 3}{4} = \\frac{2}{4} = \\frac{1}{2}$**</li></ul><p><strong>Conjunto total de soluciones reales:</strong></p><p>$$x \\in \\left\\{-1, \\frac{1}{2}, 1, 2\\right\\}$$</p>",
+      "checkpoint": {
+        "question": "¿Cuántas soluciones reales distintas tiene esta ecuación polinómica de cuarto grado?",
+        "options": [
+          {
+            "text": "Tiene 4 soluciones reales: tres enteras (-1, 1, 2) y una racional (1/2).",
+            "correct": true,
+            "feedback": "¡Correcto! Una ecuación de grado 4 puede tener hasta 4 raíces reales, y en este caso encontramos las 4."
+          },
+          {
+            "text": "Tiene solo 2 soluciones reales porque el grado 4 siempre da soluciones dobles.",
+            "correct": false,
+            "feedback": "No todas las raíces son dobles; en este ejercicio las cuatro soluciones son distintas."
+          },
+          {
+            "text": "Tiene 3 soluciones porque x = 1 y x = -1 se anulan entre sí.",
+            "correct": false,
+            "feedback": "Incorrecto. 1 y -1 son dos valores numéricos diferentes y ambos son soluciones válidas de la ecuación."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comprobación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Comprobamos si las cuatro soluciones son correctas sustituyéndolas en la ecuación inicial. Veremos que en todos los casos la expresión se anula por completo.",
+      "content": "<p><strong>Objetivo:</strong> Verificar que las cuatro soluciones anulan la ecuación $2x^4 - 5x^3 + 5x - 2 = 0$.</p><ul><li>Para $x = 1$: $2(1) - 5(1) + 5(1) - 2 = 0$ $\\checkmark$</li><li>Para $x = -1$: $2(1) - 5(-1) + 5(-1) - 2 = 2 + 5 - 5 - 2 = 0$ $\\checkmark$</li><li>Para $x = 2$: $2(16) - 5(8) + 5(2) - 2 = 32 - 40 + 10 - 2 = 0$ $\\checkmark$</li><li>Para $x = \\frac{1}{2}$: $2\\left(\\frac{1}{16}\\right) - 5\\left(\\frac{1}{8}\\right) + 5\\left(\\frac{1}{2}\\right) - 2 = \\frac{1}{8} - \\frac{5}{8} + \\frac{20}{8} - \\frac{16}{8} = 0$ $\\checkmark$</li></ul><p><strong>Conclusión:</strong> Las cuatro soluciones son plenamente correctas.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasamos el procedimiento: probar raíces enteras para bajar a grado tres y luego a grado dos por Ruffini, resolver la ecuación cuadrática final y listar todas las soluciones.",
+      "content": "<ol><li><strong>Primera raíz ($x = 1$):</strong> Ruffini en $[2, -5, 0, 5, -2] \\implies 2x^3 - 3x^2 - 3x + 2 = 0$.</li><li><strong>Segunda raíz ($x = -1$):</strong> Ruffini en $[2, -3, -3, 2] \\implies 2x^2 - 5x + 2 = 0$.</li><li><strong>Ecuación de 2.º grado:</strong> Resolver $2x^2 - 5x + 2 = 0 \\implies x = 2$ y $x = \\frac{1}{2}$.</li><li><strong>Soluciones finales:</strong> $x \\in \\left\\{-1, \\frac{1}{2}, 1, 2\\right\\}$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora te toca a ti. Resuelve esta nueva ecuación de cuarto grado aplicando el mismo procedimiento paso a paso.",
+      "content": "<p>Encuentra todas las soluciones reales de la siguiente ecuación polinómica de cuarto grado:</p><p>$$2x^4 + 5x^3 - 5x - 2 = 0$$</p><p><em>Trabájalo en tu cuaderno antes de mirar las respuestas.</em></p>",
+      "practiceAnswer": "<p><strong>Pasos:</strong></p><ol><li>Probamos $x = 1 \\implies 2(1) + 5(1) - 5(1) - 2 = 0 \\implies x_1 = 1$. Cociente $2x^3 + 7x^2 + 7x + 2$.</li><li>Probamos $x = -1 \\implies 2(-1) + 7(1) - 7 + 2 = 0 \\implies x_2 = -1$. Cociente $2x^2 + 5x + 2$.</li><li>Resolvemos $2x^2 + 5x + 2 = 0 \\implies x_3 = -2$ y $x_4 = -\\frac{1}{2}$.</li></ol><p><strong>Soluciones:</strong> $x \\in \\left\\{-2, -1, -\\frac{1}{2}, 1\\right\\}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Las ecuaciones de cuarto grado se utilizan en física e ingeniería para calcular los puntos de equilibrio de un sistema dinámico.",
+      "content": "<p>La energía potencial de un sistema mecánico en función de la posición $x$ viene dada por el polinomio:</p><p>$$E(x) = 2x^4 - 5x^3 + 5x - 2$$</p><p>Los puntos de equilibrio corresponden a aquellos lugares donde la energía se anula ($E(x) = 0$). ¿En cuántos puntos el sistema está en equilibrio y cuáles son sus posiciones?</p><p><em>Pista: Utiliza las soluciones analíticas de la ecuación estudiada en el ejercicio.</em></p>",
+      "practiceAnswer": "<p>Para encontrar las posiciones de equilibrio resolvemos $E(x) = 0$, que es exactamente la ecuación $2x^4 - 5x^3 + 5x - 2 = 0$.</p><p><strong>Respuesta:</strong> El sistema tiene <strong>4 puntos de equilibrio</strong> situados en las posiciones:</p><p>$$x = -1, \\quad x = \\frac{1}{2}, \\quad x = 1, \\quad x = 2$$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T16:10:30.690Z",
+    "updatedAt": "2026-07-31T16:10:30.690Z",
+    "contentHash": "fd114bfc37065aee",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

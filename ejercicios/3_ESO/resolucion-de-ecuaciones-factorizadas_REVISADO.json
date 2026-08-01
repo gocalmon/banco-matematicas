@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones polinómicas",
+    "exerciseType": "Resolución de ecuación factorizada",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "introductoria",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Aplicar la propiedad del producto nulo para resolver ecuaciones",
+      "Identificar las raíces de un polinomio a partir de sus factores",
+      "Evitar desarrollos algebraicos innecesarios cuando la ecuación ya está factorizada"
+    ],
+    "prerequisites": [
+      "Resolución de ecuaciones de primer grado",
+      "Concepto de factorización"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T09:44:52.726Z",
+    "id": "resolucion-de-ecuaciones-factorizadas-08df108d"
+  },
+  "title": "Resolución de Ecuaciones Factorizadas",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "El enunciado nos pide encontrar las tres soluciones de una ecuación que, afortunadamente, ya nos entregan factorizada. Esto será clave para resolverla de forma muy directa y rápida.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 4:</strong> Halla de manera directa las tres soluciones de la siguiente ecuación que se presenta previamente factorizada:</p>\n<p>$$(x - 2)(x + 3)(2x - 1) = 0$$</p>\n</blockquote>",
+      "hints": [
+        "Fíjate en la palabra directa. Sugiere que no hace falta realizar operaciones largas.",
+        "Piensa qué tiene que ocurrir para que una multiplicación de varios números dé como resultado cero."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consistirá en aprovechar que la ecuación ya es una multiplicación igualada a cero. Usaremos la propiedad del producto nulo, que nos dice que si multiplicamos varias cosas y el resultado es cero, al menos una de ellas tiene que ser cero obligatoriamente.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar los valores de $x$ que hacen que el producto de los tres paréntesis sea igual a cero.</p>\n<p><strong>Estrategia:</strong></p>\n<ol>\n<li><strong>Observar la estructura:</strong> Tenemos tres factores multiplicándose: $(x - 2)$, $(x + 3)$ y $(2x - 1)$. Su producto es $0$.</li>\n<li><strong>Aplicar la Propiedad del Producto Nulo:</strong> Si el producto de varios factores es cero, significa que al menos uno de los factores debe ser cero.</li>\n<li><strong>Separar en casos:</strong> Igualaremos cada paréntesis a cero por separado.</li>\n<li><strong>Resolver:</strong> Despejaremos $x$ en cada una de las tres miniecuaciones de primer grado resultantes.</li>\n</ol>\n<p>Esta es la forma más eficiente; desarrollar el producto nos llevaría a una ecuación de tercer grado mucho más compleja de resolver.</p>"
+    },
+    {
+      "title": "Paso 1: Aplicar la propiedad a los primeros factores",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Empezamos igualando a cero los dos primeros paréntesis. Del primero obtenemos que equis vale dos, y del segundo que equis vale menos tres. Es importante no multiplicar los paréntesis entre sí, ya que complicaríamos el problema sin necesidad.",
+      "content": "<p>Aplicamos la <strong>propiedad del producto nulo</strong>. Si $(x - 2)(x + 3)(2x - 1) = 0$, entonces existen tres posibilidades:</p>\n<p><strong>Caso 1: El primer factor es cero</strong></p>\n<p>$$x - 2 = 0$$</p>\n<p>Despejando $x$, sumamos $2$ a ambos lados:</p>\n<p>$$x_1 = 2$$</p>\n<p><strong>Caso 2: El segundo factor es cero</strong></p>\n<p>$$x + 3 = 0$$</p>\n<p>Despejando $x$, restamos $3$ a ambos lados:</p>\n<p>$$x_2 = -3$$</p>",
+      "theory": "<p><strong>Propiedad del producto nulo:</strong> Si $A \\cdot B \\cdot C = 0$, entonces obligatoriamente $A = 0$, $B = 0$ o $C = 0$. Esta propiedad es la base para resolver ecuaciones factorizadas.</p>",
+      "warning": "<p>Un error clásico es multiplicar los paréntesis: $(x-2)(x+3) = x^2+x-6$, y luego multiplicarlo por $(2x-1)$ obteniendo $2x^3+x^2-13x+6=0$. Aunque es matemáticamente correcto, destruye la ventaja de tener la ecuación factorizada y te obligaría a usar la regla de Ruffini para volver al punto de partida.</p>"
+    },
+    {
+      "title": "Paso 2: Resolver el tercer factor",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora tomamos el último paréntesis y lo igualamos a cero. Sumamos uno a ambos lados y luego dividimos entre dos. Con esto obtenemos nuestra tercera y última solución: un medio o cero coma cinco.",
+      "content": "<p>Nos queda evaluar la última posibilidad para que la ecuación original se anule.</p>\n<p><strong>Caso 3: El tercer factor es cero</strong></p>\n<p>$$2x - 1 = 0$$</p>\n<p>Primero, sumamos $1$ a ambos miembros para aislar el término con $x$:</p>\n<p>$$2x = 1$$</p>\n<p>Finalmente, dividimos entre $2$ para despejar la incógnita completamente:</p>\n<p>$$x_3 = \\frac{1}{2} = 0.5$$</p>\n<p>Con esto hemos encontrado las tres soluciones pedidas por el enunciado.</p>",
+      "checkpoint": {
+        "question": "¿Qué sucedería si la ecuación fuera (x - 2)(x + 3)(2x - 1) = 5 en lugar de 0?",
+        "options": [
+          {
+            "text": "Igualaríamos cada paréntesis a 5, resolviendo x - 2 = 5, etc.",
+            "correct": false,
+            "feedback": "La propiedad del producto nulo solo funciona con el cero. Si dos números multiplican 5, no tienen por qué ser 5 (podrían ser 1 y 5, o 10 y 0.5)."
+          },
+          {
+            "text": "Tendríamos que multiplicar todos los paréntesis, restar 5 para igualar a cero y luego buscar nuevas raíces.",
+            "correct": true,
+            "feedback": "¡Correcto! Si no está igualada a cero, la factorización actual no nos sirve. Hay que desarrollar, agrupar y volver a factorizar desde cero."
+          },
+          {
+            "text": "La ecuación no tendría solución real porque no se puede aplicar el producto nulo.",
+            "correct": false,
+            "feedback": "Sí tendría solución, pero habría que encontrarla desarrollando el polinomio. No se puede afirmar que no tiene solución sin analizarlo."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Comprobación",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Para asegurarnos, sustituimos cada solución en la ecuación original. Al hacerlo, veremos que uno de los factores se convierte en cero, lo que anula toda la multiplicación, sin importar lo que valgan los demás paréntesis.",
+      "content": "<p>Vamos a verificar matemáticamente que nuestras soluciones son correctas sustituyéndolas en la expresión original $(x - 2)(x + 3)(2x - 1) = 0$.</p>\n<ul>\n<li><strong>Para $x_1 = 2$:</strong><br> $(2 - 2)(2 + 3)(2(2) - 1) = (0)(5)(3) = 0 \\quad \\checkmark$</li>\n<li><strong>Para $x_2 = -3$:</strong><br> $(-3 - 2)(-3 + 3)(2(-3) - 1) = (-5)(0)(-7) = 0 \\quad \\checkmark$</li>\n<li><strong>Para $x_3 = \\frac{1}{2}$:</strong><br> $(\\frac{1}{2} - 2)(\\frac{1}{2} + 3)(2(\\frac{1}{2}) - 1) = (-1.5)(3.5)(0) = 0 \\quad \\checkmark$</li>\n</ul>\n<p>Como vemos, en cada caso se anula uno de los paréntesis, lo que hace que todo el producto sea cero, confirmando la validez de nuestras tres soluciones.</p>"
+    },
+    {
+      "title": "Interpretación Geométrica",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Si graficamos la función equivalente a nuestra ecuación, veremos una curva suave que corta al eje horizontal exactamente tres veces. Esos tres puntos de corte son, ni más ni menos, las soluciones que acabamos de calcular: menos tres, cero coma cinco y dos.",
+      "content": "<p>Si definimos la función $f(x) = (x - 2)(x + 3)(2x - 1)$, estamos ante un <strong>polinomio de grado 3</strong> (una función cúbica).</p>\n<p>Resolver la ecuación $f(x) = 0$ equivale a encontrar los puntos donde la gráfica de esta función <strong>corta al eje de abscisas (el eje X)</strong>.</p>\n<p>Como indica la gráfica, la curva atraviesa el eje horizontal exactamente en las tres coordenadas que hemos calculado:</p>\n<ul>\n<li>$x = -3$</li>\n<li>$x = 0.5$</li>\n<li>$x = 2$</li>\n</ul>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" style=\"background-color:#0f172a; border-radius:8px;\">\n  <!-- Ejes -->\n  <line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"#fbbf24\" stroke-width=\"2.5\" marker-end=\"url(#arrowX)\"/>\n  <line x1=\"200\" y1=\"360\" x2=\"200\" y2=\"40\" stroke=\"#fbbf24\" stroke-width=\"2.5\" marker-end=\"url(#arrowY)\"/>\n  <defs>\n    <marker id=\"arrowX\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"arrowY\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n  </defs>\n  <!-- Cuadrícula aproximada -->\n  <line x1=\"80\" y1=\"200\" x2=\"80\" y2=\"360\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\"/>\n  <line x1=\"140\" y1=\"200\" x2=\"140\" y2=\"360\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\"/>\n  <line x1=\"260\" y1=\"200\" x2=\"260\" y2=\"360\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\"/>\n  <line x1=\"320\" y1=\"200\" x2=\"320\" y2=\"360\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\"/>\n  \n  <!-- Curva cúbica aproximada que pasa por x=-3 (X=80), x=0.5 (X=220), x=2 (X=280) -->\n  <path d=\"M 50 350 C 70 200, 150 -100, 220 200 C 250 330, 260 250, 280 200 C 300 150, 310 100, 330 50\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n  \n  <!-- Puntos de corte -->\n  <circle cx=\"80\" cy=\"200\" r=\"5\" fill=\"#ef4444\"/>\n  <circle cx=\"220\" cy=\"200\" r=\"5\" fill=\"#ef4444\"/>\n  <circle cx=\"280\" cy=\"200\" r=\"5\" fill=\"#ef4444\"/>\n  \n  <!-- Etiquetas -->\n  <text x=\"65\" y=\"185\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\">-3</text>\n  <text x=\"210\" y=\"185\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\">0.5</text>\n  <text x=\"275\" y=\"185\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\">2</text>\n  <text x=\"340\" y=\"225\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">X</text>\n  <text x=\"215\" y=\"50\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">Y</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los pasos. Identificamos que la ecuación estaba factorizada e igualada a cero. Luego, igualamos cada paréntesis a cero de forma independiente. Finalmente, resolvimos cada pequeña ecuación para obtener nuestras tres respuestas.",
+      "content": "<ol>\n<li><strong>Análisis inicial:</strong> Comprobamos que la expresión es un producto de varios factores igualado a cero.</li>\n<li><strong>Aplicación de propiedad:</strong> Usamos la propiedad del producto nulo para separar la ecuación en tres ecuaciones independientes más sencillas.</li>\n<li><strong>Resolución por ramas:</strong>\n<ul>\n<li>Rama A: $x - 2 = 0 \\Rightarrow x_1 = 2$</li>\n<li>Rama B: $x + 3 = 0 \\Rightarrow x_2 = -3$</li>\n<li>Rama C: $2x - 1 = 0 \\Rightarrow x_3 = \\frac{1}{2}$</li>\n</ul>\n</li>\n<li><strong>Resultado final:</strong> Las tres soluciones son $2$, $-3$ y $0.5$. Se comprobó verificando en la ecuación original.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno. Resuelve esta nueva ecuación utilizando exactamente la misma técnica. Recuerda igualar cada factor a cero. Cuidado con la equis que está suelta al principio.",
+      "content": "<p>Halla de manera directa las tres soluciones de la siguiente ecuación factorizada:</p>\n<p>$$x(x - 5)(3x + 2) = 0$$</p>\n<p><em>Sigue la hoja de ruta que hemos construido. Plantéate: ¿cuáles son los tres factores aquí? No mires la solución hasta haberlo intentado.</em></p>",
+      "practiceAnswer": "<p>Las tres soluciones son:</p>\n<ul>\n<li>$x_1 = 0$ (del primer factor $x$)</li>\n<li>$x_2 = 5$ (del factor $x - 5$)</li>\n<li>$x_3 = -\\frac{2}{3}$ (del factor $3x + 2$)</li>\n</ul>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a llevar este concepto a un problema de geometría sobre un volumen nulo. La idea matemática base es idéntica.",
+      "content": "<p>Un ingeniero está modelando el volumen de agua de un depósito irregular a lo largo del tiempo, $t$ (en horas). Ha determinado que la fórmula del volumen en miles de litros es:</p>\n<p>$$V(t) = t(t - 4)(t - 8)$$</p>\n<p>Si el modelo sólo es válido para $t \\ge 0$, ¿en qué instantes exactos el depósito está completamente vacío ($V = 0$)?</p>\n<p><em>Plantea la ecuación, resuélvela y analiza qué significan las soluciones en el contexto de tiempo.</em></p>",
+      "practiceAnswer": "<p>Se plantea la ecuación $t(t - 4)(t - 8) = 0$. Aplicando la propiedad del producto nulo, obtenemos tres soluciones matemáticas:</p>\n<ul>\n<li>$t_1 = 0$</li>\n<li>$t_2 = 4$</li>\n<li>$t_3 = 8$</li>\n</ul>\n<p>Como todas son no negativas ($t \\ge 0$), todas son válidas. <strong>Interpretación:</strong> El depósito está vacío al inicio ($t=0$ horas), a las $4$ horas y a las $8$ horas.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T09:45:06.268Z",
+    "updatedAt": "2026-08-01T09:45:06.268Z",
+    "contentHash": "d84ae3af564ce3c1",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

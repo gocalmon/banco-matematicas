@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Polinomios y Teorema del Resto",
+    "exerciseType": "Cálculo de parámetros",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Comprender y aplicar el Teorema del Resto en polinomios",
+      "Relacionar el concepto de divisibilidad con un resto igual a cero",
+      "Plantear y resolver ecuaciones lineales para hallar parámetros desconocidos"
+    ],
+    "prerequisites": [
+      "Valor numérico de un polinomio",
+      "Resolución de ecuaciones de primer grado",
+      "Concepto de divisibilidad algebraica"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T15:53:49.720Z",
+    "id": "calculo-de-un-parametro-usando-el-teorema-del-resto-43818d64"
+  },
+  "title": "Cálculo de un parámetro usando el Teorema del Resto",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver el ejercicio dos. Queremos averiguar qué valor debe tener la letra k para que el polinomio P de equis sea divisible entre x menos dos, usando obligatoriamente el Teorema del Resto.",
+      "content": "<p><strong>Ejercicio 2:</strong> Aplica el Teorema del Resto para determinar de forma analítica el valor del parámetro indeterminado $k$ para que el polinomio $P(x) = x^3 + kx^2 - 5x + 4$ sea divisible por el binomio $(x - 2)$.</p>",
+      "hints": [
+        "El Teorema del Resto nos dice que el resto de dividir $P(x)$ entre $(x - a)$ coincide con el valor numérico $P(a)$.",
+        "Si un polinomio es 'divisible' por otro, significa que la división es exacta, es decir, el resto debe ser cero."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "El plan es muy sencillo. Identificaremos el valor de a en el divisor x menos a. Después, evaluaremos el polinomio en ese punto e igualaremos el resultado a cero para despejar la k.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ul><li>Hallar el valor exacto del parámetro $k$.</li></ul><p><strong>Estrategia paso a paso:</strong></p><ol><li><strong>Identificar la raíz del divisor:</strong> Para el binomio $(x - 2)$, la raíz es $a = 2$.</li><li><strong>Aplicar el Teorema del Resto:</strong> El resto de la división es $R = P(2)$.</li><li><strong>Imponer la condición de divisibilidad:</strong> Como debe ser divisible, el resto debe ser nulo: $P(2) = 0$.</li><li><strong>Despejar la incógnita $k$:</strong> Resolver la ecuación de primer grado resultante.</li></ol>"
+    },
+    {
+      "title": "Paso 1: Aplicación del Teorema del Resto",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Dado que el divisor es x menos dos, el valor que anula al divisor es dos positivo. Sustituimos todas las equis del polinomio por el número dos.",
+      "content": "<p><strong>Objetivo:</strong> Calcular el valor numérico $P(2)$.</p><p>Dado el binomio divisor de la forma $(x - a) = (x - 2)$, tomamos $a = 2$.</p><p>Sustituimos $x = 2$ en el polinomio $P(x) = x^3 + kx^2 - 5x + 4$:</p><p>$$P(2) = (2)^3 + k \\cdot (2)^2 - 5 \\cdot (2) + 4$$</p><p>Calculamos las potencias y las multiplicaciones:</p><p>$$P(2) = 8 + k \\cdot 4 - 10 + 4$$</p><p>$$P(2) = 4k + 8 - 10 + 4$$</p><p>Agrupamos los números sueltos ($8 - 10 + 4 = 2$):</p><p>$$P(2) = 4k + 2$$</p>",
+      "theory": "<p><strong>Teorema del Resto:</strong> El resto $R$ de la división de un polinomio $P(x)$ entre un binomio de la forma $(x - a)$ es igual al valor numérico del polinomio para $x = a$, es decir, $R = P(a)$.</p>"
+    },
+    {
+      "title": "Paso 2: Condición de divisibilidad y despeje de k",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Como el enunciado especifica que el polinomio debe ser divisible por x menos dos, el resto tiene que dar cero. Igualamos la expresión que acabamos de obtener a cero y despejamos la k.",
+      "content": "<p><strong>Objetivo:</strong> Plantear la ecuación $P(2) = 0$ y hallar $k$.</p><p>Para que la división sea exacta (divisible), el resto debe ser $0$:</p><p>$$P(2) = 0 \\implies 4k + 2 = 0$$</p><p>Despejamos el parámetro $k$ paso a paso:</p><ol><li>Pasamos el $2$ restando al lado derecho: $$4k = -2$$</li><li>Pasamos el $4$ dividiendo: $$k = \\frac{-2}{4}$$</li><li>Simplificamos la fracción dividiendo entre $2$: $$k = -\\frac{1}{2} = -0,5$$</li></ol>",
+      "checkpoint": {
+        "question": "Si el binomio divisor en lugar de ser (x - 2) hubiera sido (x + 3), ¿qué valor numérico habríamos tenido que evaluar en P(x)?",
+        "options": [
+          {
+            "text": "P(-3), porque el valor 'a' cambia de signo respecto al binomio (x - a).",
+            "correct": true,
+            "feedback": "¡Exacto! El binomio (x + 3) equivale a (x - (-3)), por lo que a = -3."
+          },
+          {
+            "text": "P(3), utilizando el número tal cual aparece en el binomio.",
+            "correct": false,
+            "feedback": "Recuerda que la forma estándar es (x - a). Si tenemos (x + 3), debemos cambiarle el signo al número."
+          },
+          {
+            "text": "P(0), porque siempre se evalúa en cero.",
+            "correct": false,
+            "feedback": "Evaluamos en cero únicamente si el divisor es simplemente 'x'."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comprobación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Vamos a comprobar si nuestro parámetro es correcto sustituyendo k por menos un medio y calculando la regla de Ruffini para verificar si el resto final es cero.",
+      "content": "<p><strong>Objetivo:</strong> Comprobar por la regla de Ruffini que con $k = -\\frac{1}{2}$ el resto es $0$.</p><p>Sustituimos $k = -0,5$ en el polinomio: $P(x) = x^3 - 0,5x^2 - 5x + 4$.</p><p>Aplicamos Ruffini con $a = 2$:</p><table style=\"margin: auto; border-collapse: collapse;\"><tr><td></td><td style=\"padding: 5px 15px;\">1</td><td style=\"padding: 5px 15px;\">-0,5</td><td style=\"padding: 5px 15px;\">-5</td><td style=\"padding: 5px 15px;\">4</td></tr><tr><td style=\"border-right: 2px solid black; padding: 5px 15px;\">2</td><td style=\"border-bottom: 2px solid black; padding: 5px 15px;\"></td><td style=\"border-bottom: 2px solid black; padding: 5px 15px;\">2</td><td style=\"border-bottom: 2px solid black; padding: 5px 15px;\">3</td><td style=\"border-bottom: 2px solid black; padding: 5px 15px;\">-4</td></tr><tr><td></td><td style=\"padding: 5px 15px;\">1</td><td style=\"padding: 5px 15px;\">1,5</td><td style=\"padding: 5px 15px;\">-2</td><td style=\"padding: 5px 15px; font-weight: bold; color: green;\">0</td></tr></table><p><strong>Conclusión:</strong> El resto es $0$, por lo que $k = -\\frac{1}{2}$ es la solución correcta.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumiendo la hoja de ruta: extraemos la raíz del divisor cambiando el signo, calculamos el valor numérico del polinomio, igualamos a cero por ser divisible y despejamos el parámetro.",
+      "content": "<ol><li><strong>Obtener la raíz del divisor:</strong> Si el divisor es $(x - 2)$, la raíz es $a = 2$.</li><li><strong>Calcular valor numérico:</strong> Sustituir $x = 2$ en $P(x) \\implies P(2) = 4k + 2$.</li><li><strong>Imponer divisibilidad:</strong> Resto $= 0 \\implies 4k + 2 = 0$.</li><li><strong>Resolver la ecuación:</strong> Despejar $k \\implies k = -\\frac{1}{2}$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica exactamente los mismos pasos en este ejercicio para calcular el parámetro m.",
+      "content": "<p>Aplica el Teorema del Resto para determinar de forma analítica el valor del parámetro $m$ para que el polinomio $Q(x) = x^3 - 3x^2 + mx - 6$ sea divisible por el binomio $(x - 3)$.</p><p><em>Resuélvelo paso a paso en tu cuaderno antes de comprobar la respuesta.</em></p>",
+      "practiceAnswer": "<p><strong>Paso 1:</strong> Divisible por $(x - 3) \\implies Q(3) = 0$.</p><p><strong>Paso 2:</strong> $Q(3) = 3^3 - 3(3)^2 + m(3) - 6 = 27 - 27 + 3m - 6 = 3m - 6$.</p><p><strong>Paso 3:</strong> Igualamos a cero: $3m - 6 = 0 \\implies 3m = 6 \\implies m = 2$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Imagina que el resto no es cero, sino que nos piden que el resto valga un número concreto. ¿Cómo adaptarías el procedimiento?",
+      "content": "<p>Un diseño gráfico utiliza una función polinómica $F(x) = x^3 + kx - 7$ para modelar una curva. El diseñador necesita ajustarla de modo que al dividirla entre el módulo $(x - 1)$, el resto obtenido sea exactamente igual a $5$ (y no $0$).</p><p>¿Qué valor debe tomar el parámetro $k$ para cumplir esta especificación?</p><p><em>Pista: Aplica el Teorema del Resto igualando $F(1)$ al resto deseado.</em></p>",
+      "practiceAnswer": "<p>Según el Teorema del Resto, el resto es $F(1)$. Como queremos que el resto sea $5$, planteamos $F(1) = 5$.</p><p>Calculamos $F(1) = 1^3 + k(1) - 7 = 1 + k - 7 = k - 6$.</p><p>Igualamos al resto deseado: $k - 6 = 5 \\implies k = 5 + 6 = 11$.</p><p><strong>Resultado:</strong> El parámetro debe ser $k = 11$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T15:54:23.632Z",
+    "updatedAt": "2026-07-31T15:54:23.632Z",
+    "contentHash": "b191cfcc7550b94a",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

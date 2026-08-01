@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Geometría Analítica",
+    "subtopic": "Ecuación de la recta",
+    "exerciseType": "Cálculo de pendiente y ecuación explícita a partir de dos puntos",
+    "protocols": [
+      "B"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Calcular la pendiente de una recta a partir de las coordenadas de dos puntos por los que pasa.",
+      "Determinar la ordenada en el origen sustituyendo un punto en la ecuación general.",
+      "Construir la ecuación explícita de la recta y verificarla analítica y gráficamente."
+    ],
+    "prerequisites": [
+      "Operaciones básicas con números enteros.",
+      "Resolución de ecuaciones de primer grado sencillas.",
+      "Concepto de coordenadas cartesianas."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T10:58:56.778Z",
+    "id": "ecuacion-explicita-de-la-recta-a-partir-de-dos-punto-f05b5c2f"
+  },
+  "title": "Ecuación Explícita de la Recta a partir de Dos Puntos",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a analizar este ejercicio geométrico. Nos dan las coordenadas de dos puntos y nos piden que reconstruyamos la identidad de la línea recta que los une, calculando primero su inclinación y luego su fórmula completa.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 6:</strong> Dada la recta que pasa por los puntos $A(1, 2)$ y $B(3, 8)$:</p>\n<ul>\n<li>a) Calcula el valor de su pendiente $m$ mediante la fórmula correspondiente.</li>\n<li>b) Escribe la ecuación explícita de la recta $(y = mx + n)$.</li>\n</ul>\n</blockquote>",
+      "hints": [
+        "Recuerda que la pendiente mide cuánto sube o baja la recta por cada unidad que avanzamos en horizontal.",
+        "La ecuación explícita necesita dos ingredientes: la pendiente (m) y el punto donde la recta corta al eje vertical (n)."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia tiene dos fases. Primero medimos el desnivel entre los puntos para sacar la pendiente. Con ese dato, usaremos uno de los puntos como ancla para descubrir dónde corta la recta al eje vertical.",
+      "content": "<h3>¿Qué nos piden y qué datos tenemos?</h3>\n<p>Conocemos dos puntos exactos de la recta: $A(1, 2)$ y $B(3, 8)$. El objetivo es llegar a la expresión $y = mx + n$.</p>\n<h3>Estrategia de resolución</h3>\n<ol>\n<li><strong>Calcular la pendiente ($m$):</strong> Usaremos la fórmula de la pendiente, que divide la variación vertical (cambio en $y$) entre la variación horizontal (cambio en $x$).</li>\n<li><strong>Calcular la ordenada en el origen ($n$):</strong> Sustituiremos el valor de $m$ recién calculado y las coordenadas de uno de los puntos (por ejemplo, el $A$) en la ecuación $y = mx + n$. Esto nos dejará una ecuación con $n$ como única incógnita.</li>\n<li><strong>Escribir la ecuación y comprobar:</strong> Montaremos la ecuación final y verificaremos que el punto $B$ también la cumple.</li>\n</ol>"
+    },
+    {
+      "title": "Apartado a): Cálculo de la pendiente $m$",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Aplicamos la fórmula de la pendiente. Restamos las alturas de los puntos y las dividimos por la resta de sus posiciones horizontales. De ocho a dos van seis, y de tres a uno van dos. Seis entre dos es tres.",
+      "content": "<p><strong>Objetivo:</strong> Hallar la pendiente $m$ con los puntos $A(1, 2)$ y $B(3, 8)$.</p>\n<p>Llamaremos a las coordenadas de $A$ $(x_1, y_1)$ y a las de $B$ $(x_2, y_2)$:</p>\n<ul>\n<li>$x_1 = 1$, $y_1 = 2$</li>\n<li>$x_2 = 3$, $y_2 = 8$</li>\n</ul>\n<p>Sustituimos estos valores en la fórmula de la pendiente:</p>\n<p>$$m = \\frac{y_2 - y_1}{x_2 - x_1}$$</p>\n<p>$$m = \\frac{8 - 2}{3 - 1}$$</p>\n<p>$$m = \\frac{6}{2}$$</p>\n<p>$$m = 3$$</p>\n<p><strong>Interpretación:</strong> La pendiente es $3$. Esto significa que por cada unidad que avanzamos hacia la derecha en el eje X, la recta sube 3 unidades en el eje Y.</p>",
+      "theory": "<p><strong>Fórmula de la pendiente:</strong> La pendiente $m$ de una recta que pasa por los puntos $(x_1, y_1)$ y $(x_2, y_2)$ es el cociente entre el incremento de $y$ (desplazamiento vertical) y el incremento de $x$ (desplazamiento horizontal).</p>",
+      "warning": "<p>Un error muy común es restar las coordenadas en distinto orden en el numerador y en el denominador (por ejemplo, $\\frac{y_2 - y_1}{x_1 - x_2}$). Debes mantener estrictamente el mismo orden arriba y abajo.</p>"
+    },
+    {
+      "title": "Apartado b): Cálculo de la ordenada en el origen $n$",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ya sabemos que la pendiente es tres. Ahora escribimos la ecuación incompleta y obligamos a que pase por el punto A, cambiando la equis por uno y la i por dos. Al despejar la ene, obtenemos menos uno.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar el valor de $n$ para completar la ecuación explícita $y = mx + n$.</p>\n<p>Como ya sabemos que $m = 3$, nuestra ecuación por el momento es:</p>\n<p>$$y = 3x + n$$</p>\n<p>Sabemos que la recta pasa por el punto $A(1, 2)$. Esto significa que cuando $x = 1$, obligatoriamente $y = 2$. Sustituimos estos valores:</p>\n<p>$$2 = 3(1) + n$$</p>\n<p>$$2 = 3 + n$$</p>\n<p>Para despejar $n$, restamos $3$ en ambos lados:</p>\n<p>$$2 - 3 = n$$</p>\n<p>$$n = -1$$</p>\n<p><strong>Resultado:</strong> La ecuación explícita de la recta es <strong>$y = 3x - 1$</strong>.</p>",
+      "checkpoint": {
+        "question": "¿Habría dado un resultado diferente para 'n' si hubiésemos utilizado el punto B(3, 8) en lugar del punto A(1, 2)?",
+        "options": [
+          {
+            "text": "Sí, porque las coordenadas del punto B son mayores y cambiarían el valor de n.",
+            "correct": false,
+            "feedback": "Incorrecto. Ambos puntos pertenecen a la misma recta, por lo que deben cumplir la misma ecuación y dar la misma 'n'."
+          },
+          {
+            "text": "No, cualquier punto de la recta sirve para hallar la misma ordenada en el origen.",
+            "correct": true,
+            "feedback": "¡Correcto! Si sustituyes B(3, 8): 8 = 3(3) + n -> 8 = 9 + n -> n = -1. El resultado es idéntico."
+          },
+          {
+            "text": "No se puede usar el punto B, la fórmula exige usar siempre el primer punto.",
+            "correct": false,
+            "feedback": "Falso. La elección del punto es irrelevante; ambos son igual de válidos."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comprobación analítica",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Siempre es buena idea comprobar que no nos hemos equivocado. Como usamos el punto A para hallar la fórmula, vamos a evaluarla con el punto B. Al sustituir la equis por tres, nos da ocho. ¡Perfecto, coincide!",
+      "content": "<p>Hemos deducido que la ecuación de la recta es $y = 3x - 1$.</p>\n<p>Para garantizar que todo es correcto, vamos a comprobar si el punto $B(3, 8)$, que no usamos en el paso anterior para despejar $n$, cumple esta ecuación.</p>\n<p>Sustituimos $x = 3$ en nuestra ecuación:</p>\n<p>$$y = 3(3) - 1$$</p>\n<p>$$y = 9 - 1$$</p>\n<p>$$y = 8$$</p>\n<p>Obtenemos exactamente el valor de la coordenada $y$ del punto $B$. La comprobación es exitosa y nuestra ecuación es matemáticamente coherente.</p>"
+    },
+    {
+      "title": "Representación gráfica de la recta",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Veamos cómo queda todo en el plano. Fíjate en los puntos A y B, y cómo la recta que los une corta al eje vertical exactamente en menos uno. Además, por cada paso a la derecha, sube tres hacia arriba.",
+      "content": "<p>La representación gráfica confirma todos los cálculos que hemos realizado:</p>\n<ul>\n<li>La recta pasa por los puntos iniciales $A(1, 2)$ y $B(3, 8)$.</li>\n<li><strong>Ordenada en el origen ($n=-1$):</strong> Vemos que la recta corta al eje Y (el eje vertical) exactamente a la altura de $-1$.</li>\n<li><strong>Pendiente ($m=3$):</strong> Desde el punto A, si avanzamos 1 unidad a la derecha (hasta $x=2$), la recta sube 3 unidades (hasta $y=5$).</li>\n</ul>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Escala: X de -1 a 5 (6 unidades = 300px, 1u = 50px). Y de -2 a 10 (12 unidades = 300px, 1u = 25px) -->\n  <!-- Xpx = 100 + 50*x, Ypx = 300 - 25*y -->\n  <!-- Cuadrícula -->\n  <line x1='150' y1='50' x2='150' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='200' y1='50' x2='200' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='250' y1='50' x2='250' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='300' y1='50' x2='300' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='250' x2='350' y2='250' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='200' x2='350' y2='200' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='150' x2='350' y2='150' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='100' x2='350' y2='100' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='325' x2='350' y2='325' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <!-- Ejes -->\n  <!-- Eje Y (x=0 -> Xpx=100) -->\n  <line x1='100' y1='50' x2='100' y2='350' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <!-- Eje X (y=0 -> Ypx=300) -->\n  <line x1='50' y1='300' x2='350' y2='300' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <text x='340' y='290' fill='#fbbf24' font-size='16' font-family='sans-serif'>X</text>\n  <text x='110' y='60' fill='#fbbf24' font-size='16' font-family='sans-serif'>Y</text>\n  <text x='85' y='315' fill='#fbbf24' font-size='14' font-family='sans-serif'>0</text>\n  <!-- Recta y = 3x - 1 -->\n  <!-- Puntos para dibujar la recta: x=-0.5 -> y=-2.5 -> Xpx=75, Ypx=362.5 (fuera, usemos x=-0.3) -->\n  <!-- x=-0.5 -> Y=362.5. x=4 -> y=11 -> Y=25. Calculamos cortes con caja 50..350 -->\n  <!-- y=-2 -> x=-1/3 -> Xpx=83.3, Ypx=350 -->\n  <!-- y=10 -> x=11/3 -> Xpx=283.3, Ypx=50 -->\n  <line x1='83.3' y1='350' x2='283.3' y2='50' stroke='#38bdf8' stroke-width='2.5'/>\n  <!-- Puntos A(1,2) y B(3,8) -->\n  <!-- A: X = 100+50 = 150, Y = 300 - 50 = 250 -->\n  <circle cx='150' cy='250' r='5' fill='#ef4444'/>\n  <text x='160' y='255' fill='#ef4444' font-size='14' font-family='sans-serif' font-weight='bold'>A(1, 2)</text>\n  <!-- B: X = 100+150 = 250, Y = 300 - 200 = 100 -->\n  <circle cx='250' cy='100' r='5' fill='#ef4444'/>\n  <text x='260' y='105' fill='#ef4444' font-size='14' font-family='sans-serif' font-weight='bold'>B(3, 8)</text>\n  <!-- Corte eje Y: (0, -1) -> X=100, Y=325 -->\n  <circle cx='100' cy='325' r='5' fill='#10b981'/>\n  <text x='110' y='335' fill='#10b981' font-size='14' font-family='sans-serif'>n = -1</text>\n  <!-- Triángulo de pendiente desde A(1,2) a (2,5) -->\n  <!-- (2,5): X = 200, Y = 300 - 125 = 175 -->\n  <line x1='150' y1='250' x2='200' y2='250' stroke='#f472b6' stroke-width='2' stroke-dasharray='4'/>\n  <line x1='200' y1='250' x2='200' y2='175' stroke='#f472b6' stroke-width='2' stroke-dasharray='4'/>\n  <text x='170' y='265' fill='#f472b6' font-size='12' font-family='sans-serif'>+1</text>\n  <text x='205' y='215' fill='#f472b6' font-size='12' font-family='sans-serif'>+3 (m)</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulamos los pasos que hemos seguido. Calculamos la pendiente, hallamos la ordenada sustituyendo un punto, y comprobamos con el otro.",
+      "content": "<p>Esta es la hoja de ruta para encontrar la ecuación de una recta a partir de dos puntos:</p>\n<ol>\n<li><strong>Fórmula de la pendiente:</strong> Aplicar $m = \\frac{y_2 - y_1}{x_2 - x_1}$. En nuestro caso, $m = 3$.</li>\n<li><strong>Ecuación punto-pendiente (u ordenada en el origen):</strong> Sustituir la pendiente $m$ y las coordenadas de UNO de los puntos en la estructura $y = mx + n$.</li>\n<li><strong>Despejar $n$:</strong> Resolver la pequeña ecuación resultante. Obtuvimos $n = -1$.</li>\n<li><strong>Solución final:</strong> Escribir la expresión completa: $y = 3x - 1$.</li>\n<li><strong>Comprobación:</strong> Sustituir el segundo punto en la ecuación para validar el resultado.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Aplica el mismo método paso a paso con estos dos nuevos puntos. Pista: ten cuidado con los signos negativos al restar.",
+      "content": "<p>Dada la recta que pasa por los puntos $C(-2, 5)$ y $D(2, -3)$:</p>\n<ul>\n<li>a) Calcula el valor de su pendiente $m$ mediante la fórmula correspondiente.</li>\n<li>b) Escribe la ecuación explícita de la recta $(y = mx + n)$.</li>\n</ul>\n<p><em>Intenta realizar el cálculo en un papel antes de mirar la solución. ¡Presta mucha atención a la regla de los signos en el numerador y denominador!</em></p>",
+      "practiceAnswer": "<p><strong>Apartado a:</strong> $m = \\frac{-3 - 5}{2 - (-2)} = \\frac{-8}{4} = -2$</p>\n<p><strong>Apartado b:</strong> Usando $C(-2, 5) \\rightarrow 5 = -2(-2) + n \\rightarrow 5 = 4 + n \\rightarrow n = 1$. La ecuación es <strong>$y = -2x + 1$</strong>.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "El concepto de pendiente y recta sirve para modelar la realidad. Un viaje en taxi donde pagas una bajada de bandera más un coste por kilómetro es, matemáticamente, una línea recta.",
+      "content": "<p>La tarifa de un taxi incluye un precio fijo por subirse (bajada de bandera) y un coste constante por cada kilómetro recorrido. Sabemos por dos viajes diferentes que:</p>\n<ul>\n<li>Un viaje de $2\\text{ km}$ cuesta $5\\text{ euros}$.</li>\n<li>Un viaje de $5\\text{ km}$ cuesta $11\\text{ euros}$.</li>\n</ul>\n<p>Si interpretamos esto como puntos $(x, y)$ donde $x$ son los kilómetros e $y$ el coste total, encuentra la ecuación $y = mx + n$ que modela la tarifa del taxi. ¿Qué significan físicamente los valores de $m$ y $n$ en este problema?</p>",
+      "practiceAnswer": "<p>Los puntos son $(2, 5)$ y $(5, 11)$.</p>\n<p>Pendiente $m = \\frac{11 - 5}{5 - 2} = \\frac{6}{3} = 2$.</p>\n<p>Ordenada $n$: $5 = 2(2) + n \\rightarrow n = 1$.</p>\n<p>Ecuación: <strong>$y = 2x + 1$</strong>.</p>\n<p><em>Interpretación:</em> $m=2$ es el precio por cada kilómetro ($2\\text{ €/km}$), y $n=1$ es el precio fijo por subirse al taxi ($1\\text{ €}$ de bajada de bandera).</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:04:57.288Z",
+    "updatedAt": "2026-08-01T11:04:57.288Z",
+    "contentHash": "949bc766764ec728",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

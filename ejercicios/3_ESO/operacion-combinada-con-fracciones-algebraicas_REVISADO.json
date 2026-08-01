@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Fracciones algebraicas",
+    "exerciseType": "Operaciones combinadas con fracciones algebraicas",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Jerarquizar operaciones algebraicas respetando los paréntesis",
+      "Factorizar polinomios mediante la identidad notable de diferencia de cuadrados",
+      "Simplificar productos de fracciones algebraicas cancelando factores comunes"
+    ],
+    "prerequisites": [
+      "Resta de fracciones algebraicas con diferente denominador",
+      "Identidades notables (diferencia de cuadrados)",
+      "Multiplicación de fracciones algebraicas"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T15:57:26.374Z",
+    "id": "operacion-combinada-con-fracciones-algebraicas-7520fd02"
+  },
+  "title": "Operación combinada con fracciones algebraicas",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver el ejercicio ocho. Es una operación combinada que incluye un paréntesis con una resta y una multiplicación de fracciones algebraicas. La meta es simplificar el resultado al máximo.",
+      "content": "<p><strong>Ejercicio 8:</strong> Realiza la siguiente operación combinada con fracciones algebraicas y reduce los términos al máximo:</p><p>$$\\left( \\frac{x}{x - 1} - 1 \\right) \\cdot \\frac{x^2 - 1}{2x}$$</p>",
+      "hints": [
+        "Respeta la jerarquía de las operaciones: resuelve primero la resta dentro del paréntesis.",
+        "Antes de multiplicar, busca diferencias de cuadrados que se puedan factorizar."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestro plan sigue la jerarquía de las operaciones. Primero reduciremos a común denominador la resta dentro del paréntesis. Luego factorizaremos el numerador de la segunda fracción y, finalmente, multiplicaremos y cancelaremos factores en común.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ul><li>Operar y simplificar la expresión combinada dada a su forma más reducida.</li></ul><p><strong>Estrategia paso a paso:</strong></p><ol><li><strong>Resolver el paréntesis:</strong> Restar $1$ a la fracción $\\frac{x}{x - 1}$ obteniendo un denominador común.</li><li><strong>Factorizar la segunda fracción:</strong> Descomponer el numerador $x^2 - 1$ usando identidades notables.</li><li><strong>Multiplicar las fracciones:</strong> Unir los numeradores y los denominadores en una única fracción.</li><li><strong>Simplificar:</strong> Cancelar los factores comunes presentes arriba y abajo.</li></ol>"
+    },
+    {
+      "title": "Paso 1: Operación dentro del paréntesis",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Comenzamos con la resta dentro del paréntesis. Convertimos el número uno en una fracción con denominador equis menos uno. Al restar las expresiones, los términos con equis se anulan y nos queda una fracción muy sencilla.",
+      "content": "<p><strong>Objetivo:</strong> Simplificar la resta $\\left( \\frac{x}{x - 1} - 1 \\right)$.</p><p>Expresamos el número $1$ con denominador común $(x - 1)$:</p><p>$$1 = \\frac{x - 1}{x - 1}$$</p><p>Efectuamos la resta introduciendo los términos en una sola fracción:</p><p>$$\\frac{x}{x - 1} - \\frac{x - 1}{x - 1} = \\frac{x - (x - 1)}{x - 1}$$</p><p>Quitamos el paréntesis del numerador teniendo en cuenta el cambio de signo:</p><p>$$\\frac{x - x + 1}{x - 1} = \\frac{1}{x - 1}$$</p>",
+      "warning": "<p><strong>¡Atención con el paréntesis en la resta!</strong> El signo menos que precede a $(x - 1)$ afecta a ambos términos: $- (x - 1) = -x + 1$. Un error clásico es olvidar cambiar el signo del número $1$.</p>"
+    },
+    {
+      "title": "Paso 2: Factorización del segundo factor",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora miramos la segunda fracción, en concreto su numerador equis al cuadrado menos uno. Reconocemos una diferencia de cuadrados y la escribimos como suma por diferencia.",
+      "content": "<p><strong>Objetivo:</strong> Descomponer el numerador $x^2 - 1$.</p><p>Reconocemos la identidad notable de <strong>diferencia de cuadrados</strong>:</p><p>$$a^2 - b^2 = (a - b)(a + b)$$</p><p>Como $1 = 1^2$, escribimos:</p><p>$$x^2 - 1 = (x - 1)(x + 1)$$</p><p>La segunda fracción reexpresada queda:</p><p>$$\\frac{x^2 - 1}{2x} = \\frac{(x - 1)(x + 1)}{2x}$$</p>",
+      "theory": "<p><strong>Diferencia de cuadrados:</strong> Descomponer términos cuadráticos antes de multiplicar nos permite descubrir simplificaciones que ahorran trabajo algebraico más adelante.</p>"
+    },
+    {
+      "title": "Paso 3: Multiplicación y simplificación",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Sustituimos el resultado del paréntesis y la fracción factorizada en la expresión original. Multiplicamos numeradores con numeradores y denominadores con denominadores, para después cancelar el factor equis menos uno.",
+      "content": "<p><strong>Objetivo:</strong> Multiplicar y reducir al máximo la expresión.</p><p>Sustituimos ambas partes en la operación combinada:</p><p>$$\\left( \\frac{1}{x - 1} \\right) \\cdot \\frac{(x - 1)(x + 1)}{2x}$$</p><p>Multiplicamos en línea:</p><p>$$\\frac{1 \\cdot (x - 1)(x + 1)}{(x - 1) \\cdot 2x}$$</p><p>Cancelamos el factor común $(x - 1)$ que está multiplicando en el numerador y en el denominador:</p><p>$$\\frac{\\cancel{(x - 1)}(x + 1)}{\\cancel{(x - 1)} \\cdot 2x} = \\frac{x + 1}{2x}$$</p><p><strong>Resultado final:</strong> $\\frac{x + 1}{2x}$ (para $x \\neq 1$ y $x \\neq 0$).</p>",
+      "checkpoint": {
+        "question": "¿Por qué es matemáticamente válido cancelar el factor (x - 1) en esta multiplicación?",
+        "options": [
+          {
+            "text": "Porque está multiplicando a la totalidad de la expresión tanto arriba como abajo.",
+            "correct": true,
+            "feedback": "¡Exacto! Dividir una expresión entre sí misma da 1, por lo que su producto es neutro."
+          },
+          {
+            "text": "Porque podemos tachar cualquier término que se repita aunque esté sumando.",
+            "correct": false,
+            "feedback": "¡Cuidado! Solo se pueden simplificar factores que estén multiplicando a todo el conjunto."
+          },
+          {
+            "text": "Porque el valor de x siempre es cero.",
+            "correct": false,
+            "feedback": "Al contrario, x no puede ser ni 0 ni 1 para que las expresiones estén definidas."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comprobación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Comprobemos si nuestra simplificación es correcta asignando un valor a la equis, por ejemplo equis igual a dos, en la expresión original y en el resultado final.",
+      "content": "<p><strong>Objetivo:</strong> Evaluar numéricamente ambas expresiones en $x = 2$ para validar el resultado.</p><p><strong>1. Evaluación en la expresión original:</strong></p><p>$$\\left( \\frac{2}{2 - 1} - 1 \\right) \\cdot \\frac{2^2 - 1}{2(2)}$$</p><p>$$\\left( \\frac{2}{1} - 1 \\right) \\cdot \\frac{4 - 1}{4} = (2 - 1) \\cdot \\frac{3}{4} = 1 \\cdot \\frac{3}{4} = \\frac{3}{4}$$</p><p><strong>2. Evaluación en la expresión simplificada:</strong></p><p>$$\\frac{x + 1}{2x} \\implies \\frac{2 + 1}{2(2)} = \\frac{3}{4}$$</p><p><strong>Conclusión:</strong> En ambos casos obtenemos $\\frac{3}{4}$, lo que confirma que la simplificación realizada es plenamente correcta.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulemos los pasos para resolver la operación combinada: calcular el paréntesis con común denominador, factorizar el segundo numerador, multiplicar y tachar factores repetidos.",
+      "content": "<ol><li><strong>Operar el paréntesis:</strong> $\\frac{x}{x-1} - 1 = \\frac{x - (x - 1)}{x-1} = \\frac{1}{x-1}$.</li><li><strong>Factorizar el numerador:</strong> $x^2 - 1 = (x - 1)(x + 1)$.</li><li><strong>Efectuar el producto:</strong> $\\frac{1}{x-1} \\cdot \\frac{(x-1)(x+1)}{2x} = \\frac{(x-1)(x+1)}{(x-1)2x}$.</li><li><strong>Cancelar factores:</strong> Tachar $(x - 1)$ arriba y abajo.</li><li><strong>Resultado final:</strong> $\\frac{x + 1}{2x}$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica exactamente el mismo orden de operaciones para resolver esta nueva expresión combinada.",
+      "content": "<p>Realiza la siguiente operación combinada con fracciones algebraicas y simplifica el resultado al máximo:</p><p>$$\\left( \\frac{x}{x - 2} - 1 \\right) \\cdot \\frac{x^2 - 4}{3x}$$</p><p><em>Trabaja cada paso en tu cuaderno antes de consultar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Paso 1 (Paréntesis):</strong> $\\frac{x - (x - 2)}{x - 2} = \\frac{2}{x - 2}$.</p><p><strong>Paso 2 (Factorizar):</strong> $x^2 - 4 = (x - 2)(x + 2)$.</p><p><strong>Paso 3 (Multiplicar y simplificar):</strong> $\\frac{2}{x - 2} \\cdot \\frac{(x - 2)(x + 2)}{3x} = \\frac{2(x + 2)}{3x} = \\frac{2x + 4}{3x}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos cómo simplificar operaciones combinadas nos ayuda a trabajar con fórmulas compuestas en economía y producción.",
+      "content": "<p>El rendimiento relativo de una máquina de producción viene dado por la fórmula:</p><p>$$R(x) = \\left( 1 - \\frac{1}{x + 1} \\right) \\cdot \\frac{x^2 - 1}{x}$$</p><p>Obtén una expresión totalmente simplificada para el rendimiento $R(x)$.</p><p><em>Pista: Resuelve la resta del primer paréntesis y factoriza el numerador del segundo término.</em></p>",
+      "practiceAnswer": "<p><strong>1. Resta del paréntesis:</strong> $1 - \\frac{1}{x + 1} = \\frac{x + 1 - 1}{x + 1} = \\frac{x}{x + 1}$.</p><p><strong>2. Factorización:</strong> $x^2 - 1 = (x - 1)(x + 1)$.</p><p><strong>3. Multiplicación:</strong> $\\frac{x}{x + 1} \\cdot \\frac{(x - 1)(x + 1)}{x} = \\frac{x(x - 1)(x + 1)}{(x + 1)x}$.</p><p><strong>4. Cancelación:</strong> Se cancelan tanto el factor $x$ como el factor $(x + 1)$.</p><p><strong>Resultado final:</strong> $R(x) = x - 1$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T15:58:17.594Z",
+    "updatedAt": "2026-07-31T15:58:17.594Z",
+    "contentHash": "33f5cc15e19434cb",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

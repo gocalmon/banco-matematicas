@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Fracciones algebraicas",
+    "exerciseType": "Suma y resta combinada de fracciones algebraicas",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Factorizar denominadores cuadráticos mediante ecuaciones de segundo grado e identidades notables",
+      "Calcular el mínimo común múltiplo de tres denominadores algebraicos",
+      "Reducir expresiones con sumas y restas de fracciones algebraicas simplificando el resultado final"
+    ],
+    "prerequisites": [
+      "Factorización de trinomios cuadráticos y diferencia de cuadrados",
+      "Cálculo del m.c.m. de polinomios",
+      "Regla de los signos y propiedad distributiva"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T16:08:31.896Z",
+    "id": "operacion-combinada-con-suma-y-resta-de-fracciones-a-b7c3c23e"
+  },
+  "title": "Operación combinada con suma y resta de fracciones algebraicas",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver el ejercicio cuatro de la serie. Nos piden realizar una operación combinada de resta y suma entre tres fracciones algebraicas, reduciendo a común denominador y simplificando el resultado al máximo.",
+      "content": "<p><strong>Ejercicio 4:</strong> Resuelve la siguiente operación combinada sumamente algebraica reduciendo a común denominador y simplificando la expresión final obtenida:</p><p>$$\\frac{x + 1}{x^2 - x - 2} - \\frac{x - 1}{x^2 - 4} + \\frac{1}{x + 2}$$</p>",
+      "hints": [
+        "Comienza factorizando completamente los denominadores cuadráticos para poder hallar el m.c.m.",
+        "Recuerda que el signo menos entre la primera y la segunda fracción cambiará los signos de todo el segundo numerador."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consiste en factorizar los denominadores de las tres fracciones para encontrar el mínimo común múltiplo. Después ajustaremos cada numerador, uniremos la expresión bajo una única fracción y simplificaremos.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ul><li>Operar la suma y resta de tres fracciones algebraicas y reducirlas a su forma más simple.</li></ul><p><strong>Estrategia paso a paso:</strong></p><ol><li><strong>Factorizar denominadores:</strong> Descomponer $x^2 - x - 2$ y $x^2 - 4$.</li><li><strong>Calcular el m.c.m.:</strong> Determinar el común denominador tomando todos los factores comunes y no comunes al mayor exponente.</li><li><strong>Reducir a común denominador:</strong> Ajustar los tres numeradores.</li><li><strong>Operar y simplificar:</strong> Agrupar los términos del numerador final y simplificar si es posible.</li></ol>"
+    },
+    {
+      "title": "Paso 1: Factorización de los denominadores",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Factorizamos los dos denominadores cuadráticos. Para el primero resolvemos la ecuación de segundo grado, obteniendo como factores x menos dos por x más uno. Para el segundo aplicamos la diferencia de cuadrados.",
+      "content": "<p><strong>Objetivo:</strong> Factorizar cada uno de los tres denominadores.</p><p><strong>1. Primer denominador ($d_1 = x^2 - x - 2$):</strong></p><p>Resolvemos $x^2 - x - 2 = 0$:</p><p>$$x = \\frac{-(-1) \\pm \\sqrt{(-1)^2 - 4(1)(-2)}}{2(1)} = \\frac{1 \\pm \\sqrt{1 + 8}}{2} = \\frac{1 \\pm 3}{2}$$</p><p>Obtenemos $x = 2$ y $x = -1$, luego $x^2 - x - 2 = (x - 2)(x + 1)$.</p><p><strong>2. Segundo denominador ($d_2 = x^2 - 4$):</strong></p><p>Por diferencia de cuadrados: $x^2 - 4 = (x - 2)(x + 2)$.</p><p><strong>3. Tercer denominador ($d_3 = x + 2$):</strong> Ya es un factor primo irreducible.</p>",
+      "theory": "<p><strong>Diferencia de cuadrados:</strong> Recuerda siempre identificar la forma $a^2 - b^2 = (a - b)(a + b)$ para descomponer binomios de segundo grado rápidamente.</p>"
+    },
+    {
+      "title": "Paso 2: Cálculo del m.c.m. y ajuste de numeradores",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Identificamos los factores únicos presentes en los tres denominadores: x menos dos, x más dos y x más uno. El mínimo común múltiplo es el producto de los tres.",
+      "content": "<p><strong>Objetivo:</strong> Hallar el m.c.m. y reescribir la operación con denominador común.</p><p>Resumen de denominadores factorizados:</p><ul><li>$d_1 = (x - 2)(x + 1)$</li><li>$d_2 = (x - 2)(x + 2)$</li><li>$d_3 = (x + 2)$</li></ul><p><strong>Mínimo común múltiplo:</strong></p><p>$$\\text{m.c.m.} = (x - 2)(x + 2)(x + 1)$$</p><p>Ajustamos los numeradores dividiendo el m.c.m. entre cada denominador original:</p><p>$$\\frac{(x + 1)(x + 2)}{(x - 2)(x + 2)(x + 1)} - \\frac{(x - 1)(x + 1)}{(x - 2)(x + 2)(x + 1)} + \\frac{1 \\cdot (x - 2)(x + 1)}{(x - 2)(x + 2)(x + 1)}$$</p>",
+      "warning": "<p><strong>Simplificación previa opcional:</strong> En la primera fracción, el factor $(x + 1)$ en el numerador y en el denominador se pueden simplificar desde el inicio: $\\frac{x + 1}{(x - 2)(x + 1)} = \\frac{1}{x - 2}$, lo cual facilita el cálculo del común denominador a solo $(x - 2)(x + 2)$. ¡Veamos el método estándar manteniendo todo unificado!</p>"
+    },
+    {
+      "title": "Paso 3: Desarrollo y simplificación del numerador",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Unimos todo en una sola fracción y desarrollamos cada producto del numerador. Cuidado con el signo menos en la segunda parte. Luego agrupamos los términos de cada grado.",
+      "content": "<p><strong>Objetivo:</strong> Expandir el numerador y reducir los términos semejantes.</p><p>Escribimos la expresión en una única fracción:</p><p>$$\\frac{(x + 1)(x + 2) - (x - 1)(x + 1) + (x - 2)(x + 1)}{(x - 2)(x + 2)(x + 1)}$$</p><p>Desarrollamos cada producto del numerador:</p><ul><li>$(x + 1)(x + 2) = x^2 + 3x + 2$</li><li>$-(x - 1)(x + 1) = -(x^2 - 1) = -x^2 + 1$</li><li>$(x - 2)(x + 1) = x^2 - x - 2$</li></ul><p>Sumamos todos los términos desarrollados:</p><p>$$N(x) = (x^2 + 3x + 2) + (-x^2 + 1) + (x^2 - x - 2)$$</p><p>$$N(x) = (x^2 - x^2 + x^2) + (3x - x) + (2 + 1 - 2) = x^2 + 2x + 1$$</p><p>Observamos que $x^2 + 2x + 1 = (x + 1)^2$. Reescribimos la fracción completa:</p><p>$$\\frac{(x + 1)^2}{(x - 2)(x + 2)(x + 1)} = \\frac{x + 1}{(x - 2)(x + 2)} = \\frac{x + 1}{x^2 - 4}$$</p>",
+      "checkpoint": {
+        "question": "¿Cómo se simplifica la expresión final al cancelar factores comunes?",
+        "options": [
+          {
+            "text": "Se cancela un factor (x + 1) del numerador (x + 1)^2 con el (x + 1) del denominador, quedando (x + 1) / (x^2 - 4).",
+            "correct": true,
+            "feedback": "¡Correcto! (x + 1)^2 / (x + 1) deja solo (x + 1) en el numerador."
+          },
+          {
+            "text": "Se cancelan los términos x^2 y solo quedan los números enteros.",
+            "correct": false,
+            "feedback": "Recuerda que solo se pueden simplificar factores que multipliquen a todo el numerador y denominador."
+          },
+          {
+            "text": "No se puede simplificar nada más porque los signos no coinciden.",
+            "correct": false,
+            "feedback": "Incorrecto, el factor (x + 1) aparece idéntico en ambos lados de la fracción."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comprobación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Validamos el resultado evaluando en equis igual a cero tanto la expresión original como la expresión final simplificada.",
+      "content": "<p><strong>Objetivo:</strong> Evaluar en $x = 0$ para comprobar la igualdad.</p><p><strong>1. Evaluamos en la expresión original:</strong></p><p>$$\\frac{0 + 1}{0^2 - 0 - 2} - \\frac{0 - 1}{0^2 - 4} + \\frac{1}{0 + 2} = \\frac{1}{-2} - \\frac{-1}{-4} + \\frac{1}{2}$$</p><p>$$= -\\frac{1}{2} - \\frac{1}{4} + \\frac{1}{2} = -\\frac{1}{4}$$</p><p><strong>2. Evaluamos en la expresión simplificada $\\frac{x + 1}{x^2 - 4}$:</strong></p><p>$$\\frac{0 + 1}{0^2 - 4} = \\frac{1}{-4} = -\\frac{1}{4}$$</p><p><strong>Conclusión:</strong> El valor numérico es exactamente el mismo ($-0,25$), lo que confirma la veracidad de la simplificación.",
+      "warning": "<p><strong>Nota:</strong> Al elegir un valor de comprobación, asegúrate de no elegir valores que anulen algún denominador (en este caso, no usar $x = 2$, $x = -2$ o $x = -1$).</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Revisamos los pasos seguidos: factorizar denominadores, hallar el m.c.m., desarrollar los productos del numerador, agrupar términos semejantes y simplificar el factor común.",
+      "content": "<ol><li><strong>Factorizar denominadores:</strong> $(x-2)(x+1)$, $(x-2)(x+2)$, y $(x+2)$.</li><li><strong>m.c.m.:</strong> $(x-2)(x+2)(x+1)$.</li><li><strong>Desarrollar numerador:</strong> $(x^2+3x+2) - (x^2-1) + (x^2-x-2) = x^2+2x+1$.</li><li><strong>Reconocer identidad:</strong> $x^2 + 2x + 1 = (x+1)^2$.</li><li><strong>Simplificar factor común:</strong> $\\frac{(x+1)^2}{(x-2)(x+2)(x+1)} = \\frac{x+1}{x^2-4}$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Prueba a resolver esta operación combinada similar aplicando los mismos pasos de factorización y común denominador.",
+      "content": "<p>Resuelve la siguiente operación reduciendo a común denominador y simplificando el resultado:</p><p>$$\\frac{x - 1}{x^2 + x - 2} + \\frac{x + 1}{x^2 - 1} - \\frac{1}{x + 2}$$</p><p><em>Resuelve en tu cuaderno antes de mirar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Factorizaciones:</strong> $x^2 + x - 2 = (x + 2)(x - 1)$ y $x^2 - 1 = (x - 1)(x + 1)$.</p><p><strong>Simplificación previa de fracciones:</strong></p><ul><li>$\\frac{x - 1}{(x + 2)(x - 1)} = \\frac{1}{x + 2}$</li><li>$\\frac{x + 1}{(x - 1)(x + 1)} = \\frac{1}{x - 1}$</li></ul><p><strong>Operación simplificada:</strong> $\\frac{1}{x + 2} + \\frac{1}{x - 1} - \\frac{1}{x + 2} = \\frac{1}{x - 1}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "En los circuitos eléctricos con tres resistencias en paralelo, la resistencia equivalente se calcula mediante la suma de sus fracciones inversas.",
+      "content": "<p>En un circuito eléctrico, la conductancia total $C(x)$ es la suma de las conductancias parciales de tres componentes:</p><p>$$C(x) = \\frac{1}{x - 1} + \\frac{1}{x + 1} - \\frac{2x}{x^2 - 1}$$</p><p>Simplifica la expresión de la conductancia total $C(x)$ para determinar el comportamiento global del circuito.</p><p><em>Pista: Halla el m.c.m. de los denominadores $x-1$, $x+1$ y $x^2-1$.</em></p>",
+      "practiceAnswer": "<p><strong>1. Denominador común:</strong> $x^2 - 1 = (x - 1)(x + 1)$.</p><p><strong>2. Reducción a común denominador:</strong></p><p>$$C(x) = \\frac{(x + 1) + (x - 1) - 2x}{x^2 - 1}$$</p><p><strong>3. Numerador:</strong> $x + 1 + x - 1 - 2x = 0$.</p><p><strong>Resultado final:</strong> $C(x) = 0$. La conductancia total nula indica que las corrientes parciales se anulan entre sí en el modelo.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T16:09:09.219Z",
+    "updatedAt": "2026-07-31T16:09:09.219Z",
+    "contentHash": "dfbafd49a9ec8757",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

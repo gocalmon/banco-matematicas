@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones y polinomios",
+    "exerciseType": "Cálculo de raíces y factorización",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Relacionar las raíces de un polinomio con las soluciones de su ecuación asociada",
+      "Aplicar la fórmula general de resolución de ecuaciones de segundo grado",
+      "Expresar un polinomio cuadrático como producto de factores lineales"
+    ],
+    "prerequisites": [
+      "Evaluación de expresiones algebraicas",
+      "Fórmula de la ecuación de segundo grado completa",
+      "Propiedad distributiva del producto respecto a la suma"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T15:42:15.471Z",
+    "id": "raices-y-factorizacion-de-un-polinomio-cuadratico-be63e426"
+  },
+  "title": "Raíces y factorización de un polinomio cuadrático",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver el ejercicio seis. El objetivo es encontrar las raíces de un polinomio de segundo grado y usar esa información para escribirlo en forma factorizada, es decir, como una multiplicación.",
+      "content": "<p><strong>Ejercicio 6:</strong> Halla las raíces reales y descompón en factores el siguiente polinomio cuadrático mediante la resolución de su ecuación de segundo grado asociada:</p><p>$$P(x) = x^2 - 7x + 10$$</p>",
+      "hints": [
+        "Las raíces de un polinomio son los valores de la variable que hacen que el polinomio valga cero.",
+        "Recuerda la fórmula general para resolver ecuaciones del tipo $ax^2 + bx + c = 0$."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestro plan será igualar el polinomio a cero para transformarlo en una ecuación. Luego, identificaremos los coeficientes a, be y ce, y aplicaremos la fórmula cuadrática. Con las soluciones en la mano, construiremos los factores.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ol><li>Hallar las raíces reales del polinomio.</li><li>Escribir el polinomio descompuesto en factores.</li></ol><p><strong>Estrategia paso a paso:</strong></p><ol><li><strong>Ecuación asociada:</strong> Igualaremos el polinomio a $0$ para plantear la ecuación $x^2 - 7x + 10 = 0$.</li><li><strong>Resolución:</strong> Utilizaremos la fórmula general de segundo grado identificando los coeficientes $a$, $b$ y $c$.</li><li><strong>Factorización:</strong> Aplicaremos el teorema del factor. Si $x_1$ y $x_2$ son las raíces, el polinomio se factoriza como $a(x - x_1)(x - x_2)$.</li></ol>"
+    },
+    {
+      "title": "Paso 1: Ecuación asociada y coeficientes",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Igualamos el polinomio a cero. Fíjate bien en los números que acompañan a cada término; sus signos son muy importantes para aplicar bien la fórmula luego.",
+      "content": "<p><strong>Objetivo:</strong> Plantear la ecuación y extraer sus coeficientes.</p><p>Para hallar las raíces de $P(x)$, resolvemos la ecuación asociada:</p><p>$$x^2 - 7x + 10 = 0$$</p><p>Identificamos los coeficientes de la forma general $ax^2 + bx + c = 0$:</p><ul><li>Coeficiente cuadrático: $a = 1$</li><li>Coeficiente lineal: $b = -7$</li><li>Término independiente: $c = 10$</li></ul>",
+      "theory": "<p><strong>Raíz de un polinomio:</strong> Un número $r$ es raíz de un polinomio $P(x)$ si al sustituir la variable por ese número el valor numérico es cero, es decir, $P(r) = 0$.</p>"
+    },
+    {
+      "title": "Paso 2: Aplicación de la fórmula general",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Sustituimos los coeficientes en la fórmula. Ten especial cuidado al poner el menos siete, ya que la fórmula tiene un menos delante que cambiará su signo. Calculamos también lo que hay dentro de la raíz.",
+      "content": "<p><strong>Objetivo:</strong> Sustituir los coeficientes en la fórmula cuadrática y operar.</p><p>La fórmula general es:</p><p>$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$</p><p>Sustituimos nuestros valores ($a=1, b=-7, c=10$):</p><p>$$x = \\frac{-(-7) \\pm \\sqrt{(-7)^2 - 4 \\cdot 1 \\cdot 10}}{2 \\cdot 1}$$</p><p>Operamos los signos y las potencias:</p><p>$$x = \\frac{7 \\pm \\sqrt{49 - 40}}{2}$$</p><p>$$x = \\frac{7 \\pm \\sqrt{9}}{2}$$</p><p>$$x = \\frac{7 \\pm 3}{2}$$</p>",
+      "warning": "<p><strong>¡Cuidado con los signos!</strong> Al sustituir un coeficiente negativo como $b = -7$ en la parte $-b$, el resultado es positivo: $-(-7) = 7$. Igualmente, todo número negativo al cuadrado resulta positivo: $(-7)^2 = 49$.</p>"
+    },
+    {
+      "title": "Paso 3: Cálculo de las raíces",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora separamos en dos caminos, uno usando el signo más y otro usando el signo menos. Así obtendremos las dos posibles soluciones de nuestra ecuación, que son las raíces del polinomio.",
+      "content": "<p><strong>Objetivo:</strong> Obtener las dos raíces reales de la ecuación.</p><p>A partir de la expresión simplificada $x = \\frac{7 \\pm 3}{2}$, separamos en dos casos por el símbolo $\\pm$:</p><p><strong>Primera raíz (con signo $+$):</strong></p><p>$$x_1 = \\frac{7 + 3}{2} = \\frac{10}{2} = 5$$</p><p><strong>Segunda raíz (con signo $-$):</strong></p><p>$$x_2 = \\frac{7 - 3}{2} = \\frac{4}{2} = 2$$</p><p><strong>Interpretación parcial:</strong> El polinomio tiene dos raíces reales distintas: $x = 5$ y $x = 2$.</p>",
+      "checkpoint": {
+        "question": "¿Qué significa gráficamente que 5 y 2 sean las raíces del polinomio?",
+        "options": [
+          {
+            "text": "Son los puntos donde la parábola corta al eje horizontal de las abscisas (eje X).",
+            "correct": true,
+            "feedback": "¡Correcto! En esos puntos la función vale cero, lo que corresponde a intersecciones con el eje X en (5,0) y (2,0)."
+          },
+          {
+            "text": "Son las coordenadas X e Y del vértice de la parábola.",
+            "correct": false,
+            "feedback": "El vértice es el punto mínimo o máximo de la parábola, no tiene por qué coincidir con las raíces."
+          },
+          {
+            "text": "Son los puntos donde la parábola corta al eje vertical de las ordenadas (eje Y).",
+            "correct": false,
+            "feedback": "El corte con el eje Y se produce cuando x=0, que en este polinomio sería el punto (0, 10)."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 4: Factorización del polinomio",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Conociendo que las raíces son cinco y dos, usamos la regla de factorización. Cambiamos el signo a las raíces para meterlas en los factores. Como el número que multiplica a equis al cuadrado es uno, no necesitamos añadir nada más delante.",
+      "content": "<p><strong>Objetivo:</strong> Expresar el polinomio como producto de binomios de grado 1.</p><p>Sabiendo que las raíces son $x_1 = 5$ y $x_2 = 2$, aplicamos el teorema de factorización para polinomios de segundo grado:</p><p>$$P(x) = a(x - x_1)(x - x_2)$$</p><p>Sustituimos el valor del coeficiente principal $a = 1$ y las raíces obtenidas:</p><p>$$P(x) = 1 \\cdot (x - 5) \\cdot (x - 2)$$</p><p>El factor $1$ es neutro en la multiplicación, así que lo omitimos:</p><p>$$P(x) = (x - 5)(x - 2)$$</p><p><strong>Interpretación final:</strong> Hemos transformado la expresión original (una suma y resta de monomios) en un producto de dos factores lineales.</p>"
+    },
+    {
+      "title": "Comprobación de la factorización",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Para asegurarnos de no haber cometido errores, vamos a realizar la multiplicación de los dos factores que hemos encontrado. Si obtenemos el polinomio con el que empezamos, el ejercicio está perfecto.",
+      "content": "<p><strong>Objetivo:</strong> Verificar que el desarrollo de los factores devuelve el polinomio original.</p><p>Partimos de nuestra solución factorizada:</p><p>$$(x - 5)(x - 2)$$</p><p>Aplicamos la propiedad distributiva multiplicando todos contra todos:</p><p>$$= x \\cdot x + x \\cdot (-2) - 5 \\cdot x - 5 \\cdot (-2)$$</p><p>$$= x^2 - 2x - 5x + 10$$</p><p>Agrupamos los términos semejantes (las equis con las equis):</p><p>$$= x^2 - 7x + 10$$</p><p><strong>Conclusión:</strong> Obtenemos exactamente el polinomio inicial $P(x)$, lo que confirma que las raíces y la factorización son correctas.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Aquí tienes los pasos fundamentales: plantear la ecuación, aplicar la fórmula general con cuidado, separar las dos soluciones y finalmente construir el producto cambiando los signos a las raíces.",
+      "content": "<ol><li><strong>Identificar coeficientes:</strong> Igualar $P(x) = 0$ para deducir $a=1, b=-7, c=10$.</li><li><strong>Aplicar fórmula general:</strong> Resolver usando $x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}$.</li><li><strong>Hallar las raíces:</strong> Calcular los dos resultados posibles: $x_1 = 5$ y $x_2 = 2$.</li><li><strong>Construir los factores:</strong> Usar la estructura $P(x) = a(x - x_1)(x - x_2)$.</li><li><strong>Resultado final:</strong> $P(x) = (x - 5)(x - 2)$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Intenta aplicar exactamente los mismos pasos a este nuevo polinomio cuadrático. Busca sus raíces y escribe la factorización.",
+      "content": "<p>Halla las raíces reales y descompón en factores el siguiente polinomio cuadrático mediante la resolución de su ecuación asociada:</p><p>$$Q(x) = x^2 + 2x - 15$$</p><p><em>Resuélvelo paso a paso en tu cuaderno antes de comprobar la respuesta.</em></p>",
+      "practiceAnswer": "<p>Las raíces aplicando la fórmula cuadrática son $x_1 = 3$ y $x_2 = -5$.</p><p>Por tanto, su descomposición en factores es: $Q(x) = (x - 3)(x + 5)$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a conectar este concepto con la geometría analítica. Piensa en la parábola descrita por un polinomio y cómo los conceptos que hemos visto te ayudan a encontrar puntos importantes.",
+      "content": "<p>La trayectoria de un objeto lanzado viene dada por la ecuación de la parábola $y = x^2 - x - 12$.</p><p>Encuentra las coordenadas exactas de los puntos donde la trayectoria cruza el suelo (considera que el suelo es el eje horizontal, donde la altura $y$ vale $0$).</p><p><em>Pista: Relaciona la condición del suelo con el concepto matemático que acabamos de trabajar.</em></p>",
+      "practiceAnswer": "<p>El objeto toca el suelo cuando $y = 0$, es decir, buscamos las raíces del polinomio igualando $x^2 - x - 12 = 0$.</p><p>Resolviendo la ecuación, obtenemos $x_1 = 4$ y $x_2 = -3$.</p><p><strong>Coordenadas de corte:</strong> El objeto cruza el suelo en los puntos $(4, 0)$ y $(-3, 0)$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T15:42:53.429Z",
+    "updatedAt": "2026-07-31T15:42:53.429Z",
+    "contentHash": "1fcd1ab017ac27a6",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

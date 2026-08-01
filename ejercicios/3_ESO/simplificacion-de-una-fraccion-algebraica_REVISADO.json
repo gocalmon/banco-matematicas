@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Fracciones algebraicas",
+    "exerciseType": "Simplificación y factor común",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Determinar el dominio de existencia de una fracción algebraica",
+      "Extraer el máximo factor común de un polinomio",
+      "Simplificar fracciones algebraicas cancelando factores comunes"
+    ],
+    "prerequisites": [
+      "Extracción de factor común en polinomios",
+      "Propiedades de las fracciones equivalentes",
+      "Concepto de división por cero"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T15:43:30.679Z",
+    "id": "simplificacion-de-una-fraccion-algebraica-eed8978f"
+  },
+  "title": "Simplificación de una fracción algebraica",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos con el ejercicio ocho. Nos piden simplificar una fracción que tiene polinomios tanto arriba como abajo. Para lograrlo, el propio enunciado nos da una pista clave: primero debemos sacar factor común en la parte de arriba.",
+      "content": "<p><strong>Ejercicio 8:</strong> Simplifica la siguiente fracción algebraica extrayendo primero el factor común más grande en el numerador:</p><p>$$\\frac{5x^2 - 10x}{5x}$$</p>",
+      "hints": [
+        "Identifica los elementos numéricos y literales que se repiten en el numerador.",
+        "Antes de tachar nada, recuerda que en matemáticas no se puede dividir entre cero."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "El plan es muy metódico. Primero, como tenemos una división, debemos protegernos de dividir por cero buscando la condición de existencia. Después, factorizaremos el numerador para convertir su resta en una multiplicación. Finalmente, cancelaremos lo que sea igual arriba y abajo.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ul><li>Obtener una expresión más sencilla equivalente a la fracción algebraica dada.</li></ul><p><strong>Estrategia paso a paso:</strong></p><ol><li><strong>Condición de existencia:</strong> Determinar para qué valores de $x$ la fracción tiene sentido matemático (el denominador no puede anularse).</li><li><strong>Factorizar el numerador:</strong> Extraer el máximo factor común de $5x^2 - 10x$ transformando la resta en un producto.</li><li><strong>Simplificar:</strong> Cancelar los factores idénticos que estén multiplicando tanto en el numerador como en el denominador.</li></ol>"
+    },
+    {
+      "title": "Paso 1: Condición de existencia",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Antes de operar, hay que asegurar que la expresión existe. Como es una fracción, el denominador jamás puede ser cero. Por lo tanto, planteamos que cinco por equis tiene que ser distinto de cero, lo que implica que la equis no puede valer cero.",
+      "content": "<p><strong>Objetivo:</strong> Determinar los valores válidos para la variable $x$.</p><p>En matemáticas, la división por cero no está definida. Por tanto, el denominador de nuestra fracción algebraica nunca puede tomar el valor cero.</p><p>Planteamos la restricción:</p><p>$$5x \\neq 0$$</p><p>Despejando la variable $x$ (el $5$ pasa dividiendo al otro lado):</p><p>$$x \\neq \\frac{0}{5}$$</p><p>$$x \\neq 0$$</p><p><strong>Interpretación parcial:</strong> Cualquier simplificación que realicemos a partir de ahora solo será matemáticamente válida si asumimos que $x$ es distinto de cero.</p>",
+      "theory": "<p><strong>Dominio de una fracción algebraica:</strong> Es el conjunto de todos los números reales para los cuales la expresión tiene un valor numérico definido. Se calcula excluyendo aquellos valores que hacen que el denominador sea igual a cero.</p>"
+    },
+    {
+      "title": "Paso 2: Extracción del factor común",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Nos centramos en el numerador. Buscamos el mayor número que divida a 5 y a 10, que es el 5. En las letras, ambos tienen equis, así que tomamos la equis elevada a uno, que es el exponente más pequeño. Sacamos cinco equis fuera de un paréntesis.",
+      "content": "<p><strong>Objetivo:</strong> Extraer el máximo factor común en el numerador $5x^2 - 10x$.</p><p><strong>1. Factor común numérico:</strong> Buscamos el máximo común divisor de $5$ y $10$.<br>$\\text{M.C.D.}(5, 10) = 5$.</p><p><strong>2. Factor común literal:</strong> Buscamos las variables que se repiten en ambos términos con el menor exponente. Tenemos $x^2$ y $x^1$. Tomamos $x$.</p><p><strong>3. Extracción:</strong> El factor común completo es $5x$. Dividimos cada término entre este factor para hallar el interior del paréntesis:</p><ul><li>$\\frac{5x^2}{5x} = x$</li><li>$\\frac{-10x}{5x} = -2$</li></ul><p>Escribimos la expresión factorizada:</p><p>$$5x^2 - 10x = 5x(x - 2)$$</p><p><strong>Interpretación parcial:</strong> Hemos convertido una suma algebraica en una multiplicación, que es el paso previo indispensable para poder simplificar fracciones.</p>",
+      "checkpoint": {
+        "question": "¿Qué propiedad matemática justifica que podamos reescribir $5x^2 - 10x$ como $5x(x - 2)$?",
+        "options": [
+          {
+            "text": "La propiedad distributiva de la multiplicación respecto de la suma o resta.",
+            "correct": true,
+            "feedback": "¡Exacto! Extraer factor común es aplicar la propiedad distributiva en sentido inverso."
+          },
+          {
+            "text": "La propiedad conmutativa de la multiplicación.",
+            "correct": false,
+            "feedback": "La propiedad conmutativa dice que el orden de los factores no altera el producto, no explica cómo se agrupan."
+          },
+          {
+            "text": "La regla de los signos.",
+            "correct": false,
+            "feedback": "La regla de los signos se aplica al operar enteros, pero no fundamenta la extracción de un factor estructural común."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Simplificación de la fracción",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Sustituimos el numerador en nuestra fracción. Como ahora tenemos cinco equis multiplicando arriba y cinco equis dividiendo abajo, podemos cancelarlos. Es como multiplicar y dividir por el mismo número, el efecto se anula.",
+      "content": "<p><strong>Objetivo:</strong> Cancelar los factores comunes entre numerador y denominador.</p><p>Sustituimos el numerador original por la forma factorizada que acabamos de calcular:</p><p>$$\\frac{5x^2 - 10x}{5x} = \\frac{5x \\cdot (x - 2)}{5x}$$</p><p>Dado que todo el numerador es ahora un gran producto y tenemos el factor $5x$ tanto en el numerador como en el denominador, podemos dividirlos entre sí. Podemos hacer esto con total seguridad matemática porque en el Paso 1 establecimos que $5x \\neq 0$.</p><p>$$\\frac{\\cancel{5x} \\cdot (x - 2)}{\\cancel{5x}} = x - 2$$</p><p><strong>Interpretación parcial:</strong> La fracción algebraica se ha simplificado a un binomio lineal mucho más manejable.</p>",
+      "warning": "<p><strong>¡Peligro de cancelación incorrecta!</strong> En una fracción, solo se pueden simplificar (tachar) expresiones que estén <strong>multiplicando a todo lo demás</strong>. Si en lugar de un producto tuviéramos una suma suelta, como $\\frac{5x + (x-2)}{5x}$, no podríamos cancelar los $5x$.</p>"
+    },
+    {
+      "title": "Comprobación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Vamos a comprobar que no hemos roto nada. Si le damos a la equis un valor permitido, como el tres, y hacemos la cuenta en la fracción del principio y en nuestro resultado final, nos tiene que dar el mismo número.",
+      "content": "<p><strong>Objetivo:</strong> Verificar que la expresión original y la simplificada son equivalentes matemáticamente.</p><p>Elegimos un valor aleatorio para $x$ dentro de su dominio de existencia, por ejemplo $x = 3$.</p><p><strong>1. Evaluamos en la fracción original:</strong></p><p>$$\\frac{5(3)^2 - 10(3)}{5(3)}$$</p><p>$$\\frac{5(9) - 30}{15} = \\frac{45 - 30}{15} = \\frac{15}{15} = 1$$</p><p><strong>2. Evaluamos en la expresión simplificada:</strong></p><p>$$x - 2 = 3 - 2 = 1$$</p><p><strong>Conclusión:</strong> En ambos casos obtenemos el valor $1$, lo que nos confirma que las expresiones son totalmente equivalentes y que nuestra simplificación es correcta.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los pasos dados. Primero aseguramos que el denominador no sea cero. Segundo, sacamos factor común en el numerador. Tercero, reescribimos la fracción y tachamos lo que es igual.",
+      "content": "<ol><li><strong>Establecer el dominio:</strong> Identificar que el denominador no puede ser nulo, por lo que $x \\neq 0$.</li><li><strong>Factorizar:</strong> Encontrar el M.C.D. del numerador: $5x^2 - 10x = 5x(x - 2)$.</li><li><strong>Reescribir:</strong> Sustituir el numerador en la fracción original: $\\frac{5x(x - 2)}{5x}$.</li><li><strong>Simplificar:</strong> Cancelar los factores comunes multiplicativos en numerador y denominador.</li><li><strong>Resultado final:</strong> $x - 2$, siempre y cuando $x \\neq 0$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Simplifica esta otra fracción algebraica usando exactamente los mismos pasos. Acuérdate de escribir para qué valor de equis no existe la fracción.",
+      "content": "<p>Simplifica la siguiente fracción algebraica extrayendo primero el máximo factor común en el numerador. No olvides indicar para qué valor de $x$ no es válida la expresión original.</p><p>$$\\frac{4x^3 + 12x^2}{4x^2}$$</p><p><em>Realiza todos los pasos detalladamente en papel antes de ver la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Condición de existencia:</strong> El denominador no puede ser cero, luego $4x^2 \\neq 0 \\Rightarrow x \\neq 0$.</p><p><strong>Factorización del numerador:</strong> Extraemos $4x^2$ como factor común: $4x^2(x + 3)$.</p><p><strong>Fracción simplificada:</strong> $\\frac{4x^2(x + 3)}{4x^2} = x + 3$ (válido para $x \\neq 0$).</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a aplicar esta misma matemática, pero en un problema de geometría. Si conoces el área de un rectángulo y su altura en forma de polinomios, ¿cómo encuentras su base?",
+      "content": "<p>El área de un rectángulo viene dada por el polinomio $A(x) = 3x^2 + 6x$ metros cuadrados. Si sabemos que la altura de ese mismo rectángulo mide exactamente $3x$ metros, halla la expresión algebraica simplificada para la longitud de su <strong>base</strong>.</p><p><em>Pista: Recuerda la fórmula elemental del área del rectángulo (Área = base $\\times$ altura) y piensa cómo despejar la base.</em></p>",
+      "practiceAnswer": "<p>Como $\\text{Área} = \\text{Base} \\cdot \\text{Altura}$, deducimos que $\\text{Base} = \\frac{\\text{Área}}{\\text{Altura}}$.</p><p>Planteamos la fracción algebraica: $\\text{Base} = \\frac{3x^2 + 6x}{3x}$</p><p>Extraemos el factor común en el numerador: $\\frac{3x(x + 2)}{3x}$</p><p>Simplificamos cancelando $3x$ (asumiendo altura no nula, $x>0$).</p><p><strong>Resultado final:</strong> La base mide $(x + 2)$ metros.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T15:43:55.895Z",
+    "updatedAt": "2026-07-31T15:43:55.895Z",
+    "contentHash": "eee0a57e8f136eac",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

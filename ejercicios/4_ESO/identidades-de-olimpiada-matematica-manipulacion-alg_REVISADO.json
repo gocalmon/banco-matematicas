@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Identidades notables y manipulación algebraica",
+    "exerciseType": "Identidades algebraicas de tipo Olimpiada",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "avanzada",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Manipular identidades notables binómicas sin necesidad de despejar la incógnita",
+      "Elevar expresiones simétricas al cuadrado y al cubo",
+      "Reconocer patrones algebraicos recíprocos"
+    ],
+    "prerequisites": [
+      "Cuadrado de un binomio",
+      "Cubo de un binomio o producto de expresiones algebraicas",
+      "Propiedad distributiva y simplificación de términos recíprocos"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T16:10:47.547Z",
+    "id": "identidades-de-olimpiada-matematica-manipulacion-alg-09890fd1"
+  },
+  "title": "Identidades de Olimpiada Matemática: Manipulación algebraica simétrica",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "En este ejercicio de olimpiada matemática no debemos despejar la incógnita equis. En su lugar, aplicaremos las identidades notables elevando la relación dada al cuadrado y al cubo.",
+      "content": "<p><strong>Ejercicio 8: Identidades de Olimpiada Matemática:</strong> Sabiendo que se cumple de forma estricta la igualdad algebraica $x + \\frac{1}{x} = 4$, calcula el valor numérico exacto de las siguientes expresiones sin necesidad de resolver el valor de la incógnita $x$:</p><p>a) $x^2 + \\frac{1}{x^2}$</p><p>b) $x^3 + \\frac{1}{x^3}$</p>",
+      "hints": [
+        "Eleva ambos miembros de la ecuación $x + \\frac{1}{x} = 4$ al cuadrado para obtener el término $x^2 + \\frac{1}{x^2}$.",
+        "Para el apartado b, eleva al cubo la expresión original o multiplica los resultados ya obtenidos."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "La clave de este problema es evitar resolver la ecuación cuadrática en equis. Si elevamos ambos lados de la igualdad dada a distintas potencias, los productos cruzados se simplificarán fácilmente a números enteros.",
+      "content": "<p><strong>¿Por qué NO debemos despejar $x$?</strong></p><p>Si intentásemos despejar $x$ a partir de $x + \\frac{1}{x} = 4 \\implies x^2 - 4x + 1 = 0$, obtendríamos raíces irracionales ($x = 2 \\pm \\sqrt{3}$), lo que complicaría innecesariamente los cálculos.</p><p><strong>Estrategia elegante:</strong></p><ol><li><strong>Apartado a:</strong> Elevar $\\left(x + \\frac{1}{x}\\right)$ al cuadrado y aplicar la identidad $(a+b)^2 = a^2 + 2ab + b^2$. El producto recíproco $x \\cdot \\frac{1}{x} = 1$ simplifica el doble producto a una constante.</li><li><strong>Apartado b:</strong> Elevar $\\left(x + \\frac{1}{x}\\right)$ al cubo usando $(a+b)^3 = a^3 + b^3 + 3ab(a+b)$ y sustituir los valores conocidos.</li></ol>"
+    },
+    {
+      "title": "Paso 1: Resolución del apartado a)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Elevamos al cuadrado ambos miembros de la ecuación. Al desarrollar el binomio al cuadrado, el doble producto de equis por uno partido de equis se simplifica a dos. Despejando, obtenemos catorce.",
+      "content": "<p><strong>Objetivo:</strong> Calcular el valor exacto de $x^2 + \\frac{1}{x^2}$.</p><p>Partimos de la condición dada: $x + \\frac{1}{x} = 4$.</p><p>Elevamos ambos miembros al cuadrado:</p><p>$$\\left(x + \\frac{1}{x}\\right)^2 = 4^2$$</p><p>Aplicamos el cuadrado de una suma $(a + b)^2 = a^2 + 2ab + b^2$:</p><p>$$x^2 + 2 \\cdot x \\cdot \\frac{1}{x} + \\left(\\frac{1}{x}\\right)^2 = 16$$</p><p>Como $x \\cdot \\frac{1}{x} = 1$, el doble producto se convierte en $2$:</p><p>$$x^2 + 2 + \\frac{1}{x^2} = 16$$</p><p>Despejamos $x^2 + \\frac{1}{x^2}$ restando $2$ a ambos lados:</p><p>$$x^2 + \\frac{1}{x^2} = 16 - 2 = 14$$</p>",
+      "theory": "<p><strong>Propiedad de los números recíprocos:</strong> El producto de cualquier número no nulo por su inverso multiplicativo es siempre 1: $x \\cdot \\frac{1}{x} = 1$. Esto elimina la variable del término central en identidades simétricas.</p>"
+    },
+    {
+      "title": "Paso 2: Resolución del apartado b)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Para hallar la suma de cubos, elevamos el binomio inicial al cubo. Al agrupar los términos y sustituir la suma original que valía cuatro, calculamos que el resultado es cincuenta y dos.",
+      "content": "<p><strong>Objetivo:</strong> Calcular el valor exacto de $x^3 + \\frac{1}{x^3}$.</p><p>Elevamos al cubo ambos miembros de $x + \\frac{1}{x} = 4$:</p><p>$$\\left(x + \\frac{1}{x}\\right)^3 = 4^3 = 64$$</p><p>Usamos la identidad del cubo de una suma $(a + b)^3 = a^3 + b^3 + 3ab(a + b)$:</p><p>$$x^3 + \\left(\\frac{1}{x}\\right)^3 + 3 \\cdot x \\cdot \\frac{1}{x} \\left(x + \\frac{1}{x}\\right) = 64$$</p><p>Sustituimos $x \\cdot \\frac{1}{x} = 1$ y la condición inicial $x + \\frac{1}{x} = 4$:</p><p>$$x^3 + \\frac{1}{x^3} + 3(1)(4) = 64$$</p><p>$$x^3 + \\frac{1}{x^3} + 12 = 64$$</p><p>Despejamos restando $12$:</p><p>$$x^3 + \\frac{1}{x^3} = 64 - 12 = 52$$</p>",
+      "checkpoint": {
+        "question": "¿Qué valor obtendríamos si calculásemos (x + 1/x) · (x² + 1/x²)?",
+        "options": [
+          {
+            "text": "Obtendríamos (x³ + 1/x³) + (x + 1/x) = 4 · 14 = 56, por lo que x³ + 1/x³ = 56 - 4 = 52.",
+            "correct": true,
+            "feedback": "¡Exacto! Esta es un camino alternativo igual de válido para resolver el apartado b."
+          },
+          {
+            "text": "Obtendríamos directamente x³ + 1/x³ = 56 sin restar ningún término.",
+            "correct": false,
+            "feedback": "Incorrecto. Al multiplicar (x + 1/x)(x² + 1/x²) surgen los términos cruzados x y 1/x que deben restarse."
+          },
+          {
+            "text": "Daría 60 porque se debe sumar la condición inicial a 56.",
+            "correct": false,
+            "feedback": "Falso. Los términos sobrantes suman +4 en el desarrollo, por lo que pasan restando al otro miembro."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comprobación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Comprobamos nuestro método calculando la raíz explícita de la ecuación cuadrática original y sustituyéndola directamente.",
+      "content": "<p><strong>Comprobación mediante la raíz explícita:</strong></p><p>Si resolvemos $x^2 - 4x + 1 = 0$, una solución real es $x = 2 + \\sqrt{3}$.</p><p><strong>1. Para el apartado a:</strong></p><p>$$x^2 = (2 + \\sqrt{3})^2 = 4 + 4\\sqrt{3} + 3 = 7 + 4\\sqrt{3}$$</p><p>$$\\frac{1}{x^2} = \\frac{1}{7 + 4\\sqrt{3}} = 7 - 4\\sqrt{3}$$</p><p>$$x^2 + \\frac{1}{x^2} = (7 + 4\\sqrt{3}) + (7 - 4\\sqrt{3}) = 14 \\quad \\checkmark$$</p><p><strong>2. Para el apartado b:</strong></p><p>$$x^3 = (2 + \\sqrt{3})^3 = 26 + 15\\sqrt{3}$$</p><p>$$\\frac{1}{x^3} = 26 - 15\\sqrt{3}$$</p><p>$$x^3 + \\frac{1}{x^3} = (26 + 15\\sqrt{3}) + (26 - 15\\sqrt{3}) = 52 \\quad \\checkmark$$</p><p><strong>Conclusión:</strong> Los resultados $14$ y $52$ son exactos y matemáticamente impecables.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos el procedimiento: elevar al cuadrado y restar dos para el grado dos, y elevar al cubo o multiplicar expresiones conocidas para el grado tres.",
+      "content": "<ol><li><strong>Apartado a):</strong> $\\left(x + \\frac{1}{x}\\right)^2 = 4^2 \\implies x^2 + 2 + \\frac{1}{x^2} = 16 \\implies x^2 + \\frac{1}{x^2} = 14$.</li><li><strong>Apartado b):</strong> $\\left(x + \\frac{1}{x}\\right)^3 = 4^3 \\implies x^3 + \\frac{1}{x^3} + 3\\left(x + \\frac{1}{x}\\right) = 64 \\implies x^3 + \\frac{1}{x^3} = 52$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Intenta resolver este ejercicio idéntico pero cambiando el dato inicial a tres.",
+      "content": "<p>Sabiendo que $x + \\frac{1}{x} = 3$, calcula el valor numérico exacto de:</p><p>a) $x^2 + \\frac{1}{x^2}$</p><p>b) $x^3 + \\frac{1}{x^3}$</p><p><em>Haz los cálculos en tu cuaderno antes de mirar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>a)</strong> $\\left(x + \\frac{1}{x}\\right)^2 = 3^2 \\implies x^2 + 2 + \\frac{1}{x^2} = 9 \\implies x^2 + \\frac{1}{x^2} = 7$.</p><p><strong>b)</strong> $\\left(x + \\frac{1}{x}\\right)^3 = 3^3 \\implies x^3 + \\frac{1}{x^3} + 3(3) = 27 \\implies x^3 + \\frac{1}{x^3} = 27 - 9 = 18$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos cómo se aplica esta técnica cuando la condición dada es una resta en lugar de una suma.",
+      "content": "<p>Sabiendo que $x - \\frac{1}{x} = 4$, calcula el valor numérico exacto de $x^2 + \\frac{1}{x^2}$.</p><p><em>Pista: Aplica la identidad del cuadrado de una diferencia $(a - b)^2 = a^2 - 2ab + b^2$. ¡Presta atención al signo del doble producto!</em></p>",
+      "practiceAnswer": "<p>Elevamos al cuadrado ambos lados de la diferencia:</p><p>$$\\left(x - \\frac{1}{x}\\right)^2 = 4^2$$</p><p>$$x^2 - 2 \\cdot x \\cdot \\frac{1}{x} + \\left(\\frac{1}{x}\\right)^2 = 16$$</p><p>$$x^2 - 2 + \\frac{1}{x^2} = 16$$</p><p>Sumamos $2$ en ambos lados:</p><p>$$x^2 + \\frac{1}{x^2} = 16 + 2 = 18$$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T16:46:06.436Z",
+    "updatedAt": "2026-07-31T16:46:06.436Z",
+    "contentHash": "e581e2151e5bde3b",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

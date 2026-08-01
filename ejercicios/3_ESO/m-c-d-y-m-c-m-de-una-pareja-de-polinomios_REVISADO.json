@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Polinomios y factorización",
+    "exerciseType": "Cálculo de m.c.d. y m.c.m.",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Factorizar polinomios cuadráticos utilizando identidades notables",
+      "Calcular el máximo común divisor (m.c.d.) de dos polinomios",
+      "Calcular el mínimo común múltiplo (m.c.m.) de dos polinomios"
+    ],
+    "prerequisites": [
+      "Identidades notables (diferencia de cuadrados y cuadrado de una resta)",
+      "Concepto de m.c.d. y m.c.m. en números enteros y polinomios"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T15:55:03.257Z",
+    "id": "m-c-d-y-m-c-m-de-una-pareja-de-polinomios-71b6abc3"
+  },
+  "title": "M.C.D. y M.C.M. de una pareja de polinomios",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver el ejercicio cuatro. Se nos pide calcular el mínimo común múltiplo y el máximo común divisor de dos polinomios de segundo grado. Para ello, el primer paso fundamental será descomponer ambos polinomios en sus factores simples.",
+      "content": "<p><strong>Ejercicio 4:</strong> Calcula de forma razonada el mínimo común múltiplo (m.c.m.) y el máximo común divisor (m.c.d.) de la siguiente pareja de polinomios:</p><p>$$A(x) = x^2 - 9 \\quad B(x) = x^2 - 6x + 9$$</p>",
+      "hints": [
+        "Observa la estructura de $A(x)$: es una resta de dos cuadrados perfectos.",
+        "Observa la estructura de $B(x)$: se ajusta al desarrollo del cuadrado de un binomio."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consiste en descomponer cada polinomio en producto de factores primos algebraicos usando productos notables. Con las factorizaciones listas, aplicaremos las reglas del m.c.d. y del m.c.m., igual que hacemos con los números enteros.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ol><li>Factorizar completamente $A(x)$ y $B(x)$.</li><li>Hallar el máximo común divisor: $\\text{m.c.d.}(A(x), B(x))$.</li><li>Hallar el mínimo común múltiplo: $\\text{m.c.m.}(A(x), B(x))$.</li></ol><p><strong>Estrategia paso a paso:</strong></p><ol><li><strong>Factorizar $A(x)$:</strong> Identificar la diferencia de cuadrados $a^2 - b^2 = (a - b)(a + b)$.</li><li><strong>Factorizar $B(x)$:</strong> Reconocer el trinomio cuadrado perfecto $(a - b)^2 = a^2 - 2ab + b^2$.</li><li><strong>Seleccionar factores:</strong><ul><li><strong>m.c.d.:</strong> Factores comunes elevados al <strong>menor</strong> exponente.</li><li><strong>m.c.m.:</strong> Factores comunes y no comunes elevados al <strong>mayor</strong> exponente.</li></ul></li></ol>"
+    },
+    {
+      "title": "Paso 1: Factorización de A(x)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Empezamos factorizando A de equis. Vemos que x al cuadrado menos nueve se puede escribir como x al cuadrado menos tres al cuadrado. Aplicando la diferencia de cuadrados, se descompone de forma inmediata.",
+      "content": "<p><strong>Objetivo:</strong> Descomponer $A(x) = x^2 - 9$ en factores primos.</p><p>Reconocemos la identidad notable de <strong>diferencia de cuadrados</strong>:</p><p>$$a^2 - b^2 = (a - b)(a + b)$$</p><p>Escribimos el término independiente como un cuadrado perfectos ($9 = 3^2$):</p><p>$$A(x) = x^2 - 3^2$$</p><p>Aplicamos la fórmula directa con $a = x$ y $b = 3$:</p><p>$$A(x) = (x - 3)(x + 3)$$</p>",
+      "theory": "<p><strong>Diferencia de cuadrados:</strong> Todo polinomio de la forma $x^2 - c^2$ se descompone en el producto de la resta por la suma de sus bases: $(x - c)(x + c)$.</p>"
+    },
+    {
+      "title": "Paso 2: Factorización de B(x)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Pasamos a B de equis. Tenemos equis al cuadrado menos seis equis más nueve. Es un trinomio cuadrado perfecto, que corresponde al cuadrado de una resta.",
+      "content": "<p><strong>Objetivo:</strong> Descomponer $B(x) = x^2 - 6x + 9$ en factores primos.</p><p>Reconocemos la identidad notable del <strong>cuadrado de una resta</strong>:</p><p>$$a^2 - 2ab + b^2 = (a - b)^2$$</p><p>Comprobamos los términos:</p><ul><li>Primer cuadrado: $x^2 \\implies a = x$</li><li>Segundo cuadrado: $9 = 3^2 \\implies b = 3$</li><li>Doble producto: $2 \\cdot x \\cdot 3 = 6x$ (coincide con el término central)</li></ul><p>Por tanto, escribimos el polinomio como una potencia:</p><p>$$B(x) = (x - 3)^2$$</p>",
+      "warning": "<p><strong>Nota útil:</strong> Si no recuerdas la identidad notable, puedes resolver la ecuación $x^2 - 6x + 9 = 0$. Obtendrás la raíz doble $x = 3$, lo que da lugar al factor $(x - 3)^2$.</p>"
+    },
+    {
+      "title": "Paso 3: Cálculo del m.c.d. y m.c.m.",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Con las dos factorizaciones a la vista, comparamos los factores. Para el máximo común divisor buscamos solo lo que se repite con el menor exponente. Para el mínimo común múltiplo tomamos todos los factores con su exponente más alto.",
+      "content": "<p><strong>Objetivo:</strong> Obtener el m.c.d. y el m.c.m. analizando los factores primos.</p><p>Resumen de las factorizaciones obtenidas:</p><ul><li>$A(x) = (x - 3)^1 \\cdot (x + 3)^1$</li><li>$B(x) = (x - 3)^2$</li></ul><p><strong>1. Máximo Común Divisor (m.c.d.):</strong></p><p>Tomamos únicamente los factores comunes elevados al <strong>menor</strong> exponente:</p><p>$$\\text{m.c.d.}(A(x), B(x)) = (x - 3)^1 = x - 3$$</p><p><strong>2. Mínimo Común Múltiplo (m.c.m.):</strong></p><p>Tomamos los factores comunes y no comunes elevados al <strong>mayor</strong> exponente:</p><p>$$\\text{m.c.m.}(A(x), B(x)) = (x - 3)^2 \\cdot (x + 3)$$</p>",
+      "checkpoint": {
+        "question": "¿Cómo se eligen los factores para calcular el mínimo común múltiplo (m.c.m.) de dos polinomios?",
+        "options": [
+          {
+            "text": "Se toman los factores comunes y no comunes elevados a sus mayores exponentes.",
+            "correct": true,
+            "feedback": "¡Correcto! El m.c.m. debe contener a ambos polinomios, por lo que necesita incorporar todas las estructuras con su potencia máxima."
+          },
+          {
+            "text": "Se toman solo los factores comunes elevados a sus menores exponentes.",
+            "correct": false,
+            "feedback": "Esa es la regla para el máximo común divisor (m.c.d.), no para el m.c.m."
+          },
+          {
+            "text": "Se multiplican los dos polinomios originales sin necesidad de factorizarlos.",
+            "correct": false,
+            "feedback": "Multiplicarlos directamente daría un múltiplo común, pero no el MÍNIMO común múltiplo."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comprobación mediante evaluación numérica",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Vamos a validar nuestro resultado asignando un valor numérico a la equis, por ejemplo cuatro, para comprobar si los m.c.d. y m.c.m. numéricos coinciden con nuestras fórmulas algebraicas.",
+      "content": "<p><strong>Objetivo:</strong> Comprobar la exactitud del m.c.d. y m.c.m. evaluando en $x = 4$.</p><p><strong>1. Evaluamos los polinomios en $x = 4$:</strong></p><ul><li>$A(4) = 4^2 - 9 = 16 - 9 = 7$</li><li>$B(4) = 4^2 - 6(4) + 9 = 16 - 24 + 9 = 1$</li></ul><p>Numéricamente: $\\text{m.c.d.}(7, 1) = 1$ y $\\text{m.c.m.}(7, 1) = 7$.</p><p><strong>2. Evaluamos nuestras fórmulas de resultado en $x = 4$:</strong></p><ul><li>$\\text{m.c.d.}(4) = 4 - 3 = 1$ (¡Coincide!)</li><li>$\\text{m.c.m.}(4) = (4 - 3)^2 \\cdot (4 + 3) = 1^2 \\cdot 7 = 7$ (¡Coincide!)</li></ul><p><strong>Conclusión:</strong> Los resultados algebraicos son totalmente coherentes y correctos.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los puntos clave para calcular m.c.d. y m.c.m. de polinomios: factorizar mediante identidades o ecuaciones, aplicar la regla de exponentes para m.c.d., y hacer lo propio para el m.c.m.",
+      "content": "<ol><li><strong>Factorizar $A(x)$:</strong> Diferencia de cuadrados $\\implies (x - 3)(x + 3)$.</li><li><strong>Factorizar $B(x)$:</strong> Cuadrado de una resta $\\implies (x - 3)^2$.</li><li><strong>Calcular m.c.d.:</strong> Elegir los comunes con menor exponente $\\implies (x - 3)$.</li><li><strong>Calcular m.c.m.:</strong> Elegir comunes y no comunes con mayor exponente $\\implies (x - 3)^2(x + 3)$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora pon a prueba lo aprendido calculando el m.c.d. y el m.c.m. de estos dos nuevos polinomios.",
+      "content": "<p>Calcula de forma razonada el m.c.d. y el m.c.m. de los siguientes polinomios:</p><p>$$C(x) = x^2 - 16 \\quad D(x) = x^2 - 8x + 16$$</p><p><em>Trabájalo en tu cuaderno antes de desplegar la respuesta.</em></p>",
+      "practiceAnswer": "<p><strong>Factorizaciones:</strong></p><ul><li>$C(x) = (x - 4)(x + 4)$</li><li>$D(x) = (x - 4)^2$</li></ul><p><strong>Resultados:</strong></p><ul><li>$\\text{m.c.d.}(C(x), D(x)) = x - 4$</li><li>$\\text{m.c.m.}(C(x), D(x)) = (x - 4)^2(x + 4)$</li></ul>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "¿Para qué sirve realmente calcular el m.c.m. de dos polinomios? La aplicación directa más habitual es sumar fracciones algebraicas con distinto denominador.",
+      "content": "<p>Se quiere realizar la siguiente suma de fracciones algebraicas:</p><p>$$\\frac{1}{x^2 - 9} + \\frac{1}{x^2 - 6x + 9}$$</p><p>¿Cuál es el <strong>común denominador más sencillo</strong> (mínimo común denominador) que debemos utilizar para unificar ambas fracciones?</p><p><em>Pista: Conecta la suma de fracciones numéricas con el cálculo del m.c.m. de los denominadores que realizamos en el ejercicio.</em></p>",
+      "practiceAnswer": "<p>Para sumar fracciones con distinto denominador, necesitamos hallar el m.c.m. de sus denominadores.</p><p>Los denominadores son precisamente $A(x) = x^2 - 9$ y $B(x) = x^2 - 6x + 9$.</p><p><strong>Respuesta:</strong> El común denominador más sencillo es el m.c.m. calculado previamente:</p><p>$$\\text{Denominador común} = (x - 3)^2(x + 3)$$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T15:55:47.291Z",
+    "updatedAt": "2026-07-31T15:55:47.291Z",
+    "contentHash": "7d667175b9dfd997",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

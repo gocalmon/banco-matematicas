@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Inecuaciones",
+    "exerciseType": "Resolución de sistema de inecuaciones lineales con una incógnita",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Resolver inecuaciones lineales de primer grado de forma independiente",
+      "Representar soluciones de inecuaciones en la recta real",
+      "Identificar la intersección de conjuntos numéricos para hallar la solución de un sistema",
+      "Expresar el conjunto solución final utilizando la notación correcta de intervalos"
+    ],
+    "prerequisites": [
+      "Despejar incógnitas en ecuaciones o inecuaciones de primer grado",
+      "Conocer el significado de los símbolos de desigualdad (<, >, ≤, ≥)",
+      "Representación de números en la recta real y notación de intervalos"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T09:48:20.843Z",
+    "id": "sistema-de-inecuaciones-lineales-e659028a"
+  },
+  "title": "Sistema de Inecuaciones Lineales",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "El ejercicio nos pide resolver un sistema formado por dos inecuaciones de primer grado. Nuestro objetivo final es encontrar los números que cumplen ambas condiciones a la vez y dar la respuesta como un único intervalo.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 10:</strong> Resuelve el siguiente sistema de dos inecuaciones lineales sencillas con una sola variable y escribe la solución común como un único intervalo numérico:</p>\n<p>$$\\begin{cases} 2x > 4 \\\\ x - 3 \\le 5 \\end{cases}$$</p>\n</blockquote>",
+      "hints": [
+        "Un \"sistema\" significa que las condiciones deben cumplirse simultáneamente. Piensa en la palabra \"intersección\".",
+        "Presta mucha atención a los símbolos: uno es estricto (mayor que) y el otro incluye el igual (menor o igual que)."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia será del tipo divide y vencerás. Primero, resolveremos cada inecuación por separado, como si la otra no existiera. Luego, dibujaremos las dos soluciones en una misma recta para ver dónde se superponen. Esa zona común será nuestra respuesta.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar todos los valores de $x$ que satisfacen ambas desigualdades al mismo tiempo.</p>\n<p><strong>Estrategia:</strong></p>\n<ol>\n<li><strong>Resolver de forma independiente:</strong> Despejaremos la $x$ en la primera inecuación y haremos lo mismo, por separado, con la segunda.</li>\n<li><strong>Representación gráfica:</strong> Dibujaremos el conjunto solución de cada inecuación en una misma recta numérica usando diferentes colores.</li>\n<li><strong>Intersección:</strong> Buscaremos la zona donde las líneas de colores se solapan (la región común).</li>\n<li><strong>Traducción a intervalo:</strong> Escribiremos esa zona común en notación de intervalos, prestando atención a los corchetes y paréntesis según sean intervalos abiertos o cerrados.</li>\n</ol>"
+    },
+    {
+      "title": "Paso 1: Resolver la primera inecuación",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Empezamos con la primera condición. Tenemos dos equis mayor que cuatro. Para despejar, pasamos el dos dividiendo. Como es positivo, el símbolo de la desigualdad no cambia. Nos queda equis mayor que dos.",
+      "content": "<p>Tomamos la primera inecuación del sistema:</p>\n<p>$$2x > 4$$</p>\n<p>Para despejar la $x$, dividimos ambos lados entre $2$:</p>\n<p>$$x > \\frac{4}{2}$$</p>\n<p>$$x > 2$$</p>\n<p>Esta es nuestra primera condición parcial. Significa que cualquier número mayor que $2$ (sin incluir el $2$) cumple la primera parte del sistema.</p>",
+      "warning": "<p>Recuerda la regla de oro de las inecuaciones: si multiplicas o divides ambos lados por un número <strong>negativo</strong>, debes darle la vuelta al símbolo de la desigualdad. Aquí hemos dividido entre $+2$, así que el símbolo se queda igual.</p>"
+    },
+    {
+      "title": "Paso 2: Resolver la segunda inecuación",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora vamos a por la segunda. Tenemos equis menos tres menor o igual a cinco. Sumamos tres a ambos lados para despejar la equis. Así, obtenemos que equis debe ser menor o igual a ocho.",
+      "content": "<p>Ahora tomamos la segunda inecuación:</p>\n<p>$$x - 3 \\le 5$$</p>\n<p>Para despejar la $x$, sumamos $3$ en ambos lados (o pasamos el $-3$ sumando al otro miembro):</p>\n<p>$$x \\le 5 + 3$$</p>\n<p>$$x \\le 8$$</p>\n<p>Esta es nuestra segunda condición parcial. Significa que los valores válidos para esta inecuación deben ser menores o iguales a $8$.</p>",
+      "checkpoint": {
+        "question": "¿El número 8 cumple la condición de la segunda inecuación?",
+        "options": [
+          {
+            "text": "No, porque dice que x debe ser estrictamente menor que 8.",
+            "correct": false,
+            "feedback": "Fíjate bien en el símbolo (≤). La barra inferior significa 'o igual a'."
+          },
+          {
+            "text": "Sí, el número 8 forma parte de la solución porque el símbolo es menor o igual.",
+            "correct": true,
+            "feedback": "¡Correcto! A la hora de escribir el intervalo o representarlo, usaremos un corchete o un punto cerrado para incluir el 8."
+          },
+          {
+            "text": "Depende de lo que diga la primera inecuación.",
+            "correct": false,
+            "feedback": "Ahora mismo solo estamos evaluando la segunda inecuación por separado. Para la segunda inecuación sí que cumple."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Interpretación Geométrica y Solución Final",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Para hallar la solución final, juntamos todo. Dibujamos los números mayores que dos con un círculo abierto, y los menores o iguales a ocho con uno cerrado. La zona donde coinciden, es decir, el intervalo desde el dos abierto hasta el ocho cerrado, es nuestra respuesta definitiva.",
+      "content": "<p>Para que un número sea la solución del sistema, debe cumplir <strong>ambas condiciones</strong> a la vez:</p>\n<ul>\n<li>Condición 1: $x > 2$</li>\n<li>Condición 2: $x \\le 8$</li>\n</ul>\n<p>Si buscamos los números que cumplen ambas, estamos buscando los números que están estrictamente por encima de $2$ y, al mismo tiempo, no superan el $8$.</p>\n<p>Escrito como un único intervalo, la solución común es:</p>\n<p>$$x \\in (2, 8]$$</p>\n<ul>\n<li>El <strong>paréntesis</strong> en el $2$ indica que es abierto (no se incluye el $2$ porque es $x > 2$).</li>\n<li>El <strong>corchete</strong> en el $8$ indica que es cerrado (se incluye el $8$ porque es $x \\le 8$).</li>\n</ul>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\" style=\"background-color:#0f172a; border-radius:8px;\">\n  <!-- Eje base -->\n  <line x1=\"20\" y1=\"100\" x2=\"380\" y2=\"100\" stroke=\"#fbbf24\" stroke-width=\"2.5\" marker-end=\"url(#arrow)\"/>\n  <defs>\n    <marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n  </defs>\n  <!-- Marcas -->\n  <line x1=\"100\" y1=\"95\" x2=\"100\" y2=\"105\" stroke=\"#f8fafc\" stroke-width=\"2\"/>\n  <text x=\"95\" y=\"125\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <line x1=\"280\" y1=\"95\" x2=\"280\" y2=\"105\" stroke=\"#f8fafc\" stroke-width=\"2\"/>\n  <text x=\"275\" y=\"125\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\">8</text>\n  \n  <!-- Inecuación 1: x > 2 (azul) -->\n  <line x1=\"100\" y1=\"60\" x2=\"370\" y2=\"60\" stroke=\"#38bdf8\" stroke-width=\"4\" stroke-dasharray=\"4,2\"/>\n  <circle cx=\"100\" cy=\"60\" r=\"5\" fill=\"#0f172a\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  <text x=\"110\" y=\"50\" fill=\"#38bdf8\" font-family=\"sans-serif\" font-size=\"12\">x > 2</text>\n  \n  <!-- Inecuación 2: x <= 8 (rojo) -->\n  <line x1=\"280\" y1=\"140\" x2=\"30\" y2=\"140\" stroke=\"#ef4444\" stroke-width=\"4\" stroke-dasharray=\"4,2\"/>\n  <circle cx=\"280\" cy=\"140\" r=\"5\" fill=\"#ef4444\"/>\n  <text x=\"240\" y=\"160\" fill=\"#ef4444\" font-family=\"sans-serif\" font-size=\"12\">x ≤ 8</text>\n  \n  <!-- Intersección: (2, 8] (verde) -->\n  <line x1=\"106\" y1=\"100\" x2=\"274\" y2=\"100\" stroke=\"#22c55e\" stroke-width=\"6\" opacity=\"0.8\"/>\n  <circle cx=\"100\" cy=\"100\" r=\"6\" fill=\"#0f172a\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <circle cx=\"280\" cy=\"100\" r=\"6\" fill=\"#22c55e\"/>\n  <text x=\"165\" y=\"90\" fill=\"#22c55e\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\">Intersección</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulando nuestro método: hemos resuelto cada inecuación de forma individual, hemos comparado los dos resultados obtenidos y hemos extraído el fragmento numérico que es válido para ambas al mismo tiempo.",
+      "content": "<ol>\n<li><strong>Aislar la primera:</strong> Resolvimos $2x > 4$ obteniendo la condición $x > 2$.</li>\n<li><strong>Aislar la segunda:</strong> Resolvimos $x - 3 \\le 5$ obteniendo la condición $x \\le 8$.</li>\n<li><strong>Solapar condiciones:</strong> Representamos ambas condiciones gráficamente y buscamos qué conjunto de números obedece a las dos.</li>\n<li><strong>Notación final:</strong> Escribimos la solución de los números entre el $2$ y el $8$, siendo cuidadosos con los símbolos: el intervalo definitivo es $(2, 8]$.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora te toca a ti. Resuelve este sistema muy parecido, siguiendo los mismos pasos de aislar, dibujar y buscar la zona común.",
+      "content": "<p>Resuelve el siguiente sistema de inecuaciones y escribe la solución como intervalo:</p>\n<p>$$\\begin{cases} 3x < 12 \\\\ x + 2 \\ge 1 \\end{cases}$$</p>\n<p><em>Utiliza papel y lápiz. Despeja $x$ arriba, despeja $x$ abajo, y busca qué números cumplen las dos cosas. No olvides prestar atención a corchetes y paréntesis.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong> $[-1, 4)$</p>\n<p><em>(La primera inecuación da $x < 4$. La segunda da $x \\ge -1$. Al cruzarlas, los números válidos van desde el $-1$ incluido, hasta el $4$ sin incluir).</em></p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a llevar este concepto a un problema de química y termodinámica. Las temperaturas a veces deben mantenerse en un rango de confort. Fíjate en cómo lo planteamos matemáticamente.",
+      "content": "<p>En un laboratorio, un compuesto químico debe mantenerse a una temperatura Celsius ($T$) que cumpla las siguientes normativas de seguridad:</p>\n<ul>\n<li>El doble de la temperatura debe superar los $30^\\circ\\text{C}$ para evitar que cristalice.</li>\n<li>Si a la temperatura le sumamos $5^\\circ\\text{C}$, el resultado no puede sobrepasar los $35^\\circ\\text{C}$ para evitar su evaporación.</li>\n</ul>\n<p>Traduce estas condiciones a un sistema de inecuaciones y determina el intervalo de temperaturas seguras en el que se debe almacenar el compuesto.</p>",
+      "practiceAnswer": "<p>Traducción de condiciones a matemáticas:</p>\n<ul>\n<li>\"El doble debe superar 30\": $2T > 30 \\Rightarrow T > 15$</li>\n<li>\"Sumando 5, no puede sobrepasar 35\": $T + 5 \\le 35 \\Rightarrow T \\le 30$</li>\n</ul>\n<p><strong>Solución:</strong> El intervalo de temperatura de almacenamiento seguro es $T \\in (15, 30]$. Es decir, debe almacenarse a más de $15^\\circ\\text{C}$ y hasta un máximo de $30^\\circ\\text{C}$ (incluido).</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T09:57:55.654Z",
+    "updatedAt": "2026-08-01T09:57:55.654Z",
+    "contentHash": "4c1c9df5f133b047",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

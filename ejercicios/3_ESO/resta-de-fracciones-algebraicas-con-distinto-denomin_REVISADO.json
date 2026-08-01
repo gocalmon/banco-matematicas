@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Fracciones algebraicas",
+    "exerciseType": "Resta de fracciones algebraicas",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Obtener el mínimo común múltiplo de denominadores algebraicos simples",
+      "Reducir fracciones algebraicas a común denominador",
+      "Realizar la resta de numeradores aplicando correctamente la regla de los signos"
+    ],
+    "prerequisites": [
+      "Operaciones con fracciones numéricas",
+      "Propiedad distributiva y eliminación de paréntesis",
+      "Mínimo común múltiplo de polinomios"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T15:56:18.679Z",
+    "id": "resta-de-fracciones-algebraicas-con-distinto-denomin-95f7e407"
+  },
+  "title": "Resta de fracciones algebraicas con distinto denominador",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver el ejercicio seis. Se nos pide restar dos fracciones algebraicas cuyos denominadores son diferentes. Para poder restarlas, el primer paso será buscar un común denominador utilizando el mínimo común múltiplo.",
+      "content": "<p><strong>Ejercicio 6:</strong> Realiza la resta de las siguientes fracciones algebraicas obteniendo el común denominador a partir del mínimo común múltiplo de los denominadores:</p><p>$$\\frac{3}{x - 2} - \\frac{2}{x + 2}$$</p>",
+      "hints": [
+        "Para restar fracciones con distinto denominador, necesitamos transformarlas a denominador común.",
+        "Como los denominadores no tienen factores comunes, su m.c.m. es simplemente su producto."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consiste en hallar el m.c.m. de los denominadores, ajustar los numeradores de cada fracción para que sean equivalentes y luego restar los numeradores. Prestaremos especial atención al signo menos que afecta a todo el segundo numerador.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ul><li>Efectuar la resta de fracciones algebraicas y expresar el resultado de la forma más simplificada posible.</li></ul><p><strong>Estrategia paso a paso:</strong></p><ol><li><strong>Hallar el m.c.m.:</strong> Calcular el mínimo común múltiplo de $(x - 2)$ y $(x + 2)$.</li><li><strong>Reducir a común denominador:</strong> Multiplicar el numerador de cada fracción por el factor correspondiente.</li><li><strong>Restar los numeradores:</strong> Operar las expresiones del numerador teniendo cuidado con los signos y paréntesis.</li><li><strong>Simplificar:</strong> Agrupar términos semejantes en el numerador final.</li></ol>"
+    },
+    {
+      "title": "Paso 1: Mínimo común múltiplo de los denominadores",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Analizamos los denominadores: equis menos dos y equis más dos. Como ambos son binomios primos entre sí que no se pueden factorizar más, su mínimo común múltiplo es directamente el producto de ambos.",
+      "content": "<p><strong>Objetivo:</strong> Determinar el común denominador.</p><p>Los denominadores son:</p><ul><li>Primer denominador: $d_1 = x - 2$</li><li>Segundo denominador: $d_2 = x + 2$</li></ul><p>Al no compartir ningún factor en común, el m.c.m. es el producto de ambos:</p><p>$$\\text{m.c.m.}(x - 2, x + 2) = (x - 2)(x + 2)$$</p><p>Opcionalmente, recordando la identidad notable de suma por diferencia:</p><p>$$(x - 2)(x + 2) = x^2 - 4$$</p>",
+      "theory": "<p><strong>Común denominador de expresiones primas:</strong> Cuando dos polinomios no se pueden descomponer y no comparten factores, su mínimo común múltiplo es el producto de ambos polinomios.</p>"
+    },
+    {
+      "title": "Paso 2: Transformación a común denominador y resta",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Escribimos ambas fracciones con el nuevo denominador común. Multiplicamos el tres por equis más dos, y el dos por equis menos dos. Luego unimos todo bajo una sola fracción manteniendo la resta.",
+      "content": "<p><strong>Objetivo:</strong> Reexpresar las fracciones y juntar los numeradores.</p><p>Ajustamos cada numerador multiplicando por el factor que le falta a su denominador original:</p><p>$$\\frac{3(x + 2)}{(x - 2)(x + 2)} - \\frac{2(x - 2)}{(x - 2)(x + 2)}$$</p><p>Unimos ambas fracciones en una sola expresión con denominador común:</p><p>$$\\frac{3(x + 2) - 2(x - 2)}{(x - 2)(x + 2)}$$</p>",
+      "warning": "<p><strong>¡Cuidado con el signo menos!</strong> El signo de la resta afecta a <strong>todo</strong> el segundo numerador. Es fundamental mantener el paréntesis $-2(x - 2)$ antes de multiplicar para evitar errores de signo.</p>"
+    },
+    {
+      "title": "Paso 3: Desarrollo y simplificación del numerador",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Aplicamos la propiedad distributiva en el numerador. Multiplicamos tres por equis y tres por dos; y por otro lado, menos dos por equis y menos dos por menos dos, que da más cuatro. Agrupamos los términos.",
+      "content": "<p><strong>Objetivo:</strong> Eliminar paréntesis en el numerador y agrupar términos semejantes.</p><p>Aplicamos la propiedad distributiva en el numerador:</p><p>$$3(x + 2) = 3x + 6$$</p><p>$$-2(x - 2) = -2x + 4$$</p><p>Sustituimos en la fracción:</p><p>$$\\frac{3x + 6 - 2x + 4}{(x - 2)(x + 2)}$$</p><p>Agrupamos los términos de primer grado y los términos independientes:</p><p>$$\\frac{(3x - 2x) + (6 + 4)}{(x - 2)(x + 2)} = \\frac{x + 10}{(x - 2)(x + 2)}$$</p><p><strong>Resultado final:</strong> $\\frac{x + 10}{x^2 - 4}$ (para $x \\neq 2$ y $x \\neq -2$).</p>",
+      "checkpoint": {
+        "question": "¿Por qué el término $-2 \\cdot (-2)$ se convierte en $+4$ en el numerador?",
+        "options": [
+          {
+            "text": "Por la regla de los signos: el producto de dos números negativos da un resultado positivo.",
+            "correct": true,
+            "feedback": "¡Correcto! El signo menos delante del 2 multiplica a ambos términos dentro del paréntesis: (-2) · (-2) = +4."
+          },
+          {
+            "text": "Porque el signo menos delante de la fracción solo afecta al primer término (2x).",
+            "correct": false,
+            "feedback": "El signo resta afecta a la totalidad de la expresión del segundo numerador."
+          },
+          {
+            "text": "Porque al pasar a común denominador todos los signos negativos se cambian a positivos.",
+            "correct": false,
+            "feedback": "No, los signos se operan distributivamente aplicando las reglas habituales."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comprobación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Vamos a validar nuestra resta sustituyendo la equis por un número cualquiera, por ejemplo equis igual a tres, tanto en el enunciado como en la respuesta final.",
+      "content": "<p><strong>Objetivo:</strong> Verificar numéricamente que la resta es correcta para $x = 3$.</p><p><strong>1. Evaluamos en la expresión inicial:</strong></p><p>$$\\frac{3}{3 - 2} - \\frac{2}{3 + 2} = \\frac{3}{1} - \\frac{2}{5} = 3 - 0,4 = 2,6$$</p><p><strong>2. Evaluamos en nuestro resultado final:</strong></p><p>$$\\frac{x + 10}{(x - 2)(x + 2)} \\implies \\frac{3 + 10}{(3 - 2)(3 + 2)} = \\frac{13}{1 \\cdot 5} = \\frac{13}{5} = 2,6$$</p><p><strong>Conclusión:</strong> En ambos casos obtenemos exactamente $2,6$ (o la fracción $\\frac{13}{5}$), confirmando que la operación algebraica es totalmente correcta.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Aquí tienes los pasos principales: obtener el m.c.m. multiplicando denominadores distintos, ajustar numeradores, aplicar la propiedad distributiva teniendo cuidado con los signos y simplificar.",
+      "content": "<ol><li><strong>m.c.m. de denominadores:</strong> $(x - 2)(x + 2)$.</li><li><strong>Numerador ajustado:</strong> $3(x + 2) - 2(x - 2)$.</li><li><strong>Aplicar distributiva:</strong> $3x + 6 - 2x + 4$.</li><li><strong>Agrupar términos:</strong> $(3x - 2x) + (6 + 4) = x + 10$.</li><li><strong>Resultado simplificado:</strong> $\\frac{x + 10}{(x - 2)(x + 2)}$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica exactamente el mismo procedimiento para resolver esta nueva resta de fracciones algebraicas.",
+      "content": "<p>Realiza la resta de las siguientes fracciones algebraicas obteniendo el común denominador a partir del m.c.m. de los denominadores:</p><p>$$\\frac{4}{x - 3} - \\frac{1}{x + 3}$$</p><p><em>Haz los cálculos en tu cuaderno antes de comprobar la respuesta.</em></p>",
+      "practiceAnswer": "<p><strong>Común denominador:</strong> $(x - 3)(x + 3)$.</p><p><strong>Operación en el numerador:</strong> $4(x + 3) - 1(x - 3) = 4x + 12 - x + 3 = 3x + 15$.</p><p><strong>Resultado final:</strong> $\\frac{3x + 15}{(x - 3)(x + 3)}$ o $\\frac{3(x + 5)}{x^2 - 9}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos cómo esta resta de fracciones algebraicas sirve para calcular diferencias de tiempo en un problema real de viajes y velocidad.",
+      "content": "<p>Un vehículo recorre una distancia de $100\\text{ km}$. El tiempo que tarda viene dado por la fórmula $T = \\frac{\\text{distancia}}{\\text{velocidad}}$.</p><p>Si realiza el viaje de ida a una velocidad de $(v + 10)\\text{ km/h}$ y el viaje de vuelta a $(v - 10)\\text{ km/h}$, plantea la expresión algebraica simplificada que representa la <strong>diferencia de tiempo</strong> entre el viaje de vuelta y el de ida:</p><p>$$\\Delta T = \\frac{100}{v - 10} - \\frac{100}{v + 10}$$</p><p><em>Pista: Aplica el mismo método de común denominador con la variable $v$.</em></p>",
+      "practiceAnswer": "<p><strong>1. Común denominador:</strong> $(v - 10)(v + 10) = v^2 - 100$.</p><p><strong>2. Ajuste de numeradores:</strong> $100(v + 10) - 100(v - 10)$.</p><p><strong>3. Distributiva:</strong> $100v + 1000 - 100v + 1000 = 2000$.</p><p><strong>Resultado final:</strong> $\\Delta T = \\frac{2000}{v^2 - 100}$ horas.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T15:56:52.863Z",
+    "updatedAt": "2026-07-31T15:56:52.863Z",
+    "contentHash": "92c88addb0040473",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

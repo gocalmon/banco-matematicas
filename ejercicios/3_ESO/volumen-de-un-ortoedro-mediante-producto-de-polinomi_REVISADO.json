@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Polinomios y geometría aplicada",
+    "exerciseType": "Problema de aplicación del producto de polinomios y evaluación",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Modelizar problemas geométricos mediante el producto de polinomios",
+      "Desarrollar y simplificar multiplicaciones de tres expresiones algebraicas",
+      "Calcular el valor numérico de un polinomio en un contexto de unidades físicas"
+    ],
+    "prerequisites": [
+      "Fórmula del volumen de un ortoedro (largo x ancho x alto)",
+      "Propiedad distributiva del producto respecto de la suma",
+      "Evaluación numérica de polinomios y conversión de unidades"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T15:58:44.075Z",
+    "id": "volumen-de-un-ortoedro-mediante-producto-de-polinomi-11e9b8bd"
+  },
+  "title": "Volumen de un ortoedro mediante producto de polinomios",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos con el ejercicio diez. Se trata de un problema aplicado donde las tres dimensiones de una caja de cartón vienen expresadas como polinomios. Deberemos encontrar la fórmula del volumen en forma desarrollada y luego calcular su capacidad real en litros.",
+      "content": "<p><strong>Ejercicio 10 (Problema aplicado):</strong> Una caja de cartón rectangular de almacenamiento tiene unas dimensiones que vienen dadas por los polinomios $x$, $x + 2$ y $2x - 1$ (medidos en decímetros).</p><ul><li><strong>a)</strong> Obtén el polinomio desarrollado que determina el volumen total $V(x)$ de la caja.</li><li><strong>b)</strong> Calcula el volumen real en litros (recuerda que $1\\text{ dm}^3 = 1\\text{ litro}$) si $x = 3\\text{ dm}$.</li></ul>",
+      "hints": [
+        "El volumen de un ortoedro (caja rectangular) se obtiene multiplicando sus tres dimensiones.",
+        "Para el apartado b, puedes sustituir directamente $x = 3$ en el polinomio obtenido en el apartado a."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestro plan tiene dos partes claras. En la primera, multiplicaremos los tres polinomios paso a paso para obtener el volumen desarrollado. En la segunda, evaluaremos dicho polinomio para x igual a tres decímetros y relacionaremos la unidad cúbica con los litros.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ol><li>Hallar el polinomio del volumen $V(x)$ totalmente multiplicado y simplificado.</li><li>Calcular la capacidad numérica en litros para $x = 3\\text{ dm}$.</li></ol><p><strong>Estrategia paso a paso:</strong></p><ol><li><strong>Planteamiento algebraico:</strong> Escribir $V(x) = x \\cdot (x + 2) \\cdot (2x - 1)$.</li><li><strong>Multiplicación en dos fases:</strong> Multiplicar $x$ por $(x + 2)$, y luego multiplicar ese resultado por $(2x - 1)$.</li><li><strong>Agrupar términos:</strong> Reducir monomios semejantes para obtener la forma $ax^3 + bx^2 + cx$.</li><li><strong>Evaluación numérica:</strong> Sustituir $x = 3\\text{ dm}$ en $V(x)$ y hacer la conversión $1\\text{ dm}^3 = 1\\text{ litro}$.</li></ol>"
+    },
+    {
+      "title": "Paso 1: Desarrollo del polinomio del volumen",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Planteamos la multiplicación de las tres dimensiones. Primero multiplicamos la equis por el binomio equis más dos. Después, multiplicamos ese polinomio por dos equis menos uno aplicando la propiedad distributiva a cada término.",
+      "content": "<p><strong>Objetivo:</strong> Obtener el polinomio desarrollado $V(x)$.</p><p>Planteamos el volumen como el producto de las tres dimensiones:</p><p>$$V(x) = x \\cdot (x + 2) \\cdot (2x - 1)$$</p><p><strong>Fase 1:</strong> Multiplicamos el primer monomio $x$ por el primer paréntesis:</p><p>$$x \\cdot (x + 2) = x^2 + 2x$$</p><p><strong>Fase 2:</strong> Multiplicamos este resultado por el binomio $(2x - 1)$:</p><p>$$V(x) = (x^2 + 2x)(2x - 1)$$</p><p>Aplicamos la propiedad distributiva multiplicando todos los términos:</p><p>$$V(x) = x^2 \\cdot 2x + x^2 \\cdot (-1) + 2x \\cdot 2x + 2x \\cdot (-1)$$</p><p>$$V(x) = 2x^3 - x^2 + 4x^2 - 2x$$</p><p>Agrupamos los términos de grado 2 ($-x^2 + 4x^2 = 3x^2$):</p><p>$$V(x) = 2x^3 + 3x^2 - 2x \\text{ dm}^3$$</p>",
+      "theory": "<p><strong>Volumen de un ortoedro:</strong> El volumen $V$ de un prisma rectangular recto de lados $a$, $b$ y $c$ viene dado por el producto de sus dimensiones: $V = a \\cdot b \\cdot c$.</p>"
+    },
+    {
+      "title": "Paso 2: Cálculo del volumen real para x = 3 dm",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Con la fórmula del volumen lista, sustituimos la equis por tres. Calculamos primero las potencias, luego los productos y finalmente la suma. Como el resultado nos da en decímetros cúbicos, equivale exactamente a la misma cantidad en litros.",
+      "content": "<p><strong>Objetivo:</strong> Evaluar $V(3)$ y expresar el resultado en litros.</p><p>Sustituimos $x = 3$ en la expresión del volumen $V(x) = 2x^3 + 3x^2 - 2x$:</p><p>$$V(3) = 2(3)^3 + 3(3)^2 - 2(3)$$</p><p>Resolvemos las potencias ($3^3 = 27$ y $3^2 = 9$):</p><p>$$V(3) = 2(27) + 3(9) - 6$$</p><p>Realizamos las multiplicaciones:</p><p>$$V(3) = 54 + 27 - 6$$</p><p>Sumamos y restamos:</p><p>$$V(3) = 75\\text{ dm}^3$$</p><p>Dado que $1\\text{ dm}^3 = 1\\text{ litro}$, la capacidad de la caja es de **$75$ litros**.</p>",
+      "warning": "<p><strong>¡Jerarquía de operaciones!</strong> Recuerda que las potencias tienen prioridad sobre las multiplicaciones. No multipliques $2 \\cdot 3$ antes de elevar al cubo; calcula primero $3^3 = 27$ y después $2 \\cdot 27 = 54$.</p>",
+      "checkpoint": {
+        "question": "¿Cuánto miden exactamente las tres dimensiones físicas de la caja cuando x = 3 dm?",
+        "options": [
+          {
+            "text": "3 dm, 5 dm y 5 dm.",
+            "correct": true,
+            "feedback": "¡Correcto! Sustituyendo x = 3 en cada dimensión: x = 3 dm; x + 2 = 5 dm; 2x - 1 = 5 dm."
+          },
+          {
+            "text": "3 dm, 3 dm y 3 dm.",
+            "correct": false,
+            "feedback": "No todas las dimensiones miden lo mismo; debes evaluar cada polinomio independientemente."
+          },
+          {
+            "text": "3 dm, 6 dm y 9 dm.",
+            "correct": false,
+            "feedback": "Comprueba los cálculos: 3 + 2 es igual a 5, y 2(3) - 1 también resulta 5."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comprobación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Para verificar que no nos hemos equivocado al desarrollar el polinomio, vamos a calcular las tres medidas individuales con tres decímetros y multiplicarlas directamente.",
+      "content": "<p><strong>Objetivo:</strong> Validar el volumen calculado sustituyendo directamente en los factores iniciales.</p><p>Calculamos el valor de cada dimensión para $x = 3\\text{ dm}$:</p><ul><li>Primera dimensión ($x$): $3\\text{ dm}$</li><li>Segunda dimensión ($x + 2$): $3 + 2 = 5\\text{ dm}$</li><li>Tercera dimensión ($2x - 1$): $2(3) - 1 = 5\\text{ dm}$</li></ul><p>Multiplicamos las tres medidas obtenidas:</p><p>$$V = 3\\text{ dm} \\cdot 5\\text{ dm} \\cdot 5\\text{ dm} = 75\\text{ dm}^3$$</p><p><strong>Conclusión:</strong> El resultado coincide exactamente con los $75\\text{ litros}$ obtenidos con el polinomio desarrollado, lo que valida todo el ejercicio.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recuerda el camino seguido: plantear el producto de dimensiones, multiplicar por fases aplicando distributiva, evaluar en el valor numérico dado y convertir la unidad de volumen a litros.",
+      "content": "<ol><li><strong>Escribir el producto:</strong> $V(x) = x(x + 2)(2x - 1)$.</li><li><strong>Desarrollar el polinomio:</strong> $V(x) = (x^2 + 2x)(2x - 1) = 2x^3 + 3x^2 - 2x\\text{ dm}^3$.</li><li><strong>Evaluar para $x = 3$:</strong> $V(3) = 2(27) + 3(9) - 6 = 75\\text{ dm}^3$.</li><li><strong>Convertir unidades:</strong> $75\\text{ dm}^3 = 75\\text{ litros}$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica exactamente los mismos pasos en este ejercicio con dimensiones distintas.",
+      "content": "<p>Una caja de almacenamiento tiene dimensiones dadas por los polinomios $x$, $x + 1$ y $x + 3$ (medidas en decímetros).</p><ol><li>Obtén el polinomio desarrollado del volumen $V(x)$.</li><li>Calcula el volumen en litros para $x = 2\\text{ dm}$.</li></ol><p><em>Trabaja cada apartado en tu cuaderno antes de comprobar la respuesta.</em></p>",
+      "practiceAnswer": "<p><strong>1. Polinomio desarrollado:</strong> $V(x) = x(x + 1)(x + 3) = x(x^2 + 4x + 3) = x^3 + 4x^2 + 3x\\text{ dm}^3$.</p><p><strong>2. Volumen para $x = 2\\text{ dm}$:</strong> $V(2) = 2^3 + 4(2)^2 + 3(2) = 8 + 16 + 6 = 30\\text{ dm}^3 = 30\\text{ litros}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos cómo aplicar la modelización polinómica de volúmenes cuando las unidades iniciales están en metros y debemos pasar el resultado final a litros.",
+      "content": "<p>Un depósito de agua tiene forma de prisma rectangular. Sus dimensiones expresadas en metros son $x$, $x - 1$ y $2x + 2$.</p><p>Sabiendo que $1\\text{ m}^3 = 1000\\text{ litros}$, halla la capacidad total en litros del depósito si $x = 4\\text{ m}$.</p><p><em>Pista: Evalúa la capacidad en metros cúbicos y realiza finalmente la conversión a litros.</em></p>",
+      "practiceAnswer": "<p><strong>1. Medidas de las dimensiones para $x = 4\\text{ m}$:</strong></p><ul><li>Dimensiones: $4\\text{ m}$, $4 - 1 = 3\\text{ m}$, y $2(4) + 2 = 10\\text{ m}$.</li></ul><p><strong>2. Volumen en metros cúbicos:</strong> $V = 4 \\cdot 3 \\cdot 10 = 120\\text{ m}^3$.</p><p><strong>3. Conversión a litros:</strong> $120\\text{ m}^3 \\cdot 1000 = 120\\,000\\text{ litros}$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-07-31T15:59:18.194Z",
+    "updatedAt": "2026-07-31T15:59:18.194Z",
+    "contentHash": "42191d71a8f3f6cb",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
