@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "exerciseSchemaVersion": "4.0",
-  "generatedAt": "2026-08-01T11:15:06.140Z",
+  "generatedAt": "2026-08-01T19:30:02.164Z",
   "basePath": "ejercicios/",
-  "exerciseCount": 41,
+  "exerciseCount": 57,
   "filters": {
     "stages": [
       "Bachillerato",
@@ -18,16 +18,22 @@
     ],
     "topics": [
       "Álgebra",
+      "Álgebra y funciones",
       "Análisis",
       "Análisis de Funciones",
+      "Análisis matemático",
+      "Funciones y geometría analítica",
       "Funciones y Gráficas",
+      "Funciones y gráficas",
       "Geometría Analítica",
       "Programación Lineal"
     ],
     "subtopics": [
       "Composición de Funciones",
+      "Composición y propiedades de las funciones",
       "Continuidad de funciones",
       "Continuidad y Límites Laterales",
+      "Dominio de funciones e inecuaciones",
       "Dominio y Recorrido",
       "Ecuación de la recta",
       "Ecuaciones de segundo grado",
@@ -39,14 +45,25 @@
       "Ecuaciones y polinomios",
       "Expresión analítica y cálculo de imágenes y antiimágenes",
       "Fracciones algebraicas",
+      "Función afín y lineal",
+      "Función de proporcionalidad inversa",
+      "Función logarítmica y exponencial",
       "Funciones con Valor Absoluto y a Trozos",
       "Funciones Cuadráticas y Optimización",
+      "Funciones exponenciales",
+      "Funciones exponenciales y logarítmicas",
       "Funciones Periódicas",
+      "Funciones polinómicas",
       "Funciones Racionales y Asíntotas",
+      "Funciones y ecuaciones exponenciales",
       "Identidades notables y manipulación algebraica",
       "Inecuaciones",
+      "Límites y modelización de funciones",
+      "Logaritmos y sus aplicaciones",
+      "Modelización lineal (Función afín)",
       "Modelización Matemática y Funciones Polinómicas",
       "Modelización polinómica y optimización",
+      "Modelos lineales y aplicaciones",
       "Operaciones con polinomios",
       "Optimización bidimensional",
       "Polinomios y factorización",
@@ -72,16 +89,30 @@
       "Cálculo de pendiente y ecuación explícita a partir de dos puntos",
       "Cálculo de raíces y factorización",
       "Cálculo de TVM e interpretación del crecimiento",
+      "Cálculo de valores logarítmicos usando la definición como inversa de la exponencial",
       "Demostración algebraica de simetría par e impar",
+      "Demostración de propiedades y simetría",
+      "Demostración y cálculo algebraico",
       "Descomposición a trozos y representación gráfica",
       "Determinación de características a partir de puntos extremos",
       "Determinación de parámetros",
       "Determinación de parámetros de una parábola a partir de puntos",
+      "Estudio de la pendiente y la ordenada en el origen",
+      "Estudio del dominio y evaluación de imágenes",
+      "Estudio y representación de función cuadrática",
+      "Estudio y representación gráfica",
       "Extracción de factor común",
+      "Factorización de un polinomio de tercer grado",
       "Identidades algebraicas de tipo Olimpiada",
+      "Intersección de curvas trascendentes",
+      "Modelización analítica",
       "Modelización geométrica y funciones de coste",
+      "Modelización mediante una función lineal de la forma H(t) = mt + n",
+      "Obtención de la ecuación explícita a partir de la pendiente y un punto",
       "Operaciones combinadas con fracciones algebraicas",
       "Problema aplicado",
+      "Problema aplicado de acústica",
+      "Problema aplicado de depreciación",
       "Problema aplicado de geometría y polinomios",
       "Problema de aplicación del producto de polinomios y evaluación",
       "Problema de optimización con parábolas",
@@ -93,6 +124,7 @@
       "Resolución de ecuación factorizada",
       "Resolución de ecuaciones de grado superior a 2",
       "Resolución de inecuación racional mediante tabla de signos",
+      "Resolución de inecuaciones racionales",
       "Resolución de problemas con funciones lineales",
       "Resolución de sistema de ecuaciones no lineales",
       "Resolución de sistema de inecuaciones de segundo grado",
@@ -115,7 +147,8 @@
       "B",
       "C",
       "E",
-      "H"
+      "H",
+      "I"
     ]
   },
   "exercises": [
@@ -247,7 +280,7 @@
       "hasNearTransfer": true,
       "hasFarTransfer": true,
       "slideCount": 10,
-      "reviewedAt": "2026-08-01T09:58:46.157Z",
+      "reviewedAt": "2026-08-01T19:26:13.587Z",
       "contentHash": "0e4e4c8d3433d917",
       "url": "ejercicios/1_BACH/ecuacion-racional-con-incognitas-en-el-denominador_REVISADO.json"
     },
@@ -349,6 +382,38 @@
       "url": "ejercicios/1_BACH/resolucion-de-un-sistema-de-inecuaciones-lineales_REVISADO.json"
     },
     {
+      "id": "calculo-del-nivel-de-intensidad-sonora-decibelios-463fb5b2",
+      "title": "Cálculo del nivel de intensidad sonora (Decibelios)",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra y funciones",
+      "subtopic": "Logaritmos y sus aplicaciones",
+      "exerciseType": "Problema aplicado de acústica",
+      "protocols": [
+        "B",
+        "I"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Aplicar la definición de logaritmo en contextos físicos reales.",
+        "Operar con potencias de base 10.",
+        "Comprender la utilidad de las escalas logarítmicas para comprimir rangos muy amplios de datos."
+      ],
+      "prerequisites": [
+        "Propiedades de las potencias",
+        "Definición y cálculo de logaritmos decimales"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 7,
+      "reviewedAt": "2026-08-01T17:21:37.196Z",
+      "contentHash": "91ca8357e366f3b5",
+      "url": "ejercicios/1_BACH/calculo-del-nivel-de-intensidad-sonora-decibelios_REVISADO.json"
+    },
+    {
       "id": "estudio-de-parametros-para-la-continuidad-de-una-fun-e9483ffa",
       "title": "Estudio de parámetros para la continuidad de una función a trozos",
       "subject": "Matemáticas",
@@ -379,6 +444,73 @@
       "reviewedAt": "2026-07-31T10:08:02.819Z",
       "contentHash": "7bb4f07b4dfa7265",
       "url": "ejercicios/1_BACH/estudio-de-parametros-para-la-continuidad-de-una-fun_REVISADO%20(1).json"
+    },
+    {
+      "id": "interseccion-de-curvas-exponenciales-1b66fc57",
+      "title": "Intersección de Curvas Exponenciales",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis",
+      "subtopic": "Funciones y ecuaciones exponenciales",
+      "exerciseType": "Intersección de curvas trascendentes",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Aplicar propiedades de las potencias para simplificar ecuaciones exponenciales.",
+        "Resolver ecuaciones exponenciales mediante cambio de variable a ecuaciones cuadráticas.",
+        "Descartar soluciones no válidas comprobando el dominio de las funciones exponenciales.",
+        "Racionalizar denominadores con binomios irracionales."
+      ],
+      "prerequisites": [
+        "Propiedades de los exponentes y logaritmos.",
+        "Resolución de ecuaciones de segundo grado.",
+        "Racionalización de denominadores."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 12,
+      "reviewedAt": "2026-08-01T19:19:39.995Z",
+      "contentHash": "fd37f4cfaf408365",
+      "url": "ejercicios/1_BACH/interseccion-de-curvas-exponenciales_REVISADO.json"
+    },
+    {
+      "id": "modelizacion-analitica-exponencial-65fad18f",
+      "title": "Modelización analítica exponencial",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis",
+      "subtopic": "Funciones exponenciales",
+      "exerciseType": "Modelización analítica",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Relacionar las características geométricas de una gráfica con los parámetros de su ecuación.",
+        "Identificar el efecto del término independiente en las asíntotas horizontales.",
+        "Resolver sistemas de ecuaciones no lineales planteados a partir de puntos de paso de una función."
+      ],
+      "prerequisites": [
+        "Concepto de asíntota horizontal.",
+        "Evaluación de funciones en un punto.",
+        "Resolución de ecuaciones de primer grado y raíces cúbicas."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-01T19:20:56.273Z",
+      "contentHash": "261559c89bdc666e",
+      "url": "ejercicios/1_BACH/modelizacion-analitica-exponencial_REVISADO.json"
     },
     {
       "id": "calculo-e-interpretacion-de-la-tasa-de-variacion-med-44a48cfd",
@@ -744,6 +876,169 @@
       "url": "ejercicios/1_BACH/optimizacion-cuadratica-maximizando-el-rendimiento_REVISADO.json"
     },
     {
+      "id": "composicion-y-estudio-de-la-simetria-badb2b14",
+      "title": "Composición y estudio de la simetría",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis matemático",
+      "subtopic": "Composición y propiedades de las funciones",
+      "exerciseType": "Demostración y cálculo algebraico",
+      "protocols": [
+        "B"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Calcular correctamente la expresión analítica de funciones compuestas.",
+        "Comprender que la composición de funciones no es conmutativa.",
+        "Aplicar la definición algebraica para determinar la simetría par o impar de una función."
+      ],
+      "prerequisites": [
+        "Concepto de composición de funciones",
+        "Sustitución algebraica de variables",
+        "Definición de función par ($f(-x) = f(x)$) e impar ($f(-x) = -f(x)$)"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 7,
+      "reviewedAt": "2026-08-01T17:24:58.427Z",
+      "contentHash": "5f6b64c0f4a67d2a",
+      "url": "ejercicios/1_BACH/composicion-y-estudio-de-la-simetria_REVISADO.json"
+    },
+    {
+      "id": "dinamica-de-poblaciones-el-modelo-logistico-d0c92f80",
+      "title": "Dinámica de Poblaciones: El Modelo Logístico",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis matemático",
+      "subtopic": "Límites y modelización de funciones",
+      "exerciseType": "Problema aplicado",
+      "protocols": [
+        "B",
+        "I"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Interpretar los parámetros de una función logística en un contexto real.",
+        "Calcular valores funcionales para instantes de tiempo específicos.",
+        "Evaluar límites en el infinito para determinar asíntotas horizontales (capacidad de carga).",
+        "Relacionar el comportamiento matemático de la exponencial negativa con su efecto en el modelo."
+      ],
+      "prerequisites": [
+        "Evaluación de funciones",
+        "Cálculo con la función exponencial base 'e'",
+        "Concepto intuitivo de límite en el infinito"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T17:25:49.536Z",
+      "contentHash": "ad1c253110986e57",
+      "url": "ejercicios/1_BACH/dinamica-de-poblaciones-el-modelo-logistico_REVISADO.json"
+    },
+    {
+      "id": "dominio-de-una-funcion-logaritmica-con-argumento-rac-bd59ff73",
+      "title": "Dominio de una función logarítmica con argumento racional",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis matemático",
+      "subtopic": "Dominio de funciones e inecuaciones",
+      "exerciseType": "Resolución de inecuaciones racionales",
+      "protocols": [
+        "B"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Identificar la restricción del argumento de una función logarítmica.",
+        "Plantear y resolver una inecuación racional con rigor analítico.",
+        "Representar la solución de una inecuación mediante intervalos y gráficamente."
+      ],
+      "prerequisites": [
+        "Resolución de ecuaciones de segundo grado",
+        "Estudio del signo de polinomios y fracciones algebraicas",
+        "Notación de intervalos"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T17:22:21.427Z",
+      "contentHash": "639ac476d8ed2534",
+      "url": "ejercicios/1_BACH/dominio-de-una-funcion-logaritmica-con-argumento-rac_REVISADO.json"
+    },
+    {
+      "id": "estudio-de-una-funcion-exponencial-desplazada-17e64ae8",
+      "title": "Estudio de una función exponencial desplazada",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis matemático",
+      "subtopic": "Funciones exponenciales",
+      "exerciseType": "Estudio y representación gráfica",
+      "protocols": [
+        "B"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Identificar los elementos clave de una función exponencial desplazada.",
+        "Calcular analíticamente asíntotas horizontales mediante límites.",
+        "Determinar intersecciones con los ejes coordenados de forma exacta.",
+        "Trazar la gráfica de una función exponencial usando sus elementos analíticos."
+      ],
+      "prerequisites": [
+        "Propiedades de las potencias",
+        "Concepto de asíntota horizontal y cálculo de límites en el infinito",
+        "Sustitución y evaluación de funciones"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T17:18:11.414Z",
+      "contentHash": "6932a84987afb64f",
+      "url": "ejercicios/1_BACH/estudio-de-una-funcion-exponencial-desplazada_REVISADO.json"
+    },
+    {
+      "id": "simetria-entre-la-funcion-exponencial-y-logaritmica-9767c365",
+      "title": "Simetría entre la función exponencial y logarítmica",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Análisis matemático",
+      "subtopic": "Funciones exponenciales y logarítmicas",
+      "exerciseType": "Demostración de propiedades y simetría",
+      "protocols": [
+        "B"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 30,
+      "learningObjectives": [
+        "Comprender la relación de función inversa entre la exponencial y la logarítmica.",
+        "Vincular el intercambio de dominios y recorridos con la simetría geométrica.",
+        "Representar gráficamente la simetría respecto a la bisectriz del primer cuadrante."
+      ],
+      "prerequisites": [
+        "Concepto de función inversa",
+        "Cálculo de dominios y recorridos",
+        "Representación básica de exponenciales y logaritmos"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T17:19:56.038Z",
+      "contentHash": "482b227b84769759",
+      "url": "ejercicios/1_BACH/simetria-entre-la-funcion-exponencial-y-logaritmica_REVISADO.json"
+    },
+    {
       "id": "optimizacion-de-una-explotacion-agricola-sostenible-e587fce9",
       "title": "Optimización de una Explotación Agrícola Sostenible",
       "subject": "Matemáticas",
@@ -775,6 +1070,38 @@
       "reviewedAt": "2026-07-31T12:01:46.358Z",
       "contentHash": "48804fa983bcab77",
       "url": "ejercicios/2_BACH/optimizacion-de-una-explotacion-agricola-sostenible_REVISADO.json"
+    },
+    {
+      "id": "estudio-completo-de-una-funcion-cuadratica-7833ba0d",
+      "title": "Estudio completo de una función cuadrática",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "4_ESO",
+      "topic": "Análisis matemático",
+      "subtopic": "Funciones polinómicas",
+      "exerciseType": "Estudio y representación de función cuadrática",
+      "protocols": [
+        "B"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Determinar analíticamente los elementos notables de una parábola.",
+        "Vincular el análisis algebraico con la representación gráfica.",
+        "Deducir el recorrido a partir del vértice y el signo del coeficiente principal."
+      ],
+      "prerequisites": [
+        "Resolución de ecuaciones de segundo grado",
+        "Concepto de dominio e imagen de una función",
+        "Representación de puntos en el plano cartesiano"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T17:17:13.998Z",
+      "contentHash": "08e73f488ce7675a",
+      "url": "ejercicios/4_ESO/estudio-completo-de-una-funcion-cuadratica_REVISADO.json"
     },
     {
       "id": "extraccion-del-maximo-factor-comun-10ad8238",
@@ -937,6 +1264,38 @@
       "reviewedAt": "2026-07-31T15:54:23.632Z",
       "contentHash": "b191cfcc7550b94a",
       "url": "ejercicios/3_ESO/calculo-de-un-parametro-usando-el-teorema-del-resto_REVISADO.json"
+    },
+    {
+      "id": "factorizacion-completa-de-un-polinomio-de-grado-3-bd40575f",
+      "title": "Factorización completa de un polinomio de grado 3",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Polinomios y factorización",
+      "exerciseType": "Factorización de un polinomio de tercer grado",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Encontrar raíces enteras usando el teorema del resto y la regla de Ruffini",
+        "Resolver ecuaciones de segundo grado para hallar raíces racionales",
+        "Expresar la factorización completa de un polinomio identificando el coeficiente principal"
+      ],
+      "prerequisites": [
+        "Regla de Ruffini",
+        "Teorema del resto",
+        "Fórmula general para ecuaciones de segundo grado"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T19:24:19.027Z",
+      "contentHash": "326478bbe7ae9ee1",
+      "url": "ejercicios/3_ESO/factorizacion-completa-de-un-polinomio-de-grado-3_REVISADO.json"
     },
     {
       "id": "m-c-d-y-m-c-m-de-una-pareja-de-polinomios-71b6abc3",
@@ -1290,6 +1649,36 @@
       "url": "ejercicios/3_ESO/volumen-de-un-ortoedro-mediante-producto-de-polinomi_REVISADO.json"
     },
     {
+      "id": "ecuacion-explicita-de-la-recta-conocida-su-pendiente-d6bee20a",
+      "title": "Ecuación explícita de la recta conocida su pendiente y un punto",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Funciones y geometría analítica",
+      "subtopic": "Ecuación de la recta",
+      "exerciseType": "Obtención de la ecuación explícita a partir de la pendiente y un punto",
+      "protocols": [
+        "B"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Calcular la ordenada en el origen conocidos un punto y la pendiente de una recta",
+        "Escribir la ecuación explícita de la recta y = mx + n"
+      ],
+      "prerequisites": [
+        "Ecuación explícita de la recta y = mx + n",
+        "Sustitución de coordenadas en una ecuación algebraica"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T17:13:09.120Z",
+      "contentHash": "8a2e316962bce533",
+      "url": "ejercicios/3_ESO/ecuacion-explicita-de-la-recta-conocida-su-pendiente_REVISADO.json"
+    },
+    {
       "id": "dominio-y-recorrido-de-una-funcion-acotada-86ead2dd",
       "title": "Dominio y Recorrido de una Función Acotada",
       "subject": "Matemáticas",
@@ -1320,6 +1709,99 @@
       "reviewedAt": "2026-08-01T11:03:50.115Z",
       "contentHash": "0a47bcceddc39a80",
       "url": "ejercicios/3_ESO/dominio-y-recorrido-de-una-funcion-acotada_REVISADO.json"
+    },
+    {
+      "id": "estudio-de-la-funcion-de-proporcionalidad-inversa-f--e85a93c0",
+      "title": "Estudio de la función de proporcionalidad inversa f(x) = 12/x",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Funciones y gráficas",
+      "subtopic": "Función de proporcionalidad inversa",
+      "exerciseType": "Estudio del dominio y evaluación de imágenes",
+      "protocols": [
+        "B",
+        "H"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Justificar analíticamente las restricciones del dominio en funciones de proporcionalidad inversa",
+        "Calcular imágenes de la función f(x) = k/x para distintos valores del dominio"
+      ],
+      "prerequisites": [
+        "Concepto de función y dominio de definición",
+        "Operaciones básicas con números enteros y racionales"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T17:13:50.572Z",
+      "contentHash": "43a01f80d3a281a6",
+      "url": "ejercicios/3_ESO/estudio-de-la-funcion-de-proporcionalidad-inversa-f-_REVISADO.json"
+    },
+    {
+      "id": "estudio-de-la-funcion-lineal-y-3x-5-181c6c94",
+      "title": "Estudio de la función lineal y = -3x + 5",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Funciones y gráficas",
+      "subtopic": "Función afín y lineal",
+      "exerciseType": "Estudio de la pendiente y la ordenada en el origen",
+      "protocols": [
+        "B"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Identificar la pendiente y la ordenada en el origen a partir de la ecuación explícita de una recta",
+        "Determinar el carácter creciente o decreciente de una función lineal utilizando el signo de su pendiente"
+      ],
+      "prerequisites": [
+        "Ecuación explícita de la recta y = mx + n",
+        "Concepto intuitivo de crecimiento y decrecimiento de funciones"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T17:12:18.583Z",
+      "contentHash": "3ef77105f0c734b3",
+      "url": "ejercicios/3_ESO/estudio-de-la-funcion-lineal-y-3x-5_REVISADO.json"
+    },
+    {
+      "id": "modelizacion-del-crecimiento-de-una-planta-mediante--e6271ff2",
+      "title": "Modelización del crecimiento de una planta mediante una función lineal",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "3_ESO",
+      "topic": "Funciones y gráficas",
+      "subtopic": "Modelización lineal (Función afín)",
+      "exerciseType": "Modelización mediante una función lineal de la forma H(t) = mt + n",
+      "protocols": [
+        "B",
+        "H"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 10,
+      "learningObjectives": [
+        "Modelizar situaciones reales mediante funciones afines de la forma H(t) = mt + n",
+        "Interpretar la pendiente como la tasa de cambio constante y la ordenada en el origen como el valor inicial",
+        "Evaluar una función lineal para un valor específico de la variable independiente"
+      ],
+      "prerequisites": [
+        "Concepto de variable dependiente e independiente",
+        "Estructura general de la función afín y su representación en ejes cartesianos"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T17:15:22.198Z",
+      "contentHash": "470817f9ee9f2967",
+      "url": "ejercicios/3_ESO/modelizacion-del-crecimiento-de-una-planta-mediante-_REVISADO.json"
     },
     {
       "id": "ecuacion-explicita-de-la-recta-a-partir-de-dos-punto-f05b5c2f",
@@ -1448,6 +1930,71 @@
       "reviewedAt": "2026-08-01T09:57:55.654Z",
       "contentHash": "4c1c9df5f133b047",
       "url": "ejercicios/4_ESO/sistema-de-inecuaciones-lineales_REVISADO.json"
+    },
+    {
+      "id": "calculo-de-valores-de-la-funcion-logaritmica-f-x-log-4370292e",
+      "title": "Cálculo de valores de la función logarítmica f(x) = log₂x",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Funciones y gráficas",
+      "subtopic": "Función logarítmica y exponencial",
+      "exerciseType": "Cálculo de valores logarítmicos usando la definición como inversa de la exponencial",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Aplicar la definición del logaritmo como función inversa de la exponencial para calcular imágenes",
+        "Evaluar la función f(x) = log_2(x) para argumentos enteros y fraccionarios"
+      ],
+      "prerequisites": [
+        "Concepto de función inversa",
+        "Propiedades y cálculo de potencias de base 2 con exponentes enteros y negativos"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-01T17:14:30.489Z",
+      "contentHash": "0bfc65d763a8af9d",
+      "url": "ejercicios/4_ESO/calculo-de-valores-de-la-funcion-logaritmica-f-x-log_REVISADO.json"
+    },
+    {
+      "id": "depreciacion-lineal-de-un-equipo-informatico-4159487b",
+      "title": "Depreciación lineal de un equipo informático",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Funciones y Gráficas",
+      "subtopic": "Modelos lineales y aplicaciones",
+      "exerciseType": "Problema aplicado de depreciación",
+      "protocols": [
+        "B",
+        "I"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Modelizar matemáticamente una situación real mediante una función lineal.",
+        "Identificar el valor inicial como la ordenada en el origen y el ritmo de cambio como la pendiente.",
+        "Evaluar la función para un valor dado de la variable independiente.",
+        "Resolver una ecuación de primer grado para encontrar el tiempo asociado a un valor final."
+      ],
+      "prerequisites": [
+        "Concepto de función lineal y afin",
+        "Resolución de ecuaciones de primer grado",
+        "Evaluación de expresiones algebraicas"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T17:20:47.915Z",
+      "contentHash": "f26e1d8f2e013ea1",
+      "url": "ejercicios/4_ESO/depreciacion-lineal-de-un-equipo-informatico_REVISADO.json"
     }
   ]
 }
