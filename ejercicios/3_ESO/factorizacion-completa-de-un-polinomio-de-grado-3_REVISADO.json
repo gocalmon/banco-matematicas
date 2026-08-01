@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Polinomios y factorización",
+    "exerciseType": "Factorización de un polinomio de tercer grado",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Encontrar raíces enteras usando el teorema del resto y la regla de Ruffini",
+      "Resolver ecuaciones de segundo grado para hallar raíces racionales",
+      "Expresar la factorización completa de un polinomio identificando el coeficiente principal"
+    ],
+    "prerequisites": [
+      "Regla de Ruffini",
+      "Teorema del resto",
+      "Fórmula general para ecuaciones de segundo grado"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-07-31T16:07:08.131Z",
+    "id": "factorizacion-completa-de-un-polinomio-de-grado-3-bd40575f"
+  },
+  "title": "Factorización completa de un polinomio de grado 3",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver el ejercicio dos. Se nos pide factorizar completamente un polinomio de tercer grado cuyas raíces no son todas enteras. Usaremos el teorema del resto y la regla de Ruffini para encontrar la primera raíz y reduciremos el problema a una ecuación de segundo grado.",
+      "content": "<p><strong>Ejercicio 2:</strong> Factoriza de forma completa el siguiente polinomio de tercer grado cuyas raíces no son todas de carácter entero:</p><p>$$P(x) = 2x^3 - 3x^2 - 3x + 2$$</p>",
+      "hints": [
+        "Busca primero las posibles raíces enteras probando con los divisores del término independiente ($+1, -1, +2, -2$).",
+        "Una vez hallada una raíz, aplica la regla de Ruffini para obtener un cociente de segundo grado y calcula sus raíces restantes."
+      ]
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consiste en buscar una primera raíz entera probando los divisores del término independiente dos. Tras hallarla, dividiremos por Ruffini para obtener un polinomio cuadrático y aplicaremos la fórmula de segundo grado para encontrar el resto de raíces.",
+      "content": "<p><strong>¿Qué nos piden?</strong></p><ul><li>Descomponer el polinomio $P(x)$ en el producto de sus factores de primer grado.</li></ul><p><strong>Estrategia paso a paso:</strong></p><ol><li><strong>Teorema del resto:</strong> Probar los divisores de $2$ (que son $\\pm 1, \\pm 2$) hasta hallar un valor donde $P(x) = 0$.</li><li><strong>Regla de Ruffini:</strong> Dividir $P(x)$ entre $(x - r)$ para rebajar el grado a $2$.</li><li><strong>Ecuación de 2.º grado:</strong> Resolver el cociente $ax^2 + bx + c = 0$ para hallar las dos raíces restantes (incluyendo raíces fraccionarias).</li><li><strong>Reconstrucción:</strong> Escribir $P(x) = a(x - r_1)(x - r_2)(x - r_3)$ incluyendo el coeficiente principal $a = 2$.</li></ol>"
+    },
+    {
+      "title": "Paso 1: Primera raíz entera y regla de Ruffini",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Probamos los divisores del término independiente. Si evaluamos en equis igual a menos uno, el valor numérico da cero. Por tanto, equis igual a menos uno es una raíz y podemos aplicar Ruffini.",
+      "content": "<p><strong>Objetivo:</strong> Hallar la primera raíz y dividir por Ruffini.</p><p>Probamos con $x = -1$ en $P(x)$:</p><p>$$P(-1) = 2(-1)^3 - 3(-1)^2 - 3(-1) + 2$$</p><p>$$P(-1) = -2 - 3 + 3 + 2 = 0$$</p><p>Como $P(-1) = 0$, la primera raíz es $x = -1$ y el primer factor es $(x + 1)$.</p><p>Aplicamos la <strong>regla de Ruffini</strong> con los coeficientes $[2, -3, -3, 2]$ y la raíz $-1$:</p><ul><li>Bajamos el $2$.</li><li>$2 \\cdot (-1) = -2 \\implies -3 + (-2) = -5$.</li><li>$-5 \\cdot (-1) = 5 \\implies -3 + 5 = 2$.</li><li>$2 \\cdot (-1) = -2 \\implies 2 + (-2) = 0$ (resto).</li></ul><p>El cociente obtenido es $Q(x) = 2x^2 - 5x + 2$.</p>",
+      "theory": "<p><strong>Teorema del resto:</strong> Un número $r$ es raíz del polinomio $P(x)$ si y solo si $P(r) = 0$, lo que garantiza que el binomio $(x - r)$ es un divisor del polinomio.</p>"
+    },
+    {
+      "title": "Paso 2: Factorización del cociente cuadrático",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Igualamos a cero el cociente de segundo grado y aplicamos la fórmula general. Obtenemos dos raíces: una entera que vale dos y una fraccionaria que vale un medio.",
+      "content": "<p><strong>Objetivo:</strong> Hallar las raíces de $2x^2 - 5x + 2 = 0$.</p><p>Aplicamos la fórmula cuadrática con $a = 2$, $b = -5$ y $c = 2$:</p><p>$$x = \\frac{-(-5) \\pm \\sqrt{(-5)^2 - 4(2)(2)}}{2(2)} = \\frac{5 \\pm \\sqrt{25 - 16}}{4} = \\frac{5 \\pm 3}{4}$$</p><p>Obtenemos las dos soluciones:</p><ul><li>$x_2 = \\frac{5 + 3}{4} = \\frac{8}{4} = 2$</li><li>$x_3 = \\frac{5 - 3}{4} = \\frac{2}{4} = \\frac{1}{2}$</li></ul><p>Las raíces del polinomio son $x = -1$, $x = 2$ y $x = \\frac{1}{2}$.</p><p>Escribimos el polinomio factorizado respetando el coeficiente principal $a = 2$:</p><p>$$P(x) = 2(x + 1)(x - 2)\\left(x - \\frac{1}{2}\\right) = (x + 1)(x - 2)(2x - 1)$$</p>",
+      "warning": "<p><strong>¡Atención con el coeficiente principal!</strong> No olvides incluir el coeficiente $a = 2$ al escribir los factores. Multiplicar $2 \\cdot \\left(x - \\frac{1}{2}\\right)$ nos da directamente el factor entero $(2x - 1)$.</p>",
+      "checkpoint": {
+        "question": "¿Por qué la expresión (x + 1)(x - 2)(2x - 1) es equivalente a 2(x + 1)(x - 2)(x - 1/2)?",
+        "options": [
+          {
+            "text": "Porque al multiplicar el factor 2 por (x - 1/2) aplicando la propiedad distributiva se obtiene (2x - 1).",
+            "correct": true,
+            "feedback": "¡Exacto! 2 · x - 2 · (1/2) = 2x - 1, eliminando la fracción en los factores."
+          },
+          {
+            "text": "Porque las raíces racionales siempre se convierten en números enteros automáticamente.",
+            "correct": false,
+            "feedback": "Incorrecto. Las raíces siguen siendo las mismas; solo cambia la forma de expresar el factor."
+          },
+          {
+            "text": "Porque el coeficiente principal de un polinomio no influye en la factorización.",
+            "correct": false,
+            "feedback": "Falso. Si no incluyes el coeficiente principal, el término de mayor grado no coincidirá con el original."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comprobación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Vamos a verificar nuestro resultado evaluando el polinomio original y la forma factorizada en un valor arbitrario, por ejemplo equis igual a tres.",
+      "content": "<p><strong>Objetivo:</strong> Validar la factorización evaluando en $x = 3$.</p><p><strong>1. Evaluamos en el polinomio original:</strong></p><p>$$P(3) = 2(3)^3 - 3(3)^2 - 3(3) + 2 = 2(27) - 3(9) - 9 + 2 = 54 - 27 - 9 + 2 = 20$$</p><p><strong>2. Evaluamos en la forma factorizada:</strong></p><p>$$P(3) = (3 + 1)(3 - 2)(2 \\cdot 3 - 1) = (4)(1)(5) = 20$$</p><p><strong>Conclusión:</strong> En ambos casos obtenemos $20$, lo que confirma que la factorización es completamente correcta.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulemos los pasos clave: probar divisores enteras, aplicar Ruffini, resolver la ecuación cuadrática resultante y ajustar el coeficiente principal para obtener los factores finales.",
+      "content": "<ol><li><strong>Primera raíz:</strong> Probamos $x = -1 \\implies P(-1) = 0 \\implies$ factor $(x + 1)$.</li><li><strong>Ruffini:</strong> División $[2, -3, -3, 2] \\div (x + 1) = 2x^2 - 5x + 2$.</li><li><strong>Raíces restantes:</strong> Resolver $2x^2 - 5x + 2 = 0 \\implies x = 2$ y $x = \\frac{1}{2}$.</li><li><strong>Factorización final:</strong> $P(x) = (x + 1)(x - 2)(2x - 1)$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica exactamente el mismo procedimiento para factorizar este nuevo polinomio de tercer grado.",
+      "content": "<p>Factoriza de forma completa el siguiente polinomio de tercer grado:</p><p>$$Q(x) = 2x^3 + 3x^2 - 3x - 2$$</p><p><em>Haz los cálculos en tu cuaderno antes de consultar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>1. Primera raíz:</strong> Probamos $x = 1 \\implies Q(1) = 2(1)^3 + 3(1)^2 - 3(1) - 2 = 0$. Factor $(x - 1)$.</p><p><strong>2. Ruffini por $x = 1$:</strong> Cociente $2x^2 + 5x + 2$.</p><p><strong>3. Ecuación cuadrática:</strong> $2x^2 + 5x + 2 = 0 \\implies x = -2$ y $x = -\\frac{1}{2}$.</p><p><strong>Factorización final:</strong> $Q(x) = (x - 1)(x + 2)(2x + 1)$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos cómo la búsqueda de raíces polinómicas nos permite encontrar los puntos donde la gráfica de una función corta al eje horizontal.",
+      "content": "<p>Dada la función cúbica $f(x) = 2x^3 - 3x^2 - 3x + 2$, determina las coordenadas exactas de todos sus <strong>puntos de corte con el eje X</strong>.</p><p><em>Pista: Los puntos de corte con el eje X son aquellos puntos $(x, y)$ donde $y = f(x) = 0$. Usa las raíces que calculamos en el ejercicio.</em></p>",
+      "practiceAnswer": "<p>Los puntos de corte con el eje X se obtienen al resolver $f(x) = 0$.</p><p>Como las raíces del polinomio son $x = -1$, $x = 2$ y $x = \\frac{1}{2}$, los puntos de corte en el plano cartesiano son:</p><ul><li>$(-1, 0)$</li><li>$(2, 0)$</li><li>$\\left(\\frac{1}{2}, 0\\right)$</li></ul>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T19:24:19.027Z",
+    "updatedAt": "2026-08-01T19:24:19.027Z",
+    "contentHash": "326478bbe7ae9ee1",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

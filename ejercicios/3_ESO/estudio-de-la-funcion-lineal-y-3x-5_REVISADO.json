@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Funciones y gráficas",
+    "subtopic": "Función afín y lineal",
+    "exerciseType": "Estudio de la pendiente y la ordenada en el origen",
+    "protocols": [
+      "B"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Identificar la pendiente y la ordenada en el origen a partir de la ecuación explícita de una recta",
+      "Determinar el carácter creciente o decreciente de una función lineal utilizando el signo de su pendiente"
+    ],
+    "prerequisites": [
+      "Ecuación explícita de la recta y = mx + n",
+      "Concepto intuitivo de crecimiento y decrecimiento de funciones"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:11:57.207Z",
+    "id": "estudio-de-la-funcion-lineal-y-3x-5-181c6c94"
+  },
+  "title": "Estudio de la función lineal y = -3x + 5",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Nos presentan la función lineal y es igual a menos tres equis más cinco y nos piden identificar de forma directa su pendiente y su ordenada en el origen, así como explicar si la función es creciente o decreciente apoyándonos en el signo de la pendiente.",
+      "content": "<p>Dada la función lineal $y = -3x + 5$:</p><ul><li><strong>a)</strong> Indica de forma directa cuál es el valor de la pendiente ($m$) y la ordenada en el origen ($n$).</li><li><strong>b)</strong> Explica si la función es creciente o decreciente apoyándote en el signo de la pendiente.</li></ul>",
+      "hints": [
+        "Recuerda la forma explícita general de cualquier recta: $y = m x + n$."
+      ]
+    },
+    {
+      "title": "Plan de ataque y contexto",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver este problema, utilizaremos el modelo explícito de la recta. Identificaremos los coeficientes por comparación directa con la forma general y aplicaremos el criterio del signo de la pendiente para clasificar el crecimiento. Finalmente, elaboraremos la comprobación gráfica y numérica.",
+      "content": "<p><strong>Objetivo:</strong> Analizar la función afín $y = -3x + 5$ identificando sus parámetros analíticos $m$ y $n$, y determinar su monotonía global.</p><p><strong>Estrategia pedagógica:</strong></p><ol><li>Comparar término a término la expresión dada con la forma explícita $y = mx + n$ para determinar de forma directa los valores de $m$ y $n$.</li><li>Analizar el signo de $m$: si $m > 0$ la recta es creciente, si $m < 0$ es decreciente y si $m = 0$ es constante.</li><li>Construir la gráfica cartesiana y una tabla de puntos para verificar numéricamente el comportamiento.</li></ol><p><strong>Aplicación en el mundo real:</strong></p><p>Las funciones lineales con pendiente negativa modelan situaciones de consumo o desgaste constante, como la carga restante de una batería a lo largo del tiempo o el saldo disponible en una tarjeta de transporte tras cada viaje realizado.</p>"
+    },
+    {
+      "title": "Apartado a): Obteniendo m y n",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Comparamos la función y igual a menos tres equis más cinco con la forma general y igual a m por equis más n. El coeficiente que multiplica a equis es menos tres, así que la pendiente es menos tres. El término independiente es cinco, luego la ordenada en el origen es cinco.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Identificar los parámetros característicos $m$ y $n$ mediante comparación algebraica directa.</p><p><strong>Conexión con el plan:</strong> Aplicamos la estructura canónica de la ecuación explícita de una recta sobre la expresión facilitada en el enunciado.</p><p><strong>Desarrollo y justificación:</strong></p><p>La ecuación explícita de cualquier función afín adopta la forma general:</p>$$y = m x + n$$<p>Donde:</p><ul><li>$m$ es la <strong>pendiente</strong> (coeficiente numérico de $x$).</li><li>$n$ es la <strong>ordenada en el origen</strong> (término independiente).</li></ul><p>Al comparar la expresión del ejercicio $y = -3x + 5$ con la forma general $y = mx + n$:</p><ul><li>El coeficiente que multiplica a $x$ es $-3 \\implies \\mathbf{m = -3}$.</li><li>El término independiente libre es $+5 \\implies \\mathbf{n = 5}$.</li></ul><p><strong>Interpretación parcial:</strong> La ordenada en el origen $n = 5$ indica que la recta cruza el eje vertical $Y$ exactamente en el punto $(0, 5)$. La pendiente $m = -3$ refleja la variación vertical por cada incremento de una unidad horizontal.</p>",
+      "theory": "<p>En la forma explícita $y = m x + n$, el coeficiente $m$ determina la inclinación de la recta (pendiente) y $n$ fija el punto de corte con el eje de ordenadas en $(0, n)$.</p>",
+      "hints": [
+        "El coeficiente $m$ siempre es la cifra que multiplica a la variable independiente $x$, incluyendo su signo.",
+        "El parámetro $n$ no lleva variable $x$ asociada."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='25' y1='50' x2='375' y2='50'/><line x1='25' y1='100' x2='375' y2='100'/><line x1='25' y1='150' x2='375' y2='150'/><line x1='25' y1='200' x2='375' y2='200'/><line x1='25' y1='250' x2='375' y2='250'/><line x1='50' y1='25' x2='50' y2='275'/><line x1='100' y1='25' x2='100' y2='275'/><line x1='150' y1='25' x2='150' y2='275'/><line x1='200' y1='25' x2='200' y2='275'/><line x1='250' y1='25' x2='250' y2='275'/><line x1='300' y1='25' x2='300' y2='275'/><line x1='350' y1='25' x2='350' y2='275'/></g><line x1='25' y1='200' x2='375' y2='200' stroke='#fbbf24' stroke-width='2.5'/><line x1='150' y1='25' x2='150' y2='275' stroke='#fbbf24' stroke-width='2.5'/><text x='360' y='190' fill='#fbbf24' font-size='14' font-weight='bold'>X</text><text x='160' y='40' fill='#fbbf24' font-size='14' font-weight='bold'>Y</text><circle cx='150' cy='75' r='6' fill='#38bdf8'/><text x='165' y='80' fill='#38bdf8' font-size='14' font-weight='bold'>Corte con Y: (0, 5) → n = 5</text></svg>"
+    },
+    {
+      "title": "Apartado b): Estudio del signo y monotonía",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Evaluamos el signo de la pendiente obtenida. Dado que menos tres es un número negativo, menor que cero, la regla matemática nos dicta que la función es decreciente. A medida que avanzamos hacia la derecha en el eje equis, la recta desciende.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Determinar la monotonía (crecimiento o decrecimiento) de la función a partir de la pendiente $m$.</p><p><strong>Conexión con el paso anterior:</strong> Ya hemos calculado que $m = -3$. Ahora aplicaremos la propiedad geométrica del signo de la pendiente.</p><p><strong>Desarrollo y justificación:</strong></p><p>Evaluamos el signo de la pendiente $m = -3$:</p>$$m = -3 < 0$$<p>Por la teoría de funciones afines, la monotonía depende estrictamente del signo de $m$:</p><ul><li>Si $m > 0$, al aumentar $x$ aumenta $y \\implies$ función <strong>creciente</strong>.</li><li>Si $m < 0$, al aumentar $x$ disminuye $y \\implies$ función <strong>decreciente</strong>.</li><li>Si $m = 0$, $y$ permanece constante $\\implies$ función <strong>constante</strong>.</li></ul><p>Como en nuestra función $m = -3$ es un número estrictamente negativo ($m < 0$), la función $y = -3x + 5$ es <strong>decreciente</strong> en todo su dominio ($\\mathbb{R}$).</p><p><strong>Interpretación parcial:</strong> Gráficamente, al movernos de izquierda a derecha a lo largo del eje $X$, la recta desciende. Cada vez que $x$ avanza $+1$ unidad, el valor de $y$ baja $-3$ unidades.</p>",
+      "warning": "<p>¡Atención! La ordenada en el origen $n = 5$ es positiva, pero no influye en la monotonía de la recta. El crecimiento depende exclusivamente del signo de la pendiente $m$.</p>",
+      "hints": [
+        "Compara siempre la pendiente $m$ con el cero ($m > 0$ frente a $m < 0$)."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='25' y1='50' x2='375' y2='50'/><line x1='25' y1='100' x2='375' y2='100'/><line x1='25' y1='150' x2='375' y2='150'/><line x1='25' y1='200' x2='375' y2='200'/><line x1='25' y1='250' x2='375' y2='250'/><line x1='50' y1='25' x2='50' y2='275'/><line x1='100' y1='25' x2='100' y2='275'/><line x1='150' y1='25' x2='150' y2='275'/><line x1='200' y1='25' x2='200' y2='275'/><line x1='250' y1='25' x2='250' y2='275'/><line x1='300' y1='25' x2='300' y2='275'/><line x1='350' y1='25' x2='350' y2='275'/></g><line x1='25' y1='200' x2='375' y2='200' stroke='#fbbf24' stroke-width='2.5'/><line x1='150' y1='25' x2='150' y2='275' stroke='#fbbf24' stroke-width='2.5'/><line x1='125' y1='0' x2='210' y2='255' stroke='#f43f5e' stroke-width='3'/><circle cx='150' cy='75' r='5' fill='#38bdf8'/><circle cx='175' cy='150' r='5' fill='#38bdf8'/><line x1='150' y1='75' x2='175' y2='75' stroke='#38bdf8' stroke-width='2' stroke-dasharray='4'/><line x1='175' y1='75' x2='175' y2='150' stroke='#f43f5e' stroke-width='2' stroke-dasharray='4'/><text x='155' y='68' fill='#38bdf8' font-size='12'>+1 en X</text><text x='182' y='115' fill='#f43f5e' font-size='12'>-3 en Y</text><text x='220' y='120' fill='#f43f5e' font-size='14' font-weight='bold'>m = -3 &lt; 0 (Decreciente)</text></svg>"
+    },
+    {
+      "title": "Comprobación numérica y de cortes",
+      "layout": "split",
+      "phase": "comprobar",
+      "narration": "Para comprobar el resultado, elaboramos una tabla de valores y calculamos los puntos de corte con los ejes. Constatamos numéricamente que al hacer crecer equis de menos uno a dos, los valores de y disminuyen continuamente de ocho a menos uno.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Confirmar numéricamente el comportamiento decreciente y situar los puntos característicos sobre el plano.</p><p><strong>Conexión con el paso anterior:</strong> Verificamos experimentalmente la validez de la conclusión $m = -3 < 0$ evaluando la función en distintos valores de $x$.</p><p><strong>Desarrollo y justificación:</strong></p><p>Calculamos los puntos de corte con los ejes:</p><ul><li><strong>Corte con $Y$ ($x = 0$):</strong> $y = -3(0) + 5 = 5 \\implies (0, 5)$</li><li><strong>Corte con $X$ ($y = 0$):</strong> $0 = -3x + 5 \\implies 3x = 5 \\implies x = \\frac{5}{3} \\approx 1{,}67 \\implies \\left(\\frac{5}{3}, 0\\right)$</li></ul><p>Evaluamos una tabla de valores ordenada de menor a mayor en $x$:</p><ul><li>$x = -1 \\implies y = -3(-1) + 5 = 8 \\implies (-1, 8)$</li><li>$x = 0 \\implies y = -3(0) + 5 = 5 \\implies (0, 5)$</li><li>$x = 1 \\implies y = -3(1) + 5 = 2 \\implies (1, 2)$</li><li>$x = 2 \\implies y = -3(2) + 5 = -1 \\implies (2, -1)$</li></ul><p><strong>Interpretación del resultado:</strong> Como se observa, a medida que $x$ crece ($-1 < 0 < 1 < 2$), las imágenes $y$ disminuyen sistemáticamente ($8 > 5 > 2 > -1$), lo que verifica y confirma de forma incontrovertible que la función es decreciente.</p>",
+      "checkpoint": {
+        "question": "Si evaluamos la función en $x = 3$, ¿cuál es el valor de $y$ y qué nos indica sobre la recta?",
+        "options": [
+          {
+            "text": "$y = -4$, lo que confirma que la función sigue decreciendo al aumentar $x$.",
+            "correct": true,
+            "feedback": "¡Correcto! $y = -3(3) + 5 = -9 + 5 = -4$. Como $3 > 2$ y $-4 < -1$, el valor de $y$ continúa disminuyendo."
+          },
+          {
+            "text": "$y = 14$, lo que indica que la función pasa a ser creciente.",
+            "correct": false,
+            "feedback": "Incorrecto. Recuerda aplicar las reglas de signos al multiplicar: $-3 \\cdot 3 = -9$, y al sumar $5$ resulta $-4$, no $+14$."
+          },
+          {
+            "text": "$y = -4$, pero indica que la función es creciente porque $x = 3$ es mayor.",
+            "correct": false,
+            "feedback": "Incorrecto. Que $x$ aumente mientras que $y$ disminuya es precisamente la definición analítica de una función decreciente."
+          }
+        ]
+      },
+      "hints": [
+        "Sustituye valores concretos de $x$ y observa la tendencia de la variable $y$."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='25' y1='50' x2='375' y2='50'/><line x1='25' y1='100' x2='375' y2='100'/><line x1='25' y1='150' x2='375' y2='150'/><line x1='25' y1='200' x2='375' y2='200'/><line x1='25' y1='250' x2='375' y2='250'/><line x1='50' y1='25' x2='50' y2='275'/><line x1='100' y1='25' x2='100' y2='275'/><line x1='150' y1='25' x2='150' y2='275'/><line x1='200' y1='25' x2='200' y2='275'/><line x1='250' y1='25' x2='250' y2='275'/><line x1='300' y1='25' x2='300' y2='275'/><line x1='350' y1='25' x2='350' y2='275'/></g><line x1='25' y1='200' x2='375' y2='200' stroke='#fbbf24' stroke-width='2.5'/><line x1='150' y1='25' x2='150' y2='275' stroke='#fbbf24' stroke-width='2.5'/><line x1='125' y1='0' x2='210' y2='255' stroke='#f43f5e' stroke-width='3'/><circle cx='150' cy='75' r='5' fill='#38bdf8'/><circle cx='191.67' cy='200' r='5' fill='#a855f7'/><circle cx='175' cy='150' r='4' fill='#38bdf8'/><circle cx='200' cy='225' r='4' fill='#38bdf8'/><text x='160' y='70' fill='#38bdf8' font-size='12' font-weight='bold'>(0, 5)</text><text x='195' y='190' fill='#a855f7' font-size='12' font-weight='bold'>(5/3, 0)</text><text x='185' y='145' fill='#38bdf8' font-size='11'>(1, 2)</text><text x='210' y='230' fill='#38bdf8' font-size='11'>(2, -1)</text></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "En resumen, hemos comparado la ecuación dada con el modelo explícito de la recta para hallar la pendiente m igual a menos tres y la ordenada en el origen n igual a cinco. Luego, basándonos en el signo negativo de la pendiente, hemos determinado que la función es decreciente, verificándolo gráfica y numéricamente.",
+      "content": "<ol><li><strong>Modelo General:</strong> Se parte del formato explícito de la recta $y = m x + n$.</li><li><strong>Extracción de Coeficientes (Apartado a):</strong><ul><li>Pendiente: $m = -3$</li><li>Ordenada en el origen: $n = 5$ (punto de corte $(0, 5)$).</li></ul></li><li><strong>Estudio de Monotonía (Apartado b):</strong><ul><li>Se evalúa el signo de $m$: $m = -3 < 0$.</li><li>Al ser la pendiente negativa, la función es <strong>decreciente</strong> en todo su dominio $\\mathbb{R}$.</li></ul></li><li><strong>Comprobación Global:</strong> Verificación mediante la tabla de valores ordenada y la recta trazada en el plano cartesiano.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Prueba ahora a aplicar este mismo procedimiento con la función y igual a cuatro equis menos dos. Halla la pendiente y la ordenada en el origen y determina su monotonía.",
+      "content": "<p>Dada la función lineal $y = 4x - 2$:</p><ul><li><strong>a)</strong> Indica de forma directa el valor de la pendiente ($m$) y la ordenada en el origen ($n$).</li><li><strong>b)</strong> Explica si la función es creciente o decreciente apoyándote en el signo de la pendiente.</li></ul><p><em>Intenta resolver el ejercicio por tu cuenta antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>a)</strong> Pendiente $m = 4$, ordenada en el origen $n = -2$.<br><strong>b)</strong> Dado que la pendiente es positiva ($m = 4 > 0$), la función es <strong>creciente</strong> en todo su dominio $\\mathbb{R}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica este mismo concepto a una situación real: un depósito que pierde agua a ritmo constante. Expresa el volumen como función del tiempo e interpreta el significado de la pendiente y la ordenada en el origen.",
+      "content": "<p>Un depósito contiene inicialmente $50$ litros de agua y pierde $2$ litros cada minuto por un desaguadero.</p><ul><li><strong>a)</strong> Escribe la ecuación del volumen $V(t)$ en función del tiempo $t$ (en minutos) e identifica su pendiente $m$ y su ordenada en el origen $n$.</li><li><strong>b)</strong> Justifica, mediante el signo de la pendiente, cómo varía la cantidad de agua con el paso del tiempo.</li></ul><p><em>Intenta resolver el ejercicio por tu cuenta antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>a)</strong> Ecuación: $V(t) = -2t + 50$. Pendiente $m = -2$ L/min, ordenada en el origen $n = 50$ L.<br><strong>b)</strong> Puesto que la pendiente es negativa ($m = -2 < 0$), la función es <strong>decreciente</strong>, reflejando físicamente que el volumen de agua en el depósito disminuye a una tasa constante de $2$ litros por minuto.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:12:18.583Z",
+    "updatedAt": "2026-08-01T17:12:18.583Z",
+    "contentHash": "3ef77105f0c734b3",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Funciones y gráficas",
+    "subtopic": "Modelización lineal (Función afín)",
+    "exerciseType": "Modelización mediante una función lineal de la forma H(t) = mt + n",
+    "protocols": [
+      "B",
+      "H"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 10,
+    "learningObjectives": [
+      "Modelizar situaciones reales mediante funciones afines de la forma H(t) = mt + n",
+      "Interpretar la pendiente como la tasa de cambio constante y la ordenada en el origen como el valor inicial",
+      "Evaluar una función lineal para un valor específico de la variable independiente"
+    ],
+    "prerequisites": [
+      "Concepto de variable dependiente e independiente",
+      "Estructura general de la función afín y su representación en ejes cartesianos"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:15:01.696Z",
+    "id": "modelizacion-del-crecimiento-de-una-planta-mediante--e6271ff2"
+  },
+  "title": "Modelización del crecimiento de una planta mediante una función lineal",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Nos presentan un problema aplicado donde una planta exótica mide inicialmente cinco centímetros de altura al ser comprada y experimenta un crecimiento constante de tres centímetros por cada semana transcurrida. El apartado a nos pide escribir la ecuación lineal que modeliza la altura H de t en función del tiempo t en semanas. El apartado b nos pide calcular qué altura alcanzará la planta al cabo de seis semanas.",
+      "content": "<p><strong>Ejercicio 10: Problema aplicado elemental:</strong> Una planta exótica mide inicialmente $5\\text{ cm}$ de altura al ser comprada y experimenta un crecimiento constante de $3\\text{ cm}$ por cada semana transcurrida.</p><ul><li><strong>a)</strong> Escribe la ecuación lineal que modeliza la altura de la planta $H(t)$ en función del tiempo $t$ en semanas.</li><li><strong>b)</strong> ¿Qué altura alcanzará la planta al cabo de $6$ semanas?</li></ul>",
+      "hints": [
+        "Identifica cuál es el valor inicial cuando no ha pasado ninguna semana (t = 0) y cuántos centímetros aumenta la altura por cada unidad de tiempo que transcurre."
+      ]
+    },
+    {
+      "title": "Plan de ataque y contexto",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver el ejercicio, identificaremos primero las variables implicadas y relacionaremos la situación con la estructura de una función afín. La pendiente será la tasa constante de crecimiento semanal y la ordenada en el origen representará la altura inicial. Con la ecuación ya construida, calcularemos la imagen para un tiempo de seis semanas.",
+      "content": "<p><strong>Objetivo:</strong> Determinar la función afín que describe el crecimiento constante de la planta y calcular la altura alcanzada tras un periodo determinado.</p><p><strong>Estrategia pedagógica:</strong></p><ol><li><strong>Identificación de variables:</strong> Definir la variable independiente ($t$, tiempo en semanas) y la variable dependiente ($H(t)$, altura en centímetros).</li><li><strong>Estructura de la función afín:</strong> Reconocer la forma general $H(t) = m \\cdot t + n$, donde $m$ representa la tasa de crecimiento (pendiente) y $n$ la altura inicial (ordenada en el origen).</li><li><strong>Cálculo de la imagen (Apartado b):</strong> Sustituir $t = 6$ en la ecuación obtenida para hallar la altura correspondiente.</li></ol><p><strong>Aplicación en el mundo real:</strong></p><p>Los modelos lineales de variación constante se emplean habitualmente en biología para describir fases de crecimiento uniforme, en economía para calcular costes fijos y variables, y en física para representar movimientos rectilíneos uniformes.</p>"
+    },
+    {
+      "title": "Apartado a): Construcción de la ecuación lineal H(t)",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Construimos la ecuación lineal. Al comprar la planta, en el momento inicial te igual a cero, mide cinco centímetros, por lo que la ordenada en el origen es ene igual a cinco. Como crece tres centímetros cada semana, la pendiente es eme igual a tres. Sustituyendo en la fórmula afín, obtenemos hache de te igual a tres te más cinco.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Obtener la expresión algebraica $H(t)$ que relaciona el tiempo $t$ con la altura de la planta.</p><p><strong>Conexión con el plan:</strong> Identificamos la pendiente $m$ y la ordenada en el origen $n$ a partir de los datos del enunciado.</p><p><strong>Desarrollo y justificación:</strong></p><p>Una función afín tiene la forma general:</p>$$H(t) = m \\cdot t + n$$<ul><li><strong>Valor inicial ($n$):</strong> En el momento de la compra ($t = 0$), la altura es de $5\\text{ cm}$. Por tanto, la ordenada en el origen es $n = 5$.</li><li><strong>Tasa de cambio ($m$):</strong> La altura se incrementa de manera constante en $3\\text{ cm}$ por cada semana transcurrida. Esta razón de cambio es la pendiente $m = 3$.</li></ul><p>Sustituyendo ambos parámetros en la fórmula general:</p>$$H(t) = 3t + 5$$<p><strong>Conclusión del apartado a):</strong> La ecuación lineal que modeliza la altura de la planta en función del tiempo $t$ en semanas es $\\mathbf{H(t) = 3t + 5}$.</p>",
+      "theory": "<p>En toda función afín $y = mx + n$, $n$ representa el valor de $y$ cuando $x = 0$ (punto de corte con el eje vertical), mientras que $m$ mide la variación constante de $y$ por cada unidad que aumenta $x$.</p>",
+      "warning": "<p>Asegúrate de no confundir la variable independiente $t$ (semanas) con la tasa constante $m$ ($3\\text{ cm/semana}$). La constante multiplica siempre a la variable de tiempo.</p>",
+      "hints": [
+        "El término independiente siempre indica el estado inicial antes de que pase el tiempo."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='20' y1='50' x2='380' y2='50'/><line x1='20' y1='100' x2='380' y2='100'/><line x1='20' y1='150' x2='380' y2='150'/><line x1='20' y1='200' x2='380' y2='200'/><line x1='20' y1='250' x2='380' y2='250'/><line x1='60' y1='20' x2='60' y2='280'/><line x1='120' y1='20' x2='120' y2='280'/><line x1='180' y1='20' x2='180' y2='280'/><line x1='240' y1='20' x2='240' y2='280'/><line x1='300' y1='20' x2='300' y2='280'/><line x1='360' y1='20' x2='360' y2='280'/></g><line x1='20' y1='250' x2='380' y2='250' stroke='#fbbf24' stroke-width='2.5'/><line x1='60' y1='20' x2='60' y2='280' stroke='#fbbf24' stroke-width='2.5'/><path d='M 60 210 L 360 60' fill='none' stroke='#38bdf8' stroke-width='3'/><circle cx='60' cy='210' r='6' fill='#f43f5e'/><text x='75' y='215' fill='#f43f5e' font-size='13' font-weight='bold'>(0, 5) - Altura inicial</text><text x='370' y='240' fill='#fbbf24' font-size='13' font-weight='bold'>t (semanas)</text><text x='70' y='35' fill='#fbbf24' font-size='13' font-weight='bold'>H(t) (cm)</text><text x='230' y='110' fill='#38bdf8' font-size='13' font-weight='bold'>H(t) = 3t + 5</text></svg>"
+    },
+    {
+      "title": "Apartado b): Cálculo de la altura tras 6 semanas",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Calculamos la altura tras seis semanas. Evaluamos la función en te igual a seis. Multiplicamos tres por seis, lo que nos da dieciocho centímetros de crecimiento acumulado, y le sumamos los cinco centímetros iniciales. El resultado final es de veintitrés centímetros.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Calcular la altura $H(6)$ que alcanzará la planta transcurridas $6$ semanas.</p><p><strong>Conexión con el paso anterior:</strong> Empleamos el modelo $H(t) = 3t + 5$ obtenido en el apartado a).</p><p><strong>Desarrollo y justificación:</strong></p><p>Para conocer la altura al cabo de $6$ semanas, evaluamos la función en $t = 6$:</p>$$H(6) = 3 \\cdot (6) + 5$$<p>Calculamos el producto correspondiente al crecimiento acumulado en $6$ semanas:</p>$$3 \\cdot 6 = 18\\text{ cm}$$<p>Sumamos la altura inicial con la que fue comprada:</p>$$H(6) = 18 + 5 = \\mathbf{23\\text{ cm}}$$<p><strong>Conclusión del apartado b):</strong> Transcurridas $6$ semanas, la planta alcanzará una altura total de $\\mathbf{23\\text{ cm}}$.</p>",
+      "hints": [
+        "Asegúrate de aplicar la jerarquía de operaciones: realiza primero la multiplicación del crecimiento acumulado antes de sumar el valor inicial."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='20' y1='50' x2='380' y2='50'/><line x1='20' y1='100' x2='380' y2='100'/><line x1='20' y1='150' x2='380' y2='150'/><line x1='20' y1='200' x2='380' y2='200'/><line x1='20' y1='250' x2='380' y2='250'/><line x1='60' y1='20' x2='60' y2='280'/><line x1='110' y1='20' x2='110' y2='280'/><line x1='160' y1='20' x2='160' y2='280'/><line x1='210' y1='20' x2='210' y2='280'/><line x1='260' y1='20' x2='260' y2='280'/><line x1='310' y1='20' x2='310' y2='280'/><line x1='360' y1='20' x2='360' y2='280'/></g><line x1='20' y1='250' x2='380' y2='250' stroke='#fbbf24' stroke-width='2.5'/><line x1='60' y1='20' x2='60' y2='280' stroke='#fbbf24' stroke-width='2.5'/><path d='M 60 220 L 360 70' fill='none' stroke='#38bdf8' stroke-width='3'/><line x1='310' y1='250' x2='310' y2='95' stroke='#a855f7' stroke-width='1.5' stroke-dasharray='4'/><line x1='60' y1='95' x2='310' y2='95' stroke='#a855f7' stroke-width='1.5' stroke-dasharray='4'/><circle cx='310' cy='95' r='6' fill='#34d399'/><text x='250' y='85' fill='#34d399' font-size='13' font-weight='bold'>(6, 23 cm)</text><text x='300' y='270' fill='#a855f7' font-size='12' font-weight='bold'>t = 6</text></svg>"
+    },
+    {
+      "title": "Comprobación y análisis de la relación lineal",
+      "layout": "split",
+      "phase": "comprobar",
+      "narration": "Verificamos la solución comprobando la secuencia de altura semana a semana. Partiendo de cinco centímetros en la semana cero, sumamos tres centímetros progresivamente. En la semana seis alcanzamos exactamente veintitrés centímetros, confirmando el resultado.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Comprobar la coherencia numérica del modelo realizando un seguimiento semanal paso a paso.</p><p><strong>Conexión con el paso anterior:</strong> Validamos el resultado de $23\\text{ cm}$ obtenido mediante evaluación algebraica.</p><p><strong>Seguimiento iterativo semana a semana:</strong></p><ul><li>Semana $0$ ($t = 0$): $5\\text{ cm}$</li><li>Semana $1$ ($t = 1$): $5 + 3 = 8\\text{ cm}$</li><li>Semana $2$ ($t = 2$): $8 + 3 = 11\\text{ cm}$</li><li>Semana $3$ ($t = 3$): $11 + 3 = 14\\text{ cm}$</li><li>Semana $4$ ($t = 4$): $14 + 3 = 17\\text{ cm}$</li><li>Semana $5$ ($t = 5$): $17 + 3 = 20\\text{ cm}$</li><li>Semana $6$ ($t = 6$): $20 + 3 = \\mathbf{23\\text{ cm}} \\quad \\checkmark$</li></ul><p><strong>Interpretación del resultado:</strong> El cálculo directo mediante la fórmula $H(6) = 3(6) + 5 = 23$ coincide plenamente con la suma iterativa término a término, lo que ratifica la exactitud del modelo afín.</p>",
+      "checkpoint": {
+        "question": "Utilizando la misma ecuación $H(t) = 3t + 5$, ¿cuántas semanas $t$ habrán transcurrido cuando la planta alcance una altura de $35\\text{ cm}$?",
+        "options": [
+          {
+            "text": "$t = 10$ semanas, porque $35 - 5 = 30$ cm ganados, y $30 / 3 = 10$.",
+            "correct": true,
+            "feedback": "¡Correcto! Planteando $3t + 5 = 35$, restamos $5$ a ambos lados para obtener $3t = 30$, de donde $t = 10$ semanas."
+          },
+          {
+            "text": "$t = 11{,}6$ semanas, porque dividimos $35$ directamente entre $3$.",
+            "correct": false,
+            "feedback": "Incorrecto. Recuerda restar primero la altura inicial de $5\\text{ cm}$ antes de dividir entre la tasa semanal de $3\\text{ cm/semana}$."
+          },
+          {
+            "text": "$t = 12$ semanas, porque $3 \\cdot 12 = 36$ cm.",
+            "correct": false,
+            "feedback": "Incorrecto. Si $t = 12$, la altura sería $H(12) = 3(12) + 5 = 41\\text{ cm}$, superando los $35\\text{ cm}$ solicitados."
+          }
+        ]
+      },
+      "hints": [
+        "Para despejar el tiempo t en H(t) = 35, resta primero 5 y luego divide entre 3."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='20' y1='50' x2='380' y2='50'/><line x1='20' y1='100' x2='380' y2='100'/><line x1='20' y1='150' x2='380' y2='150'/><line x1='20' y1='200' x2='380' y2='200'/><line x1='20' y1='250' x2='380' y2='250'/><line x1='60' y1='20' x2='60' y2='280'/><line x1='120' y1='20' x2='120' y2='280'/><line x1='180' y1='20' x2='180' y2='280'/><line x1='240' y1='20' x2='240' y2='280'/><line x1='300' y1='20' x2='300' y2='280'/><line x1='360' y1='20' x2='360' y2='280'/></g><line x1='20' y1='250' x2='380' y2='250' stroke='#fbbf24' stroke-width='2.5'/><line x1='60' y1='20' x2='60' y2='280' stroke='#fbbf24' stroke-width='2.5'/><path d='M 60 220 L 360 70' fill='none' stroke='#38bdf8' stroke-width='3'/><rect x='60' y='220' width='250' height='30' fill='#f43f5e' opacity='0.2'/><text x='110' y='240' fill='#f43f5e' font-size='12' font-weight='bold'>Altura inicial: 5 cm</text><rect x='310' y='95' width='10' height='125' fill='#34d399' opacity='0.3'/><text x='325' y='160' fill='#34d399' font-size='12' font-weight='bold'>+18 cm en 6 sem</text></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "En resumen, para resolver este problema aplicado identificamos la altura inicial como ordenada en el origen y el crecimiento constante como pendiente. Formamos la función afín hache de te igual a tres te más cinco y calculamos la altura a las seis semanas sustituyendo te por seis, obteniendo veintitrés centímetros.",
+      "content": "<ol><li><strong>Identificación de parámetros del modelo afín $H(t) = m \\cdot t + n$:</strong><ul><li>Altura inicial ($t = 0$): $n = 5\\text{ cm}$.</li><li>Tasa constante de crecimiento: $m = 3\\text{ cm/semana}$.</li></ul></li><li><strong>Ecuación lineal (Apartado a):</strong>$$\\mathbf{H(t) = 3t + 5}$$</li><li><strong>Cálculo a las 6 semanas (Apartado b):</strong>$$H(6) = 3 \\cdot (6) + 5 = 18 + 5 = \\mathbf{23\\text{ cm}}$$</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Intenta resolver por ti mismo este ejercicio de estructura similar con un bambú que mide inicialmente ocho centímetros y crece a razón de cuatro centímetros por semana.",
+      "content": "<p>Una variedad de bambú mide originalmente $8\\text{ cm}$ al ser plantada y experimenta un crecimiento constante de $4\\text{ cm}$ por cada semana transcurrida.</p><ul><li><strong>a)</strong> Escribe la ecuación lineal que modeliza la altura del bambú $H(t)$ en función del tiempo $t$ en semanas.</li><li><strong>b)</strong> ¿Qué altura alcanzará el bambú al cabo de $5$ semanas?</li></ul><p><em>Intenta resolver el ejercicio por tu cuenta antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>a)</strong> La ordenada en el origen es $n = 8$ y la pendiente es $m = 4$. La ecuación lineal es $\\mathbf{H(t) = 4t + 8}$.<br><strong>b)</strong> Evaluamos para $t = 5$: $H(5) = 4(5) + 8 = 20 + 8 = \\mathbf{28\\text{ cm}}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica ahora la misma lógica de modelo afín a un contexto económico cotidiano: el cálculo de la tarifa de un taxi con bajada de bandera y precio por kilómetro.",
+      "content": "<p>Un servicio de taxi cobra una tarifa fija inicial (bajada de bandera) de $3{,}50\\text{ €}$ al subir al vehículo, más un importe constante de $1{,}20\\text{ €}$ por cada kilómetro recorrido.</p><ul><li><strong>a)</strong> Escribe la ecuación lineal que determina el coste del trayecto $C(d)$ en función de la distancia $d$ en kilómetros.</li><li><strong>b)</strong> ¿Cuánto costará un viaje de $10\\text{ km}$?</li></ul><p><em>Intenta resolver el ejercicio por tu cuenta antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>a)</strong> El coste fijo es $n = 3{,}50$ y el coste por kilómetro es $m = 1{,}20$. La ecuación lineal es $\\mathbf{C(d) = 1{,}20d + 3{,}50}$.<br><strong>b)</strong> Evaluamos para $d = 10\\text{ km}$: $C(10) = 1{,}20(10) + 3{,}50 = 12 + 3{,}50 = \\mathbf{15{,}50\\text{ €}}$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:15:22.198Z",
+    "updatedAt": "2026-08-01T17:15:22.198Z",
+    "contentHash": "470817f9ee9f2967",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

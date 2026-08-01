@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Funciones y geometría analítica",
+    "subtopic": "Ecuación de la recta",
+    "exerciseType": "Obtención de la ecuación explícita a partir de la pendiente y un punto",
+    "protocols": [
+      "B"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Calcular la ordenada en el origen conocidos un punto y la pendiente de una recta",
+      "Escribir la ecuación explícita de la recta y = mx + n"
+    ],
+    "prerequisites": [
+      "Ecuación explícita de la recta y = mx + n",
+      "Sustitución de coordenadas en una ecuación algebraica"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:12:55.510Z",
+    "id": "ecuacion-explicita-de-la-recta-conocida-su-pendiente-d6bee20a"
+  },
+  "title": "Ecuación explícita de la recta conocida su pendiente y un punto",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Se nos pide determinar de forma razonada la ecuación explícita de la recta, que tiene como forma general y igual a emes por equis más ene, sabiendo que su pendiente es menos dos y que pasa de manera exacta por el punto A con coordenadas uno, cuatro.",
+      "content": "<p><strong>Ejercicio 4:</strong> Determina de forma razonada la ecuación explícita ($y = m x + n$) de la recta que tiene una pendiente de $m = -2$ y que pasa de manera exacta por el punto $A(1, 4)$.</p>",
+      "hints": [
+        "Un punto $P(x, y)$ pertenece a una recta si al sustituir sus coordenadas en la ecuación $y = mx + n$, la igualdad se cumple."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para hallar la ecuación de la recta, utilizaremos la forma explícita y igual a emes por equis más ene. Como ya conocemos la pendiente emes que vale menos dos, sustituiremos este valor en la ecuación. A continuación, utilizaremos el punto A para sustituir equis por uno e y por cuatro, lo que nos permitirá despejar la ordenada en el origen ene. Finalmente representaremos y comprobaremos el resultado.",
+      "content": "<p><strong>Objetivo:</strong> Obtener la ecuación explícita $y = mx + n$ determinando el valor del parámetro desconocido $n$.</p><p><strong>Estrategia pedagógica:</strong></p><ol><li>Sustituir el valor conocido de la pendiente $m = -2$ en la forma explícita: $y = -2x + n$.</li><li>Usar la condición de pertenencia del punto $A(1, 4)$: al pertenecer a la recta, sus coordenadas deben satisfacer la ecuación. Sustituimos $x = 1$ e $y = 4$.</li><li>Despejar algebraicamente la ordenada en el origen $n$.</li><li>Escribir la ecuación explícita completa y representarla gráficamente para validar que la recta pasa por $A(1, 4)$ y tiene pendiente $-2$.</li></ol><p><strong>Aplicación en el mundo real:</strong></p><p>Este cálculo permite predecir el comportamiento de variables con relación lineal cuando conocemos la tasa de cambio constante (pendiente) y una medida exacta en un momento determinado (punto de referencia), como la velocidad de descompresión de un submarino o la tasa de enfriamiento de un líquido.</p>"
+    },
+    {
+      "title": "Paso 1: Sustitución de la pendiente y condición del punto",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Primero sustituimos la pendiente emes igual a menos dos en la ecuación explícita. Esto nos da y igual a menos dos equis más ene. A continuación, imponemos que la recta pase por el punto A uno cuatro sustituyendo equis por uno e y por cuatro.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Incorporar el dato de la pendiente y plantear la ecuación con la condición del punto $A(1, 4)$.</p><p><strong>Conexión con el plan:</strong> Partimos de la ecuación explícita general $y = mx + n$ y aplicamos los datos del enunciado.</p><p><strong>Desarrollo y justificación:</strong></p><p>Dado que la pendiente es $m = -2$, la ecuación de la familia de rectas con esa inclinación es:</p>$$y = -2x + n$$<p>Para hallar el valor específico de $n$, exigimos que la recta pase por el punto $A(1, 4)$. Esto significa que cuando $x = 1$, la variable $y$ debe tomar el valor $4$:</p>$$4 = -2(1) + n$$<p><strong>Interpretación parcial:</strong> Hemos transformado la condición geométrica de pertenencia del punto en una ecuación de primer grado con una sola incógnita: la ordenada en el origen $n$.</p>",
+      "theory": "<p>Un punto $P(x_0, y_0)$ pertenece a la recta $y = mx + n$ si y solo si sus coordenadas satisfacen la identidad $y_0 = m x_0 + n$.</p>",
+      "hints": [
+        "Recuerda que la primera coordenada del punto es la $x$ y la segunda es la $y$."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='30' y1='50' x2='370' y2='50'/><line x1='30' y1='80' x2='370' y2='80'/><line x1='30' y1='110' x2='370' y2='110'/><line x1='30' y1='140' x2='370' y2='140'/><line x1='30' y1='170' x2='370' y2='170'/><line x1='30' y1='200' x2='370' y2='200'/><line x1='30' y1='230' x2='370' y2='230'/><line x1='30' y1='260' x2='370' y2='260'/><line x1='60' y1='20' x2='60' y2='280'/><line x1='90' y1='20' x2='90' y2='280'/><line x1='120' y1='20' x2='120' y2='280'/><line x1='150' y1='20' x2='150' y2='280'/><line x1='180' y1='20' x2='180' y2='280'/><line x1='210' y1='20' x2='210' y2='280'/><line x1='240' y1='20' x2='240' y2='280'/><line x1='270' y1='20' x2='270' y2='280'/><line x1='300' y1='20' x2='300' y2='280'/><line x1='330' y1='20' x2='330' y2='280'/><line x1='360' y1='20' x2='360' y2='280'/></g><line x1='30' y1='200' x2='370' y2='200' stroke='#fbbf24' stroke-width='2.5'/><line x1='150' y1='20' x2='150' y2='280' stroke='#fbbf24' stroke-width='2.5'/><text x='355' y='190' fill='#fbbf24' font-size='14' font-weight='bold'>X</text><text x='160' y='35' fill='#fbbf24' font-size='14' font-weight='bold'>Y</text><circle cx='180' cy='80' r='6' fill='#38bdf8'/><text x='192' y='75' fill='#38bdf8' font-size='14' font-weight='bold'>A(1, 4)</text><text x='200' y='140' fill='#f43f5e' font-size='14' font-weight='bold'>m = -2</text></svg>"
+    },
+    {
+      "title": "Paso 2: Cálculo de la ordenada en el origen n",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Resolvemos la ecuación cuatro igual a menos dos por uno más ene. Menos dos por uno es menos dos. Al pasar el menos dos sumando al primer miembro, obtenemos cuatro más dos igual a ene, de donde ene vale seis. Por tanto, la ecuación explícita de la recta es y igual a menos dos equis más seis.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Despejar la incógnita $n$ y escribir la ecuación explícita definitiva.</p><p><strong>Conexión con el paso anterior:</strong> Partimos de la ecuación numérica planteada $4 = -2(1) + n$.</p><p><strong>Desarrollo y justificación:</strong></p><p>Operamos en el segundo miembro:</p>$$4 = -2 + n$$<p>Despejamos $n$ sumando $+2$ en ambos miembros de la igualdad:</p>$$4 + 2 = n \\implies n = 6$$<p>Sustituyendo $m = -2$ y $n = 6$ en la forma explícita $y = mx + n$, la ecuación buscada es:</p>$$\\mathbf{y = -2x + 6}$$<p><strong>Interpretación parcial:</strong> La ordenada en el origen $n = 6$ nos indica que la recta corta al eje $Y$ en el punto $(0, 6)$. Por su parte, la pendiente $m = -2$ confirma que por cada unidad que avanzamos en $x$, la recta desciende $2$ unidades en $y$.</p>",
+      "warning": "<p>¡Cuidado al despejar! El término $-2$ está restando en el segundo miembro, por lo que pasa sumando al primer miembro ($4 + 2 = 6$), no dividiendo ni restando.</p>",
+      "hints": [
+        "Verifica siempre los signos al trasponer términos de un lado a otro del signo igual."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='30' y1='50' x2='370' y2='50'/><line x1='30' y1='80' x2='370' y2='80'/><line x1='30' y1='110' x2='370' y2='110'/><line x1='30' y1='140' x2='370' y2='140'/><line x1='30' y1='170' x2='370' y2='170'/><line x1='30' y1='200' x2='370' y2='200'/><line x1='30' y1='230' x2='370' y2='230'/><line x1='30' y1='260' x2='370' y2='260'/><line x1='60' y1='20' x2='60' y2='280'/><line x1='90' y1='20' x2='90' y2='280'/><line x1='120' y1='20' x2='120' y2='280'/><line x1='150' y1='20' x2='150' y2='280'/><line x1='180' y1='20' x2='180' y2='280'/><line x1='210' y1='20' x2='210' y2='280'/><line x1='240' y1='20' x2='240' y2='280'/><line x1='270' y1='20' x2='270' y2='280'/><line x1='300' y1='20' x2='300' y2='280'/><line x1='330' y1='20' x2='330' y2='280'/><line x1='360' y1='20' x2='360' y2='280'/></g><line x1='30' y1='200' x2='370' y2='200' stroke='#fbbf24' stroke-width='2.5'/><line x1='150' y1='20' x2='150' y2='280' stroke='#fbbf24' stroke-width='2.5'/><line x1='135' y1='10' x2='270' y2='280' stroke='#38bdf8' stroke-width='3'/><circle cx='180' cy='80' r='5' fill='#f43f5e'/><circle cx='150' cy='20' r='5' fill='#a855f7'/><text x='192' y='75' fill='#f43f5e' font-size='14' font-weight='bold'>A(1, 4)</text><text x='162' y='35' fill='#a855f7' font-size='14' font-weight='bold'>n = 6 → (0, 6)</text><text x='250' y='210' fill='#38bdf8' font-size='14' font-weight='bold'>y = -2x + 6</text></svg>"
+    },
+    {
+      "title": "Comprobación analítica y gráfica",
+      "layout": "split",
+      "phase": "comprobar",
+      "narration": "Comprobamos el resultado sustituyendo las coordenadas de A en la ecuación encontrada. Vemos que menos dos por uno más seis da cuatro, cumpliéndose la igualdad. Además, la pendiente coincide con el valor menos dos dado en el enunciado.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Verificar que la ecuación $y = -2x + 6$ cumple de forma simultánea ambas condiciones del problema.</p><p><strong>Conexión con el paso anterior:</strong> Comprobamos la solución obtenida frente a los datos originales.</p><p><strong>Desarrollo y justificación:</strong></p><p>1. <strong>Verificación del punto $A(1, 4)$:</strong> Sustituimos $x = 1$ en $y = -2x + 6$:</p>$$y = -2(1) + 6 = -2 + 6 = 4$$<p>Obtenemos exactamente $y = 4$, luego el punto $A(1, 4)$ pertenece a la recta. $\\checkmark$</p><p>2. <strong>Verificación del corte con el eje $X$ ($y = 0$):</strong></p>$$0 = -2x + 6 \\implies 2x = 6 \\implies x = 3 \\implies (3, 0)$$<p>3. <strong>Verificación del corte con el eje $Y$ ($x = 0$):</strong></p>$$y = -2(0) + 6 = 6 \\implies (0, 6)$$<p><strong>Interpretación del resultado:</strong> Tanto analítica como gráficamente se verifica que la recta pasa exactamente por $A(1, 4)$, corta a los ejes en $(0, 6)$ y $(3, 0)$, y posee una pendiente negativa constante $m = -2$.</p>",
+      "checkpoint": {
+        "question": "Si una recta tiene pendiente $m = 3$ y pasa por el punto $B(2, 5)$, ¿cuál es su ordenada en el origen $n$?",
+        "options": [
+          {
+            "text": "$n = -1$, porque $5 = 3(2) + n \\implies 5 = 6 + n \\implies n = 5 - 6 = -1$.",
+            "correct": true,
+            "feedback": "¡Correcto! Al sustituir $x = 2$ e $y = 5$ obtenemos $5 = 6 + n$, de donde $n = -1$."
+          },
+          {
+            "text": "$n = 11$, porque $n = 5 + 6 = 11$.",
+            "correct": false,
+            "feedback": "Error conceptual. Al trasponer el $+6$ al otro miembro debe restar, no sumar: $5 - 6 = -1$."
+          },
+          {
+            "text": "$n = 1$, porque se dividen $5$ entre $3$ y se le resta $2$.",
+            "correct": false,
+            "feedback": "Incorrecto. Se debe sustituir en la forma $y = mx + n$ y despejar $n$ mediante suma o resta."
+          }
+        ]
+      },
+      "hints": [
+        "Sustituye siempre $x$ e $y$ por las coordenadas del punto para comprobar."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='30' y1='50' x2='370' y2='50'/><line x1='30' y1='80' x2='370' y2='80'/><line x1='30' y1='110' x2='370' y2='110'/><line x1='30' y1='140' x2='370' y2='140'/><line x1='30' y1='170' x2='370' y2='170'/><line x1='30' y1='200' x2='370' y2='200'/><line x1='30' y1='230' x2='370' y2='230'/><line x1='30' y1='260' x2='370' y2='260'/><line x1='60' y1='20' x2='60' y2='280'/><line x1='90' y1='20' x2='90' y2='280'/><line x1='120' y1='20' x2='120' y2='280'/><line x1='150' y1='20' x2='150' y2='280'/><line x1='180' y1='20' x2='180' y2='280'/><line x1='210' y1='20' x2='210' y2='280'/><line x1='240' y1='20' x2='240' y2='280'/><line x1='270' y1='20' x2='270' y2='280'/><line x1='300' y1='20' x2='300' y2='280'/><line x1='330' y1='20' x2='330' y2='280'/><line x1='360' y1='20' x2='360' y2='280'/></g><line x1='30' y1='200' x2='370' y2='200' stroke='#fbbf24' stroke-width='2.5'/><line x1='150' y1='20' x2='150' y2='280' stroke='#fbbf24' stroke-width='2.5'/><line x1='135' y1='10' x2='270' y2='280' stroke='#38bdf8' stroke-width='3'/><circle cx='180' cy='80' r='5' fill='#f43f5e'/><circle cx='150' cy='20' r='5' fill='#a855f7'/><circle cx='240' cy='200' r='5' fill='#34d399'/><text x='192' y='75' fill='#f43f5e' font-size='12' font-weight='bold'>A(1, 4)</text><text x='162' y='32' fill='#a855f7' font-size='12' font-weight='bold'>(0, 6)</text><text x='245' y='190' fill='#34d399' font-size='12' font-weight='bold'>(3, 0)</text><text x='250' y='240' fill='#38bdf8' font-size='14' font-weight='bold'>y = -2x + 6</text></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "En resumen, para hallar la ecuación explícita de una recta conocidos su pendiente y un punto, partimos de la ecuación explícita y igual a emes por equis más ene. Sustituimos la pendiente dada, imponemos las coordenadas del punto para despejar la ordenada en el origen ene, y finalmente escribimos la ecuación completa.",
+      "content": "<ol><li><strong>Partir de la forma explícita:</strong> $y = m x + n$.</li><li><strong>Sustituir la pendiente conocida:</strong> Con $m = -2 \\implies y = -2x + n$.</li><li><strong>Imponer la pertenencia del punto $A(x_0, y_0)$:</strong> Sustituir $x = 1$ e $y = 4$ en la ecuación: $4 = -2(1) + n$.</li><li><strong>Despejar la ordenada en el origen $n$:</strong> $4 = -2 + n \\implies n = 6$.</li><li><strong>Escribir la ecuación final:</strong> $\\mathbf{y = -2x + 6}$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica este mismo procedimiento para hallar la ecuación explícita de una recta que tiene pendiente tres y pasa por el punto dos, cinco.",
+      "content": "<p>Determina de forma razonada la ecuación explícita ($y = m x + n$) de la recta que tiene una pendiente de $m = 3$ y que pasa de manera exacta por el punto $P(2, 5)$.</p><p><em>Intenta resolver el ejercicio por tu cuenta antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "<p>Sustituyendo $m = 3$ y el punto $P(2, 5)$ en $y = mx + n$:<br>$5 = 3(2) + n \\implies 5 = 6 + n \\implies n = -1$.<br>La ecuación explícita es <strong>$y = 3x - 1$</strong>.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica esta idea a una situación económica: la tarifa de una empresa de mensajería cobra un coste fijo de salida más un precio por kilómetro recorrido. Averigua el coste fijo sabiendo el precio por kilómetro y el coste total de un trayecto específico.",
+      "content": "<p>Una empresa de mensajería cobra una tarifa lineal por sus envíos. El coste aumenta a razón de $0{,}50$ € por cada kilómetro recorrido. Se sabe que un envío de $10$ kilómetros cuesta un total de $8{,}00$ €.</p><ul><li><strong>a)</strong> Expresa la función del coste $C(x)$ en euros en función de la distancia $x$ en kilómetros, identificando la pendiente $m$ y calculando la ordenada en el origen $n$ (coste fijo de salida).</li><li><strong>b)</strong> Indica la ecuación explícita de la tarifa.</li></ul><p><em>Intenta resolver el ejercicio por tu cuenta antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>a)</strong> Pendiente $m = 0{,}50$ €/km. Punto de referencia $(x, C) = (10, 8)$.<br>Sustituyendo en $C(x) = mx + n \\implies 8 = 0{,}50(10) + n \\implies 8 = 5 + n \\implies n = 3$.<br>La ordenada en el origen $n = 3$ € representa el coste fijo inicial.<br><strong>b)</strong> Ecuación explícita: <strong>$C(x) = 0{,}50x + 3$</strong> (o $y = 0{,}5x + 3$).</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:13:09.120Z",
+    "updatedAt": "2026-08-01T17:13:09.120Z",
+    "contentHash": "8a2e316962bce533",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

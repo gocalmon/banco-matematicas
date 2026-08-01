@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "3_ESO",
+    "topic": "Funciones y gráficas",
+    "subtopic": "Función de proporcionalidad inversa",
+    "exerciseType": "Estudio del dominio y evaluación de imágenes",
+    "protocols": [
+      "B",
+      "H"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Justificar analíticamente las restricciones del dominio en funciones de proporcionalidad inversa",
+      "Calcular imágenes de la función f(x) = k/x para distintos valores del dominio"
+    ],
+    "prerequisites": [
+      "Concepto de función y dominio de definición",
+      "Operaciones básicas con números enteros y racionales"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:13:35.695Z",
+    "id": "estudio-de-la-funcion-de-proporcionalidad-inversa-f--e85a93c0"
+  },
+  "title": "Estudio de la función de proporcionalidad inversa f(x) = 12/x",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Nos presentan la función de proporcionalidad inversa efe de equis igual a doce partido por equis. El apartado a nos pide justificar por qué equis igual a cero no pertenece al dominio de definición de la función. El apartado b nos pide calcular los valores de efe de dos, efe de menos tres y efe de seis.",
+      "content": "<p><strong>Ejercicio 6:</strong> Para la función de proporcionalidad inversa $f(x) = \\frac{12}{x}$:</p><ul><li><strong>a)</strong> ¿Por qué el valor $x = 0$ no pertenece al dominio de definición de la función?</li><li><strong>b)</strong> Calcula el valor de $f(2)$, $f(-3)$ y $f(6)$.</li></ul>",
+      "hints": [
+        "Recuerda qué operación matemática no está permitida en el conjunto de los números reales cuando la variable independiente aparece en el denominador."
+      ]
+    },
+    {
+      "title": "Plan de ataque y contexto",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver el ejercicio, analizaremos la condición de existencia del dominio estudiando la imposibilidad de dividir entre cero en los números reales. Después, calcularemos las imágenes sustituyendo los valores indicados en la variable equis. Por último, comprobaremos que el producto de equis por su imagen se mantiene constante en todos los pares ordenados.",
+      "content": "<p><strong>Objetivo:</strong> Determinar la restricción del dominio de la función racional $f(x) = \\frac{12}{x}$ y obtener las imágenes de tres puntos específicos.</p><p><strong>Estrategia pedagógica:</strong></p><ol><li><strong>Estudio del dominio (Apartado a):</strong> Analizar qué ocurre al sustituir $x = 0$ en el denominador y fundamentar la imposibilidad de la división por cero en $\\mathbb{R}$.</li><li><strong>Cálculo de imágenes (Apartado b):</strong> Sustituir ordenadamente $x = 2$, $x = -3$ y $x = 6$ en la expresión $f(x) = \\frac{12}{x}$.</li><li><strong>Verificación y análisis visual:</strong> Comprobar que todos los puntos pertenecen a la curva (hipérbola) y que se satisface la constante de proporcionalidad $x \\cdot f(x) = 12$.</li></ol><p><strong>Aplicación en el mundo real:</strong></p><p>La proporcionalidad inversa modela relaciones donde al duplicar una magnitud, la otra se reduce a la mitad. Por ejemplo, si se reparten $12$ euros entre $x$ personas, cada persona recibe $\\frac{12}{x}$ euros. Si hay $0$ personas, el reparto no se puede realizar, lo que ilustra intuitivamente por qué $x = 0$ no pertenece al dominio.</p>"
+    },
+    {
+      "title": "Apartado a): Restricción del dominio en x = 0",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Analizamos la condición de existencia. Si sustituimos equis por cero en la fórmula de la función, obtenemos doce dividido por cero. La división por cero no está definida en el conjunto de los números reales, por lo que equis igual a cero no tiene imagen y se excluye del dominio.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Demostrar analíticamente por qué $x = 0$ queda fuera del dominio de la función $f(x) = \\frac{12}{x}$.</p><p><strong>Conexión con el plan:</strong> Analizamos la estructura de la función racional para identificar el valor prohibido de la variable independiente.</p><p><strong>Desarrollo y justificación:</strong></p><p>El <em>dominio de definición</em> es el conjunto de valores de $x$ para los cuales la expresión $f(x)$ da como resultado un número real válido.</p><p>Al evaluar la función en $x = 0$:</p>$$f(0) = \\frac{12}{0}$$<p>En los números reales ($\\mathbb{R}$), la <strong>división entre cero no está definida</strong>. No existe ningún número $c \\in \\mathbb{R}$ tal que $c \\cdot 0 = 12$, puesto que cualquier número multiplicado por cero es igual a cero ($c \\cdot 0 = 0 \\neq 12$).</p><p>Por tanto, $f(0)$ no existe como número real. El dominio de la función es todos los reales excepto el cero:</p>$$\\text{Dom}(f) = \\mathbb{R} \\setminus \\{0\\}$$<p><strong>Conclusión del apartado a):</strong> El valor $x = 0$ no pertenece al dominio porque anula el denominador y produce una operación matemáticamente imposible en $\\mathbb{R}$.</p>",
+      "theory": "<p>Dada una función racional $f(x) = \\frac{P(x)}{Q(x)}$, su dominio excluye las raíces del denominador: $\\text{Dom}(f) = \\{x \\in \\mathbb{R} \\mid Q(x) \\neq 0\\}$. En la gráfica, estos puntos generan asíntotas verticales.</p>",
+      "warning": "<p>No confundas $\\frac{0}{12} = 0$ (operación válida cuyo resultado es cero) con $\\frac{12}{0}$ (operación no definida en números reales).</p>",
+      "hints": [
+        "Para averiguar el dominio de una fracción algebraica, busca siempre los valores que hacen cero el denominador."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='20' y1='50' x2='380' y2='50'/><line x1='20' y1='100' x2='380' y2='100'/><line x1='20' y1='150' x2='380' y2='150'/><line x1='20' y1='200' x2='380' y2='200'/><line x1='20' y1='250' x2='380' y2='250'/><line x1='50' y1='20' x2='50' y2='280'/><line x1='100' y1='20' x2='100' y2='280'/><line x1='150' y1='20' x2='150' y2='280'/><line x1='200' y1='20' x2='200' y2='280'/><line x1='250' y1='20' x2='250' y2='280'/><line x1='300' y1='20' x2='300' y2='280'/><line x1='350' y1='20' x2='350' y2='280'/></g><line x1='20' y1='150' x2='380' y2='150' stroke='#fbbf24' stroke-width='2.5'/><line x1='200' y1='20' x2='200' y2='280' stroke='#ef4444' stroke-width='2.5' stroke-dasharray='6'/><text x='370' y='140' fill='#fbbf24' font-size='14' font-weight='bold'>X</text><text x='210' y='40' fill='#ef4444' font-size='14' font-weight='bold'>x = 0 (Asíntota vertical)</text><circle cx='200' cy='150' r='6' fill='none' stroke='#ef4444' stroke-width='3'/><text x='215' y='165' fill='#ef4444' font-size='13' font-weight='bold'>Sin imagen en x = 0</text></svg>"
+    },
+    {
+      "title": "Apartado b): Cálculo de las imágenes f(2), f(-3) y f(6)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Sustituimos cada valor en la función. Para equis igual a dos, doce entre dos nos da seis, por lo que efe de dos es seis. Para equis igual a menos tres, doce entre menos tres da menos cuatro, así efe de menos tres es menos cuatro. Para equis igual a seis, doce entre seis resulta dos, por lo que efe de seis es dos.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Calcular las imágenes numéricas para los valores $x = 2$, $x = -3$ y $x = 6$.</p><p><strong>Conexión con el paso anterior:</strong> Dado que $2$, $-3$ y $6$ son números distintos de cero, pertenecen al dominio y tienen imagen única.</p><p><strong>Desarrollo y justificación:</strong></p><p>Sustituimos cada valor de $x$ en la fórmula $f(x) = \\frac{12}{x}$:</p><p>1. <strong>Para $x = 2$:</strong></p>$$f(2) = \\frac{12}{2} = \\mathbf{6} \\implies (2, 6)$$<p>2. <strong>Para $x = -3$:</strong></p>$$f(-3) = \\frac{12}{-3} = \\mathbf{-4} \\implies (-3, -4)$$<p>3. <strong>Para $x = 6$:</strong></p>$$f(6) = \\frac{12}{6} = \\mathbf{2} \\implies (6, 2)$$<p><strong>Interpretación parcial:</strong> Hemos obtenido tres puntos pertenecientes a la curva gráfica de la función (hipérbola): $A(2, 6)$, $B(-3, -4)$ y $C(6, 2)$. Al dividir entre un entero negativo ($x = -3$), el resultado preserva la regla de los signos y da una imagen negativa.</p>",
+      "hints": [
+        "Aplica cuidadosamente la regla de signos al dividir: positivo entre negativo da negativo."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='20' y1='30' x2='380' y2='30'/><line x1='20' y1='70' x2='380' y2='70'/><line x1='20' y1='110' x2='380' y2='110'/><line x1='20' y1='150' x2='380' y2='150'/><line x1='20' y1='190' x2='380' y2='190'/><line x1='20' y1='230' x2='380' y2='230'/><line x1='20' y1='270' x2='380' y2='270'/><line x1='60' y1='20' x2='60' y2='280'/><line x1='110' y1='20' x2='110' y2='280'/><line x1='160' y1='20' x2='160' y2='280'/><line x1='200' y1='20' x2='200' y2='280'/><line x1='250' y1='20' x2='250' y2='280'/><line x1='300' y1='20' x2='300' y2='280'/><line x1='350' y1='20' x2='350' y2='280'/></g><line x1='20' y1='150' x2='380' y2='150' stroke='#fbbf24' stroke-width='2.5'/><line x1='200' y1='20' x2='200' y2='280' stroke='#fbbf24' stroke-width='2.5'/><path d='M 215 30 Q 230 110 370 140' fill='none' stroke='#38bdf8' stroke-width='3'/><path d='M 30 160 Q 170 190 185 270' fill='none' stroke='#38bdf8' stroke-width='3'/><circle cx='240' cy='30' r='5' fill='#f43f5e'/><text x='248' y='32' fill='#f43f5e' font-size='13' font-weight='bold'>(2, 6)</text><circle cx='125' cy='230' r='5' fill='#a855f7'/><text x='50' y='238' fill='#a855f7' font-size='13' font-weight='bold'>(-3, -4)</text><circle cx='320' cy='110' r='5' fill='#34d399'/><text x='328' y='105' fill='#34d399' font-size='13' font-weight='bold'>(6, 2)</text></svg>"
+    },
+    {
+      "title": "Comprobación de la constante de proporcionalidad",
+      "layout": "split",
+      "phase": "comprobar",
+      "narration": "Verificamos la coherencia de las respuestas comprobando que el producto de cada valor de equis por su imagen es siempre igual a doce. En efecto, dos por seis da doce, menos tres por menos cuatro da doce, y seis por dos da doce. Los resultados son plenamente consistentes.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Validar los resultados mediante la propiedad invariante de la proporcionalidad inversa.</p><p><strong>Conexión con el paso anterior:</strong> Comprobamos la exactitud de los pares de valores obtenidos en el apartado b.</p><p><strong>Desarrollo y justificación:</strong></p><p>En toda función de la forma $f(x) = \\frac{k}{x}$, la constante $k$ satisface la relación $x \\cdot f(x) = k$. En este ejercicio, $k = 12$.</p><p>Verificamos cada par ordenado $(x, f(x))$:</p><ul><li>Para $x = 2$: $2 \\cdot 6 = 12 \\quad \\checkmark$</li><li>Para $x = -3$: $(-3) \\cdot (-4) = 12 \\quad \\checkmark$</li><li>Para $x = 6$: $6 \\cdot 2 = 12 \\quad \\checkmark$</li></ul><p><strong>Interpretación del resultado:</strong> El hecho de que el producto $x \\cdot y = 12$ se mantenga constante confirma la exactitud de las tres operaciones y corrobora la simetría de la gráfica respecto al origen (función impar, $f(-x) = -f(x)$).</p>",
+      "checkpoint": {
+        "question": "Dada la misma función $f(x) = \\frac{12}{x}$, si se sabe que la imagen vale $f(x) = -2$, ¿cuál debe ser el valor de la abscisa $x$?",
+        "options": [
+          {
+            "text": "$x = -6$, porque $x = \\frac{12}{-2} = -6$, verificando que $(-6) \\cdot (-2) = 12$.",
+            "correct": true,
+            "feedback": "¡Correcto! Al despejar $x = \\frac{12}{f(x)} = \\frac{12}{-2} = -6$, manteniendo la constante de proporcionalidad $k = 12$."
+          },
+          {
+            "text": "$x = 6$, porque los signos no importan al calcular distancias en funciones racionales.",
+            "correct": false,
+            "feedback": "Incorrecto. Los signos son fundamentales: si $x = 6$, el producto $6 \\cdot (-2) = -12$, lo cual no coincide con la constante $k = 12$."
+          },
+          {
+            "text": "$x = -24$, porque se multiplica $12$ por $-2$.",
+            "correct": false,
+            "feedback": "Incorrecto. Para despejar $x$ en $-2 = \\frac{12}{x}$, debemos intercambiar $x$ y $-2$, obteniendo $x = \\frac{12}{-2} = -6$."
+          }
+        ]
+      },
+      "hints": [
+        "Verifica que en todos los pares $(x, y)$ el producto $x \\cdot y$ sea exactamente $12$."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='20' y1='50' x2='380' y2='50'/><line x1='20' y1='100' x2='380' y2='100'/><line x1='20' y1='150' x2='380' y2='150'/><line x1='20' y1='200' x2='380' y2='200'/><line x1='20' y1='250' x2='380' y2='250'/><line x1='50' y1='20' x2='50' y2='280'/><line x1='100' y1='20' x2='100' y2='280'/><line x1='150' y1='20' x2='150' y2='280'/><line x1='200' y1='20' x2='200' y2='280'/><line x1='250' y1='20' x2='250' y2='280'/><line x1='300' y1='20' x2='300' y2='280'/><line x1='350' y1='20' x2='350' y2='280'/></g><line x1='20' y1='150' x2='380' y2='150' stroke='#fbbf24' stroke-width='2.5'/><line x1='200' y1='20' x2='200' y2='280' stroke='#fbbf24' stroke-width='2.5'/><rect x='200' y='30' width='40' height='120' fill='#f43f5e' opacity='0.25' stroke='#f43f5e' stroke-width='1.5'/><text x='205' y='95' fill='#f43f5e' font-size='12' font-weight='bold'>Área = 12</text><rect x='200' y='110' width='120' height='40' fill='#34d399' opacity='0.25' stroke='#34d399' stroke-width='1.5'/><text x='230' y='135' fill='#34d399' font-size='12' font-weight='bold'>Área = 12</text><path d='M 215 30 Q 230 110 370 140' fill='none' stroke='#38bdf8' stroke-width='3'/></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "En resumen, primero justificamos que el cero no pertenece al dominio porque la división entre cero no está definida en los reales. Posteriormente, calculamos las tres imágenes sustituyendo cada valor de equis y confirmamos que el producto constante x por y da doce en todos los casos.",
+      "content": "<ol><li><strong>Estudio del Dominio (Apartado a):</strong><ul><li>Expresión: $f(x) = \\frac{12}{x}$.</li><li>Si $x = 0 \\implies f(0) = \\frac{12}{0}$, operación no definida en $\\mathbb{R}$.</li><li>Conclusión: $\\mathbf{x = 0 \\notin \\text{Dom}(f)}$ y $\\text{Dom}(f) = \\mathbb{R} \\setminus \\{0\\}$.</li></ul></li><li><strong>Cálculo de Imágenes (Apartado b):</strong><ul><li>$f(2) = \\frac{12}{2} = \\mathbf{6}$</li><li>$f(-3) = \\frac{12}{-3} = \\mathbf{-4}$</li><li>$f(6) = \\frac{12}{6} = \\mathbf{2}$</li></ul></li><li><strong>Comprobación de la Constante:</strong> $x \\cdot f(x) = 12$ para todos los puntos calculados.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Intenta resolver ahora por ti mismo un problema con la misma estructura pero usando la función efe de equis igual a quince partido por equis. Explica por qué el cero no está en el dominio y halla las imágenes de tres, menos cinco y uno.",
+      "content": "<p>Dada la función de proporcionalidad inversa $f(x) = \\frac{15}{x}$:</p><ul><li><strong>a)</strong> ¿Por qué el valor $x = 0$ no pertenece al dominio de definición de la función?</li><li><strong>b)</strong> Calcula el valor de $f(3)$, $f(-5)$ y $f(1)$.</li></ul><p><em>Intenta resolver el ejercicio por tu cuenta antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>a)</strong> El valor $x = 0$ no pertenece al dominio porque genera la expresión $\\frac{15}{0}$, y la división por cero no está definida en el conjunto de los números reales ($\\text{Dom}(f) = \\mathbb{R} \\setminus \\{0\\}$).<br><strong>b)</strong> Los valores son:<br>$f(3) = \\frac{15}{3} = \\mathbf{5}$<br>$f(-5) = \\frac{15}{-5} = \\mathbf{-3}$<br>$f(1) = \\frac{15}{1} = \\mathbf{15}$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica este mismo concepto a un problema práctico de física: el tiempo necesario para recorrer una distancia fija de sesenta kilómetros según la velocidad media. Explica la limitación de la velocidad nula y calcula el tiempo a distintas velocidades.",
+      "content": "<p>El tiempo $t(v)$ en horas necesario para recorrer una distancia fija de $60$ km se calcula mediante la función $t(v) = \\frac{60}{v}$, donde $v$ es la velocidad media en km/h.</p><ul><li><strong>a)</strong> Explica matemáticamente y en el contexto del problema por qué $v = 0$ km/h no pertenece al dominio de la función $t(v)$.</li><li><strong>b)</strong> Calcula $t(30)$, $t(60)$ y $t(120)$, e interpreta los resultados en horas.</li></ul><p><em>Intenta resolver el ejercicio por tu cuenta antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>a)</strong> Matemáticamente, $v = 0$ produce la división no definida $\\frac{60}{0}$. En el contexto real, a una velocidad de $0$ km/h el vehículo está parado y transcurre un tiempo infinito sin recorrer distancia alguna.<br><strong>b)</strong> Calculamos:<br>$t(30) = \\frac{60}{30} = \\mathbf{2}\\text{ horas}$<br>$t(60) = \\frac{60}{60} = \\mathbf{1}\\text{ hora}$<br>$t(120) = \\frac{60}{120} = \\mathbf{0{,}5}\\text{ horas (30 minutos)}$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:13:50.572Z",
+    "updatedAt": "2026-08-01T17:13:50.572Z",
+    "contentHash": "43a01f80d3a281a6",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
