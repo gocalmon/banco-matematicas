@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis de Funciones",
+    "subtopic": "Funciones Racionales y Asíntotas",
+    "exerciseType": "Cálculo de asíntotas y esbozo de gráfica",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Calcular la asíntota vertical igualando el denominador a cero.",
+      "Calcular la asíntota horizontal comparando los grados de numerador y denominador.",
+      "Hallar los puntos de corte con los ejes coordenados.",
+      "Integrar la información de asíntotas y puntos de corte para esbozar la gráfica de una hipérbola."
+    ],
+    "prerequisites": [
+      "Resolución de ecuaciones de primer grado.",
+      "Concepto de dominio de una función racional.",
+      "Límites básicos en el infinito (intuitivo o formal)."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T11:08:26.340Z",
+    "id": "estudio-y-representacion-de-funciones-racionales-84fd2078"
+  },
+  "title": "Estudio y Representación de Funciones Racionales",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a enfrentarnos a una función racional clásica. Nuestro objetivo es descubrir sus líneas guía invisibles, llamadas asíntotas, y usar un par de puntos clave para dibujar su silueta sin necesidad de hacer una tabla de valores enorme.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 6:</strong> Una función racional viene dada por la expresión $f(x) = \\frac{2x+1}{x-2}$.</p>\n<ul>\n<li>a) Halla las ecuaciones de sus asíntotas vertical y horizontal.</li>\n<li>b) Realiza un esbozo rápido de su gráfica (hipérbola) utilizando las asíntotas y sus puntos de corte con los ejes.</li>\n</ul>\n</blockquote>",
+      "hints": [
+        "Las asíntotas verticales aparecen donde la función 'se rompe', es decir, donde el denominador se hace cero.",
+        "La asíntota horizontal nos dice qué pasa con la función cuando la $x$ toma valores gigantes (positivos o negativos).",
+        "Los cortes con los ejes se hallan obligando a que $x=0$ y luego a que $y=0$."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "El método para esbozar estas funciones es muy sistemático. Primero construimos el andamiaje (las asíntotas), luego marcamos un par de anclajes (los cortes) y finalmente trazamos las curvas.",
+      "content": "<h3>Hoja de ruta para graficar hipérbolas</h3>\n<p>Para realizar el esbozo sin hacer una tabla de valores exhaustiva, seguiremos estos tres pasos estratégicos:</p>\n<ol>\n<li><strong>Hallar el andamiaje (Asíntotas):</strong> \n  <ul>\n  <li><strong>Vertical:</strong> Buscar los valores de $x$ que anulan el denominador (puntos excluidos del dominio).</li>\n  <li><strong>Horizontal:</strong> Analizar el comportamiento en el infinito dividiendo los coeficientes principales (ya que el grado del numerador y denominador es el mismo).</li>\n  </ul>\n</li>\n<li><strong>Hallar los anclajes (Cortes con ejes):</strong> \n  <ul>\n  <li>Evaluar $f(0)$ para el corte vertical.</li>\n  <li>Resolver $f(x) = 0$ para el corte horizontal.</li>\n  </ul>\n</li>\n<li><strong>Dibujar el esbozo:</strong> Trazar las asíntotas como líneas discontinuas y encajar las ramas de la hipérbola de manera que pasen por los puntos de corte y se peguen a las asíntotas en los extremos.</li>\n</ol>"
+    },
+    {
+      "title": "Apartado a): Cálculo de Asíntotas",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Vamos con las asíntotas. La vertical es fácil: el denominador no puede ser cero, así que equis igual a dos es nuestra barrera. Para la horizontal, como los polinomios tienen el mismo grado, dividimos el número que acompaña a la equis arriba entre el de abajo. Dos entre uno es dos.",
+      "content": "<p><strong>Asíntota Vertical (A.V.):</strong></p>\n<p>Se produce en los valores de $x$ donde el denominador se hace cero y el numerador no. Igualamos el denominador a cero:</p>\n<p>$$x - 2 = 0 \\implies x = 2$$</p>\n<p>La ecuación de la asíntota vertical es <strong>$x = 2$</strong>.</p>\n<hr>\n<p><strong>Asíntota Horizontal (A.H.):</strong></p>\n<p>Comparamos los grados del numerador ($2x+1$, grado 1) y del denominador ($x-2$, grado 1). Al ser iguales, la asíntota se obtiene dividiendo los coeficientes principales (los números que multiplican a la $x$ de mayor grado):</p>\n<p>$$y = \\frac{2}{1} \\implies y = 2$$</p>\n<p>La ecuación de la asíntota horizontal es <strong>$y = 2$</strong>.</p>",
+      "theory": "<p><strong>Regla de grados para A.H.:</strong><br>Si grado(Num) &lt; grado(Den), la A.H. es $y=0$.<br>Si grado(Num) = grado(Den), la A.H. es $y = \\frac{a}{b}$ (cociente de coef. principales).<br>Si grado(Num) &gt; grado(Den), no hay A.H. (hay oblicua o ramas parabólicas).</p>",
+      "warning": "<p>Es un error muy habitual responder solo con un número, diciendo \"la asíntota es 2\". Debes dar la <em>ecuación de la recta</em> completa: $x=2$ para la vertical e $y=2$ para la horizontal.</p>"
+    },
+    {
+      "title": "Apartado b): Puntos de Corte con los Ejes",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora buscamos los cortes. Para el vertical apagamos la equis haciéndola cero, lo que nos da menos un medio. Para el horizontal, igualamos toda la fracción a cero. Recuerda que para que una fracción sea cero, solo hace falta que el numerador sea cero.",
+      "content": "<p>Necesitamos puntos reales por los que pase la función para saber en qué cuadrantes (respecto a las asíntotas) colocar las ramas.</p>\n<p><strong>Corte con el Eje Y (eje de ordenadas):</strong></p>\n<p>Hacemos $x = 0$:</p>\n<p>$$f(0) = \\frac{2(0) + 1}{0 - 2} = \\frac{1}{-2} = -\\frac{1}{2}$$</p>\n<p>El punto es <strong>$A(0, -0.5)$</strong>.</p>\n<hr>\n<p><strong>Corte con el Eje X (eje de abscisas):</strong></p>\n<p>Hacemos $y = 0$, es decir, $f(x) = 0$:</p>\n<p>$$\\frac{2x + 1}{x - 2} = 0$$</p>\n<p>Una fracción solo es cero si su numerador es cero:</p>\n<p>$$2x + 1 = 0 \\implies 2x = -1 \\implies x = -\\frac{1}{2}$$</p>\n<p>El punto es <strong>$B(-0.5, 0)$</strong>.</p>",
+      "checkpoint": {
+        "question": "Al buscar el corte con el eje X hemos igualado 2x+1 a cero. ¿Qué pasaría con el (x-2) del denominador?",
+        "options": [
+          {
+            "text": "Se multiplica por cero al pasarlo al otro lado de la ecuación, por lo que desaparece (0 * (x-2) = 0).",
+            "correct": true,
+            "feedback": "¡Exacto! Alpejar, el denominador multiplica al 0 del otro lado y se anula algebraicamente. Por eso basta con igualar el numerador a 0."
+          },
+          {
+            "text": "Se ignora porque el denominador nunca importa en funciones racionales.",
+            "correct": false,
+            "feedback": "Falso. El denominador es fundamental (define el dominio y las A.V.), pero en este paso algebraico concreto se cancela al multiplicar por 0."
+          },
+          {
+            "text": "También debe igualarse a cero para encontrar otro punto de corte.",
+            "correct": false,
+            "feedback": "Incorrecto. Si igualas el denominador a cero obtienes la Asíntota Vertical, no un punto de corte."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Apartado b): Esbozo de la Gráfica",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Con el andamiaje y los anclajes montados, ya podemos dibujar. Fíjate cómo las líneas azules (las asíntotas) marcan los límites. Nuestros dos puntos rojos nos obligan a dibujar una rama abajo a la izquierda, por lo que la curva compañera debe ir obligatoriamente arriba a la derecha.",
+      "content": "<p>Para realizar el esbozo juntamos todas las piezas:</p>\n<ol>\n<li>Trazamos los ejes cartesianos (X e Y).</li>\n<li>Dibujamos las <strong>asíntotas (líneas a trazos)</strong>: $x = 2$ e $y = 2$. Estas actúan como \"nuevos ejes\" para nuestra hipérbola.</li>\n<li>Ubicamos los <strong>puntos de corte (rojos)</strong>: $(0, -0.5)$ y $(-0.5, 0)$.</li>\n<li><strong>Trazamos la curva:</strong> Como vemos que los puntos caen en la zona inferior-izquierda de nuestras asíntotas, dibujamos esa rama pasando por ellos y acercándose a las asíntotas. Por simetría, la otra rama debe ir en la zona superior-derecha (opuesta).</li>\n</ol>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Escala: Origen en (200,200), 1 unidad = 30px -->\n  <!-- Cuadrícula tenue -->\n  <line x1='140' y1='50' x2='140' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='170' y1='50' x2='170' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='230' y1='50' x2='230' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='260' y1='50' x2='260' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='140' x2='350' y2='140' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='170' x2='350' y2='170' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='230' x2='350' y2='230' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <!-- Ejes principales -->\n  <line x1='200' y1='50' x2='200' y2='350' stroke='#fbbf24' stroke-width='2' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <line x1='50' y1='200' x2='350' y2='200' stroke='#fbbf24' stroke-width='2' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <text x='340' y='190' fill='#fbbf24' font-size='14' font-family='sans-serif'>X</text>\n  <text x='210' y='60' fill='#fbbf24' font-size='14' font-family='sans-serif'>Y</text>\n  <!-- Asíntotas: x = 2 -> X = 200 + 60 = 260. y = 2 -> Y = 200 - 60 = 140 -->\n  <line x1='260' y1='50' x2='260' y2='350' stroke='#94a3b8' stroke-width='2.5' stroke-dasharray='6,6'/>\n  <line x1='50' y1='140' x2='350' y2='140' stroke='#94a3b8' stroke-width='2.5' stroke-dasharray='6,6'/>\n  <text x='270' y='70' fill='#94a3b8' font-size='14' font-family='sans-serif'>x = 2</text>\n  <text x='60' y='130' fill='#94a3b8' font-size='14' font-family='sans-serif'>y = 2</text>\n  <!-- Gráfica f(x) = (2x+1)/(x-2) = 2 + 5/(x-2) -->\n  <!-- Rama inf-izq: C aproximado. Pasa por (-0.5, 0) -> (185, 200). (0, -0.5) -> (200, 215) -->\n  <path d='M 50 152 C 180 156, 252 230, 255 350' fill='none' stroke='#38bdf8' stroke-width='3'/>\n  <!-- Rama sup-der: Simétrica respecto a (260, 140). -->\n  <!-- Si rama inf-izq baja de y=2 a izq de x=2, rama sup-der sube de y=2 a der de x=2 -->\n  <path d='M 265 50 C 268 100, 290 135, 350 135' fill='none' stroke='#38bdf8' stroke-width='3'/>\n  <!-- Puntos de corte -->\n  <circle cx='185' cy='200' r='5' fill='#ef4444'/>\n  <text x='110' y='195' fill='#ef4444' font-size='12' font-family='sans-serif'>(-0.5, 0)</text>\n  <circle cx='200' cy='215' r='5' fill='#ef4444'/>\n  <text x='210' y='230' fill='#ef4444' font-size='12' font-family='sans-serif'>(0, -0.5)</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulamos. Una función racional básica siempre tiene este proceso en tres actos: asíntotas, cortes y esbozo.",
+      "content": "<p>Pasos consolidados para el estudio básico de una función racional $y = \\frac{ax+b}{cx+d}$:</p>\n<ol>\n<li><strong>Asíntota Vertical:</strong> Despejar $x$ haciendo Denominador = 0. Escribir como $x = k$.</li>\n<li><strong>Asíntota Horizontal:</strong> Identificar los coeficientes principales $a$ y $c$. Si el grado es el mismo, escribir $y = \\frac{a}{c}$.</li>\n<li><strong>Corte Eje Y:</strong> Hacer $x = 0$ y calcular $y$. Punto: $(0, y)$.</li>\n<li><strong>Corte Eje X:</strong> Hacer Numerador = 0 y despejar $x$. Punto: $(x, 0)$.</li>\n<li><strong>Esbozo:</strong> Usar la posición relativa de los cortes respecto al cruce de asíntotas para determinar los cuadrantes que ocupa la hipérbola.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Tu turno. Coge papel y boli y hazle la autopsia completa a esta otra función siguiendo los mismos pasos exactos.",
+      "content": "<p>Aplica el mismo razonamiento paso a paso a la siguiente función:</p>\n<p>$$g(x) = \\frac{3x - 3}{x + 1}$$</p>\n<ul>\n<li>a) Halla las ecuaciones de sus asíntotas.</li>\n<li>b) Halla los puntos de corte con los ejes.</li>\n</ul>\n<p><em>Intenta resolverlo mentalmente o en papel antes de comprobar la solución. Presta atención al signo del denominador.</em></p>",
+      "practiceAnswer": "<p><strong>Asíntotas:</strong><br>\nVertical: $x + 1 = 0 \\implies$ <strong>$x = -1$</strong>.<br>\nHorizontal: Coeficientes $3/1 \\implies$ <strong>$y = 3$</strong>.</p>\n<p><strong>Cortes:</strong><br>\nEje Y ($x=0$): $g(0) = \\frac{-3}{1} = -3 \\implies$ <strong>$(0, -3)$</strong>.<br>\nEje X ($y=0$): $3x - 3 = 0 \\implies 3x = 3 \\implies x = 1 \\implies$ <strong>$(1, 0)$</strong>.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Las asíntotas no son solo líneas abstractas. En la economía real, representan límites inalcanzables, como el coste mínimo que puedes alcanzar produciendo al por mayor.",
+      "content": "<p>El coste medio de fabricar $x$ camisetas en una pequeña empresa (en euros por camiseta) viene dado por la función:</p>\n<p>$$C(x) = \\frac{1000 + 5x}{x}$$</p>\n<p>Esta es una función racional. Si calculas su asíntota horizontal, obtendrás un valor constante.</p>\n<p>¿Cuál es la ecuación de la asíntota horizontal y qué significado económico real tiene ese valor para la empresa cuando producen miles y miles de camisetas?</p>",
+      "practiceAnswer": "<p>Ordenamos la función para verla mejor: $C(x) = \\frac{5x + 1000}{1x}$.</p>\n<p><strong>Asíntota horizontal:</strong> Dividimos los coeficientes principales de la equis: $y = \\frac{5}{1} = 5$. La ecuación es <strong>$y = 5$</strong>.</p>\n<p><em>Interpretación:</em> El $1000$ representa gastos fijos (máquinas, alquiler) y el $5$ el coste del material por camiseta. Si la empresa fabrica muchísimas camisetas (cuando $x$ tiende a infinito), el coste fijo se diluye casi a cero. La asíntota $y=5$ nos dice que, por muchas camisetas que se fabriquen, el coste medio por unidad <strong>nunca podrá bajar de 5 euros</strong>, estabilizándose en ese valor límite.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:08:41.850Z",
+    "updatedAt": "2026-08-01T11:08:41.850Z",
+    "contentHash": "b031a72ab94fb9a0",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

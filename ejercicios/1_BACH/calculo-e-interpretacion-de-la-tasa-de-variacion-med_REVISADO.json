@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis de Funciones",
+    "subtopic": "Tasa de Variación Media (TVM)",
+    "exerciseType": "Cálculo de TVM e interpretación del crecimiento",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Calcular la Tasa de Variación Media (TVM) de una función cuadrática en un intervalo dado.",
+      "Interpretar el signo de la TVM para determinar si la función crece o decrece en promedio.",
+      "Relacionar la TVM con la pendiente de la recta secante que une dos puntos de la gráfica."
+    ],
+    "prerequisites": [
+      "Evaluación de funciones en un punto dado.",
+      "Operaciones básicas con números enteros y fracciones.",
+      "Concepto intuitivo de crecimiento y decrecimiento de una curva."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T11:07:43.387Z",
+    "id": "calculo-e-interpretacion-de-la-tasa-de-variacion-med-44a48cfd"
+  },
+  "title": "Cálculo e Interpretación de la Tasa de Variación Media",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a calcular cómo varía, en promedio, una función dentro de unos márgenes concretos. Es como averiguar la velocidad media de un coche en distintos tramos de su recorrido.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 4:</strong> Calcula la Tasa de Variación Media (TVM) de la función $f(x) = x^2 - 3x$ en los siguientes intervalos reales e indica si la función crece o decrece en promedio en dichos tramos:</p>\n<ul>\n<li>a) $[-1, 2]$</li>\n<li>b) $[2, 4]$</li>\n</ul>\n</blockquote>",
+      "hints": [
+        "Un intervalo $[a, b]$ nos da los valores inicial y final de la variable $x$.",
+        "La Tasa de Variación Media mide el 'salto' vertical total de la función dividido entre el 'salto' horizontal.",
+        "Si el resultado final es positivo, la función sube globalmente en ese tramo; si es negativo, baja."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consiste en aplicar la fórmula de la Tasa de Variación Media. Para cada intervalo, evaluaremos la función en los extremos, restaremos esos valores y dividiremos entre la amplitud del intervalo.",
+      "content": "<h3>Estrategia para calcular la TVM</h3>\n<p>La Tasa de Variación Media de una función $f(x)$ en un intervalo $[a, b]$ se define como el cociente entre la variación de la función (eje Y) y la variación de la variable independiente (eje X).</p>\n<p><strong>Fórmula:</strong></p>\n<p>$$TVM[a, b] = \\frac{f(b) - f(a)}{b - a}$$</p>\n<p><strong>Pasos a seguir para cada apartado:</strong></p>\n<ol>\n<li>Identificar $a$ y $b$ (los extremos del intervalo).</li>\n<li>Calcular $f(a)$ sustituyendo $x=a$ en la función.</li>\n<li>Calcular $f(b)$ sustituyendo $x=b$ en la función.</li>\n<li>Aplicar la fórmula y operar.</li>\n<li>Analizar el signo del resultado: \n  <ul>\n  <li>Si $TVM > 0 \\rightarrow$ Crece en promedio.</li>\n  <li>Si $TVM < 0 \\rightarrow$ Decrece en promedio.</li>\n  </ul>\n</li>\n</ol>"
+    },
+    {
+      "title": "Apartado a): Intervalo $[-1, 2]$",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Empezamos con el primer tramo. Calculamos cuánto vale la función al principio, en menos uno, y al final, en dos. Cuidado con los signos al elevar al cuadrado. Al aplicar la fórmula, obtenemos un valor negativo.",
+      "content": "<p><strong>Objetivo:</strong> Calcular la TVM en el intervalo $[-1, 2]$. Aquí $a = -1$ y $b = 2$.</p>\n<p><strong>1. Evaluamos la función en los extremos:</strong></p>\n<ul>\n<li>Para $x = -1$:\n$$f(-1) = (-1)^2 - 3(-1) = 1 + 3 = 4$$</li>\n<li>Para $x = 2$:\n$$f(2) = (2)^2 - 3(2) = 4 - 6 = -2$$</li>\n</ul>\n<p><strong>2. Aplicamos la fórmula:</strong></p>\n<p>$$TVM[-1, 2] = \\frac{f(2) - f(-1)}{2 - (-1)}$$</p>\n<p>$$TVM[-1, 2] = \\frac{-2 - 4}{2 + 1}$$</p>\n<p>$$TVM[-1, 2] = \\frac{-6}{3} = -2$$</p>\n<p><strong>Conclusión:</strong> Como la TVM es <strong>$-2$</strong> (negativa), la función <strong>decrece</strong> en promedio en el intervalo $[-1, 2]$.</p>",
+      "theory": "<p><strong>Atención al orden:</strong> Es crucial restar siempre el valor inicial al valor final: $\\text{Final} - \\text{Inicial}$. Si inviertes el orden en el numerador, también debes invertirlo en el denominador, pero es más seguro ceñirse siempre a $f(b) - f(a)$.</p>",
+      "warning": "<p>El error más común es equivocarse con los signos al evaluar números negativos: $(-1)^2$ es $+1$, no $-1$. Igualmente, en el denominador: $2 - (-1)$ se convierte en $2 + 1$.</p>"
+    },
+    {
+      "title": "Apartado b): Intervalo $[2, 4]$",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Pasamos al segundo tramo. Ya sabíamos que en dos la función vale menos dos. Ahora calculamos en cuatro, que nos da cuatro positivo. Restamos arriba y abajo, dividimos y obtenemos un resultado positivo.",
+      "content": "<p><strong>Objetivo:</strong> Calcular la TVM en el intervalo $[2, 4]$. Aquí $a = 2$ y $b = 4$.</p>\n<p><strong>1. Evaluamos la función en los extremos:</strong></p>\n<ul>\n<li>Para $x = 2$ (ya calculado antes):\n$$f(2) = -2$$</li>\n<li>Para $x = 4$:\n$$f(4) = 4^2 - 3(4) = 16 - 12 = 4$$</li>\n</ul>\n<p><strong>2. Aplicamos la fórmula:</strong></p>\n<p>$$TVM[2, 4] = \\frac{f(4) - f(2)}{4 - 2}$$</p>\n<p>$$TVM[2, 4] = \\frac{4 - (-2)}{4 - 2}$$</p>\n<p>$$TVM[2, 4] = \\frac{4 + 2}{2}$$</p>\n<p>$$TVM[2, 4] = \\frac{6}{2} = 3$$</p>\n<p><strong>Conclusión:</strong> Como la TVM es <strong>$3$</strong> (positiva), la función <strong>crece</strong> en promedio en el intervalo $[2, 4]$.</p>",
+      "checkpoint": {
+        "question": "Imagina que calculas la TVM en un intervalo y te da exactamente 0. ¿Qué significa eso sobre la función en ese tramo?",
+        "options": [
+          {
+            "text": "Que la función es completamente plana (una línea horizontal) en todo ese intervalo.",
+            "correct": false,
+            "feedback": "No necesariamente. Solo significa que empezó y terminó en la misma altura, pero pudo haber subido y bajado entre medias."
+          },
+          {
+            "text": "Que el valor de la función al inicio del intervalo es idéntico al valor al final del intervalo (f(a) = f(b)).",
+            "correct": true,
+            "feedback": "¡Correcto! Si f(a) = f(b), el numerador de la fórmula se hace cero. La función no ha tenido una variación neta, aunque haya oscilado por el camino."
+          },
+          {
+            "text": "Que hemos cometido un error de cálculo, porque la TVM siempre debe ser positiva o negativa.",
+            "correct": false,
+            "feedback": "Incorrecto. Una TVM nula (0) es perfectamente posible y muy habitual en funciones que suben y luego bajan (o viceversa)."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Interpretación Geométrica: La Recta Secante",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Gráficamente, la TVM no es otra cosa que la inclinación de la línea recta que une el principio y el final de nuestro tramo. En el primer caso la línea baja, y en el segundo, sube.",
+      "content": "<p>Visualmente, calcular la TVM entre dos puntos $A$ y $B$ de una función equivale a calcular la <strong>pendiente de la recta secante</strong> que los une.</p>\n<ul>\n<li><strong>Intervalo $[-1, 2]$:</strong> Une el punto $(-1, 4)$ con $(2, -2)$. La recta secante roja baja, lo que coincide con nuestra $TVM = -2$.</li>\n<li><strong>Intervalo $[2, 4]$:</strong> Une el punto $(2, -2)$ con $(4, 4)$. La recta secante verde sube, de forma más pronunciada, lo que coincide con nuestra $TVM = 3$.</li>\n</ul>\n<p>Fíjate que la TVM habla de un <em>promedio</em>. En el primer intervalo, la curva baja todo el rato, pero en otros casos podría subir un poco y luego bajar mucho, dando igualmente una TVM negativa global.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Cuadrícula X: x = -2 a 5 -> Xpx = 150 + x*40 -->\n  <!-- Cuadrícula Y: y = -3 a 5 -> Ypx = 250 - y*40 -->\n  <!-- Ejes -->\n  <line x1='150' y1='50' x2='150' y2='350' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <line x1='50' y1='250' x2='350' y2='250' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <text x='340' y='240' fill='#fbbf24' font-size='16' font-family='sans-serif'>X</text>\n  <text x='160' y='60' fill='#fbbf24' font-size='16' font-family='sans-serif'>Y</text>\n  <!-- Gráfica de f(x) = x^2 - 3x -->\n  <!-- Puntos clave: (-1,4)->(110,90); (0,0)->(150,250); (1.5,-2.25)->(210,340); (2,-2)->(230,330); (3,0)->(270,250); (4,4)->(310,90) -->\n  <path d='M 90 30 Q 150 450 270 250 Q 290 170 310 90' fill='none' stroke='#38bdf8' stroke-width='3' stroke-linecap='round'/>\n  <!-- Recta secante [-1, 2] (Rojo) -->\n  <!-- De (110, 90) a (230, 330) -->\n  <line x1='110' y1='90' x2='230' y2='330' stroke='#ef4444' stroke-width='2.5' stroke-dasharray='5,5'/>\n  <circle cx='110' cy='90' r='5' fill='#ef4444'/>\n  <circle cx='230' cy='330' r='5' fill='#ef4444'/>\n  <text x='55' y='95' fill='#ef4444' font-size='12' font-family='sans-serif'>(-1, 4)</text>\n  <text x='200' y='350' fill='#ef4444' font-size='12' font-family='sans-serif'>(2, -2)</text>\n  <!-- Recta secante [2, 4] (Verde) -->\n  <!-- De (230, 330) a (310, 90) -->\n  <line x1='230' y1='330' x2='310' y2='90' stroke='#10b981' stroke-width='2.5' stroke-dasharray='5,5'/>\n  <circle cx='310' cy='90' r='5' fill='#10b981'/>\n  <text x='320' y='95' fill='#10b981' font-size='12' font-family='sans-serif'>(4, 4)</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulemos. Tres simples pasos: evalúa, resta alturas, y divide por el ancho del tramo. El signo final te dice la tendencia general.",
+      "content": "<p>Esta es la rutina que hemos seguido para calcular e interpretar la Tasa de Variación Media:</p>\n<ol>\n<li><strong>Localizar extremos:</strong> Identifica $a$ y $b$ a partir del intervalo $[a, b]$.</li>\n<li><strong>Evaluar función:</strong> Calcula con precisión $f(a)$ y $f(b)$. Vigila el uso de paréntesis con números negativos.</li>\n<li><strong>Aplicar fórmula:</strong> Sustituye en $TVM = \\frac{f(b) - f(a)}{b - a}$. El orden arriba y abajo debe ser el mismo.</li>\n<li><strong>Interpretar resultado:</strong>\n<ul>\n<li>$\\_ > 0$: Crecimiento promedio (tendencia ascendente).</li>\n<li>$\\_ < 0$: Decrecimiento promedio (tendencia descendente).</li>\n<li>$\\_ = 0$: Variación neta nula (termina a la misma altura que empezó).</li>\n</ul>\n</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Intenta aplicar esta misma fórmula paso a paso a una función diferente en un intervalo con números negativos. Comprueba si sube o baja.",
+      "content": "<p>Dada la función $g(x) = 2x^2 + x$:</p>\n<p>Calcula su Tasa de Variación Media (TVM) en el intervalo $[-2, 0]$ e indica si crece o decrece en promedio en dicho tramo.</p>\n<p><em>Sugerencia: Calcula primero $g(-2)$ y $g(0)$ antes de montarlos en la fracción de la TVM. Cuidado con los signos menos.</em></p>",
+      "practiceAnswer": "<p><strong>1. Evaluar extremos:</strong><br>\n$g(-2) = 2(-2)^2 + (-2) = 2(4) - 2 = 8 - 2 = 6$<br>\n$g(0) = 2(0)^2 + 0 = 0$</p>\n<p><strong>2. Aplicar fórmula:</strong><br>\n$TVM[-2, 0] = \\frac{g(0) - g(-2)}{0 - (-2)} = \\frac{0 - 6}{0 + 2} = \\frac{-6}{2} = -3$</p>\n<p><strong>Conclusión:</strong> La TVM es <strong>$-3$</strong>, por lo tanto la función <strong>decrece</strong> en promedio en el intervalo $[-2, 0]$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "La Tasa de Variación Media es exactamente lo que usas en física para calcular la velocidad. Si mides el espacio recorrido y lo divides por el tiempo, estás haciendo una TVM.",
+      "content": "<p>La Tasa de Variación Media tiene aplicaciones directas en la física. Supongamos que la posición de un objeto en caída libre, medida en metros, viene dada por la función del tiempo (en segundos):</p>\n<p>$$e(t) = 5t^2$$</p>\n<p>Si calculas la TVM de esta función posición en el intervalo de tiempo $[1, 3]$ segundos, estarás calculando un concepto físico muy familiar.</p>\n<p>Calcula la TVM en ese intervalo. ¿Qué magnitud física exacta representa este resultado y en qué unidades se mediría?</p>",
+      "practiceAnswer": "<p><strong>Cálculo:</strong><br>\n$e(1) = 5(1)^2 = 5$<br>\n$e(3) = 5(3)^2 = 45$<br>\n$TVM[1, 3] = \\frac{45 - 5}{3 - 1} = \\frac{40}{2} = 20$</p>\n<p><strong>Interpretación:</strong><br>\nEl resultado es $20$. Al dividir el espacio (metros) entre el tiempo (segundos), la magnitud física que representa la TVM es la <strong>Velocidad Media</strong> del objeto en ese tramo de tiempo. Sus unidades son <strong>metros por segundo (m/s)</strong>.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:07:58.697Z",
+    "updatedAt": "2026-08-01T11:07:58.697Z",
+    "contentHash": "01d8c3d88b176496",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

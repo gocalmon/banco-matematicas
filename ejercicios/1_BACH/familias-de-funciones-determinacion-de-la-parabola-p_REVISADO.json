@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis de Funciones",
+    "subtopic": "Sistemas de Ecuaciones y Funciones Cuadráticas",
+    "exerciseType": "Determinación de parámetros de una parábola a partir de puntos",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Planteamiento de un sistema de ecuaciones lineales a partir de puntos de paso de una función.",
+      "Resolución analítica de un sistema de tres ecuaciones con tres incógnitas (a, b, c).",
+      "Determinación de la expresión explícita de una función cuadrática y verificación gráfica de los puntos."
+    ],
+    "prerequisites": [
+      "Evaluación de funciones en un punto $(x, y)$.",
+      "Resolución de sistemas de ecuaciones lineales de primer grado."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 7,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T11:13:12.778Z",
+    "id": "familias-de-funciones-determinacion-de-la-parabola-p-fce239dc"
+  },
+  "title": "Familias de Funciones: Determinación de la Parábola por Puntos",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Tres puntos en el plano definen de forma única una parábola, de la misma forma que dos puntos definen una recta. En este problema vamos a calcular exactamente la ecuación de la curva que pasa por los puntos A, B y C.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 8: Familias de funciones (Parábola con condiciones):</strong> Determina analíticamente la ecuación de la parábola $y = ax^2 + bx + c$ sabiendo que pasa por los puntos de coordenadas $A(0,3)$, $B(1,4)$ y $C(-1,6)$ resolviendo el sistema de tres ecuaciones lineales resultante.</p>\n</blockquote>",
+      "hints": [
+        "Recordemos que si un punto $(x, y)$ pertenece a una curva, al sustituir las coordenadas $x$ e $y$ en la ecuación, esta debe cumplirse.",
+        "El punto $A(0,3)$ es especialmente fácil de usar porque al ser $x=0$, nos dará directamente el valor del parámetro $c$."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consiste en sustituir cada uno de los tres puntos en la ecuación general de la parábola para construir un sistema de tres ecuaciones con tres incógnitas: a, b y c.",
+      "content": "<h3>Estrategia de Resolución</h3>\n<p>La forma general de la función cuadrática es:</p>\n<p>$$y = ax^2 + bx + c$$</p>\n<p><strong>Pasos a seguir:</strong></p>\n<ol>\n<li><strong>Sustituir el punto $A(0,3)$:</strong> Obtendremos directamente la constante $c$.</li>\n<li><strong>Sustituir los puntos $B(1,4)$ y $C(-1,6)$:</strong> Generaremos un sistema de 2 ecuaciones lineales con las incógnitas $a$ y $b$.</li>\n<li><strong>Resolver el sistema $2 \\times 2$:</strong> Por reducción, sustitución o igualación para hallar $a$ y $b$.</li>\n<li><strong>Escribir la ecuación final:</strong> Reemplazar los valores hallados de $a$, $b$ y $c$ en $y = ax^2 + bx + c$.</li>\n</ol>"
+    },
+    {
+      "title": "Resolución paso a paso",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Comenzamos sustituyendo los puntos uno a uno. Fíjate cómo al evaluar el primer punto, el parámetro c se revela al instante.",
+      "content": "<p><strong>1. Uso del punto $A(0,3)$:</strong></p>\n<p>$$3 = a(0)^2 + b(0) + c \\implies c = 3$$</p>\n<p><strong>2. Uso del punto $B(1,4)$ (sabiendo que $c = 3$):</strong></p>\n<p>$$4 = a(1)^2 + b(1) + 3 \\implies a + b + 3 = 4 \\implies a + b = 1$$</p>\n<p><strong>3. Uso del punto $C(-1,6)$ (sabiendo que $c = 3$):</strong></p>\n<p>$$6 = a(-1)^2 + b(-1) + 3 \\implies a - b + 3 = 6 \\implies a - b = 3$$</p>\n<p><strong>4. Resolvemos el sistema $2 \\times 2$ resultante:</strong></p>\n<p>$$\\begin{cases} a + b = 1 \\\\ a - b = 3 \\end{cases}$$</p>\n<p>Sumamos ambas ecuaciones término a término (método de reducción):</p>\n<p>$$(a + b) + (a - b) = 1 + 3 \\implies 2a = 4 \\implies a = 2$$</p>\n<p>Sustituimos $a = 2$ en $a + b = 1$:</p>\n<p>$$2 + b = 1 \\implies b = -1$$</p>\n<p><strong>Resultado final:</strong> $a = 2$, $b = -1$, $c = 3$. La parábola es:</p>\n<p>$$y = 2x^2 - x + 3$$</p>",
+      "theory": "<p><strong>Sistemas de $3 \\times 3$:</strong> En general, determinar $n$ coeficientes desconocidos requiere de $n$ condiciones independientes (como $n$ puntos por los que pasa la gráfica).</p>",
+      "warning": "<p>Cuidado al elevar $-1$ al cuadrado en el punto $C(-1,6)$: $(-1)^2 = +1$, por lo que el término con $a$ queda positivo ($a$). Sin embargo, $b(-1) = -b$, por lo que ese término queda negativo.</p>"
+    },
+    {
+      "title": "Representación Gráfica y Comprobación",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Si graficamos la parábola encontrada, podemos verificar visualmente que pasa de forma exacta por los tres puntos que nos daba el problema: A, B y C.",
+      "content": "<p><strong>Comprobación analítica rápida:</strong></p>\n<ul>\n<li>Para $x = 0 \\implies y = 2(0)^2 - 0 + 3 = 3$ $\\rightarrow$ Punto $A(0,3)$ $\\checkmark$</li>\n<li>Para $x = 1 \\implies y = 2(1)^2 - 1 + 3 = 4$ $\\rightarrow$ Punto $B(1,4)$ $\\checkmark$</li>\n<li>Para $x = -1 \\implies y = 2(-1)^2 - (-1) + 3 = 2 + 1 + 3 = 6$ $\\rightarrow$ Punto $C(-1,6)$ $\\checkmark$</li>\n</ul>\n<p><strong>Propiedades de esta parábola:</strong></p>\n<ul>\n<li>Al ser $a = 2 > 0$, las ramas apuntan hacia arriba (\"carita sonriente\").</li>\n<li>El vértice está en $x_v = \\frac{-b}{2a} = \\frac{1}{4} = 0.25$, con $y_v = 2.875$.</li>\n</ul>",
+      "visual": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Ejes: Origen (0,0) en (200, 250). Escala: 1 ud X = 50px, 1 ud Y = 30px -->\n  <line x1='30' y1='250' x2='370' y2='250' stroke='#fbbf24' stroke-width='2' marker-end='url(#arrow)'/>\n  <line x1='200' y1='30' x2='200' y2='280' stroke='#fbbf24' stroke-width='2' marker-start='url(#arrow)'/>\n  <text x='360' y='240' fill='#fbbf24' font-size='12' font-family='sans-serif'>x</text>\n  <text x='210' y='40' fill='#fbbf24' font-size='12' font-family='sans-serif'>y</text>\n  \n  <!-- Cuadrícula / Marcas -->\n  <!-- X = -1 (150px), X = 1 (250px) -->\n  <line x1='150' y1='30' x2='150' y2='270' stroke='#334155' stroke-width='1' stroke-dasharray='4,4'/>\n  <text x='142' y='268' fill='#94a3b8' font-size='11' font-family='sans-serif'>-1</text>\n  <line x1='250' y1='30' x2='250' y2='270' stroke='#334155' stroke-width='1' stroke-dasharray='4,4'/>\n  <text x='247' y='268' fill='#94a3b8' font-size='11' font-family='sans-serif'>1</text>\n  \n  <!-- Y = 3 (160px), Y = 4 (130px), Y = 6 (70px) -->\n  <line x1='30' y1='160' x2='370' y2='160' stroke='#334155' stroke-width='1' stroke-dasharray='4,4'/>\n  <text x='185' y='164' fill='#94a3b8' font-size='11' font-family='sans-serif'>3</text>\n  <line x1='30' y1='130' x2='370' y2='130' stroke='#334155' stroke-width='1' stroke-dasharray='4,4'/>\n  <text x='185' y='134' fill='#94a3b8' font-size='11' font-family='sans-serif'>4</text>\n  <line x1='30' y1='70' x2='370' y2='70' stroke='#334155' stroke-width='1' stroke-dasharray='4,4'/>\n  <text x='185' y='74' fill='#94a3b8' font-size='11' font-family='sans-serif'>6</text>\n  \n  <!-- Curva y = 2x^2 - x + 3 -->\n  <path d='M 142 45 Q 212.5 257.5 283 45' fill='none' stroke='#38bdf8' stroke-width='3'/>\n  \n  <!-- Puntos A, B, C -->\n  <!-- A(0,3) -> px=200, py=160 -->\n  <circle cx='200' cy='160' r='5' fill='#ef4444'/>\n  <text x='210' y='163' fill='#ef4444' font-size='12' font-family='sans-serif' font-weight='bold'>A(0,3)</text>\n  <!-- B(1,4) -> px=250, py=130 -->\n  <circle cx='250' cy='130' r='5' fill='#10b981'/>\n  <text x='260' y='133' fill='#10b981' font-size='12' font-family='sans-serif' font-weight='bold'>B(1,4)</text>\n  <!-- C(-1,6) -> px=150, py=70 -->\n  <circle cx='150' cy='70' r='5' fill='#a855f7'/>\n  <text x='100' y='73' fill='#a855f7' font-size='12' font-family='sans-serif' font-weight='bold'>C(-1,6)</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulando: determinar los coeficientes de una función dada su forma paramétrica consiste en plantear tantas ecuaciones como incógnitas tengamos.",
+      "content": "<p>Pasos fundamentales para determinar una parábola a partir de tres puntos:</p>\n<ol>\n<li><strong>Sustituir cada punto $(x_i, y_i)$:</strong> Crea una ecuación del tipo $y_i = a(x_i)^2 + b(x_i) + c$.</li>\n<li><strong>Aprovechar el corte con $Y$:</strong> Si te dan un punto $(0, y_0)$, la constante $c$ queda determinada automáticamente ($c = y_0$).</li>\n<li><strong>Resolver el sistema reducida:</strong> Con $c$ conocido, el problema se simplifica a un sistema $2 \\times 2$ para $a$ y $b$.</li>\n<li><strong>Verificar:</strong> Comprueba que los tres puntos satisfacen la ecuación $y = ax^2 + bx + c$ obtenida.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica lo aprendido para calcular la parábola que pasa por estos otros tres puntos.",
+      "content": "<p>Determina la ecuación de la parábola $y = ax^2 + bx + c$ que pasa por los puntos:</p>\n<ul>\n<li>$A(0, 1)$</li>\n<li>$B(1, 6)$</li>\n<li>$C(-1, 0)$</li>\n</ul>\n<p><em>Aplica los mismos pasos: usa $A$ para hallar $c$ y plantea el sistema para $a$ y $b$.</em></p>",
+      "practiceAnswer": "<p><strong>1. Con el punto $A(0,1)$:</strong><br>\n$1 = a(0)^2 + b(0) + c \\implies c = 1$.</p>\n<p><strong>2. Con los puntos $B$ y $C$:</strong><br>\n$B(1,6) \\implies a(1)^2 + b(1) + 1 = 6 \\implies a + b = 5$<br>\n$C(-1,0) \\implies a(-1)^2 + b(-1) + 1 = 0 \\implies a - b = -1$</p>\n<p><strong>3. Resolvemos por reducción:</strong><br>\n$(a+b) + (a-b) = 5 + (-1) \\implies 2a = 4 \\implies a = 2$.<br>\n$2 + b = 5 \\implies b = 3$.</p>\n<p><strong>Ecuación final:</strong> $y = 2x^2 + 3x + 1$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "En infografía, robótica e ingeniería civil, la interpolación parabólica se utiliza para construir trayectorias suaves o diseñar estructuras a partir de puntos de control fijos.",
+      "content": "<p>Un robot de renderizado 3D necesita diseñar la trayectoria parabólica del salto de un personaje en un videojuego.</p>\n<p>El diseñador especifica tres puntos clave por los que debe pasar obligatoriamente el personaje:</p>\n<ul>\n<li><strong>Despegue ($x = 0$ m):</strong> Altura de $2$ metros sobre una plataforma. Punto $(0,2)$.</li>\n<li><strong>Punto máximo ($x = 2$ m):</strong> Altura pico de $6$ metros. Punto $(2,6)$.</li>\n<li><strong>Aterrizaje ($x = 4$ m):</strong> Cae al suelo ($0$ metros). Punto $(4,2)$.</li>\n</ul>\n<p>Plantea el sistema de ecuaciones para determinar la función de la trayectoria $y(x) = ax^2 + bx + c$.</p>",
+      "practiceAnswer": "<p><strong>1. Punto de despegue $(0,2)$:</strong><br>\n$c = 2$.</p>\n<p><strong>2. Punto máximo $(2,6)$ y punto de aterrizaje $(4,2)$:</strong><br>\n$a(2)^2 + b(2) + 2 = 6 \\implies 4a + 2b = 4 \\implies 2a + b = 2$<br>\n$a(4)^2 + b(4) + 2 = 2 \\implies 16a + 4b = 0 \\implies 4a + b = 0$</p>\n<p><strong>3. Restamos las ecuaciones:</strong><br>\n$(4a + b) - (2a + b) = 0 - 2 \\implies 2a = -2 \\implies a = -1$.<br>\n$2(-1) + b = 2 \\implies b = 4$.</p>\n<p><strong>Resultado:</strong> La trayectoria parabólica programada en el videojuego es $y(x) = -x^2 + 4x + 2$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:13:27.788Z",
+    "updatedAt": "2026-08-01T11:13:27.788Z",
+    "contentHash": "96a4f047f1e06545",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

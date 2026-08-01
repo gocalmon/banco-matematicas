@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones racionales",
+    "exerciseType": "Resolución de ecuación con fracciones algebraicas",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Identificar el mínimo común múltiplo (m.c.m.) en polinomios denominadores",
+      "Eliminar denominadores en ecuaciones racionales multiplicando por el m.c.m.",
+      "Desarrollar y simplificar expresiones algebraicas para obtener una ecuación polinómica equivalente",
+      "Descartar soluciones falsas (raíces extrañas) que anulan algún denominador original"
+    ],
+    "prerequisites": [
+      "Identidades notables",
+      "Factorización de polinomios básicos",
+      "Resolución de ecuaciones de segundo grado"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T09:43:07.400Z",
+    "id": "ecuacion-racional-con-incognitas-en-el-denominador-8584e202"
+  },
+  "title": "Ecuación Racional con Incógnitas en el Denominador",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "El ejercicio nos pide resolver una ecuación racional; es decir, la incógnita aparece en los denominadores. Para ello, nos sugiere buscar un mínimo común múltiplo que nos permita deshacernos de las fracciones y simplificar el problema.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 2:</strong> Resuelve la siguiente ecuación racional con incógnitas en el denominador. Asegúrate de simplificar la ecuación resultante tras multiplicar por el mínimo común múltiplo de los denominadores:</p>\n<p>$$\\frac{x}{x - 1} + \\frac{2}{x + 1} = \\frac{3}{x^2 - 1}$$</p>\n</blockquote>",
+      "hints": [
+        "Fíjate en el tercer denominador: $x^2 - 1$. ¿Te suena a alguna identidad notable conocida? Relaciónalo con los otros dos denominadores."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consistirá en factorizar los denominadores para encontrar el mínimo común múltiplo. Al multiplicar toda la ecuación por él, eliminaremos las fracciones. Luego agruparemos los términos para resolver la ecuación polinómica resultante y, finalmente, verificaremos que la solución no anule los denominadores originales.",
+      "content": "<p><strong>Objetivo:</strong> Hallar el valor o valores de $x$ que cumplen la igualdad matemática dada.</p>\n<p><strong>Estrategia en 4 pasos:</strong></p>\n<ol>\n<li><strong>Factorizar denominadores:</strong> Expresaremos todos los denominadores en factores primos para descubrir el mínimo común múltiplo (m.c.m.).</li>\n<li><strong>Eliminar fracciones:</strong> Multiplicaremos ambos lados de la ecuación por el m.c.m. para obtener una ecuación sin denominadores.</li>\n<li><strong>Operar y simplificar:</strong> Desarrollaremos los paréntesis y agruparemos todos los términos a un lado para formar una ecuación de segundo grado, tal como nos pide el enunciado.</li>\n<li><strong>Comprobar restricciones:</strong> Una regla de oro de las ecuaciones racionales es que el denominador jamás puede ser cero, por lo que descartaremos las soluciones que lo provoquen.</li>\n</ol>"
+    },
+    {
+      "title": "Paso 1: Factorizar y hallar el m.c.m.",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "El primer paso es analizar los denominadores. Vemos que equis al cuadrado menos uno es una suma por diferencia, por lo que se factoriza como equis menos uno por equis más uno. Precisamente, esos son nuestros otros dos denominadores, lo cual nos facilita mucho encontrar el mínimo común múltiplo.",
+      "content": "<p>Analizamos los tres denominadores de nuestra ecuación: $(x - 1)$, $(x + 1)$ y $(x^2 - 1)$.</p>\n<p>Reconocemos que el tercero es una <strong>diferencia de cuadrados</strong> (identidad notable), por lo que podemos factorizarlo:</p>\n<p>$$x^2 - 1 = (x - 1)(x + 1)$$</p>\n<p>El <strong>mínimo común múltiplo (m.c.m.)</strong> de los denominadores debe contener todos los factores distintos elevados al mayor exponente. En este caso es directo:</p>\n<p>$$\\text{m.c.m.} = (x - 1)(x + 1)$$</p>\n<p><em>Nota: También deducimos las restricciones iniciales. Para que la ecuación exista, el denominador no puede ser cero. Por tanto, $x \\neq 1$ y $x \\neq -1$.</em></p>",
+      "warning": "<p>Anotar las restricciones ($x \\neq \\pm 1$) antes de multiplicar es fundamental. Al eliminar los denominadores creamos una ecuación \"nueva\" que podría tener soluciones que la ecuación original repudia. A estas soluciones engañosas se les llama \"raíces extrañas\".</p>"
+    },
+    {
+      "title": "Paso 2: Multiplicar y simplificar",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Multiplicamos cada fracción por nuestro mínimo común múltiplo. Al hacerlo, se cancelan las partes iguales arriba y abajo. Después, quitamos los paréntesis multiplicando, juntamos todos los términos a la izquierda y obtenemos una limpia ecuación de segundo grado: equis al cuadrado más tres equis menos cinco igual a cero.",
+      "content": "<p>Multiplicamos toda la ecuación por el m.c.m. $(x - 1)(x + 1)$:</p>\n<p>$$\\frac{x(x - 1)(x + 1)}{x - 1} + \\frac{2(x - 1)(x + 1)}{x + 1} = \\frac{3(x - 1)(x + 1)}{(x - 1)(x + 1)}$$</p>\n<p>Cancelamos los factores comunes en numerador y denominador de cada término:</p>\n<p>$$x(x + 1) + 2(x - 1) = 3$$</p>\n<p>Desarrollamos los paréntesis aplicando la propiedad distributiva:</p>\n<p>$$x^2 + x + 2x - 2 = 3$$</p>\n<p>Agrupamos todos los términos en el lado izquierdo para igualar a cero y formar la ecuación polinómica resultante:</p>\n<p>$$x^2 + 3x - 2 - 3 = 0$$\n$$x^2 + 3x - 5 = 0$$</p>",
+      "checkpoint": {
+        "question": "Al multiplicar por (x-1)(x+1) toda la ecuación, ¿estamos alterando el resultado?",
+        "options": [
+          {
+            "text": "Sí, y por eso tenemos que dividir al final otra vez por ese mismo polinomio.",
+            "correct": false,
+            "feedback": "Falso. En una ecuación (igualdad), si aplicamos la misma operación a ambos lados, el conjunto solución se mantiene (excepto si multiplicamos por cero)."
+          },
+          {
+            "text": "No, porque hemos aplicado la misma multiplicación a ambos miembros de la igualdad.",
+            "correct": true,
+            "feedback": "¡Exacto! Multiplicar ambos lados de una ecuación por un mismo valor no nulo mantiene la equivalencia (recordando vigilar que no estemos multiplicando por cero)."
+          },
+          {
+            "text": "No, porque el mínimo común múltiplo siempre vale 1.",
+            "correct": false,
+            "feedback": "El mínimo común múltiplo es una expresión algebraica dependiente de x, no vale 1. La equivalencia se mantiene por operar en ambos miembros por igual."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Resolver la ecuación cuadrática",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Con la ecuación ya libre de fracciones, aplicamos la fórmula general de segundo grado. Sustituimos la a por uno, la b por tres y la c por menos cinco. Obtenemos dos soluciones exactas en forma de raíz irracional, ya que la raíz de veintinueve no es exacta.",
+      "content": "<p>Resolvemos la ecuación resultante de segundo grado: $x^2 + 3x - 5 = 0$</p>\n<p>Aplicamos la fórmula general $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$, donde $a=1, b=3, c=-5$:</p>\n<p>$$x = \\frac{-3 \\pm \\sqrt{3^2 - 4(1)(-5)}}{2(1)}$$</p>\n<p>$$x = \\frac{-3 \\pm \\sqrt{9 - (-20)}}{2}$$</p>\n<p>$$x = \\frac{-3 \\pm \\sqrt{29}}{2}$$</p>\n<p>Obtenemos dos soluciones matemáticas, ambas números irracionales (la raíz de $29$ no es exacta, $\\sqrt{29} \\approx 5.385$):</p>\n<ul>\n<li>$x_1 = \\frac{-3 + \\sqrt{29}}{2} \\approx 1.192$</li>\n<li>$x_2 = \\frac{-3 - \\sqrt{29}}{2} \\approx -4.192$</li>\n</ul>"
+    },
+    {
+      "title": "Paso 4: Comprobación de restricciones",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Como paso final e imprescindible, verificamos nuestras soluciones. ¿Provoca alguna de ellas un cero en los denominadores originales? Como las restricciones marcaban que equis no podía ser uno ni menos uno, y nuestras respuestas no lo son, ambas son totalmente válidas.",
+      "content": "<p>Debemos comprobar si nuestras soluciones generan una división por cero en la ecuación original. Habíamos determinado las restricciones iniciales analizando los denominadores:</p>\n<p>$$x - 1 \\neq 0 \\Rightarrow x \\neq 1$$\n$$x + 1 \\neq 0 \\Rightarrow x \\neq -1$$</p>\n<p>Nuestras soluciones candidatas son $x = \\frac{-3 \\pm \\sqrt{29}}{2}$.</p>\n<p>Puesto que ni $\\frac{-3 + \\sqrt{29}}{2}$ ni $\\frac{-3 - \\sqrt{29}}{2}$ son iguales a $1$ o $-1$, <strong>ambas soluciones son válidas</strong>.</p>\n<p>La ecuación tiene dos soluciones reales perfectas.</p>"
+    },
+    {
+      "title": "Interpretación Geométrica",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Si visualizamos esta ecuación como el punto donde dos funciones racionales se cruzan, observaríamos curvas que se rompen en las asíntotas verticales que son las restricciones uno y menos uno. Las soluciones encontradas son exactamente las coordenadas x donde las dos curvas intersecan.",
+      "content": "<p>Geométricamente, resolver esta ecuación equivale a encontrar las intersecciones entre dos funciones racionales:</p>\n<ul>\n<li>$f(x) = \\frac{x}{x - 1} + \\frac{2}{x + 1}$</li>\n<li>$g(x) = \\frac{3}{x^2 - 1}$</li>\n</ul>\n<p>Ambas funciones tienen <strong>asíntotas verticales</strong> en $x = 1$ y $x = -1$ (los valores prohibidos donde la función se rompe o tiende a infinito).</p>\n<p>Como muestran nuestros cálculos, las curvas de $f(x)$ y $g(x)$ se cruzan en dos puntos exactos: $x \\approx 1.192$ y $x \\approx -4.192$.</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" style=\"background-color:#0f172a; border-radius:8px;\">\n  <!-- Ejes -->\n  <line x1=\"20\" y1=\"150\" x2=\"380\" y2=\"150\" stroke=\"#fbbf24\" stroke-width=\"2.5\" marker-end=\"url(#arrowX)\"/>\n  <line x1=\"200\" y1=\"280\" x2=\"200\" y2=\"20\" stroke=\"#fbbf24\" stroke-width=\"2.5\" marker-end=\"url(#arrowY)\"/>\n  <defs>\n    <marker id=\"arrowX\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"arrowY\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n  </defs>\n  \n  <!-- Asíntotas verticales x=-1 (160), x=1 (240) asumiendo escala 1ud = 40px -->\n  <line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"5,5\"/>\n  <line x1=\"240\" y1=\"30\" x2=\"240\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"5,5\"/>\n  \n  <!-- Representación conceptual simplificada -->\n  <text x=\"165\" y=\"45\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"12\">x=-1</text>\n  <text x=\"245\" y=\"45\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"12\">x=1</text>\n  \n  <!-- Soluciones aproximadas: x1=1.19 (248), x2=-4.19 (32) -->\n  <circle cx=\"248\" cy=\"150\" r=\"5\" fill=\"#ef4444\"/>\n  <text x=\"240\" y=\"170\" fill=\"#ef4444\" font-family=\"sans-serif\" font-size=\"12\">~1.19</text>\n  \n  <circle cx=\"32\" cy=\"150\" r=\"5\" fill=\"#ef4444\"/>\n  <text x=\"25\" y=\"135\" fill=\"#ef4444\" font-family=\"sans-serif\" font-size=\"12\">~-4.19</text>\n\n  <text x=\"365\" y=\"170\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">X</text>\n  <text x=\"210\" y=\"30\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">Y</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulando nuestro método: hemos descompuesto los denominadores, multiplicado para eliminarlos y resuelto la ecuación resultante. El resultado nos entregó dos raíces irracionales que sobrevivieron perfectamente a la comprobación de asíntotas.",
+      "content": "<ol>\n<li><strong>Factorizar:</strong> Identificamos la diferencia de cuadrados $x^2-1 = (x-1)(x+1)$.</li>\n<li><strong>m.c.m. y multiplicación:</strong> Multiplicamos toda la expresión por $(x-1)(x+1)$ para erradicar las fracciones.</li>\n<li><strong>Reducción:</strong> Agrupamos términos para llegar a la ecuación objetivo: $x^2 + 3x - 5 = 0$.</li>\n<li><strong>Resolución:</strong> La fórmula cuadrática nos arrojó $x = \\frac{-3 \\pm \\sqrt{29}}{2}$.</li>\n<li><strong>Comprobación:</strong> Ambas raíces son válidas ya que no anulan los denominadores originales (ninguna es $\\pm 1$).</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno. Intenta resolver esta nueva ecuación racional. Sigue los mismos pasos, y sobre todo, no te olvides de comprobar que tus respuestas no generen divisiones entre cero.",
+      "content": "<p>Resuelve la siguiente ecuación racional multiplicando por el m.c.m. de sus denominadores:</p>\n<p>$$\\frac{1}{x} + \\frac{1}{x + 2} = \\frac{3}{x^2 + 2x}$$</p>\n<p><em>Pistas: Factoriza el tercer denominador sacando factor común. Establece las restricciones iniciales antes de empezar. Inténtalo en papel antes de ver la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Soluciones:</strong></p>\n<p>Al factorizar el tercer denominador obtenemos $x(x+2)$, que resulta ser el m.c.m. Multiplicando toda la ecuación por $x(x+2)$ se simplifica a:</p>\n<p>$$(x + 2) + x = 3$$\n$$2x + 2 = 3$$\n$$2x = 1 \\Rightarrow x = \\frac{1}{2}$$</p>\n<p><em>Comprobación:</em> Como $x = \\frac{1}{2}$ no anula ni la $x$ suelta (restricción $x \\neq 0$) ni el $(x+2)$ (restricción $x \\neq -2$), la solución $x = 0.5$ es correcta.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos cómo estas ecuaciones modelan problemas reales de ritmo y tiempo. Imagina que dos mangueras de diferente grosor deben llenar una piscina. Su suma de velocidades se convierte en una ecuación racional.",
+      "content": "<p>Un grifo pequeño tarda $x$ horas en llenar un depósito, y otro grifo grande tarda $(x - 1)$ horas (es decir, una hora menos porque es más rápido). Si se abren ambos a la vez, sabemos que tardarán exactamente $\\frac{6}{5}$ de hora (1 hora y 12 minutos) en llenarlo.</p>\n<p>La ecuación que modela la fracción del depósito que llenan por hora al trabajar juntos es:</p>\n<p>$$\\frac{1}{x} + \\frac{1}{x - 1} = \\frac{5}{6}$$</p>\n<p>Resuelve la ecuación racional para averiguar cuántas horas tarda el grifo pequeño por sí solo (halla $x$).</p>\n<p><em>Multiplica por el m.c.m. ($6x(x-1)$) y quédate solo con la solución que tenga sentido físico.</em></p>",
+      "practiceAnswer": "<p>Al multiplicar por $6x(x-1)$, eliminamos fracciones:\n$$6(x - 1) + 6x = 5x(x - 1)$$\n$$6x - 6 + 6x = 5x^2 - 5x$$\n$$5x^2 - 17x + 6 = 0$$</p>\n<p>Resolviendo la cuadrática: $x = \\frac{17 \\pm \\sqrt{289 - 120}}{10} = \\frac{17 \\pm 13}{10}$</p>\n<p>Obtenemos $x_1 = 3$ y $x_2 = 0.4$.</p>\n<p><strong>Interpretación:</strong> Matemáticamente ambas valen, pero físicamente $x=0.4$ horas significaría que el grifo rápido tardaría $0.4 - 1 = -0.6$ horas en llenarlo, un tiempo negativo imposible. Por lo tanto, el grifo pequeño tarda <strong>$3$ horas</strong> en llenar el depósito él solo (y el grande, 2 horas).</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T09:58:46.157Z",
+    "updatedAt": "2026-08-01T09:58:46.157Z",
+    "contentHash": "0e4e4c8d3433d917",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

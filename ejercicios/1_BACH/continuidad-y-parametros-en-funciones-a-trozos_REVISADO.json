@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis de Funciones",
+    "subtopic": "Continuidad y Límites Laterales",
+    "exerciseType": "Cálculo de parámetros para garantizar la continuidad",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Comprender la condición de continuidad en un punto usando límites laterales.",
+      "Calcular los límites laterales por la izquierda y por la derecha en el punto de frontera.",
+      "Plantear y resolver una ecuación para despejar el parámetro k."
+    ],
+    "prerequisites": [
+      "Concepto de función definida a trozos.",
+      "Cálculo de límites de funciones polinómicas por sustitución directa.",
+      "Resolución de ecuaciones de primer grado."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 7,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T11:11:55.840Z",
+    "id": "continuidad-y-parametros-en-funciones-a-trozos-0b7686bd"
+  },
+  "title": "Continuidad y Parámetros en Funciones a Trozos",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "En este problema vamos a ajustar una pieza móvil dentro de una función para lograr que no haya saltos ni interrupciones. Queremos conectar dos trozos de curva perfectamente en el punto x igual a dos.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 4: Continuidad y parámetros:</strong> Halla el valor que debe tomar el parámetro constante $k$ para que la siguiente función definida a trozos no presente saltos (es decir, sea continua) en el punto de transición $x = 2$:</p>\n<p>$$f(x) = \\begin{cases} 3x - k & \\text{si } x \\le 2 \\\\ x^2 + 2x - 1 & \\text{si } x > 2 \\end{cases}$$</p>\n</blockquote>",
+      "hints": [
+        "Para que no haya saltos, el valor al que se acerca la función por la izquierda debe ser igual al valor al que se acerca por la derecha.",
+        "Calcula el límite por la izquierda usando la expresión $3x - k$.",
+        "Calcula el límite por la derecha usando la expresión $x^2 + 2x - 1$."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para que una función sea continua en un punto, las dos ramas deben 'engancharse' en la misma altura. Matemáticamente, esto significa que el límite por la izquierda debe ser igual al límite por la derecha y al valor de la función.",
+      "content": "<h3>Condición de Continuidad</h3>\n<p>Una función $f(x)$ es continua en $x = a$ si y solo si se cumple que:</p>\n<p>$$\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = f(a)$$</p>\n<p><strong>Pasos a seguir para $x = 2$:</strong></p>\n<ol>\n<li><strong>Límite por la izquierda ($\\lim_{x \\to 2^-}$):</strong> Utilizar la rama $3x - k$ y evaluar en $x = 2$.</li>\n<li><strong>Límite por la derecha ($\\lim_{x \\to 2^+}$):</strong> Utilizar la rama $x^2 + 2x - 1$ y evaluar en $x = 2$.</li>\n<li><strong>Igualar expresiones:</strong> Resolver la ecuación resultante para despejar $k$.</li>\n</ol>"
+    },
+    {
+      "title": "Resolución paso a paso",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Vamos a evaluar ambos lados de la frontera en x igual a dos. Igualamos ambos resultados y despejamos la variable k.",
+      "content": "<p><strong>1. Límite por la izquierda ($x \\to 2^-$) y valor $f(2)$:</strong></p>\n<p>Usamos la rama $3x - k$ (válida para $x \\le 2$):</p>\n<p>$$\\lim_{x \\to 2^-} f(x) = 3(2) - k = 6 - k$$</p>\n<p><strong>2. Límite por la derecha ($x \\to 2^+$):</strong></p>\n<p>Usamos la rama $x^2 + 2x - 1$ (válida para $x > 2$):</p>\n<p>$$\\lim_{x \\to 2^+} f(x) = 2^2 + 2(2) - 1 = 4 + 4 - 1 = 7$$</p>\n<p><strong>3. Condición de continuidad (igualar límites laterales):</strong></p>\n<p>$$6 - k = 7$$</p>\n<p>Despejamos $k$:</p>\n<p>$$-k = 7 - 6 \\implies -k = 1 \\implies k = -1$$</p>\n<p><strong>Resultado:</strong> El valor del parámetro debe ser <strong>$k = -1$</strong>.</p>",
+      "theory": "<p>Al ser $k = -1$, la primera rama queda como $3x - (-1) = 3x + 1$. Evaluando en $x = 2$, se obtiene $3(2) + 1 = 7$, coincidiendo exactamente con la segunda rama.</p>",
+      "warning": "<p>Atención a la transposición de términos y los signos negativos: al pasar el 6 restando queda $-k = 1$, de donde $k = -1$.</p>"
+    },
+    {
+      "title": "Visualización Geométrica del Empalme",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Gráficamente, si k no fuera menos uno, las dos ramas terminarían a alturas distintas dejando un hueco o salto. Con k igual a menos uno, la recta y la parábola se unen perfectamente en el punto dos comas siete.",
+      "content": "<p>Gráficamente, la condición de continuidad garantiza que ambas curvas se conecten en el mismo punto del plano:</p>\n<ul>\n<li><strong>A la izquierda ($x \\le 2$):</strong> Es una recta $y = 3x + 1$. Para $x = 2$, llega exactamente a la altura $y = 7$.</li>\n<li><strong>A la derecha ($x > 2$):</strong> Es una parábola $y = x^2 + 2x - 1$. Cerca de $x = 2$, parte exactamente desde la altura $y = 7$.</li>\n<li><strong>Punto de empalme:</strong> $(2, 7)$.</li>\n</ul>\n<p>Si $k$ tomara cualquier otro valor diferente de $-1$, habría un \"salto finito\" en $x = 2$ y la función no sería continua.</p>",
+      "visual": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Ejes -->\n  <line x1='30' y1='250' x2='370' y2='250' stroke='#fbbf24' stroke-width='2' marker-end='url(#arrow)'/>\n  <line x1='100' y1='30' x2='100' y2='270' stroke='#fbbf24' stroke-width='2' marker-start='url(#arrow)'/>\n  <text x='360' y='240' fill='#fbbf24' font-size='12' font-family='sans-serif'>x</text>\n  <text x='80' y='40' fill='#fbbf24' font-size='12' font-family='sans-serif'>y</text>\n  <!-- Guía en x = 2 (Escala: x=0 es 100px, x=2 es 200px, y=0 es 250px, y=7 es 110px) -->\n  <line x1='200' y1='30' x2='200' y2='270' stroke='#334155' stroke-width='1.5' stroke-dasharray='4,4'/>\n  <text x='195' y='265' fill='#94a3b8' font-size='12' font-family='sans-serif'>2</text>\n  <!-- Guía en y = 7 -->\n  <line x1='30' y1='110' x2='370' y2='110' stroke='#334155' stroke-width='1' stroke-dasharray='4,4'/>\n  <text x='75' y='115' fill='#94a3b8' font-size='12' font-family='sans-serif'>7</text>\n  <!-- Rama izquierda: Recta 3x + 1 de x=0 a x=2 (de (100, 230) a (200, 110)) -->\n  <path d='M 60 270 L 200 110' fill='none' stroke='#38bdf8' stroke-width='3'/>\n  <!-- Rama derecha: Parábola x^2 + 2x - 1 de x=2 a x=3.5 (de (200, 110) en adelante) -->\n  <path d='M 200 110 Q 250 10 300 -100' fill='none' stroke='#10b981' stroke-width='3'/>\n  <!-- Punto de unión -->\n  <circle cx='200' cy='110' r='5' fill='#ef4444'/>\n  <text x='210' y='105' fill='#ef4444' font-size='13' font-family='sans-serif' font-weight='bold'>(2, 7)</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulemos. Para resolver cualquier problema de continuidad con parámetros, solo tienes que calcular los límites a ambos lados de la frontera y resolver la ecuación.",
+      "content": "<p>Estrategia universal para resolver la continuidad con parámetros:</p>\n<ol>\n<li><strong>Localizar el punto crítico:</strong> Identifica el valor de $x$ donde cambia la definición de la función a trozos.</li>\n<li><strong>Calcula los límites laterales:</strong>\n  <ul>\n    <li>Evalúa el límite por la izquierda ($x \\to a^-$) usando la rama correspondiente.</li>\n    <li>Evalúa el límite por la derecha ($x \\to a^+$) usando la otra rama.</li>\n  </ul>\n</li>\n<li><strong>Iguala y resuelve:</strong> Plantea la ecuación $\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+}$ para hallar el parámetro.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora te toca a ti. Aplica exactamente el mismo método para encontrar el valor de m que hace continua esta función en x igual a tres.",
+      "content": "<p>Halla el valor del parámetro $m$ para que la siguiente función sea continua en el punto de transición $x = 3$:</p>\n<p>$$g(x) = \\begin{cases} x^2 - m & \\text{si } x < 3 \\\\ 2x + 1 & \\text{si } x \\ge 3 \\end{cases}$$</p>\n<p><em>Pista: Evalúa ambas ramas en $x = 3$ e iguala los resultados.</em></p>",
+      "practiceAnswer": "<p><strong>1. Límite por la izquierda ($x \\to 3^-$):</strong><br>\n$3^2 - m = 9 - m$</p>\n<p><strong>2. Límite por la derecha ($x \\to 3^+$):</strong><br>\n$2(3) + 1 = 6 + 1 = 7$</p>\n<p><strong>3. Igualamos ambos límites:</strong><br>\n$9 - m = 7 \\implies -m = 7 - 9 \\implies -m = -2 \\implies m = 2$</p>\n<p><strong>Resultado:</strong> El valor debe ser <strong>$m = 2$</strong>.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "La continuidad no es solo un concepto abstracto de examen; en ingeniería fiscal o tarifas eléctricas, evitar los saltos bruscos es fundamental para evitar penalizaciones o cobros injustos.",
+      "content": "<p>Una compañía de electricidad cobra el consumo de luz según una tarifa a tramos para incentivar el ahorro:</p>\n<ul>\n<li><strong>Consumo normal ($x \\le 100$ kWh):</strong> Se aplica un coste de $C_1(x) = 0.15x$ euros.</li>\n<li><strong>Consumo elevado ($x > 100$ kWh):</strong> Se aplica un coste de $C_2(x) = 0.25x - k$ euros.</li>\n</ul>\n<p>Para evitar que un cliente que consuma $100.1$ kWh pague de golpe un salto injusto en su factura en comparación con uno que consume $100$ kWh, la factura debe ser continua en $x = 100$.</p>\n<p>¿Qué valor debe tener el ajuste $k$ para eliminar ese salto en los $100$ kWh?</p>",
+      "practiceAnswer": "<p>Queremos garantizar la continuidad del coste en $x = 100$ kWh.</p>\n<p><strong>1. Coste aproximándose por la izquierda ($x \\to 100^-$):</strong><br>\n$C_1(100) = 0.15 \\cdot 100 = 15$ euros.</p>\n<p><strong>2. Coste aproximándose por la derecha ($x \\to 100^+$):</strong><br>\n$C_2(100) = 0.25 \\cdot 100 - k = 25 - k$ euros.</p>\n<p><strong>3. Igualamos para evitar el salto:</strong><br>\n$15 = 25 - k \\implies k = 25 - 15 \\implies k = 10$ euros.</p>\n<p><strong>Conclusión:</strong> La compañía debe aplicar un descuento fijo de <strong>10 €</strong> ($k = 10$) en el tramo superior para que la transición sea suave y continua.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:12:06.063Z",
+    "updatedAt": "2026-08-01T11:12:06.063Z",
+    "contentHash": "b451a7a2cb3ac3d8",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

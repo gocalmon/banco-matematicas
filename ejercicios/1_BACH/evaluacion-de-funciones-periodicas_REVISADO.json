@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis de Funciones",
+    "subtopic": "Funciones Periódicas",
+    "exerciseType": "Análisis y cálculo en funciones periódicas",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Comprender el concepto de función periódica y su periodo (T).",
+      "Aplicar la propiedad fundamental de las funciones periódicas: f(t) = f(t + nT).",
+      "Determinar valores de una función en instantes futuros utilizando la periodicidad."
+    ],
+    "prerequisites": [
+      "Concepto básico de función.",
+      "Operaciones aritméticas elementales (sumas y múltiplos)."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 7,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T11:09:11.854Z",
+    "id": "evaluacion-de-funciones-periodicas-52a03014"
+  },
+  "title": "Evaluación de Funciones Periódicas",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a analizar un tipo de función muy especial: las que se repiten una y otra vez, como las estaciones del año o las fases de la luna. Solo necesitamos conocer un ciclo para predecir el futuro.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 8:</strong> A partir de la observación de la gráfica de una función periódica cuyo periodo es $T = 4$ semanas:</p>\n<ul>\n<li>a) Si sabemos que en la semana $t = 1$ el valor de la función es $f(1) = 15$, ¿cuál será el valor de la función en las semanas $t = 5$, $t = 9$ y $t = 17$? Explica el porqué.</li>\n</ul>\n</blockquote>",
+      "hints": [
+        "El periodo $T = 4$ significa que el comportamiento de la función se repite exactamente igual cada 4 semanas.",
+        "Si conoces lo que pasa hoy, sabes exactamente qué pasará dentro de 4 semanas, 8 semanas, 12 semanas..."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "La clave aquí no es hacer cálculos complicados, sino entender cómo funciona la periodicidad. Vamos a comprobar si las semanas que nos preguntan caen exactamente en el mismo punto del ciclo que la semana 1.",
+      "content": "<h3>Estrategia para Funciones Periódicas</h3>\n<p>Una función es periódica de periodo $T$ si sus valores se repiten en intervalos regulares de longitud $T$. Matemáticamente, esto se expresa como:</p>\n<p>$$f(t) = f(t + T) = f(t + 2T) = ... = f(t + nT)$$</p>\n<p>Donde <strong>$n$</strong> es cualquier número entero (número de ciclos completos).</p>\n<p><strong>Pasos a seguir:</strong></p>\n<ol>\n<li>Identificar el dato inicial: En $t = 1$, el valor es $15$.</li>\n<li>Identificar el periodo: $T = 4$.</li>\n<li>Para cada instante $t$ que nos pidan ($5, 9, 17$), calcular la diferencia de tiempo respecto a nuestro instante inicial ($t = 1$).</li>\n<li>Comprobar si esa diferencia es un múltiplo exacto del periodo ($4$). Si lo es, el valor de la función será el mismo.</li>\n</ol>"
+    },
+    {
+      "title": "Resolución paso a paso",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Vamos a calcular la distancia entre la semana que conocemos y las semanas que nos preguntan. Como todas las distancias son múltiplos de cuatro, es como si hubiéramos dado vueltas completas al ciclo para volver exactamente al mismo punto.",
+      "content": "<p>Sabemos que $f(1) = 15$ y que el periodo es $T = 4$. Vamos a evaluar cada caso:</p>\n<ul>\n<li><strong>Para $t = 5$:</strong><br>\nLa diferencia con la semana 1 es: $5 - 1 = 4$ semanas.<br>\nEsto es exactamente $1$ periodo ($1 \\cdot 4$).<br>\nPor tanto, $f(5) = f(1 + 4) = f(1) = 15$.</li>\n</ul>\n<ul>\n<li><strong>Para $t = 9$:</strong><br>\nLa diferencia con la semana 1 es: $9 - 1 = 8$ semanas.<br>\nEsto es exactamente $2$ periodos ($2 \\cdot 4$).<br>\nPor tanto, $f(9) = f(1 + 8) = f(1) = 15$.</li>\n</ul>\n<ul>\n<li><strong>Para $t = 17$:</strong><br>\nLa diferencia con la semana 1 es: $17 - 1 = 16$ semanas.<br>\nEsto es exactamente $4$ periodos ($4 \\cdot 4$).<br>\nPor tanto, $f(17) = f(1 + 16) = f(1) = 15$.</li>\n</ul>\n<p><strong>Explicación:</strong> Como los instantes $t=5$, $t=9$ y $t=17$ se diferencian de $t=1$ en múltiplos exactos del periodo ($T=4$), la función se encuentra en el mismo punto de su ciclo y, por tanto, toma exactamente el mismo valor: <strong>15</strong>.</p>",
+      "theory": "<p><strong>La magia del módulo:</strong> Otra forma de verlo es dividiendo el tiempo entre el periodo y mirando el resto. $5 \\div 4$ tiene resto $1$. $9 \\div 4$ tiene resto $1$. $17 \\div 4$ tiene resto $1$. Como todos tienen el mismo resto al dividir por $T$, todos tienen el mismo valor en la función.</p>"
+    },
+    {
+      "title": "Representación Gráfica",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Gráficamente, si dibujáramos esta función, veríamos un patrón que se copia y pega cada cuatro semanas. Nuestros puntos caerían exactamente en la misma 'cima' o posición de cada repetición.",
+      "content": "<p>Visualizar la periodicidad ayuda a entender por qué el valor se repite constante.</p>\n<p>Imagina cualquier forma (una onda, un pico, un escalón) que dura 4 semanas. Esa forma se \"copia y pega\" indefinidamente a lo largo del eje temporal.</p>\n<ul>\n<li>El punto azul inicial está en $t = 1$ con una altura de $15$.</li>\n<li>Cada 4 unidades en el eje horizontal (el periodo $T=4$), encontramos un punto rojo idéntico.</li>\n<li>Los puntos caen exactamente en $t = 5$, $t = 9$, $t = 13$, $t = 17$... todos a la misma altura de $15$.</li>\n</ul>",
+      "visual": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Ejes -->\n  <line x1='30' y1='250' x2='370' y2='250' stroke='#fbbf24' stroke-width='2' marker-end='url(#arrow)'/>\n  <line x1='40' y1='50' x2='40' y2='260' stroke='#fbbf24' stroke-width='2' marker-start='url(#arrow)'/>\n  <text x='360' y='240' fill='#fbbf24' font-size='14' font-family='sans-serif'>t</text>\n  <text x='20' y='60' fill='#fbbf24' font-size='14' font-family='sans-serif'>f(t)</text>\n  <!-- Altura y=15 -->\n  <line x1='30' y1='100' x2='370' y2='100' stroke='#334155' stroke-width='1' stroke-dasharray='4,4'/>\n  <text x='15' y='105' fill='#94a3b8' font-size='12' font-family='sans-serif'>15</text>\n  <!-- Onda genérica repetitiva (Senoidal aproximada) -->\n  <!-- Ciclo de ancho 60px = 4 unidades (T=4). 1 unidad = 15px -->\n  <path d='M 40 250 Q 55 100 85 250 Q 115 100 145 250 Q 175 100 205 250 Q 235 100 265 250 Q 295 100 325 250' fill='none' stroke='#38bdf8' stroke-width='2' opacity='0.7'/>\n  <!-- Marcas y Puntos. t=1 -> X = 40 + 1*15 = 55 -->\n  <circle cx='55' cy='100' r='5' fill='#3b82f6'/>\n  <text x='50' y='270' fill='#94a3b8' font-size='12' font-family='sans-serif'>1</text>\n  <!-- t=5 -> X = 40 + 5*15 = 115 -->\n  <circle cx='115' cy='100' r='5' fill='#ef4444'/>\n  <text x='110' y='270' fill='#94a3b8' font-size='12' font-family='sans-serif'>5</text>\n  <!-- t=9 -> X = 40 + 9*15 = 175 -->\n  <circle cx='175' cy='100' r='5' fill='#ef4444'/>\n  <text x='170' y='270' fill='#94a3b8' font-size='12' font-family='sans-serif'>9</text>\n  <!-- t=13 -> X = 40 + 13*15 = 235 -->\n  <circle cx='235' cy='100' r='3' fill='#94a3b8'/>\n  <!-- t=17 -> X = 40 + 17*15 = 295 -->\n  <circle cx='295' cy='100' r='5' fill='#ef4444'/>\n  <text x='285' y='270' fill='#94a3b8' font-size='12' font-family='sans-serif'>17</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "En resumen, para predecir cualquier valor en una función periódica, solo tienes que restarle el tiempo inicial y ver si el resultado es un múltiplo exacto del periodo.",
+      "content": "<p>El principio fundamental para trabajar con funciones periódicas es sencillo:</p>\n<ol>\n<li><strong>Conoce tu Periodo ($T$):</strong> Es el tiempo o distancia que tarda el patrón en repetirse por completo.</li>\n<li><strong>Usa la Fórmula Fundamental:</strong> $f(t) = f(t + n \\cdot T)$ para cualquier número entero $n$.</li>\n<li><strong>Predicción:</strong> Si quieres saber el valor en un instante $t_2$ conociendo el instante $t_1$, verifica que $t_2 - t_1$ sea un múltiplo de $T$. Si es así, los valores son idénticos.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Vamos a ponerte a prueba. Ahora te daré una semana muy lejana en el tiempo. Utiliza el mismo sistema matemático que hemos visto para adivinar el resultado.",
+      "content": "<p>Sabiendo que la misma función tiene un periodo $T = 4$ y que $f(1) = 15$...</p>\n<p>¿Podrías determinar, sin dibujar toda la gráfica, cuánto valdrá la función en la semana <strong>$t = 101$</strong>? Demuestra por qué usando múltiplos del periodo.</p>",
+      "practiceAnswer": "<p>Sí, podemos saberlo. Calculamos la diferencia de tiempo respecto a nuestra semana conocida (semana 1):</p>\n<p>$$101 - 1 = 100 \\text{ semanas}$$</p>\n<p>Comprobamos si $100$ es un múltiplo exacto del periodo $T = 4$ dividiendo:</p>\n<p>$$100 \\div 4 = 25 \\text{ ciclos exactos}$$</p>\n<p>Como son exactamente $25$ periodos completos, la función vuelve al mismo punto. Por tanto: <strong>$f(101) = 15$</strong>.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Las matemáticas de la repetición están en todas partes. Los turnos de trabajo, los semáforos, o incluso los días de la semana funcionan con esta misma regla matemática.",
+      "content": "<p>Trabajas en un hospital donde los turnos de guardia siguen un patrón estricto que se repite exactamente cada 14 días (es decir, el periodo de tu horario es $T = 14$ días).</p>\n<p>Sabes que el <strong>Día 3</strong> del mes te tocó trabajar en el turno de noche, lo cual fue agotador.</p>\n<p>Te invitan a un concierto muy importante que caerá el <strong>Día 31</strong> del mismo mes. Usando el concepto de funciones periódicas, ¿te tocará turno de noche ese día?</p>",
+      "practiceAnswer": "<p>Podemos modelar esto como una función periódica donde $T = 14$. Sabemos que $f(3) = \\text{\"Turno de noche\"}$.</p>\n<p>Queremos conocer $f(31)$. Calculamos la diferencia de días:</p>\n<p>$$31 - 3 = 28 \\text{ días}$$</p>\n<p>Comprobamos si 28 es múltiplo del periodo (14):</p>\n<p>$$28 \\div 14 = 2 \\text{ periodos exactos}$$</p>\n<p>Dado que han pasado exactamente dos ciclos completos, el Día 31 cae en la misma posición del horario que el Día 3. Por lo tanto, <strong>sí, lamentablemente te tocará el turno de noche</strong>.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:09:40.009Z",
+    "updatedAt": "2026-08-01T11:09:40.009Z",
+    "contentHash": "fe786f762a5e8a64",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

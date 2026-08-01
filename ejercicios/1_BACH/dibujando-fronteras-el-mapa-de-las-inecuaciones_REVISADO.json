@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Sistemas de Inecuaciones Lineales",
+    "exerciseType": "Representación gráfica y cálculo de vértices (Programación Lineal)",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Representar inecuaciones lineales de dos variables en el plano cartesiano",
+      "Identificar la región factible como la intersección de varios semiplanos",
+      "Calcular analíticamente los vértices de una región poligonal resolviendo sistemas de ecuaciones",
+      "Vincular la representación gráfica con su solución algebraica"
+    ],
+    "prerequisites": [
+      "Representación gráfica de rectas",
+      "Resolución de sistemas de ecuaciones lineales de 2x2",
+      "Evaluación de desigualdades con puntos de prueba"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T10:24:09.367Z",
+    "id": "dibujando-fronteras-el-mapa-de-las-inecuaciones-cd48fdcb"
+  },
+  "title": "Dibujando Fronteras: El Mapa de las Inecuaciones",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Entramos en el mundo de la geometría y el álgebra combinadas. Este ejercicio nos pide dos cosas muy concretas: primero, que dibujemos el territorio exacto que cumple todas estas reglas a la vez. Y segundo, que calculemos con precisión matemática las esquinas de ese territorio.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 10: Sistemas de inecuaciones lineales con dos variables:</strong></p>\n<p>a) Representa gráficamente en el plano cartesiano la región factible determinada por el siguiente sistema de inecuaciones lineales con dos variables:</p>\n<p>$$\\begin{cases} x + y \\le 6 \\\\ 2x - y \\ge 0 \\\\ x \\ge 0,\\ y \\ge 0 \\end{cases}$$</p>\n<p>b) Calcula analíticamente las coordenadas de los tres vértices que delimitan y encierran dicha región poligonal.</p>\n</blockquote>",
+      "hints": [
+        "Las dos últimas inecuaciones ($x \\ge 0$ y $y \\ge 0$) son un clásico: nos están encerrando en el primer cuadrante del plano cartesiano.",
+        "Para dibujar las inecuaciones principales, trátalas primero como si fueran ecuaciones normales (con el signo $=$) para dibujar las líneas fronterizas."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestro mapa de ruta tiene dos fases. En la fase gráfica, convertiremos cada inecuación en una línea y pintaremos la zona que nos manda. La zona donde se mezclen todos los colores será nuestra región factible. En la fase analítica, buscaremos los choques entre esas líneas para hallar los vértices exactos.",
+      "content": "<p><strong>Objetivo:</strong> Dibujar la región que cumple todas las condiciones (parte <strong>a</strong>) y calcular sus esquinas (parte <strong>b</strong>).</p>\n<p><strong>Estrategia paso a paso:</strong></p>\n<ol>\n<li><strong>Trazar las fronteras:</strong> Convertiremos las inecuaciones en igualdades ($x+y=6$ y $2x-y=0$) para dibujar las rectas correspondientes.</li>\n<li><strong>Descubrir el territorio:</strong> Usaremos un \"punto de prueba\" para saber hacia qué lado de cada línea debemos sombrear.</li>\n<li><strong>Cruce de semiplanos:</strong> La <em>región factible</em> será el polígono donde se superpongan todas las sombras, restringido al primer cuadrante.</li>\n<li><strong>Caza de vértices:</strong> Para calcular analíticamente las esquinas (vértices), resolveremos pequeños sistemas de ecuaciones igualando las rectas que se cruzan en cada esquina.</li>\n</ol>"
+    },
+    {
+      "title": "Paso 1: Trazando las fronteras (Parte a)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Primero, vamos a dibujar las dos líneas principales. Para equis más i igual a seis, si la equis es cero, la i vale seis, y viceversa. Para la segunda, si la equis es cero, la i también es cero. Como pasa por el origen, buscamos otro punto, por ejemplo, si equis es tres, i es seis.",
+      "content": "<p>Empezamos transformando las desigualdades en igualdades para obtener las rectas fronterizas:</p>\n<p><strong>Recta 1: $x + y = 6$</strong><br>\nBuscamos los puntos de corte con los ejes (es lo más fácil):</p>\n<ul>\n<li>Si $x = 0 \\implies y = 6 \\implies$ Punto $(0, 6)$</li>\n<li>Si $y = 0 \\implies x = 6 \\implies$ Punto $(6, 0)$</li>\n</ul>\n<p><strong>Recta 2: $2x - y = 0$ (o despejado, $y = 2x$)</strong><br>\nBuscamos un par de puntos:</p>\n<ul>\n<li>Si $x = 0 \\implies y = 0 \\implies$ Punto $(0, 0)$ (Pasa por el origen)</li>\n<li>Si $x = 3 \\implies y = 6 \\implies$ Punto $(3, 6)$</li>\n</ul>\n<p><em>Y recuerda, las condiciones $x \\ge 0, y \\ge 0$ significan que sólo trabajamos en el cuadrante superior derecho.</em></p>"
+    },
+    {
+      "title": "Paso 2: ¿Hacia dónde sombreamos?",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ya tenemos las líneas, ahora toca elegir el bando. Usamos puntos de prueba. Para la primera, el cero-cero funciona perfecto y nos dice que pintemos hacia abajo. Para la segunda línea no podemos usar el origen porque la línea lo pisa, así que usamos otro, como el dos-cero.",
+      "content": "<p>Ahora debemos decidir qué semiplano sombrear para cada recta evaluando las inecuaciones originales.</p>\n<p><strong>Para $x + y \\le 6$:</strong><br>\nProbamos con el origen $(0,0)$:<br>\n$0 + 0 \\le 6 \\implies 0 \\le 6$. ¡Es verdadero! Sombreamos hacia el lado donde está el $(0,0)$ (hacia abajo/izquierda).</p>\n<p><strong>Para $2x - y \\ge 0$:</strong><br>\nComo la recta pasa por el $(0,0)$, <strong>no podemos</strong> usarlo como punto de prueba. Elegimos otro, por ejemplo, el $(2,0)$:<br>\n$2(2) - 0 \\ge 0 \\implies 4 \\ge 0$. ¡Es verdadero! Sombreamos hacia el lado que contiene al punto $(2,0)$ (hacia abajo/derecha).</p>",
+      "checkpoint": {
+        "question": "¿Por qué NO podemos usar un punto que pertenezca exactamente a la recta frontera (como el (0,0) en la segunda inecuación) como punto de prueba para saber hacia dónde sombrear?",
+        "options": [
+          {
+            "text": "Porque el resultado siempre dará un número negativo, lo cual confunde la evaluación.",
+            "correct": false,
+            "feedback": "Falso. Dará cero, no negativo."
+          },
+          {
+            "text": "Porque al sustituirlo nos dará exactamente igual a cero, lo cual confirma que está en la frontera, pero no nos dice qué lado es mayor y qué lado es menor.",
+            "correct": true,
+            "feedback": "¡Exacto! El punto de prueba debe estar claramente a un lado o al otro para indicarnos qué semiplano cumple la desigualdad. Si está encima de la línea, no nos sirve de brújula."
+          },
+          {
+            "text": "Porque las inecuaciones sólo se pueden comprobar con números impares.",
+            "correct": false,
+            "feedback": "Esto no tiene ningún sentido matemático. Puedes usar cualquier número real."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Cálculo analítico de vértices (Parte b)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Con el mapa mental hecho, vemos que nuestra zona es un triángulo encajado entre el suelo y nuestras dos rectas. Esos tres vértices son los cruces matemáticos de nuestras líneas. Vamos a resolver los mini-sistemas de ecuaciones para sacar las coordenadas exactas de esas tres esquinas.",
+      "content": "<p>Al superponer las zonas en el primer cuadrante (por $x \\ge 0, y \\ge 0$), vemos que se forma una región poligonal con tres vértices. Vamos a calcularlos interseccionando las rectas correspondientes:</p>\n<p><strong>Vértice 1: Intersección del Eje X ($y=0$) y la Recta 2 ($2x - y = 0$)</strong></p>\n<ul>\n<li>Sustituimos $y=0$ en $2x - y = 0 \\implies 2x - 0 = 0 \\implies x = 0$.</li>\n<li><strong>Coordenadas: $A(0, 0)$</strong></li>\n</ul>\n<p><strong>Vértice 2: Intersección del Eje X ($y=0$) y la Recta 1 ($x + y = 6$)</strong></p>\n<ul>\n<li>Sustituimos $y=0$ en $x + y = 6 \\implies x + 0 = 6 \\implies x = 6$.</li>\n<li><strong>Coordenadas: $B(6, 0)$</strong></li>\n</ul>\n<p><strong>Vértice 3: Intersección de la Recta 1 y la Recta 2</strong></p>\n<ul>\n<li>Sistema: $\\begin{cases} x + y = 6 \\\\ y = 2x \\end{cases}$</li>\n<li>Sustituimos la $y$ en la primera ecuación: $x + (2x) = 6 \\implies 3x = 6 \\implies x = 2$.</li>\n<li>Si $x = 2$, entonces $y = 2(2) = 4$.</li>\n<li><strong>Coordenadas: $C(2, 4)$</strong></li>\n</ul>"
+    },
+    {
+      "title": "Solución Final e Interpretación visual",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Aquí tenemos la obra de arte final. Hemos dibujado nuestra región factible en un verde resplandeciente. Está apoyada en el suelo, cortada por una de las líneas, y rematada en la punta por la otra. Los tres vértices que hemos calculado analíticamente encajan a la perfección con el dibujo.",
+      "content": "<p>Hemos completado ambas partes del ejercicio:</p>\n<p><strong>a) Representación gráfica:</strong><br>\nLa región factible es el triángulo cerrado coloreado, que cumple todas las restricciones simultáneamente (estar bajo $x+y=6$, bajo $y=2x$, y en el primer cuadrante).</p>\n<p><strong>b) Vértices analíticos:</strong><br>\nLos puntos que encierran la región poligonal son:</p>\n<ul>\n<li>$V_1 = (0, 0)$</li>\n<li>$V_2 = (6, 0)$</li>\n<li>$V_3 = (2, 4)$</li>\n</ul>\n<p><em>Este tipo de polígonos son la base de la Programación Lineal, donde luego buscaríamos maximizar o minimizar una función (como beneficios o costes) en uno de estos vértices.</em></p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 350\" style=\"background-color:#0f172a; border-radius:8px;\">\n  <!-- Ejes coordenados -->\n  <line x1=\"40\" y1=\"300\" x2=\"330\" y2=\"300\" stroke=\"#fbbf24\" stroke-width=\"2\" marker-end=\"url(#arrowX)\"/>\n  <line x1=\"50\" y1=\"310\" x2=\"50\" y2=\"30\" stroke=\"#fbbf24\" stroke-width=\"2\" marker-end=\"url(#arrowY)\"/>\n  <defs>\n    <marker id=\"arrowX\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"arrowY\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n  </defs>\n  \n  <!-- Cuadrícula (1 unidad = 35px). Origen en (50, 300) -->\n  <g stroke=\"#334155\" stroke-width=\"1\" stroke-dasharray=\"2,2\">\n    <line x1=\"50\" y1=\"265\" x2=\"330\" y2=\"265\"/> <!-- y=1 -->\n    <line x1=\"50\" y1=\"230\" x2=\"330\" y2=\"230\"/> <!-- y=2 -->\n    <line x1=\"50\" y1=\"195\" x2=\"330\" y2=\"195\"/> <!-- y=3 -->\n    <line x1=\"50\" y1=\"160\" x2=\"330\" y2=\"160\"/> <!-- y=4 -->\n    <line x1=\"50\" y1=\"125\" x2=\"330\" y2=\"125\"/> <!-- y=5 -->\n    <line x1=\"50\" y1=\"90\" x2=\"330\" y2=\"90\"/>  <!-- y=6 -->\n    \n    <line x1=\"85\" y1=\"300\" x2=\"85\" y2=\"30\"/>  <!-- x=1 -->\n    <line x1=\"120\" y1=\"300\" x2=\"120\" y2=\"30\"/> <!-- x=2 -->\n    <line x1=\"155\" y1=\"300\" x2=\"155\" y2=\"30\"/> <!-- x=3 -->\n    <line x1=\"190\" y1=\"300\" x2=\"190\" y2=\"30\"/> <!-- x=4 -->\n    <line x1=\"225\" y1=\"300\" x2=\"225\" y2=\"30\"/> <!-- x=5 -->\n    <line x1=\"260\" y1=\"300\" x2=\"260\" y2=\"30\"/> <!-- x=6 -->\n  </g>\n  \n  <!-- Polígono Región Factible -->\n  <!-- (0,0) -> 50, 300 -->\n  <!-- (6,0) -> 260, 300 -->\n  <!-- (2,4) -> 120, 160 -->\n  <polygon points=\"50,300 260,300 120,160\" fill=\"#22c55e\" opacity=\"0.4\"/>\n  <polygon points=\"50,300 260,300 120,160\" fill=\"none\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  \n  <!-- Recta 1: x + y = 6. Pasa por (0,6)->(50,90) y (6,0)->(260,300) -->\n  <!-- Extrapolada un poco: (-1,7)->(15, 55) a (7,-1)->(295,335) -->\n  <line x1=\"15\" y1=\"55\" x2=\"295\" y2=\"335\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  <text x=\"210\" y=\"220\" fill=\"#38bdf8\" font-family=\"sans-serif\" font-size=\"12\" transform=\"rotate(45, 210, 220)\">x + y = 6</text>\n  \n  <!-- Recta 2: 2x - y = 0. Pasa por (0,0)->(50,300) y (3,6)->(155,90) -->\n  <!-- Extrapolada: (4,8)->(190, 20) -->\n  <line x1=\"50\" y1=\"300\" x2=\"190\" y2=\"20\" stroke=\"#a855f7\" stroke-width=\"2\"/>\n  <text x=\"130\" y=\"100\" fill=\"#a855f7\" font-family=\"sans-serif\" font-size=\"12\" transform=\"rotate(-63, 130, 100)\">2x - y = 0</text>\n  \n  <!-- Vértices remarcados -->\n  <circle cx=\"50\" cy=\"300\" r=\"5\" fill=\"#ef4444\"/>\n  <text x=\"20\" y=\"315\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"12\">(0, 0)</text>\n  \n  <circle cx=\"260\" cy=\"300\" r=\"5\" fill=\"#ef4444\"/>\n  <text x=\"265\" y=\"315\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"12\">(6, 0)</text>\n  \n  <circle cx=\"120\" cy=\"160\" r=\"5\" fill=\"#ef4444\"/>\n  <text x=\"130\" y=\"155\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"12\">(2, 4)</text>\n  \n  <!-- Etiquetas ejes -->\n  <text x=\"320\" y=\"290\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">X</text>\n  <text x=\"30\" y=\"40\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">Y</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumamos el método. Para pintar la región, usas rectas y puntos de prueba. Para afinar los vértices, igualas las ecuaciones correspondientes. Es un baile perfecto entre hacer un boceto y calcular su geometría exacta.",
+      "content": "<ol>\n<li><strong>Fronteras visuales:</strong> Tratamos las inecuaciones como rectas e identificamos un par de puntos clave para poder dibujarlas en el plano.</li>\n<li><strong>Zonificación:</strong> Utilizamos puntos de prueba claros (como el $(0,0)$ o el $(2,0)$) para saber qué mitad del plano representaba cada desigualdad.</li>\n<li><strong>Intersección geométrica:</strong> El primer cuadrante limitó nuestra área general, y el cruce de las sombras de las dos rectas formó nuestro triángulo factible.</li>\n<li><strong>Cálculo algebraico:</strong> En vez de leer los vértices \"a ojo\" en el gráfico, resolvimos pequeños sistemas de dos ecuaciones con dos incógnitas para garantizar una precisión matemática de los puntos $(0,0)$, $(6,0)$ y $(2,4)$.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno de cartografiar. Aquí tienes un sistema muy parecido. Pinta tu cuadrante, traza la línea que baja y la línea horizontal, y encuentra las tres esquinas de tu nueva región factible.",
+      "content": "<p>Resuelve analíticamente (hallando los vértices) el siguiente sistema de inecuaciones y describe mentalmente o en un papel cómo sería su gráfica:</p>\n<p>$$\\begin{cases} 2x + y \\le 8 \\\\ y \\le 4 \\\\ x \\ge 0,\\ y \\ge 0 \\end{cases}$$</p>\n<p><em>Pista: Tienes una recta inclinada y una recta totalmente horizontal ($y=4$). Busca los tres cruces que delimitan la región dentro del primer cuadrante.</em></p>",
+      "practiceAnswer": "<p><strong>Resolución paso a paso:</strong></p>\n<ul>\n<li><strong>Recta 1 ($2x + y = 8$):</strong> Corta a los ejes en $(0,8)$ y $(4,0)$. Sombreado hacia el origen.</li>\n<li><strong>Recta 2 ($y = 4$):</strong> Línea horizontal a la altura de $4$. Sombreado hacia abajo.</li>\n<li><strong>Región factible:</strong> Al limitarse al primer cuadrante, forma un trapecio o polígono de 4 vértices (¡Sorpresa!). Revisemos las intersecciones.</li>\n<li><strong>Vértice 1 (Origen):</strong> Cruce de ejes $\\implies (0,0)$.</li>\n<li><strong>Vértice 2 (Eje X):</strong> Intersección de $2x + y = 8$ con $y=0 \\implies 2x = 8 \\implies x = 4 \\implies (4,0)$.</li>\n<li><strong>Vértice 3 (Eje Y):</strong> Intersección del eje Y ($x=0$) con la altura máxima $y=4 \\implies (0,4)$.</li>\n<li><strong>Vértice 4 (Cruce de rectas):</strong> Intersección de $2x + y = 8$ y $y = 4 \\implies 2x + 4 = 8 \\implies 2x = 4 \\implies x = 2 \\implies (2,4)$.</li>\n</ul>\n<p><strong>Conclusión:</strong> Los vértices de la región factible (un cuadrilátero) son <strong>$(0,0), (4,0), (2,4)$ y $(0,4)$</strong>.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: Maximizando Beneficios",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Saber dibujar polígonos sirve para ganar dinero. En la programación lineal, las inecuaciones son las restricciones de tu fábrica de muebles. Si quieres maximizar ingresos, la matemática te asegura que la respuesta óptima siempre, siempre, está escondida en uno de estos vértices que acabas de aprender a calcular.",
+      "content": "<p>Imagina que eres dueño de una pequeña fábrica que produce sillas ($x$) y mesas ($y$). Las inecuaciones del ejercicio original ($x+y \\le 6$ y $2x-y \\ge 0$) representan tus restricciones de materiales y tiempo de maquinaria cada día.</p>\n<p>Si la venta de cada silla te deja $30$€ de beneficio y cada mesa te deja $50$€ de beneficio, la fórmula de tu ganancia diaria es: <strong>$B(x,y) = 30x + 50y$</strong>.</p>\n<p>Según el Teorema Fundamental de la Programación Lineal, el beneficio máximo siempre se alcanza en uno de los vértices de la región factible. Utilizando los vértices que calculaste en la parte (b): $(0,0)$, $(6,0)$ y $(2,4)$, calcula cuánto ganarías en cada escenario y decide cuál es tu plan de producción ideal.</p>",
+      "practiceAnswer": "<p><strong>Evaluación de los vértices:</strong></p>\n<ul>\n<li><strong>Vértice $(0, 0)$:</strong> $B(0,0) = 30(0) + 50(0) = 0$€. (No fabricar nada, no ganas nada).</li>\n<li><strong>Vértice $(6, 0)$:</strong> Fabricar $6$ sillas y $0$ mesas.<br> $B(6,0) = 30(6) + 50(0) = 180 + 0 = 180$€.</li>\n<li><strong>Vértice $(2, 4)$:</strong> Fabricar $2$ sillas y $4$ mesas.<br> $B(2,4) = 30(2) + 50(4) = 60 + 200 = 260$€.</li>\n</ul>\n<p><strong>Conclusión:</strong> El plan de producción ideal para maximizar los beneficios dadas las restricciones es el correspondiente al vértice $(2,4)$. La fábrica debe producir <strong>$2$ sillas y $4$ mesas</strong> al día para conseguir un beneficio máximo de <strong>$260$€</strong>.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T10:24:24.791Z",
+    "updatedAt": "2026-08-01T10:24:24.791Z",
+    "contentHash": "53c0457a091280c4",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

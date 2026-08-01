@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis de Funciones",
+    "subtopic": "Simetría de una función",
+    "exerciseType": "Demostración algebraica de simetría par e impar",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Aplicar el criterio algebraico evaluando f(-x) para determinar la simetría de una función.",
+      "Distinguir el efecto de las potencias pares e impares sobre el signo de la variable.",
+      "Relacionar el resultado algebraico con la simetría geométrica (eje de ordenadas o el origen)."
+    ],
+    "prerequisites": [
+      "Evaluación de expresiones algebraicas.",
+      "Propiedades de las potencias de exponente par e impar con bases negativas.",
+      "Extracción de factor común."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T10:59:17.796Z",
+    "id": "estudio-algebraico-de-la-simetria-de-funciones-7fc946db"
+  },
+  "title": "Estudio Algebraico de la Simetría de Funciones",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a analizar este ejercicio. Se nos pide determinar si dos funciones específicas tienen algún tipo de simetría, pero no basta con mirarlas: tenemos que demostrarlo haciendo cuentas algebraicas.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 8:</strong> Determina si las siguientes funciones son simétricas pares, impares o no presentan simetría alguna realizando la comprobación algebraica correspondiente:</p>\n<ul>\n<li>a) $f(x) = 3x^4 - x^2$</li>\n<li>b) $g(x) = x^3 + 2x$</li>\n</ul>\n</blockquote>",
+      "hints": [
+        "Fíjate en los exponentes de las variables en cada función. ¿Son todos pares, todos impares, o están mezclados?",
+        "La 'comprobación algebraica' implica siempre evaluar qué ocurre cuando cambiamos la variable por su opuesto."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestro plan es muy directo. El test universal para la simetría es coger la función, meterle una equis negativa y ver qué escupe. Si sale exactamente lo mismo que al principio, es par. Si sale lo mismo pero con todos los signos cambiados, es impar. Si sale otra cosa, no tiene simetría.",
+      "content": "<h3>Estrategia para el estudio de simetría</h3>\n<p>Para comprobar analíticamente la simetría de cualquier función $y = h(x)$, la técnica estándar consiste en evaluar la función en $-x$, es decir, sustituir cada $x$ por $(-x)$ y operar los signos.</p>\n<p>Compararemos el resultado obtenido $h(-x)$ con la función original $h(x)$:</p>\n<ul>\n<li><strong>Simetría PAR:</strong> Si tras operar obtenemos que $h(-x) = h(x)$. Gráficamente significa que la función es un reflejo de sí misma respecto al eje Y.</li>\n<li><strong>Simetría IMPAR:</strong> Si tras operar obtenemos que $h(-x) = -h(x)$. Gráficamente significa que la función es simétrica si la rotamos 180 grados alrededor del origen de coordenadas.</li>\n<li><strong>SIN simetría:</strong> Si el resultado no coincide ni con $h(x)$ ni con $-h(x)$.</li>\n</ul>\n<p>Aplicaremos esta prueba a las funciones de los apartados a) y b) por separado.</p>"
+    },
+    {
+      "title": "Apartado a): Comprobación algebraica",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Empezamos con la primera función. Sustituimos la equis por menos equis. Como está elevada a cuatro y a dos, que son números pares, el signo negativo desaparece. ¡Acabamos teniendo exactamente la misma función original!",
+      "content": "<p><strong>Objetivo:</strong> Evaluar $f(-x)$ para la función $f(x) = 3x^4 - x^2$.</p>\n<p>Sustituimos cuidadosamente $x$ por $(-x)$, usando paréntesis para no confundir los signos:</p>\n<p>$$f(-x) = 3(-x)^4 - (-x)^2$$</p>\n<p>Ahora aplicamos las propiedades de las potencias. Sabemos que cualquier número real (positivo o negativo) elevado a una potencia par da un resultado positivo:</p>\n<ul>\n<li>$(-x)^4 = x^4$</li>\n<li>$(-x)^2 = x^2$</li>\n</ul>\n<p>Sustituimos estos resultados en nuestra expresión:</p>\n<p>$$f(-x) = 3(x^4) - (x^2)$$</p>\n<p>$$f(-x) = 3x^4 - x^2$$</p>\n<p>Observamos que el resultado final es exactamente la expresión original. Por tanto:</p>\n<p>$$f(-x) = f(x)$$</p>\n<p><strong>Conclusión:</strong> La función $f(x)$ presenta <strong>simetría par</strong>.</p>",
+      "theory": "<p><strong>Regla de los signos en potencias:</strong> Sea $n$ un número entero positivo:<br>Si $n$ es par, $(-x)^n = x^n$.<br>Si $n$ es impar, $(-x)^n = -x^n$.</p>",
+      "warning": "<p>Un error grave es pensar que el menos de $-(-x)^2$ multiplica primero al menos del paréntesis convirtiéndolo en más. ¡Las potencias tienen prioridad! Primero se eleva $(-x)^2 = x^2$, y luego se aplica el signo exterior: $-(x^2) = -x^2$.</p>"
+    },
+    {
+      "title": "Apartado a): Interpretación geométrica",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Si miramos su gráfica, comprobamos que es como un espejo doblado por el eje vertical. Lo que pasa a la derecha, pasa exactamente igual a la izquierda. Eso es la simetría par.",
+      "content": "<p>La conclusión algebraica $f(-x) = f(x)$ tiene una traducción geométrica muy clara.</p>\n<p>Significa que si tomamos un punto a la derecha del eje vertical, por ejemplo en $x=1$, su altura será $f(1) = 2$. Si nos vamos a su opuesto en el lado izquierdo, $x=-1$, su altura será exactamente la misma: $f(-1) = 2$.</p>\n<p>Visualmente, el eje de ordenadas (eje Y) actúa como un espejo perfecto. La mitad izquierda de la gráfica es el reflejo especular de la mitad derecha.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Cuadrícula X: x = -1.5 a 1.5 -> Xpx = 200 + x*100 -->\n  <line x1='50' y1='50' x2='50' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='100' y1='50' x2='100' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='150' y1='50' x2='150' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='250' y1='50' x2='250' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='300' y1='50' x2='300' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='350' y1='50' x2='350' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <!-- Cuadrícula Y: y = -0.5 a 2.5 -> Ypx = 300 - y*100 -->\n  <line x1='50' y1='350' x2='350' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='200' x2='350' y2='200' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='100' x2='350' y2='100' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <!-- Ejes -->\n  <line x1='200' y1='50' x2='200' y2='350' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <line x1='50' y1='300' x2='350' y2='300' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <!-- Eje de simetría (Eje Y) -->\n  <line x1='200' y1='50' x2='200' y2='350' stroke='#f472b6' stroke-width='4' stroke-dasharray='10,10' opacity='0.7'/>\n  <text x='340' y='290' fill='#fbbf24' font-size='16' font-family='sans-serif'>X</text>\n  <text x='210' y='60' fill='#fbbf24' font-size='16' font-family='sans-serif'>Y</text>\n  <!-- Gráfica de 3x^4 - x^2. Calculada punto a punto -->\n  <path d='M 80 125 C 120 400, 150 350, 200 300 C 250 350, 280 400, 320 125' fill='none' stroke='#38bdf8' stroke-width='3'/>\n  <!-- Puntos de prueba: f(1)=2, f(-1)=2 -->\n  <line x1='100' y1='300' x2='100' y2='100' stroke='#10b981' stroke-width='2' stroke-dasharray='4'/>\n  <line x1='300' y1='300' x2='300' y2='100' stroke='#10b981' stroke-width='2' stroke-dasharray='4'/>\n  <line x1='100' y1='100' x2='300' y2='100' stroke='#10b981' stroke-width='2' stroke-dasharray='4'/>\n  <circle cx='100' cy='100' r='5' fill='#10b981'/>\n  <circle cx='300' cy='100' r='5' fill='#10b981'/>\n  <text x='65' y='95' fill='#10b981' font-size='14' font-family='sans-serif'>(-1, 2)</text>\n  <text x='310' y='95' fill='#10b981' font-size='14' font-family='sans-serif'>(1, 2)</text>\n</svg>"
+    },
+    {
+      "title": "Apartado b): Comprobación algebraica",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Vamos con la segunda. Al sustituir la equis por menos equis en exponentes impares, el signo negativo sobrevive. Nos queda todo cambiado de signo. Si sacamos factor común ese menos, vemos que lo que queda dentro es la función original. Esto es simetría impar.",
+      "content": "<p><strong>Objetivo:</strong> Evaluar $g(-x)$ para la función $g(x) = x^3 + 2x$.</p>\n<p>Sustituimos $x$ por $(-x)$ con paréntesis:</p>\n<p>$$g(-x) = (-x)^3 + 2(-x)$$</p>\n<p>Aplicamos las propiedades de las potencias. Ahora los exponentes son impares ($3$ y $1$), por lo que el signo negativo de la base se mantiene:</p>\n<ul>\n<li>$(-x)^3 = -x^3$</li>\n<li>$2(-x) = -2x$</li>\n</ul>\n<p>Sustituimos y obtenemos:</p>\n<p>$$g(-x) = -x^3 - 2x$$</p>\n<p>El resultado no es $g(x)$. Para ver si es $-g(x)$, extraemos el signo menos ($-1$) como factor común de toda la expresión:</p>\n<p>$$g(-x) = -(x^3 + 2x)$$</p>\n<p>Lo que queda dentro del paréntesis es exactamente nuestra función original $g(x)$. Por tanto:</p>\n<p>$$g(-x) = -g(x)$$</p>\n<p><strong>Conclusión:</strong> La función $g(x)$ presenta <strong>simetría impar</strong>.</p>",
+      "checkpoint": {
+        "question": "Al llegar al paso g(-x) = -x³ - 2x, ¿qué hubiera pasado si la expresión hubiera quedado g(-x) = -x³ + 2x?",
+        "options": [
+          {
+            "text": "Seguiría siendo simetría impar, porque empieza por el signo menos.",
+            "correct": false,
+            "feedback": "Falso. Para ser simetría impar, TODOS los signos de la función original deben invertirse. -x³ + 2x no es igual a -(x³ + 2x)."
+          },
+          {
+            "text": "La función no tendría simetría ni par ni impar.",
+            "correct": true,
+            "feedback": "¡Correcto! Si no obtenemos exactamente la original f(x) ni la opuesta total -f(x), la función carece de simetría."
+          },
+          {
+            "text": "Tendría simetría par e impar a la vez.",
+            "correct": false,
+            "feedback": "Matemáticamente imposible, excepto para la función constante y=0 que es la única con ambas simetrías simultáneamente."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Apartado b): Interpretación geométrica",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "En este caso, la gráfica pasa por el origen. Si evalúas en uno te da tres, pero si evalúas en menos uno te da menos tres. Es como si agarraras la gráfica del lado derecho y le dieras media vuelta al volante para colocarla en el lado izquierdo.",
+      "content": "<p>La conclusión algebraica $g(-x) = -g(x)$ también tiene su reflejo geométrico.</p>\n<p>Significa que si tomamos un punto a la derecha, por ejemplo $x=1$, su altura es $g(1) = 3$. Si nos vamos a su opuesto $x=-1$, su altura será la opuesta: $g(-1) = -3$.</p>\n<p>Visualmente, esto se traduce en una <strong>simetría central respecto al origen de coordenadas $(0,0)$</strong>. Si giramos la parte derecha de la gráfica exactamente 180 grados anclándola en el origen, se superpondrá perfectamente con la parte izquierda.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Cuadrícula X: x = -3 a 3 -> Xpx = 200 + x*50 -->\n  <line x1='50' y1='50' x2='50' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='100' y1='50' x2='100' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='150' y1='50' x2='150' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='250' y1='50' x2='250' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='300' y1='50' x2='300' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='350' y1='50' x2='350' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <!-- Cuadrícula Y: y = -15 a 15 -> Ypx = 200 - y*10 -->\n  <!-- Marcas Y cada 5 unidades (50px) -->\n  <line x1='50' y1='350' x2='350' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='300' x2='350' y2='300' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='250' x2='350' y2='250' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='150' x2='350' y2='150' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='100' x2='350' y2='100' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='50' x2='350' y2='50' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <!-- Ejes -->\n  <line x1='200' y1='50' x2='200' y2='350' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <line x1='50' y1='200' x2='350' y2='200' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <text x='340' y='190' fill='#fbbf24' font-size='16' font-family='sans-serif'>X</text>\n  <text x='210' y='60' fill='#fbbf24' font-size='16' font-family='sans-serif'>Y</text>\n  <!-- Origen (Centro de simetría) -->\n  <circle cx='200' cy='200' r='6' fill='#f472b6'/>\n  <!-- Gráfica de x^3 + 2x -->\n  <!-- (-2,-12)->(100,320); (-1,-3)->(150,230); (0,0)->(200,200); (1,3)->(250,170); (2,12)->(300,80) -->\n  <path d='M 100 320 C 130 250, 160 200, 200 200 C 240 200, 270 150, 300 80' fill='none' stroke='#38bdf8' stroke-width='3'/>\n  <!-- Puntos de prueba: f(1)=3, f(-1)=-3 -->\n  <line x1='250' y1='200' x2='250' y2='170' stroke='#10b981' stroke-width='2' stroke-dasharray='4'/>\n  <line x1='200' y1='170' x2='250' y2='170' stroke='#10b981' stroke-width='2' stroke-dasharray='4'/>\n  <circle cx='250' cy='170' r='5' fill='#10b981'/>\n  <text x='260' y='165' fill='#10b981' font-size='14' font-family='sans-serif'>(1, 3)</text>\n  <line x1='150' y1='200' x2='150' y2='230' stroke='#10b981' stroke-width='2' stroke-dasharray='4'/>\n  <line x1='200' y1='230' x2='150' y2='230' stroke='#10b981' stroke-width='2' stroke-dasharray='4'/>\n  <circle cx='150' cy='230' r='5' fill='#10b981'/>\n  <text x='95' y='245' fill='#10b981' font-size='14' font-family='sans-serif'>(-1, -3)</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulemos la regla universal. Siempre calculamos efe de menos equis y comparamos el resultado con la función del principio. ¡Este método no falla nunca!",
+      "content": "<p>Esta es la hoja de ruta para clasificar algebraicamente la simetría de cualquier función $f(x)$:</p>\n<ol>\n<li><strong>Sustitución inicial:</strong> Cambia cada aparición de la variable $x$ por $(-x)$, asegurándote de usar paréntesis.</li>\n<li><strong>Operación de signos:</strong> Desarrolla las potencias y multiplicaciones. Recuerda que el exponente par elimina el signo negativo y el exponente impar lo conserva.</li>\n<li><strong>Comparación final:</strong>\n<ul>\n<li>¿El resultado es exactamente igual a $f(x)$? $\\Rightarrow$ <strong>Simetría Par</strong> (eje Y).</li>\n<li>¿El resultado es exactamente la función original multiplicada entera por -1, es decir, $-f(x)$? $\\Rightarrow$ <strong>Simetría Impar</strong> (origen).</li>\n<li>¿Ninguna de las dos anteriores? $\\Rightarrow$ <strong>Sin simetría</strong> definida.</li>\n</ul>\n</li>\n</ol>\n<p><em>Regla práctica para polinomios:</em> Si todos los exponentes son pares (incluyendo el término independiente que es $x^0$), es par. Si todos los exponentes son impares y no hay término independiente, es impar. Si hay mezcla, no tiene simetría.</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es el momento de que lo intentes por tu cuenta. Toma un papel y aplica el mismo protocolo de sustitución para estas dos nuevas funciones. Ojo con la mezcla de exponentes.",
+      "content": "<p>Determina si las siguientes funciones son simétricas pares, impares o no presentan simetría alguna realizando la comprobación algebraica correspondiente:</p>\n<ul>\n<li>a) $h(x) = 5x^2 + 1$</li>\n<li>b) $k(x) = x^3 - x^2$</li>\n</ul>\n<p><em>Aplica el método de calcular $h(-x)$ y $k(-x)$ de forma rigurosa antes de comprobar el resultado. Recuerda que la constante '1' equivale a $1 \\cdot x^0$.</em></p>",
+      "practiceAnswer": "<p><strong>Apartado a:</strong> $h(-x) = 5(-x)^2 + 1 = 5x^2 + 1 = h(x)$. Por tanto, presenta <strong>simetría par</strong>.</p>\n<p><strong>Apartado b:</strong> $k(-x) = (-x)^3 - (-x)^2 = -x^3 - x^2$. Observamos que no es $k(x)$, pero si extraemos el menos queda $-(x^3 + x^2)$, que tampoco es $-k(x)$. Por tanto, <strong>no presenta simetría</strong>.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Fuera del papel pautado, la simetría es un principio físico y de diseño estructural enorme. Entender cuándo un sistema reacciona igual en un sentido que en el opuesto es pura matemática de funciones.",
+      "content": "<p>En ingeniería de telecomunicaciones, la intensidad de un campo eléctrico generado por una antena a una distancia $d$ (positiva a la derecha o negativa a la izquierda) se modela mediante la función:</p>\n<p>$$E(d) = \\frac{A}{d^2 + 4}$$</p>\n<p>Donde $A$ es una constante positiva.</p>\n<p>Sin necesidad de dibujar la antena, demuestra algebraicamente qué tipo de simetría tiene el campo eléctrico e interpreta físicamente qué significa este resultado para una persona que camine alejándose de la antena hacia la derecha en comparación a una que camine hacia la izquierda.</p>",
+      "practiceAnswer": "<p>Calculamos $E(-d) = \\frac{A}{(-d)^2 + 4} = \\frac{A}{d^2 + 4} = E(d)$.</p>\n<p>La función presenta <strong>simetría par</strong>.</p>\n<p><em>Interpretación física:</em> Esto significa que la intensidad del campo eléctrico depende únicamente de la magnitud de la distancia, no de la dirección. Si dos personas se alejan de la antena, una hacia el Este y otra hacia el Oeste a la misma distancia, ambas recibirán exactamente la misma intensidad de señal.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:05:51.498Z",
+    "updatedAt": "2026-08-01T11:05:51.498Z",
+    "contentHash": "d442347d60cdfbf7",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

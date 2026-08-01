@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones Exponenciales",
+    "exerciseType": "Resolución de ecuación exponencial con cambio de variable",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Identificar patrones cuadráticos ocultos en ecuaciones exponenciales",
+      "Aplicar correctamente el cambio de variable para simplificar la ecuación",
+      "Resolver la ecuación de segundo grado auxiliar",
+      "Deshacer el cambio de variable para hallar las soluciones reales de la incógnita original"
+    ],
+    "prerequisites": [
+      "Propiedades de las potencias (potencia de una potencia)",
+      "Resolución de ecuaciones de segundo grado",
+      "Concepto básico de logaritmo o resolución mental de exponenciales sencillas"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T10:22:09.513Z",
+    "id": "el-disfraz-cuadratico-ecuaciones-exponenciales-dcb11b9d"
+  },
+  "title": "El Disfraz Cuadrático: Ecuaciones Exponenciales",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "En este ejercicio la incógnita está atrapada en el exponente. A primera vista parece complicado manejar potencias diferentes de base tres, pero el propio enunciado nos regala la llave maestra: un cambio de variable para quitarle el disfraz a la ecuación.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 6:</strong> Resuelve la siguiente ecuación exponencial que se simplifica cómodamente realizando el cambio de variable $t = 3^x$:</p>\n<p>$$3^{2x} - 4 \\cdot 3^x + 3 = 0$$</p>\n</blockquote>",
+      "hints": [
+        "Fíjate en los exponentes: tienes un $2x$ y un $x$. El primero es exactamente el doble del segundo.",
+        "Recuerda la propiedad de las potencias: $a^{b \\cdot c} = (a^b)^c$. Esto te permitirá relacionar $3^{2x}$ con $3^x$."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consistirá en transformar un problema desconocido y complejo en algo que llevamos años resolviendo: una ecuación de segundo grado. Una vez resuelta en nuestro mundo más cómodo, volveremos atrás para rescatar el valor de la equis.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar el valor o valores de $x$ que hacen que la igualdad se cumpla.</p>\n<p><strong>Estrategia paso a paso:</strong></p>\n<ol>\n<li><strong>Preparar el terreno:</strong> Reescribiremos $3^{2x}$ usando propiedades de las potencias para que el término $3^x$ sea claramente visible en todas partes.</li>\n<li><strong>El camuflaje (Sustitución):</strong> Cambiaremos cada $3^x$ que veamos por la letra $t$. ¡Magia! La ecuación exponencial se convertirá en una ecuación de segundo grado normal y corriente.</li>\n<li><strong>Resolver para $t$:</strong> Calcularemos las soluciones de la nueva ecuación cuadrática.</li>\n<li><strong>Deshacer el hechizo:</strong> Las soluciones de $t$ no son la respuesta final. Tendremos que igualar cada valor de $t$ a $3^x$ y deducir cuánto vale nuestra verdadera protagonista: la $x$.</li>\n</ol>"
+    },
+    {
+      "title": "Paso 1: Reescritura y Cambio de Variable",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Aquí aplicamos la magia. Tres elevado a dos equis es lo mismo que tres elevado a equis, y todo ello al cuadrado. Al cambiar el tres elevado a equis por la letra te, nuestra temible ecuación exponencial se vuelve una inofensiva ecuación de segundo grado.",
+      "content": "<p>Primero, aplicamos la propiedad de potencia de una potencia sobre el primer término:</p>\n<p>$$3^{2x} = (3^x)^2$$</p>\n<p>Reescribimos la ecuación original para que el patrón sea evidente:</p>\n<p>$$(3^x)^2 - 4 \\cdot (3^x) + 3 = 0$$</p>\n<p>Ahora aplicamos el cambio de variable sugerido: <strong>$t = 3^x$</strong></p>\n<p>Sustituyendo el bloque $(3^x)$ por la letra $t$, obtenemos una ecuación polinómica de segundo grado:</p>\n<p>$$t^2 - 4t + 3 = 0$$</p>"
+    },
+    {
+      "title": "Paso 2: Resolución de la ecuación auxiliar",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Resolvemos la ecuación de segundo grado. Es tan sencilla que podemos hacerla de cabeza buscando dos números que sumen cuatro y multipliquen tres. Esos números son el uno y el tres. ¡Pero cuidado, aún no hemos terminado!",
+      "content": "<p>Tenemos la ecuación: <strong>$t^2 - 4t + 3 = 0$</strong></p>\n<p>Podemos resolverla mediante la fórmula general:</p>\n<p>$$t = \\frac{-(-4) \\pm \\sqrt{(-4)^2 - 4(1)(3)}}{2(1)} = \\frac{4 \\pm \\sqrt{16 - 12}}{2} = \\frac{4 \\pm \\sqrt{4}}{2} = \\frac{4 \\pm 2}{2}$$</p>\n<p>O bien factorizando, buscando dos números que sumen $-4$ y multipliquen $3$:</p>\n<p>$$(t - 1)(t - 3) = 0$$</p>\n<p>De cualquier manera, obtenemos dos soluciones para $t$:</p>\n<ul>\n<li>$t_1 = 1$</li>\n<li>$t_2 = 3$</li>\n</ul>",
+      "checkpoint": {
+        "question": "¿Qué habría ocurrido si al resolver la ecuación de segundo grado, una de las soluciones para 't' hubiera sido negativa, por ejemplo, t = -3?",
+        "options": [
+          {
+            "text": "Que la equis correspondiente también habría sido un número negativo.",
+            "correct": false,
+            "feedback": "Falso. El valor de 'x' puede ser negativo sin problemas, pero el resultado de una potencia de base positiva (como 3^x) nunca da un número negativo."
+          },
+          {
+            "text": "Esa solución particular se descartaría porque una exponencial con base positiva (3^x) nunca puede dar un resultado negativo.",
+            "correct": true,
+            "feedback": "¡Exacto! Como t = 3^x, y 3 elevado a cualquier número real siempre es estrictamente mayor que cero, desecharíamos esa raíz ficticia inmediatamente."
+          },
+          {
+            "text": "Tendríamos que haber usado logaritmos negativos para encontrar el valor de 'x'.",
+            "correct": false,
+            "feedback": "No existen los logaritmos de números negativos en el conjunto de los números reales."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Deshacer el cambio de variable",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Por último, nos quitamos el disfraz. Igualamos tres a la equis a los valores de te que hemos encontrado. Como uno es tres elevado a cero, la primera equis es cero. Como tres es tres elevado a uno, la segunda equis es uno. ¡Resuelto!",
+      "content": "<p>Recuperamos nuestra variable original usando la relación <strong>$t = 3^x$</strong>.</p>\n<p>Para la primera solución ($t_1 = 1$):</p>\n<p>$$3^x = 1$$</p>\n<p>Como cualquier número (distinto de cero) elevado a $0$ es $1$, deducimos que: <strong>$x_1 = 0$</strong></p>\n<hr>\n<p>Para la segunda solución ($t_2 = 3$):</p>\n<p>$$3^x = 3$$</p>\n<p>Como $3$ es lo mismo que $3^1$, igualamos exponentes y deducimos que: <strong>$x_2 = 1$</strong></p>\n<p><strong>Solución final:</strong> El conjunto de soluciones de la ecuación es $x = \\{0, 1\\}$.</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" style=\"background-color:#0f172a; border-radius:8px;\">\n  <!-- Ejes coordenados -->\n  <line x1=\"40\" y1=\"250\" x2=\"360\" y2=\"250\" stroke=\"#fbbf24\" stroke-width=\"2\" marker-end=\"url(#arrowX)\"/>\n  <line x1=\"150\" y1=\"270\" x2=\"150\" y2=\"30\" stroke=\"#fbbf24\" stroke-width=\"2\" marker-end=\"url(#arrowY)\"/>\n  <defs>\n    <marker id=\"arrowX\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"arrowY\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n  </defs>\n  \n  <!-- Función t = 3^x. Eje Y es 't', Eje X es 'x'. \n       Escala: x=1 es 100px. t=1 es 50px. Centro en (150, 250) -->\n  \n  <!-- Cuadrícula horizontal para t=1 y t=3 -->\n  <!-- t=1 -> Y = 250 - 50*1 = 200 -->\n  <line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"#f8fafc\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/>\n  <text x=\"130\" y=\"205\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\">1</text>\n  \n  <!-- t=3 -> Y = 250 - 50*3 = 100 -->\n  <line x1=\"40\" y1=\"100\" x2=\"360\" y2=\"100\" stroke=\"#f8fafc\" stroke-width=\"1\" stroke-dasharray=\"5,5\"/>\n  <text x=\"130\" y=\"105\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\">3</text>\n  \n  <!-- Curva exponencial t = 3^x -->\n  <!-- x=-1 -> t=1/3 (Y=233.3). x=0 -> t=1 (Y=200). x=0.5 -> t=1.73 (Y=163). x=1 -> t=3 (Y=100). x=1.2 -> t=3.7 (Y=65) -->\n  <path d=\"M 50 245 Q 120 230 150 200 Q 180 160 250 100 Q 260 90 270 50\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/>\n  \n  <!-- Puntos de solución -->\n  <!-- (0, 1) -> (150, 200) -->\n  <circle cx=\"150\" cy=\"200\" r=\"6\" fill=\"#ef4444\"/>\n  <text x=\"165\" y=\"215\" fill=\"#ef4444\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\">x=0</text>\n  \n  <!-- (1, 3) -> x=1 (150 + 100 = 250), t=3 (Y=100) -->\n  <circle cx=\"250\" cy=\"100\" r=\"6\" fill=\"#ef4444\"/>\n  <line x1=\"250\" y1=\"100\" x2=\"250\" y2=\"250\" stroke=\"#ef4444\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n  <text x=\"265\" y=\"115\" fill=\"#ef4444\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\">x=1</text>\n  \n  <!-- Etiquetas de ejes -->\n  <text x=\"345\" y=\"240\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">x</text>\n  <text x=\"160\" y=\"40\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">t = 3ˣ</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "En resumen, cuando veas exponenciales donde un exponente es el doble que el otro, el cambio de variable te salvará la vida. Bajas a una ecuación de segundo grado, la resuelves, y luego usas la lógica de las potencias para volver a la equis original.",
+      "content": "<ol>\n<li><strong>Detección del patrón:</strong> Identificamos que $3^{2x}$ es el cuadrado de $3^x$.</li>\n<li><strong>Cambio de variable:</strong> Usamos $t = 3^x$ para transformar la ecuación exponencial en la ecuación cuadrática $t^2 - 4t + 3 = 0$.</li>\n<li><strong>Cálculo auxiliar:</strong> Resolvimos la ecuación polinómica y encontramos que $t=1$ y $t=3$.</li>\n<li><strong>Deshacer el cambio:</strong> Igualamos $3^x$ a esos valores y razonamos con los exponentes para obtener las verdaderas soluciones $x=0$ y $x=1$.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora te toca a ti probar este truco. Fíjate bien en la base y en cómo un término está elevado al doble que el otro. Usa la letra te para simplificar el terreno y luego rescata la equis.",
+      "content": "<p>Aplica el mismo método de cambio de variable para resolver la siguiente ecuación exponencial:</p>\n<p>$$2^{2x} - 6 \\cdot 2^x + 8 = 0$$</p>\n<p><em>Pista: Nota que la base ahora es 2. Utiliza el cambio de variable $t = 2^x$, resuelve la ecuación de segundo grado resultante, y finalmente encuentra los valores de $x$.</em></p>",
+      "practiceAnswer": "<p><strong>Solución paso a paso:</strong></p>\n<ul>\n<li>Reescribimos la ecuación como $(2^x)^2 - 6 \\cdot 2^x + 8 = 0$.</li>\n<li>Aplicamos el cambio <strong>$t = 2^x$</strong>, obteniendo la ecuación: $t^2 - 6t + 8 = 0$.</li>\n<li>Resolvemos la ecuación de segundo grado (factorizando $(t-2)(t-4)=0$ o con la fórmula).</li>\n<li>Obtenemos dos soluciones para $t$: $t_1 = 2$ y $t_2 = 4$.</li>\n<li>Deshacemos el cambio:</li>\n<li>Si $t = 2 \\implies 2^x = 2 \\implies 2^x = 2^1 \\implies <strong>x_1 = 1</strong>$.</li>\n<li>Si $t = 4 \\implies 2^x = 4 \\implies 2^x = 2^2 \\implies <strong>x_2 = 2</strong>$.</li>\n</ul>\n<p><strong>Conjunto final de raíces:</strong> $x = \\{1, 2\\}$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: El enigma de las bacterias",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "En este desafío final vas a ver cómo el cambio de variable puede estar un poco más escondido. A veces, la relación del 'doble' está oculta en las bases, como ocurre entre el cuatro y el dos.",
+      "content": "<p>En el laboratorio de biología, el crecimiento de una nueva cepa bacteriana modificada bajo ciertas condiciones de estrés sigue un modelo extraño dictado por esta ecuación poblacional para hallar las horas críticas ($x$):</p>\n<p>$$4^x - 3 \\cdot 2^x + 2 = 0$$</p>\n<p>¡Atención! Aquí no tienes $2^{2x}$ directamente, sino un $4^x$. ¿Cómo puedes relacionar el número $4$ con el número $2$ para que aparezca el patrón que necesitamos y puedas aplicar el cambio de variable $t = 2^x$?</p>\n<p>Resuelve la ecuación y descubre en qué horas exactas ocurren los eventos críticos.</p>",
+      "practiceAnswer": "<p><strong>El truco de las bases:</strong></p>\n<p>Sabemos que $4 = 2^2$. Por tanto, $4^x = (2^2)^x = 2^{2x} = (2^x)^2$.</p>\n<p><strong>Resolución:</strong></p>\n<ul>\n<li>Reescribimos la ecuación original: $(2^x)^2 - 3 \\cdot 2^x + 2 = 0$.</li>\n<li>Aplicamos el cambio <strong>$t = 2^x$</strong>. La ecuación se convierte en: $t^2 - 3t + 2 = 0$.</li>\n<li>Resolvemos esta ecuación de segundo grado. Las soluciones son $t_1 = 1$ y $t_2 = 2$.</li>\n<li>Deshacemos el cambio:</li>\n<li>Si $2^x = 1 \\implies <strong>x = 0</strong>$ horas (el inicio del experimento).</li>\n<li>Si $2^x = 2 \\implies <strong>x = 1</strong>$ hora.</li>\n</ul>\n<p><strong>Conclusión:</strong> Los eventos críticos ocurren en la <strong>hora 0</strong> y en la <strong>hora 1</strong> del experimento.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T10:22:24.313Z",
+    "updatedAt": "2026-08-01T10:22:24.313Z",
+    "contentHash": "b9f6ca4b3276025d",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

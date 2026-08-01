@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Inecuaciones",
+    "exerciseType": "Resolución de inecuación racional mediante tabla de signos",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Identificar las raíces del numerador y del denominador en una expresión racional",
+      "Establecer los intervalos de estudio en la recta real",
+      "Construir y evaluar una tabla de signos para determinar el signo de la fracción",
+      "Discriminar entre intervalos abiertos y cerrados basándose en el símbolo de desigualdad y las restricciones del denominador"
+    ],
+    "prerequisites": [
+      "Resolución de ecuaciones lineales de primer grado",
+      "Operaciones con signos (regla de los signos para la división)",
+      "Representación de intervalos"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T10:07:58.187Z",
+    "id": "inecuacion-racional-y-la-tabla-de-signos-cc5b3bbb"
+  },
+  "title": "Inecuación Racional y la Tabla de Signos",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "El ejercicio nos presenta una inecuación donde la incógnita aparece tanto arriba como abajo de una fracción. Nos piden averiguar qué valores de equis hacen que toda esa división sea mayor o igual a cero, es decir, que sea positiva o valga exactamente cero.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 8:</strong> Resuelve la siguiente inecuación racional analizando el signo del numerador y del denominador mediante una tabla de signos:</p>\n<p>$$\\frac{x - 2}{x + 3} \\ge 0$$</p>\n</blockquote>",
+      "hints": [
+        "En una división, el resultado es positivo si el numerador y el denominador tienen el mismo signo (los dos positivos o los dos negativos).",
+        "¡Cuidado con el denominador! Recuerda que en matemáticas dividir entre cero es un pecado capital."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia será analizar las partes por separado. Buscaremos cuándo el numerador se hace cero y cuándo el denominador se hace cero. Esos puntos serán nuestras fronteras. Luego montaremos una tabla para ver cómo se comportan los signos en las zonas delimitadas por esas fronteras.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar el conjunto de valores de $x$ que hacen que la fracción sea positiva o nula.</p>\n<p><strong>Estrategia paso a paso:</strong></p>\n<ol>\n<li><strong>Puntos críticos:</strong> Igualaremos a cero el numerador y el denominador por separado para encontrar nuestras \"fronteras\".</li>\n<li><strong>Crear intervalos:</strong> Situaremos esas fronteras en la recta real, dividiéndola en varios tramos.</li>\n<li><strong>Tabla de signos:</strong> Elegiremos un número de prueba en cada tramo para evaluar el signo del numerador, el del denominador, y finalmente el de la división completa.</li>\n<li><strong>Conclusión y extremos:</strong> Seleccionaremos los tramos que den resultado positivo ($\\ge 0$) y prestaremos especial atención a si incluimos o excluimos las fronteras usando corchetes o paréntesis.</li>\n</ol>"
+    },
+    {
+      "title": "Paso 1: Hallar los puntos críticos",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Primero, buscamos los puntos críticos. Arriba, si equis menos dos es cero, la equis vale dos. Abajo, si equis más tres es cero, la equis vale menos tres. Estos dos números son las claves que partirán nuestra recta real.",
+      "content": "<p>Para encontrar los puntos que dividen las zonas de la recta, igualamos a cero cada parte de la fracción:</p>\n<ul>\n<li><strong>Raíz del numerador:</strong>\n$$x - 2 = 0 \\implies x = 2$$</li>\n<li><strong>Raíz del denominador (Punto crítico restrictivo):</strong>\n$$x + 3 = 0 \\implies x = -3$$</li>\n</ul>\n<p>Estos dos valores, $x = 2$ y $x = -3$, dividen la recta numérica en tres zonas o intervalos de estudio:</p>\n<ul>\n<li>Desde $-\\infty$ hasta $-3$: $(-\\infty, -3)$</li>\n<li>Desde $-3$ hasta $2$: $(-3, 2)$</li>\n<li>Desde $2$ hasta $\\infty$: $(2, \\infty)$</li>\n</ul>"
+    },
+    {
+      "title": "Paso 2: Tabla de signos",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Con nuestras tres zonas definidas, hacemos la prueba del algodón. Tomamos un número al azar de cada zona, por ejemplo el menos cuatro, el cero y el tres. Al dividir los signos de arriba y abajo, obtenemos un más en la primera zona, un menos en la central, y un más en la última.",
+      "content": "<p>Construimos la tabla de signos tomando un <strong>valor de prueba</strong> dentro de cada intervalo para evaluar el numerador, el denominador y el cociente final:</p>\n<table style=\"width: 100%; text-align: center; border-collapse: collapse; margin-top: 10px;\">\n  <tr style=\"border-bottom: 2px solid #fbbf24;\">\n    <th>Intervalo</th>\n    <th>Valor prueba</th>\n    <th>Signo $(x - 2)$</th>\n    <th>Signo $(x + 3)$</th>\n    <th>Fracción completa</th>\n  </tr>\n  <tr>\n    <td style=\"padding: 8px; background-color: rgba(34, 197, 94, 0.2);\">$(-\\infty, -3)$</td>\n    <td style=\"background-color: rgba(34, 197, 94, 0.2);\">$x = -4$</td>\n    <td style=\"background-color: rgba(34, 197, 94, 0.2);\">$-$</td>\n    <td style=\"background-color: rgba(34, 197, 94, 0.2);\">$-$</td>\n    <td style=\"background-color: rgba(34, 197, 94, 0.2);\">$(-) \\div (-) = \\mathbf{+}$</td>\n  </tr>\n  <tr>\n    <td style=\"padding: 8px;\">$(-3, 2)$</td>\n    <td>$x = 0$</td>\n    <td>$-$</td>\n    <td>$+$</td>\n    <td>$(-) \\div (+) = \\mathbf{-}$</td>\n  </tr>\n  <tr>\n    <td style=\"padding: 8px; background-color: rgba(34, 197, 94, 0.2);\">$(2, \\infty)$</td>\n    <td style=\"background-color: rgba(34, 197, 94, 0.2);\">$x = 3$</td>\n    <td style=\"background-color: rgba(34, 197, 94, 0.2);\">$+$</td>\n    <td style=\"background-color: rgba(34, 197, 94, 0.2);\">$+$</td>\n    <td style=\"background-color: rgba(34, 197, 94, 0.2);\">$(+) \\div (+) = \\mathbf{+}$</td>\n  </tr>\n</table>\n<p>Como la inecuación nos pide los valores $\\ge 0$ (positivos o cero), nos interesan el primer y el tercer intervalo.</p>",
+      "checkpoint": {
+        "question": "A la hora de dar la solución final, el símbolo de la inecuación es ≥ (mayor o igual). ¿Qué corchetes o paréntesis debemos poner en los puntos -3 y 2?",
+        "options": [
+          {
+            "text": "Corchetes en ambos: [-3, 2], porque el símbolo tiene el 'igual'.",
+            "correct": false,
+            "feedback": "Cuidado. Aunque el símbolo permita el igual a cero, si x vale -3 estaríamos dividiendo entre cero, lo cual es imposible."
+          },
+          {
+            "text": "Paréntesis en el -3 y corchete en el 2. El -3 anula el denominador y debe excluirse.",
+            "correct": true,
+            "feedback": "¡Perfecto! El 2 hace que la fracción valga cero (que es válido por el ≥), así que lleva corchete. Pero el -3 arruina la fracción al dividir por cero, así que siempre lleva paréntesis."
+          },
+          {
+            "text": "Paréntesis en ambos, por seguridad.",
+            "correct": false,
+            "feedback": "Si usamos paréntesis en el 2, estaríamos perdiendo una parte de la solución, ya que en x=2 la fracción vale exactamente cero, lo cual cumple la condición."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Solución final e Interpretación Geométrica",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Juntamos todo. La solución incluye las dos zonas laterales. Geométricamente, nuestra fracción es una función con una asíntota vertical en el menos tres. Las zonas válidas son aquellas donde la curva vuela por encima de la línea del horizonte.",
+      "content": "<p>Basándonos en la tabla, la fracción es positiva en $(-\\infty, -3)$ y en $(2, \\infty)$. Ahora decidimos qué pasa en los extremos:</p>\n<ul>\n<li>En $x = 2$, el numerador es $0$, la fracción vale $0$. Como la inecuación es $\\ge 0$, el $2$ <strong>se incluye</strong> (corchete).</li>\n<li>En $x = -3$, el denominador es $0$. La división no existe. Por tanto, el $-3$ <strong>nunca se incluye</strong> (paréntesis).</li>\n</ul>\n<p><strong>Solución final:</strong></p>\n<p>$$x \\in (-\\infty, -3) \\cup [2, \\infty)$$</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" style=\"background-color:#0f172a; border-radius:8px;\">\n  <!-- Ejes -->\n  <line x1=\"20\" y1=\"150\" x2=\"380\" y2=\"150\" stroke=\"#fbbf24\" stroke-width=\"2.5\" marker-end=\"url(#arrowX)\"/>\n  <line x1=\"200\" y1=\"280\" x2=\"200\" y2=\"20\" stroke=\"#fbbf24\" stroke-width=\"2.5\" marker-end=\"url(#arrowY)\"/>\n  <defs>\n    <marker id=\"arrowX\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n    <marker id=\"arrowY\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#fbbf24\"/>\n    </marker>\n  </defs>\n  \n  <!-- Asíntota vertical en x=-3 (escala 20px=1u -> 200 - 60 = 140) -->\n  <line x1=\"140\" y1=\"30\" x2=\"140\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"5,5\"/>\n  <text x=\"115\" y=\"45\" fill=\"#64748b\" font-family=\"sans-serif\" font-size=\"12\">x=-3</text>\n  \n  <!-- Asíntota horizontal en y=1 (150 - 20 = 130) -->\n  <line x1=\"30\" y1=\"130\" x2=\"370\" y2=\"130\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"3,3\"/>\n  \n  <!-- Curva de la función f(x) = (x-2)/(x+3) -->\n  <path d=\"M 20 120 Q 110 110 135 20\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  <path d=\"M 145 280 Q 180 200 380 140\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2\"/>\n  \n  <!-- Zonas sombreadas de la solución (x < -3) y (x >= 2) -->\n  <rect x=\"20\" y=\"150\" width=\"120\" height=\"-130\" fill=\"#22c55e\" opacity=\"0.15\"/>\n  <rect x=\"240\" y=\"150\" width=\"140\" height=\"-130\" fill=\"#22c55e\" opacity=\"0.15\"/>\n  \n  <!-- Puntos críticos -->\n  <circle cx=\"140\" cy=\"150\" r=\"5\" fill=\"#0f172a\" stroke=\"#ef4444\" stroke-width=\"2\"/> <!-- Abierto en -3 -->\n  <circle cx=\"240\" cy=\"150\" r=\"5\" fill=\"#ef4444\"/> <!-- Cerrado en 2 (200 + 40) -->\n  \n  <!-- Etiquetas -->\n  <text x=\"235\" y=\"170\" fill=\"#ef4444\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\">2</text>\n  \n  <text x=\"365\" y=\"140\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">X</text>\n  <text x=\"215\" y=\"30\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">Y</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Para recapitular, resolver inecuaciones racionales es como desarmar un puzle. Buscamos los ceros de arriba y de abajo, hacemos la tabla para descubrir las zonas positivas o negativas, y al final, somos muy cuidadosos con los corchetes para no permitir divisiones por cero.",
+      "content": "<ol>\n<li><strong>Fronteras:</strong> Hallamos $x = 2$ (numerador) y $x = -3$ (denominador).</li>\n<li><strong>Secciones:</strong> Troceamos la recta real usando esos puntos críticos.</li>\n<li><strong>Signos:</strong> Con la tabla comprobamos que la fracción resulta $(+), (-), (+)$ en cada tramo.</li>\n<li><strong>Selección:</strong> Como pedían $\\ge 0$, nos quedamos con las zonas $(+)$.</li>\n<li><strong>Extremos:</strong> El número que anula el denominador ($-3$) siempre lleva paréntesis. El que anula el numerador ($2$) lleva corchete porque el símbolo es \"mayor o igual\".</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu momento de brillar. Resuelve esta otra inecuación racional haciendo tu propia tabla de signos. Cuidado, que ahora buscamos las zonas negativas.",
+      "content": "<p>Sigue los mismos pasos (puntos críticos, tabla y análisis de extremos) para resolver la siguiente inecuación racional:</p>\n<p>$$\\frac{x + 1}{x - 4} < 0$$</p>\n<p><em>Pista: ¿Cuáles son las fronteras? Si el símbolo es estrictamente menor ($<$), ¿qué ocurre con los corchetes al final?</em></p>",
+      "practiceAnswer": "<p><strong>Solución paso a paso:</strong></p>\n<ul>\n<li>Puntos críticos: numerador en $x = -1$, denominador en $x = 4$.</li>\n<li>Intervalos a estudiar: $(-\\infty, -1)$, $(-1, 4)$, $(4, \\infty)$.</li>\n<li>Signos por zonas: la primera da $(-) \\div (-) = (+)$. La segunda $(+) \\div (-) = (-)$. La tercera $(+) \\div (+) = (+)$.</li>\n<li>Como buscamos $< 0$ (negativos), nos quedamos con la zona central.</li>\n<li>Como el símbolo es estrictamente menor ($<$), no se incluye ningún extremo.</li>\n</ul>\n<p><strong>Intervalo solución:</strong> $x \\in (-1, 4)$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Las funciones racionales sirven para modelar ratios o promedios. Imagina una fábrica evaluando el coste de un producto a medida que aumentan sus horas de producción.",
+      "content": "<p>El departamento financiero de una fábrica ha modelado el margen de beneficio ($M$) de un nuevo componente electrónico en función de las horas de maquinaria seguidas ($t$, con $t \\ge 0$) mediante la siguiente expresión racional:</p>\n<p>$$M(t) = \\frac{t - 8}{t + 2}$$</p>\n<p>Para que la producción sea económicamente viable, el margen de beneficio no puede ser negativo ($M(t) \\ge 0$). Plantea y resuelve la inecuación para determinar a partir de qué hora la producción comienza a dar beneficios.</p>",
+      "practiceAnswer": "<p>Planteamos la inecuación: $\\frac{t - 8}{t + 2} \\ge 0$</p>\n<p>Analizamos matemáticamente:</p>\n<ul>\n<li>Numerador $t - 8 = 0 \\implies t = 8$</li>\n<li>Denominador $t + 2 = 0 \\implies t = -2$</li>\n</ul>\n<p>En el contexto del problema, el tiempo no puede ser negativo ($t \\ge 0$). Por tanto, solo evaluamos a partir de $t = 0$.</p>\n<ul>\n<li>Para $0 \\le t < 8$ (ej: $t=4$): $\\frac{4-8}{4+2} = \\frac{-}{+} = (-)$. Hay pérdidas.</li>\n<li>Para $t > 8$ (ej: $t=10$): $\\frac{10-8}{10+2} = \\frac{+}{+} = (+)$. Hay beneficios.</li>\n</ul>\n<p><strong>Conclusión:</strong> La fracción se hace positiva a partir de $t = 8$. Como piden $\\ge 0$, el 8 se incluye. La producción comienza a ser rentable (viable) exactamente a partir de la <strong>hora 8</strong>.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T10:08:13.804Z",
+    "updatedAt": "2026-08-01T10:08:13.804Z",
+    "contentHash": "60b797609f3d899a",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

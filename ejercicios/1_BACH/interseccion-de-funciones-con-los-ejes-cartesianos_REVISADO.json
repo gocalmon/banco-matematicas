@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis de Funciones",
+    "subtopic": "Puntos de corte con los ejes",
+    "exerciseType": "Cálculo analítico de intersecciones en funciones racionales",
+    "protocols": [
+      "B"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Comprender el significado geométrico y analítico de los puntos de corte con los ejes.",
+      "Calcular el corte con el eje Y evaluando la función en x=0.",
+      "Calcular los cortes con el eje X resolviendo la ecuación f(x)=0.",
+      "Identificar que en una fracción algebraica, el numerador debe ser cero y verificar que el denominador no se anule."
+    ],
+    "prerequisites": [
+      "Evaluación de expresiones algebraicas.",
+      "Resolución de ecuaciones de segundo grado sencillas.",
+      "Concepto de dominio de una fracción."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T11:07:00.065Z",
+    "id": "interseccion-de-funciones-con-los-ejes-cartesianos-a5e466a7"
+  },
+  "title": "Intersección de Funciones con los Ejes Cartesianos",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver este ejercicio donde nos piden encontrar las 'colisiones' de una función con las paredes de nuestro sistema de coordenadas: los ejes X e Y.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 2:</strong> Determina de forma razonada los puntos de intersección de las siguientes funciones con ambos ejes de coordenadas cartesianos:</p>\n<p>$$f(x) = \\frac{x^2 - 4}{x + 3}$$</p>\n</blockquote>",
+      "hints": [
+        "Un punto sobre el eje Y siempre tiene coordenada x igual a cero.",
+        "Un punto sobre el eje X siempre tiene altura (coordenada y) igual a cero.",
+        "Para que una división dé cero, lo único que tiene que valer cero es el numerador (la parte de arriba)."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "El método siempre es el mismo, lo dividimos en dos misiones. Primero apagamos la equis para ver dónde corta el eje vertical. Luego apagamos la i, o efe de equis, para buscar dónde corta el horizontal.",
+      "content": "<h3>Estrategia Universal para Cortes con los Ejes</h3>\n<p>Los ejes cartesianos actúan como barreras invisibles. Encontrar dónde los atraviesa nuestra función implica forzar a cero una de las dos variables:</p>\n<ol>\n<li><strong>Corte con el Eje de Ordenadas (Eje Y):</strong> Se produce cuando nos movemos cero pasos a izquierda o derecha. Por tanto, hacemos $x = 0$ y calculamos el valor de $f(0)$. Solo puede haber <strong>un</strong> punto de corte como máximo.</li>\n<li><strong>Cortes con el Eje de Abscisas (Eje X):</strong> Se producen cuando la altura es cero. Por tanto, hacemos $f(x) = 0$ (o $y = 0$) y resolvemos la ecuación resultante. Aquí podemos encontrar <strong>varios</strong> puntos de corte, o ninguno.</li>\n</ol>\n<p>Aplicaremos esto paso a paso a nuestra función racional.</p>"
+    },
+    {
+      "title": "1. Corte con el Eje Y",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Para encontrar el cruce vertical, simplemente obligamos a la variable equis a ser cero. Al sustituir, nos queda menos cuatro partido por tres. Ese es nuestro primer punto.",
+      "content": "<p><strong>Objetivo:</strong> Hallar el punto donde la gráfica cruza el eje vertical Y.</p>\n<p>Como hemos establecido, esto ocurre cuando la coordenada horizontal es nula, es decir, $x = 0$.</p>\n<p>Sustituimos $x = 0$ en la función original:</p>\n<p>$$f(0) = \\frac{0^2 - 4}{0 + 3}$$</p>\n<p>$$f(0) = \\frac{0 - 4}{3}$$</p>\n<p>$$f(0) = -\\frac{4}{3}$$</p>\n<p><strong>Resultado:</strong> La función corta al eje Y en el punto <strong>$(0, -\\frac{4}{3})$</strong>.</p>\n<p><em>Nota: $-\\frac{4}{3}$ es aproximadamente $-1.33$.</em></p>",
+      "theory": "<p><strong>Unicidad del corte Y:</strong> Si una relación matemática corta al eje Y en más de un punto, por definición, dejaría de ser una \"función\". A cada $x$ (incluyendo $x=0$) le corresponde un único valor de $y$.</p>",
+      "warning": "<p>Presta siempre atención al denominador. Si al hacer $x=0$ el denominador te da $0$ (por ejemplo, dividiendo entre cero), significaría que no hay corte con el eje Y porque $0$ no pertenecería al dominio.</p>"
+    },
+    {
+      "title": "2. Cortes con el Eje X",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora buscamos los cruces horizontales. Igualamos la función completa a cero. Recuerda que, para que una división dé cero, el único responsable debe ser el número de arriba. Así que resolvemos equis al cuadrado menos cuatro igual a cero.",
+      "content": "<p><strong>Objetivo:</strong> Hallar los puntos donde la gráfica cruza el eje horizontal X.</p>\n<p>Esto ocurre cuando la altura es nula, es decir, $f(x) = 0$.</p>\n<p>Igualamos la expresión de la función a cero:</p>\n<p>$$\\frac{x^2 - 4}{x + 3} = 0$$</p>\n<p>Para que una fracción (un cociente) valga cero, <strong>su numerador debe ser obligatoriamente cero</strong> (siempre que el denominador no se anule al mismo tiempo). Por lo tanto, tomamos el numerador y lo igualamos a cero:</p>\n<p>$$x^2 - 4 = 0$$</p>\n<p>Despejamos $x^2$:</p>\n<p>$$x^2 = 4$$</p>\n<p>Sacamos la raíz cuadrada, recordando que hay dos soluciones (positiva y negativa):</p>\n<p>$$x = \\pm\\sqrt{4}$$</p>\n<p>$$x = 2 \\quad \\text{y} \\quad x = -2$$</p>\n<p><strong>Comprobación del denominador:</strong> Si evaluamos el denominador ($x+3$) en estos puntos, vemos que no da cero ($2+3=5$ y $-2+3=1$). Son soluciones válidas.</p>\n<p><strong>Resultado:</strong> La función corta al eje X en los puntos <strong>$(2, 0)$</strong> y <strong>$(-2, 0)$</strong>.</p>",
+      "checkpoint": {
+        "question": "¿Por qué ignoramos completamente el denominador (x+3) al igualar la fracción a cero?",
+        "options": [
+          {
+            "text": "Porque las variables en el denominador siempre se cancelan al resolver ecuaciones.",
+            "correct": false,
+            "feedback": "Incorrecto. No se cancelan mágicamente. Tiene una explicación aritmética precisa."
+          },
+          {
+            "text": "Porque al pasar el denominador multiplicando al otro lado de la igualdad, se multiplica por 0 y desaparece.",
+            "correct": true,
+            "feedback": "¡Correcto! Matemáticamente: (x² - 4)/(x + 3) = 0 implica x² - 4 = 0 · (x + 3), y cualquier cosa multiplicada por 0 es 0. Nos queda x² - 4 = 0."
+          },
+          {
+            "text": "Porque para encontrar el corte con el eje X solo nos interesan los números pares.",
+            "correct": false,
+            "feedback": "Falso. Esto no tiene sentido matemático."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Representación Gráfica de los Cortes",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Vamos a colocar los tres puntos que hemos encontrado en el mapa. Tenemos dos cortes en el eje horizontal y uno en el vertical. Fíjate en cómo marcan el camino por donde tiene que pasar la curva.",
+      "content": "<p>Al representar gráficamente los resultados, comprobamos visualmente lo que hemos hallado algebraicamente:</p>\n<ul>\n<li><strong>Eje X (puntos rojos):</strong> Vemos que la curva atraviesa la línea horizontal amarilla en $x = -2$ y $x = 2$.</li>\n<li><strong>Eje Y (punto verde):</strong> Vemos que la curva atraviesa la línea vertical amarilla justo por debajo de $-1$, exactamente en $y = -1.33$ (o $-4/3$).</li>\n</ul>\n<p><em>Además, como nota extra, la línea discontinua en $x = -3$ representa una asíntota vertical, un lugar donde el denominador se hace cero y la función 'se rompe'.</em></p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Cuadrícula -->\n  <line x1='100' y1='50' x2='100' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='150' y1='50' x2='150' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='200' y1='50' x2='200' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='300' y1='50' x2='300' y2='350' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='100' x2='350' y2='100' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='150' x2='350' y2='150' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='250' x2='350' y2='250' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='300' x2='350' y2='300' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <!-- Ejes: centro en (250, 200). Cada 50px es 1 unidad -->\n  <line x1='250' y1='50' x2='250' y2='350' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <line x1='50' y1='200' x2='350' y2='200' stroke='#fbbf24' stroke-width='2.5' marker-start='url(#arrow)' marker-end='url(#arrow)'/>\n  <text x='340' y='190' fill='#fbbf24' font-size='16' font-family='sans-serif'>X</text>\n  <text x='260' y='60' fill='#fbbf24' font-size='16' font-family='sans-serif'>Y</text>\n  <text x='235' y='215' fill='#fbbf24' font-size='14' font-family='sans-serif'>0</text>\n  <!-- Asíntota vertical en x = -3 (Xpx = 250 - 150 = 100) -->\n  <line x1='100' y1='50' x2='100' y2='350' stroke='#94a3b8' stroke-width='2' stroke-dasharray='5,5'/>\n  <text x='110' y='60' fill='#94a3b8' font-size='12' font-family='sans-serif'>x = -3</text>\n  <!-- Curva simplificada (Rama derecha) -->\n  <!-- Pasa por (-2,0) -> (150,200); (0,-1.33) -> (250, 266.5); (2,0) -> (350, 200) -->\n  <path d='M 115 350 Q 140 230 150 200 Q 200 100 250 266.5 Q 300 433 350 200 L 350 50' fill='none' stroke='#38bdf8' stroke-width='3' stroke-linecap='round'/>\n  <!-- Puntos de corte -->\n  <!-- Eje X: (-2, 0) y (2, 0) -> (150, 200) y (350, 200) -->\n  <circle cx='150' cy='200' r='6' fill='#ef4444'/>\n  <text x='130' y='185' fill='#ef4444' font-size='14' font-family='sans-serif' font-weight='bold'>(-2, 0)</text>\n  <circle cx='350' cy='200' r='6' fill='#ef4444'/>\n  <text x='320' y='185' fill='#ef4444' font-size='14' font-family='sans-serif' font-weight='bold'>(2, 0)</text>\n  <!-- Eje Y: (0, -4/3) -> (250, 200 + 1.333*50 = 266.6) -->\n  <circle cx='250' cy='266.6' r='6' fill='#10b981'/>\n  <text x='260' y='280' fill='#10b981' font-size='14' font-family='sans-serif' font-weight='bold'>(0, -4/3)</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Para encontrar cortes con los ejes no hay que adivinar, solo hay que apagar alternativamente la equis y la i, y resolver las cuentas.",
+      "content": "<p>Estos son los pasos inamovibles para hallar puntos de intersección con cualquier función $y = f(x)$:</p>\n<ol>\n<li><strong>Intersección Y (Corte Vertical):</strong>\n<ul>\n<li>Haz $x = 0$.</li>\n<li>Calcula la operación resultante para obtener $y$.</li>\n<li>El punto es $(0, y)$. Si calcular $f(0)$ da error (ej. dividir por cero), no corta al eje Y.</li>\n</ul>\n</li>\n<li><strong>Intersección X (Corte Horizontal):</strong>\n<ul>\n<li>Haz $y = 0$ (o $f(x) = 0$).</li>\n<li>Resuelve la ecuación para $x$.</li>\n<li>Para las fracciones algebraicas: <strong>sólo el numerador se iguala a cero</strong>.</li>\n<li>Los puntos son $(x_1, 0)$, $(x_2, 0)$, etc. Asegúrate de que esas soluciones no hagan cero también al denominador.</li>\n</ul>\n</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te toca. Coge papel y lápiz y aplica exactamente el mismo protocolo a esta otra fracción matemática. Averigua dónde choca contra las paredes.",
+      "content": "<p>Determina de forma razonada los puntos de intersección de la siguiente función con ambos ejes de coordenadas cartesianos:</p>\n<p>$$g(x) = \\frac{x^2 - 1}{x + 2}$$</p>\n<p><em>Sigue exactamente el mismo procedimiento: evalúa $g(0)$ para el eje Y, y resuelve el numerador igual a cero para el eje X.</em></p>",
+      "practiceAnswer": "<p><strong>Corte con el Eje Y:</strong> Hacemos $x = 0$.<br> $g(0) = \\frac{0^2 - 1}{0 + 2} = -\\frac{1}{2}$. El punto es <strong>$(0, -\\frac{1}{2})$</strong>.</p>\n<p><strong>Cortes con el Eje X:</strong> Hacemos $g(x) = 0$.<br> Igualamos el numerador a cero: $x^2 - 1 = 0 \\implies x^2 = 1 \\implies x = 1, x = -1$.<br> Los puntos son <strong>$(1, 0)$</strong> y <strong>$(-1, 0)$</strong>.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Más allá del papel, estos cortes significan cosas en el mundo real. Si esto fuera la economía de una empresa, los cortes indican cuándo empiezas a ganar dinero o el dinero inicial que invertiste.",
+      "content": "<p>Los beneficios diarios de una empresa (en miles de euros) en función del tiempo (en días, donde $x=0$ es el día que abren) vienen dados por una función $B(x)$.</p>\n<ul>\n<li>El analista financiero dice: <em>\"El punto de corte con el eje Y es el punto $(0, -50)$\"</em>.</li>\n<li>También dice: <em>\"El punto de corte con el eje X se produce en el punto $(15, 0)$\"</em>.</li>\n</ul>\n<p>¿Qué significan físicamente o económicamente estos dos puntos de corte en el contexto real de la empresa?</p>",
+      "practiceAnswer": "<p><strong>Corte Eje Y $(0, -50)$:</strong> Ocurre en el momento $x=0$ (apertura). Significa que en el instante inicial la empresa tenía una deuda o pérdida inicial de $50.000$ euros (posiblemente por los costes de montar el negocio).</p>\n<p><strong>Corte Eje X $(15, 0)$:</strong> Ocurre cuando $y=0$ (los beneficios son nulos, no se gana ni se pierde). Significa que la empresa alcanza el \"umbral de rentabilidad\" o <em>break-even</em> exactamente en el día 15. A partir de ese día, dejarán de perder y empezarán a ganar dinero.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:07:16.120Z",
+    "updatedAt": "2026-08-01T11:07:16.120Z",
+    "contentHash": "e0067d2e8acb1a48",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

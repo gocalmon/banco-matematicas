@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis de Funciones",
+    "subtopic": "Funciones con Valor Absoluto y a Trozos",
+    "exerciseType": "Descomposición a trozos y representación gráfica",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Descomponer una función con valor absoluto en una función definida a trozos estudiando el signo de su interior.",
+      "Representar gráficamente la función resultante aplicando la reflexión sobre el eje X para la parte negativa.",
+      "Identificar puntos notables como raíces (puntos de corte con eje X) y vértices en funciones compuestas."
+    ],
+    "prerequisites": [
+      "Definición matemática de valor absoluto.",
+      "Representación de funciones cuadráticas (parábolas).",
+      "Estudio del signo de un polinomio de segundo grado."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 7,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T11:12:30.369Z",
+    "id": "descomposicion-y-graficacion-de-funciones-con-valor--0eb43294"
+  },
+  "title": "Descomposición y Graficación de Funciones con Valor Absoluto",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "El valor absoluto actúa como un 'espejo' que jamás permite valores negativos. En este ejercicio vamos a descomponer la función en trozos según el signo de lo que hay dentro del valor absoluto y luego dibujaremos su gráfica.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 6:</strong> Representa gráficamente de manera detallada la siguiente función de valor absoluto descomponiéndola previamente en una función definida a trozos:</p>\n<p>$$f(x) = |x^2 - 4|$$</p>\n</blockquote>",
+      "hints": [
+        "El valor absoluto $|g(x)|$ deja la expresión igual $g(x)$ cuando es positiva o cero, y le cambia el signo a $-g(x)$ cuando es negativa.",
+        "Para saber dónde cambia de signo, primero debemos averiguar dónde se anula $x^2 - 4$."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "La estrategia se divide en tres partes: buscar las raíces de la expresión interna, estudiar en qué intervalos es positiva o negativa, y reescribir la función a trozos para poder dibujarla fácilmente.",
+      "content": "<h3>Estrategia de Descomposición</h3>\n<p>Por definición, el valor absoluto se desglosa como:</p>\n<p>$$|g(x)| = \\begin{cases} g(x) & \\text{si } g(x) \\ge 0 \\\\ -g(x) & \\text{si } g(x) < 0 \\end{cases}$$</p>\n<p><strong>Pasos a seguir:</strong></p>\n<ol>\n<li><strong>Hallar las raíces:</strong> Resolver $x^2 - 4 = 0$ para encontrar los puntos de corte con el eje $X$.</li>\n<li><strong>Estudio del signo:</strong> Analizar el signo de $x^2 - 4$ en las tres regiones delimitadas por las raíces.</li>\n<li><strong>Escribir la función a trozos:</strong> Mantener la parábola original donde sea $\\ge 0$ y cambiarle el signo a $-(x^2 - 4)$ donde sea negative.</li>\n<li><strong>Graficar:</strong> Dibujar la parábola invirtiendo verticalmente la región negativa.</li>\n</ol>"
+    },
+    {
+      "title": "Descomposición en función a trozos",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Primero calculamos dónde se anula x al cuadrado menos cuatro. Las raíces son dos y menos dos. Al evaluar los intervalos, vemos que la función es negativa únicamente en el tramo central entre menos dos y dos.",
+      "content": "<p><strong>1. Raíces de la expresión interior:</strong></p>\n<p>$$x^2 - 4 = 0 \\implies x^2 = 4 \\implies x = \\pm 2$$</p>\n<p><strong>2. Estudio del signo de $y = x^2 - 4$:</strong></p>\n<ul>\n<li><strong>Intervalo $(-\\infty, -2)$:</strong> Si $x = -3 \\implies (-3)^2 - 4 = 5 > 0$ (Positivo $\\rightarrow$ se queda igual).</li>\n<li><strong>Intervalo $(-2, 2)$:</strong> Si $x = 0 \\implies 0^2 - 4 = -4 < 0$ (Negativo $\\rightarrow$ se le cambia el signo).</li>\n<li><strong>Intervalo $(2, \\infty)$:</strong> Si $x = 3 \\implies 3^2 - 4 = 5 > 0$ (Positivo $\\rightarrow$ se queda igual).</li>\n</ul>\n<p><strong>3. Expresión definida a trozos:</strong></p>\n<p>$$f(x) = \\begin{cases} x^2 - 4 & \\text{si } x \\le -2 \\text{ o } x \\ge 2 \\\\ -(x^2 - 4) = 4 - x^2 & \\text{si } -2 < x < 2 \\end{cases}$$</p>",
+      "theory": "<p><strong>Efecto Espejo:</strong> En el intervalo $(-2, 2)$, la parábola original bajaba hasta $y = -4$. Al aplicar el valor absoluto, la rama que quedaba por debajo del eje $X$ \"rebota\" y se refleja hacia arriba convirtiéndose en $y = 4 - x^2$, cuyo vértice pasa a estar en $(0, 4)$.</p>"
+    },
+    {
+      "title": "Representación Gráfica y Puntos Clave",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "En la gráfica observamos el 'rebote' característico en forma de W. En los extremos tenemos las ramas de la parábola original, y en el centro, la parte que era negativa se ha dado la vuelta situando el pico en cuatro.",
+      "content": "<p><strong>Elementos clave para el dibujo:</strong></p>\n<ul>\n<li><strong>Puntos de corte con el eje $X$ (puntos de rebote):</strong> $(-2, 0)$ y $(2, 0)$.</li>\n<li><strong>Vértice reflejado (máximo relativo):</strong> $(0, 4)$ en el tramo $y = 4 - x^2$.</li>\n<li><strong>Puntos auxiliares:</strong>\n  <ul>\n    <li>Si $x = -3 \\implies f(-3) = |9 - 4| = 5$. Point: $(-3, 5)$.</li>\n    <li>Si $x = 3 \\implies f(3) = |9 - 4| = 5$. Point: $(3, 5)$.</li>\n  </ul>\n</li>\n<li><strong>Línea discontinua:</strong> Muestra la parte de la parábola original $y = x^2 - 4$ que fue reflejada.</li>\n</ul>",
+      "visual": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Ejes: Origen en (200, 220) -> x=0, y=0. Escala: 1 ud X = 40px, 1 ud Y = 20px -->\n  <line x1='30' y1='220' x2='370' y2='220' stroke='#fbbf24' stroke-width='2' marker-end='url(#arrow)'/>\n  <line x1='200' y1='30' x2='200' y2='280' stroke='#fbbf24' stroke-width='2' marker-start='url(#arrow)'/>\n  <text x='360' y='210' fill='#fbbf24' font-size='12' font-family='sans-serif'>x</text>\n  <text x='210' y='40' fill='#fbbf24' font-size='12' font-family='sans-serif'>y</text>\n  \n  <!-- Marcas Eje X -->\n  <text x='112' y='240' fill='#94a3b8' font-size='12' font-family='sans-serif'>-2</text>\n  <text x='275' y='240' fill='#94a3b8' font-size='12' font-family='sans-serif'>2</text>\n  <!-- Marcas Eje Y -->\n  <text x='180' y='145' fill='#94a3b8' font-size='12' font-family='sans-serif'>4</text>\n  <text x='173' y='280' fill='#64748b' font-size='12' font-family='sans-serif'>-4</text>\n  <line x1='30' y1='140' x2='370' y2='140' stroke='#334155' stroke-width='1' stroke-dasharray='4,4'/>\n  \n  <!-- Curva original reflejada (discontinua por debajo del eje X) -->\n  <path d='M 120 220 Q 200 380 280 220' fill='none' stroke='#64748b' stroke-width='1.5' stroke-dasharray='4,4'/>\n  <circle cx='200' cy='300' r='3' fill='#64748b'/>\n  \n  <!-- Función f(x) = |x^2 - 4| -->\n  <!-- Rama izq: x <= -2 -->\n  <path d='M 60 55 Q 90 120 120 220' fill='none' stroke='#38bdf8' stroke-width='3'/>\n  <!-- Rama centro reflejada: -2 < x < 2 -->\n  <path d='M 120 220 Q 200 60 280 220' fill='none' stroke='#ef4444' stroke-width='3'/>\n  <!-- Rama dcha: x >= 2 -->\n  <path d='M 280 220 Q 310 120 340 55' fill='none' stroke='#38bdf8' stroke-width='3'/>\n  \n  <!-- Puntos clave -->\n  <circle cx='120' cy='220' r='5' fill='#fbbf24'/>\n  <circle cx='280' cy='220' r='5' fill='#fbbf24'/>\n  <circle cx='200' cy='140' r='5' fill='#ef4444'/>\n  <text x='208' y='135' fill='#ef4444' font-size='12' font-family='sans-serif' font-weight='bold'>(0, 4)</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulando: representar el valor absoluto de cualquier función equivale a dibujar la función original y 'doblar' hacia arriba todo lo que caiga por debajo del eje horizontal.",
+      "content": "<p>Pasos universales para graficar $|g(x)|$:</p>\n<ol>\n<li><strong>Puntos de corte:</strong> Encuentra dónde $g(x) = 0$. Esos puntos tocarán el eje $X$ y serán las 'esquinas' o 'rebotes' del valor absoluto.</li>\n<li><strong>Estudio de signos:</strong> Determina los intervalos donde $g(x) \\ge 0$ (mantiene su fórmula) y donde $g(x) < 0$ (se le antepone un signo menos).</li>\n<li><strong>Escritura a trozos:</strong> Escribe explícitamente $f(x)$ definiendo cada tramo con su respectivo dominio.</li>\n<li><strong>Simetría de reflexión:</strong> Cualquier punto $(x, y)$ con $y < 0$ se transforma en el punto $(x, -y)$ por encima del eje $X$.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica lo que acabas de aprender para descomponer esta otra función cuadrática con valor absoluto.",
+      "content": "<p>Dada la función $g(x) = |x^2 - 9|$:</p>\n<ol>\n<li>Halla las raíces donde $g(x) = 0$.</li>\n<li>Expresa la función $g(x)$ como una función definida a trozos.</li>\n<li>¿Cuál será el vértice reflejado de la parte central?</li>\n</ol>",
+      "practiceAnswer": "<p><strong>1. Raíces:</strong><br>\n$x^2 - 9 = 0 \\implies x = \\pm 3$.</p>\n<p><strong>2. Función definida a trozos:</strong><br>\n$$g(x) = \\begin{cases} x^2 - 9 & \\text{si } x \\le -3 \\text{ o } x \\ge 3 \\\\ 9 - x^2 & \\text{si } -3 < x < 3 \\end{cases}$$</p>\n<p><strong>3. Vértice reflejado:</strong><br>\nEn la parábola original el vértice estaba en $(0, -9)$. Al reflejarse, el nuevo máximo del tramo central estará en el punto <strong>$(0, 9)$</strong>.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "El valor absoluto es indispensable en ciencias e ingeniería para medir errores, tolerancias o magnitudes físicas como la distancia o el voltaje rectificado.",
+      "content": "<p>En ingeniería eléctrica, la corriente alterna (CA) tiene la forma de una onda senoidal que oscila entre valores positivos y negativos, por ejemplo $V(t) = 220 \\sin(t)$.</p>\n<p>Para cargar la batería de un móvil o alimentar aparatos electrónicos, se utiliza un componente llamado <strong>puente rectificador de onda completa</strong>, cuyo efecto matemático en la señal de voltaje es aplicar un valor absoluto: $V_{rect}(t) = |220 \\sin(t)|$.</p>\n<p>Basándote en lo que hemos visto con $|x^2 - 4|$, ¿qué le ocurre al voltaje de la onda cuando pasa por el rectificador?</p>",
+      "practiceAnswer": "<p>El puente rectificador transforma todos los semiciclos negativos de la onda en semiciclos positivos.</p>\n<p>En lugar de oscilar por encima y por debajo de 0 V, la señal rectificada se convierte en una serie de 'picos' exclusivamente positivos que rebotan en el eje $0 \\text{ V}$, garantizando que la corriente fluya siempre en la misma dirección sin cambiar de polaridad.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:12:43.384Z",
+    "updatedAt": "2026-08-01T11:12:43.384Z",
+    "contentHash": "08efdaa1eeffae7b",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

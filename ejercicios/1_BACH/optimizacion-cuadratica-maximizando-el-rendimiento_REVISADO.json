@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis de Funciones",
+    "subtopic": "Funciones Cuadráticas y Optimización",
+    "exerciseType": "Problema de optimización con parábolas",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Identificar el vértice de una parábola como el punto de máximo o mínimo absoluto.",
+      "Calcular analíticamente la coordenada X del vértice usando la fórmula x = -b/(2a).",
+      "Calcular la coordenada Y del vértice evaluando la función en X.",
+      "Interpretar los resultados matemáticos en el contexto de un problema real (temperatura y rendimiento)."
+    ],
+    "prerequisites": [
+      "Identificación de los coeficientes a, b y c en una función cuadrática.",
+      "Evaluación de funciones para un valor dado.",
+      "Operaciones aritméticas con decimales y potencias."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T11:10:08.850Z",
+    "id": "optimizacion-cuadratica-maximizando-el-rendimiento-1a7dbd27"
+  },
+  "title": "Optimización Cuadrática: Maximizando el Rendimiento",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "En este problema vamos a aplicar las matemáticas para encontrar el punto ideal de funcionamiento de un motor. Es un clásico problema de optimización donde buscaremos el punto más alto de una curva.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 10: Problema de optimización cuadrática:</strong> El rendimiento de un motor de combustión (medido en un porcentaje del 0 al 100%) depende de la temperatura interna del mismo $x$ (en grados Celsius) según la función cuadrática:</p>\n<p>$$R(x) = -0.02x^2 + 4x - 120$$</p>\n<ul>\n<li>a) ¿A qué temperatura exacta se obtiene el máximo rendimiento posible del motor?</li>\n<li>b) ¿Cuál es el valor porcentual de dicho rendimiento máximo?</li>\n</ul>\n</blockquote>",
+      "hints": [
+        "Observa la ecuación: el término con $x^2$ es negativo, lo que significa que su gráfica es una parábola triste (invertida).",
+        "El punto más alto de esa parábola nos dará tanto la temperatura ideal como el rendimiento máximo.",
+        "A ese punto clave de la parábola se le llama 'vértice'."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consiste en encontrar las coordenadas del vértice de la parábola. La coordenada horizontal nos dirá la temperatura, y la vertical, el rendimiento que conseguimos a esa temperatura.",
+      "content": "<h3>Estrategia para el Vértice</h3>\n<p>Toda función cuadrática tiene la forma general $f(x) = ax^2 + bx + c$. Cuando $a$ es negativo, la parábola se abre hacia abajo, por lo que su <strong>vértice</strong> es el punto máximo absoluto de la función.</p>\n<p>Para resolver el problema, calcularemos las coordenadas del vértice $V(x_v, y_v)$ en dos pasos:</p>\n<ol>\n<li><strong>Temperatura óptima ($x_v$):</strong> Utilizaremos la fórmula de la coordenada $x$ del vértice:\n$$x_v = \\frac{-b}{2a}$$</li>\n<li><strong>Rendimiento máximo ($y_v$):</strong> Sustituiremos el valor obtenido en el paso anterior dentro de la función original para calcular $R(x_v)$.</li>\n</ol>"
+    },
+    {
+      "title": "Apartado a): Temperatura para el máximo",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Vamos a calcular la temperatura ideal. Identificamos los coeficientes de nuestra ecuación y aplicamos la fórmula del vértice. Cuidado con los signos al dividir.",
+      "content": "<p><strong>Objetivo:</strong> Hallar la coordenada $x$ del vértice (temperatura en grados Celsius).</p>\n<p>Identificamos los coeficientes de la función $R(x) = -0.02x^2 + 4x - 120$:</p>\n<ul>\n<li>$a = -0.02$</li>\n<li>$b = 4$</li>\n<li>$c = -120$</li>\n</ul>\n<p>Aplicamos la fórmula del vértice:</p>\n<p>$$x_v = \\frac{-b}{2a}$$</p>\n<p>$$x_v = \\frac{-4}{2(-0.02)}$$</p>\n<p>$$x_v = \\frac{-4}{-0.04}$$</p>\n<p>Para dividir cómodamente, podemos multiplicar numerador y denominador por 100:</p>\n<p>$$x_v = \\frac{-400}{-4} = 100$$</p>\n<p><strong>Resultado:</strong> El máximo rendimiento se obtiene a una temperatura exacta de <strong>100°C</strong>.</p>",
+      "theory": "<p><strong>¿Por qué -b/2a?</strong> Esta fórmula proviene de derivar la función e igualarla a cero (el método general de optimización), o equivalentemente, de encontrar el punto medio entre las dos raíces de la ecuación cuadrática usando la fórmula general.</p>",
+      "warning": "<p>Vigila los signos negativos. Es muy común olvidar el signo menos del numerador o del denominador, lo que daría una temperatura negativa imposible para el rendimiento máximo de este motor.</p>"
+    },
+    {
+      "title": "Apartado b): Valor del rendimiento máximo",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ya sabemos que la máquina debe funcionar a cien grados. Ahora metemos esos cien grados en la fórmula original para ver qué rendimiento obtenemos de ella.",
+      "content": "<p><strong>Objetivo:</strong> Hallar la coordenada $y$ del vértice, es decir, evaluar $R(100)$.</p>\n<p>Sustituimos $x = 100$ en la función original:</p>\n<p>$$R(100) = -0.02(100)^2 + 4(100) - 120$$</p>\n<p>Resolvemos las operaciones paso a paso. Primero, la potencia:</p>\n<p>$$R(100) = -0.02(10000) + 400 - 120$$</p>\n<p>Multiplicamos por el decimal (mover la coma dos lugares a la derecha):</p>\n<p>$$R(100) = -200 + 400 - 120$$</p>\n<p>Sumamos y restamos:</p>\n<p>$$R(100) = 200 - 120$$</p>\n<p>$$R(100) = 80$$</p>\n<p><strong>Resultado:</strong> El valor porcentual del rendimiento máximo es del <strong>80%</strong>.</p>",
+      "checkpoint": {
+        "question": "¿Qué pasaría con el rendimiento si el motor se calentara hasta los 120°C?",
+        "options": [
+          {
+            "text": "Seguiría aumentando, porque a más temperatura, más energía.",
+            "correct": false,
+            "feedback": "Incorrecto. La fórmula es una parábola invertida; una vez pasado el vértice, la curva baja."
+          },
+          {
+            "text": "El rendimiento empezaría a bajar, siendo menor al 80%.",
+            "correct": true,
+            "feedback": "¡Correcto! Hemos hallado que 100°C es el máximo absoluto. Cualquier temperatura por encima o por debajo dará un rendimiento peor."
+          },
+          {
+            "text": "El rendimiento se mantendría estable en 80%.",
+            "correct": false,
+            "feedback": "Falso. Las parábolas no tienen tramos planos, descienden a ambos lados del vértice."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Visualizando la Optimización",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Aquí podemos ver la \"montaña\" de rendimiento. Fíjate cómo la curva sube a medida que el motor coge temperatura, alcanza su pico justo en 100 grados con un 80% de eficiencia, y luego se desploma si se sobrecalienta.",
+      "content": "<p>La representación gráfica de la función $R(x)$ nos muestra claramente cómo se comporta el motor térmico:</p>\n<ul>\n<li><strong>Eje Horizontal (X):</strong> Temperatura en °C.</li>\n<li><strong>Eje Vertical (Y):</strong> Rendimiento en %.</li>\n<li><strong>El Vértice (punto rojo):</strong> Es la cima de la curva. Coincide exactamente con nuestro cálculo matemático de $(100, 80)$.</li>\n</ul>\n<p>A temperaturas muy bajas o muy altas, el rendimiento cae en picado, lo que demuestra la importancia de los sistemas de refrigeración y termostatos en los motores reales.</p>",
+      "visual": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Escalas: Eje X de 0 a 200 (1 ud = 1.5px, offset 50). Eje Y de 0 a 100 (1 ud = 2px, offset 250) -->\n  <line x1='50' y1='50' x2='50' y2='250' stroke='#fbbf24' stroke-width='2' marker-start='url(#arrow)'/>\n  <line x1='50' y1='250' x2='350' y2='250' stroke='#fbbf24' stroke-width='2' marker-end='url(#arrow)'/>\n  <text x='330' y='275' fill='#fbbf24' font-size='12' font-family='sans-serif'>Temp (°C)</text>\n  <text x='15' y='60' fill='#fbbf24' font-size='12' font-family='sans-serif'>R (%)</text>\n  <!-- Cuadrícula y guías -->\n  <line x1='50' y1='90' x2='350' y2='90' stroke='#334155' stroke-width='1' stroke-dasharray='4,4'/> <!-- Y=80 (250 - 80*2 = 90) -->\n  <text x='25' y='95' fill='#94a3b8' font-size='12' font-family='sans-serif'>80</text>\n  <line x1='200' y1='50' x2='200' y2='250' stroke='#334155' stroke-width='1' stroke-dasharray='4,4'/> <!-- X=100 (50 + 100*1.5 = 200) -->\n  <text x='190' y='265' fill='#94a3b8' font-size='12' font-family='sans-serif'>100</text>\n  <!-- Gráfica de la parábola -->\n  <!-- Raíces: -0.02x^2+4x-120=0 -> x^2 - 200x + 6000 = 0 -> x = 100 +- sqrt(10000-6000) = 100 +- 63.2. -> aprox 36.8 y 163.2 -->\n  <!-- x=36.8 -> Xpx = 50 + 36.8*1.5 = 105. Ypx = 250 -->\n  <!-- x=163.2 -> Xpx = 50 + 163.2*1.5 = 295. Ypx = 250 -->\n  <path d='M 105 250 Q 200 -70 295 250' fill='none' stroke='#38bdf8' stroke-width='3'/>\n  <!-- Vértice -->\n  <circle cx='200' cy='90' r='6' fill='#ef4444'/>\n  <text x='215' y='85' fill='#ef4444' font-size='14' font-family='sans-serif' font-weight='bold'>(100, 80)</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulamos. Siempre que te pidan optimizar, maximizar o minimizar una función cuadrática, todo se reduce a encontrar el vértice.",
+      "content": "<p>Los pasos para resolver problemas de optimización cuadrática son mecánicos, pero muy potentes:</p>\n<ol>\n<li><strong>Modelar la situación:</strong> Asegúrate de que tienes una ecuación cuadrática válida ($ax^2 + bx + c$).</li>\n<li><strong>Encontrar la variable independiente óptima:</strong> Calcula la coordenada $x$ del vértice con la fórmula universal $x_v = \\frac{-b}{2a}$. Esto te da el \"cuándo\" o el \"dónde\".</li>\n<li><strong>Encontrar el valor máximo/mínimo:</strong> Sustituye tu $x_v$ en la función original para calcular $y_v$. Esto te da la cantidad máxima (o mínima) posible.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora te toca a ti. Usa el mismo protocolo para averiguar cómo maximizar los beneficios de esta empresa de ordenadores.",
+      "content": "<p>Los beneficios diarios de una empresa, en miles de euros, en función del número de equipos $x$ que fabrican, vienen dados por la siguiente función cuadrática:</p>\n<p>$$B(x) = -2x^2 + 120x - 800$$</p>\n<ul>\n<li>a) ¿Cuántos equipos diarios deben fabricar para maximizar su beneficio?</li>\n<li>b) ¿De cuánto será ese beneficio máximo (en miles de euros)?</li>\n</ul>\n<p><em>Utiliza los mismos pasos: halla la $x$ del vértice y luego evalúa la función.</em></p>",
+      "practiceAnswer": "<p><strong>a) Número de equipos ($x$):</strong><br>\n$x_v = \\frac{-b}{2a} = \\frac{-120}{2(-2)} = \\frac{-120}{-4} = 30$.<br>\nDeben fabricar <strong>30 equipos</strong>.</p>\n<p><strong>b) Beneficio máximo ($B$):</strong><br>\nSustituimos $x = 30$ en la función:<br>\n$B(30) = -2(30)^2 + 120(30) - 800$<br>\n$B(30) = -2(900) + 3600 - 800$<br>\n$B(30) = -1800 + 3600 - 800 = 1000$.<br>\nEl beneficio máximo será de <strong>1000 miles de euros</strong> (1 millón de euros).</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "La optimización rige el mundo. Desde la economía hasta la física, encontrar el vértice de una curva es, literalmente, encontrar la mejor decisión posible en un escenario dado.",
+      "content": "<p>Has visto cómo encontrar el rendimiento óptimo de un motor y el beneficio máximo de una empresa usando la misma fórmula del vértice. </p>\n<p>Imagina ahora que eres un ingeniero civil diseñando un puente parabólico colgante. Si te dan la función de la curva de los cables de suspensión, digamos $A(x) = 0.05x^2 - 10x + 600$, donde $a$ es un valor positivo...</p>\n<p>¿Qué característica geométrica y física del puente estarías calculando si usas exactamente la misma fórmula del vértice $x_v = -b/(2a)$?</p>",
+      "practiceAnswer": "<p>Al ser $a = 0.05$ (un valor positivo), la parábola del cable tiene forma de \"U\", abriéndose hacia arriba. </p>\n<p>En este caso, calcular el vértice ya no nos daría un punto máximo (como el techo de un edificio), sino el <strong>punto mínimo o más bajo de la curva</strong>. </p>\n<p>Físicamente, estarías calculando el punto donde el cable del puente colgante se acerca más al suelo o al agua, y su distancia horizontal desde el inicio del puente. Es el punto de máxima tensión estructural en el centro del vano.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:10:23.757Z",
+    "updatedAt": "2026-08-01T11:10:23.757Z",
+    "contentHash": "5b1c372477f1d6a2",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

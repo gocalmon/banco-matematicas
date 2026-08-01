@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Inecuaciones",
+    "exerciseType": "Resolución de sistema de inecuaciones de segundo grado",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Resolver inecuaciones de segundo grado hallando las raíces y evaluando intervalos",
+      "Distinguir el uso de desigualdades estrictas e inclusivas (paréntesis vs. corchetes)",
+      "Representar gráficamente conjuntos de soluciones en la recta real",
+      "Determinar la intersección de múltiples conjuntos de soluciones"
+    ],
+    "prerequisites": [
+      "Resolución de ecuaciones de segundo grado (completas e incompletas)",
+      "Manejo de intervalos en la recta real",
+      "Concepto de intersección de conjuntos"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T10:23:07.798Z",
+    "id": "buscando-zonas-comunes-sistemas-de-inecuaciones-31e4b0a0"
+  },
+  "title": "Buscando Zonas Comunes: Sistemas de Inecuaciones",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "A diferencia de las ecuaciones donde buscamos puntos exactos, en las inecuaciones buscamos zonas o intervalos enteros. Al tener un sistema de dos inecuaciones, nuestro trabajo será encontrar las zonas que cumplen ambas condiciones al mismo tiempo.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 8:</strong> Resuelve el siguiente sistema de inecuaciones de segundo grado determinando la intersección común de sus respectivos conjuntos de soluciones:</p>\n<p>$$\\begin{cases} x^2 - 9 \\le 0 \\\\ x^2 - 2x > 0 \\end{cases}$$</p>\n</blockquote>",
+      "hints": [
+        "Un sistema de inecuaciones no se resuelve todo a la vez. Separa el problema en dos partes independientes.",
+        "La palabra clave aquí es 'intersección'. Al final, buscaremos los números que pertenezcan a la solución de la primera inecuación Y TAMBIÉN a la solución de la segunda."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia será 'divide y vencerás'. Resolveremos la primera inecuación por su cuenta para ver qué zonas domina. Luego haremos lo mismo con la segunda. Finalmente, superpondremos ambos mapas para ver dónde coinciden los territorios.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar el intervalo (o intervalos) de números $x$ que hacen verdaderas ambas desigualdades simultáneamente.</p>\n<p><strong>Estrategia paso a paso:</strong></p>\n<ol>\n<li><strong>Resolver la primera inecuación:</strong> Convertiremos la desigualdad en igualdad para hallar sus raíces (puntos de corte). Evaluaremos los intervalos resultantes para ver cuáles cumplen que $x^2 - 9 \\le 0$.</li>\n<li><strong>Resolver la segunda inecuación:</strong> Haremos exactamente el mismo proceso con $x^2 - 2x > 0$, prestando atención a que esta desigualdad es estricta (no incluye el igual).</li>\n<li><strong>Intersección final:</strong> Dibujaremos ambas soluciones en una misma recta real para visualizar dónde se superponen. Esa zona de solapamiento será nuestra solución final.</li>\n</ol>"
+    },
+    {
+      "title": "Paso 1: La primera inecuación",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Empezamos con equis al cuadrado menos nueve menor o igual que cero. Sus raíces son tres y menos tres. Al probar valores, descubrimos que la zona válida es justo el tramo que va desde el menos tres hasta el tres, incluyéndolos.",
+      "content": "<p>Tomamos la primera inecuación: <strong>$x^2 - 9 \\le 0$</strong></p>\n<p>1. Hallamos las raíces de la ecuación asociada: $x^2 - 9 = 0 \\implies x^2 = 9 \\implies x = \\pm 3$</p>\n<p>2. Estas raíces dividen la recta real en tres intervalos: $(-\\infty, -3)$, $(-3, 3)$ y $(3, \\infty)$. Tomamos un punto de prueba de cada zona:</p>\n<ul>\n<li>Si $x = -4 \\implies (-4)^2 - 9 = 16 - 9 = 7$ (Positivo $\\times$)</li>\n<li>Si $x = 0 \\implies (0)^2 - 9 = -9$ (Negativo $\\checkmark$, cumple $\\le 0$)</li>\n<li>Si $x = 4 \\implies (4)^2 - 9 = 7$ (Positivo $\\times$)</li>\n</ul>\n<p>Por lo tanto, la solución de la primera inecuación es el intervalo cerrado (porque es $\\le$): <strong>$S_1 = [-3, 3]$</strong></p>"
+    },
+    {
+      "title": "Paso 2: La segunda inecuación",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora vamos a por la segunda: equis al cuadrado menos dos equis mayor que cero. Sacamos factor común y vemos que las raíces son cero y dos. Esta vez, la inecuación nos pide ser mayores que cero, así que las zonas válidas son los extremos que escapan hacia el infinito.",
+      "content": "<p>Tomamos la segunda inecuación: <strong>$x^2 - 2x > 0$</strong></p>\n<p>1. Hallamos las raíces factorizando: $x(x - 2) = 0 \\implies x = 0$ y $x = 2$</p>\n<p>2. Probamos zonas divididas por el $0$ y el $2$:</p>\n<ul>\n<li>Si $x = -1 \\implies (-1)^2 - 2(-1) = 1 + 2 = 3$ (Positivo $\\checkmark$, cumple $> 0$)</li>\n<li>Si $x = 1 \\implies (1)^2 - 2(1) = 1 - 2 = -1$ (Negativo $\\times$)</li>\n<li>Si $x = 3 \\implies (3)^2 - 2(3) = 9 - 6 = 3$ (Positivo $\\checkmark$, cumple $> 0$)</li>\n</ul>\n<p>Por lo tanto, la solución es la unión de dos intervalos abiertos (porque es $>$ estricto): <strong>$S_2 = (-\\infty, 0) \\cup (2, \\infty)$</strong></p>",
+      "checkpoint": {
+        "question": "¿Por qué en la solución S1 usamos corchetes [-3, 3] y en la solución S2 usamos paréntesis en los números, por ejemplo (2, ∞)?",
+        "options": [
+          {
+            "text": "Porque el infinito siempre lleva paréntesis y eso obliga a ponerlo en todos los números de esa solución.",
+            "correct": false,
+            "feedback": "Falso. El infinito siempre lleva paréntesis, pero eso no afecta al tipo de símbolo que llevan los números concretos como el 0 o el 2."
+          },
+          {
+            "text": "Porque la primera inecuación tiene el símbolo menor o igual (≤), que incluye a los extremos, mientras que la segunda tiene mayor estricto (>), que excluye a las raíces exactas.",
+            "correct": true,
+            "feedback": "¡Perfecto! El 'igual' en el símbolo (≤, ≥) significa que las raíces mismas son parte de la solución, por lo que usamos corchetes. Sin él (<, >), usamos paréntesis."
+          },
+          {
+            "text": "Es indiferente, se pueden usar corchetes o paréntesis al azar siempre que las raíces numéricas estén bien calculadas.",
+            "correct": false,
+            "feedback": "Incorrecto. En matemáticas, la notación de corchetes y paréntesis marca una diferencia crucial sobre si un límite exacto está incluido o no."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Solución Final e Intersección",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Solo queda la prueba final. Colocamos el tramo de la primera solución, que va del menos tres al tres, sobre la recta. Luego dibujamos los rayos de la segunda solución. Allí donde los dos colores se cruzan, tenemos nuestro territorio ganador: dos pequeños trozos independientes.",
+      "content": "<p>La solución del sistema completo es la <strong>intersección</strong> de las dos soluciones individuales: $S = S_1 \\cap S_2$</p>\n<ul>\n<li>$S_1$ (Color azul): $[-3, 3]$</li>\n<li>$S_2$ (Color naranja): $(-\\infty, 0) \\cup (2, \\infty)$</li>\n</ul>\n<p>Buscamos qué zonas tienen ambas condiciones a la vez. Al cruzarlas, vemos que la zona central común se rompe en dos fragmentos:</p>\n<p><strong>Solución Final:</strong></p>\n<p>$$S = [-3, 0) \\cup (2, 3]$$</p>\n<p><em>Fíjate bien en mantener los corchetes para el $-3$ y $3$, y los paréntesis para el $0$ y el $2$.</em></p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 200\" style=\"background-color:#0f172a; border-radius:8px;\">\n  <!-- Recta real principal -->\n  <line x1=\"20\" y1=\"100\" x2=\"380\" y2=\"100\" stroke=\"#64748b\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/>\n  <defs>\n    <marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#64748b\"/>\n    </marker>\n  </defs>\n  \n  <!-- Marcas en la recta (Escala aprox: -4 a 4, centro en 0 -> x=200, 1 unidad = 40px) -->\n  <line x1=\"80\" y1=\"95\" x2=\"80\" y2=\"105\" stroke=\"#f8fafc\" stroke-width=\"1\"/> <!-- -3 -->\n  <line x1=\"200\" y1=\"95\" x2=\"200\" y2=\"105\" stroke=\"#f8fafc\" stroke-width=\"1\"/> <!-- 0 -->\n  <line x1=\"280\" y1=\"95\" x2=\"280\" y2=\"105\" stroke=\"#f8fafc\" stroke-width=\"1\"/> <!-- 2 -->\n  <line x1=\"320\" y1=\"95\" x2=\"320\" y2=\"105\" stroke=\"#f8fafc\" stroke-width=\"1\"/> <!-- 3 -->\n  \n  <text x=\"70\" y=\"125\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\">-3</text>\n  <text x=\"195\" y=\"125\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\">0</text>\n  <text x=\"275\" y=\"125\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"315\" y=\"125\" fill=\"#f8fafc\" font-family=\"sans-serif\" font-size=\"14\">3</text>\n  \n  <!-- S1: [-3, 3] en azul (arriba) -->\n  <line x1=\"80\" y1=\"60\" x2=\"320\" y2=\"60\" stroke=\"#38bdf8\" stroke-width=\"4\"/>\n  <circle cx=\"80\" cy=\"60\" r=\"5\" fill=\"#38bdf8\"/>\n  <circle cx=\"320\" cy=\"60\" r=\"5\" fill=\"#38bdf8\"/>\n  <text x=\"180\" y=\"45\" fill=\"#38bdf8\" font-family=\"sans-serif\" font-size=\"12\">S1: x² - 9 ≤ 0</text>\n  \n  <!-- S2: (-inf, 0) U (2, inf) en naranja (abajo) -->\n  <line x1=\"20\" y1=\"140\" x2=\"200\" y2=\"140\" stroke=\"#fbbf24\" stroke-width=\"4\" stroke-dasharray=\"4,2\"/>\n  <circle cx=\"200\" cy=\"140\" r=\"5\" fill=\"#0f172a\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <!-- hueco -->\n  \n  <line x1=\"280\" y1=\"140\" x2=\"380\" y2=\"140\" stroke=\"#fbbf24\" stroke-width=\"4\" stroke-dasharray=\"4,2\"/>\n  <circle cx=\"280\" cy=\"140\" r=\"5\" fill=\"#0f172a\" stroke=\"#fbbf24\" stroke-width=\"2\"/> <!-- hueco -->\n  <text x=\"180\" y=\"165\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"12\">S2: x² - 2x > 0</text>\n  \n  <!-- Zonas de intersección (verde fluorescente) superpuestas en el eje principal -->\n  <!-- [-3, 0) -->\n  <rect x=\"80\" y=\"85\" width=\"120\" height=\"30\" fill=\"#22c55e\" opacity=\"0.3\" rx=\"4\"/>\n  <line x1=\"80\" y1=\"100\" x2=\"200\" y2=\"100\" stroke=\"#22c55e\" stroke-width=\"4\"/>\n  <circle cx=\"80\" cy=\"100\" r=\"5\" fill=\"#22c55e\"/>\n  <circle cx=\"200\" cy=\"100\" r=\"5\" fill=\"#0f172a\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  \n  <!-- (2, 3] -->\n  <rect x=\"280\" y=\"85\" width=\"40\" height=\"30\" fill=\"#22c55e\" opacity=\"0.3\" rx=\"4\"/>\n  <line x1=\"280\" y1=\"100\" x2=\"320\" y2=\"100\" stroke=\"#22c55e\" stroke-width=\"4\"/>\n  <circle cx=\"280\" cy=\"100\" r=\"5\" fill=\"#0f172a\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <circle cx=\"320\" cy=\"100\" r=\"5\" fill=\"#22c55e\"/>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulamos el método. Resolver un sistema de inecuaciones es tan fácil como hacer inecuaciones sueltas y jugar a superponer los resultados. El verdadero truco está en dibujar bien la recta final para no equivocarse con los corchetes y paréntesis.",
+      "content": "<ol>\n<li><strong>Aislamiento de tareas:</strong> No mezclamos las inecuaciones. Empezamos por $x^2 - 9 \\le 0$, hallamos sus raíces ($-3, 3$) y determinamos su intervalo válido comprobando signos.</li>\n<li><strong>Segunda ronda:</strong> Repetimos el proceso limpio para $x^2 - 2x > 0$, hallando sus raíces ($0, 2$) y probando las nuevas zonas.</li>\n<li><strong>Análisis de bordes:</strong> Aseguramos que la inecuación con $\\le$ genera fronteras cerradas (corchetes) y la que tiene $>$ genera fronteras abiertas (paréntesis).</li>\n<li><strong>Fusión visual:</strong> Dibujamos ambos conjuntos en una misma recta y extrajimos las zonas donde ambos coincidían: $[-3, 0) \\cup (2, 3]$.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora te toca a ti. Tienes un sistema casi idéntico. Resuelve las inecuaciones por separado y dibuja tus dos líneas. ¿Dónde se pisan?",
+      "content": "<p>Aplica el mismo procedimiento gráfico para resolver el siguiente sistema de inecuaciones:</p>\n<p>$$\\begin{cases} x^2 - 4 \\le 0 \\\\ x^2 - x > 0 \\end{cases}$$</p>\n<p><em>Pista: Las raíces de la primera son $-2$ y $2$. Las de la segunda son $0$ y $1$. Cuidado con los corchetes.</em></p>",
+      "practiceAnswer": "<p><strong>Solución paso a paso:</strong></p>\n<ul>\n<li><strong>Inecuación 1:</strong> $x^2 - 4 \\le 0$. Raíces en $-2$ y $2$. La zona donde es menor o igual a cero es el segmento central. Solución 1: <strong>$[-2, 2]$</strong>.</li>\n<li><strong>Inecuación 2:</strong> $x^2 - x > 0 \\implies x(x-1) > 0$. Raíces en $0$ y $1$. La zona positiva son los tramos exteriores. Solución 2: <strong>$(-\\infty, 0) \\cup (1, \\infty)$</strong>.</li>\n<li><strong>Intersección:</strong> Superponemos $[-2, 2]$ con la segunda solución.</li>\n<li>La zona común por la izquierda cruza desde el $-2$ cerrado hasta el $0$ abierto.</li>\n<li>La zona común por la derecha arranca en el $1$ abierto y termina en el $2$ cerrado.</li>\n</ul>\n<p><strong>Conjunto final:</strong> $x \\in [-2, 0) \\cup (1, 2]$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: El hábitat de los corales",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Los biólogos usan estas matemáticas todos los días. Si una especie sobrevive bajo ciertas condiciones de temperatura según una fórmula, y bajo ciertos niveles de luz según otra fórmula diferente, el único lugar del mar donde podrán vivir es la intersección de ambas inecuaciones.",
+      "content": "<p>Una reserva marina está estudiando la viabilidad de replantar una especie delicada de coral en un arrecife. El coral sólo sobrevive si se cumplen dos condiciones simultáneas basadas en la profundidad en metros ($x$):</p>\n<ul>\n<li>La presión del agua debe ser controlada, lo que se modela con: $x^2 - 25 \\le 0$</li>\n<li>La cantidad de luz solar debe ser suficiente, lo que exige que: $x^2 - 4x > 0$</li>\n</ul>\n<p>Sabiendo que la profundidad $x$ no puede ser un número negativo (es decir, $x > 0$ siempre en el mar real), plantea la intersección de estas condiciones y averigua en qué rango exacto de profundidad (en metros) podrán plantar los corales con éxito.</p>",
+      "practiceAnswer": "<p><strong>Análisis de las condiciones:</strong></p>\n<ul>\n<li><strong>Presión:</strong> $x^2 - 25 \\le 0 \\implies$ Rango válido $[-5, 5]$. Como la profundidad es positiva, nos quedamos con $(0, 5]$.</li>\n<li><strong>Luz:</strong> $x^2 - 4x > 0 \\implies x(x-4) > 0$. Las raíces son $0$ y $4$. La solución matemática es $(-\\infty, 0) \\cup (4, \\infty)$. Adaptado al mar real ($x>0$), la condición de luz sólo se cumple para profundidades mayores de $4$ metros: $(4, \\infty)$.</li>\n</ul>\n<p><strong>Intersección:</strong></p>\n<p>Tenemos que cruzar el rango de presión admisible $(0, 5]$ con el rango de luz suficiente $(4, \\infty)$.</p>\n<p>El solapamiento entre \"hasta 5 metros\" y \"a partir de 4 metros\" es exactamente el estrecho margen que hay entre 4 y 5 metros.</p>\n<p><strong>Conclusión:</strong> Los corales sólo pueden ser plantados en la franja de profundidad <strong>$x \\in (4, 5]$ metros</strong> (estrictamente más hondo que 4 metros y hasta un máximo de 5 metros inclusive).</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T10:23:27.157Z",
+    "updatedAt": "2026-08-01T10:23:27.157Z",
+    "contentHash": "e580615b901ed0f5",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

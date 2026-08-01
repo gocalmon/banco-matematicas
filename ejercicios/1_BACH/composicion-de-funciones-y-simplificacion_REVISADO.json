@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Análisis de Funciones",
+    "subtopic": "Composición de Funciones",
+    "exerciseType": "Cálculo analítico de funciones compuestas y simplificación",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Comprender el concepto de composición de funciones como 'una función dentro de otra'.",
+      "Calcular (g ∘ f)(x) evaluando la función externa g en la expresión de f(x).",
+      "Calcular (f ∘ g)(x) evaluando la función externa f en la expresión de g(x).",
+      "Simplificar expresiones compuestas algebraicas reduciendo a común denominador cuando sea necesario."
+    ],
+    "prerequisites": [
+      "Evaluación de funciones en expresiones algebraicas.",
+      "Operaciones algebraicas básicas con fracciones (común denominador, simplificación)."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T11:10:53.328Z",
+    "id": "composicion-de-funciones-y-simplificacion-55dd4098"
+  },
+  "title": "Composición de Funciones y Simplificación",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "En este ejercicio vamos a encadenar dos funciones. La composición de funciones es como una línea de ensamblaje en una fábrica: la salida de la primera máquina pasa directamente a ser la entrada de la segunda.",
+      "content": "<blockquote>\n<p><strong>Ejercicio 2:</strong> Dadas las funciones reales $f(x) = 2x - 3$ y $g(x) = \\frac{x}{x+1}$, calcula de manera explícita las expresiones de las siguientes funciones compuestas y simplifica sus resultados:</p>\n<ul>\n<li>a) $(g \\circ f)(x)$</li>\n<li>b) $(f \\circ g)(x)$</li>\n</ul>\n</blockquote>",
+      "hints": [
+        "La notación $(g \\circ f)(x)$ significa $g(f(x))$, es decir, aplicas $f$ primero y luego le pasas el resultado a $g$.",
+        "La notación $(f \\circ g)(x)$ significa $f(g(x))$, invirtiendo el orden de aplicación.",
+        "La composición de funciones NO suele ser conmutativa: $(g \\circ f)(x) \\neq (f \\circ g)(x)$ en la mayoría de los casos."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consiste en sustituir toda la 'caja' de la función interior dentro de las $x$ de la función exterior, y luego ponernos la gorra de algebraicos para simplificar la expresión al máximo.",
+      "content": "<h3>Estrategia para Componer Funciones</h3>\n<p>Para calcular la composición de dos funciones $f$ y $g$:</p>\n<ol>\n<li><strong>Identificar interior y exterior:</strong> En $(g \\circ f)(x) = g(f(x))$, la función $f(x)$ es la <em>interior</em> e entra dentro de $g$. En $(f \\circ g)(x) = f(g(x))$, la función $g(x)$ es la <em>interior</em> e entra dentro de $f$.</li>\n<li><strong>Sustitución explícita:</strong> Reemplaza cada $x$ de la función exterior por la fórmula completa de la función interior (usando paréntesis para evitar errores).</li>\n<li><strong>Simplificación algebraica:</strong> Opera el numerador y el denominador (sacando común denominador cuando haga falta) para dejar una única fracción algebraica bien organizada.</li>\n</ol>"
+    },
+    {
+      "title": "Apartado a): Cálculo de (g ∘ f)(x)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Vamos con la primera composición. Tomamos la función g, que es equis partido por equis más uno, y reemplazamos cada equis por la fórmula de f, que es dos equis menos tres.",
+      "content": "<p><strong>Objetivo:</strong> Hallar $(g \\circ f)(x) = g(f(x))$.</p>\n<p><strong>1. Identificamos las funciones:</strong></p>\n<ul>\n<li>$f(x) = 2x - 3$</li>\n<li>$g(x) = \\frac{x}{x + 1}$</li>\n</ul>\n<p><strong>2. Sustituimos $f(x)$ dentro de $g(x)$:</strong></p>\n<p>$$(g \\circ f)(x) = g(2x - 3) = \\frac{(2x - 3)}{(2x - 3) + 1}$$</p>\n<p><strong>3. Simplificamos el denominador:</strong></p>\n<p>$$(g \\circ f)(x) = \\frac{2x - 3}{2x - 3 + 1} = \\frac{2x - 3}{2x - 2}$$</p>\n<p><strong>Resultado:</strong> </p>\n<p>$$(g \\circ f)(x) = \\frac{2x - 3}{2x - 2}$$</p>",
+      "theory": "<p><strong>Orden de lectura:</strong> Recuerda que $(g \\circ f)(x)$ se lee \"$f$ compuesta con $g$\" o \"$g$ sobre $f$\". Aunque se escribe $g \\circ f$, la función que actúa en primer lugar sobre la $x$ es la de la derecha ($f$).</p>",
+      "warning": "<p>Cuidado con factorizar a medias. Podrías escribir el denominador como $2(x-1)$, pero la expresión $\\frac{2x-3}{2x-2}$ ya se considera completamente simplificada puesto que no hay factores comunes que se puedan cancelar en el numerador.</p>"
+    },
+    {
+      "title": "Apartado b): Cálculo de (f ∘ g)(x)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora invertimos el orden. Tomamos la función f, que es dos equis menos tres, y donde pone equis incrustamos la fracción g. Aquí nos tocará sacar común denominador para simplificar.",
+      "content": "<p><strong>Objetivo:</strong> Hallar $(f \\circ g)(x) = f(g(x))$.</p>\n<p><strong>1. Sustituimos $g(x)$ dentro de $f(x)$:</strong></p>\n<p>$$(f \\circ g)(x) = f\\left(\\frac{x}{x+1}\\right) = 2\\left(\\frac{x}{x+1}\\right) - 3$$</p>\n<p><strong>2. Multiplicamos la fracción por 2:</strong></p>\n<p>$$(f \\circ g)(x) = \\frac{2x}{x+1} - 3$$</p>\n<p><strong>3. Sacamos común denominador $(x+1)$ para restar:</strong></p>\n<p>$$(f \\circ g)(x) = \\frac{2x}{x+1} - \\frac{3(x+1)}{x+1} = \\frac{2x - 3(x+1)}{x+1}$$</p>\n<p><strong>4. Operamos el numerador:</strong></p>\n<p>$$(f \\circ g)(x) = \\frac{2x - 3x - 3}{x+1} = \\frac{-x - 3}{x+1}$$</p>\n<p><strong>Resultado:</strong></p>\n<p>$$(f \\circ g)(x) = \\frac{-x - 3}{x+1} \\quad \\text{o equivalentes como} \\quad -\\frac{x+3}{x+1}$$</p>",
+      "checkpoint": {
+        "question": "Al comparar los dos resultados: (g ∘ f)(x) = (2x-3)/(2x-2) y (f ∘ g)(x) = (-x-3)/(x+1), ¿qué propiedad de la composición queda demostrada?",
+        "options": [
+          {
+            "text": "La propiedad asociativa: el orden de los factores no altera el producto.",
+            "correct": false,
+            "feedback": "Incorrecto. La asociatividad involucra tres funciones [(f ∘ g) ∘ h = f ∘ (g ∘ h)] y aquí estamos hablando de invertir el orden de dos funciones."
+          },
+          {
+            "text": "Que la composición de funciones NO es conmutativa en general, ya que (g ∘ f)(x) ≠ (f ∘ g)(x).",
+            "correct": true,
+            "feedback": "¡Correcto! Invertir el orden en que se aplican las funciones da como resultado fórmulas completamente diferentes."
+          },
+          {
+            "text": "Que una de las dos operaciones se ha calculado mal, porque siempre deben dar el mismo resultado.",
+            "correct": false,
+            "feedback": "Falso. Ambos cálculos son correctos. La composición de funciones casi nunca da el mismo resultado al cambiar el orden."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Visualizando el Proceso: La Fábrica de Funciones",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Piensa en las funciones compuestas como máquinas en serie. En el primer caso, la máquina f procesa el número y se lo pasa a g. En el segundo caso, g procesa primero y se lo entrega a f.",
+      "content": "<p>Entender la composición como un procesamiento en dos etapas ayuda a ver por qué el orden es vital:</p>\n<ul>\n<li><strong>Proceso $(g \\circ f)(x)$:</strong>\n  <br>Entrada $x \\longrightarrow [\\text{Máquina } f] \\longrightarrow (2x-3) \\longrightarrow [\\text{Máquina } g] \\longrightarrow \\frac{2x-3}{2x-2}$\n</li>\n<br>\n<li><strong>Proceso $(f \\circ g)(x)$:</strong>\n  <br>Entrada $x \\longrightarrow [\\text{Máquina } g] \\longrightarrow \\left(\\frac{x}{x+1}\\right) \\longrightarrow [\\text{Máquina } f] \\longrightarrow \\frac{-x-3}{x+1}$\n</li>\n</ul>\n<p><em>Ejemplo numérico con $x = 2$:</em></p>\n<ul>\n<li>$(g \\circ f)(2)$: $f(2) = 1 \\implies g(1) = \\frac{1}{2} = 0.5$.</li>\n<li>$(f \\circ g)(2)$: $g(2) = \\frac{2}{3} \\implies f(\\frac{2}{3}) = 2(\\frac{2}{3}) - 3 = -\\frac{5}{3} \\approx -1.67$.</li>\n</ul>",
+      "visual": "<svg viewBox='0 0 400 280' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'>\n  <rect width='100%' height='100%' fill='#0f172a'/>\n  <defs>\n    <marker id='arrow' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='8' markerHeight='8' orient='auto-start-reverse'>\n      <path d='M 0 0 L 10 5 L 0 10 z' fill='#fbbf24'/>\n    </marker>\n  </defs>\n  <!-- Diagrama A: (g o f) -->\n  <text x='20' y='35' fill='#fbbf24' font-size='14' font-family='sans-serif' font-weight='bold'>a) (g ∘ f)(x) = g(f(x))</text>\n  <text x='30' y='75' fill='#94a3b8' font-size='14' font-family='sans-serif'>x</text>\n  <line x1='45' y1='70' x2='85' y2='70' stroke='#fbbf24' stroke-width='2' marker-end='url(#arrow)'/>\n  <rect x='90' y='50' width='70' height='40' rx='5' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/>\n  <text x='118' y='75' fill='#38bdf8' font-size='14' font-family='sans-serif' font-weight='bold'>f(x)</text>\n  <line x1='165' y1='70' x2='205' y2='70' stroke='#fbbf24' stroke-width='2' marker-end='url(#arrow)'/>\n  <rect x='210' y='50' width='70' height='40' rx='5' fill='#1e293b' stroke='#10b981' stroke-width='2'/>\n  <text x='238' y='75' fill='#10b981' font-size='14' font-family='sans-serif' font-weight='bold'>g(x)</text>\n  <line x1='285' y1='70' x2='325' y2='70' stroke='#fbbf24' stroke-width='2' marker-end='url(#arrow)'/>\n  <text x='335' y='75' fill='#ef4444' font-size='13' font-family='sans-serif' font-weight='bold'>2x-3 / 2x-2</text>\n  \n  <!-- Separador -->\n  <line x1='20' y1='120' x2='380' y2='120' stroke='#334155' stroke-width='1' stroke-dasharray='4,4'/>\n  \n  <!-- Diagrama B: (f o g) -->\n  <text x='20' y='160' fill='#fbbf24' font-size='14' font-family='sans-serif' font-weight='bold'>b) (f ∘ g)(x) = f(g(x))</text>\n  <text x='30' y='200' fill='#94a3b8' font-size='14' font-family='sans-serif'>x</text>\n  <line x1='45' y1='195' x2='85' y2='195' stroke='#fbbf24' stroke-width='2' marker-end='url(#arrow)'/>\n  <rect x='90' y='175' width='70' height='40' rx='5' fill='#1e293b' stroke='#10b981' stroke-width='2'/>\n  <text x='118' y='200' fill='#10b981' font-size='14' font-family='sans-serif' font-weight='bold'>g(x)</text>\n  <line x1='165' y1='195' x2='205' y2='195' stroke='#fbbf24' stroke-width='2' marker-end='url(#arrow)'/>\n  <rect x='210' y='175' width='70' height='40' rx='5' fill='#1e293b' stroke='#38bdf8' stroke-width='2'/>\n  <text x='238' y='200' fill='#38bdf8' font-size='14' font-family='sans-serif' font-weight='bold'>f(x)</text>\n  <line x1='285' y1='195' x2='325' y2='195' stroke='#fbbf24' stroke-width='2' marker-end='url(#arrow)'/>\n  <text x='335' y='200' fill='#ef4444' font-size='13' font-family='sans-serif' font-weight='bold'>-x-3 / x+1</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulemos. La clave para no equivocarse en la composición es escribir primero la estructura de la función de afuera con huecos o paréntesis, y luego meter la función de dentro en esos huecos.",
+      "content": "<p>Pasos fundamentales para calcular y simplificar funciones compuestas:</p>\n<ol>\n<li><strong>Escribir la estructura exterior:</strong> Copia la función externa dejando un paréntesis amplio donde aparezca cada $x$.</li>\n<li><strong>Incrustar la función interior:</strong> Rellena esos paréntesis con la fórmula completa de la función interior.</li>\n<li><strong>Efectuar multiplicaciones y potencias:</strong> Desarrolla los numeradores o paréntesis aislados.</li>\n<li><strong>Reducir a denominador común:</strong> Si hay sumas o restas con fracciones algebraicas, reduce a un único denominador común.</li>\n<li><strong>Simplificar el numerador:</strong> Agrupa términos semejantes hasta obtener la expresión más compacta posible.</li>\n</ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te toca poner a prueba lo aprendido. Calcula la composición de estas dos funciones simples en ambos órdenes y simplifica.",
+      "content": "<p>Dadas las funciones $p(x) = 3x + 1$ y $q(x) = \\frac{2}{x - 1}$:</p>\n<p>Calcula y simplifica la función compuesta <strong>$(q \\circ p)(x)$</strong>.</p>\n<p><em>Pista: Debes evaluar $q(p(x))$, introduciendo $p(x)$ en el denominador de $q(x)$.</em></p>",
+      "practiceAnswer": "<p><strong>1. Identificamos la estructura:</strong><br>\n$(q \\circ p)(x) = q(p(x)) = q(3x + 1)$</p>\n<p><strong>2. Sustituimos en $q(x)$:</strong><br>\n$q(3x + 1) = \\frac{2}{(3x + 1) - 1}$</p>\n<p><strong>3. Simplificamos el denominador:</strong><br>\n$q(3x + 1) = \\frac{2}{3x + 1 - 1} = \\frac{2}{3x}$</p>\n<p><strong>Resultado final:</strong> $(q \\circ p)(x) = \\frac{2}{3x}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "La composición de funciones está detrás de los descuentos acumulados en la vida real. Cuando combinas un descuento en porcentaje con un cupón fijo, el orden en que los apliques cambia lo que vas a pagar.",
+      "content": "<p>Una tienda de electrónica ofrece dos promociones independientes:</p>\n<ul>\n<li><strong>Promoción A (Descuento del 20%):</strong> Representada por la función $A(x) = 0.80x$, donde $x$ es el precio original.</li>\n<li><strong>Promoción B (Cupón de 10 €):</strong> Representada por la función $B(x) = x - 10$.</li>\n</ul>\n<p>Si la tienda te permite **combinar ambas promociones en un producto de 100 €**:</p>\n<ol>\n<li>Calcula $(B \\circ A)(100)$ (aplicar A y luego B).</li>\n<li>Calcula $(A \\circ B)(100)$ (aplicar B y luego A).</li>\n<li>¿Qué orden te conviene más como cliente y por qué?</li>\n</ol>",
+      "practiceAnswer": "<p><strong>1. $(B \\circ A)(100) = B(A(100))$:</strong><br>\n$A(100) = 0.80 \\cdot 100 = 80$ €.<br>\n$B(80) = 80 - 10 = 70$ €.</p>\n<p><strong>2. $(A \\circ B)(100) = A(B(100))$:</strong><br>\n$B(100) = 100 - 10 = 90$ €.<br>\n$A(90) = 0.80 \\cdot 90 = 72$ €.</p>\n<p><strong>3. Conclusión:</strong><br>\nTe conviene el orden <strong>$(B \\circ A)$</strong> (aplicar primero el 20% de descuento y después restar los 10 €), porque pagas <strong>70 €</strong> en lugar de 72 €. Esto se debe a que en el caso $(A \\circ B)$, el 20% de descuento también se le aplica al cupón de 10 €, reduciendo su impacto real a solo 8 € de descuento.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T11:11:32.525Z",
+    "updatedAt": "2026-08-01T11:11:32.525Z",
+    "contentHash": "1d3a451aa7c28ddc",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
