@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Funciones y Gráficas",
+    "subtopic": "Modelos lineales y aplicaciones",
+    "exerciseType": "Problema aplicado de depreciación",
+    "protocols": [
+      "B",
+      "I"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Modelizar matemáticamente una situación real mediante una función lineal.",
+      "Identificar el valor inicial como la ordenada en el origen y el ritmo de cambio como la pendiente.",
+      "Evaluar la función para un valor dado de la variable independiente.",
+      "Resolver una ecuación de primer grado para encontrar el tiempo asociado a un valor final."
+    ],
+    "prerequisites": [
+      "Concepto de función lineal y afin",
+      "Resolución de ecuaciones de primer grado",
+      "Evaluación de expresiones algebraicas"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:20:35.305Z",
+    "id": "depreciacion-lineal-de-un-equipo-informatico-4159487b"
+  },
+  "title": "Depreciación lineal de un equipo informático",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leamos el enunciado con atención. Se trata de un problema clásico de matemáticas aplicadas a la economía, donde un objeto pierde valor con el tiempo.",
+      "content": "<p><strong>Ejercicio 8: Problema aplicado de depreciación lineal:</strong> Un equipo informático industrial se adquiere por un valor inicial de $12\\,000$. Se estima que, debido al uso y la obsolescencia tecnológica, su valor comercial se deprecia linealmente a un ritmo constante de $1\\,500$ al año.</p><ul><li>a) Escribe la función que expresa el valor del equipo $V(t)$ en función del tiempo transcurrido $t$ en años.</li><li>b) Calcula el valor del equipo transcurridos $5$ años.</li><li>c) ¿En qué año el valor del equipo se reducirá exactamente a $1\\,500$?</li></ul>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Vamos a organizar los datos que nos dan. Tenemos un punto de partida y un ritmo constante al que baja el precio. Eso grita 'función lineal' por todas partes.",
+      "content": "<p>Nuestro objetivo es traducir este escenario del mundo real al lenguaje algebraico y utilizarlo para hacer predicciones.</p><p><strong>Estrategia a seguir:</strong></p><ol><li><strong>Identificar variables y construir el modelo (Apartado a):</strong> Reconoceremos el «valor inicial» como la ordenada en el origen de nuestra función y el «ritmo constante de depreciación» como la pendiente (que será negativa, porque el valor disminuye). Construiremos un modelo lineal del tipo $y = mx + n$.</li><li><strong>Evaluar el modelo (Apartado b):</strong> Una vez que tengamos la función $V(t)$, sustituiremos la variable tiempo $t$ por el valor $5$ para calcular el valor residual del equipo.</li><li><strong>Resolver la ecuación inversa (Apartado c):</strong> En este caso, nos dan el valor final $V(t) = 1500$ y nos piden averiguar el tiempo $t$. Plantearemos la ecuación y despejaremos $t$.</li></ol><p><em>Aplicación real:</em> Este cálculo es fundamental en contabilidad empresarial. Se llama «cuadro de amortización» y permite a las empresas deducir impuestos y saber cuándo es el momento óptimo para renovar su maquinaria.</p>"
+    },
+    {
+      "title": "a) Construcción de la función de depreciación",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Construyamos nuestra herramienta matemática. Empezamos en doce mil, y cada año que pasa restamos mil quinientos. Juntando esto obtenemos nuestra ecuación lineal.",
+      "content": "<p><strong>Objetivo:</strong> Hallar la expresión analítica $V(t)$.</p><p>Analicemos los datos aportados por el enunciado:</p><ul><li><strong>Valor inicial:</strong> En el instante $t = 0$ (momento de la compra), el equipo vale $12\\,000$. Esto corresponde a la ordenada en el origen ($n$).</li><li><strong>Ritmo de cambio:</strong> El equipo <em>se deprecia</em> (pierde valor) a razón de $1\\,500$ cada año. Esto significa que la tasa de variación es constante y negativa. Esta es la pendiente ($m = -1500$).</li></ul><p>Por lo tanto, la función lineal que modela el valor $V$ en función del tiempo $t$ (en años) es:</p><p>$$V(t) = 12\\,000 - 1\\,500t$$</p><p><strong>Condición implícita:</strong> El tiempo no puede ser negativo ($t \\ge 0$) y el valor comercial tampoco suele ser negativo ($V(t) \\ge 0$).</p>",
+      "theory": "<p>Toda función que presenta un crecimiento o decrecimiento a un ritmo constante se puede modelizar con una función afín: $f(x) = mx + n$, donde $m$ es la tasa de variación (pendiente) y $n$ es el valor inicial.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='50' y1='50' x2='350' y2='50'/><line x1='50' y1='100' x2='350' y2='100'/><line x1='50' y1='150' x2='350' y2='150'/><line x1='50' y1='200' x2='350' y2='200'/><line x1='50' y1='250' x2='350' y2='250'/><line x1='50' y1='300' x2='350' y2='300'/><line x1='50' y1='350' x2='350' y2='350'/><line x1='50' y1='50' x2='50' y2='350'/><line x1='80' y1='50' x2='80' y2='350'/><line x1='110' y1='50' x2='110' y2='350'/><line x1='140' y1='50' x2='140' y2='350'/><line x1='170' y1='50' x2='170' y2='350'/><line x1='200' y1='50' x2='200' y2='350'/><line x1='230' y1='50' x2='230' y2='350'/><line x1='260' y1='50' x2='260' y2='350'/><line x1='290' y1='50' x2='290' y2='350'/><line x1='320' y1='50' x2='320' y2='350'/><line x1='350' y1='50' x2='350' y2='350'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='50' y1='350' x2='370' y2='350'/><line x1='50' y1='30' x2='50' y2='350'/><path d='M360 345 L370 350 L360 355' fill='none'/><path d='M45 40 L50 30 L55 40' fill='none'/></g><text x='360' y='380' fill='#fbbf24' font-family='sans-serif' font-size='14'>t (años)</text><text x='10' y='25' fill='#fbbf24' font-family='sans-serif' font-size='14'>V(t)</text><text x='15' y='55' fill='#94a3b8' font-family='sans-serif' font-size='12'>12k</text><text x='20' y='205' fill='#94a3b8' font-family='sans-serif' font-size='12'>6k</text><text x='35' y='370' fill='#94a3b8' font-family='sans-serif' font-size='12'>0</text><line x1='50' y1='50' x2='290' y2='350' stroke='#38bdf8' stroke-width='3'/><circle cx='50' cy='50' r='5' fill='#f43f5e'/><text x='60' y='45' fill='#f43f5e' font-family='sans-serif' font-size='14'>(0, 12000)</text></svg>"
+    },
+    {
+      "title": "b) Cálculo del valor a los 5 años",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Ya tenemos nuestra fórmula. Para saber el valor del equipo al cabo de 5 años, simplemente cambiamos la letra te por el número cinco y hacemos las cuentas respetando la jerarquía de operaciones.",
+      "content": "<p><strong>Objetivo:</strong> Evaluar la función obtenida en el instante $t = 5$.</p><p>Tomamos nuestro modelo matemático:</p><p>$$V(t) = 12\\,000 - 1\\,500t$$</p><p>Sustituimos la variable $t$ por $5$:</p><p>$$V(5) = 12\\,000 - 1\\,500 \\cdot (5)$$</p><p>Realizamos primero la multiplicación (esto representa el dinero total que el equipo ha perdido en esos 5 años):</p><p>$$1\\,500 \\cdot 5 = 7\\,500$$</p><p>Ahora se lo restamos al valor original:</p><p>$$V(5) = 12\\,000 - 7\\,500 = 4\\,500$$</p><p><strong>Interpretación:</strong> Transcurridos $5$ años, el valor comercial del equipo informático será de $4\\,500$.</p>",
+      "warning": "Cuidado con la interpretación de los números intermedios. El valor $7\\,500$ es la <em>depreciación acumulada</em> (lo que ha perdido de valor), no el <em>valor actual</em> del equipo.",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='50' y1='50' x2='350' y2='50'/><line x1='50' y1='100' x2='350' y2='100'/><line x1='50' y1='150' x2='350' y2='150'/><line x1='50' y1='200' x2='350' y2='200'/><line x1='50' y1='250' x2='350' y2='250'/><line x1='50' y1='300' x2='350' y2='300'/><line x1='50' y1='350' x2='350' y2='350'/><line x1='50' y1='50' x2='50' y2='350'/><line x1='80' y1='50' x2='80' y2='350'/><line x1='110' y1='50' x2='110' y2='350'/><line x1='140' y1='50' x2='140' y2='350'/><line x1='170' y1='50' x2='170' y2='350'/><line x1='200' y1='50' x2='200' y2='350'/><line x1='230' y1='50' x2='230' y2='350'/><line x1='260' y1='50' x2='260' y2='350'/><line x1='290' y1='50' x2='290' y2='350'/><line x1='320' y1='50' x2='320' y2='350'/><line x1='350' y1='50' x2='350' y2='350'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='50' y1='350' x2='370' y2='350'/><line x1='50' y1='30' x2='50' y2='350'/></g><line x1='50' y1='50' x2='290' y2='350' stroke='#38bdf8' stroke-width='3'/><circle cx='50' cy='50' r='5' fill='#f43f5e'/><line x1='200' y1='350' x2='200' y2='237.5' stroke='#10b981' stroke-width='2' stroke-dasharray='5,5'/><line x1='50' y1='237.5' x2='200' y2='237.5' stroke='#10b981' stroke-width='2' stroke-dasharray='5,5'/><circle cx='200' cy='237.5' r='5' fill='#10b981'/><text x='195' y='370' fill='#10b981' font-family='sans-serif' font-size='14'>5</text><text x='5' y='242' fill='#10b981' font-family='sans-serif' font-size='12'>4500</text><text x='210' y='230' fill='#10b981' font-family='sans-serif' font-size='14'>(5, 4500)</text></svg>"
+    },
+    {
+      "title": "c) Año en que el valor será 1500",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Esta vez la pregunta es al revés. No nos dan el tiempo para calcular el precio, sino que nos dan el precio y debemos averiguar el tiempo. Así que sustituimos V de t por 1500 y resolvemos la ecuación resultante.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar el valor de $t$ para el cual la función vale $1\\,500$.</p><p>Imponemos la condición en nuestro modelo:</p><p>$$V(t) = 1\\,500$$</p><p>Sustituyendo $V(t)$ por nuestra expresión:</p><p>$$12\\,000 - 1\\,500t = 1\\,500$$</p><p>Ahora, resolvemos la ecuación lineal para despejar $t$. Agrupamos los términos independientes a un lado y el término con $t$ al otro:</p><p>$$12\\,000 - 1\\,500 = 1\\,500t$$</p><p>$$10\\,500 = 1\\,500t$$</p><p>Despejamos $t$ dividiendo:</p><p>$$t = \\frac{10\\,500}{1\\,500} = \\frac{105}{15} = 7$$</p><p><strong>Interpretación:</strong> El equipo informático verá reducido su valor exactamente a $1\\,500$ durante su séptimo año de vida.</p>",
+      "checkpoint": {
+        "question": "¿En qué año el valor del equipo sería exactamente cero?",
+        "options": [
+          {
+            "text": "En el año 10.",
+            "correct": false,
+            "feedback": "Para que fuese en el año 10, la depreciación anual debería ser de 1200 (porque 12000 / 10 = 1200)."
+          },
+          {
+            "text": "En el año 8.",
+            "correct": true,
+            "feedback": "Correcto. Si igualamos 12000 - 1500t = 0, nos queda 1500t = 12000, lo que nos da t = 12000 / 1500 = 8 años."
+          },
+          {
+            "text": "Nunca llegará a valer cero matemáticamente.",
+            "correct": false,
+            "feedback": "Incorrecto. En un modelo de depreciación lineal, el valor cruza el eje horizontal (vale cero) en un tiempo finito."
+          }
+        ]
+      },
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='50' y1='50' x2='350' y2='50'/><line x1='50' y1='100' x2='350' y2='100'/><line x1='50' y1='150' x2='350' y2='150'/><line x1='50' y1='200' x2='350' y2='200'/><line x1='50' y1='250' x2='350' y2='250'/><line x1='50' y1='300' x2='350' y2='300'/><line x1='50' y1='350' x2='350' y2='350'/><line x1='50' y1='50' x2='50' y2='350'/><line x1='80' y1='50' x2='80' y2='350'/><line x1='110' y1='50' x2='110' y2='350'/><line x1='140' y1='50' x2='140' y2='350'/><line x1='170' y1='50' x2='170' y2='350'/><line x1='200' y1='50' x2='200' y2='350'/><line x1='230' y1='50' x2='230' y2='350'/><line x1='260' y1='50' x2='260' y2='350'/><line x1='290' y1='50' x2='290' y2='350'/><line x1='320' y1='50' x2='320' y2='350'/><line x1='350' y1='50' x2='350' y2='350'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='50' y1='350' x2='370' y2='350'/><line x1='50' y1='30' x2='50' y2='350'/></g><line x1='50' y1='50' x2='290' y2='350' stroke='#38bdf8' stroke-width='3'/><circle cx='50' cy='50' r='5' fill='#f43f5e'/><circle cx='200' cy='237.5' r='5' fill='#10b981'/><line x1='260' y1='350' x2='260' y2='312.5' stroke='#a78bfa' stroke-width='2' stroke-dasharray='5,5'/><line x1='50' y1='312.5' x2='260' y2='312.5' stroke='#a78bfa' stroke-width='2' stroke-dasharray='5,5'/><circle cx='260' cy='312.5' r='5' fill='#a78bfa'/><text x='255' y='370' fill='#a78bfa' font-family='sans-serif' font-size='14'>7</text><text x='5' y='317' fill='#a78bfa' font-family='sans-serif' font-size='12'>1500</text><text x='270' y='305' fill='#a78bfa' font-family='sans-serif' font-size='14'>(7, 1500)</text></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulando nuestro trabajo: primero creamos la función, luego la aplicamos hacia adelante para calcular un valor, y finalmente la aplicamos hacia atrás resolviendo la ecuación para calcular un tiempo.",
+      "content": "<p>Esta es la secuencia lógica para resolver problemas de modelización lineal:</p><ol><li><strong>Identificar parámetros:</strong> Extraer del texto el <em>valor inicial</em> ($n = 12\\,000$) y el <em>ritmo de cambio</em> ($m = -1\\,500$).</li><li><strong>Establecer la función:</strong> Construir el modelo $V(t) = m \\cdot t + n \\implies V(t) = -1\\,500t + 12\\,000$.</li><li><strong>Cálculo directo (Dado $t$, hallar $V$):</strong> Sustituir el tiempo en la función y operar para encontrar el valor residual a los 5 años ($4\\,500$).</li><li><strong>Cálculo inverso (Dado $V$, hallar $t$):</strong> Igualar la función al valor deseado y resolver la ecuación resultante despejando la incógnita temporal ($t=7$).</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es el momento de que pongas a prueba lo que has aprendido. Tienes un problema de estructura idéntica, pero con los datos de un automóvil.",
+      "content": "<p>Una furgoneta de reparto se compra por $24\\,000$ euros. Se sabe que su depreciación anual constante es de $2\\,500$ euros.</p><ul><li>a) Define la función que describe su valor $V(t)$ en función de los años $t$.</li><li>b) ¿Cuál será su valor cuando tenga $6$ años de antigüedad?</li><li>c) ¿Cuántos años deben pasar para que su valor contable sea exactamente de $4\\,000$ euros?</li></ul><p><em>Resuelve en tu cuaderno antes de comparar con la respuesta.</em></p>",
+      "practiceAnswer": "<p><strong>a)</strong> $V(t) = 24\\,000 - 2\\,500t$</p><p><strong>b)</strong> Sustituyendo $t=6$: $V(6) = 24\\,000 - 2\\,500(6) = 24\\,000 - 15\\,000 = 9\\,000$ euros.</p><p><strong>c)</strong> Igualando a $4\\,000$: $24\\,000 - 2\\,500t = 4\\,000 \\implies 20\\,000 = 2\\,500t \\implies t = 8$ años.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Piensa cómo este mismo modelo, cambiando el signo del ritmo, nos sirve para calcular ahorros en lugar de pérdidas.",
+      "content": "<p>El modelo lineal no sirve únicamente para la pérdida de valor; también describe procesos de <strong>crecimiento constante</strong>.</p><p>Decides abrir una cuenta de ahorro. Inicialmente depositas $500$ euros. Te propones transferir $150$ euros cada mes de forma constante, sin añadir intereses.</p><ol><li>Escribe la función $D(m)$ que representa el dinero total acumulado tras $m$ meses.</li><li>¿Cuántos meses necesitarás ahorrar para poder pagar un viaje que cuesta $2\\,300$ euros?</li></ol>",
+      "practiceAnswer": "<p><strong>1. Función de ahorro:</strong> El valor inicial es $n = 500$ y el ritmo de crecimiento es positivo $m = +150$. La función es $D(m) = 500 + 150m$.</p><p><strong>2. Tiempo para llegar a $2\\,300$:</strong> Igualamos $D(m) = 2\\,300$.</p><p>$500 + 150m = 2\\,300 \\implies 150m = 1\\,800 \\implies m = \\frac{1\\,800}{150} = 12$ meses.</p><p>Se necesitará exactamente un año ($12$ meses).</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:20:47.915Z",
+    "updatedAt": "2026-08-01T17:20:47.915Z",
+    "contentHash": "f26e1d8f2e013ea1",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Funciones y gráficas",
+    "subtopic": "Función logarítmica y exponencial",
+    "exerciseType": "Cálculo de valores logarítmicos usando la definición como inversa de la exponencial",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Aplicar la definición del logaritmo como función inversa de la exponencial para calcular imágenes",
+      "Evaluar la función f(x) = log_2(x) para argumentos enteros y fraccionarios"
+    ],
+    "prerequisites": [
+      "Concepto de función inversa",
+      "Propiedades y cálculo de potencias de base 2 con exponentes enteros y negativos"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:14:14.212Z",
+    "id": "calculo-de-valores-de-la-funcion-logaritmica-f-x-log-4370292e"
+  },
+  "title": "Cálculo de valores de la función logarítmica f(x) = log₂x",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Nos piden calcular de forma directa y razonada varios valores de la función logarítmica efe de equis igual al logaritmo en base dos de equis, sabiendo que la función logarítmica es la inversa de la función exponencial. Los apartados son efe de uno, efe de dos, efe de ocho y efe de un medio.",
+      "content": "<p><strong>Ejercicio 8:</strong> Sabiendo que la función logarítmica es la inversa de la exponencial, calcula de forma directa y razonada los siguientes valores correspondientes a la función $f(x) = \\log_2(x)$:</p><ul><li><strong>a)</strong> $f(1)$</li><li><strong>b)</strong> $f(2)$</li><li><strong>c)</strong> $f(8)$</li><li><strong>d)</strong> $f\\left(\\frac{1}{2}\\right)$</li></ul>",
+      "hints": [
+        "Recuerda la definición: $y = \\log_b(x)$ equivale a buscar el exponente $y$ al que hay que elevar la base $b$ para obtener $x$, es decir, $b^y = x$."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver este problema, utilizaremos la relación fundamental entre exponenciales y logaritmos. Para evaluar efe de equis en un valor dado, expresaremos la igualdad efe de equis igual a efe de a como logaritmo en base dos de a igual a y, lo que equivale a la ecuación exponencial dos elevado a y igual a a. Expresaremos el número a como potencia de base dos y compararemos los exponentes.",
+      "content": "<p><strong>Objetivo:</strong> Evaluar la función $f(x) = \\log_2(x)$ en los puntos $x = 1$, $x = 2$, $x = 8$ y $x = \\frac{1}{2}$ aplicando la definición de logaritmo como función inversa de la exponencial.</p><p><strong>Estrategia pedagógica:</strong></p><ol><li>Utilizar la equivalencia fundamental entre la función logarítmica y la exponencial: $$y = \\log_2(x) \\iff 2^y = x$$</li><li>Para cada apartado, igualar el argumento $x$ a una potencia de base $2$: $x = 2^y$.</li><li>Igualar exponentes para obtener directamente el valor numérico de $y = f(x)$.</li><li>Comprobar los resultados sobre la representación gráfica de la curva $y = \\log_2(x)$.</li></ol><p><strong>Aplicación en el mundo real:</strong></p><p>Los logaritmos en base $2$ son fundamentales en ciencias de la computación y teoría de la información. Determinan el número de bits necesarios para codificar una cantidad fija de estados (por ejemplo, para representar $8$ estados se necesitan $\\log_2(8) = 3$ bits) y en la estimación del tiempo de ejecución de algoritmos de búsqueda binaria.</p>"
+    },
+    {
+      "title": "Fundamento analítico: Logaritmo como función inversa",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Revisamos formalmente la definición de logaritmo. La función logaritmo en base dos y la función exponencial en base dos son funciones inversas una de la otra. Esto significa que calcular efe de equis igual a logaritmo en base dos de equis equivale a encontrar el exponente y tal que dos elevado a y sea igual a equis.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Estructurar la equivalencia formal entre la exponencial y el logaritmo para sustentar las deducciones posteriores.</p><p><strong>Conexión con el plan:</strong> Establecemos la regla algebraica que transformará los logaritmos en ecuaciones exponenciales simples.</p><p><strong>Desarrollo y justificación:</strong></p><p>Por definición, la función logarítmica en base $2$, $f(x) = \\log_2(x)$, es la función inversa de la función exponencial $g(y) = 2^y$. Esto implica que:</p>$$y = \\log_2(x) \\iff 2^y = x$$<p>Propiedades clave para recordar:</p><ul><li><strong>Dominio:</strong> $\\text{Dom}(f) = (0, +\\infty)$. Solo se pueden calcular logaritmos de números estrictamente positivos ($x > 0$).</li><li><strong>Recorrido:</strong> $\\text{Im}(f) = \\mathbb{R}$. Los valores logarítmicos pueden ser positivos, cero o negativos.</li><li><strong>Cero de la función:</strong> $2^0 = 1 \\implies \\log_2(1) = 0$.</li><li><strong>Base:</strong> $2^1 = 2 \\implies \\log_2(2) = 1$.</li></ul><p><strong>Interpretación parcial:</strong> Preguntarse «¿cuánto vale $\\log_2(x)$?» equivale a preguntarse «¿a qué exponente debo elevar el $2$ para obtener $x$?».</p>",
+      "theory": "<p>Definición de logaritmo: $\\log_b(a) = c \\iff b^c = a$, con $b > 0, b \\neq 1$ y $a > 0$.</p>",
+      "hints": [
+        "Recuerda que si expresas el argumento como potencia de la base, $x = 2^k$, entonces $\\log_2(2^k) = k$."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='20' y1='50' x2='380' y2='50'/><line x1='20' y1='100' x2='380' y2='100'/><line x1='20' y1='150' x2='380' y2='150'/><line x1='20' y1='200' x2='380' y2='200'/><line x1='20' y1='250' x2='380' y2='250'/><line x1='50' y1='20' x2='50' y2='280'/><line x1='100' y1='20' x2='100' y2='280'/><line x1='150' y1='20' x2='150' y2='280'/><line x1='200' y1='20' x2='200' y2='280'/><line x1='250' y1='20' x2='250' y2='280'/><line x1='300' y1='20' x2='300' y2='280'/><line x1='350' y1='20' x2='350' y2='280'/></g><line x1='20' y1='200' x2='380' y2='200' stroke='#fbbf24' stroke-width='2.5'/><line x1='100' y1='20' x2='100' y2='280' stroke='#fbbf24' stroke-width='2.5'/><line x1='20' y1='280' x2='320' y2='20' stroke='#94a3b8' stroke-width='1.5' stroke-dasharray='4'/><text x='370' y='190' fill='#fbbf24' font-size='14' font-weight='bold'>X</text><text x='110' y='35' fill='#fbbf24' font-size='14' font-weight='bold'>Y</text><text x='290' y='45' fill='#94a3b8' font-size='12'>y = x</text><path d='M 105 270 Q 120 170 200 100 T 350 20' fill='none' stroke='#38bdf8' stroke-width='2.5'/><text x='240' y='80' fill='#38bdf8' font-size='13' font-weight='bold'>y = 2^x</text><path d='M 105 270 Q 170 200 240 160 T 380 120' fill='none' stroke='#f43f5e' stroke-width='2.5'/><text x='270' y='145' fill='#f43f5e' font-size='13' font-weight='bold'>y = log₂x</text></svg>"
+    },
+    {
+      "title": "Resolución apartados a) y b)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Resolvemos los dos primeros apartados. Para el apartado a, calculamos efe de uno, que es logaritmo en base dos de uno. Planteamos dos elevado a y igual a uno. Como uno es dos a la cero, y vale cero. Para el apartado b, calculamos efe de dos, que es logaritmo en base dos de dos. Planteamos dos elevado a y igual a dos. Como dos es dos a la uno, y vale uno.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Resolver analíticamente los apartados a) $f(1)$ y b) $f(2)$ usando potencias enteras no negativas.</p><p><strong>Conexión con el paso anterior:</strong> Aplicamos la equivalencia $y = \\log_2(x) \\iff 2^y = x$ a los valores $x = 1$ y $x = 2$.</p><p><strong>Desarrollo y justificación:</strong></p><p><strong>Apartado a) Calcular $f(1) = \\log_2(1)$:</strong></p><p>Llamamos $y = \\log_2(1)$. Por definición de logaritmo:</p>$$2^y = 1$$<p>Como cualquier número real no nulo elevado a $0$ es igual a $1$ ($2^0 = 1$):</p>$$2^y = 2^0 \\implies \\mathbf{y = f(1) = 0}$$<p>Punto en la gráfica: $(1, 0)$.</p><hr><p><strong>Apartado b) Calcular $f(2) = \\log_2(2)$:</strong></p><p>Llamamos $y = \\log_2(2)$. Por definición de logaritmo:</p>$$2^y = 2$$<p>Expresando $2$ como potencia de exponente $1$ ($2 = 2^1$):</p>$$2^y = 2^1 \\implies \\mathbf{y = f(2) = 1}$$<p>Punto en la gráfica: $(2, 1)$.</p><p><strong>Interpretación parcial:</strong> El logaritmo de $1$ en cualquier base es siempre $0$ porque $b^0 = 1$. El logaritmo de la base en sí misma siempre vale $1$ porque $b^1 = b$.</p>",
+      "warning": "<p>¡Evita memorizar valores aislados! Razona siempre buscando la potencia de la base: $2^0 = 1 \\implies \\log_2(1) = 0$.</p>",
+      "hints": [
+        "Escribe siempre el argumento como potencia de 2."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='20' y1='50' x2='380' y2='50'/><line x1='20' y1='100' x2='380' y2='100'/><line x1='20' y1='150' x2='380' y2='150'/><line x1='20' y1='200' x2='380' y2='200'/><line x1='20' y1='250' x2='380' y2='250'/><line x1='40' y1='20' x2='40' y2='280'/><line x1='90' y1='20' x2='90' y2='280'/><line x1='140' y1='20' x2='140' y2='280'/><line x1='190' y1='20' x2='190' y2='280'/><line x1='240' y1='20' x2='240' y2='280'/><line x1='290' y1='20' x2='290' y2='280'/><line x1='340' y1='20' x2='340' y2='280'/></g><line x1='20' y1='200' x2='380' y2='200' stroke='#fbbf24' stroke-width='2.5'/><line x1='90' y1='20' x2='90' y2='280' stroke='#fbbf24' stroke-width='2.5'/><path d='M 100 280 Q 130 205 140 200 T 190 150 T 290 100 T 380 70' fill='none' stroke='#f43f5e' stroke-width='3'/><circle cx='140' cy='200' r='5' fill='#38bdf8'/><text x='148' y='218' fill='#38bdf8' font-size='13' font-weight='bold'>(1, 0)</text><circle cx='190' cy='150' r='5' fill='#34d399'/><text x='198' y='142' fill='#34d399' font-size='13' font-weight='bold'>(2, 1)</text></svg>"
+    },
+    {
+      "title": "Resolución apartados c) y d)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Resolvemos los apartados c y d. Para el apartado c, calculamos efe de ocho, que es logaritmo en base dos de ocho. Como ocho es dos al cubo, dos elevado a y igual a dos al cubo implica y igual a tres. Para el apartado d, calculamos efe de un medio. Como un medio es dos a la menos uno, dos elevado a y igual a dos a la menos uno implica y igual a menos uno.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Resolver analíticamente los apartados c) $f(8)$ y d) $f\\left(\\frac{1}{2}\\right)$ analizando exponentes mayores que 1 y exponentes negativos.</p><p><strong>Conexión con el paso anterior:</strong> Continuamos con la estrategia de descomponer los argumentos en potencias de $2$.</p><p><strong>Desarrollo y justificación:</strong></p><p><strong>Apartado c) Calcular $f(8) = \\log_2(8)$:</strong></p><p>Llamamos $y = \\log_2(8)$. Por definición de logaritmo:</p>$$2^y = 8$$<p>Descomponemos $8$ en factores primos: $8 = 2^3$. Sustituimos en la ecuación:</p>$$2^y = 2^3 \\implies \\mathbf{y = f(8) = 3}$$<p>Punto en la gráfica: $(8, 3)$.</p><hr><p><strong>Apartado d) Calcular $f\\left(\\frac{1}{2}\\right) = \\log_2\\left(\\frac{1}{2}\\right)$:</strong></p><p>Llamamos $y = \\log_2\\left(\\frac{1}{2}\\right)$. Por definición de logaritmo:</p>$$2^y = \\frac{1}{2}$$<p>Aplicamos la propiedad de las potencias de exponente negativo: $\\frac{1}{a^n} = a^{-n}$, por lo que $\\frac{1}{2} = 2^{-1}$:</p>$$2^y = 2^{-1} \\implies \\mathbf{y = f\\left(\\frac{1}{2}\\right) = -1}$$<p>Punto en la gráfica: $\\left(\\frac{1}{2}, -1\\right)$.</p><p><strong>Interpretación parcial:</strong> Para valores comprendidos entre $0$ y $1$ (como $x = \\frac{1}{2}$), los logaritmos son negativos. Para valores mayores que $1$ (como $x = 8$), los logaritmos son positivos.</p>",
+      "theory": "<p>Propiedades de potencias de exponente negativo: $\\frac{1}{b^k} = b^{-k}$. Por tanto, $\\log_b\\left(\\frac{1}{b^k}\\right) = -k$.</p>",
+      "hints": [
+        "Recuerda que las fracciones con numerador 1 equivalen a potencias de exponente negativo."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='20' y1='50' x2='380' y2='50'/><line x1='20' y1='100' x2='380' y2='100'/><line x1='20' y1='150' x2='380' y2='150'/><line x1='20' y1='200' x2='380' y2='200'/><line x1='20' y1='250' x2='380' y2='250'/><line x1='40' y1='20' x2='40' y2='280'/><line x1='90' y1='20' x2='90' y2='280'/><line x1='140' y1='20' x2='140' y2='280'/><line x1='190' y1='20' x2='190' y2='280'/><line x1='240' y1='20' x2='240' y2='280'/><line x1='290' y1='20' x2='290' y2='280'/><line x1='340' y1='20' x2='340' y2='280'/></g><line x1='20' y1='200' x2='380' y2='200' stroke='#fbbf24' stroke-width='2.5'/><line x1='90' y1='20' x2='90' y2='280' stroke='#fbbf24' stroke-width='2.5'/><path d='M 100 280 Q 115 250 140 200 T 190 150 T 290 100 T 340 50' fill='none' stroke='#f43f5e' stroke-width='3'/><circle cx='115' cy='250' r='5' fill='#a855f7'/><text x='55' y='265' fill='#a855f7' font-size='12' font-weight='bold'>(1/2, -1)</text><circle cx='340' cy='50' r='5' fill='#fbbf24'/><text x='310' y='40' fill='#fbbf24' font-size='12' font-weight='bold'>(8, 3)</text></svg>"
+    },
+    {
+      "title": "Comprobación global de los resultados",
+      "layout": "split",
+      "phase": "comprobar",
+      "narration": "Comprobamos todos los resultados calculados. Colocamos los cuatro puntos obtenidos sobre la curva del logaritmo en base dos. Comprobamos que un medio menos uno, uno cero, dos uno y ocho tres están perfectamente alineados sobre la función continua y creciente.",
+      "content": "<p><strong>Objetivo y finalidad:</strong> Verificar la coherencia de todas las imágenes calculadas mediante una tabla resumen y la curva cartesiana completa.</p><p><strong>Conexión con el paso anterior:</strong> Consolidamos los resultados de los cuatro apartados a, b, c y d.</p><p><strong>Tabla de verificación:</strong></p><table><thead><tr><th>$x$</th><th>Cálculo $2^y = x$</th><th>$f(x) = \\log_2(x)$</th><th>Punto $(x, y)$</th></tr></thead><tbody><tr><td>$\\frac{1}{2}$</td><td>$2^{-1} = \\frac{1}{2}$</td><td>$-1$</td><td>$\\left(\\frac{1}{2}, -1\\right)$</td></tr><tr><td>$1$</td><td>$2^0 = 1$</td><td>$0$</td><td>$(1, 0)$</td></tr><tr><td>$2$</td><td>$2^1 = 2$</td><td>$1$</td><td>$(2, 1)$</td></tr><tr><td>$8$</td><td>$2^3 = 8$</td><td>$3$</td><td>$(8, 3)$</td></tr></tbody></table><p><strong>Interpretación del resultado:</strong> Todos los puntos pertenecen a la función continua y strictly creciente $f(x) = \\log_2(x)$. La función crece rápidamente al principio y luego frena su ritmo de crecimiento, reflejando el comportamiento logarítmico característico.</p>",
+      "checkpoint": {
+        "question": "¿Cuál es el valor de $f(16)$ para la misma función $f(x) = \\log_2(x)$?",
+        "options": [
+          {
+            "text": "$f(16) = 4$, porque $2^4 = 16$.",
+            "correct": true,
+            "feedback": "¡Correcto! Puesto que $16 = 2^4$, aplicando la definición de logaritmo obtenemos $\\log_2(16) = 4$."
+          },
+          {
+            "text": "$f(16) = 8$, porque se divide $16$ entre $2$.",
+            "correct": false,
+            "feedback": "Incorrecto. El logaritmo no es una división por la base, sino el exponente al que hay que elevar la base: $2^4 = 16$, no $2^8$."
+          },
+          {
+            "text": "$f(16) = 32$, porque se multiplica $16$ por $2$.",
+            "correct": false,
+            "feedback": "Incorrecto. Estás confundiendo el logaritmo con una multiplicación. Recuerda que se busca el exponente $y$ tal que $2^y = 16$."
+          }
+        ]
+      },
+      "hints": [
+        "Recuerda que los logaritmos crecen despacio para valores grandes de x."
+      ],
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='20' y1='50' x2='380' y2='50'/><line x1='20' y1='100' x2='380' y2='100'/><line x1='20' y1='150' x2='380' y2='150'/><line x1='20' y1='200' x2='380' y2='200'/><line x1='20' y1='250' x2='380' y2='250'/><line x1='40' y1='20' x2='40' y2='280'/><line x1='90' y1='20' x2='90' y2='280'/><line x1='140' y1='20' x2='140' y2='280'/><line x1='190' y1='20' x2='190' y2='280'/><line x1='240' y1='20' x2='240' y2='280'/><line x1='290' y1='20' x2='290' y2='280'/><line x1='340' y1='20' x2='340' y2='280'/></g><line x1='20' y1='200' x2='380' y2='200' stroke='#fbbf24' stroke-width='2.5'/><line x1='90' y1='20' x2='90' y2='280' stroke='#fbbf24' stroke-width='2.5'/><path d='M 100 280 Q 115 250 140 200 T 190 150 T 290 100 T 340 50' fill='none' stroke='#f43f5e' stroke-width='3'/><circle cx='115' cy='250' r='4' fill='#a855f7'/><circle cx='140' cy='200' r='4' fill='#38bdf8'/><circle cx='190' cy='150' r='4' fill='#34d399'/><circle cx='340' cy='50' r='4' fill='#fbbf24'/><text x='105' y='270' fill='#a855f7' font-size='10'>(-1)</text><text x='140' y='218' fill='#38bdf8' font-size='10'>(0)</text><text x='190' y='140' fill='#34d399' font-size='10'>(1)</text><text x='340' y='40' fill='#fbbf24' font-size='10'>(3)</text></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "En resumen, para calcular cualquier valor de la función logaritmo en base dos, expresamos el argumento como una potencia de base dos y determinamos el exponente resultante. Así obtenemos cero para uno, uno para dos, tres para ocho y menos uno para un medio.",
+      "content": "<ol><li><strong>Definición fundamental:</strong> Aplicar la equivalencia $y = \\log_2(x) \\iff 2^y = x$.</li><li><strong>Cálculos individuales:</strong><ul><li><strong>a) $f(1) = \\log_2(1)$:</strong> Como $2^0 = 1 \\implies \\mathbf{f(1) = 0}$.</li><li><strong>b) $f(2) = \\log_2(2)$:</strong> Como $2^1 = 2 \\implies \\mathbf{f(2) = 1}$.</li><li><strong>c) $f(8) = \\log_2(8)$:</strong> Como $8 = 2^3 \\implies 2^3 = 8 \\implies \\mathbf{f(8) = 3}$.</li><li><strong>d) $f\\left(\\frac{1}{2}\\right) = \\log_2\\left(\\frac{1}{2}\\right)$:</strong> Como $\\frac{1}{2} = 2^{-1} \\implies 2^{-1} = \\frac{1}{2} \\implies \\mathbf{f\\left(\\frac{1}{2}\\right) = -1}$.</li></ul></li><li><strong>Propiedades verificadas:</strong> $\\log_b(1) = 0$, $\\log_b(b) = 1$, los valores entre $0$ y $1$ tienen logaritmo negativo y los mayores que $1$ logaritmo positivo.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica este mismo procedimiento para evaluar los valores correspondientes a la función logaritmo en base tres de equis.",
+      "content": "<p>Sabiendo que la función logarítmica es la inversa de la exponencial, calcula de forma directa y razonada los siguientes valores correspondientes a la función $f(x) = \\log_3(x)$:</p><ul><li><strong>a)</strong> $f(1)$</li><li><strong>b)</strong> $f(3)$</li><li><strong>c)</strong> $f(9)$</li><li><strong>d)</strong> $f\\left(\\frac{1}{3}\\right)$</li></ul><p><em>Intenta resolver el ejercicio por tu cuenta antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>a)</strong> $f(1) = \\log_3(1) = \\mathbf{0}$ (porque $3^0 = 1$).<br><strong>b)</strong> $f(3) = \\log_3(3) = \\mathbf{1}$ (porque $3^1 = 3$).<br><strong>c)</strong> $f(9) = \\log_3(9) = \\mathbf{2}$ (porque $9 = 3^2$).<br><strong>d)</strong> $f\\left(\\frac{1}{3}\\right) = \\log_3\\left(\\frac{1}{3}\\right) = \\mathbf{-1}$ (porque $\\frac{1}{3} = 3^{-1}$).</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica el concepto de logaritmo como inversa de la exponencial a la informática: el número de bits necesarios para direccionar una cantidad determinada de posiciones de memoria.",
+      "content": "<p>En sistemas informáticos digitales, el número de bits $n$ necesarios para direccionar una cantidad $M$ de posiciones distintas de memoria viene dado por la función logarítmica en base $2$: $n(M) = \\log_2(M)$.</p><ul><li><strong>a)</strong> ¿Cuántos bits $n$ se necesitan para direccionar $M = 16$ posiciones de memoria?</li><li><strong>b)</strong> ¿Cuántos bits $n$ se necesitan para direccionar $M = 1024$ posiciones de memoria (sabiendo que $1024 = 2^{10}$)?</li><li><strong>c)</strong> ¿Qué significado práctico tiene que $n(1) = 0$?</li></ul><p><em>Intenta resolver el ejercicio por tu cuenta antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>a)</strong> $n(16) = \\log_2(16) = \\mathbf{4\\text{ bits}}$ (porque $2^4 = 16$).<br><strong>b)</strong> $n(1024) = \\log_2(1024) = \\mathbf{10\\text{ bits}}$ (porque $2^{10} = 1024$).<br><strong>c)</strong> $n(1) = 0$ significa que para direccionar una única posición de memoria ($M = 1$) no se requiere ningún bit de selección ($2^0 = 1$).</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:14:30.489Z",
+    "updatedAt": "2026-08-01T17:14:30.489Z",
+    "contentHash": "0bfc65d763a8af9d",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

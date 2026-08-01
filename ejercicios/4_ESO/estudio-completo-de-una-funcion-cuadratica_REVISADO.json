@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "4_ESO",
+    "topic": "Análisis matemático",
+    "subtopic": "Funciones polinómicas",
+    "exerciseType": "Estudio y representación de función cuadrática",
+    "protocols": [
+      "B"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Determinar analíticamente los elementos notables de una parábola.",
+      "Vincular el análisis algebraico con la representación gráfica.",
+      "Deducir el recorrido a partir del vértice y el signo del coeficiente principal."
+    ],
+    "prerequisites": [
+      "Resolución de ecuaciones de segundo grado",
+      "Concepto de dominio e imagen de una función",
+      "Representación de puntos en el plano cartesiano"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T17:16:13.652Z",
+    "id": "estudio-completo-de-una-funcion-cuadratica-7833ba0d"
+  },
+  "title": "Estudio completo de una función cuadrática",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a analizar y dibujar paso a paso la función cuadrática que nos proponen.",
+      "content": "<p><strong>Ejercicio 2:</strong> Estudia y representa gráficamente la función cuadrática $f(x) = -x^2 + 4x + 5$, calculando de forma analítica su vértice, su eje de simetría, los puntos de intersección con ambos ejes y determinando formalmente su dominio y recorrido (imagen).</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Dado que es una función cuadrática, su gráfica será una parábola. Vamos a identificar sus elementos clave en orden antes de dibujarla.",
+      "content": "<p>Al observar la expresión $f(x) = -x^2 + 4x + 5$, reconocemos un polinomio de segundo grado, por lo que su representación gráfica es una <strong>parábola</strong>.</p><p>Nuestra estrategia será la siguiente:</p><ol><li><strong>Dominio:</strong> Al ser polinómica, podemos anticiparlo inmediatamente.</li><li><strong>Vértice y Eje de simetría:</strong> Encontraremos el punto máximo o mínimo usando los coeficientes de la función.</li><li><strong>Puntos de corte:</strong> Evaluaremos las intersecciones con el eje $X$ (resolviendo $f(x)=0$) y con el eje $Y$ (evaluando $f(0)$).</li><li><strong>Representación y Recorrido:</strong> Con los puntos anteriores trazaremos la curva, lo que nos permitirá visualizar y definir formalmente el conjunto imagen.</li></ol><p><em>Aplicación:</em> Este tipo de funciones modela perfectamente la trayectoria de un objeto lanzado al aire sometido a la gravedad, como un balón de baloncesto en un tiro libre.</p>"
+    },
+    {
+      "title": "Dominio, Vértice y Eje de Simetría",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "El dominio de cualquier polinomio son todos los números reales. Calculamos la coordenada equis del vértice con la fórmula menos be partido por dos a, y luego hallamos su coordenada i.",
+      "content": "<p><strong>1. Dominio:</strong> Al ser $f(x)$ una función polinómica, no presenta divisiones por cero ni raíces pares. Su dominio son todos los números reales: $\\text{Dom}(f) = \\mathbb{R}$.</p><p><strong>2. Vértice:</strong> Identificamos los coeficientes: $a = -1$, $b = 4$, $c = 5$. Como $a < 0$, la parábola se abre hacia abajo y el vértice será un máximo absoluto.</p><p>Calculamos la coordenada $x$ del vértice ($x_v$):</p><p>$$x_v = \\frac{-b}{2a} = \\frac{-4}{2(-1)} = \\frac{-4}{-2} = 2$$</p><p>Calculamos la coordenada $y$ sustituyendo en la función:</p><p>$$y_v = f(2) = -(2)^2 + 4(2) + 5 = -4 + 8 + 5 = 9$$</p><p>El <strong>vértice</strong> es el punto $V(2, 9)$. El <strong>eje de simetría</strong> es la recta vertical que pasa por él: $x = 2$.</p>",
+      "theory": "<p>En una función cuadrática $f(x) = ax^2 + bx + c$, la abscisa del vértice se encuentra siempre en $x = \\frac{-b}{2a}$.</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='25' x2='400' y2='25'/><line x1='0' y1='50' x2='400' y2='50'/><line x1='0' y1='75' x2='400' y2='75'/><line x1='0' y1='100' x2='400' y2='100'/><line x1='0' y1='125' x2='400' y2='125'/><line x1='0' y1='150' x2='400' y2='150'/><line x1='0' y1='175' x2='400' y2='175'/><line x1='0' y1='200' x2='400' y2='200'/><line x1='0' y1='225' x2='400' y2='225'/><line x1='0' y1='250' x2='400' y2='250'/><line x1='0' y1='275' x2='400' y2='275'/><line x1='0' y1='300' x2='400' y2='300'/><line x1='0' y1='325' x2='400' y2='325'/><line x1='0' y1='350' x2='400' y2='350'/><line x1='0' y1='375' x2='400' y2='375'/><line x1='25' y1='0' x2='25' y2='400'/><line x1='50' y1='0' x2='50' y2='400'/><line x1='75' y1='0' x2='75' y2='400'/><line x1='100' y1='0' x2='100' y2='400'/><line x1='125' y1='0' x2='125' y2='400'/><line x1='150' y1='0' x2='150' y2='400'/><line x1='175' y1='0' x2='175' y2='400'/><line x1='200' y1='0' x2='200' y2='400'/><line x1='225' y1='0' x2='225' y2='400'/><line x1='250' y1='0' x2='250' y2='400'/><line x1='275' y1='0' x2='275' y2='400'/><line x1='300' y1='0' x2='300' y2='400'/><line x1='325' y1='0' x2='325' y2='400'/><line x1='350' y1='0' x2='350' y2='400'/><line x1='375' y1='0' x2='375' y2='400'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='0' y1='300' x2='400' y2='300'/><line x1='150' y1='0' x2='150' y2='400'/><path d='M390 295 L400 300 L390 305' fill='none'/><path d='M145 10 L150 0 L155 10' fill='none'/></g><text x='385' y='320' fill='#fbbf24' font-family='sans-serif' font-size='16'>X</text><text x='130' y='20' fill='#fbbf24' font-family='sans-serif' font-size='16'>Y</text><line x1='200' y1='0' x2='200' y2='400' stroke='#a78bfa' stroke-width='2' stroke-dasharray='5,5'/><circle cx='200' cy='75' r='5' fill='#f43f5e'/><text x='215' y='70' fill='#f43f5e' font-family='sans-serif' font-size='16'>V(2, 9)</text><text x='210' y='380' fill='#a78bfa' font-family='sans-serif' font-size='16'>x = 2</text></svg>"
+    },
+    {
+      "title": "Intersecciones con los ejes",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Ahora encontramos los cortes con los ejes. Para el corte con el eje vertical hacemos equis igual a cero. Para los cortes horizontales, igualamos la función a cero y resolvemos la ecuación.",
+      "content": "<p><strong>3. Cortes con el eje $Y$:</strong> Evaluamos la función en $x = 0$.</p><p>$$f(0) = -(0)^2 + 4(0) + 5 = 5$$</p><p>El punto de corte es $(0, 5)$.</p><p><strong>4. Cortes con el eje $X$:</strong> Igualamos $f(x) = 0$.</p><p>$$-x^2 + 4x + 5 = 0 \\implies x^2 - 4x - 5 = 0$$</p><p>Aplicamos la fórmula cuadrática:</p><p>$$x = \\frac{4 \\pm \\sqrt{(-4)^2 - 4(1)(-5)}}{2} = \\frac{4 \\pm \\sqrt{16 + 20}}{2}$$</p><p>$$x = \\frac{4 \\pm \\sqrt{36}}{2} = \\frac{4 \\pm 6}{2}$$</p><p>Obtenemos dos soluciones:</p><ul><li>$x_1 = \\frac{10}{2} = 5 \\implies$ Punto $(5, 0)$</li><li>$x_2 = \\frac{-2}{2} = -1 \\implies$ Punto $(-1, 0)$</li></ul>",
+      "warning": "¡Cuidado con el signo al evaluar $(-x)^2$! El signo menos está fuera del cuadrado: $-(2)^2 = -4$, no confundir con $(-2)^2 = 4$.",
+      "checkpoint": {
+        "question": "¿Qué significaría si, al buscar los cortes con el eje X, el radicando (lo de dentro de la raíz) hubiera dado negativo?",
+        "options": [
+          {
+            "text": "Que la parábola no corta al eje X.",
+            "correct": true,
+            "feedback": "¡Exacto! Un radicando negativo implica que no hay soluciones reales, por tanto la parábola entera quedaría por encima o por debajo del eje X sin llegar a tocarlo."
+          },
+          {
+            "text": "Que la parábola corta al eje X en el origen (0,0).",
+            "correct": false,
+            "feedback": "Incorrecto. Para que corte en el origen, una de las soluciones de la ecuación debería ser x=0, lo cual requiere que el término independiente c sea 0."
+          },
+          {
+            "text": "Que nos hemos equivocado al calcular el vértice.",
+            "correct": false,
+            "feedback": "No necesariamente. Hay infinitas parábolas correctas cuyo vértice existe pero no intersecan el eje horizontal."
+          }
+        ]
+      },
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='25' x2='400' y2='25'/><line x1='0' y1='50' x2='400' y2='50'/><line x1='0' y1='75' x2='400' y2='75'/><line x1='0' y1='100' x2='400' y2='100'/><line x1='0' y1='125' x2='400' y2='125'/><line x1='0' y1='150' x2='400' y2='150'/><line x1='0' y1='175' x2='400' y2='175'/><line x1='0' y1='200' x2='400' y2='200'/><line x1='0' y1='225' x2='400' y2='225'/><line x1='0' y1='250' x2='400' y2='250'/><line x1='0' y1='275' x2='400' y2='275'/><line x1='0' y1='300' x2='400' y2='300'/><line x1='0' y1='325' x2='400' y2='325'/><line x1='0' y1='350' x2='400' y2='350'/><line x1='0' y1='375' x2='400' y2='375'/><line x1='25' y1='0' x2='25' y2='400'/><line x1='50' y1='0' x2='50' y2='400'/><line x1='75' y1='0' x2='75' y2='400'/><line x1='100' y1='0' x2='100' y2='400'/><line x1='125' y1='0' x2='125' y2='400'/><line x1='150' y1='0' x2='150' y2='400'/><line x1='175' y1='0' x2='175' y2='400'/><line x1='200' y1='0' x2='200' y2='400'/><line x1='225' y1='0' x2='225' y2='400'/><line x1='250' y1='0' x2='250' y2='400'/><line x1='275' y1='0' x2='275' y2='400'/><line x1='300' y1='0' x2='300' y2='400'/><line x1='325' y1='0' x2='325' y2='400'/><line x1='350' y1='0' x2='350' y2='400'/><line x1='375' y1='0' x2='375' y2='400'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='0' y1='300' x2='400' y2='300'/><line x1='150' y1='0' x2='150' y2='400'/><path d='M390 295 L400 300 L390 305' fill='none'/><path d='M145 10 L150 0 L155 10' fill='none'/></g><line x1='200' y1='0' x2='200' y2='400' stroke='#a78bfa' stroke-width='2' stroke-dasharray='5,5'/><circle cx='200' cy='75' r='5' fill='#f43f5e'/><circle cx='150' cy='175' r='5' fill='#10b981'/><text x='70' y='180' fill='#10b981' font-family='sans-serif' font-size='16'>(0, 5)</text><circle cx='125' cy='300' r='5' fill='#38bdf8'/><text x='115' y='320' fill='#38bdf8' font-family='sans-serif' font-size='16'>-1</text><circle cx='275' cy='300' r='5' fill='#38bdf8'/><text x='270' y='320' fill='#38bdf8' font-family='sans-serif' font-size='16'>5</text></svg>"
+    },
+    {
+      "title": "Gráfica y Recorrido (Imagen)",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Al trazar una curva suave por los puntos que hemos calculado obtenemos nuestra parábola completa. Viendo su vértice, es evidente desde dónde hasta dónde toma valores en el eje i.",
+      "content": "<p><strong>5. Representación:</strong> Unimos el vértice $V(2,9)$, el corte en el eje Y $(0,5)$ y los cortes en el eje X $(-1,0)$ y $(5,0)$ mediante una curva suave en forma de campana (ya que $a=-1$). Notamos que los cortes en X son simétricos respecto al eje $x=2$ (están a 3 unidades de distancia).</p><p><strong>6. Recorrido (Imagen):</strong> La imagen de la función es el conjunto de valores que toma en el eje $Y$.</p><p>Como la parábola tiene un máximo en $y = 9$ y abre hacia abajo, cubre todos los valores reales menores o iguales a 9. Por lo tanto, el recorrido se determina formalmente como:</p><p>$$\\text{Im}(f) = (-\\infty, 9]$$</p>",
+      "visual": "<svg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='25' x2='400' y2='25'/><line x1='0' y1='50' x2='400' y2='50'/><line x1='0' y1='75' x2='400' y2='75'/><line x1='0' y1='100' x2='400' y2='100'/><line x1='0' y1='125' x2='400' y2='125'/><line x1='0' y1='150' x2='400' y2='150'/><line x1='0' y1='175' x2='400' y2='175'/><line x1='0' y1='200' x2='400' y2='200'/><line x1='0' y1='225' x2='400' y2='225'/><line x1='0' y1='250' x2='400' y2='250'/><line x1='0' y1='275' x2='400' y2='275'/><line x1='0' y1='300' x2='400' y2='300'/><line x1='0' y1='325' x2='400' y2='325'/><line x1='0' y1='350' x2='400' y2='350'/><line x1='0' y1='375' x2='400' y2='375'/><line x1='25' y1='0' x2='25' y2='400'/><line x1='50' y1='0' x2='50' y2='400'/><line x1='75' y1='0' x2='75' y2='400'/><line x1='100' y1='0' x2='100' y2='400'/><line x1='125' y1='0' x2='125' y2='400'/><line x1='150' y1='0' x2='150' y2='400'/><line x1='175' y1='0' x2='175' y2='400'/><line x1='200' y1='0' x2='200' y2='400'/><line x1='225' y1='0' x2='225' y2='400'/><line x1='250' y1='0' x2='250' y2='400'/><line x1='275' y1='0' x2='275' y2='400'/><line x1='300' y1='0' x2='300' y2='400'/><line x1='325' y1='0' x2='325' y2='400'/><line x1='350' y1='0' x2='350' y2='400'/><line x1='375' y1='0' x2='375' y2='400'/></g><path d='M 100 475 Q 200 -325 300 475' stroke='#38bdf8' stroke-width='3' fill='none'/><g stroke='#fbbf24' stroke-width='2.5'><line x1='0' y1='300' x2='400' y2='300'/><line x1='150' y1='0' x2='150' y2='400'/></g><line x1='150' y1='75' x2='150' y2='400' stroke='#f43f5e' stroke-width='4' opacity='0.7'/><circle cx='200' cy='75' r='5' fill='#f43f5e'/><circle cx='150' cy='175' r='5' fill='#10b981'/><circle cx='125' cy='300' r='5' fill='#38bdf8'/><circle cx='275' cy='300' r='5' fill='#38bdf8'/><text x='155' y='390' fill='#f43f5e' font-family='sans-serif' font-size='14'>Im(f) = (-∞, 9]</text></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los pasos que nos llevaron a la solución. Esta estructura te servirá para cualquier función cuadrática.",
+      "content": "<ol><li><strong>Análisis inicial y Dominio:</strong> Al ser un polinomio de grado 2, identificamos la parábola y su dominio $\\mathbb{R}$.</li><li><strong>Cálculo del Vértice y Eje de simetría:</strong> Usamos $x = -b/(2a)$ para hallar la coordenada $x=2$, y evaluamos en $f(x)$ para la $y=9$. El eje es $x=2$.</li><li><strong>Cortes con los ejes:</strong> Calculamos $f(0)$ para el eje $Y$ (punto $(0,5)$) y resolvemos $f(x)=0$ con la fórmula general para el eje $X$ (puntos $(-1,0)$ y $(5,0)$).</li><li><strong>Recorrido a partir de la representación:</strong> Unimos los puntos y usamos la ordenada del vértice y la apertura hacia abajo para concluir que el recorrido es $(-\\infty, 9]$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno. Intenta aplicar los mismos cuatro pasos a esta nueva función, que se comporta de forma muy similar.",
+      "content": "<p>Estudia y representa gráficamente la función cuadrática $g(x) = x^2 - 6x + 5$, calculando de forma analítica su vértice, su eje de simetría, los puntos de intersección con ambos ejes y determinando formalmente su dominio y recorrido.</p><p><em>¡Intenta resolverlo por tu cuenta antes de mirar la respuesta!</em></p>",
+      "practiceAnswer": "<p><strong>Dominio:</strong> $\\mathbb{R}$</p><p><strong>Vértice:</strong> $V(3, -4)$</p><p><strong>Eje de simetría:</strong> $x = 3$</p><p><strong>Corte eje Y:</strong> $(0, 5)$</p><p><strong>Cortes eje X:</strong> $(1, 0)$ y $(5, 0)$</p><p><strong>Recorrido:</strong> $[-4, +\\infty)$ (la parábola abre hacia arriba al ser $a=1>0$).</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Ahora un reto en un contexto distinto. Piensa qué elemento de la parábola representa el punto máximo de un movimiento real.",
+      "content": "<p>La altura $h$ (en metros) de una pelota lanzada hacia arriba en función del tiempo $t$ (en segundos) viene dada por la ecuación $h(t) = -5t^2 + 20t + 2$.</p><p>Determina cuál será la altura máxima que alcanzará la pelota y en qué instante de tiempo se producirá.</p><p><em>Pista: Identifica qué elemento geométrico de la parábola debes buscar.</em></p>",
+      "practiceAnswer": "<p>La función es una parábola abierta hacia abajo. La altura máxima se alcanza en el vértice de la parábola.</p><p><strong>Tiempo (instante máximo):</strong> $t = \\frac{-b}{2a} = \\frac{-20}{2(-5)} = \\frac{-20}{-10} = 2$ segundos.</p><p><strong>Altura máxima:</strong> $h(2) = -5(2)^2 + 20(2) + 2 = -20 + 40 + 2 = 22$ metros.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T17:17:13.998Z",
+    "updatedAt": "2026-08-01T17:17:13.998Z",
+    "contentHash": "08e73f488ce7675a",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
