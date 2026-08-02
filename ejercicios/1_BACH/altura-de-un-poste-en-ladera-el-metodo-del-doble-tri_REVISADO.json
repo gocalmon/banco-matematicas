@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Trigonometría",
+    "subtopic": "Resolución de triángulos",
+    "exerciseType": "Problema de modelización",
+    "protocols": [
+      "E",
+      "F"
+    ],
+    "difficulty": "avanzada",
+    "estimatedMinutes": 35,
+    "learningObjectives": [
+      "Modelizar geométricamente un problema topográfico complejo mediante la descomposición en triángulos.",
+      "Deducir ángulos interiores a partir de ángulos de elevación y planos inclinados.",
+      "Aplicar el Teorema de los Senos de forma encadenada para resolver distancias inaccesibles.",
+      "Simplificar expresiones trigonométricas exactas utilizando identidades de ángulo doble y complementario."
+    ],
+    "prerequisites": [
+      "Teorema de los Senos.",
+      "Concepto de ángulo de elevación respecto a la horizontal.",
+      "Razones trigonométricas de ángulos notables ($30^\\circ, 45^\\circ, 60^\\circ$).",
+      "Identidad del seno del ángulo doble."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:54:45.126Z",
+    "id": "altura-de-un-poste-en-ladera-el-metodo-del-doble-tri-b0f0a00d"
+  },
+  "title": "Altura de un poste en ladera: El método del doble triángulo",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a enfrentarnos a un problema clásico de topografía avanzada. A diferencia de los problemas básicos, aquí el terreno no es llano, lo que nos obligará a ser muy cuidadosos con los ángulos.",
+      "content": "<p><strong>Ejercicio 8: Problema de topografía avanzada (Plano inclinado):</strong> Un poste de telefonía vertical está situado en la ladera de una colina que presenta una inclinación constante de $15^\\circ$ respecto a la horizontal. Desde un punto situado ladera abajo, se observa la cúspide del poste con un ángulo de elevación de $45^\\circ$. Si caminamos una distancia de $30$ metros ladera arriba, el nuevo ángulo de elevación hacia la cúspide pasa a ser de $60^\\circ$. Calcula la altura real del poste.</p>",
+      "hints": [
+        "Recuerda que los 'ángulos de elevación' siempre se miden respecto a una línea completamente horizontal, no respecto al suelo inclinado."
+      ]
+    },
+    {
+      "title": "Plan de ataque: Topografía por triangulación",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia será crear un modelo geométrico del problema. Como no podemos calcular la altura directamente porque la base del poste es inaccesible desde nuestros puntos de observación en un solo paso, usaremos dos triángulos interconectados.",
+      "content": "<p><strong>Objetivo:</strong> Determinar $h$, la altura vertical del poste telefónico.</p><p><strong>Estrategia justificada:</strong></p><ul><li>Denotaremos los puntos clave: $A$ (primera observación), $B$ (segunda observación, $30$ m más arriba), $P$ (base del poste) y $T$ (cúspide del poste).</li><li><strong>Problema principal:</strong> No conocemos la distancia de $B$ a $P$. Sin embargo, el poste y las líneas visuales forman triángulos que podemos analizar.</li><li><strong>Paso 1 (Triángulo auxiliar):</strong> Analizaremos el triángulo $\\triangle ABT$ formado por los dos puntos de observación y la cúspide. Usaremos el <strong>Teorema de los Senos</strong> para hallar la distancia visual $BT$.</li><li><strong>Paso 2 (Triángulo objetivo):</strong> Conociendo $BT$, pasaremos al triángulo $\\triangle TBP$, formado por la segunda observación y el poste completo. Aplicaremos nuevamente el Teorema de los Senos para despejar $h$.</li></ul><p><em>Aplicación real:</em> Este método de «doble observación» es la base de la triangulación geodésica, usada durante siglos para cartografiar montañas y territorios enteros antes de la invención del GPS y el láser.</p>"
+    },
+    {
+      "title": "Análisis angular del Triángulo 1 (Observaciones)",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "El primer paso, y el lugar donde la mayoría comete errores, es deducir los ángulos interiores de nuestro primer triángulo. Fíjate bien en cómo el ángulo de la ladera resta grados al ángulo de elevación.",
+      "content": "<p>Aislamos el triángulo $\\triangle ABT$ (vértices: punto inicial $A$, punto intermedio $B$, cúspide $T$). Necesitamos sus ángulos interiores.</p><p><strong>Ángulo en A ($\\angle TAB$):</strong> La visual $AT$ se eleva $45^\\circ$ sobre la <em>horizontal</em>. La ladera sube a $15^\\circ$ sobre la misma horizontal. Por tanto, el ángulo entre la ladera y la visual es la diferencia:<br>$$ \\angle TAB = 45^\\circ - 15^\\circ = 30^\\circ $$</p><p><strong>Ángulo en B ($\\angle TBA$):</strong> La visual $BT$ se eleva $60^\\circ$ sobre la horizontal. Su ángulo con la ladera <em>hacia arriba</em> es $60^\\circ - 15^\\circ = 45^\\circ$. Como el triángulo se cierra hacia $A$ (hacia abajo), el ángulo interior es suplementario a esos $45^\\circ$ sobre la recta de la ladera:<br>$$ \\angle TBA = 180^\\circ - 45^\\circ = 135^\\circ $$</p><p><strong>Ángulo en T ($\\angle ATB$):</strong> Como los ángulos interiores de un triángulo suman $180^\\circ$:<br>$$ \\angle ATB = 180^\\circ - (30^\\circ + 135^\\circ) = 15^\\circ $$</p>",
+      "warning": "<p>¡Peligro! No uses directamente los ángulos de elevación ($45^\\circ$ y $60^\\circ$) como ángulos interiores del triángulo. Los ángulos interiores están delimitados por los lados del triángulo (la ladera y las líneas visuales), no por las líneas horizontales imaginarias.</p>",
+      "visual": "<svg viewBox='0 0 300 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='300' height='300' fill='#0f172a'/>\n  <!-- Ladera -->\n  <line x1='0' y1='263.4' x2='300' y2='183' stroke='#84cc16' stroke-width='2'/>\n  <!-- Horizontales -->\n  <line x1='50' y1='250' x2='120' y2='250' stroke='#64748b' stroke-width='1' stroke-dasharray='4,4'/>\n  <line x1='137' y1='226' x2='200' y2='226' stroke='#64748b' stroke-width='1' stroke-dasharray='4,4'/>\n  <!-- Triangulo 1 -->\n  <path d='M 50 250 L 137 226 L 224 76 Z' fill='#38bdf8' fill-opacity='0.1' stroke='#38bdf8' stroke-width='1.5'/>\n  <!-- Lados de interes -->\n  <line x1='50' y1='250' x2='137' y2='226' stroke='#ffffff' stroke-width='3'/>\n  <text x='90' y='250' fill='#ffffff' font-size='12' font-family='sans-serif' transform='rotate(-15 90 250)'>30 m</text>\n  <!-- Visuales -->\n  <line x1='50' y1='250' x2='224' y2='76' stroke='#38bdf8' stroke-width='2' stroke-dasharray='4,2'/>\n  <line x1='137' y1='226' x2='224' y2='76' stroke='#38bdf8' stroke-width='2' stroke-dasharray='4,2'/>\n  <!-- Puntos -->\n  <circle cx='50' cy='250' r='3' fill='#ffffff'/><text x='40' y='265' fill='#ffffff' font-size='12'>A</text>\n  <circle cx='137' cy='226' r='3' fill='#ffffff'/><text x='127' y='240' fill='#ffffff' font-size='12'>B</text>\n  <circle cx='224' cy='76' r='3' fill='#ffffff'/><text x='230' y='72' fill='#ffffff' font-size='12'>T</text>\n</svg>"
+    },
+    {
+      "title": "Cálculo en el Triángulo 1: Distancia a la cúspide",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Con los ángulos listos y un lado conocido, el teorema de los senos nos permite calcular rápidamente la longitud de la línea visual desde la segunda posición hasta la punta del poste. Mantendremos el valor exacto para no perder precisión.",
+      "content": "<p>Aplicamos el <strong>Teorema de los Senos</strong> en $\\triangle ABT$ para encontrar el lado $BT$, que es el eslabón de conexión con nuestro triángulo objetivo.</p><p>$$ \\frac{BT}{\\text{sen}(\\angle TAB)} = \\frac{AB}{\\text{sen}(\\angle ATB)} $$</p><p>Sustituimos los datos que hemos deducido ($AB = 30$ m, $\\angle TAB = 30^\\circ$, $\\angle ATB = 15^\\circ$):</p><p>$$ \\frac{BT}{\\text{sen}(30^\\circ)} = \\frac{30}{\\text{sen}(15^\\circ)} $$</p><p>Despejamos la longitud de la visual $BT$:</p><p>$$ BT = \\frac{30 \\cdot \\text{sen}(30^\\circ)}{\\text{sen}(15^\\circ)} $$</p><p>Dado que $\\text{sen}(30^\\circ) = \\frac{1}{2}$, la expresión se simplifica a:</p><p>$$ BT = \\frac{15}{\\text{sen}(15^\\circ)} \\text{ metros} $$</p><p><em>Nota:</em> Conservamos esta expresión exacta (no calculamos el decimal aún) para evitar propagación de errores de redondeo en el siguiente paso.</p>",
+      "theory": "<p><strong>Teorema de los Senos:</strong> En cualquier triángulo, las longitudes de los lados son proporcionales a los senos de sus ángulos opuestos: $\\frac{a}{\\text{sen } A} = \\frac{b}{\\text{sen } B} = \\frac{c}{\\text{sen } C}$</p>",
+      "visual": "<svg viewBox='0 0 300 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='300' height='300' fill='#0f172a'/>\n  <line x1='0' y1='263.4' x2='300' y2='183' stroke='#84cc16' stroke-width='2' opacity='0.5'/>\n  <path d='M 50 250 L 137 226 L 224 76 Z' fill='none' stroke='#38bdf8' stroke-width='1.5'/>\n  <!-- Resaltar lado BT -->\n  <line x1='137' y1='226' x2='224' y2='76' stroke='#f472b6' stroke-width='3'/>\n  <text x='155' y='145' fill='#f472b6' font-size='14' font-family='sans-serif' transform='rotate(-60 155 145)'>BT = 15 / sen(15&#176;)</text>\n  <!-- Arcos angulares -->\n  <path d='M 70 250 A 20 20 0 0 0 68 240' fill='none' stroke='#ffffff' stroke-width='1.5'/>\n  <text x='75' y='245' fill='#ffffff' font-size='12'>30&#176;</text>\n  <path d='M 215 90 A 20 20 0 0 0 210 93' fill='none' stroke='#ffffff' stroke-width='1.5'/>\n  <text x='190' y='100' fill='#ffffff' font-size='12'>15&#176;</text>\n  <circle cx='50' cy='250' r='3' fill='#ffffff'/>\n  <circle cx='137' cy='226' r='3' fill='#ffffff'/>\n  <circle cx='224' cy='76' r='3' fill='#ffffff'/>\n</svg>"
+    },
+    {
+      "title": "Análisis angular del Triángulo 2 (El poste)",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Ya tenemos el eslabón. Ahora centrémonos en el triángulo que contiene al poste vertical. De nuevo, la clave es relacionar la ladera inclinada con la vertical perfecta.",
+      "content": "<p>Ahora analizamos el triángulo $\\triangle TBP$ formado por la segunda posición $B$, la base del poste $P$ y su cúspide $T$. Su lado $TP = h$ es nuestro objetivo.</p><p><strong>Ángulo en B ($\\angle TBP$):</strong> Ya vimos que el ángulo de elevación desde $B$ es $60^\\circ$ y la ladera tiene $15^\\circ$. El poste está colina arriba, así que el ángulo interior es la diferencia:<br>$$ \\angle TBP = 60^\\circ - 15^\\circ = 45^\\circ $$</p><p><strong>Ángulo en P ($\\angle TPB$):</strong> El poste $TP$ es <em>perfectamente vertical</em>. Si trazáramos una horizontal en $P$, el poste formaría $90^\\circ$ con ella. Hacia abajo (hacia $B$), la ladera desciende a $15^\\circ$ bajo esa horizontal. Sumando ambos:<br>$$ \\angle TPB = 90^\\circ + 15^\\circ = 105^\\circ $$</p><p><strong>Ángulo en T ($\\angle BTP$):</strong> Completando los $180^\\circ$ del triángulo:<br>$$ \\angle BTP = 180^\\circ - (45^\\circ + 105^\\circ) = 30^\\circ $$</p>",
+      "checkpoint": {
+        "question": "En el cálculo del $\\angle TPB$, ¿qué sucedería si el observador $B$ estuviera situado colina ARRIBA del poste en lugar de colina abajo?",
+        "options": [
+          {
+            "text": "El ángulo seguiría siendo de $105^\\circ$ porque la inclinación de la colina es constante.",
+            "correct": false,
+            "feedback": "Incorrecto. La posición relativa cambia cómo incide la vertical sobre la ladera desde la perspectiva del observador."
+          },
+          {
+            "text": "El ángulo sería de $75^\\circ$, ya que la ladera sube $15^\\circ$ hacia $B$ y la vertical baja $90^\\circ$ hasta la horizontal.",
+            "correct": true,
+            "feedback": "¡Correcto! Si $B$ estuviera más arriba, mirar de $P$ hacia $B$ sería mirar hacia arriba ($-15^\\circ$ respecto a la vertical $90^\\circ$), es decir, $90^\\circ - 15^\\circ = 75^\\circ$."
+          },
+          {
+            "text": "El ángulo sería de $90^\\circ$ porque el poste siempre es perpendicular al suelo.",
+            "correct": false,
+            "feedback": "Falso. El poste es vertical respecto a la gravedad (plano horizontal), no perpendicular a la ladera inclinada."
+          }
+        ]
+      },
+      "visual": "<svg viewBox='0 0 300 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='300' height='300' fill='#0f172a'/>\n  <!-- Ladera -->\n  <line x1='0' y1='263.4' x2='300' y2='183' stroke='#84cc16' stroke-width='2'/>\n  <!-- Horizontal en P -->\n  <line x1='190' y1='203' x2='260' y2='203' stroke='#64748b' stroke-width='1' stroke-dasharray='4,4'/>\n  <!-- Triangulo 2 -->\n  <path d='M 137 226 L 224 203 L 224 76 Z' fill='#f472b6' fill-opacity='0.1' stroke='#f472b6' stroke-width='1.5'/>\n  <!-- Poste (objetivo) -->\n  <line x1='224' y1='203' x2='224' y2='76' stroke='#fbbf24' stroke-width='3'/>\n  <text x='232' y='145' fill='#fbbf24' font-size='16' font-weight='bold'>h</text>\n  <!-- Arcos angulares -->\n  <path d='M 155 221 A 20 20 0 0 0 157 215' fill='none' stroke='#ffffff' stroke-width='1.5'/>\n  <text x='165' y='215' fill='#ffffff' font-size='12'>45&#176;</text>\n  <path d='M 215 190 A 15 15 0 0 0 205 208' fill='none' stroke='#ffffff' stroke-width='1.5'/>\n  <text x='185' y='190' fill='#ffffff' font-size='12'>105&#176;</text>\n  <circle cx='137' cy='226' r='3' fill='#ffffff'/><text x='127' y='240' fill='#ffffff' font-size='12'>B</text>\n  <circle cx='224' cy='203' r='3' fill='#ffffff'/><text x='230' y='215' fill='#ffffff' font-size='12'>P</text>\n  <circle cx='224' cy='76' r='3' fill='#ffffff'/><text x='230' y='72' fill='#ffffff' font-size='12'>T</text>\n</svg>"
+    },
+    {
+      "title": "Cálculo final: Altura del poste",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Planteamos el teorema de los senos por segunda vez. Aquí es donde ocurre la magia matemática: combinando identidades trigonométricas, todo se simplificará de manera extraordinaria.",
+      "content": "<p>Aplicamos de nuevo el <strong>Teorema de los Senos</strong>, ahora en $\\triangle TBP$, relacionando la incógnita $h = TP$ con el lado conocido $BT$:</p><p>$$ \\frac{h}{\\text{sen}(\\angle TBP)} = \\frac{BT}{\\text{sen}(\\angle TPB)} $$</p><p>Sustituimos valores ($BT = \\frac{15}{\\text{sen}(15^\\circ)}$, $\\angle TBP = 45^\\circ$, $\\angle TPB = 105^\\circ$):</p><p>$$ \\frac{h}{\\text{sen}(45^\\circ)} = \\frac{\\frac{15}{\\text{sen}(15^\\circ)}}{\\text{sen}(105^\\circ)} $$</p><p>Despejamos $h$:</p><p>$$ h = \\frac{15 \\cdot \\text{sen}(45^\\circ)}{\\text{sen}(15^\\circ) \\cdot \\text{sen}(105^\\circ)} $$</p><p>Para simplificar sin calculadora, usamos que ángulos suplementarios desplazados cumplen $\\text{sen}(105^\\circ) = \\text{sen}(90^\\circ + 15^\\circ) = \\cos(15^\\circ)$. Sustituimos el denominador:</p><p>$$ h = \\frac{15 \\cdot (\\frac{\\sqrt{2}}{2})}{\\text{sen}(15^\\circ) \\cos(15^\\circ)} $$</p><p>Recordamos la identidad del seno doble: $2\\text{sen}(\\alpha)\\cos(\\alpha) = \\text{sen}(2\\alpha)$. Multiplicando numerador y denominador por $2$:</p><p>$$ h = \\frac{30 \\cdot (\\frac{\\sqrt{2}}{2})}{2\\text{sen}(15^\\circ)\\cos(15^\\circ)} = \\frac{15\\sqrt{2}}{\\text{sen}(30^\\circ)} = \\frac{15\\sqrt{2}}{\\frac{1}{2}} = 30\\sqrt{2} $$</p>",
+      "theory": "<p><strong>Ángulos en cuadrantes:</strong> $\\text{sen}(90^\\circ + \\alpha) = \\cos(\\alpha)$</p><p><strong>Seno del ángulo doble:</strong> $\\text{sen}(2\\alpha) = 2 \\text{sen}(\\alpha) \\cos(\\alpha)$</p>",
+      "visual": "<svg viewBox='0 0 300 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='300' height='300' fill='#0f172a'/>\n  <line x1='0' y1='263.4' x2='300' y2='183' stroke='#84cc16' stroke-width='2' opacity='0.5'/>\n  <!-- Ecuacion central -->\n  <text x='150' y='120' fill='#ffffff' font-size='20' font-family='sans-serif' text-anchor='middle'>h = 30&#8730;2 m</text>\n  <path d='M 137 226 L 224 203 L 224 76 Z' fill='none' stroke='#f472b6' stroke-width='1.5' stroke-dasharray='2,2'/>\n  <line x1='224' y1='203' x2='224' y2='76' stroke='#fbbf24' stroke-width='4'/>\n  <circle cx='137' cy='226' r='3' fill='#ffffff'/>\n  <circle cx='224' cy='203' r='3' fill='#ffffff'/>\n  <circle cx='224' cy='76' r='3' fill='#ffffff'/>\n</svg>"
+    },
+    {
+      "title": "Comprobación e Interpretación",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Siempre es vital comprobar que el resultado tiene sentido físico. Una altura de cuarenta y dos metros es perfectamente razonable para una torre de telecomunicaciones en una ladera.",
+      "content": "<p>El resultado obtenido mediante deducción algebraica es exacto:</p><p>$$ h = 30\\sqrt{2} \\text{ m} $$</p><p>Para entender su magnitud, lo aproximamos a decimales (sabiendo que $\\sqrt{2} \\approx 1.414$):</p><p>$$ h \\approx 30 \\cdot 1.414 = 42.42 \\text{ metros} $$</p><p><strong>Interpretación y coherencia:</strong></p><ul><li>Hemos avanzado $30$ metros y el ángulo de elevación cambió notablemente (de $45^\\circ$ a $60^\\circ$). Esto sugiere que nos estamos acercando rápidamente a la base relativa, por lo que la altura del objeto debe estar en un orden de magnitud similar a nuestra distancia avanzada. $42.4$ metros es completamente coherente.</li><li>Una torre de telefonía suele medir entre $30$ y $50$ metros, por lo que el resultado se ajusta perfectamente a la realidad del modelizado.</li><li>Si la ladera hubiera sido plana ($0^\\circ$), la solución habría diferido. La inclinación del suelo exige esta corrección sistemática de ángulos.</li></ul>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Revisemos los tres grandes pasos de este método: construir el triángulo lejano, construir el triángulo cercano y calcular de forma secuencial.",
+      "content": "<ol><li><strong>Modelo geométrico:</strong> Identificamos que el problema se compone de dos triángulos conectados por la línea visual intermedia $BT$.</li><li><strong>Resolución del Triángulo Externo (Observadores-Cúspide):</strong><ul><li>Ajustamos los ángulos de elevación restando la pendiente ($15^\\circ$) para hallar los ángulos interiores ($30^\\circ$ y $135^\\circ$).</li><li>Aplicamos el Teorema de los Senos para hallar $BT$.</li></ul></li><li><strong>Resolución del Triángulo Interno (Observador-Poste):</strong><ul><li>Determinamos los ángulos considerando que el poste es vertical ($90^\\circ + 15^\\circ = 105^\\circ$).</li><li>Aplicamos de nuevo el Teorema de los Senos para hallar la altura $h$.</li></ul></li><li><strong>Simplificación:</strong> Transformamos $\\text{sen}(105^\\circ)$ y usamos el seno del ángulo doble para obtener la forma exacta $30\\sqrt{2}$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te propongo el mismo reto geodésico pero en una montaña más escarpada. Traza los dos triángulos, calcula los nuevos ángulos interiores y aplica la doble ley de senos.",
+      "content": "<p>Un ingeniero evalúa la altura de una chimenea industrial en la ladera de una montaña con una inclinación constante de $20^\\circ$ respecto a la horizontal. Desde un punto bajo, el ángulo de elevación a la cima de la chimenea es de $40^\\circ$. Caminando $50$ metros colina arriba, el nuevo ángulo de elevación es de $70^\\circ$.</p><p>Calcula la altura exacta de la chimenea utilizando el método del doble triángulo.</p><p><em>Plantea los ángulos interiores de $\\triangle ABT$ y $\\triangle TBP$ y aplica el Teorema de los Senos dos veces antes de mirar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong></p><p>1. En $\\triangle ABT$: $\\angle A = 40^\\circ-20^\\circ=20^\\circ$, $\\angle B$ (interno) $= 180^\\circ - (70^\\circ-20^\\circ) = 130^\\circ$, $\\angle T = 180^\\circ - 150^\\circ = 30^\\circ$.<br>Lado $BT = \\frac{50 \\cdot \\text{sen}(20^\\circ)}{\\text{sen}(30^\\circ)} = 100\\text{sen}(20^\\circ)$.</p><p>2. En $\\triangle TBP$: $\\angle B = 70^\\circ-20^\\circ=50^\\circ$, $\\angle P = 90^\\circ+20^\\circ=110^\\circ$, $\\angle T = 20^\\circ$.<br>Altura $h = BT \\cdot \\frac{\\text{sen}(50^\\circ)}{\\text{sen}(110^\\circ)}$.</p><p>Sabiendo que $\\text{sen}(110^\\circ) = \\cos(20^\\circ)$, el resultado es:<br>$$ h = 100 \\cdot \\frac{\\text{sen}(20^\\circ)\\text{sen}(50^\\circ)}{\\cos(20^\\circ)} = 100\\tan(20^\\circ)\\text{sen}(50^\\circ) \\approx 27.89 \\text{ m} $$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "La técnica del doble triángulo sirve para cualquier punto inaccesible. Veamos cómo usarla en el mar, donde no hay ladera, pero la estructura del problema es idéntica.",
+      "content": "<p>Dos barcos, $A$ y $B$, están alineados con un faro lejano $F$ y separados por $1000$ metros. El faro emite una luz direccional muy potente. Desde el barco $A$ (el más alejado), un dron mide que la línea visual hacia la linterna del faro forma un ángulo de $10^\\circ$ con el mar llano. Desde el barco $B$, el ángulo es de $18^\\circ$.</p><p>Si el faro se asienta sobre un acantilado vertical de altura $H$ desconocida sobre el nivel del mar, demuestra cómo calcular $H$ encadenando el Teorema de los Senos, asumiendo el mar como un plano horizontal (inclinación $0^\\circ$).</p><p><em>Observa que es el mismo modelo de dos triángulos interconectados, pero eliminando la variable de la pendiente.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong></p><p>Al ser terreno llano, los ángulos de elevación son directamente los ángulos del triángulo base.</p><p>1. En el triángulo de observación $\\triangle ABF_{linterna}$:<br>$\\angle A = 10^\\circ$. $\\angle B$ (interno) $= 180^\\circ - 18^\\circ = 162^\\circ$. $\\angle F = 180^\\circ - (10^\\circ + 162^\\circ) = 8^\\circ$.<br>Lado $B-F_{linterna} = 1000 \\cdot \\frac{\\text{sen}(10^\\circ)}{\\text{sen}(8^\\circ)}$.</p><p>2. En el triángulo rectángulo vertical formado por el barco $B$, la base del faro a nivel del mar y la linterna:<br>El ángulo en la base del acantilado es $90^\\circ$. El ángulo de elevación es $18^\\circ$.<br>$$ H = (B-F_{linterna}) \\cdot \\text{sen}(18^\\circ) = 1000 \\cdot \\frac{\\text{sen}(10^\\circ)\\text{sen}(18^\\circ)}{\\text{sen}(8^\\circ)} \\approx 385.5 \\text{ m} $$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:54:50.945Z",
+    "updatedAt": "2026-08-01T21:54:50.945Z",
+    "contentHash": "45a93af794468a6d",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

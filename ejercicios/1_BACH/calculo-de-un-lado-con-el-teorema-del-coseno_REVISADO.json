@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Trigonometría",
+    "subtopic": "Resolución de triángulos cualesquiera",
+    "exerciseType": "Aplicación directa de teorema",
+    "protocols": [
+      "E",
+      "F"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Identificar el Teorema del Coseno como la herramienta adecuada para triángulos conociendo dos lados y el ángulo comprendido (LAL)",
+      "Aplicar correctamente la fórmula del Teorema del Coseno",
+      "Interpretar geométricamente el efecto del coseno negativo en ángulos obtusos"
+    ],
+    "prerequisites": [
+      "Conocer el Teorema del Coseno",
+      "Saber deducir o calcular razones trigonométricas de ángulos obtusos (reducción al primer cuadrante)",
+      "Manejo básico de raíces cuadradas"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 7,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:47:03.016Z",
+    "id": "calculo-de-un-lado-con-el-teorema-del-coseno-a8e69d71"
+  },
+  "title": "Cálculo de un lado con el Teorema del Coseno",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Analicemos el problema. Nos piden hallar el tercer lado de un triángulo que no es rectángulo. Para ello, nos dan la medida de dos lados y exactamente el ángulo que se forma entre ellos. Este es un escenario clásico de geometría.",
+      "content": "<p><strong>Ejercicio 2: Teorema del Coseno:</strong> En un triángulo cualquiera, conocemos la longitud de dos de sus lados, que miden $b = 7 \\text{ cm}$ y $c = 10 \\text{ cm}$, y el ángulo comprendido de forma exacta entre ellos, que es de $A = 120^\\circ$. Calcula razonadamente la longitud métrica del tercer lado $a$.</p>"
+    },
+    {
+      "title": "Estrategia: El escenario LAL",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Cuando en un triángulo conocemos dos Lados y el Ángulo que forman entre ellos, lo que llamamos el escenario LAL, la herramienta matemática perfecta es el Teorema del Coseno. Podríamos verlo como un Teorema de Pitágoras con un ajuste para cuando el ángulo no es de 90 grados.",
+      "content": "<h3>Plan de ataque</h3><ol><li><strong>Identificar los datos:</strong> Tenemos $b = 7$, $c = 10$ y el ángulo $A = 120^\\circ$. Nuestra incógnita es el lado opuesto a ese ángulo, el lado $a$.</li><li><strong>Seleccionar la fórmula:</strong> Como conocemos el ángulo $A$, usaremos la versión del Teorema del Coseno que lo incluye: <br>$$ a^2 = b^2 + c^2 - 2bc \\cdot \\cos(A) $$</li><li><strong>Sustituir y operar:</strong> Introduciremos los datos teniendo especial cuidado con el signo de $\\cos(120^\\circ)$, ya que al ser un ángulo del segundo cuadrante, su coseno será negativo.</li><li><strong>Despejar:</strong> Haremos la raíz cuadrada del resultado final para obtener la longitud $a$.</li></ol>"
+    },
+    {
+      "title": "Planteamiento y sustitución",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Empezamos escribiendo la fórmula y sustituyendo nuestros datos. Siete al cuadrado, más diez al cuadrado, menos el doble de siete por diez, por el coseno de 120. Recuerda que el coseno de 120 grados es igual a menos un medio.",
+      "content": "<p><strong>Objetivo:</strong> Sustituir los datos en el Teorema del Coseno.</p><p>Partimos de la fórmula general:</p><p>$$ a^2 = b^2 + c^2 - 2bc \\cdot \\cos(A) $$</p><p>Sustituimos $b = 7$, $c = 10$ y $A = 120^\\circ$:</p><p>$$ a^2 = 7^2 + 10^2 - 2 \\cdot 7 \\cdot 10 \\cdot \\cos(120^\\circ) $$</p><p>Antes de multiplicar, analizamos el coseno. Por reducción al primer cuadrante, sabemos que $120^\\circ$ tiene el mismo coseno que $60^\\circ$ pero con signo negativo (está en el 2º cuadrante):</p><p>$$ \\cos(120^\\circ) = -\\cos(60^\\circ) = -\\frac{1}{2} = -0,5 $$</p>",
+      "theory": "<strong>El Teorema Generalizado:</strong> Si el ángulo $A$ fuera de $90^\\circ$, su coseno sería $0$, eliminando toda la parte final de la fórmula y dejándola como $a^2 = b^2 + c^2$. ¡Por eso el Teorema del Coseno es la generalización de Pitágoras!"
+    },
+    {
+      "title": "Cálculo y resultado final",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora realizamos las operaciones. ¡Mucho cuidado con los signos! Ese menos del 0,5 multiplicando al menos de la fórmula convierte esa parte en una suma. Al final, hacemos la raíz cuadrada de 219, que nos da casi 14,8 centímetros.",
+      "content": "<p><strong>Objetivo:</strong> Resolver las operaciones matemáticas paso a paso.</p><p>Retomamos nuestra ecuación con el valor del coseno ya sustituido:</p><p>$$ a^2 = 7^2 + 10^2 - 2 \\cdot 7 \\cdot 10 \\cdot (-0,5) $$</p><p>Calculamos los cuadrados y la multiplicación:</p><p>$$ a^2 = 49 + 100 - 140 \\cdot (-0,5) $$</p><p>Multiplicar por $-0,5$ cambia el signo a positivo y divide a la mitad:</p><p>$$ a^2 = 49 + 100 + 70 $$</p><p>$$ a^2 = 219 $$</p><p>Finalmente, despejamos $a$ aplicando la raíz cuadrada (tomamos solo el valor positivo por ser una longitud):</p><p>$$ a = \\sqrt{219} \\approx \\mathbf{14,80 \\text{ cm}} $$</p>",
+      "checkpoint": {
+        "question": "¿Por qué el término final de la fórmula terminó sumando en lugar de restando?",
+        "options": [
+          {
+            "text": "Porque siempre se suma si los lados miden más de 5 cm.",
+            "correct": false,
+            "feedback": "Falso. El valor de los lados no afecta al signo de la fórmula."
+          },
+          {
+            "text": "Porque el ángulo es obtuso (mayor de 90º). Su coseno es negativo y, multiplicado por el menos de la fórmula original, resulta en una suma.",
+            "correct": true,
+            "feedback": "¡Correcto! Geométricamente tiene sentido: un ángulo mayor a 90º 'abre' más el triángulo, haciendo que el lado opuesto sea más largo que lo que dictaría Pitágoras."
+          },
+          {
+            "text": "Es un error, la fórmula del Teorema del Coseno siempre resta.",
+            "correct": false,
+            "feedback": "Falso. La fórmula lleva un menos, pero si el coseno es negativo, menos por menos es más."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumiendo, hemos visto que para hallar un lado conociendo los otros dos y el ángulo entre ellos, el Teorema del Coseno es infalible.",
+      "content": "<h3>Pasos clave del Teorema del Coseno (LAL)</h3><ol><li><strong>Comprobar el escenario:</strong> Verificar que conocemos dos lados y exactamente el ángulo que los une.</li><li><strong>Sustituir:</strong> Emplear la variante de la fórmula que empieza con el lado que buscamos ($a^2 = b^2 + c^2 - 2bc\\cos(A)$).</li><li><strong>Controlar signos:</strong> Operar con cuidado. Si el ángulo es agudo ($< 90^\\circ$), el término se restará. Si es obtuso ($> 90^\\circ$), el coseno será negativo y el término se sumará.</li><li><strong>Raíz final:</strong> No olvidar extraer la raíz cuadrada para pasar de $a^2$ a $a$.</li></ol><p><strong>Resultado exacto:</strong> $a = \\sqrt{219} \\text{ cm}$<br><strong>Resultado aproximado:</strong> $a \\approx 14,80 \\text{ cm}$</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica con un ángulo agudo",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno. Calcula el lado de este otro triángulo. La estructura es exactamente la misma, pero ahora el ángulo es agudo. ¿Qué crees que pasará con el signo de la fórmula?",
+      "content": "<p><strong>Ejercicio propuesto:</strong></p><p>En un triángulo conocemos los lados $b = 5 \\text{ cm}$ y $c = 8 \\text{ cm}$. El ángulo comprendido entre ellos es $A = 60^\\circ$. Calcula la longitud métrica del tercer lado $a$.</p><p><em>Pista: Recuerda que $\\cos(60^\\circ) = 0,5$. Resuelve en papel antes de ver la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Solución paso a paso:</strong></p><p>1. Planteamos la ecuación: $a^2 = 5^2 + 8^2 - 2 \\cdot 5 \\cdot 8 \\cdot \\cos(60^\\circ)$</p><p>2. Sustituimos y calculamos los cuadrados: $a^2 = 25 + 64 - 80 \\cdot (0,5)$</p><p>3. Operamos (ahora sí se resta): $a^2 = 89 - 40$</p><p>4. Calculamos el lado: $a^2 = 49 \\implies a = \\sqrt{49} = \\mathbf{7 \\text{ cm}}$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: cálculo de un ángulo",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Un reto diferente. El Teorema del Coseno también sirve si conocemos los tres lados y nos falta un ángulo. Intenta despejar el coseno en este caso.",
+      "content": "<p><strong>Ejercicio propuesto (Escenario LLL):</strong></p><p>Imagina un triángulo cuyos lados miden $a = 7 \\text{ cm}$, $b = 5 \\text{ cm}$ y $c = 6 \\text{ cm}$. Utiliza el Teorema del Coseno para calcular la medida del ángulo $A$ (el opuesto al lado $a=7$).</p><p><em>Pista: Escribe la fórmula igual que antes ($a^2 = b^2 + c^2 - 2bc\\cos(A)$), sustituye todos los lados y despeja poco a poco el $\\cos(A)$. Al final necesitarás usar el arco coseno ($\\cos^{-1}$) en tu calculadora.</em></p>",
+      "practiceAnswer": "<p><strong>Solución paso a paso:</strong></p><p>1. Fórmula: $7^2 = 5^2 + 6^2 - 2 \\cdot 5 \\cdot 6 \\cdot \\cos(A)$</p><p>2. Cuadrados: $49 = 25 + 36 - 60 \\cdot \\cos(A)$</p><p>3. Agrupamos y aislamos el término del coseno: $49 = 61 - 60 \\cdot \\cos(A) \\implies 49 - 61 = -60 \\cdot \\cos(A) \\implies -12 = -60 \\cdot \\cos(A)$</p><p>4. Despejamos: $\\cos(A) = \\frac{-12}{-60} = 0,2$</p><p>5. Calculamos el ángulo: $A = \\arccos(0,2) \\approx \\mathbf{78,46^\\circ}$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:47:09.651Z",
+    "updatedAt": "2026-08-01T21:47:09.651Z",
+    "contentHash": "62ff985bbeaf1f4d",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

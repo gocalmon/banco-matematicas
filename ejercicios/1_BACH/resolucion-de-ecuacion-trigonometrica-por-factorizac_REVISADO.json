@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Trigonometría",
+    "subtopic": "Ecuaciones trigonométricas",
+    "exerciseType": "Resolución analítica",
+    "protocols": [
+      "C",
+      "F"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Aplicar la factorización de diferencia de cuadrados en expresiones trigonométricas.",
+      "Resolver ecuaciones trigonométricas igualadas a cero aislando factores.",
+      "Determinar las soluciones de la función tangente en el intervalo de una circunferencia completa."
+    ],
+    "prerequisites": [
+      "Identidades trigonométricas básicas.",
+      "Identidades notables (diferencia de cuadrados).",
+      "Valores exactos de las razones trigonométricas en los cuadrantes principales."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:54:00.379Z",
+    "id": "resolucion-de-ecuacion-trigonometrica-por-factorizac-2c8e6baa"
+  },
+  "title": "Resolución de Ecuación Trigonométrica por Factorización",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a resolver una ecuación trigonométrica prestando atención a la instrucción de aislar factores e igualar a cero, buscando todas las soluciones en una vuelta completa a la circunferencia.",
+      "content": "<p><strong>Ejercicio 4:</strong> Resuelve en el intervalo $[0, 2\\pi)$ la siguiente ecuación trigonométrica aislando los factores e igualando a cero:</p><p>$$ \\text{sen}^2 x - 3\\cos^2 x = 0 $$</p>",
+      "hints": [
+        "Observa la estructura de la ecuación: tienes dos términos al cuadrado restándose.",
+        "Recuerda la identidad notable para la diferencia de cuadrados."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia consistirá en aplicar la diferencia de cuadrados para factorizar la ecuación. Al tener un producto igual a cero, podremos analizar cada factor por separado. Este tipo de ecuaciones es común al estudiar las posiciones de equilibrio o la interferencia de ondas constructivas y destructivas en física.",
+      "content": "<p><strong>Objetivo:</strong> Encontrar todos los ángulos $x$ en el intervalo $[0, 2\\pi)$ que satisfacen la ecuación dada.</p><p><strong>Estrategia:</strong></p><ul><li>El enunciado sugiere de forma explícita <em>aislar los factores e igualar a cero</em>.</li><li>La expresión $\\text{sen}^2 x - 3\\cos^2 x$ tiene la estructura de una <strong>diferencia de cuadrados</strong>, $A^2 - B^2$.</li><li>Factorizaremos la expresión en la forma $(A - B)(A + B) = 0$.</li><li>Por la propiedad del producto nulo, igualaremos cada factor a cero y resolveremos las dos ecuaciones resultantes transformándolas, mediante división, en ecuaciones con la función tangente.</li></ul>"
+    },
+    {
+      "title": "Paso 1: Factorización de la diferencia de cuadrados",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Identificamos los componentes de nuestra diferencia de cuadrados y factorizamos. Asegúrate de tratar el tres como el cuadrado de la raíz de tres.",
+      "content": "<p>Partimos de la ecuación original:</p><p>$$ \\text{sen}^2 x - 3\\cos^2 x = 0 $$</p><p>Reescribimos los términos para identificar claramente la estructura $A^2 - B^2$:</p><p>$$ (\\text{sen} x)^2 - (\\sqrt{3}\\cos x)^2 = 0 $$</p><p>Aplicando la identidad de la diferencia de cuadrados obtenemos el producto de una suma por una diferencia:</p><p>$$ (\\text{sen} x - \\sqrt{3}\\cos x)(\\text{sen} x + \\sqrt{3}\\cos x) = 0 $$</p><p>Ahora, por la <strong>propiedad del factor cero</strong>, para que un producto sea cero, al menos uno de sus factores debe ser cero. Esto divide nuestro problema en dos casos independientes.</p>",
+      "theory": "<p><strong>Diferencia de cuadrados:</strong> $A^2 - B^2 = (A - B)(A + B)$</p><p><strong>Propiedad del producto nulo:</strong> Si $M \\cdot N = 0$, entonces $M = 0$ o $N = 0$.</p>"
+    },
+    {
+      "title": "Paso 2: Resolución del primer factor",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Tomamos el primer factor, lo igualamos a cero y lo convertimos a la función tangente dividiendo entre el coseno del ángulo. Encontraremos así dos soluciones en nuestro intervalo.",
+      "content": "<p><strong>Caso 1:</strong> Igualamos el primer factor a cero:</p><p>$$ \\text{sen} x - \\sqrt{3}\\cos x = 0 $$</p><p>Despejamos aislando las funciones trigonométricas a cada lado:</p><p>$$ \\text{sen} x = \\sqrt{3}\\cos x $$</p><p>Dividimos ambos miembros entre $\\cos x$ para obtener una única función trigonométrica:</p><p>$$ \\frac{\\text{sen} x}{\\cos x} = \\sqrt{3} \\implies \\tan x = \\sqrt{3} $$</p><p>Buscamos los ángulos $x \\in [0, 2\\pi)$ cuya tangente sea positiva y de valor $\\sqrt{3}$. Estos ángulos se encuentran en el primer y tercer cuadrante:</p><p>$$ x_1 = \\frac{\\pi}{3} \\quad \\text{y} \\quad x_2 = \\pi + \\frac{\\pi}{3} = \\frac{4\\pi}{3} $$</p>",
+      "checkpoint": {
+        "question": "¿Por qué es matemáticamente válido dividir ambos miembros de la ecuación entre $\\cos x$ sin perder soluciones?",
+        "options": [
+          {
+            "text": "Porque $\\cos x \\neq 0$ en los puntos donde se cumple la ecuación; si $\\cos x = 0$, entonces $\\text{sen} x$ también sería $0$, lo cual es imposible.",
+            "correct": true,
+            "feedback": "¡Exacto! Como $\\text{sen}^2 x + \\cos^2 x = 1$, nunca pueden ser cero a la vez. Al saber que no es cero en nuestras soluciones, podemos dividir sin miedo a una indeterminación."
+          },
+          {
+            "text": "Porque siempre está permitido dividir por cualquier variable o función en una ecuación trigonométrica.",
+            "correct": false,
+            "feedback": "Cuidado. Dividir por cero no está definido. Siempre debemos garantizar que el divisor no es nulo antes de realizar la operación."
+          },
+          {
+            "text": "Porque el coseno nunca vale cero en el intervalo $[0, 2\\pi)$.",
+            "correct": false,
+            "feedback": "Falso. El coseno sí vale cero en $x = \\pi/2$ y $x = 3\\pi/2$. Lo importante es que no vale cero simultáneamente con la condición $\\text{sen} x = \\sqrt{3}\\cos x$."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Resolución del segundo factor",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora hacemos lo mismo con el segundo factor. Esta vez la tangente será negativa, por lo que las soluciones estarán en el segundo y cuarto cuadrante.",
+      "content": "<p><strong>Caso 2:</strong> Igualamos el segundo factor a cero:</p><p>$$ \\text{sen} x + \\sqrt{3}\\cos x = 0 $$</p><p>Procedemos de forma análoga al caso anterior, despejando:</p><p>$$ \\text{sen} x = -\\sqrt{3}\\cos x $$</p><p>Dividimos entre $\\cos x$:</p><p>$$ \\frac{\\text{sen} x}{\\cos x} = -\\sqrt{3} \\implies \\tan x = -\\sqrt{3} $$</p><p>Buscamos los ángulos $x \\in [0, 2\\pi)$ cuya tangente sea negativa y de valor $-\\sqrt{3}$. Estos corresponden a los ángulos simétricos del caso anterior, situados en el segundo y cuarto cuadrante:</p><p>$$ x_3 = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3} \\quad \\text{y} \\quad x_4 = 2\\pi - \\frac{\\pi}{3} = \\frac{5\\pi}{3} $$</p>"
+    },
+    {
+      "title": "Comprobación gráfica e interpretación",
+      "layout": "split",
+      "phase": "comprobar",
+      "narration": "Si visualizamos la circunferencia goniométrica y las rectas que representan las pendientes raíz de tres y menos raíz de tres, comprobamos las cuatro intersecciones que corresponden a nuestras cuatro soluciones.",
+      "content": "<p>Hemos encontrado cuatro soluciones en el intervalo $[0, 2\\pi)$:</p><ul><li>$x_1 = \\frac{\\pi}{3}$ (60&#176;)</li><li>$x_2 = \\frac{2\\pi}{3}$ (120&#176;)</li><li>$x_3 = \\frac{4\\pi}{3}$ (240&#176;)</li><li>$x_4 = \\frac{5\\pi}{3}$ (300&#176;)</li></ul><p>Visualmente, resolver $\\tan x = \\pm\\sqrt{3}$ equivale a encontrar los puntos de la circunferencia goniométrica que son intersecados por las rectas $y = \\sqrt{3}x$ (verde) e $y = -\\sqrt{3}x$ (rosa). Vemos claramente las cuatro posiciones que satisfacen la ecuación inicial.</p>",
+      "visual": "<svg viewBox='0 0 300 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='300' height='300' fill='#0f172a'/>\n  <!-- Ejes -->\n  <line x1='150' y1='20' x2='150' y2='280' stroke='#fbbf24' stroke-width='2'/>\n  <line x1='20' y1='150' x2='280' y2='150' stroke='#fbbf24' stroke-width='2'/>\n  <!-- Circunferencia goniometrica -->\n  <circle cx='150' cy='150' r='100' fill='none' stroke='#38bdf8' stroke-width='2'/>\n  <!-- Rectas y = sqrt(3)x e y = -sqrt(3)x -->\n  <line x1='75' y1='280' x2='225' y2='20' stroke='#a3e635' stroke-width='1.5' stroke-dasharray='4,4'/>\n  <line x1='75' y1='20' x2='225' y2='280' stroke='#f472b6' stroke-width='1.5' stroke-dasharray='4,4'/>\n  <!-- Puntos de interseccion (soluciones) -->\n  <circle cx='200' cy='63.4' r='4' fill='#ef4444'/>\n  <circle cx='100' cy='63.4' r='4' fill='#ef4444'/>\n  <circle cx='100' cy='236.6' r='4' fill='#ef4444'/>\n  <circle cx='200' cy='236.6' r='4' fill='#ef4444'/>\n  <!-- Etiquetas -->\n  <text x='210' y='55' fill='#ffffff' font-size='14' font-family='sans-serif'>&#960;/3</text>\n  <text x='65' y='55' fill='#ffffff' font-size='14' font-family='sans-serif'>2&#960;/3</text>\n  <text x='55' y='250' fill='#ffffff' font-size='14' font-family='sans-serif'>4&#960;/3</text>\n  <text x='210' y='250' fill='#ffffff' font-size='14' font-family='sans-serif'>5&#960;/3</text>\n</svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los pasos que nos llevaron a la solución final: identificar la estructura, factorizar, resolver cada rama y agrupar las soluciones en el intervalo exigido.",
+      "content": "<ol><li><strong>Identificación:</strong> Reconocimos la expresión original como una diferencia de cuadrados.</li><li><strong>Factorización:</strong> Expresamos la ecuación como producto de dos factores: $(\\text{sen} x - \\sqrt{3}\\cos x)(\\text{sen} x + \\sqrt{3}\\cos x) = 0$.</li><li><strong>Descomposición:</strong> Igualamos cada factor a cero.</li><li><strong>Conversión:</strong> Dividiendo entre $\\cos x$, convertimos las subecuaciones en $\\tan x = \\sqrt{3}$ y $\\tan x = -\\sqrt{3}$.</li><li><strong>Resolución:</strong> Determinamos los ángulos en $[0, 2\\pi)$ para ambos casos.</li></ol><p><strong>Resultado final:</strong> $x \\in \\left\\{ \\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, \\frac{5\\pi}{3} \\right\\}$</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno. Aplica la misma técnica de factorización para resolver esta ecuación similar. Tómate tu tiempo y luego comprueba tu respuesta.",
+      "content": "<p>Resuelve en el intervalo $[0, 2\\pi)$ la siguiente ecuación trigonométrica aislando los factores e igualando a cero:</p><p>$$ \\text{sen}^2 x - \\cos^2 x = 0 $$</p><p><em>Intenta resolverlo utilizando exactamente el mismo método de diferencia de cuadrados antes de ver la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong></p><p>Factorizando: $(\\text{sen} x - \\cos x)(\\text{sen} x + \\cos x) = 0$</p><p>Esto conduce a $\\tan x = 1$ y $\\tan x = -1$.</p><p>Soluciones en $[0, 2\\pi)$: $x \\in \\left\\{ \\frac{\\pi}{4}, \\frac{3\\pi}{4}, \\frac{5\\pi}{4}, \\frac{7\\pi}{4} \\right\\}$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Ahora analicemos un caso aplicado a la óptica. El concepto matemático de buscar las raíces de una expresión es exactamente el mismo.",
+      "content": "<p>En un experimento de óptica, la intensidad de un haz de luz polarizado tras atravesar un medio filtrante sigue el modelo:</p><p>$$ I(\\theta) = I_0 \\left( 1 - 4\\cos^2 \\theta \\right) $$</p><p>donde $\\theta$ es el ángulo de rotación del filtro polarizador ($0 \\le \\theta < 2\\pi$) e $I_0$ es la intensidad inicial. Encuentra los ángulos exactos $\\theta$ para los cuales la luz se anula por completo (intensidad cero).</p><p><em>Plantea la ecuación, factorízala como diferencia de cuadrados y encuentra los ángulos.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong></p><p>Igualando a cero: $1 - 4\\cos^2 \\theta = 0$</p><p>Factorizando: $(1 - 2\\cos \\theta)(1 + 2\\cos \\theta) = 0$</p><p>Esto nos da dos casos: $\\cos \\theta = \\frac{1}{2}$ y $\\cos \\theta = -\\frac{1}{2}$.</p><p>Las soluciones exactas en $[0, 2\\pi)$ son: $\\theta \\in \\left\\{ \\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, \\frac{5\\pi}{3} \\right\\}$. (¡Los mismos ángulos de nuestro ejercicio original!)</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:54:06.082Z",
+    "updatedAt": "2026-08-01T21:54:06.082Z",
+    "contentHash": "d1d2875a62b71630",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

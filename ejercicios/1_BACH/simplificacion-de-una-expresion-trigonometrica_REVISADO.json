@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Trigonometría",
+    "subtopic": "Identidades trigonométricas",
+    "exerciseType": "Simplificación algebraica",
+    "protocols": [
+      "E",
+      "F"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Aplicar productos notables (cuadrado de una suma) en expresiones trigonométricas",
+      "Reducir términos semejantes en expresiones algebraico-trigonométricas",
+      "Reconocer y aplicar la identidad trigonométrica fundamental"
+    ],
+    "prerequisites": [
+      "Conocer el desarrollo del cuadrado de un binomio: $(a+b)^2 = a^2 + 2ab + b^2$",
+      "Conocer la identidad fundamental de la trigonometría: $\\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1$"
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 7,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:23:08.300Z",
+    "id": "simplificacion-de-una-expresion-trigonometrica-561965c9"
+  },
+  "title": "Simplificación de una expresión trigonométrica",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a leer el enunciado. Nos piden simplificar una expresión que mezcla álgebra y trigonometría. Para ello, el propio problema nos da una pista clave: primero debemos desarrollar el binomio al cuadrado y luego eliminar los términos que sean iguales.",
+      "content": "<p><strong>Ejercicio 4:</strong> Simplifica al máximo la siguiente expresión algebraica-trigonométrica eliminando los términos semejantes tras desarrollar el binomio:</p><p>$$ E = (\\text{sen } \\alpha + \\cos \\alpha)^2 - 2 \\text{sen } \\alpha \\cos \\alpha $$</p>"
+    },
+    {
+      "title": "Estrategia de simplificación",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver este ejercicio, seguiremos tres pasos lógicos. Primero, aplicaremos la fórmula del cuadrado de una suma. Segundo, agruparemos y cancelaremos los términos opuestos. Por último, usaremos nuestra herramienta más poderosa en trigonometría: la identidad fundamental.",
+      "content": "<h3>Plan de ataque paso a paso</h3><ol><li><strong>Desarrollar el binomio:</strong> La expresión comienza con $(\\text{sen } \\alpha + \\cos \\alpha)^2$. Esto es un producto notable (el cuadrado de una suma), por lo que aplicaremos la regla: $(a+b)^2 = a^2 + 2ab + b^2$.</li><li><strong>Eliminar términos semejantes:</strong> Sustituiremos el desarrollo en la expresión original $E$ y buscaremos términos que se sumen y se resten para cancelarlos.</li><li><strong>Aplicar identidades:</strong> Observaremos la expresión resultante y utilizaremos la identidad trigonométrica fundamental para reducir el resultado a su mínima expresión.</li></ol>"
+    },
+    {
+      "title": "Desarrollo del producto notable",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Empezamos desarrollando el paréntesis al cuadrado. El cuadrado del primero es el seno al cuadrado, más el doble del primero por el segundo, más el cuadrado del segundo, que es el coseno al cuadrado. Ya tenemos la primera parte lista.",
+      "content": "<p><strong>Objetivo:</strong> Desarrollar la parte $(\\text{sen } \\alpha + \\cos \\alpha)^2$.</p><p>Recordamos la fórmula del cuadrado de una suma:</p><p>$$ (a + b)^2 = a^2 + 2ab + b^2 $$</p><p>En nuestro caso, asignamos los valores:</p><ul><li>$a = \\text{sen } \\alpha$</li><li>$b = \\cos \\alpha$</li></ul><p>Aplicamos la fórmula paso a paso:</p><p>$$ (\\text{sen } \\alpha + \\cos \\alpha)^2 = (\\text{sen } \\alpha)^2 + 2(\\text{sen } \\alpha)(\\cos \\alpha) + (\\cos \\alpha)^2 $$</p><p>Que, escrito con la notación habitual, queda así:</p><p>$$ \\text{sen}^2 \\alpha + 2 \\text{sen } \\alpha \\cos \\alpha + \\cos^2 \\alpha $$</p>",
+      "theory": "<strong>Notación trigonométrica:</strong> Recuerda que escribir $(\\text{sen } \\alpha)^2$ es exactamente lo mismo que escribir $\\text{sen}^2 \\alpha$. ¡Pero cuidado, no es lo mismo que $\\text{sen}(\\alpha^2)$!"
+    },
+    {
+      "title": "Reducción y aplicación de la identidad",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora metemos este desarrollo dentro de la expresión original. Fíjate que aparece un más dos seno por coseno y un menos dos seno por coseno. ¡Se anulan entre sí! Nos queda solo seno al cuadrado más coseno al cuadrado, que como bien sabemos, siempre suma uno.",
+      "content": "<p><strong>Objetivo:</strong> Sustituir el desarrollo en $E$, simplificar y hallar el resultado final.</p><p>Partimos de la expresión original:</p><p>$$ E = \\left[ (\\text{sen } \\alpha + \\cos \\alpha)^2 \\right] - 2 \\text{sen } \\alpha \\cos \\alpha $$</p><p>Sustituimos el corchete por el desarrollo obtenido en el paso anterior:</p><p>$$ E = \\left[ \\text{sen}^2 \\alpha + 2 \\text{sen } \\alpha \\cos \\alpha + \\cos^2 \\alpha \\right] - 2 \\text{sen } \\alpha \\cos \\alpha $$</p><p>Observamos que tenemos el término $+ 2 \\text{sen } \\alpha \\cos \\alpha$ y el término $- 2 \\text{sen } \\alpha \\cos \\alpha$. Al ser opuestos, se cancelan mutuamente (suman cero):</p><p>$$ E = \\text{sen}^2 \\alpha + \\cos^2 \\alpha $$</p><p>Por último, aplicamos la <strong>Identidad Trigonométrica Fundamental</strong> ($\\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1$):</p><p>$$ E = 1 $$</p>",
+      "checkpoint": {
+        "question": "¿De dónde proviene la identidad fundamental sen²(α) + cos²(α) = 1?",
+        "options": [
+          {
+            "text": "Es una regla inventada para simplificar cálculos en trigonometría.",
+            "correct": false,
+            "feedback": "Falso. En matemáticas rara vez se 'inventan' reglas sin base. Esta identidad tiene una demostración geométrica muy clara."
+          },
+          {
+            "text": "Se deriva directamente del Teorema de Pitágoras aplicado a un triángulo rectángulo en la circunferencia goniométrica de radio 1.",
+            "correct": true,
+            "feedback": "¡Correcto! En la circunferencia de radio 1, el seno es el cateto opuesto y el coseno el adyacente. Cateto² + Cateto² = Hipotenusa² (1² = 1)."
+          },
+          {
+            "text": "Proviene de dividir la tangente entre el coseno.",
+            "correct": false,
+            "feedback": "Falso. Esa operación no da como resultado 1 ni demuestra la identidad fundamental."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "En resumen, hemos convertido una expresión larga y compleja en el número uno combinando álgebra y trigonometría.",
+      "content": "<h3>Resumen del método:</h3><ol><li><strong>Identificar la estructura algebraica:</strong> Reconocimos un binomio al cuadrado: $(a+b)^2$.</li><li><strong>Desarrollar:</strong> Expandimos el binomio obteniendo tres términos: $\\text{sen}^2 \\alpha + 2\\text{sen }\\alpha\\cos\\alpha + \\cos^2 \\alpha$.</li><li><strong>Simplificar términos semejantes:</strong> El doble producto positivo generado se canceló con el término negativo ($-2\\text{sen }\\alpha\\cos\\alpha$) que nos daba el enunciado.</li><li><strong>Aplicar trigonometría:</strong> Reconocimos la identidad fundamental $\\text{sen}^2 \\alpha + \\cos^2 \\alpha$ y la sustituimos por su valor universal: $1$.</li></ol><p><strong>Resultado final:</strong> $E = 1$</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno. Intenta simplificar esta expresión. Es muy parecida, pero ahora tenemos una resta en el binomio al cuadrado. ¿Crees que el resultado cambiará?",
+      "content": "<p><strong>Ejercicio propuesto:</strong> Simplifica al máximo la siguiente expresión algebraica-trigonométrica siguiendo los mismos pasos que acabamos de aprender:</p><p>$$ M = (\\text{sen } \\alpha - \\cos \\alpha)^2 + 2 \\text{sen } \\alpha \\cos \\alpha $$</p><p><em>Pista: Recuerda cómo se desarrolla el cuadrado de una resta: $(a - b)^2 = a^2 - 2ab + b^2$. Hazlo en papel antes de ver la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Solución paso a paso:</strong></p><p>1. Desarrollamos el binomio (cuadrado de una resta):<br> $(\\text{sen } \\alpha - \\cos \\alpha)^2 = \\text{sen}^2 \\alpha - 2 \\text{sen } \\alpha \\cos \\alpha + \\cos^2 \\alpha$</p><p>2. Sustituimos en la expresión original $M$:<br> $M = \\left( \\text{sen}^2 \\alpha - 2 \\text{sen } \\alpha \\cos \\alpha + \\cos^2 \\alpha \\right) + 2 \\text{sen } \\alpha \\cos \\alpha$</p><p>3. Cancelamos los términos $- 2 \\text{sen } \\alpha \\cos \\alpha$ y $+ 2 \\text{sen } \\alpha \\cos \\alpha$:<br> $M = \\text{sen}^2 \\alpha + \\cos^2 \\alpha$</p><p>4. Aplicamos la identidad fundamental:<br> $M = \\mathbf{1}$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Subamos el nivel. En este caso vamos a usar otra herramienta del álgebra: la diferencia de cuadrados, y la mezclaremos con la misma identidad fundamental. Trata de simplificar esta fracción trigonométrica.",
+      "content": "<p><strong>Ejercicio propuesto:</strong> Simplifica al máximo la siguiente fracción algebraica-trigonométrica:</p><p>$$ F = \\frac{1 - \\text{sen}^2 x}{\\cos x} $$</p><p><em>Pista: Despeja $\\cos^2 x$ de la identidad trigonométrica fundamental ($\\text{sen}^2 x + \\cos^2 x = 1$) y observa el numerador de la fracción.</em></p>",
+      "practiceAnswer": "<p><strong>Solución paso a paso:</strong></p><p>1. Partimos de la identidad fundamental: $\\text{sen}^2 x + \\cos^2 x = 1$.</p><p>2. Despejamos el coseno al cuadrado pasando el seno al otro lado: $\\cos^2 x = 1 - \\text{sen}^2 x$.</p><p>3. ¡El lado derecho es exactamente el numerador de nuestra fracción! Sustituimos en $F$:<br> $F = \\frac{\\cos^2 x}{\\cos x}$</p><p>4. Simplificamos la fracción dividiendo (restamos exponentes):<br> $F = \\mathbf{\\cos x}$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:23:17.658Z",
+    "updatedAt": "2026-08-01T21:23:17.658Z",
+    "contentHash": "b89e049a18fa9694",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Trigonometría",
+    "subtopic": "Identidades trigonométricas",
+    "exerciseType": "Demostración analítica",
+    "protocols": [
+      "F"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Aplicar las relaciones trigonométricas fundamentales para simplificar expresiones.",
+      "Demostrar identidades transformando un solo miembro de la igualdad.",
+      "Identificar las restricciones del dominio en expresiones con funciones tangentes."
+    ],
+    "prerequisites": [
+      "Definición de tangente en función de seno y coseno.",
+      "Identidad trigonométrica fundamental (pitagórica).",
+      "Relación entre la secante al cuadrado y la tangente al cuadrado."
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:54:24.603Z",
+    "id": "demostracion-de-identidad-trigonometrica-fundamental-cdb35189"
+  },
+  "title": "Demostración de Identidad Trigonométrica Fundamental",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a demostrar una identidad trigonométrica. Para ello, analizaremos la expresión paso a paso utilizando las relaciones fundamentales que ya conocemos.",
+      "content": "<p><strong>Ejercicio 6:</strong> Demuestra de manera abstracta la siguiente igualdad utilizando las relaciones fundamentales de la trigonometría:</p><p>$$ \\tan^2 \\alpha \\cdot \\cos^2 \\alpha + \\frac{1}{1 + \\tan^2 \\alpha} = 1 $$</p>",
+      "hints": [
+        "En las demostraciones de identidades, es mejor partir del lado más complejo e intentar llegar al lado más sencillo.",
+        "Piensa en cómo puedes reescribir la tangente utilizando el seno y el coseno."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia será trabajar únicamente con la parte izquierda de la igualdad para transformarla en un uno. Antes, debemos asegurarnos de que la expresión tiene sentido matemáticamente, declarando su dominio.",
+      "content": "<p><strong>Objetivo:</strong> Demostrar que el miembro izquierdo (MI) es idénticamente igual al miembro derecho (MD), es decir, a $1$.</p><p><strong>Estrategia:</strong></p><ul><li>Trabajaremos <strong>solo sobre el miembro izquierdo</strong> para evitar asumir que la igualdad ya es cierta.</li><li><strong>Restricciones de dominio:</strong> La expresión contiene $\\tan \\alpha$, que es $\\frac{\\text{sen} \\alpha}{\\cos \\alpha}$. Por tanto, debemos exigir que $\\cos \\alpha \\neq 0$, lo que implica que $\\alpha \\neq \\frac{\\pi}{2} + k\\pi$ con $k \\in \\mathbb{Z}$. El denominador $1 + \\tan^2 \\alpha$ siempre es mayor o igual a $1$, así que no introduce nuevas restricciones.</li><li>Simplificaremos el primer sumando reescribiendo la tangente.</li><li>Simplificaremos el segundo sumando utilizando una identidad pitagórica derivada.</li></ul>"
+    },
+    {
+      "title": "Paso 1: Transformación del primer sumando",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Nos centramos en la primera parte de la expresión. Si cambiamos la tangente por seno entre coseno, veremos que los cosenos se cancelan.",
+      "content": "<p>Tomamos el primer término del miembro izquierdo:</p><p>$$ \\tan^2 \\alpha \\cdot \\cos^2 \\alpha $$</p><p>Sustituimos la definición de la tangente:</p><p>$$ \\left( \\frac{\\text{sen} \\alpha}{\\cos \\alpha} \\right)^2 \\cdot \\cos^2 \\alpha $$</p><p>Aplicamos el cuadrado a la fracción y multiplicamos:</p><p>$$ \\frac{\\text{sen}^2 \\alpha}{\\cos^2 \\alpha} \\cdot \\cos^2 \\alpha $$</p><p>Como estamos en el dominio donde $\\cos \\alpha \\neq 0$, podemos cancelar $\\cos^2 \\alpha$ del numerador y del denominador:</p><p>$$ = \\text{sen}^2 \\alpha $$</p>",
+      "theory": "<p><strong>Relación de la tangente:</strong> $\\tan \\alpha = \\frac{\\text{sen} \\alpha}{\\cos \\alpha}$</p>"
+    },
+    {
+      "title": "Paso 2: Transformación del segundo sumando",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora miramos la segunda parte, que es una fracción. El denominador es uno más tangente al cuadrado, que es una identidad directa que podemos sustituir.",
+      "content": "<p>Tomamos el segundo término de la expresión:</p><p>$$ \\frac{1}{1 + \\tan^2 \\alpha} $$</p><p>Recordemos que el denominador se puede expresar en términos del coseno aplicando la identidad de la secante al cuadrado o desarrollando la tangente:</p><p>$$ 1 + \\tan^2 \\alpha = 1 + \\frac{\\text{sen}^2 \\alpha}{\\cos^2 \\alpha} = \\frac(\\cos^2 \\alpha + \\text{sen}^2 \\alpha){\\cos^2 \\alpha} = \\frac{1}{\\cos^2 \\alpha} $$</p><p>Sustituimos este resultado en nuestra fracción original:</p><p>$$ \\frac{1}{\\frac{1}{\\cos^2 \\alpha}} $$</p><p>Por las propiedades de las fracciones (dividir por una fracción es multiplicar por su inversa):</p><p>$$ = \\cos^2 \\alpha $$</p>",
+      "checkpoint": {
+        "question": "¿De qué otra forma más directa se podría justificar que $1 + \\tan^2 \\alpha = \\frac{1}{\\cos^2 \\alpha}$?",
+        "options": [
+          {
+            "text": "Conociendo la identidad pitagórica derivada: $1 + \\tan^2 \\alpha = \\sec^2 \\alpha$, y sabiendo que $\\sec \\alpha = \\frac{1}{\\cos \\alpha}$.",
+            "correct": true,
+            "feedback": "¡Correcto! Es una de las tres identidades pitagóricas fundamentales y su uso directo ahorra pasos."
+          },
+          {
+            "text": "Multiplicando arriba y abajo por $\\cos^2 \\alpha$ directamente en la fracción original.",
+            "correct": false,
+            "feedback": "Aunque es una manipulación algebraica válida que lleva al mismo sitio, no es la justificación de una identidad previa, sino un método de cálculo."
+          },
+          {
+            "text": "Elevando al cuadrado la identidad fundamental $\\text{sen} \\alpha + \\cos \\alpha = 1$.",
+            "correct": false,
+            "feedback": "Cuidado, $\\text{sen} \\alpha + \\cos \\alpha = 1$ no es cierto en general, la identidad es $\\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1$."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Ensamblaje y conclusión",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Juntamos los dos resultados que hemos obtenido. Al sumarlos, nos encontramos de cara con la identidad trigonométrica más famosa, que demuestra que nuestro cálculo inicial es igual a uno.",
+      "content": "<p>Volvemos a nuestra expresión original del miembro izquierdo, que ahora está simplificada:</p><p>$$ \\underbrace{\\tan^2 \\alpha \\cdot \\cos^2 \\alpha}_{\\text{Paso 1}} + \\underbrace{\\frac{1}{1 + \\tan^2 \\alpha}}_{\\text{Paso 2}} $$</p><p>Sustituimos los resultados que hemos demostrado:</p><p>$$ \\text{sen}^2 \\alpha + \\cos^2 \\alpha $$</p><p>Por la identidad fundamental de la trigonometría (Teorema de Pitágoras en la circunferencia goniométrica), sabemos que para cualquier ángulo $\\alpha$ esto siempre suma $1$:</p><p>$$ \\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1 $$</p><p>Hemos transformado el miembro izquierdo hasta obtener exactamente el miembro derecho, completando así la demostración abstracta.</p>",
+      "theory": "<p><strong>Identidad Fundamental de la Trigonometría:</strong> $\\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1$</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los pasos de la demostración. Es vital recordar que transformamos solo un lado para llegar al otro.",
+      "content": "<ol><li><strong>Establecer el dominio:</strong> Aseguramos que $\\cos \\alpha \\neq 0$ para que exista la tangente.</li><li><strong>Simplificar el primer término:</strong> Convertimos $\\tan^2 \\alpha \\cdot \\cos^2 \\alpha$ en $\\text{sen}^2 \\alpha$.</li><li><strong>Simplificar el segundo término:</strong> Sustituimos $1 + \\tan^2 \\alpha$ por $\\frac{1}{\\cos^2 \\alpha}$, de modo que el inverso de la fracción nos da $\\cos^2 \\alpha$.</li><li><strong>Aplicar identidad fundamental:</strong> Sumamos los resultados, obteniendo $\\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1$, lo que demuestra la igualdad.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora inténtalo tú con una expresión análoga. Usa el mismo método trabajando con la cotangente.",
+      "content": "<p>Demuestra de manera abstracta la siguiente igualdad utilizando las relaciones fundamentales, asumiendo que $\\text{sen} \\alpha \\neq 0$:</p><p>$$ \\cot^2 \\alpha \\cdot \\text{sen}^2 \\alpha + \\frac{1}{1 + \\cot^2 \\alpha} = 1 $$</p><p><em>Intenta realizar la demostración transformando el miembro izquierdo antes de mirar el resultado final.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong></p><p>El primer término: $\\cot^2 \\alpha \\cdot \\text{sen}^2 \\alpha = \\left(\\frac{\\cos \\alpha}{\\text{sen} \\alpha}\\right)^2 \\cdot \\text{sen}^2 \\alpha = \\cos^2 \\alpha$.</p><p>El segundo término: $1 + \\cot^2 \\alpha = \\csc^2 \\alpha = \\frac{1}{\\text{sen}^2 \\alpha}$. Su inverso es $\\text{sen}^2 \\alpha$.</p><p>Sumando ambos: $\\cos^2 \\alpha + \\text{sen}^2 \\alpha = 1$, demostrando la igualdad.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Las identidades no solo sirven para ejercicios teóricos. En física, nos ayudan a simplificar las componentes de la energía o el movimiento.",
+      "content": "<p>La energía cinética de un proyectil de masa $m$ lanzado con una velocidad $v_0$ que tiene componentes horizontal $v_x = v_0 \\cos \\theta$ y vertical $v_y = v_0 \\text{sen} \\theta$ viene dada por:</p><p>$$ E_c = \\frac{1}{2}m(v_x)^2 + \\frac{1}{2}m(v_y)^2 $$</p><p>Demuestra usando propiedades trigonométricas que la energía cinética inicial no depende del ángulo de lanzamiento $\\theta$ si se expresa en función de la velocidad total $v_0$.</p><p><em>Sustituye las componentes y factoriza antes de mirar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong></p><p>Sustituimos las componentes: $E_c = \\frac{1}{2}m(v_0 \\cos \\theta)^2 + \\frac{1}{2}m(v_0 \\text{sen} \\theta)^2$</p><p>Elevamos al cuadrado: $E_c = \\frac{1}{2}m(v_0^2 \\cos^2 \\theta) + \\frac{1}{2}m(v_0^2 \\text{sen}^2 \\theta)$</p><p>Extraemos factor común $\\frac{1}{2}mv_0^2$:</p><p>$$ E_c = \\frac{1}{2}mv_0^2 (\\cos^2 \\theta + \\text{sen}^2 \\theta) $$</p><p>Como $\\cos^2 \\theta + \\text{sen}^2 \\theta = 1$, la expresión se simplifica a $E_c = \\frac{1}{2}mv_0^2$, demostrando que es independiente de $\\theta$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:54:32.830Z",
+    "updatedAt": "2026-08-01T21:54:32.830Z",
+    "contentHash": "9e45e9299bcba5c7",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Trigonometría",
+    "subtopic": "Identidades y ecuaciones",
+    "exerciseType": "Demostración algebraica",
+    "protocols": [
+      "C",
+      "F"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Aplicar productos notables y factorizaciones en expresiones trigonométricas.",
+      "Vincular la suma de seno y coseno con su producto mediante la identidad fundamental.",
+      "Demostrar identidades algebraicas combinando sustitución de variables y propiedades trigonométricas."
+    ],
+    "prerequisites": [
+      "Identidad trigonométrica fundamental.",
+      "Desarrollo del cuadrado de un binomio.",
+      "Factorización de la suma de cubos."
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:55:20.396Z",
+    "id": "demostracion-de-la-suma-de-cubos-trigonometricos-3b3421d6"
+  },
+  "title": "Demostración de la Suma de Cubos Trigonométricos",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leamos detenidamente el enunciado. Nos dan una condición inicial que relaciona la suma del seno y el coseno con un parámetro, y debemos demostrar a qué equivale la suma de sus cubos. Además, nos dan una excelente sugerencia para arrancar.",
+      "content": "<p><strong>Ejercicio 10: Problema teórico-analítico:</strong> Sabiendo de antemano que se verifica de forma estricta la igualdad lineal $\\text{sen} x + \\cos x = m$, demuestra analíticamente que la suma de sus cubos correspondientes cumple con la siguiente fórmula dada:</p><p>$$ \\text{sen}^3 x + \\cos^3 x = \\frac{3m - m^3}{2} $$</p><p>*(Sugerencia: utiliza la identidad del cubo de un binomio o la factorización de una suma de cubos combinada con las relaciones fundamentales).*</p>",
+      "hints": [
+        "Identifica los dos caminos sugeridos: puedes elevar la igualdad inicial al cubo, o bien, factorizar directamente la expresión que queremos demostrar.",
+        "En ambos caminos necesitarás averiguar cuánto vale el producto $\\text{sen} x \\cdot \\cos x$ en función de $m$."
+      ]
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Vamos a planificar nuestra estrategia. Seguiremos la ruta de la factorización de la suma de cubos. Esto requerirá conocer el producto del seno por el coseno, algo que podemos averiguar si jugamos inteligentemente con nuestra ecuación inicial.",
+      "content": "<p><strong>Objetivo:</strong> Llegar a la expresión $\\frac{3m - m^3}{2}$ a partir de $\\text{sen}^3 x + \\cos^3 x$, usando la condición $\\text{sen} x + \\cos x = m$.</p><p><strong>Estrategia justificada:</strong></p><ul><li><strong>Paso 1:</strong> La suma de cubos se factoriza como $(a+b)(a^2 - ab + b^2)$. Si $a = \\text{sen} x$ y $b = \\cos x$, el primer factor será directamente $m$.</li><li><strong>Paso 2:</strong> El segundo factor contiene el término mixto $\\text{sen} x \\cdot \\cos x$. Necesitamos hallarlo. Lo conseguiremos elevando al cuadrado la condición original $(\\text{sen} x + \\cos x)^2 = m^2$ y usando la identidad fundamental.</li><li><strong>Paso 3:</strong> Sustituiremos todos los bloques conocidos (la suma y el producto) en la factorización inicial y realizaremos las operaciones algebraicas hasta alcanzar la fórmula deseada.</li></ul>"
+    },
+    {
+      "title": "Paso 1: Hallar el producto del seno y el coseno",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Este es un truco fundamental en trigonometría. Cuando conoces la suma del seno y el coseno, siempre puedes descubrir su producto elevando al cuadrado, gracias a que los cuadrados suman uno.",
+      "content": "<p>Partimos de la condición dada en el enunciado:</p><p>$$ \\text{sen} x + \\cos x = m $$</p><p>Para hacer aparecer el producto $\\text{sen} x \\cos x$, elevamos ambos miembros al cuadrado:</p><p>$$ (\\text{sen} x + \\cos x)^2 = m^2 $$</p><p>Desarrollamos el cuadrado del binomio (cuadrado del primero, más doble del primero por el segundo, más cuadrado del segundo):</p><p>$$ \\text{sen}^2 x + 2\\text{sen} x \\cos x + \\cos^2 x = m^2 $$</p><p>Agrupamos los términos al cuadrado para aplicar la identidad fundamental de la trigonometría ($\\text{sen}^2 x + \\cos^2 x = 1$):</p><p>$$ 1 + 2\\text{sen} x \\cos x = m^2 $$</p><p>Finalmente, despejamos el producto de las funciones trigonométricas:</p><p>$$ 2\\text{sen} x \\cos x = m^2 - 1 \\implies \\text{sen} x \\cos x = \\frac{m^2 - 1}{2} $$</p><p>Guardaremos esta valiosa expresión para usarla en breve.</p>",
+      "theory": "<p><strong>Cuadrado de un binomio:</strong> $(a + b)^2 = a^2 + 2ab + b^2$</p><p><strong>Identidad pitagórica fundamental:</strong> $\\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1$</p>"
+    },
+    {
+      "title": "Paso 2: Factorizar la suma de cubos",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora tomamos la expresión a la que queremos dar forma y le aplicamos la fórmula de factorización de una suma de cubos. Verás cómo las piezas del rompecabezas empiezan a encajar.",
+      "content": "<p>Tomamos la expresión que deseamos demostrar:</p><p>$$ \\text{sen}^3 x + \\cos^3 x $$</p><p>Aplicamos la identidad de factorización para una suma de cubos ($a^3 + b^3$), donde $a = \\text{sen} x$ y $b = \\cos x$:</p><p>$$ \\text{sen}^3 x + \\cos^3 x = (\\text{sen} x + \\cos x)(\\text{sen}^2 x - \\text{sen} x \\cos x + \\cos^2 x) $$</p><p>Al igual que en el paso anterior, dentro del segundo paréntesis reconocemos la suma de los cuadrados del seno y el coseno, que vale $1$:</p><p>$$ = (\\text{sen} x + \\cos x)(1 - \\text{sen} x \\cos x) $$</p><p>Ahora tenemos nuestra expresión original reducida a dos bloques básicos: la <strong>suma</strong> de las funciones y su <strong>producto</strong>.</p>",
+      "theory": "<p><strong>Factorización de suma de cubos:</strong> $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$</p>",
+      "checkpoint": {
+        "question": "En la factorización de $a^3 + b^3$, el segundo factor es $(a^2 - ab + b^2)$. ¿Por qué el término central es negativo ($-ab$) y no positivo ($+2ab$) como en el binomio al cuadrado?",
+        "options": [
+          {
+            "text": "Porque al multiplicar $(a+b)(a^2 - ab + b^2)$, los términos mixtos $a^2b$ y $ab^2$ se deben cancelar exactamente para que solo queden $a^3 + b^3$.",
+            "correct": true,
+            "feedback": "¡Exacto! El signo negativo garantiza que, al distribuir, los cruces se anulen, demostrando que la fórmula es correcta."
+          },
+          {
+            "text": "Es simplemente una convención para diferenciarlo del cuadrado de un binomio, podría ser positivo si quisiéramos.",
+            "correct": false,
+            "feedback": "Falso. En matemáticas estas fórmulas no son convenciones arbitrarias; surgen de desarrollar el producto real polinómico."
+          },
+          {
+            "text": "Porque las funciones trigonométricas siempre alternan signos en sus desarrollos polinómicos.",
+            "correct": false,
+            "feedback": "Incorrecto. Esta es una regla del álgebra de polinomios (válida para cualquier número o variable), no es exclusiva ni dependiente de la trigonometría."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Sustitución y simplificación final",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Con todos los bloques listos, solo queda sustituir nuestros hallazgos iniciales en la expresión factorizada y realizar unas sencillas operaciones con fracciones para terminar la demostración.",
+      "content": "<p>Rescatamos la expresión factorizada que acabamos de obtener:</p><p>$$ (\\text{sen} x + \\cos x)(1 - \\text{sen} x \\cos x) $$</p><p>Sustituimos las piezas que ya conocemos:</p><ul><li>Suma: $\\text{sen} x + \\cos x = m$ (Dato del problema)</li><li>Producto: $\\text{sen} x \\cos x = \\frac{m^2 - 1}{2}$ (Calculado en el Paso 1)</li></ul><p>Al sustituir, obtenemos una expresión dependiente exclusivamente del parámetro $m$:</p><p>$$ = m \\cdot \\left( 1 - \\frac{m^2 - 1}{2} \\right) $$</p><p>Reducimos a común denominador dentro del paréntesis:</p><p>$$ = m \\cdot \\left( \\frac{2}{2} - \\frac{m^2 - 1}{2} \\right) = m \\cdot \\left( \\frac{2 - (m^2 - 1)}{2} \\right) $$</p><p>Simplificamos el numerador, prestando atención al signo negativo que afecta a todo el binomio:</p><p>$$ = m \\cdot \\left( \\frac{2 - m^2 + 1}{2} \\right) = m \\cdot \\left( \\frac{3 - m^2}{2} \\right) $$</p><p>Finalmente, multiplicamos la $m$ exterior por el numerador:</p><p>$$ = \\frac{3m - m^3}{2} $$</p><p>La demostración analítica ha concluido con éxito.</p>",
+      "warning": "<p>Cuidado extremo al restar una fracción: el signo menos delante de $\\frac{m^2 - 1}{2}$ cambia el signo de TODOS los términos del numerador. Escribir $2 - m^2 - 1$ es un error muy común; lo correcto es $2 - m^2 + 1$.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los tres pasos maestros que transformaron nuestra ecuación inicial en el resultado pedido.",
+      "content": "<ol><li><strong>Cálculo del producto:</strong> Elevamos la condición inicial al cuadrado, $(\\text{sen} x + \\cos x)^2 = m^2$, para usar la identidad pitagórica y despejar $\\text{sen} x \\cos x = \\frac{m^2 - 1}{2}$.</li><li><strong>Transformación del objetivo:</strong> Utilizamos álgebra básica para factorizar la suma de cubos: $\\text{sen}^3 x + \\cos^3 x = (\\text{sen} x + \\cos x)(1 - \\text{sen} x \\cos x)$.</li><li><strong>Ensamblaje y álgebra final:</strong> Sustituimos $m$ y $\\frac{m^2 - 1}{2}$ en la factorización, simplificando cuidadosamente las fracciones hasta obtener $\\frac{3m - m^3}{2}$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu momento. ¿Qué ocurre si en vez de suma tenemos resta? Emplea exactamente la misma lógica: averigua el producto elevando al cuadrado y factoriza la resta de cubos.",
+      "content": "<p>Sabiendo que se verifica la igualdad lineal $\\text{sen} x - \\cos x = p$, demuestra analíticamente a qué expresión en función de $p$ equivale la resta de sus cubos:</p><p>$$ \\text{sen}^3 x - \\cos^3 x $$</p><p>*(Sugerencia: recuerda la factorización de una diferencia de cubos: $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$).*</p><p><em>Desarrolla los tres pasos en tu papel antes de verificar la respuesta final.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong></p><p>1. Producto: $(\\text{sen} x - \\cos x)^2 = p^2 \\implies 1 - 2\\text{sen} x \\cos x = p^2 \\implies \\text{sen} x \\cos x = \\frac{1 - p^2}{2}$.</p><p>2. Factorización: $\\text{sen}^3 x - \\cos^3 x = (\\text{sen} x - \\cos x)(1 + \\text{sen} x \\cos x)$.</p><p>3. Sustitución: $p \\cdot \\left( 1 + \\frac{1 - p^2}{2} \\right) = p \\cdot \\left( \\frac{2 + 1 - p^2}{2} \\right) = \\frac{3p - p^3}{2}$.</p><p><em>(¡Curiosamente, la estructura algebraica final es idéntica a la suma!)</em></p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "La técnica que acabamos de aprender no es exclusiva de la trigonometría. Si dominas la suma y el producto de dos términos, puedes resolver problemas en polinomios, variables abstractas o incluso física pura.",
+      "content": "<p>En el diseño de circuitos y sistemas resonantes, a menudo aparece la variable $z$ combinada con su inverso. Sabemos que un circuito cumple la condición de equilibrio:</p><p>$$ z + \\frac{1}{z} = k $$</p><p>Utilizando un razonamiento algebraico análogo al que empleaste con las funciones trigonométricas, halla en función de $k$ el valor de la siguiente expresión de tercer orden:</p><p>$$ z^3 + \\frac{1}{z^3} $$</p><p><em>Piensa qué papel juega aquí el producto de los dos términos antes de aplicar la factorización de cubos.</em></p>",
+      "practiceAnswer": "<p><strong>Resultado final:</strong></p><p>El producto de los términos es inmediato: $z \\cdot \\frac{1}{z} = 1$ (no necesitamos elevar al cuadrado para hallarlo, a diferencia del seno y coseno).</p><p>Factorizamos la suma de cubos con $a = z$ y $b = \\frac{1}{z}$:</p><p>$$ z^3 + \\frac{1}{z^3} = \\left( z + \\frac{1}{z} \\right) \\left( z^2 - z \\cdot \\frac{1}{z} + \\frac{1}{z^2} \\right) = k \\left( z^2 - 1 + \\frac{1}{z^2} \\right) $$</p><p>Necesitamos la suma de los cuadrados, $z^2 + \\frac{1}{z^2}$. Elevamos la condición inicial al cuadrado:<br>$(z + \\frac{1}{z})^2 = k^2 \\implies z^2 + 2(z)(\\frac{1}{z}) + \\frac{1}{z^2} = k^2 \\implies z^2 + 2 + \\frac{1}{z^2} = k^2 \\implies z^2 + \\frac{1}{z^2} = k^2 - 2$</p><p>Sustituimos en nuestra factorización:<br>$$ k \\cdot ((k^2 - 2) - 1) = k \\cdot (k^2 - 3) = k^3 - 3k $$</p><p>La expresión equivalente es $k^3 - 3k$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:55:25.077Z",
+    "updatedAt": "2026-08-01T21:55:25.077Z",
+    "contentHash": "52b55264460b6eee",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
