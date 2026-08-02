@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "2_Bachillerato",
+    "topic": "Análisis",
+    "subtopic": "Aplicaciones de la derivada",
+    "exerciseType": "Cálculo de rectas tangente y normal",
+    "protocols": [
+      "B",
+      "H"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Calcular la derivada de funciones racionales usando la regla del cociente",
+      "Evaluar la derivada en un punto para obtener la pendiente de la recta tangente",
+      "Deducir la ecuación de la recta normal manejando casos de pendiente nula (rectas verticales)"
+    ],
+    "prerequisites": [
+      "Reglas de derivación básicas",
+      "Ecuación punto-pendiente de la recta",
+      "Relación entre las pendientes de rectas perpendiculares"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-02T06:46:31.588Z",
+    "id": "calculo-de-rectas-tangente-y-normal-en-el-origen-ce8792ea"
+  },
+  "title": "Cálculo de Rectas Tangente y Normal en el Origen",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a leer detenidamente el enunciado. Nos piden hallar las ecuaciones de dos rectas, la tangente y la normal, a una curva concreta en un punto específico.",
+      "content": "<p><strong>C-3.-</strong> Calcúlense las ecuaciones de las rectas tangente y normal a la gráfica de la función $$f(x) = \\frac{x^2}{x^2+1}$$ en el punto $$x = 0$$. <strong>(1 punto)</strong></p>"
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para encontrar estas rectas, primero necesitamos el punto completo de contacto. Luego, usando derivadas, encontraremos la inclinación de la recta tangente. Con ella, por perpendicularidad, deduciremos la de la normal.",
+      "content": "<p>Para resolver este problema estructuraremos nuestro trabajo en cuatro pasos principales:</p><ol><li><strong>Encontrar el punto de tangencia:</strong> Calcularemos la coordenada $$y$$ evaluando la función en $$x=0$$.</li><li><strong>Calcular la función derivada $$f'(x)$$:</strong> Utilizaremos la regla de derivación de un cociente.</li><li><strong>Hallar la recta tangente:</strong> Evaluaremos la derivada en $$x=0$$ para obtener la pendiente $$m_t$$ y aplicaremos la ecuación punto-pendiente.</li><li><strong>Hallar la recta normal:</strong> Sabiendo que es perpendicular a la tangente ($$m_n = -\\frac{1}{m_t}$$), determinaremos su ecuación. Tendremos especial cuidado si la pendiente de la tangente resulta ser nula.</li></ol><p><strong>Aplicación real:</strong> La recta normal a una superficie es fundamental en física, por ejemplo en óptica, para determinar cómo se refracta un rayo de luz al atravesar una lente según la Ley de Snell, midiéndose los ángulos respecto a esta línea normal.</p>"
+    },
+    {
+      "title": "Paso 1: Punto de tangencia",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Empezamos buscando la coordenada vertical del punto. Simplemente sustituimos la equis por cero en la función original.",
+      "content": "<p>El enunciado nos proporciona la abscisa del punto, $$x_0 = 0$$. Para poder usar la ecuación punto-pendiente, necesitamos conocer la ordenada correspondiente, $$y_0$$.</p><p>Sustituimos $$x = 0$$ en la función original $$f(x)$$:$$y_0 = f(0) = \\frac{0^2}{0^2 + 1} = \\frac{0}{1} = 0$$</p><p>Por lo tanto, el punto de tangencia es el origen de coordenadas, $$P(0, 0)$$. Ambas rectas, tangente y normal, deberán pasar por este punto.</p>",
+      "theory": "<p><strong>Punto de la gráfica:</strong> Todo punto $$(x_0, y_0)$$ perteneciente a la gráfica de una función cumple que $$y_0 = f(x_0)$$.</p>"
+    },
+    {
+      "title": "Paso 2: Derivada de la función",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora derivamos la función. Como es una fracción, aplicamos la regla del cociente: derivada del de arriba por el de abajo sin derivar, menos el de arriba por la derivada del de abajo, todo entre el de abajo al cuadrado.",
+      "content": "<p>Para hallar la pendiente, primero necesitamos la función derivada $$f'(x)$$. Dado que $$f(x)$$ es un cociente de polinomios, aplicamos la regla correspondiente:</p><p>Sean $$u = x^2$$ y $$v = x^2+1$$. Sus derivadas son $$u' = 2x$$ y $$v' = 2x$$.</p><p>$$f'(x) = \\frac{u'v - uv'}{v^2} = \\frac{(2x)(x^2 + 1) - (x^2)(2x)}{(x^2 + 1)^2}$$</p><p>Desarrollamos el numerador para simplificar:$$f'(x) = \\frac{2x^3 + 2x - 2x^3}{(x^2 + 1)^2} = \\frac{2x}{(x^2 + 1)^2}$$</p><p>Esta expresión nos dará la pendiente de la recta tangente en cualquier punto $$x$$.</p>",
+      "theory": "<p><strong>Regla del cociente:</strong> Si $$h(x) = \\frac{u(x)}{v(x)}$$, entonces su derivada es $$h'(x) = \\frac{u'(x)v(x) - u(x)v'(x)}{[v(x)]^2}$$, siempre que $$v(x) \\neq 0$$.</p>"
+    },
+    {
+      "title": "Paso 3: Ecuación de la recta tangente",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Evaluamos la derivada en cero. El resultado nos da cero, lo que significa que nuestra recta tangente no tiene inclinación: es completamente horizontal. Como pasa por el origen, coincide con el eje equis.",
+      "content": "<p>Calculamos la pendiente de la recta tangente ($$m_t$$) evaluando la derivada en el punto $$x_0 = 0$$:$$m_t = f'(0) = \\frac{2(0)}{(0^2 + 1)^2} = \\frac{0}{1^2} = 0$$</p><p>Una pendiente nula indica que la recta tangente es <strong>horizontal</strong>.</p><p>Ahora construimos la ecuación usando la forma punto-pendiente con $$P(0,0)$$ y $$m_t = 0$$:$$y - y_0 = m_t(x - x_0)$$$$y - 0 = 0 \\cdot (x - 0)$$$$y = 0$$</p><p>La ecuación de la recta tangente es el propio eje de abscisas.</p>",
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a' /><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='150' x2='400' y2='150' /><line x1='200' y1='0' x2='200' y2='300' /></g><text x='380' y='140' fill='#fbbf24' font-family='sans-serif' font-size='14'>X</text><text x='210' y='20' fill='#fbbf24' font-family='sans-serif' font-size='14'>Y</text><circle cx='200' cy='150' r='5' fill='#fbbf24' /><text x='215' y='165' fill='#fbbf24' font-family='sans-serif' font-size='14'>P(0,0)</text><line x1='50' y1='150' x2='350' y2='150' stroke='#38bdf8' stroke-width='3' /><text x='250' y='140' fill='#38bdf8' font-family='sans-serif' font-size='14'>Tangente: y=0</text></svg>",
+      "checkpoint": {
+        "question": "¿Qué nos dice geométricamente que la pendiente de la recta tangente sea exactamente 0?",
+        "options": [
+          {
+            "text": "Que la función alcanza un extremo relativo o un punto de inflexión de tangente horizontal en ese punto.",
+            "correct": true,
+            "feedback": "Correcto. Una pendiente 0 significa que la tangente es paralela al eje X, condición necesaria (aunque no suficiente) para que haya un máximo o mínimo local."
+          },
+          {
+            "text": "Que la función corta al eje X en ese punto.",
+            "correct": false,
+            "feedback": "No exactamente. Que corte al eje X depende de que f(a)=0, no de f'(a)=0."
+          },
+          {
+            "text": "Que la función no es derivable en ese punto.",
+            "correct": false,
+            "feedback": "Si la pendiente es 0, la derivada es un número real, por lo tanto SÍ es derivable."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 4: Ecuación de la recta normal",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "La normal debe ser perpendicular a la horizontal. Esto nos da una recta vertical. Matemáticamente vemos que su pendiente tendería a infinito. Sabiendo que pasa por el cero-cero, la recta es el eje y.",
+      "content": "<p>La recta normal es perpendicular a la tangente. Su pendiente, $$m_n$$, cumple que $$m_n = -\\frac{1}{m_t}$$.</p><p>Como hemos visto que $$m_t = 0$$, calcular $$m_n$$ nos lleva a:$$m_n = -\\frac{1}{0}$$</p><p>Esta división no está definida, lo que indica que la pendiente es \"infinita\". Geométricamente, una recta perpendicular a una recta horizontal ($$y=0$$) es obligatoriamente una recta <strong>vertical</strong>.</p><p>Todas las rectas verticales tienen la forma $$x = k$$. Como nuestra recta normal debe pasar por el punto $$P(0, 0)$$, la abscisa debe ser 0.</p><p>Por lo tanto, la ecuación de la recta normal es:$$x = 0$$</p>",
+      "warning": "<p>Cuando $$m_t = 0$$, no intentes aplicar la fórmula $$y - y_0 = (-\\frac{1}{m_t})(x - x_0)$$ mecánicamente, ya que obtendrás una división por cero inválida. Deduce su naturaleza geométrica.</p>",
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a' /><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='150' x2='400' y2='150' /><line x1='200' y1='0' x2='200' y2='300' /></g><circle cx='200' cy='150' r='5' fill='#fbbf24' /><line x1='50' y1='150' x2='350' y2='150' stroke='#38bdf8' stroke-width='2' stroke-dasharray='5,5' opacity='0.7' /><line x1='200' y1='20' x2='200' y2='280' stroke='#f43f5e' stroke-width='3' /><text x='215' y='60' fill='#f43f5e' font-family='sans-serif' font-size='14'>Normal: x=0</text></svg>"
+    },
+    {
+      "title": "Representación global y comprobación",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Vamos a dibujar todo junto. Observamos la función en azul claro, es como una campana invertida. En el punto inferior, el origen, la tangente naranja descansa plana sobre el eje equis, y la normal roja la atraviesa verticalmente formando un ángulo recto.",
+      "content": "<p>Al representar la función $$f(x) = \\frac{x^2}{x^2+1}$$ observamos que es una función siempre no negativa (ya que numerador y denominador son positivos o cero) con un mínimo en el origen.</p><p>Comprobamos gráficamente nuestros resultados analíticos:</p><ul><li><strong>Tangente ($$y=0$$):</strong> Toca a la curva suavemente en el punto más bajo. Coincide con el eje X.</li><li><strong>Normal ($$x=0$$):</strong> Corta perpendicularmente a la curva en ese mismo punto. Coincide con el eje Y.</li></ul>",
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a' /><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='225' x2='400' y2='225' /><line x1='200' y1='0' x2='200' y2='300' /></g><polyline points='0,154.4 20,155 40,156 60,158.4 80,161.7 100,166.5 120,173 140,182 160,195 180,211.5 200,225 220,211.5 240,195 260,182 280,173 300,166.5 320,161.7 340,158.4 360,156 380,155 400,154.4' fill='none' stroke='#a78bfa' stroke-width='3' /><text x='290' y='155' fill='#a78bfa' font-family='sans-serif' font-size='14'>f(x)</text><line x1='50' y1='225' x2='350' y2='225' stroke='#38bdf8' stroke-width='2' /><text x='300' y='240' fill='#38bdf8' font-family='sans-serif' font-size='14'>y=0</text><line x1='200' y1='50' x2='200' y2='280' stroke='#f43f5e' stroke-width='2' /><text x='210' y='70' fill='#f43f5e' font-family='sans-serif' font-size='14'>x=0</text><circle cx='200' cy='225' r='5' fill='#fbbf24' /></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos la hoja de ruta. Evaluamos el punto, derivamos, sustituimos para sacar pendientes y armamos las ecuaciones apoyándonos en la geometría si salen casos especiales.",
+      "content": "<p>El procedimiento general seguido es aplicable a cualquier función racional:</p><ol><li><strong>Obtención del punto:</strong> Sustituimos $$x_0 = 0$$ en $$f(x)$$ obteniendo $$P(0,0)$$.</li><li><strong>Derivación:</strong> Aplicamos la regla del cociente, logrando $$f'(x) = \\frac{2x}{(x^2+1)^2}$$.</li><li><strong>Ecuación de la tangente:</strong> Evaluamos $$f'(0) = 0$$. Una pendiente 0 con paso por el origen nos da directamente $$y = 0$$.</li><li><strong>Ecuación de la normal:</strong> Reconocemos que la normal a una recta horizontal es vertical. Pasando por el origen, su ecuación es $$x = 0$$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora te toca a ti. Intenta aplicar los mismos pasos con esta otra función similar antes de mirar la solución.",
+      "content": "<p>Aplica el mismo procedimiento paso a paso para resolver este problema análogo:</p><p>Calcúlense las ecuaciones de las rectas tangente y normal a la gráfica de la función $$g(x) = \\frac{2x}{x^2+4}$$ en el punto $$x = 0$$.</p><p><em>Intenta calcular la derivada y las pendientes antes de desplegar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>Punto de tangencia:</strong> $$P(0, 0)$$</p><p><strong>Derivada:</strong> $$g'(x) = \\frac{2(x^2+4) - 2x(2x)}{(x^2+4)^2} = \\frac{8 - 2x^2}{(x^2+4)^2}$$</p><p><strong>Pendiente tangente:</strong> $$m_t = g'(0) = \\frac{8}{16} = \\frac{1}{2}$$</p><p><strong>Recta tangente:</strong> $$y - 0 = \\frac{1}{2}(x - 0) \\implies y = \\frac{1}{2}x$$</p><p><strong>Pendiente normal:</strong> $$m_n = -\\frac{1}{m_t} = -2$$</p><p><strong>Recta normal:</strong> $$y - 0 = -2(x - 0) \\implies y = -2x$$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Llevemos esto a un contexto diferente. Imagina que diseñas una rampa y necesitas calcular el soporte perpendicular exacto usando este mismo concepto geométrico.",
+      "content": "<p>El perfil de un terreno se modeliza mediante la parábola $$h(x) = 2 - \\frac{1}{2}x^2$$ (en metros). Un ingeniero desea colocar un mástil vertical exactamente en el punto donde $$x = 2$$. Para que sea estable, el diseño requiere añadir un cable tensor que sea <strong>perpendicular al perfil del terreno</strong> en ese punto y que llegue hasta el eje del suelo ($$y=0$$).</p><p>¿Cuál será la ecuación de la recta sobre la que descansa este cable tensor?</p>",
+      "practiceAnswer": "<p><strong>Punto de anclaje:</strong> Evaluamos $$h(2) = 2 - \\frac{1}{2}(2)^2 = 0$$. El punto es $$P(2,0)$$.</p><p><strong>Pendiente del perfil (tangente):</strong> Derivamos $$h'(x) = -x$$. En $$x=2$$, $$m_t = -2$$.</p><p><strong>Pendiente del tensor (normal):</strong> Debe ser perpendicular, por tanto $$m_n = -\\frac{1}{-2} = \\frac{1}{2}$$.</p><p><strong>Ecuación de la recta del cable:</strong> Usando $$P(2,0)$$ y $$m_n = \\frac{1}{2}$$:<br>$$y - 0 = \\frac{1}{2}(x - 2) \\implies y = \\frac{1}{2}x - 1$$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-02T06:46:48.967Z",
+    "updatedAt": "2026-08-02T06:46:48.967Z",
+    "contentHash": "709fb7124cbaac9c",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
