@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Trigonometría",
+    "subtopic": "Resolución de triángulos rectángulos",
+    "exerciseType": "Problema aplicado de distancias y ángulos",
+    "protocols": [
+      "F"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 30,
+    "learningObjectives": [
+      "Interpretar correctamente el concepto de ángulo de depresión y relacionarlo con el ángulo de elevación.",
+      "Descomponer un problema complejo en dos triángulos rectángulos independientes.",
+      "Utilizar la razón tangente para hallar catetos desconocidos y combinar resultados exactos."
+    ],
+    "prerequisites": [
+      "Razones trigonométricas básicas (seno, coseno, tangente).",
+      "Concepto de ángulos alternos internos entre paralelas.",
+      "Resolución de ecuaciones sencillas con razones trigonométricas."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:35:00.399Z",
+    "id": "distancia-entre-dos-barcos-desde-un-faro-b3bd4b9f"
+  },
+  "title": "Distancia entre dos barcos desde un faro",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leamos atentamente el problema. Tenemos un observador en lo alto de un faro, mirando hacia abajo a dos barcos. Nos dan la altura y los ángulos, y nos piden la distancia entre los barcos.",
+      "content": "<p><strong>Ejercicio 10: Problema aplicado:</strong> Desde la parte superior de un faro marino situado en un acantilado a una altura de $45$ metros sobre el nivel del mar, se divisan dos barcos pesqueros que se encuentran alineados con la base del faro. Los ángulos de depresión medidos por el operario son de $25^\\circ$ y $40^\\circ$ respectivamente. Calcula la distancia exacta que separa a ambos barcos.</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestra estrategia será imaginar dos triángulos rectángulos grandes. Calcularemos a qué distancia de la base está cada barco por separado y, restando esas distancias, sabremos cuánto los separa.",
+      "content": "<h3>Estrategia de resolución</h3><ol><li><strong>Identificar datos:</strong> La altura desde el nivel del mar es $h = 45\\text{ m}$. Tenemos dos ángulos de depresión: $25^\\circ$ para el barco más lejano y $40^\\circ$ para el más cercano.</li><li><strong>Modelar geométricamente:</strong> Construiremos dos triángulos rectángulos que comparten el mismo cateto vertical (la altura del faro).</li><li><strong>Ángulos de elevación:</strong> Convertiremos los ángulos de depresión observados desde arriba en ángulos de elevación medidos desde los barcos.</li><li><strong>Cálculo individual:</strong> Usaremos la tangente en cada triángulo para hallar la distancia horizontal desde el faro hasta cada barco.</li><li><strong>Cálculo final:</strong> Restaremos la distancia menor de la mayor para obtener la separación exacta entre los barcos.</li></ol><p><em>Aplicación real:</em> Este principio, basado en la triangulación, es el fundamento de la topografía, la navegación costera tradicional y los sistemas de telémetros ópticos utilizados antes de la invención del radar o el GPS.</p>"
+    },
+    {
+      "title": "Paso 1: Modelado y ángulos de depresión",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Es crucial entender qué es un ángulo de depresión. Se mide desde la línea horizontal hacia abajo. Por geometría, ese ángulo es exactamente el mismo que si alguien en el barco mirara hacia arriba al faro.",
+      "content": "<p>Un <strong>ángulo de depresión</strong> se mide desde una línea horizontal imaginaria en el ojo del observador hacia abajo. Esto suele generar confusión.</p><p>Dado que la línea horizontal visual del operario en el faro es paralela a la superficie del mar, podemos aplicar la propiedad de los ángulos entre rectas paralelas: el <em>ángulo de depresión</em> observado desde arriba es igual al <em>ángulo de elevación</em> si observáramos desde el barco hacia la cima del faro (son ángulos alternos internos).</p><ul><li>Barco $A$ (más cercano): Ángulo de elevación $\\alpha = 40^\\circ$.</li><li>Barco $B$ (más lejano): Ángulo de elevación $\\beta = 25^\\circ$.</li></ul><p>Nuestro objetivo es hallar las distancias horizontales $x_A$ y $x_B$.</p>",
+      "warning": "El ángulo menor ($25^\\circ$) corresponde siempre al objeto que está más lejos. Cuanto más lejos miras, menos tienes que inclinar la vista hacia abajo.",
+      "visual": "<svg viewBox='0 0 400 200' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><line x1='50' y1='150' x2='380' y2='150' stroke='#3b82f6' stroke-width='3'/><line x1='50' y1='150' x2='50' y2='30' stroke='#94a3b8' stroke-width='4'/><line x1='50' y1='30' x2='380' y2='30' stroke='#94a3b8' stroke-width='1.5' stroke-dasharray='5,5'/><line x1='50' y1='30' x2='200' y2='150' stroke='#ef4444' stroke-width='2'/><line x1='50' y1='30' x2='350' y2='150' stroke='#fbbf24' stroke-width='2'/><text x='15' y='95' fill='#ffffff' font-family='sans-serif' font-size='14'>45 m</text><path d='M 100 30 A 50 50 0 0 0 85 57' fill='none' stroke='#ef4444' stroke-width='1.5'/><text x='85' y='50' fill='#ef4444' font-family='sans-serif' font-size='12'>40°</text><path d='M 120 30 A 70 70 0 0 0 115 48' fill='none' stroke='#fbbf24' stroke-width='1.5'/><text x='122' y='40' fill='#fbbf24' font-family='sans-serif' font-size='12'>25°</text><path d='M 170 150 A 30 30 0 0 1 182 140' fill='none' stroke='#ef4444' stroke-width='1.5'/><text x='165' y='135' fill='#ef4444' font-family='sans-serif' font-size='12'>40°</text><path d='M 320 150 A 30 30 0 0 1 323 140' fill='none' stroke='#fbbf24' stroke-width='1.5'/><text x='305' y='142' fill='#fbbf24' font-family='sans-serif' font-size='12'>25°</text><text x='195' y='170' fill='#ef4444' font-family='sans-serif' font-size='14'>A</text><text x='345' y='170' fill='#fbbf24' font-family='sans-serif' font-size='14'>B</text></svg>"
+    },
+    {
+      "title": "Paso 2: Distancia al barco A (más cercano)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Vamos a calcular a qué distancia de la base está el primer barco. Sabemos el cateto vertical y buscamos el horizontal. Usamos la tangente de 40 grados.",
+      "content": "<p>Aislamos el triángulo rectángulo formado por el faro y el barco $A$.</p><ul><li>Cateto opuesto (altura): $45\\text{ m}$.</li><li>Ángulo: $40^\\circ$.</li><li>Cateto contiguo (distancia $x_A$): incógnita.</li></ul><p>Planteamos la razón trigonométrica de la <strong>tangente</strong>:</p><p>$$\\tan(40^\\circ) = \\frac{\\text{Cateto opuesto}}{\\text{Cateto contiguo}} = \\frac{45}{x_A}$$</p><p>Despejamos $x_A$ pasando multiplicando al primer miembro y la tangente dividiendo:</p><p>$$x_A = \\frac{45}{\\tan(40^\\circ)}\\text{ m}$$</p><p>Esta es la distancia horizontal exacta desde la base del faro hasta el barco $A$.</p>",
+      "checkpoint": {
+        "question": "¿Por qué no usamos el teorema de Pitágoras para hallar la distancia horizontal?",
+        "options": [
+          {
+            "text": "Porque para usar Pitágoras necesitaríamos conocer al menos dos lados del triángulo, y solo conocemos uno (la altura).",
+            "correct": true,
+            "feedback": "Correcto. El teorema de Pitágoras ($a^2+b^2=c^2$) requiere conocer dos lados. Al tener un lado y un ángulo, debemos usar trigonometría."
+          },
+          {
+            "text": "Porque el teorema de Pitágoras solo funciona en triángulos que no contienen ángulos de depresión.",
+            "correct": false,
+            "feedback": "Falso. El teorema de Pitágoras funciona en CUALQUIER triángulo rectángulo, sin importar de dónde provengan sus datos, pero necesitamos conocer dos de sus lados."
+          },
+          {
+            "text": "Porque el faro y el barco no forman un ángulo recto perfecto debido a la curvatura terrestre.",
+            "correct": false,
+            "feedback": "Falso. En problemas de topografía de distancias cortas asumimos la Tierra plana y el ángulo como recto perfecto (90°)."
+          }
+        ]
+      },
+      "visual": "<svg viewBox='0 0 400 200' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><polygon points='50,30 50,150 200,150' fill='rgba(239, 68, 68, 0.1)' stroke='#ef4444' stroke-width='2'/><polyline points='50,140 60,140 60,150' fill='none' stroke='#ffffff' stroke-width='1.5'/><text x='15' y='95' fill='#ffffff' font-family='sans-serif' font-size='14'>45 m</text><path d='M 170 150 A 30 30 0 0 1 182 140' fill='none' stroke='#ef4444' stroke-width='1.5'/><text x='155' y='135' fill='#ef4444' font-family='sans-serif' font-size='12'>40°</text><text x='120' y='170' fill='#ef4444' font-family='sans-serif' font-size='16'>x_A</text></svg>"
+    },
+    {
+      "title": "Paso 3: Distancia al barco B (más lejano)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Repetimos exactamente el mismo proceso con el barco que está más lejos. Ahora el ángulo es de 25 grados.",
+      "content": "<p>Ahora aislamos el triángulo rectángulo mayor, formado por el faro y el barco $B$.</p><ul><li>Cateto opuesto (altura): $45\\text{ m}$ (el faro es el mismo).</li><li>Ángulo: $25^\\circ$.</li><li>Cateto contiguo (distancia $x_B$): incógnita.</li></ul><p>Planteamos nuevamente la tangente:</p><p>$$\\tan(25^\\circ) = \\frac{45}{x_B}$$</p><p>Despejamos $x_B$ de la misma forma que antes:</p><p>$$x_B = \\frac{45}{\\tan(25^\\circ)}\\text{ m}$$</p><p>Esta expresión representa la distancia horizontal exacta desde el faro hasta el barco $B$. Al dividir entre un número menor (la tangente de $25^\\circ$ es menor que la de $40^\\circ$), el resultado de $x_B$ será mayor, confirmando que el barco $B$ está más lejos.</p>",
+      "visual": "<svg viewBox='0 0 400 200' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><polygon points='50,30 50,150 350,150' fill='rgba(251, 191, 36, 0.1)' stroke='#fbbf24' stroke-width='2'/><polyline points='50,140 60,140 60,150' fill='none' stroke='#ffffff' stroke-width='1.5'/><text x='15' y='95' fill='#ffffff' font-family='sans-serif' font-size='14'>45 m</text><path d='M 300 150 A 50 50 0 0 1 310 135' fill='none' stroke='#fbbf24' stroke-width='1.5'/><text x='280' y='135' fill='#fbbf24' font-family='sans-serif' font-size='12'>25°</text><text x='190' y='170' fill='#fbbf24' font-family='sans-serif' font-size='16'>x_B</text></svg>"
+    },
+    {
+      "title": "Paso 4: Cálculo de la distancia entre barcos",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Ya sabemos la distancia a cada barco desde la costa. Si restamos la distancia corta de la distancia larga, nos queda exactamente el trozo de mar que los separa.",
+      "content": "<p>Dado que ambos barcos están <em>alineados</em> con la base del faro en la misma dirección, la distancia que los separa, que llamaremos $d$, es la diferencia entre las dos distancias horizontales calculadas:</p><p>$$d = x_B - x_A$$</p><p>Sustituimos por sus valores exactos hallados en los pasos anteriores:</p><p>$$d = \\frac{45}{\\tan(25^\\circ)} - \\frac{45}{\\tan(40^\\circ)}$$</p><p>Podemos extraer factor común para presentar la <strong>solución analítica exacta</strong> más compacta:</p><p>$$d = 45 \\cdot \\left( \\frac{1}{\\tan(25^\\circ)} - \\frac{1}{\\tan(40^\\circ)} \\right) \\text{ m}$$</p>",
+      "theory": "<p><strong>Suma y resta de segmentos:</strong> Cuando tres puntos están colineales y el origen de distancias es el mismo, la distancia entre dos de ellos es la diferencia en valor absoluto de sus distancias al origen.</p>",
+      "visual": "<svg viewBox='0 0 400 200' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><line x1='50' y1='100' x2='350' y2='100' stroke='#334155' stroke-width='2'/><circle cx='50' cy='100' r='4' fill='#ffffff'/><text x='45' y='120' fill='#ffffff' font-family='sans-serif' font-size='12'>Base faro</text><circle cx='200' cy='100' r='4' fill='#ef4444'/><text x='195' y='120' fill='#ef4444' font-family='sans-serif' font-size='12'>Barco A</text><circle cx='350' cy='100' r='4' fill='#fbbf24'/><text x='345' y='120' fill='#fbbf24' font-family='sans-serif' font-size='12'>Barco B</text><path d='M 50 80 L 50 70 L 200 70 L 200 80' fill='none' stroke='#ef4444' stroke-width='1.5'/><text x='115' y='60' fill='#ef4444' font-family='sans-serif' font-size='12'>x_A</text><path d='M 50 40 L 50 30 L 350 30 L 350 40' fill='none' stroke='#fbbf24' stroke-width='1.5'/><text x='190' y='20' fill='#fbbf24' font-family='sans-serif' font-size='12'>x_B</text><path d='M 200 130 L 200 140 L 350 140 L 350 130' fill='none' stroke='#10b981' stroke-width='2'/><text x='265' y='160' fill='#10b981' font-family='sans-serif' font-size='14' font-weight='bold'>d = x_B - x_A</text></svg>"
+    },
+    {
+      "title": "Comprobación y resultados numéricos",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Introducimos los datos en la calculadora para dar una respuesta comprensible. Nos aseguramos de estar en grados sexagesimales.",
+      "content": "<p>Aproximamos los valores utilizando la calculadora (configurada en modo <strong>DEG</strong> - grados sexagesimales):</p><ul><li>Distancia al barco $A$: $x_A = \\frac{45}{\\tan(40^\\circ)} \\approx \\frac{45}{0.8391} \\approx 53.63\\text{ m}$.</li><li>Distancia al barco $B$: $x_B = \\frac{45}{\\tan(25^\\circ)} \\approx \\frac{45}{0.4663} \\approx 96.50\\text{ m}$.</li></ul><p>Finalmente, calculamos la separación $d$ restando ambos valores:</p><p>$$d \\approx 96.50 - 53.63 = 42.87\\text{ m}$$</p><p><strong>Verificación de coherencia:</strong> Como el ángulo de $25^\\circ$ es casi la mitad del de $40^\\circ$, es lógico que su distancia horizontal ($96.5\\text{ m}$) sea casi el doble que la distancia del primer barco ($53.6\\text{ m}$). El signo es positivo, lo que verifica que restamos correctamente el menor del mayor. La unidad (metros) es consistente en todo el problema.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulando: convertimos ángulos de depresión en elevación, resolvemos dos triángulos por separado y restamos sus bases.",
+      "content": "<ol><li><strong>Interpretación angular:</strong> Reconocemos que el ángulo de depresión visto desde arriba equivale al ángulo de elevación visto desde la base (propiedad de rectas paralelas).</li><li><strong>Descomposición en triángulos:</strong> Planteamos un triángulo para cada barco. Ambos comparten el cateto opuesto (altura de $45\\text{ m}$).</li><li><strong>Cálculo de catetos contiguos:</strong> Empleamos la razón tangente. Para el barco $A$ ($40^\\circ$), $x_A = \\frac{45}{\\tan(40^\\circ)}$. Para el barco $B$ ($25^\\circ$), $x_B = \\frac{45}{\\tan(25^\\circ)}$.</li><li><strong>Diferencia de distancias:</strong> Calculamos la distancia de separación restando las posiciones horizontales: $d = x_B - x_A$.</li><li><strong>Resultado final:</strong> $d = 45\\left( \\frac{1}{\\tan(25^\\circ)} - \\frac{1}{\\tan(40^\\circ)} \\right) \\approx 42.87\\text{ m}$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora haz tú lo mismo. Un observador en un acantilado mira hacia abajo a dos boyas alineadas. Usa la misma estrategia.",
+      "content": "<p>Desde lo alto de un acantilado vertical de $120$ metros sobre el nivel del mar, un guarda costa divisa dos boyas de señalización alineadas en el agua. Los ángulos de depresión hacia cada una de ellas son de $55^\\circ$ y $30^\\circ$.</p><p>Siguiendo los mismos pasos del ejercicio anterior, calcula de forma exacta y luego aproximada (a dos decimales) la distancia que separa ambas boyas.</p><p><em>¡Resuélvelo en tu cuaderno antes de mirar la solución!</em></p>",
+      "practiceAnswer": "<p><strong>Solución exacta:</strong></p><ul><li>Distancia a la boya 1 ($55^\\circ$): $x_1 = \\frac{120}{\\tan(55^\\circ)}\\text{ m}$</li><li>Distancia a la boya 2 ($30^\\circ$): $x_2 = \\frac{120}{\\tan(30^\\circ)}\\text{ m}$</li><li>Distancia entre ellas: $d = 120 \\cdot \\left( \\frac{1}{\\tan(30^\\circ)} - \\frac{1}{\\tan(55^\\circ)} \\right)\\text{ m}$</li></ul><p><strong>Aproximaciones:</strong></p><p>$x_1 \\approx 84.02\\text{ m}$, $\\quad x_2 \\approx 207.85\\text{ m}$</p><p>La distancia de separación es $d \\approx 207.85 - 84.02 = 123.83\\text{ m}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos si eres capaz de adaptar el método. Esta vez conoces las distancias horizontales y quieres averiguar la altura de un monumento.",
+      "content": "<p>Para calcular la altura total de un monumento que tiene una estatua en la cima, un topógrafo se sitúa a $30$ metros de la base. Utilizando un teodolito desde el suelo, mide dos ángulos de elevación: uno hacia la base de la estatua ($42^\\circ$) y otro hacia la punta de la cabeza de la estatua ($48^\\circ$).</p><p>Aplica el concepto de sumar o restar segmentos de triángulos superpuestos para encontrar analíticamente la altura que tiene <strong>solamente la estatua</strong>.</p><p><em>Pista: Plantéalo hallando dos alturas distintas sobre la misma base y réstalas.</em></p>",
+      "practiceAnswer": "<p><strong>Análisis:</strong> Ahora el cateto contiguo es compartido ($30\\text{ m}$) y buscamos la diferencia entre los dos catetos opuestos.</p><p><strong>Cálculos:</strong></p><ul><li>Altura hasta la base de la estatua ($h_1$): $\\tan(42^\\circ) = \\frac{h_1}{30} \\implies h_1 = 30 \\cdot \\tan(42^\\circ)$</li><li>Altura hasta la cabeza de la estatua ($h_2$): $\\tan(48^\\circ) = \\frac{h_2}{30} \\implies h_2 = 30 \\cdot \\tan(48^\\circ)$</li></ul><p><strong>Altura de la estatua:</strong></p><p>$h_{\\text{estatua}} = h_2 - h_1 = 30 \\cdot \\tan(48^\\circ) - 30 \\cdot \\tan(42^\\circ)$</p><p>$h_{\\text{estatua}} = 30 \\cdot (\\tan(48^\\circ) - \\tan(42^\\circ))\\text{ m}$</p><p>Aproximando: $h_2 \\approx 33.32\\text{ m}$, $h_1 \\approx 27.01\\text{ m}$. La estatua mide aproximadamente $6.31\\text{ m}$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:45:26.806Z",
+    "updatedAt": "2026-08-01T21:45:26.806Z",
+    "contentHash": "0db7d23bc327a151",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

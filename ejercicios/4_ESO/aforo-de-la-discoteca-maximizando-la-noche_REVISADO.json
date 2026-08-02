@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Análisis",
+    "subtopic": "Funciones cuadráticas",
+    "exerciseType": "Optimización y modelización con funciones",
+    "protocols": [
+      "B",
+      "H"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Interpretar los coeficientes y puntos notables de una función cuadrática en un contexto real.",
+      "Calcular analíticamente el vértice (máximo) y las raíces (ceros) de una parábola.",
+      "Convertir unidades de tiempo relativas (horas transcurridas) a horas del reloj absoluto."
+    ],
+    "prerequisites": [
+      "Resolución de ecuaciones de segundo grado.",
+      "Concepto de derivada o fórmula del vértice de una parábola.",
+      "Sistemas horarios de 24 horas."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-02T08:29:58.304Z",
+    "id": "aforo-de-la-discoteca-maximizando-la-noche-1986fbad"
+  },
+  "title": "Aforo de la discoteca: Maximizando la noche",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leamos con atención el problema. Nos presenta una situación cotidiana, la apertura y cierre de un local, modelizada mediante una expresión matemática.",
+      "content": "<p>Una discoteca abre a las 10 de la noche y cierra cuando se han marchado todos sus clientes. La expresión que representa el número de clientes en función del número de horas que lleva abierta, $t$, es $$N(t) = 80t - 10t^2$$.</p><p>a) ¿A qué hora el número de clientes es máximo? ¿Cuántos clientes hay en ese momento?</p><p>b) ¿A qué hora cerrará la discoteca?</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver este ejercicio, primero analizaremos el tipo de función que tenemos. Al ser cuadrática con coeficiente principal negativo, sabemos que tiene un máximo. Usaremos derivadas o la fórmula del vértice para encontrarlo. Luego, buscaremos cuándo se vacía el local buscando sus raíces.",
+      "content": "<p><strong>Identificación:</strong> La función $N(t) = 80t - 10t^2$ es un polinomio de segundo grado, por lo que su representación gráfica es una parábola. Como el coeficiente de $t^2$ es negativo ($-10$), la parábola se abre hacia abajo, garantizando la existencia de un punto máximo (el vértice).</p><p><strong>Estrategia:</strong></p><ul><li>Para el <strong>apartado a</strong>, calcularemos el instante $t$ donde la función alcanza su vértice. Evaluaremos la función en ese punto para obtener el aforo máximo y sumaremos ese tiempo a la hora de apertura.</li><li>Para el <strong>apartado b</strong>, el cierre se produce cuando no hay clientes, es decir, cuando $N(t) = 0$. Resolveremos esta ecuación cuadrática para hallar la hora final.</li></ul><p><strong>Aplicación real:</strong> Modelizar la afluencia de público es crítico en la gestión de eventos para dimensionar el personal de seguridad, camareros y prever las horas de mayor consumo energético.</p>"
+    },
+    {
+      "title": "Paso 1: Instante de máxima afluencia",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Vamos a calcular cuándo se produce el máximo. Derivamos la función e igualamos a cero, lo que nos da el momento exacto.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar el valor del tiempo $t$ para el cual la cantidad de clientes $N(t)$ es máxima.</p><p><strong>CONEXIÓN:</strong> Dado que la función describe una parábola invertida, el valor máximo global coincide con su único extremo relativo (el vértice). Podemos hallarlo derivando la función.</p><p><strong>CÁLCULO:</strong> Calculamos la primera derivada respecto a $t$ utilizando la regla de las potencias: $$N'(t) = 80 - 20t$$ Igualamos la derivada a cero para encontrar los puntos críticos: $$80 - 20t = 0 \\implies 20t = 80 \\implies t = 4$$</p><p><strong>INTERPRETACIÓN:</strong> La afluencia máxima se alcanza a las 4 horas desde la apertura de la discoteca.</p>",
+      "theory": "<p>El vértice de una parábola de la forma $f(x) = ax^2 + bx + c$ también puede calcularse directamente sin derivadas usando la fórmula: $$x_v = \\frac{-b}{2a}$$ En nuestro caso, $t = \\frac{-80}{2(-10)} = 4$.</p>",
+      "warning": "<p>Es un error muy común responder que la hora de máxima afluencia es a las \"4:00\", confundiendo el tiempo transcurrido ($t$) con la hora absoluta del reloj. $t=4$ significa \"4 horas después de abrir\".</p>"
+    },
+    {
+      "title": "Paso 2: Cantidad máxima de clientes",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Conociendo que el máximo es a las 4 horas, sustituimos este valor en nuestra función original para saber cuántas personas había dentro.",
+      "content": "<p><strong>OBJETIVO:</strong> Calcular el número exacto de clientes en el pico de asistencia.</p><p><strong>CONEXIÓN:</strong> Hemos determinado que el pico ocurre en $t = 4$. Para hallar el aforo, debemos evaluar la función original en este instante temporal.</p><p><strong>CÁLCULO:</strong> Sustituimos $t = 4$ en $N(t)$: $$N(4) = 80(4) - 10(4^2)$$ $$N(4) = 320 - 10(16)$$ $$N(4) = 320 - 160 = 160$$</p><p><strong>INTERPRETACIÓN:</strong> En el instante de mayor ocupación, hay un total de 160 clientes dentro de la discoteca.</p>"
+    },
+    {
+      "title": "Paso 3: Traducción al reloj (Apartado a)",
+      "layout": "centered",
+      "phase": "interpretar",
+      "narration": "Ahora toca mirar el reloj. Si abrimos a las diez de la noche y han pasado cuatro horas, ¿qué hora es?",
+      "content": "<p><strong>OBJETIVO:</strong> Responder a la pregunta final del apartado a determinando la hora real del máximo aforo.</p><p><strong>CONEXIÓN:</strong> El tiempo $t$ mide horas desde la apertura. Debemos sumar el $t = 4$ a la hora de apertura dada en el enunciado.</p><p><strong>MÉTODO:</strong> Convertimos las \"10 de la noche\" al formato de 24 horas y sumamos las 4 horas transcurridas. Si el resultado supera las 24, restaremos 24 para obtener la hora del día siguiente.</p><p><strong>RESULTADO:</strong> Las 10 de la noche corresponden a las 22:00 horas. $$22:00 + 4 \\text{ horas} = 26:00 \\text{ horas}$$ Al cambiar de día: $26 - 24 = 2$.</p><p><strong>INTERPRETACIÓN:</strong> La discoteca alcanza su número máximo de 160 clientes a las 2:00 AM (las 2 de la madrugada).</p>"
+    },
+    {
+      "title": "Paso 4: Hora de cierre (Apartado b)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Para el apartado b, queremos saber cuándo cierra. Eso ocurre cuando ya no queda nadie. Igualamos la función a cero y resolvemos.",
+      "content": "<p><strong>OBJETIVO:</strong> Encontrar el instante $t$ en el que el número de clientes es cero, para calcular la hora de cierre.</p><p><strong>CONEXIÓN:</strong> El enunciado establece que cierra \"cuando se han marchado todos sus clientes\", es decir, cuando $N(t) = 0$. Esto corresponde a hallar las raíces de la función cuadrática.</p><p><strong>CÁLCULO:</strong> Igualamos la función a cero: $$80t - 10t^2 = 0$$ Factorizamos extrayendo factor común $10t$: $$10t(8 - t) = 0$$ Por la propiedad del producto nulo, existen dos soluciones: $$10t = 0 \\implies t = 0$$ $$8 - t = 0 \\implies t = 8$$</p><p><strong>INTERPRETACIÓN:</strong> El local está vacío en $t = 0$ (momento de abrir, las 22:00) y vuelve a estar vacío en $t = 8$ horas. Sumando 8 horas a las 22:00 obtenemos las 30:00 (las 6:00 AM del día siguiente), momento exacto del cierre.</p>",
+      "checkpoint": {
+        "question": "¿Por qué obtenemos dos soluciones, t=0 y t=8, al igualar la función a cero?",
+        "options": [
+          {
+            "text": "Porque t=0 representa la hora de apertura cuando aún no ha entrado nadie, y t=8 es cuando se va el último.",
+            "correct": true,
+            "feedback": "¡Exacto! El modelo cuadrático captura la realidad física completa de la noche: desde que las puertas abren hasta que cierran."
+          },
+          {
+            "text": "Porque t=0 es un margen de error del modelo matemático y solo t=8 es válido.",
+            "correct": false,
+            "feedback": "Falso. t=0 es perfectamente válido en el contexto real; representa las 10 de la noche, instante justo anterior a que empiece a entrar gente."
+          },
+          {
+            "text": "Porque la parábola siempre corta el eje X en el origen por convención matemática.",
+            "correct": false,
+            "feedback": "No existe tal convención. Pasa por el origen porque el término independiente (c) de esta ecuación en particular es cero, lo que encaja con el contexto."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Confirmación gráfica del modelo",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Observad la gráfica de la parábola. Confirma visualmente todo lo que hemos calculado: el inicio en cero, la subida hasta el pico a las cuatro horas, y la bajada hasta el cierre a las ocho horas.",
+      "content": "<p><strong>OBJETIVO:</strong> Representar el modelo de afluencia para validar los resultados obtenidos analíticamente en su dominio real.</p><p><strong>CONEXIÓN:</strong> Trazamos la parábola $N(t) = 80t - 10t^2$ restringiendo su dominio al intervalo de tiempo en que la discoteca está abierta, $t \\in [0, 8]$.</p><p><strong>MÉTODO:</strong> Situamos el tiempo (horas transcurridas) en el eje horizontal y el número de clientes en el vertical. Marcamos los puntos críticos hallados: las dos raíces y el vértice.</p><p><strong>INTERPRETACIÓN:</strong> La gráfica muestra el ciclo de vida de la noche. Inicia en el origen de coordenadas $(0,0)$. El crecimiento es rápido al principio, se modera al acercarse a $(4, 160)$, y decae simétricamente hasta vaciarse en $(8, 0)$. La simetría garantiza que el vértice está exactamente a mitad de camino entre la apertura y el cierre.</p>",
+      "visual": "<svg viewBox='0 0 500 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'>\n  <rect width='500' height='300' fill='#0f172a'/>\n  <!-- Cuadrícula -->\n  <line x1='50' y1='168' x2='470' y2='168' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='50' y1='76' x2='470' y2='76' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <line x1='218' y1='260' x2='218' y2='20' stroke='#334155' stroke-width='1' opacity='0.5'/>\n  <!-- Ejes -->\n  <line x1='50' y1='260' x2='470' y2='260' stroke='#fbbf24' stroke-width='2.5'/>\n  <line x1='50' y1='260' x2='50' y2='20' stroke='#fbbf24' stroke-width='2.5'/>\n  <!-- Curva -->\n  <path d='M 50 260 Q 218 -108 386 260' fill='none' stroke='#38bdf8' stroke-width='3'/>\n  <!-- Puntos y marcas -->\n  <circle cx='50' cy='260' r='5' fill='#ef4444'/>\n  <text x='50' y='280' fill='#ef4444' font-size='14' text-anchor='middle' font-family='sans-serif'>Abre (0,0)</text>\n  <circle cx='218' cy='76' r='5' fill='#ef4444'/>\n  <text x='218' y='65' fill='#ef4444' font-size='14' text-anchor='middle' font-family='sans-serif'>Máximo (4, 160)</text>\n  <circle cx='386' cy='260' r='5' fill='#ef4444'/>\n  <text x='386' y='280' fill='#ef4444' font-size='14' text-anchor='middle' font-family='sans-serif'>Cierre (8, 0)</text>\n  <!-- Etiquetas -->\n  <text x='460' y='280' fill='#fbbf24' font-size='14' font-family='sans-serif'>t (h)</text>\n  <text x='10' y='35' fill='#fbbf24' font-size='14' font-family='sans-serif'>N(t)</text>\n</svg>",
+      "visualDescription": "Gráfica cartesiana sobre fondo oscuro. El eje horizontal t representa el tiempo y el vertical N(t) los clientes. Una parábola azul claro parte del punto rojo (0,0) etiquetado 'Abre', sube hasta un máximo en el punto rojo (4, 160) etiquetado 'Máximo', y desciende hasta el punto rojo (8, 0) etiquetado 'Cierre'.",
+      "visualMathLink": "El comportamiento algebraico se refleja visualmente: la raíz obtenida en t=0 fija el inicio de la curva. El vértice calculado derivando (t=4) ubica el punto más alto en N=160. La otra raíz calculada, t=8, sitúa el final de la curva donde corta de nuevo el eje horizontal para N=0."
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Vamos a repasar los pasos clave. Primero encontramos el vértice para maximizar. Luego, traducimos ese tiempo al reloj. Finalmente, hallamos las raíces para el cierre.",
+      "content": "<ol><li><strong>Identificación del modelo:</strong> Función cuadrática $N(t)$ donde el máximo corresponde al vértice y el cierre a sus raíces.</li><li><strong>Cálculo del máximo (Apartado a):</strong> Derivamos $N'(t) = 80 - 20t$ e igualamos a 0, obteniendo $t = 4$.</li><li><strong>Evaluación del aforo:</strong> Sustituimos $t = 4$ en $N(t)$ y calculamos $N(4) = 160$ clientes.</li><li><strong>Interpretación horaria:</strong> Sumamos 4 horas a las 22:00, concluyendo que el máximo es a las 2:00 AM.</li><li><strong>Cálculo del cierre (Apartado b):</strong> Igualamos $N(t) = 0$, factorizamos y obtenemos la solución $t = 8$.</li><li><strong>Hora final:</strong> Sumamos 8 horas a las 22:00, resultando el cierre a las 6:00 AM.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Intenta resolver este ejercicio con la misma estructura pero diferentes datos antes de mirar la solución.",
+      "content": "<p>Un teatro al aire libre abre sus puertas a las 21:00 h. La función que describe el número de espectadores en función de las horas transcurridas $t$ es $$E(t) = 120t - 15t^2$$</p><p>Responde sin mirar la solución y aplicando el método paso a paso:</p><p>a) ¿A qué hora exacta hay mayor cantidad de espectadores y cuántos son en ese momento?</p><p>b) ¿A qué hora quedará vacío el teatro?</p>",
+      "practiceAnswer": "<p><strong>Resultados finales:</strong></p><p>a) Máximo aforo a la <strong>1:00 AM</strong> de la madrugada con <strong>240 espectadores</strong>. (Se obtiene al calcular el vértice en $t = 4$ horas y sumar a las 21:00).</p><p>b) El teatro quedará vacío a las <strong>5:00 AM</strong>. (Se obtiene al resolver $120t - 15t^2 = 0$, lo que da $t = 8$ horas tras la apertura).</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos si eres capaz de identificar la misma base matemática pero en un problema de física clásica: el movimiento parabólico.",
+      "content": "<p>Se lanza un cohete de fuegos artificiales desde el suelo en la fiesta del pueblo. Su altura en metros en función de los segundos transcurridos viene dada por: $$h(t) = 40t - 5t^2$$</p><p>Piensa: el modelo es idéntico aunque cambie el contexto físico.</p><p>a) ¿A qué altura máxima llega y cuántos segundos tarda en alcanzarla?</p><p>b) ¿Cuántos segundos dura el vuelo antes de impactar de nuevo en el suelo?</p>",
+      "practiceAnswer": "<p><strong>Resultados finales:</strong></p><p>a) Tarda <strong>4 segundos</strong> en llegar al punto más alto y alcanza una altura máxima de <strong>80 metros</strong>. (Cálculo del vértice derivando o con fórmula, $t = 4$; sustituyendo $h(4) = 80$).</p><p>b) El vuelo dura <strong>8 segundos</strong>. (Impacta contra el suelo cuando $h(t) = 0$, que da como soluciones $t = 0$ y $t = 8$).</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-02T08:30:08.896Z",
+    "updatedAt": "2026-08-02T08:30:08.896Z",
+    "contentHash": "24fd7d6babb65f21",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

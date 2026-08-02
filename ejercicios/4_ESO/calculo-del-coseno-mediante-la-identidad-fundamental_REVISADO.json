@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Trigonometría",
+    "subtopic": "Relaciones fundamentales",
+    "exerciseType": "Deducción analítica",
+    "protocols": [
+      "F"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Aplicar la identidad trigonométrica fundamental para deducir una razón a partir de otra",
+      "Comprender la importancia del cuadrante para determinar el signo de las razones trigonométricas"
+    ],
+    "prerequisites": [
+      "Conocer la primera relación fundamental de la trigonometría",
+      "Saber resolver ecuaciones cuadráticas sencillas",
+      "Conocer los signos de las razones trigonométricas en los distintos cuadrantes"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 7,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:18:16.035Z",
+    "id": "calculo-del-coseno-mediante-la-identidad-fundamental-e23e251e"
+  },
+  "title": "Cálculo del coseno mediante la identidad fundamental",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a leer detenidamente el enunciado. Nos dan el valor del seno de un ángulo y nos piden calcular su coseno utilizando exclusivamente una fórmula concreta, teniendo muy en cuenta en qué cuadrante se encuentra el ángulo.",
+      "content": "<p><strong>Ejercicio 4:</strong> Aplica de forma exclusiva la primera relación fundamental de la trigonometría ($\\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1$) para deducir el valor exacto del $\\cos \\alpha$ sabiendo que $\\text{sen} \\alpha = 0,6$ y que $\\alpha$ es un ángulo agudo del primer cuadrante.</p>"
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "El ejercicio nos marca un camino muy estricto: no podemos calcular el ángulo con la calculadora y luego hacerle el coseno, ni dibujar un triángulo libremente. Debemos usar álgebra pura sobre la ecuación fundamental.",
+      "content": "<h3>Plan de ataque</h3><ol><li><strong>Identificar datos y restricción:</strong> Conocemos $\\text{sen} \\alpha = 0,6$. La restricción metodológica exige usar la identidad pitagórica $\\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1$.</li><li><strong>Sustitución y despeje:</strong> Sustituiremos el valor del seno en la ecuación, lo elevaremos al cuadrado y despejaremos la incógnita $\\cos^2 \\alpha$.</li><li><strong>Análisis de signos:</strong> Al extraer la raíz cuadrada obtendremos dos posibles soluciones (positiva y negativa). Utilizaremos el dato clave el primer cuadrante para descartar la que no proceda matemáticamente.</li></ol><p><em>Aplicación real:</em> Esta relación fundamental es la base matemática para descomponer vectores de fuerza o velocidad en sus componentes horizontal y vertical en física, garantizando que la magnitud total se conserve intacta según el Teorema de Pitágoras.</p>"
+    },
+    {
+      "title": "Paso 1: Sustitución y cálculo algebraico",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Cogemos nuestra fórmula, sustituimos el cero coma seis donde dice seno, y calculamos el cuadrado. Luego, restamos ese valor a uno para dejar el coseno al cuadrado solo a un lado de la igualdad.",
+      "content": "<p><strong>Objetivo:</strong> Aislar $\\cos^2 \\alpha$ en la relación fundamental.</p><p>Partimos de la identidad exigida:</p><p>$$ \\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1 $$</p><p>Sustituimos el valor conocido del seno, que es $0,6$:</p><p>$$ (0,6)^2 + \\cos^2 \\alpha = 1 $$</p><p>Calculamos el cuadrado de $0,6$ (que es $0,6 \\cdot 0,6 = 0,36$):</p><p>$$ 0,36 + \\cos^2 \\alpha = 1 $$</p><p>Despejamos el término $\\cos^2 \\alpha$ restando $0,36$ en ambos miembros:</p><p>$$ \\cos^2 \\alpha = 1 - 0,36 $$</p><p>$$ \\cos^2 \\alpha = 0,64 $$</p><p>De momento sabemos el valor del cuadrado del coseno, pero aún debemos hallar el coseno lineal.</p>",
+      "theory": "<strong>Identidad fundamental de la trigonometría:</strong> Para cualquier ángulo $\\alpha$, la suma de los cuadrados de su seno y de su coseno es siempre igual a $1$. Esto no es más que el Teorema de Pitágoras aplicado a una circunferencia de radio $1$.",
+      "visual": "<svg viewBox='0 0 300 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='150' x2='300' y2='150'/><line x1='150' y1='0' x2='150' y2='300'/></g><circle cx='150' cy='150' r='100' fill='none' stroke='#475569' stroke-width='2' stroke-dasharray='5,5'/><polyline points='150,150 230,150 230,90 150,150' fill='rgba(56, 189, 248, 0.1)' stroke='none'/><line x1='150' y1='150' x2='230' y2='90' stroke='#10b981' stroke-width='2'/><line x1='230' y1='150' x2='230' y2='90' stroke='#38bdf8' stroke-width='3'/><line x1='150' y1='150' x2='230' y2='150' stroke='#f472b6' stroke-width='3' stroke-dasharray='4,4'/><text x='240' y='125' fill='#38bdf8' font-size='14'>sen = 0,6</text><text x='190' y='170' fill='#f472b6' font-size='14'>cos = ?</text><text x='165' y='140' fill='#e2e8f0' font-size='14'>α</text><path d='M 175,150 A 25,25 0 0,0 170,135' fill='none' stroke='#e2e8f0' stroke-width='1.5'/></svg>"
+    },
+    {
+      "title": "Paso 2: Deducción del signo según el cuadrante",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Al quitar el cuadrado nos salen dos posibles resultados, uno positivo y uno negativo. Como el enunciado aclara que estamos en el primer cuadrante, sabemos con seguridad que el coseno debe ser positivo.",
+      "content": "<p><strong>Objetivo:</strong> Determinar el valor exacto y el signo final del $\\cos \\alpha$.</p><p>Para eliminar el cuadrado, aplicamos la raíz cuadrada. Matemáticamente, una ecuación del tipo $x^2 = k$ tiene dos soluciones:</p><p>$$ \\cos \\alpha = \\pm \\sqrt{0,64} $$</p><p>$$ \\cos \\alpha = \\pm 0,8 $$</p><p>Ahora interviene el contexto geométrico dado en el enunciado: <strong>$\\alpha$ es un ángulo agudo del primer cuadrante</strong> (entre $0^\\circ$ y $90^\\circ$).</p><p>En el primer cuadrante, tanto la abscisa (eje X, el coseno) como la ordenada (eje Y, el seno) son estrictamente <strong>positivas</strong>.</p><p>Por lo tanto, descartamos la raíz negativa y concluimos que el valor exacto es:</p><p>$$ \\cos \\alpha = 0,8 $$</p>",
+      "warning": "El error más habitual en este tipo de ejercicios algebraicos es olvidar el símbolo $\\pm$ al aplicar la raíz cuadrada, asumiendo automáticamente que todo es positivo. Aunque aquí el resultado sí sea positivo, justificarlo mediante el cuadrante es obligatorio en todo procedimiento riguroso.",
+      "checkpoint": {
+        "question": "Si el enunciado hubiera dicho que $\\alpha$ está en el segundo cuadrante (entre $90^\\circ$ y $180^\\circ$), ¿cuál habría sido el resultado final?",
+        "options": [
+          {
+            "text": "El resultado sería el mismo, cos α = 0,8, porque las raíces siempre dan resultados positivos en trigonometría.",
+            "correct": false,
+            "feedback": "Falso. El coseno representa la coordenada X en la circunferencia goniométrica, que toma valores negativos en el segundo cuadrante."
+          },
+          {
+            "text": "El resultado sería cos α = -0,8, porque en el segundo cuadrante el eje X (coseno) es negativo.",
+            "correct": true,
+            "feedback": "Correcto. Si $\\alpha$ perteneciera al segundo cuadrante, habríamos tenido que elegir la raíz negativa obligatoriamente."
+          },
+          {
+            "text": "El problema no tendría solución porque el seno no podría ser 0,6 en el segundo cuadrante.",
+            "correct": false,
+            "feedback": "Incorrecto. En el segundo cuadrante el seno (eje Y) sigue siendo positivo, por lo que un seno de 0,6 es perfectamente posible ahí."
+          }
+        ]
+      },
+      "visual": "<svg viewBox='0 0 300 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='150' x2='300' y2='150'/><line x1='150' y1='0' x2='150' y2='300'/></g><circle cx='150' cy='150' r='100' fill='none' stroke='#475569' stroke-width='2' stroke-dasharray='5,5'/><polygon points='150,150 230,150 230,90' fill='rgba(16, 185, 129, 0.1)' stroke='none'/><line x1='150' y1='150' x2='230' y2='90' stroke='#10b981' stroke-width='2'/><line x1='230' y1='150' x2='230' y2='90' stroke='#38bdf8' stroke-width='3'/><line x1='150' y1='150' x2='230' y2='150' stroke='#f472b6' stroke-width='3'/><text x='240' y='125' fill='#38bdf8' font-size='14'>0,6</text><text x='170' y='170' fill='#f472b6' font-size='16' font-weight='bold'>cos α = 0,8</text><text x='165' y='140' fill='#e2e8f0' font-size='14'>α</text><path d='M 175,150 A 25,25 0 0,0 170,135' fill='none' stroke='#e2e8f0' stroke-width='1.5'/><rect x='20' y='20' width='120' height='40' rx='5' fill='#1e293b' stroke='#fbbf24' stroke-width='1'/><text x='80' y='45' fill='#fbbf24' font-size='12' text-anchor='middle'>Primer Cuadrante (+, +)</text></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Hagamos un repaso rápido de los tres pasos mentales que hemos dado para llegar a la solución exacta.",
+      "content": "<h3>Método lógico empleado</h3><ol><li><strong>Sustitución en la identidad:</strong> Hemos insertado el valor dado ($\\text{sen} \\alpha = 0,6$) en la fórmula $\\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1$.</li><li><strong>Resolución algebraica:</strong> Hemos elevado al cuadrado ($0,36$), restado de $1$ (obteniendo $0,64$) y aplicado la raíz cuadrada, obteniendo dos posibles ramas: $\\pm 0,8$.</li><li><strong>Criterio geométrico:</strong> Hemos utilizado la pertenencia al <strong>primer cuadrante</strong> para descartar el valor negativo, ya que todos los cosenos de ángulos agudos son mayores que cero.</li></ol><p><strong>Resultado final definitivo:</strong> $\\cos \\alpha = 0,8$.</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno de repetir el mismo proceso. Tienes la misma fórmula, otro valor de entrada y la misma condición de cuadrante. A por ello.",
+      "content": "<p><strong>Ejercicio propuesto:</strong></p><p>Aplica de forma exclusiva la primera relación fundamental de la trigonometría ($\\text{sen}^2 \\beta + \\cos^2 \\beta = 1$) para deducir el valor exacto del $\\text{sen} \\beta$ sabiendo que $\\cos \\beta = 0,28$ y que $\\beta$ es un ángulo agudo del primer cuadrante.</p><p><em>Desarrolla el ejercicio completo en tu cuaderno antes de revelar el resultado.</em></p>",
+      "practiceAnswer": "<p><strong>Resolución abreviada:</strong></p><p>1. Sustituimos: $\\text{sen}^2 \\beta + (0,28)^2 = 1$</p><p>2. Operamos: $\\text{sen}^2 \\beta + 0,0784 = 1 \\implies \\text{sen}^2 \\beta = 1 - 0,0784 = 0,9216$</p><p>3. Raíz y signo: $\\text{sen} \\beta = \\pm \\sqrt{0,9216} = \\pm 0,96$</p><p>4. Conclusión: Al ser del primer cuadrante, tomamos el valor positivo. <strong>El valor exacto es $\\text{sen} \\beta = 0,96$</strong>.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica ahora la identidad en un contexto de física. Se trata del mismo concepto matemático subyacente para relacionar dos magnitudes perpendiculares que forman un todo.",
+      "content": "<p><strong>Ejercicio de cinemática:</strong></p><p>Un proyectil es lanzado desde el suelo con un cierto ángulo de inclinación $\\theta$ (que sabemos que está entre $0^\\circ$ y $90^\\circ$). Los sensores indican que la proporción de la velocidad que se dedica a hacer subir el proyectil (componente vertical) cumple que $\\text{sen} \\theta = \\frac{5}{13}$.</p><p>Aplicando exclusivamente la relación matemática fundamental entre componentes, deduce en forma de fracción exacta qué proporción de la velocidad se dedica a avanzar en horizontal (es decir, el valor de $\\cos \\theta$).</p><p><em>Recuerda usar las fracciones hasta el final de la ecuación.</em></p>",
+      "practiceAnswer": "<p><strong>Resolución abreviada:</strong></p><p>1. Ecuación: $\\left(\\frac{5}{13}\\right)^2 + \\cos^2 \\theta = 1$</p><p>2. Desarrollamos la fracción: $\\frac{25}{169} + \\cos^2 \\theta = 1$</p><p>3. Despejamos: $\\cos^2 \\theta = 1 - \\frac{25}{169} = \\frac{169}{169} - \\frac{25}{169} = \\frac{144}{169}$</p><p>4. Raíz cuadrada: $\\cos \\theta = \\pm \\sqrt{\\frac{144}{169}} = \\pm \\frac{12}{13}$</p><p>5. Por tratarse de un ángulo de lanzamiento hacia adelante y arriba (primer cuadrante), nos quedamos con la positiva. <strong>La proporción exacta horizontal es $\\frac{12}{13}$</strong>.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:18:21.029Z",
+    "updatedAt": "2026-08-01T21:18:21.029Z",
+    "contentHash": "4aefccb8fcbc4522",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

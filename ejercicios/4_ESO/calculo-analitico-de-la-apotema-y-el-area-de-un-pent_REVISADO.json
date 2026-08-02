@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Geometría y Trigonometría",
+    "subtopic": "Resolución de polígonos regulares",
+    "exerciseType": "Cálculo analítico de elementos geométricos",
+    "protocols": [
+      "E",
+      "F"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Vincular la geometría de los polígonos regulares con la trigonometría de triángulos rectángulos.",
+      "Calcular de forma exacta la apotema usando la razón tangente.",
+      "Determinar el área total combinando los elementos deducidos sin pérdida de precisión."
+    ],
+    "prerequisites": [
+      "Conocimiento de los elementos de un polígono regular (lado, apotema, ángulo central).",
+      "Razones trigonométricas básicas (seno, coseno, tangente).",
+      "Cálculo del área de polígonos regulares."
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:36:18.758Z",
+    "id": "calculo-analitico-de-la-apotema-y-el-area-de-un-pent-4f851d4f"
+  },
+  "title": "Cálculo analítico de la apotema y el área de un pentágono",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leamos con atención el problema. Nos piden hallar el área y la apotema de un pentágono regular del que conocemos su lado, y nos exigen usar trigonometría.",
+      "content": "<p><strong>Ejercicio 8:</strong> Calcula de forma analítica el área total y la apotema de un pentágono regular cuyo lado mide exactamente $10\\text{ cm}$ de longitud. Utiliza razones trigonométricas para deducir los elementos necesarios.</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolverlo, no podemos depender de fórmulas mágicas. Vamos a dividir el pentágono en triángulos manejables, hallar los ángulos internos y usar trigonometría para descubrir la altura de esos triángulos, que es la apotema.",
+      "content": "<h3>Estrategia de resolución</h3><ol><li><strong>Identificar los datos:</strong> Tenemos un pentágono regular ($n = 5$ lados) y la longitud del lado es $L = 10\\text{ cm}$.</li><li><strong>Dividir en triángulos:</strong> Todo polígono regular se puede dividir en $n$ triángulos isósceles desde su centro.</li><li><strong>Ángulo central:</strong> Calcularemos el ángulo central y lo dividiremos a la mitad para obtener triángulos rectángulos.</li><li><strong>Uso de la trigonometría:</strong> Con el triángulo rectángulo, usaremos la razón trigonométrica adecuada (la tangente) para hallar la apotema de forma exacta.</li><li><strong>Cálculo del área:</strong> Aplicaremos la fórmula general del área de un polígono regular usando los valores exactos obtenidos.</li></ol><p><em>Aplicación real:</em> Este método es fundamental en el diseño arquitectónico y de mosaicos, donde se necesita precisión absoluta para ensamblar piezas poligonales, como en la planta del edificio del Pentágono en EE.UU.</p>"
+    },
+    {
+      "title": "Paso 1: Ángulo central y división del pentágono",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Primero, trazamos los radios desde el centro hacia los vértices para formar cinco triángulos idénticos. Si la vuelta completa son 360 grados, cada uno tendrá la quinta parte.",
+      "content": "<p>El primer paso es modelar geométricamente el pentágono. Desde el centro del polígono trazamos segmentos (radios) hasta cada vértice, formando $5$ triángulos isósceles idénticos.</p><p>Calculamos el ángulo central $\\alpha$ de uno de estos triángulos dividiendo una circunferencia completa entre el número de lados:</p><p>$$\\alpha = \\frac{360^\\circ}{5} = 72^\\circ$$</p><p>Para usar trigonometría básica, necesitamos triángulos rectángulos. Trazamos la <strong>apotema</strong> ($a$), que es la altura del triángulo isósceles y cae perpendicularmente sobre el punto medio del lado base. Esto divide al triángulo isósceles en dos triángulos rectángulos simétricos.</p>",
+      "theory": "<p><strong>Ángulo central:</strong> En un polígono regular de $n$ lados, el ángulo central formado por dos radios consecutivos mide $\\frac{360^\\circ}{n}$.</p>",
+      "visual": "<svg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.3'><line x1='0' y1='150' x2='300' y2='150'/><line x1='150' y1='0' x2='150' y2='300'/></g><polygon points='150,50 54.9,119.1 91.2,230.9 208.8,230.9 245.1,119.1' fill='none' stroke='#fbbf24' stroke-width='2.5'/><polygon points='150,150 91.2,230.9 208.8,230.9' fill='#3b82f6' opacity='0.3'/><line x1='150' y1='150' x2='91.2' y2='230.9' stroke='#3b82f6' stroke-width='2'/><line x1='150' y1='150' x2='208.8' y2='230.9' stroke='#3b82f6' stroke-width='2'/><line x1='150' y1='150' x2='150' y2='230.9' stroke='#ef4444' stroke-width='2' stroke-dasharray='5,5'/><path d='M 140 163.8 A 17 17 0 0 0 160 163.8' fill='none' stroke='#ffffff' stroke-width='1.5'/><text x='135' y='180' fill='#ffffff' font-family='sans-serif' font-size='14'>72°</text><text x='155' y='210' fill='#ef4444' font-family='sans-serif' font-size='16'>a</text><text x='150' y='250' fill='#fbbf24' font-family='sans-serif' font-size='16' text-anchor='middle'>10 cm</text></svg>"
+    },
+    {
+      "title": "Paso 2: Resolución trigonométrica de la apotema",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Fijémonos en uno de los pequeños triángulos rectángulos. Sabemos la base, que es 5 centímetros, y el ángulo superior, que es 36 grados. Para hallar la altura, usamos la tangente.",
+      "content": "<p>Aislamos uno de los triángulos rectángulos formados. En este triángulo:</p><ul><li>El cateto inferior es la mitad del lado del pentágono: $b = \\frac{10}{2} = 5\\text{ cm}$.</li><li>El cateto vertical es la apotema $a$, nuestra incógnita.</li><li>El ángulo superior es la mitad del ángulo central: $\\beta = \\frac{72^\\circ}{2} = 36^\\circ$.</li></ul><p>Buscamos una razón trigonométrica que relacione el cateto opuesto ($5\\text{ cm}$) con el cateto contiguo ($a$). Esa es la tangente:</p><p>$$\\tan(36^\\circ) = \\frac{\\text{Cateto opuesto}}{\\text{Cateto contiguo}} = \\frac{5}{a}$$</p><p>Despejamos la apotema $a$ intercambiando su posición con la tangente:</p><p>$$a = \\frac{5}{\\tan(36^\\circ)}\\text{ cm}$$</p><p>Mantenemos el valor exacto para evitar errores de arrastre en cálculos posteriores. Su aproximación decimal es $a \\approx 6.8819\\text{ cm}$.</p>",
+      "checkpoint": {
+        "question": "¿Por qué elegimos la tangente y no el seno para calcular la apotema en este paso?",
+        "options": [
+          {
+            "text": "Porque el seno nos obligaría a calcular primero la hipotenusa (el radio), añadiendo un paso innecesario.",
+            "correct": true,
+            "feedback": "¡Exacto! El seno relaciona el cateto opuesto con la hipotenusa. Como no conocemos la hipotenusa y solo queremos la apotema (cateto contiguo), la tangente es la herramienta directa perfecta."
+          },
+          {
+            "text": "Porque la apotema siempre se calcula exclusivamente con la tangente, es una norma.",
+            "correct": false,
+            "feedback": "No hay una norma estricta. Podrías usar Pitágoras tras hallar el radio, o la cotangente, pero la tangente es la más directa dadas las incógnitas."
+          },
+          {
+            "text": "Porque el ángulo de 36 grados no tiene seno exacto y no se puede usar.",
+            "correct": false,
+            "feedback": "Incorrecto. Cualquier ángulo tiene un valor de seno válido (sea irracional o no). La elección depende de los lados involucrados (opuesto y contiguo), no del ángulo."
+          }
+        ]
+      },
+      "visual": "<svg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='100%' height='100%' fill='#0f172a'/><polygon points='100,50 100,250 245.3,250' fill='rgba(59,130,246,0.2)' stroke='#3b82f6' stroke-width='2.5'/><polyline points='100,235 115,235 115,250' fill='none' stroke='#ffffff' stroke-width='1.5'/><path d='M 100 80 A 30 30 0 0 0 121.8 65' fill='none' stroke='#ffffff' stroke-width='1.5'/><text x='105' y='105' fill='#ffffff' font-family='sans-serif' font-size='16'>36°</text><text x='75' y='155' fill='#ef4444' font-family='sans-serif' font-size='20'>a</text><text x='170' y='275' fill='#fbbf24' font-family='sans-serif' font-size='18' text-anchor='middle'>5 cm</text></svg>"
+    },
+    {
+      "title": "Paso 3: Cálculo del Área Total",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Con el valor de la apotema en nuestro poder, ya podemos calcular el área de todo el pentágono usando la fórmula del perímetro por apotema partido de dos.",
+      "content": "<p>El área $A$ de cualquier polígono regular se calcula con la fórmula que relaciona el perímetro y la apotema:</p><p>$$A = \\frac{\\text{Perímetro} \\cdot \\text{Apotema}}{2}$$</p><p>Calculamos el perímetro $P$, sabiendo que son $5$ lados de $10\\text{ cm}$:</p><p>$$P = 5 \\cdot 10 = 50\\text{ cm}$$</p><p>Sustituimos el perímetro y el valor exacto de la apotema $a = \\frac{5}{\\tan(36^\\circ)}$ en la fórmula del área:</p><p>$$A = \\frac{50 \\cdot \\left( \\frac{5}{\\tan(36^\\circ)} \\right)}{2} = \\frac{250}{2 \\cdot \\tan(36^\\circ)}$$</p><p>Simplificamos la fracción dividiendo $250$ entre $2$:</p><p>$$A = \\frac{125}{\\tan(36^\\circ)}\\text{ cm}^2$$</p><p>Este es el <strong>valor analítico exacto</strong> del área.</p>"
+    },
+    {
+      "title": "Comprobación y resultados finales",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Vamos a aproximar nuestros resultados a dos decimales y comprobar que tienen sentido físico.",
+      "content": "<p>Para dar una respuesta práctica, aproximamos los valores exactos calculados utilizando una calculadora científica (configurada en grados, DEG):</p><ul><li><strong>Apotema:</strong> $a = \\frac{5}{\\tan(36^\\circ)} \\approx \\frac{5}{0.7265} \\approx 6.88\\text{ cm}$</li><li><strong>Área Total:</strong> $A = \\frac{125}{\\tan(36^\\circ)} \\approx \\frac{125}{0.7265} \\approx 172.05\\text{ cm}^2$</li></ul><p><strong>Verificación de coherencia:</strong> Un cuadrado de lado $10\\text{ cm}$ tiene $100\\text{ cm}^2$ de área. Un pentágono regular con el mismo lado encierra más superficie que el cuadrado al tener un lado adicional y acercarse más a la forma de una circunferencia. El valor $172.05\\text{ cm}^2$ es un resultado lógicamente superior y geométricamente proporcionado.</p><p>Ambas magnitudes se han expresado con sus respectivas unidades de longitud (cm) y superficie (cm$^2$), cumpliendo estrictamente con las condiciones del problema.</p>",
+      "warning": "Un error muy común es configurar la calculadora en Radianes (RAD) o Grados centesimales (GRA) en lugar de Sexagesimales (DEG) al calcular $\\tan(36^\\circ)$. Verifica siempre el modo de tu calculadora."
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los pasos clave. Primero dividimos en triángulos rectángulos. Luego usamos trigonometría. Y finalmente aplicamos la fórmula del área.",
+      "content": "<ol><li><strong>Análisis geométrico:</strong> Dividimos el pentágono en triángulos rectángulos cuyo ángulo superior es la mitad del ángulo central: $360^\\circ / 5 / 2 = 36^\\circ$.</li><li><strong>Cálculo analítico de la apotema:</strong> Usando la base de medio lado ($5\\text{ cm}$) y trigonometría, despejamos la apotema exactitud: $a = \\frac{5}{\\tan(36^\\circ)}$.</li><li><strong>Expresión exacta del Área:</strong> Aplicamos la fórmula del polígono regular ($A = \\frac{P \\cdot a}{2}$) introduciendo el valor simbólico de $a$.</li><li><strong>Solución final:</strong> Apotema $\\approx 6.88\\text{ cm}$ y Área $\\approx 172.05\\text{ cm}^2$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Intenta aplicar el mismo método a un octógono regular. No mires la respuesta hasta que hayas terminado.",
+      "content": "<p>Calcula de forma analítica el área total y la apotema de un <strong>octógono regular</strong> ($8$ lados) cuyo lado mide exactamente $8\\text{ cm}$ de longitud. Utiliza razones trigonométricas, manteniendo la precisión analítica antes de dar las aproximaciones decimales.</p><p><em>¡Inténtalo en un papel aplicando los mismos pasos antes de comprobar la solución!</em></p>",
+      "practiceAnswer": "<p><strong>Solución exacta:</strong></p><ul><li>Apotema: $a = \\frac{4}{\\tan(22.5^\\circ)}\\text{ cm}$</li><li>Área: $A = \\frac{128}{\\tan(22.5^\\circ)}\\text{ cm}^2$</li></ul><p><strong>Aproximaciones:</strong></p><ul><li>Apotema $\\approx 9.66\\text{ cm}$</li><li>Área $\\approx 309.02\\text{ cm}^2$</li></ul>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos si puedes usar la trigonometría al revés. Esta vez te doy la apotema y tienes que encontrar el lado de un decágono.",
+      "content": "<p>En el diseño de una tuerca decorativa con forma de <strong>decágono regular</strong> ($10$ lados), se sabe que la distancia desde el centro geométrico hasta el centro de uno de sus lados planos (su apotema) es exactamente $15\\text{ mm}$.</p><p>Haciendo uso de la trigonometría, halla la longitud exacta de un lado del decágono y, a partir de este, calcula su área total.</p><p><em>Piensa en cómo invertir el despeje realizado en el problema principal.</em></p>",
+      "practiceAnswer": "<p><strong>Análisis:</strong> El ángulo central del decágono es $360^\\circ/10 = 36^\\circ$. La mitad para el triángulo rectángulo es $18^\\circ$.</p><p><strong>Cálculo del lado ($L$):</strong> Sea $x$ la mitad del lado. $\\tan(18^\\circ) = \\frac{x}{15} \\implies x = 15\\cdot \\tan(18^\\circ)$. Por lo tanto, el lado es $L = 2x = 30\\cdot \\tan(18^\\circ)\\text{ mm} \\approx 9.75\\text{ mm}$.</p><p><strong>Área total:</strong> $A = \\frac{10 \\cdot L \\cdot 15}{2} = 75 \\cdot L = 75 \\cdot 30\\cdot \\tan(18^\\circ) = 2250\\cdot \\tan(18^\\circ)\\text{ mm}^2 \\approx 731.06\\text{ mm}^2$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:45:59.389Z",
+    "updatedAt": "2026-08-01T21:45:59.389Z",
+    "contentHash": "ab6a8af37e78295d",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

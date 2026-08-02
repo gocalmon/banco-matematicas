@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Geometría y Trigonometría",
+    "subtopic": "Resolución de triángulos rectángulos",
+    "exerciseType": "Problema aplicado",
+    "protocols": [
+      "E",
+      "F"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Modelizar matemáticamente una situación real mediante un triángulo rectángulo",
+      "Identificar la razón trigonométrica adecuada (seno) para calcular el cateto opuesto conociendo la hipotenusa y un ángulo",
+      "Interpretar y validar la coherencia del resultado en su contexto físico"
+    ],
+    "prerequisites": [
+      "Conocer las razones trigonométricas directas (seno, coseno, tangente)",
+      "Saber utilizar la calculadora científica para aproximar razones trigonométricas de ángulos no notables",
+      "Comprender la relación entre la inclinación de un segmento y sus proyecciones horizontal y vertical"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:20:46.036Z",
+    "id": "altura-alcanzada-por-una-escalera-apoyada-15653d42"
+  },
+  "title": "Altura alcanzada por una escalera apoyada",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leamos con atención el problema. Se trata de una situación muy habitual y práctica: apoyar una escalera con seguridad. Tenemos la longitud de la escalera y el ángulo que debe formar con el suelo. Nos piden averiguar hasta qué altura de la pared llegará.",
+      "content": "<p><strong>Ejercicio 10: Problema aplicado:</strong> Una escalera de mano de $5$ metros de longitud total se apoya sobre una pared vertical. Por motivos estrictos de seguridad, el ángulo que forma la base de la escalera con el suelo horizontal debe ser de exactamente $70^\\circ$. ¿A qué altura de la pared llegará el extremo superior de la escalera?</p>"
+    },
+    {
+      "title": "Estrategia de modelización",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver este problema físico, primero lo traduciremos a un modelo matemático. La pared, el suelo y la escalera forman un triángulo. Conociendo un lado y un ángulo, la trigonometría nos permitirá calcular cualquier otra medida.",
+      "content": "<h3>Plan de ataque</h3><ol><li><strong>Modelo geométrico:</strong> Asumimos que la pared es perfectamente perpendicular al suelo, formando un ángulo de $90^\\circ$. Esto nos permite trabajar con un <strong>triángulo rectángulo</strong>.</li><li><strong>Identificación de elementos:</strong><ul><li>La escalera es el lado más largo frente al ángulo recto: la <strong>hipotenusa</strong>.</li><li>El ángulo dado está en el suelo (vértice inferior).</li><li>La altura de la pared es el cateto que está frente a ese ángulo: el <strong>cateto opuesto</strong>.</li></ul></li><li><strong>Ecuación trigonométrica:</strong> La razón que relaciona cateto opuesto, hipotenusa y ángulo es el <strong>seno</strong>. Plantearemos la ecuación y despejaremos la altura.</li></ol><p><em>Aplicación real:</em> Este cálculo es vital en prevención de riesgos laborales. Las normativas exigen ángulos específicos (generalmente entre 70º y 75º) para evitar que la escalera deslice por la base (si está muy tumbada) o vuelque hacia atrás (si está muy vertical).</p>"
+    },
+    {
+      "title": "Construcción del triángulo rectángulo",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Fíjate en el esquema. Hemos simplificado la pared y el suelo como dos líneas perpendiculares. La escalera es la línea inclinada de 5 metros. El ángulo de 70 grados está en la base. Nuestro objetivo es calcular la altura, representada por la letra y.",
+      "content": "<p>Representamos gráficamente los datos del enunciado para visualizar la relación trigonométrica:</p><ul><li>Trazamos una línea horizontal para el suelo y otra vertical para la pared (marcando el ángulo de $90^\\circ$).</li><li>Dibujamos la escalera apoyada. Su longitud es de $5 \\text{ m}$, que corresponde a la <strong>hipotenusa</strong> ($h = 5$).</li><li>Marcamos el ángulo entre la escalera y el suelo: $\\alpha = 70^\\circ$.</li><li>Identificamos nuestra incógnita: la altura sobre la pared, a la que llamaremos $y$. Esta distancia es el <strong>cateto opuesto</strong> al ángulo de $70^\\circ$.</li></ul>",
+      "visual": "<svg viewBox='0 0 400 350' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><g stroke='#334155' stroke-width='1' opacity='0.3'><line x1='0' y1='50' x2='400' y2='50'/><line x1='0' y1='100' x2='400' y2='100'/><line x1='0' y1='150' x2='400' y2='150'/><line x1='0' y1='200' x2='400' y2='200'/><line x1='0' y1='250' x2='400' y2='250'/><line x1='0' y1='300' x2='400' y2='300'/><line x1='50' y1='0' x2='50' y2='350'/><line x1='100' y1='0' x2='100' y2='350'/><line x1='150' y1='0' x2='150' y2='350'/><line x1='200' y1='0' x2='200' y2='350'/><line x1='250' y1='0' x2='250' y2='350'/><line x1='300' y1='0' x2='300' y2='350'/><line x1='350' y1='0' x2='350' y2='350'/></g><polyline points='120,50 120,280 320,280' fill='none' stroke='#94a3b8' stroke-width='4'/><polygon points='120,280 300,280 120,80' fill='rgba(56, 189, 248, 0.1)' stroke='none'/><polyline points='120,250 150,250 150,280' fill='none' stroke='#38bdf8' stroke-width='2'/><path d='M 270,280 A 30,30 0 0,0 262,238' fill='none' stroke='#a78bfa' stroke-width='3'/><text x='280' y='270' fill='#a78bfa' font-size='18' font-weight='bold'>70º</text><line x1='300' y1='280' x2='120' y2='80' stroke='#10b981' stroke-width='6'/><text x='230' y='160' fill='#10b981' font-size='18' font-weight='bold' transform='rotate(-48 230,160)'>Escalera = 5 m</text><text x='100' y='180' fill='#e2e8f0' font-size='18' text-anchor='middle' transform='rotate(-90 100,180)'>Altura y = ?</text></svg>"
+    },
+    {
+      "title": "Cálculo de la altura",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Usamos la fórmula del seno. El seno de 70 grados es igual a la altura entre cinco. Para dejar la altura sola, pasamos el cinco multiplicando. Con ayuda de la calculadora, multiplicamos cinco por el seno de 70 y obtenemos unos cuatro con setenta metros.",
+      "content": "<p><strong>Objetivo:</strong> Hallar el valor de $y$ (altura en la pared).</p><p>Planteamos la ecuación usando la definición trigonométrica del seno:</p><p>$$ \\sin(70^\\circ) = \\frac{\\text{Cateto Opuesto}}{\\text{Hipotenusa}} $$</p><p>Sustituimos nuestros datos:</p><p>$$ \\sin(70^\\circ) = \\frac{y}{5} $$</p><p>Despejamos $y$ multiplicando ambos miembros por $5$:</p><p>$$ y = 5 \\cdot \\sin(70^\\circ) $$</p><p>El ángulo de $70^\\circ$ no es notable, por lo que usamos la calculadora para aproximar su seno ($\\sin(70^\\circ) \\approx 0,9397$):</p><p>$$ y \\approx 5 \\cdot 0,9397 $$</p><p>$$ y \\approx 4,6985 \\text{ m} $$</p><p>Aproximando a dos decimales (centímetros), concluimos que <strong>la escalera llegará a una altura de $4,70 \\text{ m}$</strong>.</p>",
+      "theory": "<strong>Razón seno:</strong> En un triángulo rectángulo, el seno de un ángulo relaciona directamente el cateto que está enfrente (opuesto) con el lado más largo (hipotenusa).",
+      "checkpoint": {
+        "question": "Si el encargado de seguridad hubiera necesitado calcular a qué distancia exacta de la pared debe colocar la base de la escalera, ¿qué razón trigonométrica le habría resultado útil directamente?",
+        "options": [
+          {
+            "text": "La tangente, porque relaciona la distancia horizontal con la altura de la pared.",
+            "correct": false,
+            "feedback": "Incorrecto. Para usar la tangente necesitamos conocer la altura de la pared previamente. Lo ideal es usar un dato que ya nos daba el enunciado."
+          },
+          {
+            "text": "El coseno, porque relaciona el cateto adyacente (distancia de la base a la pared) con la hipotenusa conocida (5m).",
+            "correct": true,
+            "feedback": "¡Correcto! El coseno de 70º nos permitiría despejar directamente el suelo (x) usando la hipotenusa: cos(70º) = x / 5."
+          },
+          {
+            "text": "El Teorema de Pitágoras directamente.",
+            "correct": false,
+            "feedback": "Falso. Pitágoras exige conocer dos lados del triángulo, y en el punto de partida del problema solo conocíamos uno (la hipotenusa)."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Verificación del resultado",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Siempre hay que comprobar si el resultado tiene lógica física. Un cateto no puede medir más que la hipotenusa, y como el ángulo de 70 grados es bastante empinado, la altura debe acercarse bastante a la longitud total de la escalera, que es de 5 metros.",
+      "content": "<p><strong>Análisis de coherencia del resultado:</strong></p><ul><li><strong>Límite geométrico:</strong> La altura ($4,70 \\text{ m}$) es un cateto, por lo que matemáticamente está obligada a ser estrictamente menor que la hipotenusa ($5 \\text{ m}$). Nuestro resultado cumple esta regla de oro.</li><li><strong>Análisis cualitativo del ángulo:</strong> Un ángulo de $70^\\circ$ es bastante cercano a la vertical ($90^\\circ$). Por intuición geométrica, una escalera muy empinada alcanza una altura que se aproxima a su propia longitud total. Un resultado de $4,70 \\text{ m}$ frente a $5 \\text{ m}$ de longitud es altamente coherente.</li><li><strong>Comprobación opcional (Pitágoras):</strong> Si halláramos la base usando el coseno ($x = 5 \\cdot \\cos(70^\\circ) \\approx 1,71 \\text{ m}$), podríamos verificar que $(1,71)^2 + (4,70)^2 \\approx 2,92 + 22,09 = 25,01$, que es prácticamente $5^2$ (las diferencias se deben al redondeo).</li></ul>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Repasemos los pasos clave. Transformar texto en triángulo, elegir el seno, despejar y calcular con precisión.",
+      "content": "<h3>Método seguido:</h3><ol><li><strong>Esquema:</strong> Modelizamos la situación (escalera, pared, suelo) como un triángulo rectángulo donde la escalera ($5 \\text{ m}$) es la hipotenusa.</li><li><strong>Identificación de la razón:</strong> Como buscábamos la altura de la pared (cateto opuesto) y conocíamos el ángulo inferior ($70^\\circ$), seleccionamos el <strong>seno</strong>.</li><li><strong>Desarrollo algebraico:</strong> Planteamos $\\sin(70^\\circ) = \\frac{y}{5}$.</li><li><strong>Cálculo final:</strong> Despejamos multiplicando por $5$, operamos con la calculadora y redondeamos con criterio a $4,70 \\text{ metros}$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te toca resolver un problema casi idéntico. Solo cambian la longitud de la escalera y el ángulo exigido por la normativa. Haz el esquema y aplica el seno.",
+      "content": "<p><strong>Ejercicio propuesto:</strong></p><p>Para realizar el mantenimiento de una farola, los operarios despliegan una escalera telescópica hasta una longitud total de $8$ metros. Para garantizar la máxima estabilidad sobre el asfalto, apoyan la base de modo que forme un ángulo exacto de $75^\\circ$ con el suelo horizontal.</p><p>¿A qué altura exacta de la farola quedará apoyado el extremo superior de la escalera? Expresa el resultado redondeado a dos decimales.</p><p><em>Dibuja tu triángulo y resuelve en tu cuaderno antes de mirar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Solución:</strong></p><p>La altura es el cateto opuesto y la escalera es la hipotenusa.</p><p>$\\sin(75^\\circ) = \\frac{\\text{Altura}}{8} \\implies \\text{Altura} = 8 \\cdot \\sin(75^\\circ)$</p><p>Calculando el valor aproximado: $\\text{Altura} \\approx 8 \\cdot 0,9659 \\approx 7,73 \\text{ metros}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a cambiar el contexto completamente. Ya no hay escaleras ni paredes, pero la estructura matemática subyacente de un triángulo rectángulo es exactamente la misma. Veamos si lo reconoces.",
+      "content": "<p><strong>Ejercicio propuesto:</strong></p><p>Un avión despega desde un aeropuerto con un ángulo de elevación constante de $15^\\circ$. El piloto automático mantiene esta trayectoria recta hasta que el medidor de distancia recorrida en el aire (odómetro de vuelo) marca exactamente $10$ kilómetros desde el despegue.</p><p>Ignorando la curvatura de la Tierra, ¿a qué <strong>altitud</strong> sobre el nivel del suelo se encuentra el avión en ese preciso instante?</p><p><em>Pista: Identifica qué elemento del triángulo representa la trayectoria real volada en el aire.</em></p>",
+      "practiceAnswer": "<p><strong>Solución:</strong></p><p>La distancia recorrida en el aire ($10 \\text{ km}$) corresponde a la trayectoria inclinada, es decir, la hipotenusa del triángulo rectángulo. La altitud es la distancia vertical desde el avión al suelo, lo que equivale al cateto opuesto al ángulo de $15^\\circ$.</p><p>$\\sin(15^\\circ) = \\frac{\\text{Altitud}}{10} \\implies \\text{Altitud} = 10 \\cdot \\sin(15^\\circ)$</p><p>$\\text{Altitud} \\approx 10 \\cdot 0,2588 = 2,588 \\text{ km}$.</p><p>El avión se encuentra a unos $2.588 \\text{ metros}$ de altitud.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:20:53.874Z",
+    "updatedAt": "2026-08-01T21:20:53.874Z",
+    "contentHash": "9f31975fe5f41895",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

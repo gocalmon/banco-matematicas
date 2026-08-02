@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Geometría y Trigonometría",
+    "subtopic": "Medida de ángulos",
+    "exerciseType": "Conversión de unidades",
+    "protocols": [
+      "F",
+      "I"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Comprender la equivalencia entre grados sexagesimales y radianes",
+      "Aplicar factores de conversión para transformar medidas angulares",
+      "Interpretar ángulos mayores de una vuelta completa"
+    ],
+    "prerequisites": [
+      "Operaciones básicas con fracciones",
+      "Concepto de ángulo y vuelta completa"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:19:56.114Z",
+    "id": "conversion-de-radianes-a-grados-sexagesimales-e78a7aa1"
+  },
+  "title": "Conversión de radianes a grados sexagesimales",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a leer el enunciado. Nos piden transformar tres medidas de ángulos que están expresadas en radianes para pasarlas a la medida habitual de grados sexagesimales.",
+      "content": "<p><strong>Ejercicio 8:</strong> Realiza la conversión inversa de los siguientes ángulos expresados en radianes a grados sexagesimales:</p><ul><li>a) $\\frac{\\pi}{4} \\text{ rad}$</li><li>b) $\\frac{2\\pi}{3} \\text{ rad}$</li><li>c) $3\\pi \\text{ rad}$</li></ul>"
+    },
+    {
+      "title": "Estrategia de conversión",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para cambiar de radianes a grados, utilizaremos un factor de conversión. Sabemos que media vuelta a una circunferencia equivale a pi radianes y también a ciento ochenta grados. Usaremos esa equivalencia para transformar nuestras fracciones.",
+      "content": "<h3>Plan de ataque</h3><p>Para convertir unidades, utilizamos el método de los <strong>factores de conversión</strong>.</p><ol><li><strong>Identificar la equivalencia base:</strong> La relación fundamental en trigonometría es que media circunferencia equivale a $180^\\circ$ y también a $\\pi \\text{ rad}$.</li><li><strong>Construir el factor:</strong> Nuestro objetivo es eliminar los radianes y obtener grados. Por tanto, multiplicaremos por la fracción $\\frac{180^\\circ}{\\pi \\text{ rad}}$.</li><li><strong>Aplicar a cada caso:</strong> Multiplicaremos cada uno de los apartados por este factor, cancelaremos las unidades de radianes y el número $\\pi$ (cuando sea posible), y simplificaremos la fracción resultante.</li></ol><p><em>Aplicación real:</em> Los radianes son el estándar en física para medir la velocidad angular de motores o ruedas, pero los grados son más intuitivos para el diseño en ingeniería o la navegación. Saber pasar de unos a otros es imprescindible.</p>"
+    },
+    {
+      "title": "Apartado a): Conversión de π/4 rad",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Empezamos con el primer ángulo, pi cuartos de radián. Multiplicamos por ciento ochenta grados y dividimos entre pi radianes. Los pi y los radianes se cancelan, quedando solo los grados. Dividimos ciento ochenta entre cuatro y obtenemos cuarenta y cinco grados.",
+      "content": "<p><strong>Objetivo:</strong> Convertir $\\frac{\\pi}{4} \\text{ rad}$ a grados.</p><p>Escribimos nuestra cantidad original y la multiplicamos por el factor de conversión:</p><p>$$ \\frac{\\pi}{4} \\text{ rad} \\cdot \\frac{180^\\circ}{\\pi \\text{ rad}} $$</p><p>Cancelamos la unidad $\\text{rad}$ y el número $\\pi$ que aparecen tanto en el numerador como en el denominador:</p><p>$$ \\frac{180^\\circ}{4} $$</p><p>Realizamos la división exacta:</p><p>$$ \\frac{180^\\circ}{4} = 45^\\circ $$</p><p>Por tanto, el ángulo equivale a la mitad de un ángulo recto.</p>",
+      "theory": "<strong>Factor de conversión:</strong> Una fracción que vale $1$ porque su numerador y denominador representan la misma cantidad en distintas unidades. Al multiplicar por él, no alteramos el valor real, solo sus unidades.",
+      "visual": "<svg viewBox='0 0 300 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='150' x2='300' y2='150'/><line x1='150' y1='0' x2='150' y2='300'/></g><circle cx='150' cy='150' r='100' fill='none' stroke='#475569' stroke-width='2'/><path d='M 150,150 L 250,150 A 100,100 0 0,0 220.7,79.3 Z' fill='rgba(56, 189, 248, 0.2)' stroke='#38bdf8' stroke-width='2'/><text x='190' y='140' fill='#38bdf8' font-size='16'>45º</text><text x='190' y='120' fill='#e2e8f0' font-size='14'>(π/4 rad)</text></svg>"
+    },
+    {
+      "title": "Apartado b): Conversión de 2π/3 rad",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Vamos con el segundo: dos pi tercios. Hacemos lo mismo: multiplicamos por el factor de conversión. Se van los pi. Nos queda dos por ciento ochenta entre tres. Para hacerlo más fácil, primero dividimos ciento ochenta entre tres, que es sesenta, y luego multiplicamos por dos. Resultado, ciento veinte grados.",
+      "content": "<p><strong>Objetivo:</strong> Convertir $\\frac{2\\pi}{3} \\text{ rad}$ a grados.</p><p>Aplicamos el mismo factor de conversión:</p><p>$$ \\frac{2\\pi}{3} \\text{ rad} \\cdot \\frac{180^\\circ}{\\pi \\text{ rad}} $$</p><p>Cancelamos $\\pi$ y la unidad $\\text{rad}$:</p><p>$$ \\frac{2 \\cdot 180^\\circ}{3} $$</p><p>Para calcularlo mentalmente de forma más sencilla, podemos dividir primero y multiplicar después:</p><p>$$ 2 \\cdot \\left(\\frac{180^\\circ}{3}\\right) = 2 \\cdot 60^\\circ = 120^\\circ $$</p><p>Este es un ángulo obtuso, mayor de $90^\\circ$ pero menor de $180^\\circ$.</p>",
+      "checkpoint": {
+        "question": "¿Qué pasaría si en lugar de multiplicar por 180/π multiplicásemos por π/180?",
+        "options": [
+          {
+            "text": "Estaríamos convirtiendo de grados a radianes, y en este caso las unidades de radianes se elevarían al cuadrado, dándonos un resultado incorrecto.",
+            "correct": true,
+            "feedback": "Correcto. El factor de conversión debe tener en el denominador la unidad que queremos cancelar (radianes) y en el numerador la que queremos obtener (grados)."
+          },
+          {
+            "text": "Obtendríamos el mismo resultado pero con signo negativo.",
+            "correct": false,
+            "feedback": "Falso. Multiplicar por la fracción inversa cambia completamente el valor numérico y las unidades resultantes."
+          },
+          {
+            "text": "El número pi se cancelaría igual y obtendríamos los grados correctos.",
+            "correct": false,
+            "feedback": "Falso. Si pi está en el numerador del factor, acabaríamos con pi al cuadrado en el resultado."
+          }
+        ]
+      },
+      "visual": "<svg viewBox='0 0 300 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='150' x2='300' y2='150'/><line x1='150' y1='0' x2='150' y2='300'/></g><circle cx='150' cy='150' r='100' fill='none' stroke='#475569' stroke-width='2'/><path d='M 150,150 L 250,150 A 100,100 0 0,0 100,63.4 Z' fill='rgba(16, 185, 129, 0.2)' stroke='#10b981' stroke-width='2'/><text x='160' y='110' fill='#10b981' font-size='16'>120º</text><text x='70' y='70' fill='#e2e8f0' font-size='14'>(2π/3 rad)</text></svg>"
+    },
+    {
+      "title": "Apartado c): Conversión de 3π rad",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Por último, tres pi radianes. Aplicamos nuestro factor. Los pi desaparecen y nos queda tres por ciento ochenta. Esto da quinientos cuarenta grados. Como una vuelta completa son trescientos sesenta grados, este ángulo representa una vuelta completa más media vuelta extra.",
+      "content": "<p><strong>Objetivo:</strong> Convertir $3\\pi \\text{ rad}$ a grados.</p><p>Volvemos a usar el factor de conversión general:</p><p>$$ 3\\pi \\text{ rad} \\cdot \\frac{180^\\circ}{\\pi \\text{ rad}} $$</p><p>Cancelamos $\\pi$ y la unidad de los radianes, y multiplicamos:</p><p>$$ 3 \\cdot 180^\\circ = 540^\\circ $$</p><p><strong>Interpretación:</strong> Sabemos que una vuelta completa son $2\\pi \\text{ rad}$ o $360^\\circ$. Como tenemos $3\\pi \\text{ rad}$, esto equivale a una vuelta completa ($2\\pi$) más media vuelta adicional ($\\pi$).</p><p>Analíticamente: $540^\\circ = 360^\\circ + 180^\\circ$.</p>",
+      "visual": "<svg viewBox='0 0 300 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='0' y1='150' x2='300' y2='150'/><line x1='150' y1='0' x2='150' y2='300'/></g><circle cx='150' cy='150' r='100' fill='none' stroke='#475569' stroke-width='2' stroke-dasharray='4,4'/><path d='M 230,150 A 80,80 0 1,0 150,230 A 80,80 0 0,0 210,150 A 60,60 0 1,0 150,90 A 60,60 0 0,0 90,150' fill='none' stroke='#f472b6' stroke-width='3'/><polygon points='90,150 85,140 95,140' fill='#f472b6' transform='rotate(180 90,150)'/><text x='40' y='140' fill='#f472b6' font-size='16'>540º</text><text x='35' y='160' fill='#e2e8f0' font-size='14'>(3π rad)</text></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulemos rápidamente. Siempre que queramos pasar de radianes a grados, el método es idéntico.",
+      "content": "<h3>Método global de conversión</h3><ol><li><strong>Identificar:</strong> Partimos de un ángulo en radianes.</li><li><strong>Factor de conversión:</strong> Multiplicamos siempre por $\\frac{180^\\circ}{\\pi \\text{ rad}}$.</li><li><strong>Operar:</strong> Cancelamos el símbolo $\\pi$ y operamos los números restantes.</li></ol><p><strong>Resultados finales:</strong></p><ul><li>a) $\\frac{\\pi}{4} \\text{ rad} = 45^\\circ$</li><li>b) $\\frac{2\\pi}{3} \\text{ rad} = 120^\\circ$</li><li>c) $3\\pi \\text{ rad} = 540^\\circ$</li></ul>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora te toca a ti. Aplica exactamente el mismo método multiplicando por el factor de conversión para estos dos nuevos ángulos. Inténtalo en tu cuaderno antes de mirar la solución.",
+      "content": "<p><strong>Ejercicio propuesto:</strong></p><p>Realiza la conversión inversa de los siguientes ángulos expresados en radianes a grados sexagesimales aplicando el factor de conversión:</p><ul><li>a) $\\frac{5\\pi}{6} \\text{ rad}$</li><li>b) $\\frac{3\\pi}{2} \\text{ rad}$</li></ul><p><em>Resuelve en tu cuaderno simplificando las fracciones paso a paso antes de consultar la respuesta.</em></p>",
+      "practiceAnswer": "<p><strong>Soluciones:</strong></p><ul><li>a) $\\frac{5\\pi}{6} \\text{ rad} \\cdot \\frac{180^\\circ}{\\pi \\text{ rad}} = \\frac{5 \\cdot 180^\\circ}{6} = 5 \\cdot 30^\\circ = 150^\\circ$</li><li>b) $\\frac{3\\pi}{2} \\text{ rad} \\cdot \\frac{180^\\circ}{\\pi \\text{ rad}} = \\frac{3 \\cdot 180^\\circ}{2} = 3 \\cdot 90^\\circ = 270^\\circ$</li></ul>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Llevemos este conocimiento a un contexto de física mecánica. Los ingenieros necesitan convertir a menudo estas velocidades de giro.",
+      "content": "<p><strong>Ejercicio aplicado:</strong></p><p>El eje de un pequeño motor eléctrico gira a una velocidad constante y los sensores indican que describe un ángulo de $10\\pi \\text{ rad}$ cada segundo.</p><p>Calcula, usando factores de conversión, cuántos <strong>grados sexagesimales</strong> gira este motor en un solo segundo. ¿A cuántas <strong>vueltas completas</strong> equivale ese giro?</p><p><em>Plantea el factor de conversión como hemos hecho en el ejercicio para transformar la unidad angular.</em></p>",
+      "practiceAnswer": "<p><strong>Solución:</strong></p><p>Primero pasamos los radianes a grados:</p><p>$$ 10\\pi \\text{ rad} \\cdot \\frac{180^\\circ}{\\pi \\text{ rad}} = 10 \\cdot 180^\\circ = 1800^\\circ $$</p><p>El motor gira <strong>$1800^\\circ$ cada segundo</strong>.</p><p>Para saber las vueltas completas, dividimos entre $360^\\circ$ (que es una vuelta):</p><p>$$ \\frac{1800^\\circ}{360^\\circ} = 5 \\text{ vueltas} $$</p><p>Equivale exactamente a $5$ vueltas completas por segundo.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:20:03.469Z",
+    "updatedAt": "2026-08-01T21:20:03.469Z",
+    "contentHash": "89ffa3fbd441c6d5",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

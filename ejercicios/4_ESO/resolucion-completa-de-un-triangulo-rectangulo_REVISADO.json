@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Geometría y Trigonometría",
+    "subtopic": "Resolución de triángulos rectángulos",
+    "exerciseType": "Resolución analítica y gráfica",
+    "protocols": [
+      "E",
+      "F"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Resolver completamente un triángulo rectángulo a partir de un lado y un ángulo",
+      "Seleccionar la razón trigonométrica adecuada (seno, coseno o tangente) en función de los datos conocidos",
+      "Aplicar la propiedad de la suma de los ángulos interiores de un triángulo"
+    ],
+    "prerequisites": [
+      "Conocer que la suma de ángulos de un triángulo es 180º",
+      "Definiciones básicas de seno, coseno y tangente",
+      "Manejo de la calculadora científica para aproximar razones trigonométricas"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:24:25.323Z",
+    "id": "resolucion-completa-de-un-triangulo-rectangulo-527e5ce9"
+  },
+  "title": "Resolución completa de un triángulo rectángulo",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a analizar el enunciado. Nos piden resolver 'por completo' un triángulo rectángulo. Esto significa que debemos averiguar la medida de todos sus lados y todos sus ángulos. Para ello, contamos con tres datos: sabemos que es rectángulo (un ángulo de 90 grados), conocemos otro ángulo de 38 grados y la longitud del cateto que lo toca.",
+      "content": "<p><strong>Ejercicio 6:</strong> Resuelve por completo el triángulo rectángulo del cual se conoce de antemano que uno de sus ángulos agudos mide exactamente $38^\\circ$ y que el cateto contiguo (adyacente) a dicho ángulo tiene una longitud de $12 \\text{ cm}$. (Hallar el otro ángulo y los dos lados restantes).</p>"
+    },
+    {
+      "title": "Plan de ataque y estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "El método más seguro para resolver triángulos es intentar usar siempre los datos originales del problema. Así evitamos arrastrar errores de redondeo. Calcularemos el ángulo que falta por simple resta, y usaremos la tangente y el coseno para los lados.",
+      "content": "<h3>Estrategia de resolución</h3><ol><li><strong>Hallar el ángulo desconocido:</strong> Usaremos la propiedad de que la suma de todos los ángulos de un triángulo es siempre $180^\\circ$.</li><li><strong>Hallar el cateto opuesto ($c_{op}$):</strong> Buscaremos la razón trigonométrica que relacione el cateto que nos falta con el cateto que ya tenemos (el adyacente). Esa razón es la <strong>tangente</strong>.</li><li><strong>Hallar la hipotenusa ($h$):</strong> Buscaremos la razón que relacione la hipotenusa con nuestro dato original (cateto adyacente). Esa razón es el <strong>coseno</strong>.</li></ol><p><em>Nota de precisión:</em> Podríamos usar el Teorema de Pitágoras para hallar el tercer lado, pero es preferible usar trigonometría con los datos exactos dados en el enunciado para minimizar errores de aproximación decimal.</p>"
+    },
+    {
+      "title": "Representación geométrica",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Dibujemos el triángulo. Colocamos el ángulo de 38 grados en la base. El cateto que forma ese ángulo, el de la base, mide 12 centímetros. Nuestras incógnitas serán el ángulo superior, la altura (que es el cateto opuesto) y el lado más largo (la hipotenusa).",
+      "content": "<p>Construimos un modelo visual para interpretar correctamente los datos:</p><ul><li>Dibujamos un triángulo rectángulo (marcando el ángulo de $90^\\circ$).</li><li>Situamos el ángulo conocido $\\alpha = 38^\\circ$ en el vértice inferior izquierdo.</li><li>Etiquetamos el <strong>cateto adyacente</strong> (el que forma parte del ángulo) con su valor: $12 \\text{ cm}$.</li><li>Señalamos nuestras incógnitas: el ángulo superior $\\beta$, el cateto opuesto $c_{op}$ y la hipotenusa $h$.</li></ul>",
+      "visual": "<svg viewBox='0 0 400 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><g stroke='#334155' stroke-width='1' opacity='0.3'><line x1='0' y1='50' x2='400' y2='50'/><line x1='0' y1='100' x2='400' y2='100'/><line x1='0' y1='150' x2='400' y2='150'/><line x1='0' y1='200' x2='400' y2='200'/><line x1='0' y1='250' x2='400' y2='250'/><line x1='50' y1='0' x2='50' y2='300'/><line x1='100' y1='0' x2='100' y2='300'/><line x1='150' y1='0' x2='150' y2='300'/><line x1='200' y1='0' x2='200' y2='300'/><line x1='250' y1='0' x2='250' y2='300'/><line x1='300' y1='0' x2='300' y2='300'/><line x1='350' y1='0' x2='350' y2='300'/></g><polygon points='50,250 250,250 250,94' fill='rgba(56, 189, 248, 0.1)' stroke='#38bdf8' stroke-width='3'/><polyline points='220,250 220,220 250,220' fill='none' stroke='#38bdf8' stroke-width='2'/><path d='M 100,250 A 50,50 0 0,0 89,219' fill='none' stroke='#a78bfa' stroke-width='3'/><text x='110' y='240' fill='#a78bfa' font-size='18' font-weight='bold'>38º</text><path d='M 250,130 A 36,36 0 0,0 231,108' fill='none' stroke='#f472b6' stroke-width='3'/><text x='220' y='145' fill='#f472b6' font-size='18' font-weight='bold'>β = ?</text><text x='150' y='270' fill='#10b981' font-size='16' text-anchor='middle' font-weight='bold'>c_adj = 12 cm</text><text x='265' y='180' fill='#e2e8f0' font-size='16' text-anchor='middle' transform='rotate(-90 265,180)'>c_op = ?</text><text x='140' y='160' fill='#e2e8f0' font-size='18' text-anchor='middle' transform='rotate(-38 140,160)'>h = ?</text></svg>"
+    },
+    {
+      "title": "Cálculo del ángulo restante",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "El primer paso es el más sencillo. Como en cualquier triángulo los ángulos suman 180 grados y ya tenemos uno de 90 y otro de 38, el tercer ángulo debe ser lo que falta para llegar a 180.",
+      "content": "<p><strong>Objetivo:</strong> Hallar el ángulo agudo $\\beta$.</p><p>Sabemos que la suma de los ángulos interiores de cualquier triángulo es $180^\\circ$:</p><p>$$ \\alpha + \\beta + 90^\\circ = 180^\\circ $$</p><p>Sustituimos el valor de nuestro ángulo conocido $\\alpha = 38^\\circ$:</p><p>$$ 38^\\circ + \\beta + 90^\\circ = 180^\\circ $$</p><p>$$ 128^\\circ + \\beta = 180^\\circ $$</p><p>Despejamos $\\beta$:</p><p>$$ \\beta = 180^\\circ - 128^\\circ = 52^\\circ $$</p><p>El ángulo agudo restante mide <strong>$52^\\circ$</strong>.</p>",
+      "theory": "<strong>Ángulos complementarios:</strong> En un triángulo rectángulo, los dos ángulos agudos siempre suman $90^\\circ$ (son complementarios). Podríamos haber calculado $\\beta$ directamente como $90^\\circ - 38^\\circ = 52^\\circ$."
+    },
+    {
+      "title": "Cálculo del cateto opuesto",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora calcularemos el cateto vertical. Usamos la tangente de 38 grados, que es el cateto opuesto partido por el cateto adyacente. Como el adyacente mide 12, despejamos pasando el 12 multiplicando. El resultado es unos 9,38 centímetros.",
+      "content": "<p><strong>Objetivo:</strong> Hallar la longitud del cateto opuesto ($c_{op}$).</p><p>Aplicamos la definición trigonométrica de la tangente, que relaciona los dos catetos:</p><p>$$ \\tan(38^\\circ) = \\frac{\\text{Cateto Opuesto}}{\\text{Cateto Adyacente}} $$</p><p>Sustituimos el dato conocido ($12 \\text{ cm}$):</p><p>$$ \\tan(38^\\circ) = \\frac{c_{op}}{12} $$</p><p>Despejamos $c_{op}$ multiplicando ambos miembros por $12$:</p><p>$$ c_{op} = 12 \\cdot \\tan(38^\\circ) $$</p><p>Utilizamos la calculadora para aproximar el valor de la tangente:</p><p>$$ c_{op} \\approx 12 \\cdot 0,7813 $$</p><p>$$ c_{op} \\approx 9,3754 \\dots $$</p><p>Redondeando a dos decimales, obtenemos <strong>$9,38 \\text{ cm}$</strong>.</p>",
+      "checkpoint": {
+        "question": "¿Podríamos haber usado el ángulo de 52º para calcular este mismo cateto?",
+        "options": [
+          {
+            "text": "Sí, usando la tangente de 52º, pero en ese caso la ecuación sería tan(52º) = 12 / c_op.",
+            "correct": true,
+            "feedback": "¡Correcto! Si nos situamos en el ángulo de 52º (el de arriba), el cateto opuesto pasa a ser el de 12 cm, y el adyacente es nuestra incógnita."
+          },
+          {
+            "text": "No, una vez elegido un ángulo, debemos usar ese para todos los cálculos.",
+            "correct": false,
+            "feedback": "Falso. Puedes resolver el triángulo desde la perspectiva de cualquiera de los dos ángulos agudos, el resultado será el mismo."
+          },
+          {
+            "text": "Sí, usando el coseno de 52º.",
+            "correct": false,
+            "feedback": "Incorrecto. El coseno relaciona el cateto con la hipotenusa, y aquí estábamos relacionando los dos catetos."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Cálculo de la hipotenusa",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Finalmente, vamos a por la hipotenusa. Para no usar el 9,38 que acabamos de calcular, que está redondeado, usaremos de nuevo el 12 inicial. El coseno relaciona el cateto adyacente con la hipotenusa. Despejamos, dividimos 12 entre el coseno de 38, y nos da 15,23 centímetros.",
+      "content": "<p><strong>Objetivo:</strong> Hallar la longitud de la hipotenusa ($h$).</p><p>Para usar el dato original exacto ($12 \\text{ cm}$), empleamos el coseno:</p><p>$$ \\cos(38^\\circ) = \\frac{\\text{Cateto Adyacente}}{\\text{Hipotenusa}} $$</p><p>Sustituimos:</p><p>$$ \\cos(38^\\circ) = \\frac{12}{h} $$</p><p>Despejamos $h$. Para ello, multiplicamos por $h$ y dividimos entre $\\cos(38^\\circ)$:</p><p>$$ h = \\frac{12}{\\cos(38^\\circ)} $$</p><p>Usamos la calculadora:</p><p>$$ h \\approx \\frac{12}{0,7880} $$</p><p>$$ h \\approx 15,2282 \\dots $$</p><p>Redondeando a dos decimales, la hipotenusa mide <strong>$15,23 \\text{ cm}$</strong>.</p>"
+    },
+    {
+      "title": "Comprobación de coherencia analítica",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Vamos a verificar que los tres lados forman realmente un triángulo rectángulo aplicando el Teorema de Pitágoras. Como hemos redondeado los lados, no nos dará una igualdad perfecta, pero debe ser un resultado muy aproximado.",
+      "content": "<p><strong>Objetivo:</strong> Validar los resultados mediante el Teorema de Pitágoras.</p><p>Debe cumplirse que la suma de los cuadrados de los catetos sea igual al cuadrado de la hipotenusa:</p><p>$$ (c_{adj})^2 + (c_{op})^2 = h^2 $$</p><p>Sustituimos nuestros valores aproximados:</p><p>$$ 12^2 + (9,38)^2 = (15,23)^2 $$</p><p>$$ 144 + 87,9844 = 231,9529 $$</p><p>$$ 231,9844 \\approx 231,9529 $$</p><p>La igualdad se cumple casi a la perfección (la diferencia de tres centésimas se debe, efectivamente, al arrastre del error por redondeo en los dos decimales). Los cálculos son correctos.</p><p>Además, lógicamente, la hipotenusa ($15,23$) es el lado mayor, seguido del cateto opuesto al ángulo mayor ($12$ está frente a $52^\\circ$) y el lado menor frente al ángulo menor ($9,38$ frente a $38^\\circ$).</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Hagamos un resumen de los datos de nuestro triángulo ya completamente resuelto.",
+      "content": "<h3>Resumen del triángulo resuelto</h3><table style='width:100%; text-align:left; border-collapse: collapse;'><tr><th style='border-bottom: 1px solid #94a3b8; padding: 8px;'>Elemento</th><th style='border-bottom: 1px solid #94a3b8; padding: 8px;'>Valor inicial</th><th style='border-bottom: 1px solid #94a3b8; padding: 8px;'>Valor calculado</th></tr><tr><td style='padding: 8px;'>Ángulo recto</td><td style='padding: 8px;'>$90^\\circ$</td><td style='padding: 8px;'>-</td></tr><tr><td style='padding: 8px;'>Ángulo agudo menor ($\\alpha$)</td><td style='padding: 8px;'>$38^\\circ$</td><td style='padding: 8px;'>-</td></tr><tr><td style='padding: 8px;'>Ángulo agudo mayor ($\\beta$)</td><td style='padding: 8px;'>-</td><td style='padding: 8px;'>$\\mathbf{52^\\circ}$</td></tr><tr><td style='padding: 8px;'>Cateto adyacente a $\\alpha$</td><td style='padding: 8px;'>$12 \\text{ cm}$</td><td style='padding: 8px;'>-</td></tr><tr><td style='padding: 8px;'>Cateto opuesto a $\\alpha$</td><td style='padding: 8px;'>-</td><td style='padding: 8px;'>$\\mathbf{9,38 \\text{ cm}}$</td></tr><tr><td style='padding: 8px;'>Hipotenusa</td><td style='padding: 8px;'>-</td><td style='padding: 8px;'>$\\mathbf{15,23 \\text{ cm}}$</td></tr></table>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno. Resuelve por completo este otro triángulo. La estructura es exactamente la misma, pero esta vez te doy el cateto opuesto en lugar del adyacente.",
+      "content": "<p><strong>Ejercicio propuesto:</strong></p><p>Resuelve por completo un triángulo rectángulo sabiendo que uno de sus ángulos agudos mide $\\alpha = 25^\\circ$ y que el <strong>cateto opuesto</strong> a dicho ángulo tiene una longitud de $8 \\text{ cm}$.</p><p><em>Pista: Para calcular el cateto adyacente usando el dato original, deberás usar de nuevo la tangente, pero la incógnita estará ahora en el denominador. Resuelve en papel antes de ver las respuestas.</em></p>",
+      "practiceAnswer": "<p><strong>Solución:</strong></p><ol><li>Ángulo restante: $\\beta = 90^\\circ - 25^\\circ = \\mathbf{65^\\circ}$.</li><li>Cateto adyacente: $\\tan(25^\\circ) = \\frac{8}{c_{adj}} \\implies c_{adj} = \\frac{8}{\\tan(25^\\circ)} \\approx \\mathbf{17,16 \\text{ cm}}$.</li><li>Hipotenusa: usando el seno con el dato exacto: $\\sin(25^\\circ) = \\frac{8}{h} \\implies h = \\frac{8}{\\sin(25^\\circ)} \\approx \\mathbf{18,93 \\text{ cm}}$.</li></ol>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Llevemos esto al mundo real. Plantear y resolver triángulos rectángulos sirve para medir distancias indirectamente. Vamos a calcular la altura de un árbol.",
+      "content": "<p><strong>Problema aplicado:</strong></p><p>A cierta hora del día, el ángulo de elevación del Sol sobre el horizonte es de $42^\\circ$. En ese instante, un árbol proyecta sobre el suelo horizontal una sombra que mide $15 \\text{ m}$ de largo desde la base de su tronco.</p><p>Determina la <strong>altura del árbol</strong> y la <strong>distancia lineal desde la copa del árbol hasta la punta de su sombra</strong> en el suelo.</p>",
+      "practiceAnswer": "<p><strong>Solución:</strong></p><p>El árbol, la sombra y el rayo de sol forman un triángulo rectángulo. El ángulo de $42^\\circ$ está en la punta de la sombra. La sombra ($15 \\text{ m}$) es el cateto adyacente.</p><p>1. <strong>Altura del árbol (cateto opuesto):</strong><br>$\\tan(42^\\circ) = \\frac{\\text{Altura}}{15} \\implies \\text{Altura} = 15 \\cdot \\tan(42^\\circ) \\approx \\mathbf{13,51 \\text{ m}}$.</p><p>2. <strong>Distancia de copa a punta sombra (hipotenusa):</strong><br>$\\cos(42^\\circ) = \\frac{15}{h} \\implies h = \\frac{15}{\\cos(42^\\circ)} \\approx \\mathbf{20,18 \\text{ m}}$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:24:35.080Z",
+    "updatedAt": "2026-08-01T21:24:35.080Z",
+    "contentHash": "8072b44411fcc6a2",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

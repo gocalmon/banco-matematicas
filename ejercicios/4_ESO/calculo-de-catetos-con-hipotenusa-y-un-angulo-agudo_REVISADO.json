@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Geometría y Trigonometría",
+    "subtopic": "Resolución de triángulos rectángulos",
+    "exerciseType": "Resolución analítica y gráfica",
+    "protocols": [
+      "E",
+      "F"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Aplicar las razones trigonométricas directas para calcular los lados de un triángulo rectángulo",
+      "Manejar valores exactos de ángulos notables (30º, 45º, 60º) utilizando radicales"
+    ],
+    "prerequisites": [
+      "Conocer las definiciones de seno y coseno",
+      "Saber el valor exacto del seno y coseno de 30º",
+      "Operar con fracciones y raíces cuadradas"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:18:55.854Z",
+    "id": "calculo-de-catetos-con-hipotenusa-y-un-angulo-agudo-25ed63d2"
+  },
+  "title": "Cálculo de catetos con hipotenusa y un ángulo agudo",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leamos juntos el enunciado. Tenemos un triángulo rectángulo del que conocemos el lado más largo, la hipotenusa, y uno de sus ángulos. Nos piden averiguar cuánto miden exactamente los otros dos lados.",
+      "content": "<p><strong>Ejercicio 6:</strong> Un triángulo rectángulo cuenta con una hipotenusa que mide $15 \\text{ cm}$ de longitud y uno de sus ángulos agudos es de exactamente $30^\\circ$. Calcula razonadamente la medida exacta de ambos catetos.</p>"
+    },
+    {
+      "title": "Plan de ataque y estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para encontrar los catetos, usaremos las herramientas de la trigonometría. El seno y el coseno relacionan los catetos con la hipotenusa. Como nos piden la medida exacta, tendremos que usar las fracciones y raíces de los ángulos notables.",
+      "content": "<h3>Estrategia de resolución</h3><ol><li><strong>Identificar las incógnitas:</strong> Llamaremos $c_{op}$ al cateto opuesto al ángulo de $30^\\circ$, y $c_{adj}$ al cateto adyacente (el que forma parte del ángulo).</li><li><strong>Plantear ecuaciones:</strong> Utilizaremos la definición del <strong>seno</strong> para calcular $c_{op}$ y la del <strong>coseno</strong> para calcular $c_{adj}$.</li><li><strong>Valores exactos:</strong> Sustituiremos $\\sin(30^\\circ)$ y $\\cos(30^\\circ)$ por sus valores teóricos exactos en forma de fracción y radical, evitando decimales aproximados.</li><li><strong>Comprobación:</strong> Verificaremos los resultados obtenidos aplicando el Teorema de Pitágoras.</li></ol><p><em>Aplicación real:</em> Este tipo de cálculo es continuo en topografía y arquitectura, por ejemplo, para conocer la altura exacta que alcanza una escalera mecánica conociendo su longitud y su inclinación de diseño.</p>"
+    },
+    {
+      "title": "Representación geométrica",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Dibujamos un esquema proporcional. Colocamos el ángulo de 30 grados en uno de los vértices agudos y anotamos que la hipotenusa mide 15 centímetros. Esto nos ayuda a visualizar qué cateto es el opuesto y cuál es el adyacente.",
+      "content": "<p>Construimos un modelo visual para interpretar correctamente las relaciones trigonométricas:</p><ul><li>Dibujamos un triángulo rectángulo (ángulo de $90^\\circ$ marcado con un cuadrado).</li><li>Situamos el ángulo de $\\alpha = 30^\\circ$ en el vértice inferior izquierdo.</li><li>Etiquetamos la <strong>hipotenusa</strong> con su valor: $h = 15 \\text{ cm}$.</li><li>Identificamos visualmente el <strong>cateto opuesto</strong> (frente al ángulo de $30^\\circ$) y el <strong>cateto adyacente</strong> (contiguo al ángulo).</li></ul>",
+      "visual": "<svg viewBox='0 0 400 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><g stroke='#334155' stroke-width='1' opacity='0.3'><line x1='0' y1='50' x2='400' y2='50'/><line x1='0' y1='100' x2='400' y2='100'/><line x1='0' y1='150' x2='400' y2='150'/><line x1='0' y1='200' x2='400' y2='200'/><line x1='0' y1='250' x2='400' y2='250'/><line x1='50' y1='0' x2='50' y2='300'/><line x1='100' y1='0' x2='100' y2='300'/><line x1='150' y1='0' x2='150' y2='300'/><line x1='200' y1='0' x2='200' y2='300'/><line x1='250' y1='0' x2='250' y2='300'/><line x1='300' y1='0' x2='300' y2='300'/><line x1='350' y1='0' x2='350' y2='300'/></g><polygon points='50,250 310,250 310,100' fill='rgba(56, 189, 248, 0.1)' stroke='#38bdf8' stroke-width='3'/><polyline points='280,250 280,220 310,220' fill='none' stroke='#38bdf8' stroke-width='2'/><path d='M 110,250 A 60,60 0 0,0 102,220' fill='none' stroke='#a78bfa' stroke-width='3'/><text x='115' y='240' fill='#a78bfa' font-size='18'>30º</text><text x='180' y='275' fill='#e2e8f0' font-size='16' text-anchor='middle'>Cateto adyacente</text><text x='330' y='180' fill='#e2e8f0' font-size='16' text-anchor='middle' transform='rotate(-90 330,180)'>Cateto opuesto</text><text x='170' y='160' fill='#10b981' font-size='18' font-weight='bold' text-anchor='middle' transform='rotate(-30 170,160)'>h = 15 cm</text></svg>"
+    },
+    {
+      "title": "Cálculo del cateto opuesto",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Vamos a calcular el cateto que está en vertical. Planteamos la fórmula del seno de 30 grados, que es igual al cateto opuesto entre la hipotenusa. Como el seno de 30 grados vale exactamente un medio, el cateto opuesto será justo la mitad de la hipotenusa.",
+      "content": "<p><strong>Objetivo:</strong> Hallar la longitud del cateto opuesto al ángulo de $30^\\circ$.</p><p>Aplicamos la definición trigonométrica del seno:</p><p>$$ \\sin(30^\\circ) = \\frac{\\text{Cateto Opuesto}}{\\text{Hipotenusa}} $$</p><p>Sustituimos la hipotenusa por su valor ($15$):</p><p>$$ \\sin(30^\\circ) = \\frac{c_{op}}{15} $$</p><p>Despejamos $c_{op}$ multiplicando por $15$ en ambos miembros:</p><p>$$ c_{op} = 15 \\cdot \\sin(30^\\circ) $$</p><p>Sabemos que el valor exacto del seno de $30^\\circ$ es $\\frac{1}{2}$:</p><p>$$ c_{op} = 15 \\cdot \\frac{1}{2} = \\frac{15}{2} = 7,5 \\text{ cm} $$</p><p>El cateto opuesto mide exactamente $7,5 \\text{ cm}$.</p>",
+      "theory": "<strong>Razones de ángulos notables:</strong> El ángulo de $30^\\circ$ es uno de los ángulos fundamentales en trigonometría. Su seno siempre es exactamente $\\frac{1}{2}$ y su coseno es $\\frac{\\sqrt{3}}{2}$."
+    },
+    {
+      "title": "Cálculo del cateto adyacente",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora calculamos la base del triángulo usando el coseno. El coseno de 30 grados es raíz de 3 partido por 2. Multiplicamos la hipotenusa por ese valor y lo dejamos en forma de fracción con raíz, porque el ejercicio exige la medida exacta.",
+      "content": "<p><strong>Objetivo:</strong> Hallar la longitud del cateto adyacente al ángulo de $30^\\circ$.</p><p>Aplicamos la definición del coseno:</p><p>$$ \\cos(30^\\circ) = \\frac{\\text{Cateto Adyacente}}{\\text{Hipotenusa}} $$</p><p>Sustituimos el valor de la hipotenusa:</p><p>$$ \\cos(30^\\circ) = \\frac{c_{adj}}{15} $$</p><p>Despejamos el cateto adyacente:</p><p>$$ c_{adj} = 15 \\cdot \\cos(30^\\circ) $$</p><p>Sustituimos el coseno por su valor exacto ($\\frac{\\sqrt{3}}{2}$):</p><p>$$ c_{adj} = 15 \\cdot \\frac{\\sqrt{3}}{2} = \\frac{15\\sqrt{3}}{2} \\text{ cm} $$</p><p>Para dar la medida <strong>exacta</strong>, debemos mantener la raíz cuadrada sin calcular su desarrollo decimal.</p>",
+      "checkpoint": {
+        "question": "¿Por qué no debemos escribir que el cateto adyacente mide aproximadamente 12,99 cm si la calculadora nos da ese resultado?",
+        "options": [
+          {
+            "text": "Porque el enunciado exige la medida 'exacta', y cualquier decimal truncado o redondeado de un número irracional introduce un error.",
+            "correct": true,
+            "feedback": "¡Correcto! Los números irracionales como raíz de 3 tienen infinitas cifras decimales. Solo manteniendo la raíz conservamos la exactitud absoluta pedida."
+          },
+          {
+            "text": "Porque usar decimales está prohibido siempre en trigonometría al calcular lados.",
+            "correct": false,
+            "feedback": "Falso. En muchas aplicaciones prácticas (arquitectura, ingeniería) se exige dar la solución decimal con cierta precisión. Depende de lo que pida el ejercicio."
+          },
+          {
+            "text": "Porque 12,99 cm correspondería a un triángulo con hipotenusa distinta a 15 cm.",
+            "correct": false,
+            "feedback": "Falso. 12,99 es una muy buena aproximación a la longitud real, pero el problema radica en el concepto de 'exactitud matemática', no en que pertenezca a otro triángulo."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Comprobación de coherencia analítica",
+      "layout": "split",
+      "phase": "comprobar",
+      "narration": "Vamos a comprobar si todo cuadra. Si aplicamos el teorema de Pitágoras con los dos catetos que acabamos de hallar, la suma de sus cuadrados debería darnos exactamente el cuadrado de la hipotenusa. Lo calculamos y vemos que efectivamente ambos lados de la ecuación dan 225.",
+      "content": "<p><strong>Objetivo:</strong> Validar los resultados mediante el Teorema de Pitágoras.</p><p>Si nuestros cálculos son correctos, debe cumplirse rigurosamente que:</p><p>$$ (c_{op})^2 + (c_{adj})^2 = h^2 $$</p><p>Sustituimos los valores exactos que hemos calculado:</p><p>$$ \\left(\\frac{15}{2}\\right)^2 + \\left(\\frac{15\\sqrt{3}}{2}\\right)^2 = 15^2 $$</p><p>Desarrollamos los cuadrados, recordando elevar tanto numerador como denominador, y el radical:</p><p>$$ \\frac{225}{4} + \\frac{225 \\cdot 3}{4} = 225 $$</p><p>$$ \\frac{225}{4} + \\frac{675}{4} = 225 $$</p><p>Sumamos las fracciones (tienen el mismo denominador):</p><p>$$ \\frac{900}{4} = 225 $$</p><p>$$ 225 = 225 $$</p><p>La igualdad se cumple de forma exacta, lo que confirma que nuestros catetos son correctos.</p>",
+      "visual": "<svg viewBox='0 0 400 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><g stroke='#334155' stroke-width='1' opacity='0.3'><line x1='0' y1='50' x2='400' y2='50'/><line x1='0' y1='100' x2='400' y2='100'/><line x1='0' y1='150' x2='400' y2='150'/><line x1='0' y1='200' x2='400' y2='200'/><line x1='0' y1='250' x2='400' y2='250'/><line x1='50' y1='0' x2='50' y2='300'/><line x1='100' y1='0' x2='100' y2='300'/><line x1='150' y1='0' x2='150' y2='300'/><line x1='200' y1='0' x2='200' y2='300'/><line x1='250' y1='0' x2='250' y2='300'/><line x1='300' y1='0' x2='300' y2='300'/><line x1='350' y1='0' x2='350' y2='300'/></g><polygon points='50,250 310,250 310,100' fill='rgba(16, 185, 129, 0.1)' stroke='#10b981' stroke-width='3'/><polyline points='280,250 280,220 310,220' fill='none' stroke='#10b981' stroke-width='2'/><path d='M 110,250 A 60,60 0 0,0 102,220' fill='none' stroke='#a78bfa' stroke-width='3'/><text x='115' y='240' fill='#a78bfa' font-size='18'>30º</text><text x='180' y='275' fill='#e2e8f0' font-size='16' text-anchor='middle'>c_adj = (15√3)/2 cm</text><text x='330' y='180' fill='#e2e8f0' font-size='16' text-anchor='middle' transform='rotate(-90 330,180)'>c_op = 7,5 cm</text><text x='170' y='160' fill='#10b981' font-size='18' font-weight='bold' text-anchor='middle' transform='rotate(-30 170,160)'>h = 15 cm</text></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Hagamos un rápido resumen del camino recorrido para resolver el ejercicio conservando la máxima exactitud matemática.",
+      "content": "<h3>Método seguido:</h3><ol><li><strong>Asignación:</strong> Situamos la hipotenusa ($15 \\text{ cm}$) y el ángulo agudo ($30^\\circ$) en un modelo de triángulo rectángulo.</li><li><strong>Cateto Opuesto:</strong> Planteamos la ecuación con la razón seno. Multiplicamos la hipotenusa por el seno de $30^\\circ$ ($1/2$). Resultado exacto: <strong>$7,5 \\text{ cm}$ o $\\frac{15}{2} \\text{ cm}$</strong>.</li><li><strong>Cateto Adyacente:</strong> Planteamos la ecuación con la razón coseno. Multiplicamos la hipotenusa por el coseno de $30^\\circ$ ($\\sqrt{3}/2$). Conservamos la raíz. Resultado exacto: <strong>$\\frac{15\\sqrt{3}}{2} \\text{ cm}$</strong>.</li><li><strong>Comprobación:</strong> Aplicamos Pitágoras con los valores hallados y validamos que la identidad se cumple perfectamente.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Intenta resolver un caso muy parecido con un ángulo y una longitud diferentes, aplicando la misma técnica de valores exactos.",
+      "content": "<p><strong>Ejercicio:</strong> Un triángulo rectángulo cuenta con una hipotenusa que mide $12 \\text{ cm}$ de longitud y uno de sus ángulos agudos es de exactamente $60^\\circ$. Calcula razonadamente la medida exacta de ambos catetos.</p><p><em>Pista: Recuerda que las razones del ángulo de $60^\\circ$ son complementarias a las de $30^\\circ$: $\\sin(60^\\circ) = \\frac{\\sqrt{3}}{2}$ y $\\cos(60^\\circ) = \\frac{1}{2}$. Realiza el cálculo en tu cuaderno antes de mirar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Solución exacta:</strong></p><p>Cateto opuesto $= 12 \\cdot \\sin(60^\\circ) = 12 \\cdot \\frac{\\sqrt{3}}{2} = 6\\sqrt{3} \\text{ cm}$.</p><p>Cateto adyacente $= 12 \\cdot \\cos(60^\\circ) = 12 \\cdot \\frac{1}{2} = 6 \\text{ cm}$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Vamos a llevar este concepto matemático a un problema físico. Esta vez con el tercer ángulo notable de la trigonometría. ¡Suerte!",
+      "content": "<p><strong>Ejercicio:</strong> Una rampa recta de carga tiene una longitud total de $10\\sqrt{2}$ metros y forma un ángulo de elevación de $45^\\circ$ con el suelo horizontal.</p><p>Aplica la trigonometría para determinar la medida exacta de la altura a la que llega la rampa y la distancia horizontal que ocupa en el suelo.</p><p><em>Nota: Recuerda que para $45^\\circ$, el seno y el coseno son iguales y valen $\\frac{\\sqrt{2}}{2}$.</em></p>",
+      "practiceAnswer": "<p><strong>Solución exacta:</strong></p><p>La altura corresponde al cateto opuesto: $h_{altura} = 10\\sqrt{2} \\cdot \\sin(45^\\circ) = 10\\sqrt{2} \\cdot \\frac{\\sqrt{2}}{2} = \\frac{10 \\cdot 2}{2} = 10 \\text{ m}$.</p><p>La distancia en el suelo corresponde al cateto adyacente: $d_{suelo} = 10\\sqrt{2} \\cdot \\cos(45^\\circ) = 10\\sqrt{2} \\cdot \\frac{\\sqrt{2}}{2} = 10 \\text{ m}$.</p><p><em>Coherencia: Un triángulo rectángulo con un ángulo de $45^\\circ$ es además isósceles, por lo que ambos catetos deben ser idénticos.</em></p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:19:05.963Z",
+    "updatedAt": "2026-08-01T21:19:05.963Z",
+    "contentHash": "85cc42bc68dfb6ee",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

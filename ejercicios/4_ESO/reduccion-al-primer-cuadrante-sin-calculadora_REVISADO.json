@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "4_ESO",
+    "topic": "Trigonometría",
+    "subtopic": "Reducción al primer cuadrante",
+    "exerciseType": "Cálculo analítico sin calculadora",
+    "protocols": [
+      "E",
+      "F"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Relacionar ángulos de cualquier cuadrante con ángulos del primer cuadrante",
+      "Determinar el signo de las razones trigonométricas según el cuadrante",
+      "Calcular valores exactos utilizando las razones de los ángulos notables"
+    ],
+    "prerequisites": [
+      "Conocer el valor exacto de las razones trigonométricas de 30º, 45º y 60º",
+      "Conocer los signos del seno, coseno y tangente en los cuatro cuadrantes de la circunferencia goniométrica"
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "metadataSource": "provided",
+    "importedAt": "2026-08-01T21:21:43.761Z",
+    "id": "reduccion-al-primer-cuadrante-sin-calculadora-48f1c97e"
+  },
+  "title": "Reducción al primer cuadrante sin calculadora",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leamos el enunciado. Nos piden hallar el valor exacto de tres razones trigonométricas de ángulos mayores a 90 grados, pero con dos condiciones estrictas: no podemos usar calculadora y debemos apoyarnos en los ángulos notables que ya conocemos.",
+      "content": "<p><strong>Ejercicio 2:</strong> Sin utilizar en ningún momento la calculadora, reduce al primer cuadrante y deduce el valor numérico exacto de las siguientes razones apoyándote en los ángulos notables ($30^\\circ, 45^\\circ, 60^\\circ$):</p><ul><li>a) $\\text{sen}(150^\\circ)$</li><li>b) $\\cos(225^\\circ)$</li><li>c) $\\tan(300^\\circ)$</li></ul>"
+    },
+    {
+      "title": "Estrategia de reducción",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para calcular estas razones sin calculadora, usaremos la circunferencia goniométrica. Todo ángulo se puede relacionar con uno del primer cuadrante formando un triángulo equivalente. Solo tenemos que fijarnos en qué cuadrante cae para ajustar el signo final.",
+      "content": "<h3>Plan de ataque paso a paso</h3><ol><li><strong>Ubicar el cuadrante:</strong> Determinar en qué cuadrante de la circunferencia se encuentra el ángulo dado (II, III o IV).</li><li><strong>Relacionar con el I cuadrante:</strong> <ul><li><em>II Cuadrante:</em> Restar el ángulo a $180^\\circ$ (ángulos suplementarios).</li><li><em>III Cuadrante:</em> Restar $180^\\circ$ al ángulo (ángulos que difieren en $180^\\circ$).</li><li><em>IV Cuadrante:</em> Restar el ángulo a $360^\\circ$ (ángulos opuestos).</li></ul></li><li><strong>Determinar el signo:</strong> Asignar signo positivo o negativo según la razón trigonométrica (seno, coseno o tangente) en el cuadrante original.</li><li><strong>Sustituir:</strong> Usar el valor exacto del ángulo notable ($30^\\circ, 45^\\circ \\text{ o } 60^\\circ$) con el signo correspondiente.</li></ol>"
+    },
+    {
+      "title": "Apartado a): sen(150º)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Empezamos con el seno de 150 grados. 150 está en el segundo cuadrante. Si nos fijamos, le faltan exactamente 30 grados para llegar a 180. Como el seno mide la altura vertical y en el segundo cuadrante va hacia arriba, el signo será positivo. Por tanto, es igual al seno de 30.",
+      "content": "<p><strong>Objetivo:</strong> Calcular $\\text{sen}(150^\\circ)$.</p><ul><li><strong>Cuadrante:</strong> $150^\\circ$ está entre $90^\\circ$ y $180^\\circ$, así que pertenece al <strong>II Cuadrante</strong>.</li><li><strong>Reducción:</strong> Lo relacionamos con su suplementario: $180^\\circ - 150^\\circ = 30^\\circ$.</li><li><strong>Signo:</strong> En el II Cuadrante, la coordenada vertical (seno) es <strong>positiva</strong>.</li></ul><p>Planteamos la igualdad:</p><p>$$ \\text{sen}(150^\\circ) = +\\text{sen}(30^\\circ) $$</p><p>Sustituimos el valor exacto conocido del ángulo notable:</p><p>$$ \\text{sen}(150^\\circ) = \\frac{1}{2} $$</p>",
+      "visual": "<svg viewBox='0 0 300 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><g stroke='#334155' stroke-width='1'><line x1='0' y1='150' x2='300' y2='150'/><line x1='150' y1='0' x2='150' y2='300'/></g><circle cx='150' cy='150' r='100' fill='none' stroke='#475569' stroke-width='2'/><path d='M 250,150 A 100,100 0 0,0 63.4,100 L 150,150 Z' fill='rgba(56, 189, 248, 0.2)' stroke='none'/><line x1='150' y1='150' x2='63.4' y2='100' stroke='#38bdf8' stroke-width='3'/><line x1='63.4' y1='150' x2='63.4' y2='100' stroke='#10b981' stroke-width='3'/><text x='170' y='140' fill='#38bdf8' font-size='14'>150º</text><text x='35' y='125' fill='#10b981' font-size='14'>sen+</text></svg>"
+    },
+    {
+      "title": "Apartado b): cos(225º)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Vamos con el apartado B: coseno de 225 grados. Este ángulo se pasa de 180, está en el tercer cuadrante. Para saber su ángulo de referencia, restamos 225 menos 180, lo que nos da 45 grados. El coseno es la coordenada horizontal, y en el tercer cuadrante apunta hacia la izquierda, hacia los negativos. Por eso, le ponemos un signo menos.",
+      "content": "<p><strong>Objetivo:</strong> Calcular $\\cos(225^\\circ)$.</p><ul><li><strong>Cuadrante:</strong> $225^\\circ$ está entre $180^\\circ$ y $270^\\circ$, pertenece al <strong>III Cuadrante</strong>.</li><li><strong>Reducción:</strong> Son ángulos que difieren en media vuelta: $225^\\circ - 180^\\circ = 45^\\circ$.</li><li><strong>Signo:</strong> En el III Cuadrante, la coordenada horizontal (coseno) es <strong>negativa</strong>.</li></ul><p>Planteamos la igualdad aplicando el signo:</p><p>$$ \\cos(225^\\circ) = -\\cos(45^\\circ) $$</p><p>Sustituimos por el valor exacto del coseno de $45^\\circ$:</p><p>$$ \\cos(225^\\circ) = -\\frac{\\sqrt{2}}{2} $$</p>",
+      "checkpoint": {
+        "question": "¿Por qué el seno de 225º también tendría signo negativo?",
+        "options": [
+          {
+            "text": "Porque en el III cuadrante tanto la coordenada horizontal (coseno) como la vertical (seno) apuntan hacia los ejes negativos.",
+            "correct": true,
+            "feedback": "¡Correcto! En el tercer cuadrante, la $x$ y la $y$ son negativas, por lo que tanto el seno como el coseno son negativos."
+          },
+          {
+            "text": "Porque al restarle 180º el resultado es negativo.",
+            "correct": false,
+            "feedback": "Falso. El ángulo de referencia $225º - 180º = 45º$ es positivo. El signo de la razón trigonométrica se deduce de su posición en los ejes."
+          },
+          {
+            "text": "Porque es la misma razón que el coseno.",
+            "correct": false,
+            "feedback": "Falso. El seno y el coseno son conceptos distintos (vertical vs horizontal), aunque en este cuadrante específico coincidan en tener signo negativo."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Apartado c): tan(300º)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Por último, la tangente de 300 grados. Estamos en el cuarto cuadrante. Para completar la vuelta completa a 360, faltan 60 grados, que es nuestro ángulo de referencia. En el cuarto cuadrante, el seno es negativo y el coseno positivo. Como la tangente es seno entre coseno, su signo global será negativo.",
+      "content": "<p><strong>Objetivo:</strong> Calcular $\\tan(300^\\circ)$.</p><ul><li><strong>Cuadrante:</strong> $300^\\circ$ está entre $270^\\circ$ y $360^\\circ$, cae en el <strong>IV Cuadrante</strong>.</li><li><strong>Reducción:</strong> Lo relacionamos con la vuelta completa (ángulo opuesto): $360^\\circ - 300^\\circ = 60^\\circ$.</li><li><strong>Signo:</strong> En el IV Cuadrante, el seno es negativo y el coseno positivo. $\\frac{-}{+} = -$. La tangente es <strong>negativa</strong>.</li></ul><p>Planteamos la igualdad con el signo correcto:</p><p>$$ \\tan(300^\\circ) = -\\tan(60^\\circ) $$</p><p>Sustituimos el valor exacto notable:</p><p>$$ \\tan(300^\\circ) = -\\sqrt{3} $$</p>",
+      "theory": "<strong>Regla mnemotécnica de los signos:</strong> En los cuadrantes (I, II, III, IV), las razones positivas son respectivamente: <strong>Todos, Seno, Tangente, Coseno</strong>. (CAST o 'Todos Sin Ta Cos')."
+    },
+    {
+      "title": "Resumen de Resolución",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Hagamos una síntesis. En todos los casos hemos dado tres pasos: ubicar, referenciar y ajustar signo.",
+      "content": "<h3>Metodología empleada:</h3><p>Para reducir al primer cuadrante siempre seguimos esta estructura mental:</p><ol><li>¿En qué cuadrante cae el ángulo?</li><li>¿Qué ángulo del I Cuadrante forma el mismo triángulo con el eje horizontal ($X$)? (Usamos $180^\\circ$ o $360^\\circ$ como pivotes).</li><li>¿Qué signo le corresponde a esa razón trigonométrica en el cuadrante original?</li></ol><p><strong>Resultados finales:</strong></p><ul><li>$a) \\; \\text{sen}(150^\\circ) = +\\text{sen}(30^\\circ) = \\mathbf{\\frac{1}{2}}$</li><li>$b) \\; \\cos(225^\\circ) = -\\cos(45^\\circ) = \\mathbf{-\\frac{\\sqrt{2}}{2}}$</li><li>$c) \\; \\tan(300^\\circ) = -\\tan(60^\\circ) = \\mathbf{-\\sqrt{3}}$</li></ul>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Es tu turno. Aplica la misma metodología para calcular estas tres nuevas razones sin usar calculadora. Identifica el cuadrante, el ángulo notable y el signo.",
+      "content": "<p><strong>Ejercicio propuesto:</strong> Reduce al primer cuadrante y deduce el valor numérico exacto de:</p><ul><li>a) $\\cos(120^\\circ)$</li><li>b) $\\text{sen}(240^\\circ)$</li><li>c) $\\tan(315^\\circ)$</li></ul><p><em>Realiza los cálculos en tu cuaderno antes de consultar la solución. ¡No uses decimales!</em></p>",
+      "practiceAnswer": "<p><strong>Soluciones:</strong></p><ul><li>a) $120^\\circ$ (II Cuadrante, coseno negativo). Ref: $180 - 120 = 60^\\circ$. $\\implies -\\cos(60^\\circ) = \\mathbf{-\\frac{1}{2}}$</li><li>b) $240^\\circ$ (III Cuadrante, seno negativo). Ref: $240 - 180 = 60^\\circ$. $\\implies -\\text{sen}(60^\\circ) = \\mathbf{-\\frac{\\sqrt{3}}{2}}$</li><li>c) $315^\\circ$ (IV Cuadrante, tangente negativa). Ref: $360 - 315 = 45^\\circ$. $\\implies -\\tan(45^\\circ) = \\mathbf{-1}$</li></ul>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: ángulos que dan más de una vuelta",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Veamos un caso un poco más desafiante. ¿Qué pasa si el ángulo supera los 360 grados? La estrategia es la misma, solo que primero debemos quitarle las vueltas completas.",
+      "content": "<p><strong>Ejercicio propuesto:</strong> Calcula el valor exacto y sin calculadora de <strong>$\\text{sen}(780^\\circ)$</strong>.</p><p><em>Pista:</em> Divide el ángulo entre $360^\\circ$ para saber cuántas vueltas completas da la circunferencia. El resto de esa división será el ángulo equivalente en la primera vuelta, que luego podrás reducir al primer cuadrante si es necesario.</p>",
+      "practiceAnswer": "<p><strong>Solución:</strong></p><p>1. Quitamos vueltas completas: $780^\\circ = 2 \\cdot 360^\\circ + 60^\\circ$. El ángulo da dos vueltas enteras y se detiene en $60^\\circ$.</p><p>2. Por tanto, el ángulo equivalente (coterminal) es directamente $60^\\circ$, que ya está en el primer cuadrante.</p><p>3. Calculamos la razón: $\\text{sen}(780^\\circ) = \\text{sen}(60^\\circ) = \\mathbf{\\frac{\\sqrt{3}}{2}}$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-01T21:22:30.588Z",
+    "updatedAt": "2026-08-01T21:22:30.588Z",
+    "contentHash": "e9be24d6f9430e58",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
