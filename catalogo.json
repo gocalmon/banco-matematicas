@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "exerciseSchemaVersion": "4.0",
-  "generatedAt": "2026-08-01T19:30:02.164Z",
+  "generatedAt": "2026-08-02T08:54:42.981Z",
   "basePath": "ejercicios/",
-  "exerciseCount": 57,
+  "exerciseCount": 74,
   "filters": {
     "stages": [
       "Bachillerato",
@@ -26,9 +26,12 @@
       "Funciones y Gráficas",
       "Funciones y gráficas",
       "Geometría Analítica",
-      "Programación Lineal"
+      "Geometría y Trigonometría",
+      "Programación Lineal",
+      "Trigonometría"
     ],
     "subtopics": [
+      "Aplicaciones de la derivada",
       "Composición de Funciones",
       "Composición y propiedades de las funciones",
       "Continuidad de funciones",
@@ -42,6 +45,7 @@
       "Ecuaciones polinómicas",
       "Ecuaciones polinómicas y factorización",
       "Ecuaciones racionales",
+      "Ecuaciones trigonométricas",
       "Ecuaciones y polinomios",
       "Expresión analítica y cálculo de imágenes y antiimágenes",
       "Fracciones algebraicas",
@@ -49,6 +53,7 @@
       "Función de proporcionalidad inversa",
       "Función logarítmica y exponencial",
       "Funciones con Valor Absoluto y a Trozos",
+      "Funciones cuadráticas",
       "Funciones Cuadráticas y Optimización",
       "Funciones exponenciales",
       "Funciones exponenciales y logarítmicas",
@@ -57,9 +62,12 @@
       "Funciones Racionales y Asíntotas",
       "Funciones y ecuaciones exponenciales",
       "Identidades notables y manipulación algebraica",
+      "Identidades trigonométricas",
+      "Identidades y ecuaciones",
       "Inecuaciones",
       "Límites y modelización de funciones",
       "Logaritmos y sus aplicaciones",
+      "Medida de ángulos",
       "Modelización lineal (Función afín)",
       "Modelización Matemática y Funciones Polinómicas",
       "Modelización polinómica y optimización",
@@ -71,26 +79,41 @@
       "Polinomios y Teorema del Resto",
       "Polinomios y valor numérico",
       "Puntos de corte con los ejes",
+      "Reducción al primer cuadrante",
+      "Relaciones fundamentales",
+      "Resolución de polígonos regulares",
+      "Resolución de triángulos",
+      "Resolución de triángulos cualesquiera",
+      "Resolución de triángulos rectángulos",
       "Simetría de una función",
       "Sistemas de Ecuaciones",
       "Sistemas de Ecuaciones y Funciones Cuadráticas",
       "Sistemas de inecuaciones",
       "Sistemas de Inecuaciones Lineales",
-      "Tasa de Variación Media (TVM)"
+      "Tasa de Variación Media (TVM)",
+      "Teorema de Pitágoras y Razones Trigonométricas"
     ],
     "exerciseTypes": [
       "Análisis y cálculo en funciones periódicas",
+      "Aplicación directa de teorema",
+      "Cálculo analítico de elementos geométricos",
       "Cálculo analítico de funciones compuestas y simplificación",
       "Cálculo analítico de intersecciones en funciones racionales",
+      "Cálculo analítico sin calculadora",
       "Cálculo de asíntotas y esbozo de gráfica",
       "Cálculo de m.c.d. y m.c.m.",
       "Cálculo de parámetros",
       "Cálculo de parámetros para garantizar la continuidad",
       "Cálculo de pendiente y ecuación explícita a partir de dos puntos",
       "Cálculo de raíces y factorización",
+      "Cálculo de rectas tangente y normal",
       "Cálculo de TVM e interpretación del crecimiento",
       "Cálculo de valores logarítmicos usando la definición como inversa de la exponencial",
+      "Conversión de unidades",
+      "Deducción analítica",
+      "Demostración algebraica",
       "Demostración algebraica de simetría par e impar",
+      "Demostración analítica",
       "Demostración de propiedades y simetría",
       "Demostración y cálculo algebraico",
       "Descomposición a trozos y representación gráfica",
@@ -110,14 +133,19 @@
       "Modelización mediante una función lineal de la forma H(t) = mt + n",
       "Obtención de la ecuación explícita a partir de la pendiente y un punto",
       "Operaciones combinadas con fracciones algebraicas",
+      "Optimización y modelización con funciones",
       "Problema aplicado",
       "Problema aplicado de acústica",
       "Problema aplicado de depreciación",
+      "Problema aplicado de distancias y ángulos",
       "Problema aplicado de geometría y polinomios",
       "Problema de aplicación del producto de polinomios y evaluación",
+      "Problema de modelización",
       "Problema de optimización con parábolas",
       "Representación gráfica y cálculo de vértices (Programación Lineal)",
+      "Resolución analítica",
       "Resolución analítica de ecuación cuadrática completa",
+      "Resolución analítica y gráfica",
       "Resolución de ecuación con fracciones algebraicas",
       "Resolución de ecuación con un radical",
       "Resolución de ecuación exponencial con cambio de variable",
@@ -132,6 +160,7 @@
       "Resolución de un problema de programación lineal con dos variables",
       "Resolución gráfica y analítica",
       "Resta de fracciones algebraicas",
+      "Simplificación algebraica",
       "Simplificación y factor común",
       "Suma y resta combinada de fracciones algebraicas",
       "Suma y resta de polinomios"
@@ -147,6 +176,7 @@
       "B",
       "C",
       "E",
+      "F",
       "H",
       "I"
     ]
@@ -1039,6 +1069,237 @@
       "url": "ejercicios/1_BACH/simetria-entre-la-funcion-exponencial-y-logaritmica_REVISADO.json"
     },
     {
+      "id": "altura-de-un-poste-en-ladera-el-metodo-del-doble-tri-b0f0a00d",
+      "title": "Altura de un poste en ladera: El método del doble triángulo",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Trigonometría",
+      "subtopic": "Resolución de triángulos",
+      "exerciseType": "Problema de modelización",
+      "protocols": [
+        "E",
+        "F"
+      ],
+      "difficulty": "avanzada",
+      "estimatedMinutes": 35,
+      "learningObjectives": [
+        "Modelizar geométricamente un problema topográfico complejo mediante la descomposición en triángulos.",
+        "Deducir ángulos interiores a partir de ángulos de elevación y planos inclinados.",
+        "Aplicar el Teorema de los Senos de forma encadenada para resolver distancias inaccesibles.",
+        "Simplificar expresiones trigonométricas exactas utilizando identidades de ángulo doble y complementario."
+      ],
+      "prerequisites": [
+        "Teorema de los Senos.",
+        "Concepto de ángulo de elevación respecto a la horizontal.",
+        "Razones trigonométricas de ángulos notables ($30^\\circ, 45^\\circ, 60^\\circ$).",
+        "Identidad del seno del ángulo doble."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-01T21:54:50.945Z",
+      "contentHash": "45a93af794468a6d",
+      "url": "ejercicios/1_BACH/altura-de-un-poste-en-ladera-el-metodo-del-doble-tri_REVISADO.json"
+    },
+    {
+      "id": "calculo-de-un-lado-con-el-teorema-del-coseno-a8e69d71",
+      "title": "Cálculo de un lado con el Teorema del Coseno",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Trigonometría",
+      "subtopic": "Resolución de triángulos cualesquiera",
+      "exerciseType": "Aplicación directa de teorema",
+      "protocols": [
+        "E",
+        "F"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Identificar el Teorema del Coseno como la herramienta adecuada para triángulos conociendo dos lados y el ángulo comprendido (LAL)",
+        "Aplicar correctamente la fórmula del Teorema del Coseno",
+        "Interpretar geométricamente el efecto del coseno negativo en ángulos obtusos"
+      ],
+      "prerequisites": [
+        "Conocer el Teorema del Coseno",
+        "Saber deducir o calcular razones trigonométricas de ángulos obtusos (reducción al primer cuadrante)",
+        "Manejo básico de raíces cuadradas"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 7,
+      "reviewedAt": "2026-08-01T21:47:09.651Z",
+      "contentHash": "62ff985bbeaf1f4d",
+      "url": "ejercicios/1_BACH/calculo-de-un-lado-con-el-teorema-del-coseno_REVISADO.json"
+    },
+    {
+      "id": "demostracion-de-identidad-trigonometrica-fundamental-cdb35189",
+      "title": "Demostración de Identidad Trigonométrica Fundamental",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Trigonometría",
+      "subtopic": "Identidades trigonométricas",
+      "exerciseType": "Demostración analítica",
+      "protocols": [
+        "F"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Aplicar las relaciones trigonométricas fundamentales para simplificar expresiones.",
+        "Demostrar identidades transformando un solo miembro de la igualdad.",
+        "Identificar las restricciones del dominio en expresiones con funciones tangentes."
+      ],
+      "prerequisites": [
+        "Definición de tangente en función de seno y coseno.",
+        "Identidad trigonométrica fundamental (pitagórica).",
+        "Relación entre la secante al cuadrado y la tangente al cuadrado."
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T21:54:32.830Z",
+      "contentHash": "9e45e9299bcba5c7",
+      "url": "ejercicios/1_BACH/demostracion-de-identidad-trigonometrica-fundamental_REVISADO.json"
+    },
+    {
+      "id": "demostracion-de-la-suma-de-cubos-trigonometricos-3b3421d6",
+      "title": "Demostración de la Suma de Cubos Trigonométricos",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Trigonometría",
+      "subtopic": "Identidades y ecuaciones",
+      "exerciseType": "Demostración algebraica",
+      "protocols": [
+        "C",
+        "F"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Aplicar productos notables y factorizaciones en expresiones trigonométricas.",
+        "Vincular la suma de seno y coseno con su producto mediante la identidad fundamental.",
+        "Demostrar identidades algebraicas combinando sustitución de variables y propiedades trigonométricas."
+      ],
+      "prerequisites": [
+        "Identidad trigonométrica fundamental.",
+        "Desarrollo del cuadrado de un binomio.",
+        "Factorización de la suma de cubos."
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T21:55:25.077Z",
+      "contentHash": "52b55264460b6eee",
+      "url": "ejercicios/1_BACH/demostracion-de-la-suma-de-cubos-trigonometricos_REVISADO.json"
+    },
+    {
+      "id": "resolucion-de-ecuacion-trigonometrica-por-factorizac-2c8e6baa",
+      "title": "Resolución de Ecuación Trigonométrica por Factorización",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Trigonometría",
+      "subtopic": "Ecuaciones trigonométricas",
+      "exerciseType": "Resolución analítica",
+      "protocols": [
+        "C",
+        "F"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Aplicar la factorización de diferencia de cuadrados en expresiones trigonométricas.",
+        "Resolver ecuaciones trigonométricas igualadas a cero aislando factores.",
+        "Determinar las soluciones de la función tangente en el intervalo de una circunferencia completa."
+      ],
+      "prerequisites": [
+        "Identidades trigonométricas básicas.",
+        "Identidades notables (diferencia de cuadrados).",
+        "Valores exactos de las razones trigonométricas en los cuadrantes principales."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-01T21:54:06.082Z",
+      "contentHash": "d1d2875a62b71630",
+      "url": "ejercicios/1_BACH/resolucion-de-ecuacion-trigonometrica-por-factorizac_REVISADO.json"
+    },
+    {
+      "id": "simplificacion-de-una-expresion-trigonometrica-561965c9",
+      "title": "Simplificación de una expresión trigonométrica",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Trigonometría",
+      "subtopic": "Identidades trigonométricas",
+      "exerciseType": "Simplificación algebraica",
+      "protocols": [
+        "E",
+        "F"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Aplicar productos notables (cuadrado de una suma) en expresiones trigonométricas",
+        "Reducir términos semejantes en expresiones algebraico-trigonométricas",
+        "Reconocer y aplicar la identidad trigonométrica fundamental"
+      ],
+      "prerequisites": [
+        "Conocer el desarrollo del cuadrado de un binomio: $(a+b)^2 = a^2 + 2ab + b^2$",
+        "Conocer la identidad fundamental de la trigonometría: $\\text{sen}^2 \\alpha + \\cos^2 \\alpha = 1$"
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 7,
+      "reviewedAt": "2026-08-01T21:23:17.658Z",
+      "contentHash": "b89e049a18fa9694",
+      "url": "ejercicios/1_BACH/simplificacion-de-una-expresion-trigonometrica_REVISADO.json"
+    },
+    {
+      "id": "calculo-de-rectas-tangente-y-normal-en-el-origen-ce8792ea",
+      "title": "Cálculo de Rectas Tangente y Normal en el Origen",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "2_Bachillerato",
+      "topic": "Análisis",
+      "subtopic": "Aplicaciones de la derivada",
+      "exerciseType": "Cálculo de rectas tangente y normal",
+      "protocols": [
+        "B",
+        "H"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Calcular la derivada de funciones racionales usando la regla del cociente",
+        "Evaluar la derivada en un punto para obtener la pendiente de la recta tangente",
+        "Deducir la ecuación de la recta normal manejando casos de pendiente nula (rectas verticales)"
+      ],
+      "prerequisites": [
+        "Reglas de derivación básicas",
+        "Ecuación punto-pendiente de la recta",
+        "Relación entre las pendientes de rectas perpendiculares"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-02T06:46:48.967Z",
+      "contentHash": "709fb7124cbaac9c",
+      "url": "ejercicios/2_BACH/calculo-de-rectas-tangente-y-normal-en-el-origen_REVISADO.json"
+    },
+    {
       "id": "optimizacion-de-una-explotacion-agricola-sostenible-e587fce9",
       "title": "Optimización de una Explotación Agrícola Sostenible",
       "subject": "Matemáticas",
@@ -1102,6 +1363,38 @@
       "reviewedAt": "2026-08-01T17:17:13.998Z",
       "contentHash": "08e73f488ce7675a",
       "url": "ejercicios/4_ESO/estudio-completo-de-una-funcion-cuadratica_REVISADO.json"
+    },
+    {
+      "id": "reduccion-al-primer-cuadrante-sin-calculadora-48f1c97e",
+      "title": "Reducción al primer cuadrante sin calculadora",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "4_ESO",
+      "topic": "Trigonometría",
+      "subtopic": "Reducción al primer cuadrante",
+      "exerciseType": "Cálculo analítico sin calculadora",
+      "protocols": [
+        "E",
+        "F"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Relacionar ángulos de cualquier cuadrante con ángulos del primer cuadrante",
+        "Determinar el signo de las razones trigonométricas según el cuadrante",
+        "Calcular valores exactos utilizando las razones de los ángulos notables"
+      ],
+      "prerequisites": [
+        "Conocer el valor exacto de las razones trigonométricas de 30º, 45º y 60º",
+        "Conocer los signos del seno, coseno y tangente en los cuatro cuadrantes de la circunferencia goniométrica"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T21:22:30.588Z",
+      "contentHash": "e9be24d6f9430e58",
+      "url": "ejercicios/4_ESO/reduccion-al-primer-cuadrante-sin-calculadora_REVISADO.json"
     },
     {
       "id": "extraccion-del-maximo-factor-comun-10ad8238",
@@ -1932,6 +2225,39 @@
       "url": "ejercicios/4_ESO/sistema-de-inecuaciones-lineales_REVISADO.json"
     },
     {
+      "id": "aforo-de-la-discoteca-maximizando-la-noche-1986fbad",
+      "title": "Aforo de la discoteca: Maximizando la noche",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Análisis",
+      "subtopic": "Funciones cuadráticas",
+      "exerciseType": "Optimización y modelización con funciones",
+      "protocols": [
+        "B",
+        "H"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Interpretar los coeficientes y puntos notables de una función cuadrática en un contexto real.",
+        "Calcular analíticamente el vértice (máximo) y las raíces (ceros) de una parábola.",
+        "Convertir unidades de tiempo relativas (horas transcurridas) a horas del reloj absoluto."
+      ],
+      "prerequisites": [
+        "Resolución de ecuaciones de segundo grado.",
+        "Concepto de derivada o fórmula del vértice de una parábola.",
+        "Sistemas horarios de 24 horas."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-02T08:30:08.896Z",
+      "contentHash": "24fd7d6babb65f21",
+      "url": "ejercicios/4_ESO/aforo-de-la-discoteca-maximizando-la-noche_REVISADO.json"
+    },
+    {
       "id": "calculo-de-valores-de-la-funcion-logaritmica-f-x-log-4370292e",
       "title": "Cálculo de valores de la función logarítmica f(x) = log₂x",
       "subject": "Matemáticas",
@@ -1995,6 +2321,265 @@
       "reviewedAt": "2026-08-01T17:20:47.915Z",
       "contentHash": "f26e1d8f2e013ea1",
       "url": "ejercicios/4_ESO/depreciacion-lineal-de-un-equipo-informatico_REVISADO.json"
+    },
+    {
+      "id": "altura-alcanzada-por-una-escalera-apoyada-15653d42",
+      "title": "Altura alcanzada por una escalera apoyada",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Geometría y Trigonometría",
+      "subtopic": "Resolución de triángulos rectángulos",
+      "exerciseType": "Problema aplicado",
+      "protocols": [
+        "E",
+        "F"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Modelizar matemáticamente una situación real mediante un triángulo rectángulo",
+        "Identificar la razón trigonométrica adecuada (seno) para calcular el cateto opuesto conociendo la hipotenusa y un ángulo",
+        "Interpretar y validar la coherencia del resultado en su contexto físico"
+      ],
+      "prerequisites": [
+        "Conocer las razones trigonométricas directas (seno, coseno, tangente)",
+        "Saber utilizar la calculadora científica para aproximar razones trigonométricas de ángulos no notables",
+        "Comprender la relación entre la inclinación de un segmento y sus proyecciones horizontal y vertical"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T21:20:53.874Z",
+      "contentHash": "9f31975fe5f41895",
+      "url": "ejercicios/4_ESO/altura-alcanzada-por-una-escalera-apoyada_REVISADO.json"
+    },
+    {
+      "id": "calculo-analitico-de-la-apotema-y-el-area-de-un-pent-4f851d4f",
+      "title": "Cálculo analítico de la apotema y el área de un pentágono",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Geometría y Trigonometría",
+      "subtopic": "Resolución de polígonos regulares",
+      "exerciseType": "Cálculo analítico de elementos geométricos",
+      "protocols": [
+        "E",
+        "F"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Vincular la geometría de los polígonos regulares con la trigonometría de triángulos rectángulos.",
+        "Calcular de forma exacta la apotema usando la razón tangente.",
+        "Determinar el área total combinando los elementos deducidos sin pérdida de precisión."
+      ],
+      "prerequisites": [
+        "Conocimiento de los elementos de un polígono regular (lado, apotema, ángulo central).",
+        "Razones trigonométricas básicas (seno, coseno, tangente).",
+        "Cálculo del área de polígonos regulares."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-01T21:45:59.389Z",
+      "contentHash": "ab6a8af37e78295d",
+      "url": "ejercicios/4_ESO/calculo-analitico-de-la-apotema-y-el-area-de-un-pent_REVISADO.json"
+    },
+    {
+      "id": "calculo-de-catetos-con-hipotenusa-y-un-angulo-agudo-25ed63d2",
+      "title": "Cálculo de catetos con hipotenusa y un ángulo agudo",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Geometría y Trigonometría",
+      "subtopic": "Resolución de triángulos rectángulos",
+      "exerciseType": "Resolución analítica y gráfica",
+      "protocols": [
+        "E",
+        "F"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Aplicar las razones trigonométricas directas para calcular los lados de un triángulo rectángulo",
+        "Manejar valores exactos de ángulos notables (30º, 45º, 60º) utilizando radicales"
+      ],
+      "prerequisites": [
+        "Conocer las definiciones de seno y coseno",
+        "Saber el valor exacto del seno y coseno de 30º",
+        "Operar con fracciones y raíces cuadradas"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-01T21:19:05.963Z",
+      "contentHash": "85cc42bc68dfb6ee",
+      "url": "ejercicios/4_ESO/calculo-de-catetos-con-hipotenusa-y-un-angulo-agudo_REVISADO.json"
+    },
+    {
+      "id": "calculo-de-la-hipotenusa-y-razones-trigonometricas-578f36d3",
+      "title": "Cálculo de la hipotenusa y razones trigonométricas",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Geometría y Trigonometría",
+      "subtopic": "Teorema de Pitágoras y Razones Trigonométricas",
+      "exerciseType": "Resolución analítica y gráfica",
+      "protocols": [
+        "E",
+        "F"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Aplicar el Teorema de Pitágoras para hallar la hipotenusa de un triángulo rectángulo",
+        "Identificar los elementos de un triángulo en función de un ángulo agudo específico",
+        "Calcular y expresar como números decimales exactos las razones trigonométricas directas"
+      ],
+      "prerequisites": [
+        "Conocer el enunciado y fórmula del Teorema de Pitágoras",
+        "Comprender la relación de orden entre lados y ángulos en un triángulo",
+        "Conocer las definiciones de seno, coseno y tangente"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-01T21:17:37.946Z",
+      "contentHash": "5eb76d1bab66f5e9",
+      "url": "ejercicios/4_ESO/calculo-de-la-hipotenusa-y-razones-trigonometricas_REVISADO.json"
+    },
+    {
+      "id": "conversion-de-radianes-a-grados-sexagesimales-e78a7aa1",
+      "title": "Conversión de radianes a grados sexagesimales",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Geometría y Trigonometría",
+      "subtopic": "Medida de ángulos",
+      "exerciseType": "Conversión de unidades",
+      "protocols": [
+        "F",
+        "I"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Comprender la equivalencia entre grados sexagesimales y radianes",
+        "Aplicar factores de conversión para transformar medidas angulares",
+        "Interpretar ángulos mayores de una vuelta completa"
+      ],
+      "prerequisites": [
+        "Operaciones básicas con fracciones",
+        "Concepto de ángulo y vuelta completa"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-01T21:20:03.469Z",
+      "contentHash": "89ffa3fbd441c6d5",
+      "url": "ejercicios/4_ESO/conversion-de-radianes-a-grados-sexagesimales_REVISADO.json"
+    },
+    {
+      "id": "resolucion-completa-de-un-triangulo-rectangulo-527e5ce9",
+      "title": "Resolución completa de un triángulo rectángulo",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Geometría y Trigonometría",
+      "subtopic": "Resolución de triángulos rectángulos",
+      "exerciseType": "Resolución analítica y gráfica",
+      "protocols": [
+        "E",
+        "F"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Resolver completamente un triángulo rectángulo a partir de un lado y un ángulo",
+        "Seleccionar la razón trigonométrica adecuada (seno, coseno o tangente) en función de los datos conocidos",
+        "Aplicar la propiedad de la suma de los ángulos interiores de un triángulo"
+      ],
+      "prerequisites": [
+        "Conocer que la suma de ángulos de un triángulo es 180º",
+        "Definiciones básicas de seno, coseno y tangente",
+        "Manejo de la calculadora científica para aproximar razones trigonométricas"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-01T21:24:35.080Z",
+      "contentHash": "8072b44411fcc6a2",
+      "url": "ejercicios/4_ESO/resolucion-completa-de-un-triangulo-rectangulo_REVISADO.json"
+    },
+    {
+      "id": "calculo-del-coseno-mediante-la-identidad-fundamental-e23e251e",
+      "title": "Cálculo del coseno mediante la identidad fundamental",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Trigonometría",
+      "subtopic": "Relaciones fundamentales",
+      "exerciseType": "Deducción analítica",
+      "protocols": [
+        "F"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Aplicar la identidad trigonométrica fundamental para deducir una razón a partir de otra",
+        "Comprender la importancia del cuadrante para determinar el signo de las razones trigonométricas"
+      ],
+      "prerequisites": [
+        "Conocer la primera relación fundamental de la trigonometría",
+        "Saber resolver ecuaciones cuadráticas sencillas",
+        "Conocer los signos de las razones trigonométricas en los distintos cuadrantes"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 7,
+      "reviewedAt": "2026-08-01T21:18:21.029Z",
+      "contentHash": "4aefccb8fcbc4522",
+      "url": "ejercicios/4_ESO/calculo-del-coseno-mediante-la-identidad-fundamental_REVISADO.json"
+    },
+    {
+      "id": "distancia-entre-dos-barcos-desde-un-faro-b3bd4b9f",
+      "title": "Distancia entre dos barcos desde un faro",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Trigonometría",
+      "subtopic": "Resolución de triángulos rectángulos",
+      "exerciseType": "Problema aplicado de distancias y ángulos",
+      "protocols": [
+        "F"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 30,
+      "learningObjectives": [
+        "Interpretar correctamente el concepto de ángulo de depresión y relacionarlo con el ángulo de elevación.",
+        "Descomponer un problema complejo en dos triángulos rectángulos independientes.",
+        "Utilizar la razón tangente para hallar catetos desconocidos y combinar resultados exactos."
+      ],
+      "prerequisites": [
+        "Razones trigonométricas básicas (seno, coseno, tangente).",
+        "Concepto de ángulos alternos internos entre paralelas.",
+        "Resolución de ecuaciones sencillas con razones trigonométricas."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-01T21:45:26.806Z",
+      "contentHash": "0db7d23bc327a151",
+      "url": "ejercicios/4_ESO/distancia-entre-dos-barcos-desde-un-faro_REVISADO.json"
     }
   ]
 }
