@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Álgebra y Ecuaciones",
+    "subtopic": "Ecuaciones logarítmicas",
+    "exerciseType": "Resolución de ecuaciones logarítmicas de una variable",
+    "protocols": ["C"],
+    "difficulty": "basica",
+    "estimatedMinutes": 10,
+    "learningObjectives": [
+      "Identificar las condiciones de existencia del dominio para expresiones logarítmicas.",
+      "Aplicar la propiedad de la suma de logaritmos de la misma base.",
+      "Utilizar la propiedad de inyectividad de la función logarítmica para despejar la incógnita.",
+      "Comprobar la validez de las soluciones obtenidas en la ecuación original."
+    ],
+    "prerequisites": [
+      "Propiedades fundamentales de los logaritmos en base 10.",
+      "Resolución de ecuaciones lineales de primer grado.",
+      "Definición de dominio de definición de la función logarítmica."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "log x + log 50 = log 100"
+      },
+      {
+        "id": "b",
+        "request": "log x^3 = log 6 + 2 log x"
+      },
+      {
+        "id": "c",
+        "request": "log x = 1 + log(22 - x)"
+      },
+      {
+        "id": "d",
+        "request": "2 log x - log(x - 16) = 2"
+      }
+    ],
+    "scope": {
+      "mode": "selected_subparts",
+      "selectedSubparts": ["a"],
+      "note": "El usuario solicitó resolver exclusivamente el apartado a)."
+    }
+  },
+  "title": "Resolución de Ecuaciones Logarítmicas",
+  "slides": [
+    {
+      "title": "Transcripción del enunciado completo",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Transcribimos de manera fiel todo el enunciado y las cuatro ecuaciones logarítmicas planteadas en el ejercicio original.",
+      "content": "<p><strong>ALCANCE SOLICITADO:</strong> se resuelve exclusivamente el apartado a). Los demás apartados se transcriben para conservar fielmente el enunciado, pero quedan fuera de esta actividad.</p><p>Resolver las siguientes ecuaciones logarítmicas:</p><p>a) $\\log x + \\log 50 = \\log 100$</p><p>b) $\\log x^3 = \\log 6 + 2\\log x$</p><p>c) $\\log x = 1 + \\log(22 - x)$</p><p>d) $2\\log x - \\log(x - 16) = 2$</p>"
+    },
+    {
+      "title": "Estrategia de resolución para el apartado a)",
+      "layout": "centered",
+      "phase": "planificar",
+      "subpart": "a",
+      "narration": "Analizamos la petición del apartado a), definiendo la estrategia algebraica basada en las propiedades de los logaritmos.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar el valor exacto de la variable $x$ que satisface la ecuación logarítmica del apartado a): $\\log x + \\log 50 = \\log 100$.</p><p><strong>MÉTODO:</strong> Primero, estableceremos las condiciones del dominio ($x > 0$). A continuación, aplicaremos la propiedad del producto de logaritmos en el miembro izquierdo para unificar los términos en una sola expresión logarítmica. Finalmente, emplearemos la propiedad de inyectividad de la función logarítmica para igualar los argumentos y despejar $x$.</p><p><strong>APLICACIÓN:</strong> Las ecuaciones logarítmicas son fundamentales para modelar fenómenos de escala logarítmica, como la intensidad del sonido en decibelios, la magnitud de los sismos en la escala Richter o la medición del pH en química.</p>"
+    },
+    {
+      "title": "Estudio del dominio de existencia",
+      "layout": "centered",
+      "phase": "analizar",
+      "subpart": "a",
+      "narration": "Antes de realizar operaciones algebraicas, analizamos la restricción del dominio para garantizar que los logaritmos estén bien definidos.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar el conjunto de valores reales para los cuales la expresión logarítmica es válida.</p><p><strong>CONEXIÓN:</strong> La función logaritmo en base 10 solo está definida para argumentos estrictamente positivos.</p><p><strong>DATOS:</strong> En la ecuación $\\log x + \\log 50 = \\log 100$, los argumentos constantes son $50 > 0$ y $100 > 0$. El único argumento variable es $x$.</p><p><strong>INTERPRETACIÓN:</strong> La condición obligatoria para que exista la solución es $x > 0$. Cualquier valor $x \\le 0$ obtenido posteriormente deberá ser descartado.</p>",
+      "theory": "Un logaritmo $\\log_b(A)$ está definido en el cuerpo de los números reales si y solo si su argumento es estrictamente positivo: $A > 0$."
+    },
+    {
+      "title": "Unificación de logaritmos mediante la propiedad de la suma",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Agrupamos la suma de logaritmos del miembro izquierdo en un solo logaritmo aplicando la propiedad del producto.",
+      "content": "<p><strong>OBJETIVO:</strong> Transformar el primer miembro de la ecuación en una única expresión de la forma $\\log(A)$.</p><p><strong>CONEXIÓN:</strong> Aplicamos la regla general de los logaritmos: la suma de logaritmos de la misma base es igual al logaritmo del producto de sus argumentos.</p><p><strong>CÁLCULO:</strong> En el miembro izquierdo tenemos $\\log x + \\log 50$. Aplicando la propiedad:$$\\log x + \\log 50 = \\log(x \\cdot 50) = \\log(50x)$$Sustituyendo este resultado en la ecuación original, obtenemos:$$\\log(50x) = \\log 100$$</p><p><strong>INTERPRETACIÓN:</strong> Hemos reducido la ecuación a una igualdad entre dos logaritmos de la misma base decimal.</p>",
+      "theory": "Propiedad del producto de logaritmos: $\\log_b(M) + \\log_b(N) = \\log_b(M \\cdot N)$ para cualquier $M, N > 0$."
+    },
+    {
+      "title": "Igualación de argumentos y despeje algebraico",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Aprovechamos la inyectividad de la función logarítmica para eliminar los logaritmos e igualar directamente los argumentos.",
+      "content": "<p><strong>OBJETIVO:</strong> Eliminar la función logarítmica para obtener una ecuación de primer grado en $x$.</p><p><strong>CONEXIÓN:</strong> Dado que la función $f(t) = \\log_{10}(t)$ es estrictamente creciente y por tanto inyectiva, si $\\log(A) = \\log(B)$, se concluye necesariamente que $A = B$.</p><p><strong>CÁLCULO:</strong> Partiendo de $\\log(50x) = \\log 100$, igualamos los argumentos:$$50x = 100$$Dividimos ambos miembros entre $50$:$$x = \\frac{100}{50} = 2$$</p><p><strong>RESULTADO:</strong> El valor candidato obtenido para la incógnita es $x = 2$.</p>",
+      "warning": "No se deben 'cancelar' o 'tachar' los logaritmos como si fuera una simplificación de factores. La igualación de argumentos está justificada por la inyectividad de la función logarítmica."
+    },
+    {
+      "title": "Comprobación de la solución y validación del dominio",
+      "layout": "centered",
+      "phase": "comprobar",
+      "subpart": "a",
+      "narration": "Verificamos que la solución calculada satisface la restricción del dominio y la ecuación original.",
+      "content": "<p><strong>OBJETIVO:</strong> Confirmar que $x = 2$ es una solución válida y rigurosa del apartado a).</p><p><strong>CONEXIÓN:</strong> Comprobamos primero la pertenencia al dominio ($x > 0$) y luego sustituimos $x = 2$ en la expresión inicial.</p><p><strong>COMPROBACIÓN:</strong><br>1. Dominio: $x = 2 > 0$, por lo que se cumple la restricción inicial.<br>2. Sustitución en la ecuación original:$$\\log(2) + \\log(50) \\stackrel{?}{=} \\log(100)$$$$\\log(2 \\cdot 50) = \\log(100)$$$$\\log(100) = \\log(100)$$La igualdad numérica es idénticamente cierta.</p><p><strong>INTERPRETACIÓN:</strong> La solución $x = 2$ satisface todas las condiciones algebraicas y de dominio.</p><p><strong>RESPUESTA AL APARTADO a):</strong> La solución única de la ecuación logarítmica $\\log x + \\log 50 = \\log 100$ es $x = 2$.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "subpart": "a",
+      "narration": "Sintetizamos el procedimiento seguido para resolver de forma metódica cualquier ecuación logarítmica equivalente.",
+      "content": "<p><strong>ESQUEMA PASO A PASO:</strong></p><ol><li><strong>Restricción del Dominio:</strong> Exigir que los argumentos de todos los logaritmos contengan expresiones estrictamente positivas ($x > 0$).</li><li><strong>Unificación Algebraica:</strong> Aplicar la propiedad $\\log(A) + \\log(B) = \\log(A \\cdot B)$ para agrupar términos en un único logaritmo.</li><li><strong>Inyectividad:</strong> Eliminar los logaritmos igualando directamente los argumentos: $\\log(50x) = \\log 100 \\implies 50x = 100$.</li><li><strong>Despeje y Verificación:</strong> Despejar $x = 2$ y comprobar que el valor obtenido pertenece al dominio de definición y satisface la ecuación.</li></ol><p><strong>RESPUESTA AL APARTADO a):</strong> $x = 2$.</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te proponemos un ejercicio con la misma estructura y método para consolidar el aprendizaje.",
+      "content": "<p>Resuelve la siguiente ecuación logarítmica utilizando la propiedad de la suma de logaritmos y la inyectividad:</p><p>$$\\log x + \\log 20 = \\log 80$$</p><p><em>Inténtalo por ti mismo antes de consultar la respuesta.</em></p>",
+      "practiceAnswer": "$x = 4$ (con la condición de dominio $x > 0$)"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica el concepto de ecuaciones logarítmicas en un contexto de medición física de señales o sonido.",
+      "content": "<p>En acústica, la superposición de dos fuentes de sonido de intensidades $I_1$ e $I_2$ en una determinada escala se rige por la suma de sus componentes logarítmicas. Si la intensidad de una fuente desconocida $I$ satisface la relación matemática:</p><p>$$\\log_{10}(I) + \\log_{10}(5) = \\log_{10}(250)$$</p><p>Determina el valor exacto de la intensidad $I$. <em>Inténtalo por ti mismo antes de consultar la respuesta.</em></p>",
+      "practiceAnswer": "$I = 50$ (con $I > 0$)"
+    }
+  ]
+}

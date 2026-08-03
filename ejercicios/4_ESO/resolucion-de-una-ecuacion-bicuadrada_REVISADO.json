@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "ESO",
+    "course": "4_ESO",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones polinómicas",
+    "exerciseType": "Resolución de ecuación bicuadrada",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Identificar la estructura de una ecuación bicuadrada.",
+      "Aplicar el cambio de variable para reducir el grado de la ecuación.",
+      "Resolver la ecuación cuadrática resultante y deshacer el cambio de variable.",
+      "Interpretar gráficamente las soluciones reales de un polinomio."
+    ],
+    "prerequisites": [
+      "Resolución de ecuaciones de segundo grado.",
+      "Cálculo con raíces cuadradas.",
+      "Concepto de raíz de un polinomio e intersección con los ejes."
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "statementHash": "4421bb9b9c0d18ed",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T09:36:51.835Z",
+    "id": "resolucion-de-una-ecuacion-bicuadrada-5044e0b8"
+  },
+  "title": "Resolución de una ecuación bicuadrada",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Aquí tenemos la ecuación matemática tal y como aparece en la imagen original. Observemos atentamente los exponentes y los términos presentes.",
+      "content": "<p>$$x^4 - 3x^2 + 2 = 0$$</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Vamos a planificar nuestra estrategia. Al ver exponentes pares, podemos convertir esta ecuación de cuarto grado en una más sencilla de segundo grado.",
+      "content": "<p><strong>OBJETIVO:</strong> Encontrar todos los valores reales de $x$ que satisfacen la ecuación.</p><p><strong>DATOS RELEVANTES:</strong> Tenemos un polinomio de cuarto grado donde solo aparecen potencias pares de la incógnita ($x^4$ y $x^2$) y un término independiente.</p><p><strong>ESTRATEGIA:</strong></p><ol><li>Reconocer que es una <strong>ecuación bicuadrada</strong>.</li><li>Aplicar un <strong>cambio de variable</strong> ($t = x^2$) para transformar la ecuación de cuarto grado en una ecuación cuadrática estándar.</li><li>Resolver la ecuación de segundo grado resultante para encontrar los valores de $t$.</li><li>Deshacer el cambio de variable calculando las raíces cuadradas de los valores de $t$ para obtener las soluciones finales de $x$.</li></ol><p><strong>APLICACIÓN:</strong> Este tipo de ecuaciones modelizan fenómenos físicos que presentan simetría par, como la flexión de vigas uniformes o el comportamiento de ciertos osciladores acoplados.</p>"
+    },
+    {
+      "title": "Paso 1: Cambio de variable",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Realizamos un cambio de variable para simplificar el problema. Al sustituir equis al cuadrado por una nueva letra, transformamos la dificultad.",
+      "content": "<p><strong>OBJETIVO:</strong> Transformar la ecuación de grado cuatro en una de grado dos.</p><p><strong>CONEXIÓN:</strong> Dado que los exponentes de $x$ son múltiplos de $2$, podemos agrupar la incógnita de forma ventajosa.</p><p><strong>MÉTODO:</strong> Definimos una nueva variable auxiliar $t$ tal que: $$t = x^2$$ Elevando ambos miembros al cuadrado, obtenemos también la equivalencia para la potencia mayor: $$t^2 = (x^2)^2 = x^4$$</p><p><strong>CÁLCULO:</strong> Sustituimos estas expresiones en la ecuación original: $$(x^4) - 3(x^2) + 2 = 0$$ $$(t^2) - 3(t) + 2 = 0$$</p><p><strong>RESULTADO:</strong> La ecuación resultante es $t^2 - 3t + 2 = 0$.</p><p><strong>INTERPRETACIÓN:</strong> Hemos convertido un problema de grado cuatro en un problema de grado dos, el cual disponemos de herramientas directas para resolver.</p>",
+      "theory": "<p><strong>Ecuación Bicuadrada:</strong> Una ecuación de la forma $ax^4 + bx^2 + c = 0$ (con $a \\neq 0$) se denomina bicuadrada. Siempre se puede reducir a una ecuación de segundo grado $at^2 + bt + c = 0$ mediante la sustitución $t = x^2$.</p>"
+    },
+    {
+      "title": "Paso 2: Resolución de la ecuación cuadrática",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora resolvemos la ecuación de segundo grado. Podemos usar la fórmula general o buscar dos números que sumados den 3 y multiplicados den 2.",
+      "content": "<p><strong>OBJETIVO:</strong> Encontrar los valores de la variable auxiliar $t$.</p><p><strong>CONEXIÓN:</strong> Partimos de la ecuación transformada obtenida en el paso anterior: $t^2 - 3t + 2 = 0$.</p><p><strong>CÁLCULO:</strong> Utilizamos la fórmula general para ecuaciones cuadráticas $at^2 + bt + c = 0$, donde $a=1$, $b=-3$ y $c=2$:</p><p>$$t = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$ $$t = \\frac{-(-3) \\pm \\sqrt{(-3)^2 - 4(1)(2)}}{2(1)}$$ $$t = \\frac{3 \\pm \\sqrt{9 - 8}}{2}$$ $$t = \\frac{3 \\pm \\sqrt{1}}{2}$$ $$t = \\frac{3 \\pm 1}{2}$$</p><p>Separamos los dos casos posibles:</p><ul><li>$t_1 = \\frac{3 + 1}{2} = \\frac{4}{2} = 2$</li><li>$t_2 = \\frac{3 - 1}{2} = \\frac{2}{2} = 1$</li></ul><p><strong>RESULTADO:</strong> Las soluciones temporales para nuestra variable auxiliar son $t_1 = 2$ y $t_2 = 1$.</p>",
+      "hints": [
+        "¿Recuerdas cómo factorizar un trinomio buscando dos números cuya suma y producto son conocidos? Aquí sería buscar dos números que sumen $3$ y multipliquen $2$.",
+        "Esos números son $2$ y $1$, por lo que la ecuación se puede reescribir como $(t-2)(t-1) = 0$."
+      ]
+    },
+    {
+      "title": "Paso 3: Deshacer el cambio de variable",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ya tenemos el valor de te, pero buscamos equis. Volvemos a nuestra relación original y extraemos la raíz cuadrada, recordando siempre considerar los dos signos.",
+      "content": "<p><strong>OBJETIVO:</strong> Obtener los valores definitivos de la incógnita original $x$.</p><p><strong>CONEXIÓN:</strong> Recuperamos la definición de nuestra variable auxiliar: $t = x^2$.</p><p><strong>MÉTODO:</strong> Sustituimos cada valor de $t$ hallado y despejamos $x$ aplicando la raíz cuadrada en ambos miembros.</p><p><strong>CÁLCULO:</strong></p><p><strong>Caso 1: Para $t_1 = 2$</strong> $$x^2 = 2 \\implies x = \\pm \\sqrt{2}$$ Esto nos da dos soluciones: $x_1 = -\\sqrt{2}$ y $x_2 = \\sqrt{2}$.</p><p><strong>Caso 2: Para $t_2 = 1$</strong> $$x^2 = 1 \\implies x = \\pm \\sqrt{1}$$ Esto nos da otras dos soluciones: $x_3 = -1$ y $x_4 = 1$.</p><p><strong>RESULTADO:</strong> La ecuación original tiene cuatro soluciones reales: $x \\in \\{-\\sqrt{2}, -1, 1, \\sqrt{2}\\}$.</p>",
+      "warning": "<p>Un error muy común al resolver ecuaciones del tipo $x^2 = k$ es olvidar la raíz negativa. Recuerda que todo número real positivo tiene dos raíces cuadradas reales: una positiva y otra negativa.</p>",
+      "checkpoint": {
+        "question": "Si al resolver una ecuación bicuadrada obtenemos como soluciones auxiliares $t_1 = 4$ y $t_2 = -9$, ¿cuántas soluciones reales tendrá la ecuación original en $x$?",
+        "options": [
+          {
+            "text": "Dos soluciones reales.",
+            "correct": true,
+            "feedback": "¡Correcto! El valor $t_1 = 4$ da dos soluciones reales ($x = \\pm 2$), pero el valor $t_2 = -9$ lleva a $x^2 = -9$, que no tiene solución en los números reales."
+          },
+          {
+            "text": "Cuatro soluciones reales.",
+            "correct": false,
+            "feedback": "Cuidado, recuerda que $x^2$ no puede ser igual a un número negativo dentro de los números reales."
+          },
+          {
+            "text": "Ninguna solución real.",
+            "correct": false,
+            "feedback": "Fíjate en $t_1 = 4$. De ahí sí podemos extraer soluciones reales, ya que es un valor positivo."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 4: Comprobación analítica",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Comprobar las soluciones nos asegura que no hay errores de cálculo. Sustituimos cada valor obtenido en el enunciado original.",
+      "content": "<p><strong>OBJETIVO:</strong> Verificar algebraicamente que todos los valores hallados satisfacen la igualdad inicial.</p><p><strong>CONEXIÓN:</strong> Sustituimos $x \\in \\{-\\sqrt{2}, -1, 1, \\sqrt{2}\\}$ en $x^4 - 3x^2 + 2 = 0$. Debido a que todos los exponentes son pares, los signos negativos se absorberán, simplificando la comprobación a solo dos magnitudes absolutas.</p><p><strong>COMPROBACIÓN:</strong></p><p><strong>Para $x = \\pm 1$:</strong> $$(\\pm 1)^4 - 3(\\pm 1)^2 + 2 = 1 - 3(1) + 2 = 1 - 3 + 2 = 0$$ Se cumple la igualdad.</p><p><strong>Para $x = \\pm \\sqrt{2}$:</strong> $$(\\pm \\sqrt{2})^4 - 3(\\pm \\sqrt{2})^2 + 2 = ((\\pm \\sqrt{2})^2)^2 - 3(2) + 2 = (2)^2 - 6 + 2 = 4 - 6 + 2 = 0$$ También se cumple.</p><p><strong>INTERPRETACIÓN:</strong> Las cuatro raíces calculadas son rigurosamente correctas y son las únicas soluciones reales del polinomio.</p>"
+    },
+    {
+      "title": "Paso 5: Interpretación Gráfica",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Visualicemos la función asociada a nuestro polinomio. Las soluciones de la ecuación corresponden a los puntos donde la curva corta al eje horizontal.",
+      "content": "<p><strong>OBJETIVO:</strong> Relacionar las soluciones algebraicas con el comportamiento gráfico de la función $f(x) = x^4 - 3x^2 + 2$.</p><p><strong>CONEXIÓN:</strong> En geometría analítica, las soluciones (raíces) de una ecuación de la forma $f(x) = 0$ son exactamente las intersecciones de la gráfica de $f(x)$ con el eje de abscisas (el eje X).</p><p><strong>INTERPRETACIÓN:</strong> Al trazar la curva, observamos una gráfica con simetría respecto al eje Y (función par, debido a los exponentes pares). La curva atraviesa el eje X en cuatro puntos exactos: $x \\approx -1.41$, $x = -1$, $x = 1$ y $x \\approx 1.41$, coincidiendo plenamente con nuestros cálculos analíticos ($\\pm\\sqrt{2}$ y $\\pm 1$).</p>",
+      "visual": "<svg viewBox='0 0 400 300' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#0f172a' rx='8'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='40' y1='260' x2='40' y2='40'/><line x1='120' y1='260' x2='120' y2='40'/><line x1='280' y1='260' x2='280' y2='40'/><line x1='360' y1='260' x2='360' y2='40'/><line x1='40' y1='260' x2='360' y2='260'/><line x1='40' y1='216' x2='360' y2='216'/><line x1='40' y1='172' x2='360' y2='172'/><line x1='40' y1='128' x2='360' y2='128'/><line x1='40' y1='84' x2='360' y2='84'/><line x1='40' y1='40' x2='360' y2='40'/></g><line x1='40' y1='216' x2='360' y2='216' stroke='#fbbf24' stroke-width='2.5'/><line x1='200' y1='260' x2='200' y2='40' stroke='#fbbf24' stroke-width='2.5'/><text x='350' y='232' fill='#fbbf24' font-family='sans-serif' font-size='14' font-weight='bold'>X</text><text x='210' y='50' fill='#fbbf24' font-family='sans-serif' font-size='14' font-weight='bold'>Y</text><g data-math-key='x'><path d='M 56 40 Q 64 128 72 172.8 Q 80 205.12 88 221.76 L 96 226.56 L 104 221.76 Q 112 205.12 120 172.8 Q 128 128 136 71.68 Q 144 14.08 152 40 L 160 84 Q 168 116 176 126.4 Q 184 128 192 128 Q 200 128 208 128 L 216 128 L 224 126.4 Q 232 116 240 84 L 248 40 Q 256 14.08 264 71.68 Q 272 128 280 172.8 Q 288 205.12 296 221.76 L 304 226.56 L 312 221.76 Q 320 205.12 328 172.8 Q 336 128 344 40' fill='none' stroke='#38bdf8' stroke-width='3'/><path d='M 40 40 L 41.6 44.8 L 43.2 50.4 C 54.4 96 65.6 156.8 76.8 194.4 C 80 205.6 83.2 216 86.8 222 C 90.4 228 94 231 96 231.6 C 98 231 101.6 228 105.2 222 C 108.8 216 112 205.6 115.2 194.4 C 126.4 156.8 137.6 96 148.8 50.4 L 150.4 44.8 L 152 40 M 152 40 C 160 2.4 168 -15.6 176 -20 C 184 -24.4 192 -24 200 -24 C 208 -24 216 -24.4 224 -20 C 232 -15.6 240 2.4 248 40 M 248 40 L 249.6 44.8 L 251.2 50.4 C 262.4 96 273.6 156.8 284.8 194.4 C 288 205.6 291.2 216 294.8 222 C 298.4 228 302 231 304 231.6 C 306 231 309.6 228 313.2 222 C 316.8 216 320 205.6 323.2 194.4 C 334.4 156.8 345.6 96 356.8 50.4 L 358.4 44.8 L 360 40' fill='none' stroke='#38bdf8' stroke-width='3' stroke-linejoin='round'/><path d='M 64.1 40 L 67 65.6 L 70 91.8 C 77.5 156 86.5 210.6 96 225.5 C 105.5 210.6 114.5 156 122 91.8 L 125 65.6 L 127.9 40 C 137 131 158 135 200 128 C 242 135 263 131 272.1 40 L 275 65.6 L 278 91.8 C 285.5 156 294.5 210.6 304 225.5 C 313.5 210.6 322.5 156 330 91.8 L 333 65.6 L 335.9 40' fill='none' stroke='#0f172a' stroke-width='4'/><path d='M 74.3 40 Q 86 177.6 96 227 Q 106 177.6 117.7 40 C 145 130 160 128 200 128 C 240 128 255 130 282.3 40 Q 294 177.6 304 227 Q 314 177.6 325.7 40' fill='none' stroke='#38bdf8' stroke-width='3' stroke-linejoin='round'/></g><circle cx='86.9' cy='216' r='5' fill='#f472b6' stroke='#ffffff' stroke-width='2'/><circle cx='120' cy='216' r='5' fill='#f472b6' stroke='#ffffff' stroke-width='2'/><circle cx='280' cy='216' r='5' fill='#f472b6' stroke='#ffffff' stroke-width='2'/><circle cx='313.1' cy='216' r='5' fill='#f472b6' stroke='#ffffff' stroke-width='2'/><text x='58' y='238' fill='#ffffff' font-family='sans-serif' font-size='14'>-&#8730;2</text><text x='112' y='238' fill='#ffffff' font-family='sans-serif' font-size='14'>-1</text><text x='276' y='238' fill='#ffffff' font-family='sans-serif' font-size='14'>1</text><text x='308' y='238' fill='#ffffff' font-family='sans-serif' font-size='14'>&#8730;2</text></svg>",
+      "visualDescription": "Plano cartesiano mostrando la gráfica de la función f(x) = x a la cuarta menos 3 equis al cuadrado más 2. La curva es en forma de 'W' redondeada simétrica respecto al eje Y, abriéndose hacia arriba. Atraviesa el eje X horizontal en cuatro puntos destacados con marcadores rosas y etiquetados como -raíz de 2, -1, 1 y raíz de 2.",
+      "visualMathLink": "Los cuatro puntos donde la curva corta al eje X (y=0) corresponden exactamente a las soluciones algebraicas calculadas: x = -1.414 (que es -raíz de 2), x = -1, x = 1, y x = 1.414 (que es raíz de 2). La simetría de la gráfica refleja que es una función con potencias pares."
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulemos. El método para resolver ecuaciones bicuadradas es siempre el mismo: sustituir, resolver y devolver el cambio.",
+      "content": "<p>Para resolver la ecuación bicuadrada $x^4 - 3x^2 + 2 = 0$, hemos seguido estos pasos:</p><ol><li><strong>Sustitución:</strong> Cambiamos $x^2$ por una nueva variable $t$, reduciendo la ecuación a grado dos: $t^2 - 3t + 2 = 0$.</li><li><strong>Resolución intermedia:</strong> Hallamos las soluciones de la nueva ecuación mediante factorización o la fórmula general, obteniendo $t = 2$ y $t = 1$.</li><li><strong>Recuperación de la variable original:</strong> Igualamos $x^2$ a los valores de $t$ encontrados y extraemos raíces cuadradas.</li><li><strong>Validación:</strong> Comprobamos analítica y gráficamente las soluciones obtenidas.</li></ol><p><strong>Resultado final:</strong> $x \\in \\{-\\sqrt{2}, -1, 1, \\sqrt{2}\\}$</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Intenta resolver esta otra ecuación bicuadrada siguiendo los mismos pasos, antes de comprobar la respuesta final.",
+      "content": "<p>Resuelve la siguiente ecuación bicuadrada empleando el método de cambio de variable.</p><p>$$x^4 - 5x^2 + 4 = 0$$</p><p><em>Intenta realizar todos los pasos en un papel antes de mirar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>Soluciones:</strong> $x \\in \\{-2, -1, 1, 2\\}$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Llevemos la idea un paso más allá. Usa lo que has aprendido para encontrar los puntos de corte entre dos funciones distintas.",
+      "content": "<p>En geometría analítica, para hallar la intersección de dos curvas se igualan sus expresiones. Encuentra todos los valores reales de $x$ (puntos de intersección horizontal) donde la curva $f(x) = x^4 + 2x^2$ y la recta horizontal $y = 3$ se cruzan.</p><p><em>Sugerencia: Plantea la ecuación de intersección e intenta resolverla, verificando cuántas soluciones son válidas en los números reales.</em></p>",
+      "practiceAnswer": "<p><strong>Soluciones reales:</strong> $x \\in \\{-1, 1\\}$</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T09:36:58.422Z",
+    "updatedAt": "2026-08-03T09:36:58.422Z",
+    "contentHash": "30aab11baef43cd1",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
