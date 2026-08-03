@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0",
   "exerciseSchemaVersion": "4.0",
-  "generatedAt": "2026-08-02T08:54:42.981Z",
+  "generatedAt": "2026-08-03T16:27:05.922Z",
   "basePath": "ejercicios/",
-  "exerciseCount": 74,
+  "exerciseCount": 94,
   "filters": {
     "stages": [
       "Bachillerato",
@@ -11,14 +11,19 @@
     ],
     "courses": [
       "1_Bachillerato",
+      "1º Bachillerato",
       "2_Bachillerato",
       "2_ESO",
+      "2.º Bachillerato",
+      "2º Bachillerato",
       "3_ESO",
       "4_ESO"
     ],
     "topics": [
       "Álgebra",
+      "Álgebra Lineal",
       "Álgebra y funciones",
+      "Álgebra y Funciones",
       "Análisis",
       "Análisis de Funciones",
       "Análisis matemático",
@@ -39,9 +44,13 @@
       "Dominio de funciones e inecuaciones",
       "Dominio y Recorrido",
       "Ecuación de la recta",
+      "Ecuaciones bicuadradas",
+      "Ecuaciones bicuadradas y racionales",
       "Ecuaciones de segundo grado",
       "Ecuaciones Exponenciales",
+      "Ecuaciones exponenciales",
       "Ecuaciones irracionales",
+      "Ecuaciones Logarítmicas e Irracionales",
       "Ecuaciones polinómicas",
       "Ecuaciones polinómicas y factorización",
       "Ecuaciones racionales",
@@ -65,6 +74,9 @@
       "Identidades trigonométricas",
       "Identidades y ecuaciones",
       "Inecuaciones",
+      "Inecuaciones lineales con dos incógnitas",
+      "Inecuaciones racionales",
+      "Inecuaciones y sistemas",
       "Límites y modelización de funciones",
       "Logaritmos y sus aplicaciones",
       "Medida de ángulos",
@@ -87,8 +99,13 @@
       "Resolución de triángulos rectángulos",
       "Simetría de una función",
       "Sistemas de Ecuaciones",
+      "Sistemas de Ecuaciones Exponenciales",
+      "Sistemas de Ecuaciones Lineales",
+      "Sistemas de Ecuaciones Lineales con Parámetros",
+      "Sistemas de Ecuaciones Logarítmicas",
       "Sistemas de Ecuaciones y Funciones Cuadráticas",
       "Sistemas de inecuaciones",
+      "Sistemas de inecuaciones con una incógnita",
       "Sistemas de Inecuaciones Lineales",
       "Tasa de Variación Media (TVM)",
       "Teorema de Pitágoras y Razones Trigonométricas"
@@ -120,6 +137,8 @@
       "Determinación de características a partir de puntos extremos",
       "Determinación de parámetros",
       "Determinación de parámetros de una parábola a partir de puntos",
+      "Discusión y resolución de un sistema con parámetro",
+      "Discusión y resolución de un sistema parametrizado",
       "Estudio de la pendiente y la ordenada en el origen",
       "Estudio del dominio y evaluación de imágenes",
       "Estudio y representación de función cuadrática",
@@ -142,23 +161,41 @@
       "Problema de aplicación del producto de polinomios y evaluación",
       "Problema de modelización",
       "Problema de optimización con parábolas",
+      "Representación de la región factible",
       "Representación gráfica y cálculo de vértices (Programación Lineal)",
       "Resolución analítica",
       "Resolución analítica de ecuación cuadrática completa",
       "Resolución analítica y gráfica",
+      "Resolución de ecuación bicuadrada",
+      "Resolución de ecuación bicuadrada polinómica con fracciones",
       "Resolución de ecuación con fracciones algebraicas",
       "Resolución de ecuación con un radical",
       "Resolución de ecuación exponencial con cambio de variable",
+      "Resolución de ecuación exponencial cuadrática por cambio de variable",
+      "Resolución de ecuación exponencial por igualación de bases",
+      "Resolución de ecuación exponencial por manipulación algebraica",
       "Resolución de ecuación factorizada",
+      "Resolución de ecuación racional bicuadrada",
       "Resolución de ecuaciones de grado superior a 2",
+      "Resolución de Ecuaciones Logarítmicas con Radicales",
       "Resolución de inecuación racional mediante tabla de signos",
       "Resolución de inecuaciones racionales",
       "Resolución de problemas con funciones lineales",
+      "Resolución de sistema 3x3 por método de Gauss",
       "Resolución de sistema de ecuaciones no lineales",
       "Resolución de sistema de inecuaciones de segundo grado",
       "Resolución de sistema de inecuaciones lineales con una incógnita",
+      "Resolución de sistemas de ecuaciones exponenciales igualando bases y reducción matricial",
+      "Resolución de sistemas mediante el método de Gauss",
+      "Resolución de sistemas no lineales",
+      "Resolución de sistemas no lineales logarítmicos",
       "Resolución de un problema de programación lineal con dos variables",
+      "Resolución de un sistema de ecuaciones por el método de Gauss",
+      "Resolución de un sistema formado por una inecuación lineal y una cuadrática",
+      "Resolución de una inecuación racional de segundo grado en numerador y denominador",
+      "Resolución gráfica de una inecuación lineal con dos incógnitas",
       "Resolución gráfica y analítica",
+      "Resolución y Clasificación de Sistemas mediante el Método de Gauss",
       "Resta de fracciones algebraicas",
       "Simplificación algebraica",
       "Simplificación y factor común",
@@ -177,6 +214,7 @@
       "C",
       "E",
       "F",
+      "G",
       "H",
       "I"
     ]
@@ -212,7 +250,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T10:23:27.157Z",
+      "approvalMode": "legacy_review",
       "contentHash": "e580615b901ed0f5",
+      "statementHash": "0ab9c8175ba8fa01",
       "url": "ejercicios/1_BACH/buscando-zonas-comunes-sistemas-de-inecuaciones_REVISADO.json"
     },
     {
@@ -245,7 +285,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T10:21:30.285Z",
+      "approvalMode": "legacy_review",
       "contentHash": "bc6899b5d66b6263",
+      "statementHash": "6375b82df82087ff",
       "url": "ejercicios/1_BACH/choque-de-curvas-sistemas-no-lineales_REVISADO.json"
     },
     {
@@ -278,7 +320,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-08-01T10:24:24.791Z",
+      "approvalMode": "legacy_review",
       "contentHash": "53c0457a091280c4",
+      "statementHash": "7a8c5012cb188158",
       "url": "ejercicios/1_BACH/dibujando-fronteras-el-mapa-de-las-inecuaciones_REVISADO.json"
     },
     {
@@ -311,7 +355,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-08-01T19:26:13.587Z",
+      "approvalMode": "legacy_review",
       "contentHash": "0e4e4c8d3433d917",
+      "statementHash": "6a796fdb81a73f3d",
       "url": "ejercicios/1_BACH/ecuacion-racional-con-incognitas-en-el-denominador_REVISADO.json"
     },
     {
@@ -344,8 +390,43 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T10:22:24.313Z",
+      "approvalMode": "legacy_review",
       "contentHash": "b9f6ca4b3276025d",
+      "statementHash": "5f8208ff98d72985",
       "url": "ejercicios/1_BACH/el-disfraz-cuadratico-ecuaciones-exponenciales_REVISADO.json"
+    },
+    {
+      "id": "inecuacion-lineal-con-dos-incognitas-b537845f",
+      "title": "Inecuación lineal con dos incógnitas",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Inecuaciones lineales con dos incógnitas",
+      "exerciseType": "Resolución gráfica de una inecuación lineal con dos incógnitas",
+      "protocols": [
+        "A"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Representar la recta frontera asociada a una inecuación lineal con dos incógnitas.",
+        "Determinar el semiplano solución mediante la prueba de un punto de chequeo.",
+        "Expresar la solución de forma gráfica y analítica."
+      ],
+      "prerequisites": [
+        "Representación de rectas en el plano cartesiano.",
+        "Despeje de variables y sustitución de coordenadas."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-03T08:03:23.487Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "1587e591240ee35b",
+      "statementHash": "c437fb9b77b756e1",
+      "url": "ejercicios/1_BACH/inecuacion-lineal-con-dos-incognitas_REVISADO.json"
     },
     {
       "id": "inecuacion-racional-y-la-tabla-de-signos-cc5b3bbb",
@@ -377,8 +458,81 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T10:08:13.804Z",
+      "approvalMode": "legacy_review",
       "contentHash": "60b797609f3d899a",
+      "statementHash": "1ca449674e442041",
       "url": "ejercicios/1_BACH/inecuacion-racional-y-la-tabla-de-signos_REVISADO.json"
+    },
+    {
+      "id": "resolucion-completa-de-la-ecuacion-racional-x-12-x-1-ae4b862d",
+      "title": "Resolución completa de la ecuación racional x² = 12 / (x² + 1)",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones bicuadradas y racionales",
+      "exerciseType": "Resolución de ecuación racional bicuadrada",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Resolver ecuaciones racionales mediante cambio de variable",
+        "Analizar la existencia de soluciones reales e imaginarias",
+        "Interpretar gráficamente las soluciones como la intersección de dos funciones"
+      ],
+      "prerequisites": [
+        "Ecuaciones de segundo grado",
+        "Propiedades de potencias y radicales",
+        "Concepto de función e intersección en el plano cartesiano"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-03T09:41:53.583Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "6282a3103978a1fe",
+      "statementHash": "6c2ea6f5d4aaf703",
+      "url": "ejercicios/1_BACH/resolucion-completa-de-la-ecuacion-racional-x-12-x-1_REVISADO.json"
+    },
+    {
+      "id": "resolucion-completa-de-una-ecuacion-bicuadrada-7604dbf5",
+      "title": "Resolución completa de una ecuación bicuadrada",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones bicuadradas",
+      "exerciseType": "Resolución de ecuación bicuadrada polinómica con fracciones",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Eliminar denominadores numéricos en ecuaciones algebraicas mediante la propiedad multiplicativa de la igualdad",
+        "Reducir una ecuación polinómica de cuarto grado a su forma canónica bicuadrada",
+        "Aplicar el método del cambio de variable para transformar una ecuación bicuadrada en cuadrática",
+        "Calcular y verificar todas las soluciones reales en el dominio original"
+      ],
+      "prerequisites": [
+        "Resolución de ecuaciones de segundo grado mediante la fórmula general",
+        "Propiedades de potencias y operaciones con radicales",
+        "Desarrollo de productos algebraicos y simplificación de términos semejantes"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-03T09:39:33.628Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "4cbdd9d4cd5dd326",
+      "statementHash": "f3ec6d186a0ebaaa",
+      "url": "ejercicios/1_BACH/resolucion-completa-de-una-ecuacion-bicuadrada_REVISADO.json"
     },
     {
       "id": "resolucion-de-un-sistema-de-inecuaciones-lineales-657b675e",
@@ -408,8 +562,113 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-07-31T12:37:37.149Z",
+      "approvalMode": "legacy_review",
       "contentHash": "14e3727ae7ebf208",
+      "statementHash": "c3e2af2e101aee3c",
       "url": "ejercicios/1_BACH/resolucion-de-un-sistema-de-inecuaciones-lineales_REVISADO.json"
+    },
+    {
+      "id": "resolucion-de-una-inecuacion-racional-ec0bc3b9",
+      "title": "Resolución de una inecuación racional",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Inecuaciones racionales",
+      "exerciseType": "Resolución de una inecuación racional de segundo grado en numerador y denominador",
+      "protocols": [
+        "A"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Determinar las raíces del numerador y del denominador para establecer los puntos críticos.",
+        "Restringir el dominio excluyendo los valores que anulan el denominador.",
+        "Estudiar los signos del cociente en los intervalos determinados por los puntos críticos.",
+        "Expresar el conjunto solución en forma de intervalo y de representación gráfica."
+      ],
+      "prerequisites": [
+        "Factorización de polinomios de segundo grado.",
+        "Regla de los signos para multiplicación y división.",
+        "Concepto de dominio de una fracción algebraica."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-03T07:38:55.456Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "33177b3b48326e65",
+      "statementHash": "6133bc31ce13db47",
+      "url": "ejercicios/1_BACH/resolucion-de-una-inecuacion-racional_REVISADO.json"
+    },
+    {
+      "id": "resolucion-grafica-de-un-sistema-de-inecuaciones-lin-23a01db7",
+      "title": "Resolución Gráfica de un Sistema de Inecuaciones Lineales",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Inecuaciones y sistemas",
+      "exerciseType": "Representación de la región factible",
+      "protocols": [
+        "A",
+        "B"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Representar gráficamente inecuaciones lineales con dos variables.",
+        "Identificar la región solución como intersección de semiplanos.",
+        "Calcular algebraicamente los vértices de la región factible."
+      ],
+      "prerequisites": [
+        "Representación de rectas en el plano cartesiano.",
+        "Resolución de sistemas de ecuaciones lineales bidimensionales."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-03T09:29:02.960Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "5970638c156aad56",
+      "statementHash": "0e3894b68f677888",
+      "url": "ejercicios/1_BACH/resolucion-grafica-de-un-sistema-de-inecuaciones-lin_REVISADO.json"
+    },
+    {
+      "id": "sistema-de-inecuaciones-con-una-incognita-2ad48f90",
+      "title": "Sistema de inecuaciones con una incógnita",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1_Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Sistemas de inecuaciones con una incógnita",
+      "exerciseType": "Resolución de un sistema formado por una inecuación lineal y una cuadrática",
+      "protocols": [
+        "A"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Resolver una inecuación de primer grado determinando su intervalo de soluciones.",
+        "Resolver una inecuación de segundo grado analizando los ceros y signos del polinomio.",
+        "Calcular la intersección de los conjuntos solución para hallar la solución simultánea del sistema."
+      ],
+      "prerequisites": [
+        "Propiedades de las desigualdades algebraicas.",
+        "Factorización de polinomios cuadráticos.",
+        "Operaciones de intersección de intervalos reales."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-03T07:39:56.828Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "9c5a6c042d7e78aa",
+      "statementHash": "9b08135144a9868f",
+      "url": "ejercicios/1_BACH/sistema-de-inecuaciones-con-una-incognita_REVISADO.json"
     },
     {
       "id": "calculo-del-nivel-de-intensidad-sonora-decibelios-463fb5b2",
@@ -440,7 +699,9 @@
       "hasFarTransfer": true,
       "slideCount": 7,
       "reviewedAt": "2026-08-01T17:21:37.196Z",
+      "approvalMode": "legacy_review",
       "contentHash": "91ca8357e366f3b5",
+      "statementHash": "a37a52ec8cef5b92",
       "url": "ejercicios/1_BACH/calculo-del-nivel-de-intensidad-sonora-decibelios_REVISADO.json"
     },
     {
@@ -472,7 +733,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-07-31T10:08:02.819Z",
+      "approvalMode": "legacy_review",
       "contentHash": "7bb4f07b4dfa7265",
+      "statementHash": "1f1f0c04bda39aaa",
       "url": "ejercicios/1_BACH/estudio-de-parametros-para-la-continuidad-de-una-fun_REVISADO%20(1).json"
     },
     {
@@ -506,7 +769,9 @@
       "hasFarTransfer": true,
       "slideCount": 12,
       "reviewedAt": "2026-08-01T19:19:39.995Z",
+      "approvalMode": "legacy_review",
       "contentHash": "fd37f4cfaf408365",
+      "statementHash": "b7ac10735e410fb1",
       "url": "ejercicios/1_BACH/interseccion-de-curvas-exponenciales_REVISADO.json"
     },
     {
@@ -539,7 +804,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-08-01T19:20:56.273Z",
+      "approvalMode": "legacy_review",
       "contentHash": "261559c89bdc666e",
+      "statementHash": "50b968531f3828ed",
       "url": "ejercicios/1_BACH/modelizacion-analitica-exponencial_REVISADO.json"
     },
     {
@@ -572,7 +839,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T11:07:58.697Z",
+      "approvalMode": "legacy_review",
       "contentHash": "01d8c3d88b176496",
+      "statementHash": "2cdb67037d614a91",
       "url": "ejercicios/1_BACH/calculo-e-interpretacion-de-la-tasa-de-variacion-med_REVISADO.json"
     },
     {
@@ -605,7 +874,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T11:11:32.525Z",
+      "approvalMode": "legacy_review",
       "contentHash": "1d3a451aa7c28ddc",
+      "statementHash": "10842257e1710a11",
       "url": "ejercicios/1_BACH/composicion-de-funciones-y-simplificacion_REVISADO.json"
     },
     {
@@ -638,7 +909,9 @@
       "hasFarTransfer": true,
       "slideCount": 7,
       "reviewedAt": "2026-08-01T11:12:06.063Z",
+      "approvalMode": "legacy_review",
       "contentHash": "b451a7a2cb3ac3d8",
+      "statementHash": "4dd06636875d099c",
       "url": "ejercicios/1_BACH/continuidad-y-parametros-en-funciones-a-trozos_REVISADO.json"
     },
     {
@@ -671,7 +944,9 @@
       "hasFarTransfer": true,
       "slideCount": 7,
       "reviewedAt": "2026-08-01T11:12:43.384Z",
+      "approvalMode": "legacy_review",
       "contentHash": "08efdaa1eeffae7b",
+      "statementHash": "c0f5a6a96a62aad7",
       "url": "ejercicios/1_BACH/descomposicion-y-graficacion-de-funciones-con-valor-_REVISADO.json"
     },
     {
@@ -704,7 +979,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-08-01T11:05:51.498Z",
+      "approvalMode": "legacy_review",
       "contentHash": "d442347d60cdfbf7",
+      "statementHash": "22c3105fb9794c9d",
       "url": "ejercicios/1_BACH/estudio-algebraico-de-la-simetria-de-funciones_REVISADO.json"
     },
     {
@@ -738,7 +1015,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T11:08:41.850Z",
+      "approvalMode": "legacy_review",
       "contentHash": "b031a72ab94fb9a0",
+      "statementHash": "88bd4d82d0859e9c",
       "url": "ejercicios/1_BACH/estudio-y-representacion-de-funciones-racionales_REVISADO.json"
     },
     {
@@ -770,7 +1049,9 @@
       "hasFarTransfer": true,
       "slideCount": 7,
       "reviewedAt": "2026-08-01T11:09:40.009Z",
+      "approvalMode": "legacy_review",
       "contentHash": "fe786f762a5e8a64",
+      "statementHash": "18261ca50005ca1f",
       "url": "ejercicios/1_BACH/evaluacion-de-funciones-periodicas_REVISADO.json"
     },
     {
@@ -802,7 +1083,9 @@
       "hasFarTransfer": true,
       "slideCount": 7,
       "reviewedAt": "2026-08-01T11:13:27.788Z",
+      "approvalMode": "legacy_review",
       "contentHash": "96a4f047f1e06545",
+      "statementHash": "01accf55f75d071b",
       "url": "ejercicios/1_BACH/familias-de-funciones-determinacion-de-la-parabola-p_REVISADO.json"
     },
     {
@@ -835,7 +1118,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T11:07:16.120Z",
+      "approvalMode": "legacy_review",
       "contentHash": "e0067d2e8acb1a48",
+      "statementHash": "30ee231d36b26ac7",
       "url": "ejercicios/1_BACH/interseccion-de-funciones-con-los-ejes-cartesianos_REVISADO.json"
     },
     {
@@ -868,7 +1153,9 @@
       "hasFarTransfer": true,
       "slideCount": 7,
       "reviewedAt": "2026-08-01T11:14:14.689Z",
+      "approvalMode": "legacy_review",
       "contentHash": "f2764bb40712ea26",
+      "statementHash": "70dafeb72ef9e611",
       "url": "ejercicios/1_BACH/modelizacion-geometrica-y-analisis-de-costes-de-inge_REVISADO.json"
     },
     {
@@ -902,7 +1189,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T11:10:23.757Z",
+      "approvalMode": "legacy_review",
       "contentHash": "5b1c372477f1d6a2",
+      "statementHash": "3ca53b7147594823",
       "url": "ejercicios/1_BACH/optimizacion-cuadratica-maximizando-el-rendimiento_REVISADO.json"
     },
     {
@@ -934,7 +1223,9 @@
       "hasFarTransfer": true,
       "slideCount": 7,
       "reviewedAt": "2026-08-01T17:24:58.427Z",
+      "approvalMode": "legacy_review",
       "contentHash": "5f6b64c0f4a67d2a",
+      "statementHash": "48dbf41a3c951b70",
       "url": "ejercicios/1_BACH/composicion-y-estudio-de-la-simetria_REVISADO.json"
     },
     {
@@ -968,7 +1259,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T17:25:49.536Z",
+      "approvalMode": "legacy_review",
       "contentHash": "ad1c253110986e57",
+      "statementHash": "42306ab8afc40d5e",
       "url": "ejercicios/1_BACH/dinamica-de-poblaciones-el-modelo-logistico_REVISADO.json"
     },
     {
@@ -1000,7 +1293,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T17:22:21.427Z",
+      "approvalMode": "legacy_review",
       "contentHash": "639ac476d8ed2534",
+      "statementHash": "1c690389bd90c9bf",
       "url": "ejercicios/1_BACH/dominio-de-una-funcion-logaritmica-con-argumento-rac_REVISADO.json"
     },
     {
@@ -1033,7 +1328,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T17:18:11.414Z",
+      "approvalMode": "legacy_review",
       "contentHash": "6932a84987afb64f",
+      "statementHash": "04613205300ff26b",
       "url": "ejercicios/1_BACH/estudio-de-una-funcion-exponencial-desplazada_REVISADO.json"
     },
     {
@@ -1065,7 +1362,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T17:19:56.038Z",
+      "approvalMode": "legacy_review",
       "contentHash": "482b227b84769759",
+      "statementHash": "73136933efd29ca1",
       "url": "ejercicios/1_BACH/simetria-entre-la-funcion-exponencial-y-logaritmica_REVISADO.json"
     },
     {
@@ -1100,7 +1399,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-08-01T21:54:50.945Z",
+      "approvalMode": "legacy_review",
       "contentHash": "45a93af794468a6d",
+      "statementHash": "d08a96bc3ec823f6",
       "url": "ejercicios/1_BACH/altura-de-un-poste-en-ladera-el-metodo-del-doble-tri_REVISADO.json"
     },
     {
@@ -1133,7 +1434,9 @@
       "hasFarTransfer": true,
       "slideCount": 7,
       "reviewedAt": "2026-08-01T21:47:09.651Z",
+      "approvalMode": "legacy_review",
       "contentHash": "62ff985bbeaf1f4d",
+      "statementHash": "759f415edb66befc",
       "url": "ejercicios/1_BACH/calculo-de-un-lado-con-el-teorema-del-coseno_REVISADO.json"
     },
     {
@@ -1165,7 +1468,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T21:54:32.830Z",
+      "approvalMode": "legacy_review",
       "contentHash": "9e45e9299bcba5c7",
+      "statementHash": "16e8ff6c5ef1568a",
       "url": "ejercicios/1_BACH/demostracion-de-identidad-trigonometrica-fundamental_REVISADO.json"
     },
     {
@@ -1198,7 +1503,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T21:55:25.077Z",
+      "approvalMode": "legacy_review",
       "contentHash": "52b55264460b6eee",
+      "statementHash": "b802ec2d98c8ea9f",
       "url": "ejercicios/1_BACH/demostracion-de-la-suma-de-cubos-trigonometricos_REVISADO.json"
     },
     {
@@ -1231,7 +1538,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-08-01T21:54:06.082Z",
+      "approvalMode": "legacy_review",
       "contentHash": "d1d2875a62b71630",
+      "statementHash": "6bc6437767be4a15",
       "url": "ejercicios/1_BACH/resolucion-de-ecuacion-trigonometrica-por-factorizac_REVISADO.json"
     },
     {
@@ -1263,8 +1572,349 @@
       "hasFarTransfer": true,
       "slideCount": 7,
       "reviewedAt": "2026-08-01T21:23:17.658Z",
+      "approvalMode": "legacy_review",
       "contentHash": "b89e049a18fa9694",
+      "statementHash": "a0797e8a05966e68",
       "url": "ejercicios/1_BACH/simplificacion-de-una-expresion-trigonometrica_REVISADO.json"
+    },
+    {
+      "id": "resolucion-de-ecuacion-exponencial-por-factorizacion-9717c2f4",
+      "title": "Resolución de Ecuación Exponencial por Factorización",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones exponenciales",
+      "exerciseType": "Resolución de ecuación exponencial por manipulación algebraica",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 10,
+      "learningObjectives": [
+        "Aplicar las propiedades de las potencias para descomponer suma de exponenciales.",
+        "Factorizar un término exponencial común.",
+        "Resolver ecuaciones exponenciales sencillas igualando los exponentes."
+      ],
+      "prerequisites": [
+        "Propiedades de las potencias ($a^{n+m} = a^n \\cdot a^m$).",
+        "Suma de fracciones.",
+        "Definición de potencia de exponente cero ($a^0 = 1$)."
+      ],
+      "hasVisualSupport": false,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-03T16:00:09.168Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "c954a106e2b1d510",
+      "statementHash": "747c97f097fb6a66",
+      "url": "ejercicios/1_BACH/resolucion-de-ecuacion-exponencial-por-factorizacion_REVISADO.json"
+    },
+    {
+      "id": "resolucion-de-un-sistema-de-ecuaciones-exponenciales-167ee3f4",
+      "title": "Resolución de un sistema de ecuaciones exponenciales igualando bases",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Sistemas de Ecuaciones Exponenciales",
+      "exerciseType": "Resolución de sistemas de ecuaciones exponenciales igualando bases y reducción matricial",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 12,
+      "learningObjectives": [
+        "Expresar términos numéricos como potencias de igual base para simplificar ecuaciones exponenciales.",
+        "Igualar exponentes para obtener un sistema de ecuaciones lineales equivalente.",
+        "Resolver el sistema lineal de dos ecuaciones mediante operaciones elementales de fila en formato matricial.",
+        "Verificar rigurosamente la solución en el sistema exponencial original."
+      ],
+      "prerequisites": [
+        "Propiedades de las potencias: $a^0 = 1$ (para $a \\neq 0$) y descomposición en factores primos.",
+        "Igualdad de exponentes en exponenciales inyectivas: $a^u = a^v \\iff u = v$.",
+        "Método de eliminación de Gauss-Jordan para sistemas de ecuaciones lineales."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 12,
+      "reviewedAt": "2026-08-03T16:15:53.859Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "3176d04ab0a47720",
+      "statementHash": "edb43f20dd01392a",
+      "url": "ejercicios/1_BACH/resolucion-de-un-sistema-de-ecuaciones-exponenciales_REVISADO.json"
+    },
+    {
+      "id": "resolucion-de-un-sistema-de-ecuaciones-logaritmicas-713f9c8d",
+      "title": "Resolución de un Sistema de Ecuaciones Logarítmicas",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Sistemas de Ecuaciones Logarítmicas",
+      "exerciseType": "Resolución de sistemas no lineales",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Resolver sistemas de ecuaciones logarítmicas mediante cambio de variable.",
+        "Comprobar el dominio de existencia y verificar las soluciones obtenidas."
+      ],
+      "prerequisites": [
+        "Propiedades fundamentales de los logaritmos decimales.",
+        "Resolución de sistemas de ecuaciones lineales por reducción."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 11,
+      "reviewedAt": "2026-08-03T15:36:24.512Z",
+      "approvalMode": "teacher_override",
+      "contentHash": "c428989094790572",
+      "statementHash": "1c187058995a0f72",
+      "url": "ejercicios/1_BACH/resolucion-de-un-sistema-de-ecuaciones-logaritmicas_REVISADO.json"
+    },
+    {
+      "id": "resolucion-paso-a-paso-ecuacion-exponencial-308c43f8",
+      "title": "Resolución paso a paso: Ecuación Exponencial",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones Exponenciales",
+      "exerciseType": "Resolución de ecuación exponencial por igualación de bases",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 10,
+      "learningObjectives": [
+        "Descomponer términos numéricos para reducir ecuaciones exponenciales a una base común.",
+        "Aplicar la propiedad de inyectividad de la función exponencial para igualar exponentes.",
+        "Resolver ecuaciones exponenciales y verificar analíticamente la solución hallada."
+      ],
+      "prerequisites": [
+        "Propiedades de las potencias.",
+        "Descomposición en factores primos.",
+        "Resolución de ecuaciones de primer grado."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-03T15:49:33.412Z",
+      "approvalMode": "teacher_override",
+      "contentHash": "a0c280611c2cae83",
+      "statementHash": "a21f59d8fb4bc2ea",
+      "url": "ejercicios/1_BACH/resolucion-paso-a-paso-ecuacion-exponencial_REVISADO.json"
+    },
+    {
+      "id": "resolucion-paso-a-paso-ecuacion-exponencial-cuadrati-3604b714",
+      "title": "Resolución paso a paso: Ecuación Exponencial Cuadrática",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones Exponenciales",
+      "exerciseType": "Resolución de ecuación exponencial cuadrática por cambio de variable",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 12,
+      "learningObjectives": [
+        "Utilizar propiedades de las potencias para aislar la expresión exponencial base.",
+        "Aplicar cambios de variable para transformar ecuaciones exponenciales en cuadráticas.",
+        "Deshacer el cambio de variable y verificar las soluciones en la ecuación de origen."
+      ],
+      "prerequisites": [
+        "Propiedades de los exponentes.",
+        "Resolución de ecuaciones de segundo grado.",
+        "Ecuaciones exponenciales elementales."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 11,
+      "reviewedAt": "2026-08-03T15:54:38.637Z",
+      "approvalMode": "teacher_override",
+      "contentHash": "2a6429037e7d2199",
+      "statementHash": "569dd25e5b352c14",
+      "url": "ejercicios/1_BACH/resolucion-paso-a-paso-ecuacion-exponencial-cuadrati_REVISADO.json"
+    },
+    {
+      "id": "resolucion-paso-a-paso-sistema-de-ecuaciones-logarit-a5a94cce",
+      "title": "Resolución paso a paso: Sistema de ecuaciones logarítmicas",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Sistemas de Ecuaciones Logarítmicas",
+      "exerciseType": "Resolución de sistemas no lineales logarítmicos",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Determinar el dominio de existencia de funciones logarítmicas en sistemas de ecuaciones.",
+        "Aplicar propiedades de los logaritmos para transformar ecuaciones no lineales en algebraicas.",
+        "Resolver sistemas no lineales mediante el método de sustitución y filtrado de soluciones extrañas."
+      ],
+      "prerequisites": [
+        "Propiedades fundamentales de los logaritmos.",
+        "Resolución de ecuaciones cuadráticas por la fórmula general.",
+        "Métodos algebraicos de sustitución en sistemas de ecuaciones."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 13,
+      "reviewedAt": "2026-08-03T15:43:41.054Z",
+      "approvalMode": "teacher_override",
+      "contentHash": "38ec2a84451bff9e",
+      "statementHash": "caabae2187021db7",
+      "url": "ejercicios/1_BACH/resolucion-paso-a-paso-sistema-de-ecuaciones-logarit_REVISADO.json"
+    },
+    {
+      "id": "discusion-y-resolucion-de-un-sistema-parametrico-7437ce59",
+      "title": "Discusión y Resolución de un Sistema Paramétrico",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "2_Bachillerato",
+      "topic": "Álgebra Lineal",
+      "subtopic": "Sistemas de Ecuaciones Lineales con Parámetros",
+      "exerciseType": "Discusión y resolución de un sistema parametrizado",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 35,
+      "learningObjectives": [
+        "Aplicar el método de Gauss para triangularizar una matriz paramétrica.",
+        "Discutir la compatibilidad de un sistema en función de los valores de un parámetro.",
+        "Resolver sistemas compatibles indeterminados parametrizando las soluciones."
+      ],
+      "prerequisites": [
+        "Operaciones elementales por filas.",
+        "Concepto de rango de una matriz.",
+        "Teorema de Rouché-Capelli."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 13,
+      "reviewedAt": "2026-08-02T16:58:03.204Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "b527b6acf5c27852",
+      "statementHash": "46d60ed28f8ee318",
+      "url": "ejercicios/2_BACH/discusion-y-resolucion-de-un-sistema-parametrico_REVISADO.json"
+    },
+    {
+      "id": "discusion-y-resolucion-por-gauss-de-un-sistema-param-e9fa9438",
+      "title": "Discusión y Resolución por Gauss de un Sistema Parametrizado",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "2_Bachillerato",
+      "topic": "Álgebra Lineal",
+      "subtopic": "Sistemas de Ecuaciones Lineales",
+      "exerciseType": "Discusión y resolución de un sistema con parámetro",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Aplicar el método de Gauss matricial a un sistema parametrizado.",
+        "Identificar los valores críticos del parámetro examinando los pivotes de la matriz escalonada.",
+        "Resolver por sustitución regresiva un sistema compatible determinado con expresiones algebraicas."
+      ],
+      "prerequisites": [
+        "Operaciones elementales con filas en matrices.",
+        "Concepto de matriz escalonada.",
+        "Clasificación de sistemas según Rouché-Frobenius o comportamiento en Gauss."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 17,
+      "reviewedAt": "2026-08-02T16:37:22.772Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "446f0a3f685fd1ad",
+      "statementHash": "086758f79493bc71",
+      "url": "ejercicios/2_BACH/discusion-y-resolucion-por-gauss-de-un-sistema-param_REVISADO%20(1).json"
+    },
+    {
+      "id": "resolucion-del-sistema-de-ecuaciones-lineales-3x3-ad913f61",
+      "title": "Resolución del Sistema de Ecuaciones Lineales 3x3",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "2_Bachillerato",
+      "topic": "Álgebra Lineal",
+      "subtopic": "Sistemas de Ecuaciones Lineales",
+      "exerciseType": "Resolución de un sistema de ecuaciones por el método de Gauss",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Planteamiento matricial de un sistema de tres ecuaciones con tres incógnitas",
+        "Aplicación rigurosa del método de eliminación de Gauss paso a paso",
+        "Clasificación y resolución mediante sustitución regresiva y comprobación analítica"
+      ],
+      "prerequisites": [
+        "Operaciones elementales por filas en matrices",
+        "Resolución de ecuaciones lineales de primer grado"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 11,
+      "reviewedAt": "2026-08-03T09:48:58.558Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "877cf1bbffebfc25",
+      "statementHash": "83787faf82bef335",
+      "url": "ejercicios/2_BACH/resolucion-del-sistema-de-ecuaciones-lineales-3x3_REVISADO.json"
+    },
+    {
+      "id": "resolucion-del-sistema-de-ecuaciones-lineales-3x3-po-38fe2309",
+      "title": "Resolución del Sistema de Ecuaciones Lineales 3x3 por Gauss",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "2_Bachillerato",
+      "topic": "Álgebra Lineal",
+      "subtopic": "Sistemas de Ecuaciones Lineales",
+      "exerciseType": "Resolución de sistemas mediante el método de Gauss",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Planteamiento y representación matricial de un sistema de ecuaciones lineales 3x3",
+        "Escalonamiento de la matriz ampliada mediante operaciones elementales por filas (Método de Gauss)",
+        "Clasificación del sistema según el Teorema de Rouché-Frobenius y resolución por sustitución regresiva",
+        "Comprobación rigurosa de las soluciones obtenidas en las ecuaciones originales"
+      ],
+      "prerequisites": [
+        "Operaciones elementales entre filas matriciales",
+        "Resolución de ecuaciones de primer grado",
+        "Conceptos básicos de rango y compatibilidad de sistemas"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-03T09:55:51.238Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "174730b4acdbc9e6",
+      "statementHash": "0338183d96811a7b",
+      "url": "ejercicios/2_BACH/resolucion-del-sistema-de-ecuaciones-lineales-3x3-po_REVISADO.json"
     },
     {
       "id": "calculo-de-rectas-tangente-y-normal-en-el-origen-ce8792ea",
@@ -1296,7 +1946,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-08-02T06:46:48.967Z",
+      "approvalMode": "legacy_review",
       "contentHash": "709fb7124cbaac9c",
+      "statementHash": "a862f855c89e7bb7",
       "url": "ejercicios/2_BACH/calculo-de-rectas-tangente-y-normal-en-el-origen_REVISADO.json"
     },
     {
@@ -1329,8 +1981,118 @@
       "hasFarTransfer": true,
       "slideCount": 15,
       "reviewedAt": "2026-07-31T12:01:46.358Z",
+      "approvalMode": "legacy_review",
       "contentHash": "48804fa983bcab77",
+      "statementHash": "4ad74c17372978a1",
       "url": "ejercicios/2_BACH/optimizacion-de-una-explotacion-agricola-sostenible_REVISADO.json"
+    },
+    {
+      "id": "resolucion-de-un-sistema-de-ecuaciones-lineales-medi-a621da26",
+      "title": "Resolución de un Sistema de Ecuaciones Lineales mediante el Método de Gauss",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "2.º Bachillerato",
+      "topic": "Álgebra Lineal",
+      "subtopic": "Sistemas de Ecuaciones Lineales",
+      "exerciseType": "Resolución y Clasificación de Sistemas mediante el Método de Gauss",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Representar sistemas de ecuaciones lineales mediante matrices ampliadas",
+        "Aplicar transformaciones elementales por filas según el método de eliminación de Gauss",
+        "Discutir y clasificar sistemas de ecuaciones lineales aplicando el Teorema de Rouché-Frobenius",
+        "Obtener la solución paramétrica de un sistema compatible indeterminado y verificarla analítica y geométricamente"
+      ],
+      "prerequisites": [
+        "Operaciones aritméticas con números enteros y fracciones",
+        "Resolución de sistemas de ecuaciones de primer grado",
+        "Concepto de matriz, rango y combinación lineal"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 15,
+      "reviewedAt": "2026-08-03T13:33:51.620Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "b4dcaded4be3323f",
+      "statementHash": "b321e94313c09619",
+      "url": "ejercicios/2_BACH/resolucion-de-un-sistema-de-ecuaciones-lineales-medi_REVISADO.json"
+    },
+    {
+      "id": "resolucion-de-un-sistema-3x3-por-gauss-0f02c0a0",
+      "title": "Resolución de un Sistema 3x3 por Gauss",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "2º Bachillerato",
+      "topic": "Álgebra Lineal",
+      "subtopic": "Sistemas de Ecuaciones Lineales",
+      "exerciseType": "Resolución de sistema 3x3 por método de Gauss",
+      "protocols": [
+        "C",
+        "G"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Modelizar un sistema de ecuaciones lineales mediante su matriz ampliada.",
+        "Aplicar operaciones elementales por filas de forma ordenada (método de Gauss).",
+        "Discutir y clasificar un sistema según el teorema de Rouché-Capelli.",
+        "Extraer la solución paramétrica de un Sistema Compatible Indeterminado.",
+        "Interpretar geométricamente un sistema de tres ecuaciones con tres incógnitas."
+      ],
+      "prerequisites": [
+        "Concepto de sistema de ecuaciones y matriz ampliada.",
+        "Operaciones elementales por filas.",
+        "Sistemas equivalentes y grados de libertad."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 14,
+      "reviewedAt": "2026-08-03T13:05:26.545Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "b8d34549c0433d4f",
+      "statementHash": "1e2775d790fa88c1",
+      "url": "ejercicios/2_BACH/resolucion-de-un-sistema-3x3-por-gauss_REVISADO.json"
+    },
+    {
+      "id": "resolucion-de-una-ecuacion-logaritmica-con-radicales-04c57d79",
+      "title": "Resolución de una Ecuación Logarítmica con Radicales",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "4_ESO",
+      "topic": "Álgebra y Funciones",
+      "subtopic": "Ecuaciones Logarítmicas e Irracionales",
+      "exerciseType": "Resolución de Ecuaciones Logarítmicas con Radicales",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "avanzada",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Determinar el dominio de existencia de una ecuación logarítmica con radicales.",
+        "Aplicar las propiedades de los logaritmos para simplificar sumas de logaritmos en un único logaritmo.",
+        "Resolver la ecuación algebraica resultante mediante elevación al cuadrado.",
+        "Comprobar las soluciones obtenidas en la ecuación original para descartar soluciones extrañas."
+      ],
+      "prerequisites": [
+        "Propiedades fundamentales de los logaritmos (logaritmo de un producto).",
+        "Definición y propiedades de la función logarítmica y dominio de definición.",
+        "Resolución de ecuaciones algebraicas polinómicas de primer y segundo grado."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 11,
+      "reviewedAt": "2026-08-03T15:15:13.760Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "682c4b0004a49286",
+      "statementHash": "f9364d412a00f803",
+      "url": "ejercicios/4_ESO/resolucion-de-una-ecuacion-logaritmica-con-radicales_REVISADO.json"
     },
     {
       "id": "estudio-completo-de-una-funcion-cuadratica-7833ba0d",
@@ -1361,7 +2123,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T17:17:13.998Z",
+      "approvalMode": "legacy_review",
       "contentHash": "08e73f488ce7675a",
+      "statementHash": "25f1b964d32cf1de",
       "url": "ejercicios/4_ESO/estudio-completo-de-una-funcion-cuadratica_REVISADO.json"
     },
     {
@@ -1393,7 +2157,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T21:22:30.588Z",
+      "approvalMode": "legacy_review",
       "contentHash": "e9be24d6f9430e58",
+      "statementHash": "b683e48d706cdb37",
       "url": "ejercicios/4_ESO/reduccion-al-primer-cuadrante-sin-calculadora_REVISADO.json"
     },
     {
@@ -1425,7 +2191,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-07-31T15:41:24.986Z",
+      "approvalMode": "legacy_review",
       "contentHash": "92ca741483e39852",
+      "statementHash": "16bd22dbff841445",
       "url": "ejercicios/2_ESO/extraccion-del-maximo-factor-comun_REVISADO.json"
     },
     {
@@ -1458,7 +2226,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-07-31T15:46:09.312Z",
+      "approvalMode": "legacy_review",
       "contentHash": "a6e50c6f8ee3b865",
+      "statementHash": "f251f9dfaa235405",
       "url": "ejercicios/2_ESO/perimetro-de-un-huerto-escolar_REVISADO.json"
     },
     {
@@ -1490,7 +2260,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-07-31T15:39:26.122Z",
+      "approvalMode": "legacy_review",
       "contentHash": "fccca5080ebce01a",
+      "statementHash": "15eba65de9170db7",
       "url": "ejercicios/2_ESO/suma-y-resta-de-polinomios-con-agrupacion_REVISADO.json"
     },
     {
@@ -1523,7 +2295,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-08-01T10:57:30.485Z",
+      "approvalMode": "legacy_review",
       "contentHash": "c0d3682ac550cd64",
+      "statementHash": "97651ee9a116d503",
       "url": "ejercicios/2_ESO/traduccion-algebraica-y-calculo-de-antiimagenes_REVISADO.json"
     },
     {
@@ -1555,7 +2329,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-07-31T15:54:23.632Z",
+      "approvalMode": "legacy_review",
       "contentHash": "b191cfcc7550b94a",
+      "statementHash": "e0679e6a80c42588",
       "url": "ejercicios/3_ESO/calculo-de-un-parametro-usando-el-teorema-del-resto_REVISADO.json"
     },
     {
@@ -1587,7 +2363,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T19:24:19.027Z",
+      "approvalMode": "legacy_review",
       "contentHash": "326478bbe7ae9ee1",
+      "statementHash": "daef1da127b884b7",
       "url": "ejercicios/3_ESO/factorizacion-completa-de-un-polinomio-de-grado-3_REVISADO.json"
     },
     {
@@ -1618,7 +2396,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-07-31T15:55:47.291Z",
+      "approvalMode": "legacy_review",
       "contentHash": "7d667175b9dfd997",
+      "statementHash": "51991b8fdfac5ae1",
       "url": "ejercicios/3_ESO/m-c-d-y-m-c-m-de-una-pareja-de-polinomios_REVISADO.json"
     },
     {
@@ -1650,7 +2430,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-07-31T15:58:17.594Z",
+      "approvalMode": "legacy_review",
       "contentHash": "33f5cc15e19434cb",
+      "statementHash": "28bfbf75d31548d3",
       "url": "ejercicios/3_ESO/operacion-combinada-con-fracciones-algebraicas_REVISADO.json"
     },
     {
@@ -1682,7 +2464,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-07-31T16:09:09.219Z",
+      "approvalMode": "legacy_review",
       "contentHash": "dfbafd49a9ec8757",
+      "statementHash": "9659db90dcea628a",
       "url": "ejercicios/3_ESO/operacion-combinada-con-suma-y-resta-de-fracciones-a_REVISADO.json"
     },
     {
@@ -1714,7 +2498,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-07-31T16:13:19.935Z",
+      "approvalMode": "legacy_review",
       "contentHash": "d5955ee90f01cc57",
+      "statementHash": "34e295e797f381c5",
       "url": "ejercicios/3_ESO/problema-aplicado-de-optimizacion-modelizacion_REVISADO.json"
     },
     {
@@ -1746,7 +2532,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-07-31T15:42:53.429Z",
+      "approvalMode": "legacy_review",
       "contentHash": "1fcd1ab017ac27a6",
+      "statementHash": "dd2c53d70e38d8f5",
       "url": "ejercicios/3_ESO/raices-y-factorizacion-de-un-polinomio-cuadratico_REVISADO.json"
     },
     {
@@ -1778,7 +2566,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-07-31T16:10:30.690Z",
+      "approvalMode": "legacy_review",
       "contentHash": "fd114bfc37065aee",
+      "statementHash": "7e64605c88ab0682",
       "url": "ejercicios/3_ESO/resolucion-analitica-de-una-ecuacion-polinomica-de-c_REVISADO.json"
     },
     {
@@ -1811,7 +2601,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-08-01T09:01:31.001Z",
+      "approvalMode": "legacy_review",
       "contentHash": "a9fbc3c402770ce6",
+      "statementHash": "e6740e908cd16876",
       "url": "ejercicios/3_ESO/resolucion-de-ecuacion-de-segundo-grado_REVISADO.json"
     },
     {
@@ -1842,7 +2634,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-08-01T09:45:06.268Z",
+      "approvalMode": "legacy_review",
       "contentHash": "d84ae3af564ce3c1",
+      "statementHash": "606e6754f082c8be",
       "url": "ejercicios/3_ESO/resolucion-de-ecuaciones-factorizadas_REVISADO.json"
     },
     {
@@ -1874,7 +2668,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-07-31T15:56:52.863Z",
+      "approvalMode": "legacy_review",
       "contentHash": "92c88addb0040473",
+      "statementHash": "45a005642116a076",
       "url": "ejercicios/3_ESO/resta-de-fracciones-algebraicas-con-distinto-denomin_REVISADO.json"
     },
     {
@@ -1906,7 +2702,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-07-31T15:43:55.895Z",
+      "approvalMode": "legacy_review",
       "contentHash": "eee0a57e8f136eac",
+      "statementHash": "8c20284ff6bbde71",
       "url": "ejercicios/3_ESO/simplificacion-de-una-fraccion-algebraica_REVISADO.json"
     },
     {
@@ -1938,7 +2736,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-07-31T15:59:18.194Z",
+      "approvalMode": "legacy_review",
       "contentHash": "42191d71a8f3f6cb",
+      "statementHash": "2ae82b73a127e061",
       "url": "ejercicios/3_ESO/volumen-de-un-ortoedro-mediante-producto-de-polinomi_REVISADO.json"
     },
     {
@@ -1968,7 +2768,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T17:13:09.120Z",
+      "approvalMode": "legacy_review",
       "contentHash": "8a2e316962bce533",
+      "statementHash": "3d2f8e5a7ae03e4c",
       "url": "ejercicios/3_ESO/ecuacion-explicita-de-la-recta-conocida-su-pendiente_REVISADO.json"
     },
     {
@@ -2000,7 +2802,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T11:03:50.115Z",
+      "approvalMode": "legacy_review",
       "contentHash": "0a47bcceddc39a80",
+      "statementHash": "51ca555a2176ef5c",
       "url": "ejercicios/3_ESO/dominio-y-recorrido-de-una-funcion-acotada_REVISADO.json"
     },
     {
@@ -2031,7 +2835,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T17:13:50.572Z",
+      "approvalMode": "legacy_review",
       "contentHash": "43a01f80d3a281a6",
+      "statementHash": "1de38a1d3cff558b",
       "url": "ejercicios/3_ESO/estudio-de-la-funcion-de-proporcionalidad-inversa-f-_REVISADO.json"
     },
     {
@@ -2061,7 +2867,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T17:12:18.583Z",
+      "approvalMode": "legacy_review",
       "contentHash": "3ef77105f0c734b3",
+      "statementHash": "9ad6297a210ac3d4",
       "url": "ejercicios/3_ESO/estudio-de-la-funcion-lineal-y-3x-5_REVISADO.json"
     },
     {
@@ -2093,7 +2901,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T17:15:22.198Z",
+      "approvalMode": "legacy_review",
       "contentHash": "470817f9ee9f2967",
+      "statementHash": "bf7818faa17b818c",
       "url": "ejercicios/3_ESO/modelizacion-del-crecimiento-de-una-planta-mediante-_REVISADO.json"
     },
     {
@@ -2125,7 +2935,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-08-01T11:04:57.288Z",
+      "approvalMode": "legacy_review",
       "contentHash": "949bc766764ec728",
+      "statementHash": "66a9721226caff94",
       "url": "ejercicios/3_ESO/ecuacion-explicita-de-la-recta-a-partir-de-dos-punto_REVISADO.json"
     },
     {
@@ -2156,7 +2968,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-08-01T09:47:28.849Z",
+      "approvalMode": "legacy_review",
       "contentHash": "9b04141b0f0c8399",
+      "statementHash": "d7809602d8e40e80",
       "url": "ejercicios/4_ESO/ecuacion-simple-con-radicales_REVISADO.json"
     },
     {
@@ -2188,8 +3002,46 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-07-31T16:46:06.436Z",
+      "approvalMode": "legacy_review",
       "contentHash": "e581e2151e5bde3b",
+      "statementHash": "52ea3eb057473702",
       "url": "ejercicios/4_ESO/identidades-de-olimpiada-matematica-manipulacion-alg_REVISADO.json"
+    },
+    {
+      "id": "resolucion-de-una-ecuacion-bicuadrada-5044e0b8",
+      "title": "Resolución de una ecuación bicuadrada",
+      "subject": "Matemáticas",
+      "stage": "ESO",
+      "course": "4_ESO",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones polinómicas",
+      "exerciseType": "Resolución de ecuación bicuadrada",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Identificar la estructura de una ecuación bicuadrada.",
+        "Aplicar el cambio de variable para reducir el grado de la ecuación.",
+        "Resolver la ecuación cuadrática resultante y deshacer el cambio de variable.",
+        "Interpretar gráficamente las soluciones reales de un polinomio."
+      ],
+      "prerequisites": [
+        "Resolución de ecuaciones de segundo grado.",
+        "Cálculo con raíces cuadradas.",
+        "Concepto de raíz de un polinomio e intersección con los ejes."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-03T09:36:58.422Z",
+      "approvalMode": "legacy_review",
+      "contentHash": "30aab11baef43cd1",
+      "statementHash": "4421bb9b9c0d18ed",
+      "url": "ejercicios/4_ESO/resolucion-de-una-ecuacion-bicuadrada_REVISADO.json"
     },
     {
       "id": "sistema-de-inecuaciones-lineales-e659028a",
@@ -2221,7 +3073,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T09:57:55.654Z",
+      "approvalMode": "legacy_review",
       "contentHash": "4c1c9df5f133b047",
+      "statementHash": "a67c0c7744d331ad",
       "url": "ejercicios/4_ESO/sistema-de-inecuaciones-lineales_REVISADO.json"
     },
     {
@@ -2254,7 +3108,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-08-02T08:30:08.896Z",
+      "approvalMode": "legacy_review",
       "contentHash": "24fd7d6babb65f21",
+      "statementHash": "4e5d86e2ebd494d0",
       "url": "ejercicios/4_ESO/aforo-de-la-discoteca-maximizando-la-noche_REVISADO.json"
     },
     {
@@ -2285,7 +3141,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-08-01T17:14:30.489Z",
+      "approvalMode": "legacy_review",
       "contentHash": "0bfc65d763a8af9d",
+      "statementHash": "c0fd184254b6a194",
       "url": "ejercicios/4_ESO/calculo-de-valores-de-la-funcion-logaritmica-f-x-log_REVISADO.json"
     },
     {
@@ -2319,7 +3177,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T17:20:47.915Z",
+      "approvalMode": "legacy_review",
       "contentHash": "f26e1d8f2e013ea1",
+      "statementHash": "1d7b63ffdb5e9de9",
       "url": "ejercicios/4_ESO/depreciacion-lineal-de-un-equipo-informatico_REVISADO.json"
     },
     {
@@ -2352,7 +3212,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T21:20:53.874Z",
+      "approvalMode": "legacy_review",
       "contentHash": "9f31975fe5f41895",
+      "statementHash": "c2561d6895386566",
       "url": "ejercicios/4_ESO/altura-alcanzada-por-una-escalera-apoyada_REVISADO.json"
     },
     {
@@ -2385,7 +3247,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-08-01T21:45:59.389Z",
+      "approvalMode": "legacy_review",
       "contentHash": "ab6a8af37e78295d",
+      "statementHash": "c1ada92f7a7d0185",
       "url": "ejercicios/4_ESO/calculo-analitico-de-la-apotema-y-el-area-de-un-pent_REVISADO.json"
     },
     {
@@ -2417,7 +3281,9 @@
       "hasFarTransfer": true,
       "slideCount": 9,
       "reviewedAt": "2026-08-01T21:19:05.963Z",
+      "approvalMode": "legacy_review",
       "contentHash": "85cc42bc68dfb6ee",
+      "statementHash": "6155047d802b473b",
       "url": "ejercicios/4_ESO/calculo-de-catetos-con-hipotenusa-y-un-angulo-agudo_REVISADO.json"
     },
     {
@@ -2450,7 +3316,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-08-01T21:17:37.946Z",
+      "approvalMode": "legacy_review",
       "contentHash": "5eb76d1bab66f5e9",
+      "statementHash": "74e3e53b760d3af9",
       "url": "ejercicios/4_ESO/calculo-de-la-hipotenusa-y-razones-trigonometricas_REVISADO.json"
     },
     {
@@ -2482,7 +3350,9 @@
       "hasFarTransfer": true,
       "slideCount": 8,
       "reviewedAt": "2026-08-01T21:20:03.469Z",
+      "approvalMode": "legacy_review",
       "contentHash": "89ffa3fbd441c6d5",
+      "statementHash": "ccb0a7dede01078c",
       "url": "ejercicios/4_ESO/conversion-de-radianes-a-grados-sexagesimales_REVISADO.json"
     },
     {
@@ -2515,7 +3385,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-08-01T21:24:35.080Z",
+      "approvalMode": "legacy_review",
       "contentHash": "8072b44411fcc6a2",
+      "statementHash": "f51854ef306c669d",
       "url": "ejercicios/4_ESO/resolucion-completa-de-un-triangulo-rectangulo_REVISADO.json"
     },
     {
@@ -2546,7 +3418,9 @@
       "hasFarTransfer": true,
       "slideCount": 7,
       "reviewedAt": "2026-08-01T21:18:21.029Z",
+      "approvalMode": "legacy_review",
       "contentHash": "4aefccb8fcbc4522",
+      "statementHash": "a9f5895544764877",
       "url": "ejercicios/4_ESO/calculo-del-coseno-mediante-la-identidad-fundamental_REVISADO.json"
     },
     {
@@ -2578,7 +3452,9 @@
       "hasFarTransfer": true,
       "slideCount": 10,
       "reviewedAt": "2026-08-01T21:45:26.806Z",
+      "approvalMode": "legacy_review",
       "contentHash": "0db7d23bc327a151",
+      "statementHash": "6576ad20924bc216",
       "url": "ejercicios/4_ESO/distancia-entre-dos-barcos-desde-un-faro_REVISADO.json"
     }
   ]
