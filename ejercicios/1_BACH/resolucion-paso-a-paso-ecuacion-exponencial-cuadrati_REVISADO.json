@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones Exponenciales",
+    "exerciseType": "Resolución de ecuación exponencial cuadrática por cambio de variable",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 12,
+    "learningObjectives": [
+      "Utilizar propiedades de las potencias para aislar la expresión exponencial base.",
+      "Aplicar cambios de variable para transformar ecuaciones exponenciales en cuadráticas.",
+      "Deshacer el cambio de variable y verificar las soluciones en la ecuación de origen."
+    ],
+    "prerequisites": [
+      "Propiedades de los exponentes.",
+      "Resolución de ecuaciones de segundo grado.",
+      "Ecuaciones exponenciales elementales."
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 11,
+    "statementHash": "569dd25e5b352c14",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T15:54:06.202Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "resolucion-paso-a-paso-ecuacion-exponencial-cuadrati-3604b714"
+  },
+  "title": "Resolución paso a paso: Ecuación Exponencial Cuadrática",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leemos el enunciado del ejercicio. Se trata de una ecuación exponencial reducible a una de segundo grado mediante cambio de variable.",
+      "content": "<p>Resuelve la siguiente ecuación exponencial:</p>$$3^{2(x+1)} - 28 \\cdot 3^x + 3 = 0$$"
+    },
+    {
+      "title": "Estrategia y plan de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver esta ecuación, primero desglosamos la potencia del primer término usando las propiedades de los exponentes para expresarla en función de 3 elevado a x. Luego realizamos un cambio de variable.",
+      "theory": "<strong>Propiedades de los exponentes:</strong> $a^{n+m} = a^n \\cdot a^m$ y $a^{n \\cdot m} = (a^n)^m$.<br><strong>Cambio de variable:</strong> Si hacemos $t = 3^x$, obtenemos una ecuación cuadrática en $t$.",
+      "content": "<p><strong>OBJETIVO:</strong> Transformar la ecuación exponencial en una ecuación de segundo grado polinómica.</p><p><strong>CONEXIÓN:</strong> Partimos de $3^{2(x+1)} - 28 \\cdot 3^x + 3 = 0$.</p><p><strong>MÉTODO:</strong> 1) Reescribir $3^{2(x+1)}$ como $3^{2x+2} = 3^2 \\cdot (3^x)^2 = 9 \\cdot (3^x)^2$. 2) Sustituir $t = 3^x$ para obtener $9t^2 - 28t + 3 = 0$. 3) Resolver la ecuación cuadrática para $t$. 4) Deshacer el cambio de variable para hallar los valores de $x$.</p>",
+      "checkpoint": {
+        "text": "Al aplicar las propiedades de las potencias a $3^{2(x+1)}$, ¿cuál es la expresión equivalente?",
+        "options": [
+          {
+            "text": "9 · (3^x)²",
+            "correct": true,
+            "feedback": "¡Correcto! 3^(2x+2) = 3² · 3^(2x) = 9 · (3^x)²."
+          },
+          {
+            "text": "6 · (3^x)²",
+            "correct": false,
+            "feedback": "Incorrecto. Recuerda que 3² = 9, no 6."
+          },
+          {
+            "text": "3 · (3^x)²",
+            "correct": false,
+            "feedback": "Incorrecto. El exponente 2 afecta a todo el paréntesis (x+1), dando 3² = 9."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Transformación a la ecuación cuadrática",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Transformamos el primer término utilizando las propiedades de las potencias y definimos el cambio de variable auxiliar.",
+      "content": "<p><strong>OBJETIVO:</strong> Obtener la ecuación cuadrática equivalente en la variable auxiliar $t$.</p><p><strong>CÁLCULO:</strong></p><p>1. Transformación del exponente:</p>$$3^{2(x+1)} = 3^{2x+2} = 3^2 \\cdot 3^{2x} = 9 \\cdot (3^x)^2$$<p>2. Definimos la variable auxiliar $t = 3^x$ (con la restricción $t > 0$):</p>$$9t^2 - 28t + 3 = 0$$<p><strong>INTERPRETACIÓN:</strong> Hemos convertido una ecuación exponencial en una ecuación polinómica de segundo grado en $t$.</p>"
+    },
+    {
+      "title": "Resolución de la ecuación cuadrática",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Aplicamos la fórmula general de la ecuación de segundo grado para despejar los valores de t.",
+      "warning": "<strong>¡Atención!</strong> Los valores obtenidos ($t = 3$ y $t = 1/9$) representan a la variable auxiliar $t$, no a la incógnita final $x$.",
+      "content": "<p><strong>OBJETIVO:</strong> Hallar las raíces de $9t^2 - 28t + 3 = 0$.</p><p><strong>CÁLCULO:</strong></p>$$t = \\frac{-(-28) \\pm \\sqrt{(-28)^2 - 4(9)(3)}}{2(9)}$$$$t = \\frac{28 \\pm \\sqrt{784 - 108}}{18} = \\frac{28 \\pm \\sqrt{676}}{18} = \\frac{28 \\pm 26}{18}$$<p>Obtenemos dos soluciones para $t$:</p>$$t_1 = \\frac{28 + 26}{18} = \\frac{54}{18} = 3$$$$t_2 = \\frac{28 - 26}{18} = \\frac{2}{18} = \\frac{1}{9}$$"
+    },
+    {
+      "title": "Deshacer el cambio de variable",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Deshacemos el cambio de variable t igual a tres elevado a equis para calcular las soluciones finales de equis.",
+      "content": "<p><strong>OBJETIVO:</strong> Calcular los valores finales de $x$ sustituyendo en $3^x = t$.</p><p><strong>CÁLCULO:</strong></p><p><strong>Caso 1:</strong> $t_1 = 3$</p>$$3^x = 3^1 \\implies x_1 = 1$$<p><strong>Caso 2:</strong> $t_2 = \\frac{1}{9}$</p>$$3^x = \\frac{1}{9} = 3^{-2} \\implies x_2 = -2$$<p><strong>RESPUESTA AL APARTADO a):</strong> Las soluciones de la ecuación son $x_1 = 1$ y $x_2 = -2$.</p>"
+    },
+    {
+      "title": "Verificación analítica de las soluciones",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Comprobamos ambas soluciones sustituyéndolas en la ecuación exponencial original.",
+      "content": "<p><strong>OBJETIVO:</strong> Confirmar que $x = 1$ y $x = -2$ satisfacen la ecuación original.</p><p><strong>COMPROBACIÓN:</strong></p><p>1. Para $x = 1$:</p>$$3^{2(1+1)} - 28 \\cdot 3^1 + 3 = 3^4 - 84 + 3 = 81 - 84 + 3 = 0 \\quad \\checkmark$$<p>2. Para $x = -2$:</p>$$3^{2(-2+1)} - 28 \\cdot 3^{-2} + 3 = 3^{-2} - 28 \\cdot \\frac{1}{9} + 3 = \\frac{1}{9} - \\frac{28}{9} + \\frac{27}{9} = 0 \\quad \\checkmark$$<p><strong>RESULTADO:</strong> Ambas soluciones son plenamente válidas.</p>"
+    },
+    {
+      "title": "Representación gráfica de las soluciones",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Visualizamos la función f de equis igual a tres elevado a dos por equis más uno menos veintiocho por tres elevado a equis más tres. Los puntos donde corta el eje x son las soluciones equis igual a uno y equis igual a menos dos.",
+      "visualVerificationMode": "manual",
+      "visual": "<svg viewBox='0 0 500 400' width='100%' height='100%' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><rect width='500' height='400' fill='#0f172a'/><line x1='50' y1='250' x2='450' y2='250' stroke='#fbbf24' stroke-width='2.5'/><line x1='250' y1='380' x2='250' y2='30' stroke='#fbbf24' stroke-width='2.5'/><polygon points='445,245 455,250 445,255' fill='#fbbf24'/><polygon points='245,35 250,25 255,35' fill='#fbbf24'/><text x='460' y='255' fill='#fbbf24' font-size='16' font-weight='bold'>x</text><text x='250' y='20' fill='#fbbf24' font-size='16' font-weight='bold'>y</text><line x1='130' y1='245' x2='130' y2='255' stroke='#38bdf8' stroke-width='2'/><text x='130' y='275' fill='#38bdf8' font-size='14' font-weight='bold' text-anchor='middle'>-2</text><line x1='190' y1='245' x2='190' y2='255' stroke='#94a3b8' stroke-width='1.5'/><text x='190' y='275' fill='#94a3b8' font-size='12' text-anchor='middle'>-1</text><line x1='310' y1='245' x2='310' y2='255' stroke='#38bdf8' stroke-width='2'/><text x='310' y='275' fill='#38bdf8' font-size='14' font-weight='bold' text-anchor='middle'>1</text><line x1='370' y1='245' x2='370' y2='255' stroke='#94a3b8' stroke-width='1.5'/><text x='370' y='275' fill='#94a3b8' font-size='12' text-anchor='middle'>2</text><path d='M 70,240 Q 100,249 130,250 Q 190,265 250,230 Q 280,200 310,250 Q 330,300 350,50' fill='none' stroke='#f472b6' stroke-width='3'/><circle cx='130' cy='250' r='6' fill='#fbbf24' stroke='#ffffff' stroke-width='2'/><text x='115' y='235' fill='#fbbf24' font-size='13' font-weight='bold'>(-2, 0)</text><circle cx='310' cy='250' r='6' fill='#fbbf24' stroke='#ffffff' stroke-width='2'/><text x='315' y='235' fill='#fbbf24' font-size='13' font-weight='bold' text-anchor='start'>(1, 0)</text></svg>",
+      "visualDescription": "Gráfico de la función f(x) = 3^(2(x+1)) - 28·3^x + 3. La curva rosa corta al eje horizontal x en dos puntos marcados en amarillo: (-2, 0) y (1, 0).",
+      "visualMathLink": "Los puntos de corte con el eje x (donde y = 0) se ubican exactamente en x = -2 y x = 1, confirmando visualmente las dos soluciones reales de la ecuación.",
+      "content": "<p><strong>OBJETIVO:</strong> Interpretar gráficamente las soluciones como raíces de la función $f(x)$.</p><p><strong>CONEXIÓN:</strong> Representamos la curva $y = 3^{2(x+1)} - 28 \\cdot 3^x + 3$.</p><p><strong>INTERPRETACIÓN:</strong></p><ul><li>Los cortes con el eje horizontal ($y = 0$) representan las soluciones de la ecuación.</li><li>Existen exactamente dos intersecciones: en $x = -2$ y en $x = 1$.</li></ul>"
+    },
+    {
+      "title": "Interpretación matemática del resultado",
+      "layout": "centered",
+      "phase": "interpretar",
+      "narration": "Resumimos el significado matemático de obtener dos soluciones distintas a partir de una ecuación exponencial cuadrática.",
+      "content": "<p><strong>OBJETIVO:</strong> Consolidar la estructura de resolución de ecuaciones exponenciales por cambio de variable.</p><p><strong>RESULTADO:</strong></p><ul><li>Dado que la transformación dio lugar a una ecuación cuadrática con dos raíces reales positivas ($t_1 = 3 > 0$ y $t_2 = 1/9 > 0$), ambas raíces generaron soluciones válidas en el dominio real para $x$.</li><li>Las dos soluciones reales y distintas son $x_1 = 1$ y $x_2 = -2$.</li></ul>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos los pasos clave para resolver ecuaciones exponenciales reducibles a cuadráticas.",
+      "content": "<p><strong>HOJA DE RUTA PARA ECUACIONES EXPONENCIALES CUADRÁTICAS:</strong></p><ol><li><strong>Reescribir potencias:</strong> Aplicar propiedades $a^{u+v} = a^u \\cdot a^v$ para aislar $a^x$.</li><li><strong>Cambio de variable:</strong> Definir $t = a^x$ (con $t > 0$).</li><li><strong>Resolver ecuación cuadrática:</strong> Aplicar la fórmula general para $At^2 + Bt + C = 0$.</li><li><strong>Deshacer el cambio:</strong> Resolver $a^x = t_i$ para cada solución positiva $t_i$.</li><li><strong>Verificar:</strong> Comprobar las soluciones finales en la ecuación original.</li></ol><p><strong>Soluciones finales:</strong> $x = 1$ y $x = -2$.</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Practica el método del cambio de variable con una ecuación de estructura idéntica.",
+      "content": "<p>Resuelve la siguiente ecuación exponencial:</p>$$2^{2(x+1)} - 10 \\cdot 2^x + 4 = 0$$<p><em>Sugerencia: Expande $2^{2(x+1)} = 4 \\cdot (2^x)^2$ y haz el cambio de variable $t = 2^x$.</em></p>",
+      "practiceAnswer": "Reescritura: 4·(2^x)² - 10·(2^x) + 4 = 0. Cambio t = 2^x: 4t² - 10t + 4 = 0. Simplificando: 2t² - 5t + 2 = 0. Raíces cuadráticas: t = 2 y t = 1/2. Deshaciendo cambio: 2^x = 2 => x = 1; 2^x = 1/2 => x = -1. Soluciones: x = 1 y x = -1."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica la técnica de cambio de variable a una ecuación con exponente negativo.",
+      "content": "<p>Resuelve la siguiente ecuación exponencial:</p>$$5^x + 5^{-x} = 2$$<p><em>Sugerencia: Expresa $5^{-x}$ como $\\frac{1}{5^x}$, haz $t = 5^x$ y multiplica toda la ecuación por $t$.</em></p>",
+      "practiceAnswer": "Reescritura: 5^x + 1/5^x = 2. Cambio t = 5^x: t + 1/t = 2. Multiplicando por t: t² + 1 = 2t => t² - 2t + 1 = 0 => (t-1)² = 0. Raíz doble: t = 1. Deshaciendo cambio: 5^x = 1 = 5⁰ => x = 0. Solución única: x = 0."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T15:54:38.637Z",
+    "updatedAt": "2026-08-03T15:54:38.637Z",
+    "contentHash": "2a6429037e7d2199",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "teacher_override",
+    "override": {
+      "confirmed": true,
+      "justification": "Ejercicio perfectamente resuelto",
+      "automaticErrors": [
+        {
+          "title": "Puntos de control",
+          "detail": "Revisa las diapositivas: 2."
+        }
+      ],
+      "approvedAt": "2026-08-03T15:54:38.637Z"
+    }
+  }
+}

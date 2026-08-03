@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Sistemas de Ecuaciones Logarítmicas",
+    "exerciseType": "Resolución de sistemas no lineales",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Resolver sistemas de ecuaciones logarítmicas mediante cambio de variable.",
+      "Comprobar el dominio de existencia y verificar las soluciones obtenidas."
+    ],
+    "prerequisites": [
+      "Propiedades fundamentales de los logaritmos decimales.",
+      "Resolución de sistemas de ecuaciones lineales por reducción."
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 11,
+    "statementHash": "1c187058995a0f72",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T15:35:20.934Z",
+    "hasVerifiedVisualSupport": true,
+    "id": "resolucion-de-un-sistema-de-ecuaciones-logaritmicas-713f9c8d"
+  },
+  "title": "Resolución de un Sistema de Ecuaciones Logarítmicas",
+  "slides": [
+    {
+      "title": "Enunciado del Sistema Logarítmico",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Presentamos el sistema de ecuaciones logarítmicas que debemos resolver de forma exacta y rigurosa.",
+      "content": "<p><strong>ENUNCIADO:</strong></p><p>Resuelve el siguiente sistema de ecuaciones logarítmicas en el campo de los números reales:</p><p>$$\\begin{cases} \\log x - \\log y = 7 \\\\ \\log x + \\log y = 3 \\end{cases}$$</p>"
+    },
+    {
+      "title": "Estrategia y Plan de Resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para abordar este ejercicio, analizaremos primero las restricciones de dominio y luego utilizaremos un cambio de variable para convertir el sistema no lineal en un sistema lineal de dos ecuaciones con dos incógnitas.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar el conjunto de soluciones $(x, y)$ que satisfacen ambas ecuaciones simultáneamente.</p><p><strong>CONEXIÓN:</strong> Los logaritmos transforman operaciones complejas en sumas y restas simples. Esto sugiere que un cambio de variable linealizará el sistema.</p><p><strong>ESTRATEGIA:</strong></p><ul><li>Establecer las condiciones de existencia para los argumentos $x$ e $y$.</li><li>Definir las variables auxiliares $u = \\log x$ y $v = \\log y$.</li><li>Resolver el sistema lineal equivalente resultante mediante el método de reducción.</li><li>Recuperar las variables originales $x$ e $y$ aplicando la función exponencial en base 10.</li><li>Comprobar la validez de las soluciones.</li></ul><p><strong>INTERPRETACIÓN:</strong> Este método aprovecha la biyectividad de la función logarítmica en su dominio para garantizar que las soluciones encontradas sean únicas y exactas.</p>",
+      "theory": "<p><strong>Propiedad del Cambio de Variable Logarítmico:</strong><br/>Si definimos $u = \\log_b x$, la ecuación no lineal en $x$ se convierte en una ecuación lineal en $u$. La solución original se recupera mediante la definición de logaritmo: $x = b^u$.</p>"
+    },
+    {
+      "title": "Análisis de Dominio y Cambio de Variable",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Identificamos las restricciones sobre equis e i griega y planteamos el cambio de variable auxiliar.",
+      "content": "<p><strong>OBJETIVO:</strong> Garantizar la existencia real de las expresiones logarítmicas y formalizar la transformación del sistema.</p><p><strong>CONEXIÓN:</strong> La función logarítmica solo está definida para números reales estrictamente positivos.</p><p><strong>MÉTODO:</strong></p><p>1. <em>Condiciones de existencia:</em> Para que $\\log x$ y $\\log y$ estén bien definidos en $\\mathbb{R}$, se requiere exigiblemente que:<br/>$$x > 0 \\quad \\text{y} \\quad y > 0$$</p><p>2. <em>Cambio de variable:</em> Sea $u = \\log x$ y $v = \\log y$. Sustituyendo en el sistema original obtenemos:<br/>$$\\begin{cases} u - v = 7 \\\\ u + v = 3 \\end{cases}$$</p><p><strong>INTERPRETACIÓN:</strong> Hemos transformado un sistema no lineal de argumentos $x, y$ en un sistema lineal estándar de dos ecuaciones con dos incógnitas en el plano $(u, v)$.</p>",
+      "warning": "<p><strong>Restricción de Dominio:</strong> Los argumentos de los logaritmos no pueden ser nulos ni negativos. Cualquier solución $x \\le 0$ o $y \\le 0$ que surja en el proceso debe descartarse inmediatamente.</p>"
+    },
+    {
+      "title": "Representación del Sistema Lineal en el Plano (u, v)",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Representamos gráficamente las dos rectas correspondientes a las ecuaciones transformadas en el plano auxiliar u v.",
+      "content": "<p><strong>OBJETIVO:</strong> Visualizar geométricamente la existencia y unicidad de la solución del sistema lineal auxiliar.</p><p><strong>CONEXIÓN:</strong> Cada ecuación lineal del tipo $a u + b v = c$ representa una recta en el plano cartesiano de variables $(u, v)$.</p><p><strong>MÉTODO:</strong></p><p>Representamos la recta $r_1: u - v = 7$ y la recta $r_2: u + v = 3$. Sus pendientes son $m_1 = 1$ y $m_2 = -1$. Al ser distintas, las rectas se cortan en un único punto.</p><p><strong>INTERPRETACIÓN:</strong> El punto de intersección de ambas rectas en el plano $(u, v)$ proporciona las coordenadas auxiliares $(u, v)$ de la solución del sistema.</p>",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "cartesian2d",
+        "viewport": {
+          "xMin": "-2",
+          "xMax": "8",
+          "yMin": "-6",
+          "yMax": "4",
+          "equalScale": true
+        },
+        "objects": [
+          {
+            "id": "line1",
+            "type": "line",
+            "coefficients": [
+              1,
+              -1,
+              7
+            ],
+            "label": "u - v = 7"
+          },
+          {
+            "id": "line2",
+            "type": "line",
+            "coefficients": [
+              1,
+              1,
+              3
+            ],
+            "label": "u + v = 3"
+          }
+        ],
+        "relations": []
+      },
+      "visualDescription": "Plano cartesiano con el eje horizontal u y el eje vertical v. Se muestran dos rectas: u minus v igual a 7 con pendiente positiva y u plus v igual a 3 con pendiente negativa.",
+      "visualMathLink": "Las dos rectas corresponden a las dos ecuaciones del sistema lineal equivalente. Su punto de cruce representa la solución común del sistema en el plano de variables transformadas.",
+      "visual": "<svg viewBox='0 0 640 440' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='cartesian2d' data-visual-contract='1.0' data-verification-status='verified'><rect x='0' y='0' width='640' height='440' rx='14' fill='#0f172a'/><line x1='154.00' y1='386.00' x2='154.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='187.20' y1='386.00' x2='187.20' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='220.40' y1='386.00' x2='220.40' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='253.60' y1='386.00' x2='253.60' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='286.80' y1='386.00' x2='286.80' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='320.00' y1='386.00' x2='320.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='353.20' y1='386.00' x2='353.20' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='386.40' y1='386.00' x2='386.40' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='419.60' y1='386.00' x2='419.60' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='452.80' y1='386.00' x2='452.80' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='486.00' y1='386.00' x2='486.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='386.00' x2='486.00' y2='386.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='352.80' x2='486.00' y2='352.80' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='319.60' x2='486.00' y2='319.60' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='286.40' x2='486.00' y2='286.40' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='253.20' x2='486.00' y2='253.20' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='220.00' x2='486.00' y2='220.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='186.80' x2='486.00' y2='186.80' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='153.60' x2='486.00' y2='153.60' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='120.40' x2='486.00' y2='120.40' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='87.20' x2='486.00' y2='87.20' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='54.00' x2='486.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='186.80' x2='486.00' y2='186.80' stroke='#fbbf24' stroke-width='2.5'/><text x='474.00' y='178.80' fill='#fbbf24' font-size='15'>x</text><line x1='220.40' y1='386.00' x2='220.40' y2='54.00' stroke='#fbbf24' stroke-width='2.5'/><text x='228.40' y='70.00' fill='#fbbf24' font-size='15'>y</text><line x1='486.00' y1='153.60' x2='253.60' y2='386.00' stroke='#38bdf8' stroke-width='3' data-object-id='line1' data-line-equation='1,-1,7'/><text x='245.60' y='378.00' text-anchor='end' fill='#38bdf8' font-size='15'>u - v = 7</text><line x1='486.00' y1='352.80' x2='187.20' y2='54.00' stroke='#f472b6' stroke-width='3' data-object-id='line2' data-line-equation='1,1,3'/><text x='179.20' y='46.00' text-anchor='end' fill='#f472b6' font-size='15'>u + v = 3</text><text x='18' y='424' fill='#94a3b8' font-size='13'>Gráfico reconstruido por el visor desde datos matemáticos declarados.</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "cartesian2d",
+        "analysis": {
+          "objectCount": 2,
+          "equalScale": true,
+          "relationsVerified": 0
+        }
+      }
+    },
+    {
+      "title": "Resolución del Sistema Lineal para u y v",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Sumamos ambas ecuaciones para eliminar la variable v y hallar el valor exacto de u, y posteriormente calculamos v.",
+      "content": "<p><strong>OBJETIVO:</strong> Calcular los valores numéricos de las variables auxiliares $u$ y $v$.</p><p><strong>CONEXIÓN:</strong> Dado que los coeficientes de $v$ son $-1$ y $+1$, el método de reducción por suma directa elimina $v$ de inmediato.</p><p><strong>CÁLCULO:</strong></p><p>Sumando las dos ecuaciones miembro a miembro:<br/>$$(u - v) + (u + v) = 7 + 3 \\implies 2u = 10 \\implies u = 5$$</p><p>Sustituyendo $u = 5$ en la segunda ecuación ($u + v = 3$):<br/>$$5 + v = 3 \\implies v = 3 - 5 \\implies v = -2$$</p><p><strong>INTERPRETACIÓN:</strong> Las rectas se intersecan exactamente en el punto $P(5, -2)$ del plano $(u, v)$.</p>",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "cartesian2d",
+        "viewport": {
+          "xMin": "-2",
+          "xMax": "8",
+          "yMin": "-6",
+          "yMax": "4",
+          "equalScale": true
+        },
+        "objects": [
+          {
+            "id": "line1",
+            "type": "line",
+            "coefficients": [
+              1,
+              -1,
+              7
+            ],
+            "label": "u - v = 7"
+          },
+          {
+            "id": "line2",
+            "type": "line",
+            "coefficients": [
+              1,
+              1,
+              3
+            ],
+            "label": "u + v = 3"
+          },
+          {
+            "id": "p1",
+            "type": "point",
+            "coordinates": [
+              5,
+              -2
+            ],
+            "label": "P(5, -2)"
+          }
+        ],
+        "relations": [
+          {
+            "type": "pointOnLine",
+            "point": "p1",
+            "line": "line1"
+          },
+          {
+            "type": "pointOnLine",
+            "point": "p1",
+            "line": "line2"
+          }
+        ]
+      },
+      "visualDescription": "Plano cartesiano u-v mostrando las rectas u minus v igual a 7 y u plus v igual a 3 intersecándose en el punto destacado P de coordenadas u igual a 5 y v igual a menos 2.",
+      "visualMathLink": "El punto destacado P(5, -2) es la intersección analítica calculada mediante la reducción del sistema lineal.",
+      "checkpoint": {
+        "question": "¿Por qué el método de reducción permite obtener u de manera inmediata en este sistema?",
+        "options": [
+          {
+            "text": "Porque los coeficientes de v en ambas ecuaciones son opuestos (-1 y +1), por lo que se anulan al sumar.",
+            "correct": true,
+            "feedback": "¡Correcto! Al sumar ambas ecuaciones, -v + v = 0, lo que aísla directamente la variable u."
+          },
+          {
+            "text": "Porque en todo sistema logarítmico la única forma de resolver es sumar las ecuaciones.",
+            "correct": false,
+            "feedback": "Incorrecto. Se pueden usar otros métodos (sustitución, igualación), pero la reducción es la más directa aquí por los coeficientes opuestos."
+          },
+          {
+            "text": "Porque u y v representan los mismos valores numéricos.",
+            "correct": false,
+            "feedback": "Incorrecto. u y v son incógnitas distintas con valores u = 5 y v = -2."
+          }
+        ]
+      },
+      "visual": "<svg viewBox='0 0 640 440' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='cartesian2d' data-visual-contract='1.0' data-verification-status='verified'><rect x='0' y='0' width='640' height='440' rx='14' fill='#0f172a'/><line x1='154.00' y1='386.00' x2='154.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='187.20' y1='386.00' x2='187.20' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='220.40' y1='386.00' x2='220.40' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='253.60' y1='386.00' x2='253.60' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='286.80' y1='386.00' x2='286.80' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='320.00' y1='386.00' x2='320.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='353.20' y1='386.00' x2='353.20' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='386.40' y1='386.00' x2='386.40' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='419.60' y1='386.00' x2='419.60' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='452.80' y1='386.00' x2='452.80' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='486.00' y1='386.00' x2='486.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='386.00' x2='486.00' y2='386.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='352.80' x2='486.00' y2='352.80' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='319.60' x2='486.00' y2='319.60' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='286.40' x2='486.00' y2='286.40' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='253.20' x2='486.00' y2='253.20' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='220.00' x2='486.00' y2='220.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='186.80' x2='486.00' y2='186.80' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='153.60' x2='486.00' y2='153.60' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='120.40' x2='486.00' y2='120.40' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='87.20' x2='486.00' y2='87.20' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='54.00' x2='486.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='186.80' x2='486.00' y2='186.80' stroke='#fbbf24' stroke-width='2.5'/><text x='474.00' y='178.80' fill='#fbbf24' font-size='15'>x</text><line x1='220.40' y1='386.00' x2='220.40' y2='54.00' stroke='#fbbf24' stroke-width='2.5'/><text x='228.40' y='70.00' fill='#fbbf24' font-size='15'>y</text><line x1='486.00' y1='153.60' x2='253.60' y2='386.00' stroke='#38bdf8' stroke-width='3' data-object-id='line1' data-line-equation='1,-1,7'/><text x='245.60' y='378.00' text-anchor='end' fill='#38bdf8' font-size='15'>u - v = 7</text><line x1='486.00' y1='352.80' x2='187.20' y2='54.00' stroke='#f472b6' stroke-width='3' data-object-id='line2' data-line-equation='1,1,3'/><text x='179.20' y='46.00' text-anchor='end' fill='#f472b6' font-size='15'>u + v = 3</text><circle cx='386.40' cy='253.20' r='6' fill='#4ade80' stroke='#ffffff' stroke-width='2' data-object-id='p1' data-exact-coordinates='5,-2'/><text x='395.40' y='244.20' fill='#4ade80' font-size='15'>P(5, -2)</text><text x='18' y='424' fill='#94a3b8' font-size='13'>Gráfico reconstruido por el visor desde datos matemáticos declarados.</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "cartesian2d",
+        "analysis": {
+          "objectCount": 3,
+          "equalScale": true,
+          "relationsVerified": 2
+        }
+      }
+    },
+    {
+      "title": "Recuperación de las Variables Originales (x, y)",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Invertimos el cambio de variable utilizando la definición de logaritmo decimal para despejar equis e i griega.",
+      "content": "<p><strong>OBJETIVO:</strong> Deshacer el cambio de variable para obtener los valores explícitos de $x$ e $y$.</p><p><strong>CONEXIÓN:</strong> Conociendo $u = 5$ y $v = -2$, aplicamos la definición $\\log_{10} z = k \\iff z = 10^k$.</p><p><strong>CÁLCULO:</strong></p><p>1. Para $x$:<br/>$$\\log x = u = 5 \\implies x = 10^5 = 100\\,000$$</p><p>2. Para $y$:<br/>$$\\log y = v = -2 \\implies y = 10^{-2} = \\frac{1}{100} = 0{,}01$$</p><p><strong>INTERPRETACIÓN:</strong> Obtenemos valores numéricos exactos para $x$ e $y$ expresados tanto en forma de potencia de 10 como en notación decimal y entera.</p>",
+      "theory": "<p><strong>Inversión del Logaritmo Decimal:</strong><br/>La función inversa de $f(z) = \\log_{10} z$ es $f^{-1}(k) = 10^k$. Debido a la inyectividad de la función exponencial, el resultado obtenido es único en los números reales.</p>"
+    },
+    {
+      "title": "Comprobación de Soluciones y Dominio",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Verificamos que las soluciones sean estrictamente positivas y que satisfagan ambas ecuaciones originales del sistema.",
+      "content": "<p><strong>OBJETIVO:</strong> Validar rigurosamente que las soluciones $x = 100\\,000$ e $y = 0{,}01$ pertenecen al dominio y verifican el sistema inicial.</p><p><strong>CONEXIÓN:</strong> Una solución matemática solo es válida si satisface las restricciones de existencia iniciales y cada una de las ecuaciones del problema original.</p><p><strong>COMPROBACIÓN:</strong></p><p>1. <em>Verificación de Dominio:</em><br/>$$x = 100\\,000 > 0 \\quad \\checkmark \\qquad \\text{y} \\qquad y = 0{,}01 > 0 \\quad \\checkmark$$</p><p>2. <em>Sustitución en la Ecuación 1:</em><br/>$$\\log(100\\,000) - \\log(0{,}01) = 5 - (-2) = 5 + 2 = 7 \\quad \\checkmark$$</p><p>3. <em>Sustitución en la Ecuación 2:</em><br/>$$\\log(100\\,000) + \\log(0{,}01) = 5 + (-2) = 3 \\quad \\checkmark$$</p><p><strong>INTERPRETACIÓN:</strong> Las soluciones satisfacen todas las condiciones del problema de forma exacta.</p><p><strong>RESPUESTA:</strong> El sistema tiene como solución única el par ordenado $(x, y) = (100\\,000; 0{,}01)$, equivalente a $(10^5, 10^{-2})$.</p>"
+    },
+    {
+      "title": "Interpretación Matemática y Contextual",
+      "layout": "centered",
+      "phase": "interpretar",
+      "narration": "Explicamos el significado conceptual de la solución en el ámbito de las escalas logarítmicas.",
+      "content": "<p><strong>OBJETIVO:</strong> Contextualizar la escala de las soluciones obtenidas en el marco de las funciones logarítmicas.</p><p><strong>CONEXIÓN:</strong> En las escalas logarítmicas (como el pH, la escala Richter o los decibelios), una diferencia lineal entre valores transformados representa un factor multiplicativo gigante entre las magnitudes reales.</p><p><strong>RESULTADO:</strong></p><p>La diferencia entre $u$ y $v$ ($u - v = 7$) significa que $x$ es $10^7$ veces mayor que $y$ ($100\\,000 / 0{,}01 = 10\\,000\\,000$). La suma de sus logaritmos ($u + v = 3$) indica que su producto es $x \\cdot y = 10^3 = 1000$.</p><p><strong>INTERPRETACIÓN:</strong> Este comportamiento demuestra el enorme poder de compresión de la función logarítmica: maneja relaciones entre magnitudes separadas por varios órdenes de magnitud mediante relaciones aditivas sencillas.</p>",
+      "checkpoint": {
+        "question": "¿Qué representa que log x menos log y sea igual a 7 en términos de las magnitudes originales x e y?",
+        "options": [
+          {
+            "text": "Que la razón o cociente x / y es igual a 10 elevado a 7 (diez millones).",
+            "correct": true,
+            "feedback": "¡Exacto! Por la propiedad de la resta de logaritmos, log(x/y) = 7, lo que significa x/y = 10^7."
+          },
+          {
+            "text": "Que la resta de las magnitudes x - y es igual a 7.",
+            "correct": false,
+            "feedback": "Incorrecto. La resta de los logaritmos no es igual a la resta de los argumentos."
+          },
+          {
+            "text": "Que el producto x por y es igual a 10 elevado a 7.",
+            "correct": false,
+            "feedback": "Incorrecto. La suma de logaritmos da lugar al producto, mientras que la resta da lugar al cociente."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Revisamos los cuatro pasos estructurados que nos permitieron resolver con éxito el sistema logarítmico.",
+      "content": "<p><strong>HOJA DE RUTA Y SÍNTESIS DEL MÉTODO:</strong></p><ol><li><strong>Restricción de Dominio:</strong> Imponer $x > 0$ e $y > 0$ para garantizar argumentos válidos en $\\mathbb{R}$.</li><li><strong>Cambio de Variable Auxiliar:</strong> Definir $u = \\log x$ y $v = \\log y$ transformando el problema no lineal en el sistema lineal $\\begin{cases} u - v = 7 \\\\ u + v = 3 \\end{cases}$.</li><li><strong>Resolución Algebraica:</strong> Resolver por reducción para obtener las coordenadas auxiliares únicas $u = 5$ y $v = -2$.</li><li><strong>Inversión y Comprobación:</strong> Aplicar $x = 10^u = 10^5$ e $y = 10^v = 10^{-2}$, verificando que cumplen el dominio y el sistema original.</li></ol><p><strong>RESULTADO FINAL:</strong> $(x, y) = (100\\,000; 0{,}01) = (10^5, 10^{-2})$.</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Pon a prueba lo aprendido resolviendo un sistema logaritmico con la misma estructura pero datos diferentes.",
+      "content": "<p><strong>Resuelve el siguiente sistema de ecuaciones logarítmicas:</strong></p><p>$$\\begin{cases} \\log x - \\log y = 4 \\\\ \\log x + \\log y = 2 \\end{cases}$$</p><p><em>Intenta resolverlo paso a paso en tu cuaderno antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "Solución: x = 1000 (10^3), y = 0.1 (10^-1). Se verifica que x > 0 y y > 0."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica la técnica de linealización logarítmica en un contexto de medición de intensidad de sonido.",
+      "content": "<p><strong>Aplicación en Acústica y Sonómetros:</strong></p><p>Dos fuentes de sonido $A$ y $B$ emiten intensidades relativas $I_A > 0$ e $I_B > 0$ que cumplen las relaciones logarítmicas $\\log I_A - \\log I_B = 2$ y $\\log I_A + \\log I_B = 6$. Determina las intensidades exactas $I_A$ e $I_B$.</p><p><em>Intenta resolverlo por tu cuenta antes de comprobar el resultado.</em></p>",
+      "practiceAnswer": "Solución: I_A = 10000 (10^4), I_B = 100 (10^2). Ambas intensidades verifican I_A > 0 e I_B > 0."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T15:36:24.512Z",
+    "updatedAt": "2026-08-03T15:36:24.512Z",
+    "contentHash": "c428989094790572",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "teacher_override",
+    "override": {
+      "confirmed": true,
+      "justification": "Lo doy por ok. Bien resuelto",
+      "automaticErrors": [
+        {
+          "title": "Comprobación completa del protocolo C",
+          "detail": "se verifica solo una ecuación; el protocolo C exige sustituir la solución en todas las ecuaciones originales"
+        }
+      ],
+      "approvedAt": "2026-08-03T15:36:24.512Z"
+    }
+  }
+}

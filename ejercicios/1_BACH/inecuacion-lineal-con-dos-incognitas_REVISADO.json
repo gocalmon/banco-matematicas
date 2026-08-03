@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Inecuaciones lineales con dos incógnitas",
+    "exerciseType": "Resolución gráfica de una inecuación lineal con dos incógnitas",
+    "protocols": [
+      "A"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Representar la recta frontera asociada a una inecuación lineal con dos incógnitas.",
+      "Determinar el semiplano solución mediante la prueba de un punto de chequeo.",
+      "Expresar la solución de forma gráfica y analítica."
+    ],
+    "prerequisites": [
+      "Representación de rectas en el plano cartesiano.",
+      "Despeje de variables y sustitución de coordenadas."
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "statementHash": "c437fb9b77b756e1",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T08:03:15.069Z",
+    "id": "inecuacion-lineal-con-dos-incognitas-b537845f"
+  },
+  "title": "Inecuación lineal con dos incógnitas",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Nos piden resolver y representar gráficamente el conjunto solución de la inecuación lineal con dos incógnitas 3x menos 2y menor o igual que 2.",
+      "content": "<p>Resuelve y representa en el plano cartesiano la siguiente inecuación lineal con dos incógnitas:</p><p>$$3x - 2y \\le 2$$</p>",
+      "hints": [
+        "Representa primero la recta frontera 3x - 2y = 2 en el plano cartesiano.",
+        "Elige un punto de prueba sencillo como (0,0) para determinar qué semiplano satisface la desigualdad."
+      ]
+    },
+    {
+      "title": "Plan de Resolución y Estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "El conjunto solución de una inecuación lineal con dos incógnitas es un semiplano delimitado por una recta frontera.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar la región del plano (semiplano) cuyos puntos $(x, y)$ satisfacen la desigualdad $3x - 2y \\le 2$.</p><p><strong>CONEXIÓN:</strong> Una ecuación lineal representa una recta. Una inecuación lineal divide al plano en dos semiplanos: uno donde la expresión es mayor y otro donde es menor que el valor dado.</p><p><strong>MÉTODO:</strong></p><ol><li><strong>Recta frontera:</strong> Dibujar la recta $3x - 2y = 2$ hallando dos puntos clave. Como el símbolo es $\\le$, la frontera está incluida (línea continua).</li><li><strong>Punto de prueba:</strong> Evaluar un punto que no esté en la recta, como $(0,0)$, en la inecuación.</li><li><strong>Selección del semiplano:</strong> Si el punto satisface la desigualdad, la solución es el semiplano que lo contiene; de lo contrario, es el semiplano opuesto.</li></ol>"
+    },
+    {
+      "title": "Trazado de la Recta Frontera",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Para dibujar la recta frontera 3x - 2y = 2, despejamos la variable y o calculamos sus puntos de corte con los ejes.",
+      "content": "<p><strong>OBJETIVO:</strong> Representar la recta frontera $r: 3x - 2y = 2$.</p><p><strong>CÁLCULO DE PUNTOS DE CORTE:</strong></p><ul><li>Corte con eje $Y$ ($x = 0$):<br/>$$3(0) - 2y = 2 \\implies -2y = 2 \\implies y = -1 \\quad \\to \\quad (0, -1)$$</li><li>Corte con eje $X$ ($y = 0$):<br/>$$3x - 2(0) = 2 \\implies 3x = 2 \\implies x = \\frac{2}{3} \\approx 0.67 \\quad \\to \\quad \\left(\\frac{2}{3}, 0\\right)$$</li><li>Punto auxiliar ($x = 2$):<br/>$$3(2) - 2y = 2 \\implies 6 - 2y = 2 \\implies 2y = 4 \\implies y = 2 \\quad \\to \\quad (2, 2)$$</li></ul><p><strong>RESULTADO:</strong> La recta pasa por $(0, -1)$ y $(2, 2)$. Se dibuja con <strong>línea continua</strong> porque el signo $\\le$ incluye la frontera.</p>",
+      "theory": "<p>Las inecuaciones con $\\le$ o $\\ge$ contienen a su recta frontera en el conjunto solución (línea continua). Si fueran $<$ o $>$, la recta no estaría incluida (línea discontinua).</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 400\" preserveAspectRatio=\"xMidYMid meet\"><rect width=\"100%\" height=\"100%\" fill=\"#0f172a\"/><g data-math-key=\"grid\"><line x1=\"100\" y1=\"200\" x2=\"700\" y2=\"200\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"400\" y1=\"50\" x2=\"400\" y2=\"350\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"710\" y=\"205\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"sans-serif\">X</text><text x=\"395\" y=\"40\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"sans-serif\">Y</text><line x1=\"200\" y1=\"350\" x2=\"600\" y2=\"50\" stroke=\"#38bdf8\" stroke-width=\"4\"/><circle cx=\"400\" cy=\"250\" r=\"6\" fill=\"#38bdf8\"/><text x=\"415\" y=\"255\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\">(0, -1)</text><circle cx=\"500\" cy=\"125\" r=\"6\" fill=\"#38bdf8\"/><text x=\"515\" y=\"130\" fill=\"#f8fafc\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\">(2, 2)</text><text x=\"580\" y=\"45\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\" font-family=\"sans-serif\">3x - 2y = 2</text></g></svg>",
+      "visualDescription": "Plano cartesiano centrado con ejes X e Y. Una recta azul continua atraviesa los puntos (0, -1) y (2, 2).",
+      "visualMathLink": "La recta continua trazada representa la ecuación 3x - 2y = 2, que constituye el límite o frontera del conjunto solución."
+    },
+    {
+      "title": "Evaluación del Punto de Prueba",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Probamos el origen (0,0) en la inecuación original para saber qué región del plano cumple la desigualdad.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar qué semiplano es la solución sustituyendo un punto de prueba en $3x - 2y \\le 2$.</p><p><strong>CÁLCULO:</strong></p><p>Elegimos el punto de prueba $P(0, 0)$ por ser el más sencillo computacionalmente:</p><p>$$3(0) - 2(0) \\le 2$$</p><p>$$0 - 0 \\le 2$$</p><p>$$0 \\le 2 \\quad \\text{(VERDADERO)}$$</p><p><strong>RESULTADO:</strong> Como la proposición $0 \\le 2$ es verdadera, el punto $(0,0)$ <strong>pertenece</strong> al conjunto solución.</p><p><strong>INTERPRETACIÓN:</strong> La solución es todo el semiplano que contiene al origen $(0,0)$, incluyendo la propia recta frontera.</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 400\" preserveAspectRatio=\"xMidYMid meet\"><rect width=\"100%\" height=\"100%\" fill=\"#0f172a\"/><polygon points=\"200,350 600,50 50,50 50,350\" fill=\"#38bdf8\" fill-opacity=\"0.25\"/><g data-math-key=\"grid\"><line x1=\"100\" y1=\"200\" x2=\"700\" y2=\"200\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"400\" y1=\"50\" x2=\"400\" y2=\"350\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"200\" y1=\"350\" x2=\"600\" y2=\"50\" stroke=\"#38bdf8\" stroke-width=\"4\"/><circle cx=\"400\" cy=\"200\" r=\"7\" fill=\"#4ade80\"/><text x=\"415\" y=\"195\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\" font-family=\"sans-serif\">(0,0) ✓</text><text x=\"200\" y=\"120\" fill=\"#f8fafc\" font-size=\"20\" font-weight=\"bold\" font-family=\"sans-serif\">3x - 2y ≤ 2</text></g></svg>",
+      "visualDescription": "Plano cartesiano con la recta frontera y la región situada arriba y a la izquierda sombreada en azul claro. El punto (0,0) está marcado en verde con un tick indicando que cumple la inecuación.",
+      "visualMathLink": "El sombreado incluye el punto (0,0) pues al sustituirlo se verifica la desigualdad 0 <= 2."
+    },
+    {
+      "title": "Representación del Semiplano Solución",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Sombreamos la región superior izquierda correspondiente al semiplano que contiene la solución.",
+      "content": "<p><strong>SOLUCIÓN GRÁFICA COMPLETA:</strong></p><p>El conjunto de soluciones de la inecuación $3x - 2y \\le 2$ está formado por:</p><ul><li>Todos los puntos $(x, y)$ situados por encima y a la izquierda de la recta $3x - 2y = 2$.</li><li>Todos los puntos contenidos en la recta $3x - 2y = 2$ inclusive.</li></ul><p><strong>EXPRESIÓN DESPEJANDO $y$:</strong></p><p>Si despejamos $y$ en la desigualdad:</p><p>$$3x - 2y \\le 2 \\implies 3x - 2 \\le 2y \\implies y \\ge \\frac{3}{2}x - 1$$</p><p>Esto nos indica directamente que la solución son todos los puntos con coordenada $y$ <em>mayor o igual</em> que la recta $y = \\frac{3}{2}x - 1$ (es decir, por encima de la recta).</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 400\" preserveAspectRatio=\"xMidYMid meet\"><rect width=\"100%\" height=\"100%\" fill=\"#0f172a\"/><polygon points=\"200,350 600,50 50,50 50,350\" fill=\"#4ade80\" fill-opacity=\"0.3\"/><g data-math-key=\"grid\"><line x1=\"100\" y1=\"200\" x2=\"700\" y2=\"200\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"400\" y1=\"50\" x2=\"400\" y2=\"350\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"200\" y1=\"350\" x2=\"600\" y2=\"50\" stroke=\"#4ade80\" stroke-width=\"4\"/><text x=\"250\" y=\"120\" fill=\"#f8fafc\" font-size=\"22\" font-weight=\"bold\" font-family=\"sans-serif\">Semiplano Solución</text><text x=\"550\" y=\"320\" fill=\"#f8fafc\" font-size=\"16\" font-family=\"sans-serif\">No Solución</text></g></svg>",
+      "visualDescription": "Semiplano coloreado en verde claro brillante delimitado por la recta frontera verde sólida.",
+      "visualMathLink": "El semiplano verde incluye los puntos de la recta frontera y toda la región superior-izquierda donde y >= (3/2)x - 1."
+    },
+    {
+      "title": "Comprobación Analítica con Varios Puntos",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Verificamos distintos puntos del plano dentro y fuera de la región sombreada para confirmar la validez de la solución.",
+      "content": "<p><strong>OBJETIVO:</strong> Validar experimentalmente la región solución testeando tres puntos en diferentes áreas del plano.</p><p><strong>PRUEBAS DE PUNTOS:</strong></p><ul><li><strong>Punto $A(-2, 1)$ (en la región sombreada):</strong><br/>$$3(-2) - 2(1) = -6 - 2 = -8 \\le 2 \\quad \\checkmark$$<br/><em>Cumple la inecuación $\\implies$ Pertenece al semiplano solución.</em></li><li><strong>Punto $B(2, 2)$ (sobre la recta frontera):</strong><br/>$$3(2) - 2(2) = 6 - 4 = 2 \\le 2 \\quad \\checkmark$$<br/><em>Cumple la inecuación (igualdad) $\\implies$ Pertenece a la solución por ser $\\le$.</em></li><li><strong>Punto $C(3, -2)$ (fuera de la región sombreada):</strong><br/>$$3(3) - 2(-2) = 9 + 4 = 13 \\not\\le 2 \\quad \\mathbf{\\times}$$<br/><em>No cumple $\\implies$ No pertenece a la solución.</em></li></ul>",
+      "checkpoint": {
+        "question": "¿El punto (2, 0) pertenece al semiplano solución de 3x - 2y ≤ 2?",
+        "options": [
+          {
+            "text": "Sí, porque 3(2) - 2(0) = 6 ≤ 2 es verdadero.",
+            "correct": false,
+            "feedback": "¡Cuidado! 6 no es menor ni igual que 2."
+          },
+          {
+            "text": "No, porque 3(2) - 2(0) = 6, y 6 no es menor ni igual que 2.",
+            "correct": true,
+            "feedback": "¡Correcto! 6 ≤ 2 es falso, por lo que el punto (2, 0) está fuera del conjunto solución."
+          },
+          {
+            "text": "Sí, porque está sobre la recta frontera.",
+            "correct": false,
+            "feedback": "3(2) - 2(0) = 6 != 2, no está en la recta frontera."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos el proceso completo para resolver una inecuación lineal con dos incógnitas.",
+      "content": "<p><strong>PASOS PARA RESOLVER $ax + by \\le c$:</strong></p><ol><li><strong>Igualar y Graficar:</strong> Transformar la desigualdad en la ecuación lineal $3x - 2y = 2$ y trazar su recta (continua para $\\le, \\ge$, discontinua para $<, >$).</li><li><strong>Probar un punto:</strong> Sustituir un punto de control ajeno a la recta, como $(0,0)$. Si es verdadero, el semiplano solución contiene dicho punto.</li><li><strong>Sombrear la región:</strong> Pintar el semiplano correcto.</li></ol><p><strong>FORMA DESPEJADA:</strong> $$y \\ge \\frac{3}{2}x - 1$$</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te proponemos una inecuación similar para que practiques el método del punto de prueba.",
+      "content": "<p>Resuelve y representa la inecuación lineal:</p><p>$$2x - 3y \\ge 6$$</p><p><em>Determina la recta frontera y evalúa si el punto (0,0) forma parte de la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Solución:</strong></p><p>1. Recta frontera: $2x - 3y = 6$ (pasa por $(3,0)$ y $(0,-2)$).</p><p>2. Prueba $(0,0)$: $2(0) - 3(0) = 0 \\ge 6$ (FALSO).</p><p>3. El semiplano solución es la región por debajo y a la derecha de la recta, <strong>no</strong> incluye al origen $(0,0)$. En forma despejada: $y \\le \\frac{2}{3}x - 2$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica la resolución de inecuaciones lineales a un problema práctico de programación lineal y restricciones de recursos.",
+      "content": "<p>Un taller fabrica dos productos, $A$ (requiere 3 horas) y $B$ (requiere 2 horas). Si dispone de un máximo de 60 horas semanales:</p><p>1. Escribe la inecuación que modela las horas de producción.</p><p>2. ¿Es posible fabricar 10 unidades de $A$ y 12 unidades de $B$ en una semana?</p>",
+      "practiceAnswer": "<p><strong>Solución:</strong></p><p>1. Inecuación: $3x + 2y \\le 60$ (con $x \\ge 0, y \\ge 0$).</p><p>2. Evaluación para $x=10, y=12$: $3(10) + 2(12) = 30 + 24 = 54 \\le 60$ (VERDADERO).</p><p><strong>Respuesta:</strong> Sí es posible, ya que se consumen 54 horas de las 60 disponibles.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T08:03:23.487Z",
+    "updatedAt": "2026-08-03T08:03:23.487Z",
+    "contentHash": "1587e591240ee35b",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

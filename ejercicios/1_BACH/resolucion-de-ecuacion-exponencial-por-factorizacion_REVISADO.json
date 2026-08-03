@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones exponenciales",
+    "exerciseType": "Resolución de ecuación exponencial por manipulación algebraica",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 10,
+    "learningObjectives": [
+      "Aplicar las propiedades de las potencias para descomponer suma de exponenciales.",
+      "Factorizar un término exponencial común.",
+      "Resolver ecuaciones exponenciales sencillas igualando los exponentes."
+    ],
+    "prerequisites": [
+      "Propiedades de las potencias ($a^{n+m} = a^n \\cdot a^m$).",
+      "Suma de fracciones.",
+      "Definición de potencia de exponente cero ($a^0 = 1$)."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Resolver la ecuación exponencial 5^{x+1} + 5^x + 5^{x-1} = 31/5."
+      }
+    ],
+    "hasVisualSupport": false,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "statementHash": "747c97f097fb6a66",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T15:58:38.859Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "resolucion-de-ecuacion-exponencial-por-factorizacion-9717c2f4"
+  },
+  "title": "Resolución de Ecuación Exponencial por Factorización",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Transcribimos el enunciado exacto de la ecuación exponencial a resolver.",
+      "content": "<p><strong>ENUNCIADO:</strong></p><p>$$5^{x+1} + 5^x + 5^{x-1} = \\frac{31}{5}$$</p>"
+    },
+    {
+      "title": "Planificación y Estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Analizamos la estructura del ejercicio y planificamos la descomposicion de las potencias para extraer un factor comun.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar el valor de la incógnita real $x$ que satisface la igualdad.</p><p><strong>ESTRATEGIA:</strong></p><ul><li>Usar la propiedad de las potencias $a^{m+n} = a^m \\cdot a^n$ para desglosar $5^{x+1}$ y $5^{x-1}$.</li><li>Factorizar la expresión $5^x$ presente en todos los términos del miembro izquierdo.</li><li>Sumar los coeficientes numéricos y despejar la potencia $5^x$.</li><li>Igualar la base o aplicar propiedades de exponentes para obtener $x$.</li></ul><p><strong>APLICACIÓN:</strong> Este tipo de ecuaciones exponenciales aparece frecuentemente en modelos de crecimiento biológico, cálculo de interés compuesto y desintegración radiactiva.</p>",
+      "theory": "Propiedad de las potencias: $a^{n+m} = a^n \\cdot a^m$ y $a^{n-m} = \\frac{a^n}{a^m}$."
+    },
+    {
+      "title": "Descomposición de Potencias",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Aplicamos la propiedad del producto de potencias con la misma base para separar los exponentes.",
+      "content": "<p><strong>OBJETIVO:</strong> Expresar cada término en función de la potencia $5^x$.</p><p><strong>CONEXIÓN:</strong> Partimos de la ecuación original $5^{x+1} + 5^x + 5^{x-1} = \\frac{31}{5}$.</p><p><strong>CÁLCULO:</strong></p><p>Descomponemos los exponentes sumados/restados:</p><p>$$5^{x+1} = 5^x \\cdot 5^1 = 5 \\cdot 5^x$$</p><p>$$5^{x-1} = 5^x \\cdot 5^{-1} = \\frac{1}{5} \\cdot 5^x$$</p><p>Sustituyendo en la ecuación original:</p><p>$$5 \\cdot 5^x + 5^x + \\frac{1}{5} \\cdot 5^x = \\frac{31}{5}$$</p><p><strong>INTERPRETACIÓN:</strong> Todos los términos del primer miembro comparten la misma potencia $5^x$, lo que permite una factorización inmediata.</p>",
+      "warning": "Evita sumar directamente los exponentes de bases que se están sumando; las propiedades de los exponentes se aplican a productos y cocientes, no a sumas."
+    },
+    {
+      "title": "Factorización de la Potencia Común",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Extraemos cinco a la equis como factor comun de los tres terminos.",
+      "content": "<p><strong>OBJETIVO:</strong> Aislar la parte variable $5^x$ sacando factor común.</p><p><strong>CONEXIÓN:</strong> Obtenida la suma $5 \\cdot 5^x + 1 \\cdot 5^x + \\frac{1}{5} \\cdot 5^x = \\frac{31}{5}$.</p><p><strong>CÁLCULO:</strong></p><p>Extraemos $5^x$ como factor común:</p><p>$$5^x \\left(5 + 1 + \\frac{1}{5}\\right) = \\frac{31}{5}$$</p><p>Sumamos la fracción y los enteros dentro del paréntesis:</p><p>$$5 + 1 + \\frac{1}{5} = 6 + \\frac{1}{5} = \\frac{30 + 1}{5} = \\frac{31}{5}$$</p><p>Por lo tanto:</p><p>$$5^x \\cdot \\frac{31}{5} = \\frac{31}{5}$$</p><p><strong>INTERPRETACIÓN:</strong> El coeficiente que multiplica a $5^x$ coincide exactamente con el término constante del segundo miembro.</p>",
+      "checkpoint": {
+        "question": "¿Cuál es el resultado de simplificar $5^x \\cdot \\frac{31}{5} = \\frac{31}{5}$ al despejar $5^x$?",
+        "options": [
+          {
+            "text": "$5^x = 0$",
+            "correct": false,
+            "feedback": "Al dividir un número distinto de cero por sí mismo se obtiene 1, no 0."
+          },
+          {
+            "text": "$5^x = 1$",
+            "correct": true,
+            "feedback": "¡Correcto! Dividiendo ambos miembros entre 31/5 obtenemos 5^x = 1."
+          },
+          {
+            "text": "$5^x = 5$",
+            "correct": false,
+            "feedback": "Dividir 31/5 entre 31/5 da 1, no 5."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Resolución de la Incógnita",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Despejamos cinco a la equis e igualamos exponentes para hallar equis.",
+      "content": "<p><strong>OBJETIVO:</strong> Calcular el valor exacto de la variable $x$.</p><p><strong>CONEXIÓN:</strong> Partimos de la igualdad $5^x \\cdot \\frac{31}{5} = \\frac{31}{5}$.</p><p><strong>CÁLCULO:</strong></p><p>Multiplicamos por $\\frac{5}{31}$ ambos miembros de la ecuación:</p><p>$$5^x = \\frac{31}{5} \\cdot \\frac{5}{31} = 1$$</p><p>Como cualquier número real no nulo elevado a 0 es igual a 1 ($a^0 = 1$):</p><p>$$5^x = 5^0 \\implies x = 0$$</p><p><strong>RESULTADO:</strong></p><p><strong>RESPUESTA AL APARTADO a):</strong> La solución de la ecuación es $x = 0$.</p>",
+      "theory": "Si $a^u = a^v$ con $a > 0$ y $a \\neq 1$, entonces $u = v$."
+    },
+    {
+      "title": "Comprobación Analítica",
+      "layout": "centered",
+      "phase": "comprobar",
+      "subpart": "a",
+      "narration": "Sustituimos equis igual a cero en la ecuacion original para verificar que la igualdad se cumple exactamente.",
+      "content": "<p><strong>OBJETIVO:</strong> Verificar la validez del resultado sustituyendo $x=0$ en la expresión inicial.</p><p><strong>CONEXIÓN:</strong> Valor obtenido: $x = 0$. Ecuación original: $5^{x+1} + 5^x + 5^{x-1} = \\frac{31}{5}$.</p><p><strong>COMPROBACIÓN:</strong></p><p>$$5^{0+1} + 5^0 + 5^{0-1} \\stackrel{?}{=} \\frac{31}{5}$$</p><p>$$5^1 + 1 + 5^{-1} \\stackrel{?}{=} \\frac{31}{5}$$</p><p>$$5 + 1 + \\frac{1}{5} \\stackrel{?}{=} \\frac{31}{5}$$</p><p>$$6 + \\frac{1}{5} = \\frac{30+1}{5} = \\frac{31}{5}$$</p><p>$$\\frac{31}{5} = \\frac{31}{5} \\quad \\checkmark$$</p><p><strong>INTERPRETACIÓN:</strong> La igualdad se cumple estrictamente, confirmando que $x=0$ es la solución única y exacta.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos el metodo general para resolver ecuaciones exponenciales de términos sumados.",
+      "content": "<p><strong>MÉTODO PASO A PASO:</strong></p><ol><li><strong>Descomponer exponenciales:</strong> Reescribir los exponentes sumados en producto de potencias ($5^{x+1} = 5 \\cdot 5^x$).</li><li><strong>Factor común:</strong> Extraer $5^x$ como factor común de todos los términos de la suma.</li><li><strong>Simplificar la constante:</strong> Sumar la expresión numérica dentro del paréntesis ($5 + 1 + 1/5 = 31/5$).</li><li><strong>Despejar e igualar potencias:</strong> Aislar $5^x = 1 = 5^0$ y deducir la igualdad de exponentes.</li></ol><p><strong>SOLUCIÓN FINAL:</strong> $x = 0$.</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Intenta resolver una ecuacion exponencial con la misma estructura y base tres.",
+      "content": "<p><strong>EJERCICIO DE PRÁCTICA (Misma técnica):</strong></p><p>Resuelve la siguiente ecuación exponencial:</p><p>$$3^{x+1} + 3^x + 3^{x-1} = \\frac{13}{3}$$</p><p><em>Intenta resolverlo por ti mismo utilizando la factorización de la potencia común antes de consultar la respuesta final.</em></p>",
+      "practiceAnswer": "x = 0. En efecto, 3^x(3 + 1 + 1/3) = 13/3 => 3^x(13/3) = 13/3 => 3^x = 1 => x = 0."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica la idea de factor comun exponencial en una ecuacion con resultado no nulo.",
+      "content": "<p><strong>EJERCICIO DE APLICACIÓN (Mismo concepto, diferente resultado):</strong></p><p>Resuelve la siguiente ecuación exponencial:</p><p>$$2^{x+2} + 2^{x+1} + 2^x = 28$$</p><p><em>Aplica el mismo principio de descomposición y factorización para determinar el valor de x.</em></p>",
+      "practiceAnswer": "x = 2. En efecto, 2^x(4 + 2 + 1) = 28 => 2^x * 7 = 28 => 2^x = 4 => 2^x = 2^2 => x = 2."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T16:00:09.168Z",
+    "updatedAt": "2026-08-03T16:00:09.168Z",
+    "contentHash": "c954a106e2b1d510",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "automatic_checks_passed"
+  }
+}

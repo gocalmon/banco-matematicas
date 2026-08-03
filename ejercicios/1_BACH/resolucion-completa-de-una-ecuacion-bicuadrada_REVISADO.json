@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones bicuadradas",
+    "exerciseType": "Resolución de ecuación bicuadrada polinómica con fracciones",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Eliminar denominadores numéricos en ecuaciones algebraicas mediante la propiedad multiplicativa de la igualdad",
+      "Reducir una ecuación polinómica de cuarto grado a su forma canónica bicuadrada",
+      "Aplicar el método del cambio de variable para transformar una ecuación bicuadrada en cuadrática",
+      "Calcular y verificar todas las soluciones reales en el dominio original"
+    ],
+    "prerequisites": [
+      "Resolución de ecuaciones de segundo grado mediante la fórmula general",
+      "Propiedades de potencias y operaciones con radicales",
+      "Desarrollo de productos algebraicos y simplificación de términos semejantes"
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "statementHash": "f3ec6d186a0ebaaa",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T09:39:29.103Z",
+    "id": "resolucion-completa-de-una-ecuacion-bicuadrada-7604dbf5"
+  },
+  "title": "Resolución completa de una ecuación bicuadrada",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Transcribimos de forma fiel la ecuación planteada en el ejercicio para analizar su estructura algebraica.",
+      "content": "<p>Resuelve la siguiente ecuación:</p>$$\\frac{x^2 (x^2 - 9)}{20} + 1 = x^2 - 4$$"
+    },
+    {
+      "title": "Plan de Ataque y Estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver esta ecuación, primero eliminaremos el denominador multiplicando ambos miembros por veinte, luego reduciremos la expresión a una ecuación bicuadrada en forma estándar y aplicaremos un cambio de variable.",
+      "content": "<p><strong>OBJETIVO:</strong> Encontrar todos los valores reales de $x$ que satisfacen la igualdad dada.</p><p><strong>DATOS:</strong> Una expresión con término fraccionario de denominador $20$ e igualdad entre expresiones polinómicas.</p><p><strong>ESTRATEGIA:</strong><ol><li><strong>Eliminar denominadores:</strong> Multiplicar ambos miembros de la ecuación por el denominador común $20$.</li><li><strong>Reducir a forma canónica:</strong> Desarrollar el numerador $x^2(x^2 - 9) = x^4 - 9x^2$, agrupar todos los términos en el miembro izquierdo y simplificar para obtener $ax^4 + bx^2 + c = 0$.</li><li><strong>Cambio de variable:</strong> Definir $z = x^2$ para convertir la ecuación polinómica de grado $4$ en una cuadrática auxiliar $az^2 + bz + c = 0$.</li><li><strong>Resolver la ecuación cuadrática:</strong> Aplicar la fórmula general para calcular $z_1$ y $z_2$.</li><li><strong>Deshacer el cambio:</strong> Resolver $x = \\pm \\sqrt{z}$ para cada valor no negativo de $z$.</li><li><strong>Comprobar:</strong> Sustituir las soluciones en la ecuación original.</li></ol></p><p><strong>APLICACIÓN REAL:</strong> Las ecuaciones bicuadradas aparecen frecuentemente en la física analítica para calcular equilibrios en potenciales simétricos $V(x) = ax^4 + bx^2$ y en problemas de trayectorias ópticas.</p>"
+    },
+    {
+      "title": "Paso 1: Eliminación de Denominadores y Reducción",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Multiplicamos ambos miembros por veinte para despejar las fracciones y agrupamos todos los términos en un solo miembro.",
+      "content": "<p><strong>OBJETIVO:</strong> Convertir la ecuación racional dada en una ecuación polinómica equivalente en su forma canónica.</p><p><strong>CONEXIÓN:</strong> Partimos del enunciado original $\\frac{x^2(x^2 - 9)}{20} + 1 = x^2 - 4$.</p><p><strong>CÁLCULO:</strong> Multiplicamos toda la igualdad por el denominador común $20$:$$20 \\cdot \\left(\\frac{x^2(x^2 - 9)}{20} + 1\\right) = 20 \\cdot (x^2 - 4)$$$$x^2(x^2 - 9) + 20 = 20x^2 - 80$$Desarrollamos el producto distributivo del miembro izquierdo:$$x^4 - 9x^2 + 20 = 20x^2 - 80$$Trasponemos todos los términos al miembro izquierdo para igualar a cero:$$x^4 - 9x^2 - 20x^2 + 20 + 80 = 0$$$$x^4 - 29x^2 + 100 = 0$$</p><p><strong>INTERPRETACIÓN:</strong> Hemos reducido el problema a la forma canónica bicuadrada $ax^4 + bx^2 + c = 0$ con coeficientes $a = 1$, $b = -29$ y $c = 100$.</p>",
+      "theory": "<p>Una ecuación de cuarto grado de la forma $ax^4 + bx^2 + c = 0$ se denomina <strong>bicuadrada</strong> porque carece de términos de grado奇 (impar), como $x^3$ y $x$.</p>",
+      "warning": "<p>Al multiplicar por $20$, recuerda aplicar la propiedad distributiva a TODOS los términos de ambos miembros, incluido el término independiente $+1$ del miembro izquierdo.</p>"
+    },
+    {
+      "title": "Paso 2: Cambio de Variable y Ecuación Auxiliar",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Efectuamos la sustitución zeta igual a equis al cuadrado, obteniendo una ecuación de segundo grado que resolvemos por la fórmula general.",
+      "content": "<p><strong>OBJETIVO:</strong> Reducir el grado de la ecuación de cuarto grado a segundo grado empleando una variable auxiliar.</p><p><strong>CONEXIÓN:</strong> Partimos de la forma canónica $x^4 - 29x^2 + 100 = 0$, observando que $x^4 = (x^2)^2$.</p><p><strong>CÁLCULO:</strong> Definimos la variable auxiliar $z = x^2$ (con la condición $z \\ge 0$ para soluciones reales):$$z^2 - 29z + 100 = 0$$Aplicamos la fórmula general para ecuaciones de segundo grado $z = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$:$$z = \\frac{-(-29) \\pm \\sqrt{(-29)^2 - 4(1)(100)}}{2(1)}$$$$z = \\frac{29 \\pm \\sqrt{841 - 400}}{2} = \\frac{29 \\pm \\sqrt{441}}{2}$$Calculamos la raíz cuadrada $\\sqrt{441} = 21$:$$z_1 = \\frac{29 + 21}{2} = \\frac{50}{2} = 25$$$$z_2 = \\frac{29 - 21}{2} = \\frac{8}{2} = 4$$</p><p><strong>INTERPRETACIÓN:</strong> La ecuación auxiliar arroja dos valores válidos y positivos: $z_1 = 25$ y $z_2 = 4$.</p>",
+      "checkpoint": {
+        "question": "Si al resolver la ecuación auxiliar $z^2 + bz + c = 0$ obtuviéramos una raíz negativa como $z = -16$, ¿cuántas soluciones reales aportaría para la variable $x$?",
+        "options": [
+          {
+            "text": "Aporta dos soluciones reales: $x = 4$ y $x = -4$.",
+            "correct": false,
+            "feedback": "Incorrecto. Si $z = -16$, tendría que cumplirse $x^2 = -16$, lo cual no tiene solución dentro de los números reales."
+          },
+          {
+            "text": "No aporta ninguna solución real, ya que el cuadrado de un número real no puede ser negativo.",
+            "correct": true,
+            "feedback": "¡Correcto! Como $x^2 \\ge 0$ para todo $x \\in \\mathbb{R}$, las soluciones de $z < 0$ se descartan en el conjunto real."
+          },
+          {
+            "text": "Aporta una única solución real, $x = 0$.",
+            "correct": false,
+            "feedback": "Incorrecto. Sustituir $x = 0$ da $x^2 = 0 \\neq -16$."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Obtención de las Soluciones Reales de x",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Deshacemos el cambio de variable tomando la raíz cuadrada positiva y negativa de los valores obtenidos para zeta.",
+      "content": "<p><strong>OBJETIVO:</strong> Hallar las soluciones para la variable original $x$ deshaciendo el cambio $z = x^2$.</p><p><strong>CONEXIÓN:</strong> Disponemos de los valores $z_1 = 25$ y $z_2 = 4$.</p><p><strong>CÁLCULO:</strong><br/><strong>Rama 1:</strong> Para $z_1 = 25$:$$x^2 = 25 \\implies x = \\pm \\sqrt{25} \\implies x = 5 \\quad \\text{o} \\quad x = -5$$<br/><strong>Rama 2:</strong> Para $z_2 = 4$:$$x^2 = 4 \\implies x = \\pm \\sqrt{4} \\implies x = 2 \\quad \\text{o} \\quad x = -2$$</p><p><strong>RESULTADO:</strong> Obtenemos cuatro soluciones reales distintas: $x_1 = -5$, $x_2 = -2$, $x_3 = 2$ y $x_4 = 5$.</p><p><strong>INTERPRETACIÓN:</strong> Una ecuación polinómica de cuarto grado puede poseer hasta $4$ raíces reales. Puesto que ambas soluciones auxiliares en $z$ fueron estrictamente positivas, la ecuación posee $4$ soluciones reales con simetría respecto al origen.</p>"
+    },
+    {
+      "title": "Representación Gráfica de Intersecciones",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Representamos el miembro izquierdo y el miembro derecho de la ecuación como dos funciones independientes para observar visualmente sus puntos de corte.",
+      "content": "<p><strong>OBJETIVO:</strong> Validar gráficamente las cuatro soluciones como los puntos de intersección entre las curvas de ambos miembros.</p><p><strong>CONEXIÓN:</strong> Definimos $f(x) = \\frac{x^2(x^2 - 9)}{20} + 1$ y $g(x) = x^2 - 4$.</p><p><strong>MÉTODO:</strong> Representamos $f(x)$ y $g(x)$ en el plano cartesiano. La ecuación $f(x) = g(x)$ se satisface exactamente en las abscisas donde las curvas se cruzan.</p><p><strong>INTERPRETACIÓN:</strong> Las dos curvas se cortan en exactamente cuatro puntos: $(-5, 21)$, $(-2, 0)$, $(2, 0)$ y $(5, 21)$. Las abscisas de dichos puntos concuerdan de forma idéntica con el cálculo algebraico.</p>",
+      "visual": "<svg viewBox='0 0 600 400' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><rect width='600' height='400' fill='#0f172a'/><path d='M 60 0 V 400 M 140 0 V 400 M 220 0 V 400 M 300 0 V 400 M 380 0 V 400 M 460 0 V 400 M 540 0 V 400' stroke='#334155' stroke-width='1' opacity='0.5'/><path d='M 0 68 H 600 M 0 176 H 600 M 0 320 H 600 M 0 368 H 600' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='40' y1='320' x2='560' y2='320' stroke='#fbbf24' stroke-width='2.5'/><line x1='300' y1='380' x2='300' y2='20' stroke='#fbbf24' stroke-width='2.5'/><text x='550' y='310' fill='#fbbf24' font-size='14' font-weight='bold'>x</text><text x='310' y='35' fill='#fbbf24' font-size='14' font-weight='bold'>y</text><text x='290' y='335' fill='#cbd5e1' font-size='12'>0</text><text x='380' y='335' fill='#cbd5e1' font-size='12'>2</text><text x='500' y='335' fill='#cbd5e1' font-size='12'>5</text><text x='210' y='335' fill='#cbd5e1' font-size='12'>-2</text><text x='90' y='335' fill='#cbd5e1' font-size='12'>-5</text><g data-math-key='y'><path d='M 80 16 Q 300 420 520 16' fill='none' stroke='#f472b6' stroke-width='3'/><text x='430' y='120' fill='#f472b6' font-size='14' font-weight='bold'>g(x) = x² - 4</text></g><g data-math-key='x'><path d='M 85 0 Q 100 68 180 308 Q 220 320 260 312 Q 300 308 340 312 Q 380 320 420 308 Q 500 68 515 0' fill='none' stroke='#22d3ee' stroke-width='3'/><text x='110' y='45' fill='#22d3ee' font-size='14' font-weight='bold'>f(x) = [x²(x²-9)/20] + 1</text></g><g data-math-key='x'><circle cx='100' cy='68' r='6' fill='#4ade80' stroke='#ffffff' stroke-width='1.5'/><circle cx='220' cy='320' r='6' fill='#4ade80' stroke='#ffffff' stroke-width='1.5'/><circle cx='380' cy='320' r='6' fill='#4ade80' stroke='#ffffff' stroke-width='1.5'/><circle cx='500' cy='68' r='6' fill='#4ade80' stroke='#ffffff' stroke-width='1.5'/><text x='95' y='58' fill='#4ade80' font-size='13' font-weight='bold'>(-5, 21)</text><text x='205' y='310' fill='#4ade80' font-size='13' font-weight='bold'>(-2, 0)</text><text x='375' y='310' fill='#4ade80' font-size='13' font-weight='bold'>(2, 0)</text><text x='495' y='58' fill='#4ade80' font-size='13' font-weight='bold'>(5, 21)</text></g></svg>",
+      "visualDescription": "Gráfica cartesiana sobre fondo oscuro. La función g(x) = x^2 - 4 aparece representada en rosa magenta. La función f(x) aparece representada en azul cian. Se destacan cuatro puntos de intersección en verde en las coordenadas (-5, 21), (-2, 0), (2, 0) y (5, 21).",
+      "visualMathLink": "Las coordenadas horizontales de los puntos verdes de intersección coinciden exactamente con los valores x = -5, -2, 2 y 5 calculados algebraicamente."
+    },
+    {
+      "title": "Paso 4: Comprobación Analítica",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Sustituimos cada una de las cuatro soluciones en la ecuación original para verificar que se cumple la igualdad estricta.",
+      "content": "<p><strong>OBJETIVO:</strong> Verificar rigurosamente que $x = \\pm 5$ y $x = \\pm 2$ satisfacen la ecuación original $\\frac{x^2(x^2 - 9)}{20} + 1 = x^2 - 4$.</p><p><strong>CONEXIÓN:</strong> Dado que la expresión depende exclusivamente de $x^2$, las soluciones $+a$ y $-a$ producen los mismos valores al ser evaluadas.</p><p><strong>COMPROBACIÓN:</strong><br/><strong>1. Evaluación de $x = \\pm 5$ ($x^2 = 25$):</strong>$$\\text{Miembro Izquierdo (MI)} = \\frac{25(25 - 9)}{20} + 1 = \\frac{25 \\cdot 16}{20} + 1 = \\frac{400}{20} + 1 = 20 + 1 = 21$$$$\\text{Miembro Derecho (MD)} = (\\pm 5)^2 - 4 = 25 - 4 = 21$$\\text{MI} = \\text{MD} = 21 \\quad \\checkmark<br/><br/><strong>2. Evaluación de $x = \\pm 2$ ($x^2 = 4$):</strong>$$\\text{Miembro Izquierdo (MI)} = \\frac{4(4 - 9)}{20} + 1 = \\frac{4(-5)}{20} + 1 = \\frac{-20}{20} + 1 = -1 + 1 = 0$$$$\\text{Miembro Derecho (MD)} = (\\pm 2)^2 - 4 = 4 - 4 = 0$$\\text{MI} = \\text{MD} = 0 \\quad \\checkmark</p><p><strong>RESULTADO:</strong> Todas las soluciones calculadas son correctas y exactas.</p><p><strong>RESPUESTA AL APARTADO:</strong> Las soluciones reales de la ecuación son $x = -5$, $x = -2$, $x = 2$ y $x = 5$.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos el procedimiento completo seguido para resolver la ecuación bicuadrada.",
+      "content": "<ol><li><strong>Eliminación del denominador:</strong> Multiplicar por $20$ en ambos miembros para trabajar únicamente con términos enteros.</li><li><strong>Reducción polinómica:</strong> Expandir el numerador y agrupar términos semejantes en el miembro izquierdo para obtener la forma canónica $x^4 - 29x^2 + 100 = 0$.</li><li><strong>Cambio de variable:</strong> Sustituir $z = x^2$ para transformar la ecuación en la cuadrática $z^2 - 29z + 100 = 0$.</li><li><strong>Resolución cuadrática:</strong> Aplicar la fórmula general para obtener las raíces auxiliares $z_1 = 25$ y $z_2 = 4$.</li><li><strong>Deshacer el cambio:</strong> Extraer la raíz cuadrada $x = \\pm \\sqrt{z}$ de cada raíz auxiliar, obteniendo las soluciones $x = \\pm 5$ y $x = \\pm 2$.</li><li><strong>Comprobar:</strong> Confirmar que los cuatro valores satisfacen la ecuación original.</li></ol><p><strong>Resultado final:</strong> $x \\in \\{-5, -2, 2, 5\\}$.</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica la misma estrategia de eliminación de denominadores y cambio de variable para resolver esta ecuación similar.",
+      "content": "<p>Resuelve la siguiente ecuación empleando eliminación de denominadores y cambio de variable:</p>$$\\frac{x^2(x^2 - 1)}{12} + 1 = x^2 - 2$$<p><em>Intenta resolverlo de forma autónoma antes de consultar la solución final.</em></p>",
+      "practiceAnswer": "<p><strong>Soluciones reales:</strong> $x = -3$, $x = -2$, $x = 2$, $x = 3$.</p><p><em>Esquema de verificación:</em> Multiplicando por $12$ resulta $x^4 - x^2 + 12 = 12x^2 - 24 \\implies x^4 - 13x^2 + 36 = 0$. Con $z = x^2$, obtenemos $z^2 - 13z + 36 = 0$, cuyas raíces son $z_1 = 9$ y $z_2 = 4$. Al deshacer el cambio se obtiene $x = \\pm 3$ y $x = \\pm 2$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica la técnica de resolución de ecuaciones bicuadradas a un problema de ingeniería energética.",
+      "content": "<p>El rendimiento energético $E$ en kilovatios-hora de un prototipo en función de un parámetro de frecuencia $t &gt; 0$ responde al siguiente modelo analítico:</p>$$\\frac{t^2(t^2 - 3)}{4} + 2 = t^2 - 1$$<p>Determina todos los valores estrictamente positivos del parámetro $t$ para los cuales el prototipo alcanza dicha condición de operación.</p><p><em>Pista: Transforma la expresión en una ecuación en $t$ de cuarto grado y aplica la sustitución $z = t^2$. Inténtalo antes de mirar la solución.</em></p>",
+      "practiceAnswer": "<p><strong>Soluciones reales positivas:</strong> $t = 2$ y $t = \\sqrt{3}$.</p><p><em>Esquema de solución:</em> Multiplicando ambos lados por $4$ se obtiene $t^4 - 3t^2 + 8 = 4t^2 - 4 \\implies t^4 - 7t^2 + 12 = 0$. Al sustituir $z = t^2$, resulta $z^2 - 7z + 12 = 0 \\implies z_1 = 4$ y $z_2 = 3$. Dado que se requiere $t &gt; 0$, tomamos únicamente las raíces positivas: $t = \\sqrt{4} = 2$ y $t = \\sqrt{3} \\approx 1{,}732$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T09:39:33.628Z",
+    "updatedAt": "2026-08-03T09:39:33.628Z",
+    "contentHash": "4cbdd9d4cd5dd326",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

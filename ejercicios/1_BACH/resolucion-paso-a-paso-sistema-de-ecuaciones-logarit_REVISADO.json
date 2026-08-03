@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Sistemas de Ecuaciones Logarítmicas",
+    "exerciseType": "Resolución de sistemas no lineales logarítmicos",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Determinar el dominio de existencia de funciones logarítmicas en sistemas de ecuaciones.",
+      "Aplicar propiedades de los logaritmos para transformar ecuaciones no lineales en algebraicas.",
+      "Resolver sistemas no lineales mediante el método de sustitución y filtrado de soluciones extrañas."
+    ],
+    "prerequisites": [
+      "Propiedades fundamentales de los logaritmos.",
+      "Resolución de ecuaciones cuadráticas por la fórmula general.",
+      "Métodos algebraicos de sustitución en sistemas de ecuaciones."
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 13,
+    "statementHash": "caabae2187021db7",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T15:42:49.128Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "resolucion-paso-a-paso-sistema-de-ecuaciones-logarit-a5a94cce"
+  },
+  "title": "Resolución paso a paso: Sistema de ecuaciones logarítmicas",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Comenzamos leyendo detenidamente el sistema de ecuaciones propuesto. Se trata de un sistema no lineal compuesto por una ecuación lineal y una ecuación logarítmica con dos incógnitas.",
+      "content": "<p>Resuelve el siguiente sistema de ecuaciones logarítmicas:</p>$$\\begin{cases} x - y = 15 \\\\ \\log x + \\log y = 2 \\end{cases}$$"
+    },
+    {
+      "title": "Estrategia y plan de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver este sistema, primero debemos establecer el dominio de existencia de los logaritmos. Luego, transformaremos la ecuación logarítmica en una algebraica aplicando las propiedades de los logaritmos, y finalmente usaremos el método de sustitución.",
+      "theory": "<strong>Propiedad de la suma de logaritmos:</strong> Para $A, B > 0$, $\\log_b(A) + \\log_b(B) = \\log_b(A \\cdot B)$. Además, por definición, $\\log_{10}(z) = c \\iff z = 10^c$.",
+      "content": "<p><strong>OBJETIVO:</strong> Identificar la estructura del problema y trazar la hoja de ruta para su resolución.</p><p><strong>CONEXIÓN:</strong> Partimos del sistema de ecuaciones dado en el enunciado.</p><p><strong>DATOS:</strong> Tenemos dos ecuaciones: una lineal ($x - y = 15$) y una logarítmica en base 10 ($\\log x + \\log y = 2$).</p><p><strong>MÉTODO:</strong> 1) Determinar el dominio restringido ($x > 0, y > 0$). 2) Aplicar la propiedad del producto de logaritmos. 3) Convertir la ecuación a forma algebraica equivalente. 4) Resolver el sistema algebraico resultante mediante sustitución. 5) Filtrar las soluciones halladas con las restricciones del dominio.</p><p><strong>INTERPRETACIÓN:</strong> Este tipo de sistemas aparece en modelos de escala logarítmica en acústica (decibelios), sismología (escala Richter) y economía (tasas de crecimiento compuestas con relaciones lineales de restricción).</p>",
+      "checkpoint": {
+        "text": "¿Por qué es imprescindible definir el dominio x > 0 e y > 0 antes de resolver?",
+        "options": [
+          {
+            "text": "Porque los logaritmos reales en base 10 solo están definidos para argumentos estrictamente positivos.",
+            "correct": true,
+            "feedback": "¡Exacto! El argumento de un logaritmo en los números reales debe ser estrictamente mayor que cero."
+          },
+          {
+            "text": "Porque las ecuaciones lineales solo aceptan valores positivos.",
+            "correct": false,
+            "feedback": "Incorrecto. Las variables en ecuaciones lineales pueden tomar cualquier valor real."
+          },
+          {
+            "text": "Porque de lo contrario la ecuación lineal no tendría solución.",
+            "correct": false,
+            "feedback": "Incorrecto. La restricción proviene exclusivamente de la presencia de funciones logarítmicas."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Análisis del dominio de existencia",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Analizamos las condiciones que deben cumplir las variables equis e i para que los logaritmos tengan sentido dentro de los números reales.",
+      "warning": "<strong>¡Atención!</strong> Al aplicar propiedades de logaritmos como $\\log x + \\log y = \\log(x \\cdot y)$, el dominio del producto $xy > 0$ permite que ambos sean negativos, pero la ecuación original exige que tanto $x$ como $y$ sean individualmente positivos.",
+      "content": "<p><strong>OBJETIVO:</strong> Definir las restricciones de las variables $x$ e $y$.</p><p><strong>CONEXIÓN:</strong> Analizamos los términos $\\log x$ y $\\log y$ de la segunda ecuación del sistema.</p><p><strong>CÁLCULO:</strong> Para que los logaritmos decimales $\\log x$ y $\\log y$ existan en $\\mathbb{R}$:</p>$$\\begin{cases} x > 0 \\\\ y > 0 \\end{cases}$$<p>Por lo tanto, la solución del sistema solo será válida si pertenece al primer cuadrante estricto: $(x, y) \\in (0, +\\infty) \\times (0, +\\infty)$.</p><p><strong>INTERPRETACIÓN:</strong> Cualquier solución con $x \\le 0$ o $y \\le 0$ generará un logaritmo indeterminado en la ecuación original y deberá ser descartada como solución extraña.</p>"
+    },
+    {
+      "title": "Transformación de la ecuación logarítmica",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Aplicamos la propiedad de la suma de logaritmos de la misma base para unificar el lado izquierdo en un solo logaritmo.",
+      "theory": "<strong>Suma de logaritmos:</strong> $\\log x + \\log y = \\log(x \\cdot y)$ para $x > 0, y > 0$.",
+      "content": "<p><strong>OBJETIVO:</strong> Unificar la suma de logaritmos en un único término logarítmico.</p><p><strong>CONEXIÓN:</strong> Tomamos la segunda ecuación: $\\log x + \\log y = 2$.</p><p><strong>CÁLCULO:</strong></p>$$\\log x + \\log y = 2 \\implies \\log(x \\cdot y) = 2$$<p>Aplicando la definición de logaritmo decimal (base 10):</p>$$x \\cdot y = 10^2 \\implies x \\cdot y = 100$$<p><strong>INTERPRETACIÓN:</strong> Hemos transformado la ecuación logarítmica no lineal en una ecuación algebraica equivalente: el producto de las dos variables debe ser igual a 100.</p>"
+    },
+    {
+      "title": "Resolución del sistema algebraico equivalente",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Ahora tenemos un sistema de ecuaciones algebraicas no lineal más sencillo. Despejamos la variable equis de la primera ecuación y la sustituimos en la segunda.",
+      "content": "<p><strong>OBJETIVO:</strong> Resolver el sistema algebraico resultante por el método de sustitución.</p><p><strong>CONEXIÓN:</strong> Combinamos la ecuación lineal $x - y = 15$ con la ecuación algebraica obtenida $x \\cdot y = 100$.</p><p><strong>CÁLCULO:</strong></p><p>1. Despejamos $x$ de la primera ecuación:</p>$$x = y + 15$$<p>2. Sustituimos $x$ en la segunda ecuación ($x \\cdot y = 100$):</p>$$(y + 15) \\cdot y = 100 \\implies y^2 + 15y - 100 = 0$$<p><strong>INTERPRETACIÓN:</strong> La búsqueda de los valores de $y$ se reduce a hallar las raíces de una ecuación de segundo grado de la forma $ay^2 + by + c = 0$.</p>",
+      "checkpoint": {
+        "text": "¿Cuál es la ecuación cuadrática resultante al sustituir x = y + 15 en x · y = 100?",
+        "options": [
+          {
+            "text": "y² + 15y - 100 = 0",
+            "correct": true,
+            "feedback": "¡Correcto! Al multiplicar (y + 15)y e igualar a 100, reordenando obtenemos y² + 15y - 100 = 0."
+          },
+          {
+            "text": "y² + 15y + 100 = 0",
+            "correct": false,
+            "feedback": "Cuidado con el signo al pasar el 100 al lado izquierdo de la igualdad."
+          },
+          {
+            "text": "y² - 15y - 100 = 0",
+            "correct": false,
+            "feedback": "Revisa la sustitución: x = y + 15 da un término positivo +15y."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Cálculo de las raíces cuadráticas",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Resolvemos la ecuación de segundo grado en i aplicando la fórmula general.",
+      "theory": "<strong>Fórmula cuadrática:</strong> Para $ay^2 + by + c = 0$, $y = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.",
+      "content": "<p><strong>OBJETIVO:</strong> Obtener los valores posibles para la variable $y$.</p><p><strong>CONEXIÓN:</strong> Tomamos la ecuación cuadrática $y^2 + 15y - 100 = 0$.</p><p><strong>CÁLCULO:</strong> Aplicando la fórmula general con $a=1$, $b=15$, $c=-100$:</p>$$y = \\frac{-15 \\pm \\sqrt{15^2 - 4(1)(-100)}}{2(1)} = \\frac{-15 \\pm \\sqrt{225 + 400}}{2} = \\frac{-15 \\pm \\sqrt{625}}{2} = \\frac{-15 \\pm 25}{2}$$<p>Obtenemos dos soluciones para $y$:</p>$$y_1 = \\frac{-15 + 25}{2} = \\frac{10}{2} = 5$$$$y_2 = \\frac{-15 - 25}{2} = \\frac{-40}{2} = -20$$<p><strong>INTERPRETACIÓN:</strong> La ecuación cuadrática tiene dos raíces reales, $y_1 = 5$ e $y_2 = -20$.</p>"
+    },
+    {
+      "title": "Filtrado de soluciones y determinación de x",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Evaluamos cada valor de i respecto al dominio de existencia establecido al inicio y calculamos el valor de equis correspondiente.",
+      "warning": "<strong>¡Error común!</strong> Aceptar $y = -20$ porque al calcular $x = -20 + 15 = -5$, se cumple que $(-5)(-20) = 100$. ¡Pero $\\log(-5)$ y $\\log(-20)$ no existen en los números reales!",
+      "content": "<p><strong>OBJETIVO:</strong> Aplicar las restricciones del dominio y hallar el valor final de $x$.</p><p><strong>CONEXIÓN:</strong> Confrontamos los valores de $y$ con las condiciones de dominio $x > 0$ e $y > 0$.</p><p><strong>CÁLCULO:</strong></p><p>1. Caso $y = -20$: Como $y = -20 \\le 0$, no pertenece al dominio del logaritmo original. <strong>Se descarta esta solución.</strong></p><p>2. Caso $y = 5$: Como $y = 5 > 0$, es un valor válido. Sustituimos en $x = y + 15$:</p>$$x = 5 + 15 = 20$$<p>Verificamos que $x = 20 > 0$, lo cual es totalmente válido.</p><p><strong>RESULTADO:</strong> La única solución del sistema es el par ordenado $(x, y) = (20, 5)$.</p><p><strong>RESPUESTA AL APARTADO a):</strong> La solución única del sistema es $x = 20$, $y = 5$.</p>"
+    },
+    {
+      "title": "Verificación analítica de la solución",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Comprobamos que la pareja obtenida satisface rigurosamente las dos ecuaciones originales del sistema.",
+      "content": "<p><strong>OBJETIVO:</strong> Validar la solución $(x, y) = (20, 5)$ sustituyéndola en el sistema original.</p><p><strong>CONEXIÓN:</strong> Tomamos las ecuaciones del enunciado inicial con $x = 20$ e $y = 5$.</p><p><strong>COMPROBACIÓN:</strong></p><p>1. Primera ecuación ($x - y = 15$):</p>$$20 - 5 = 15 \\quad \\checkmark \\text{ (Se cumple)}$$<p>2. Segunda ecuación ($\\log x + \\log y = 2$):</p>$$\\log(20) + \\log(5) = \\log(20 \\cdot 5) = \\log(100) = 2 \\quad \\checkmark \\text{ (Se cumple)}$$<p><strong>INTERPRETACIÓN:</strong> Ambas ecuaciones quedan perfectamente satisfechas, lo que confirma que la resolución analítica es exacta y correcta.</p>"
+    },
+    {
+      "title": "Representación gráfica del sistema",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Representamos gráficamente la recta de la primera ecuación y la hipérbola correspondiente a la segunda ecuación en el primer cuadrante. El punto de intersección confirma visualmente la solución hallada.",
+      "visualVerificationMode": "manual",
+      "visual": "<svg viewBox='0 0 500 400' width='100%' height='100%' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><rect width='500' height='400' fill='#0f172a'/><line x1='50' y1='350' x2='450' y2='350' stroke='#fbbf24' stroke-width='2.5'/><line x1='50' y1='350' x2='50' y2='50' stroke='#fbbf24' stroke-width='2.5'/><polygon points='445,345 455,350 445,355' fill='#fbbf24'/><polygon points='45,55 50,45 55,55' fill='#fbbf24'/><text x='460' y='355' fill='#fbbf24' font-size='16' font-weight='bold'>x</text><text x='50' y='35' fill='#fbbf24' font-size='16' font-weight='bold'>y</text><line x1='125' y1='345' x2='125' y2='355' stroke='#94a3b8' stroke-width='1.5'/><text x='125' y='375' fill='#94a3b8' font-size='12' text-anchor='middle'>5</text><line x1='200' y1='345' x2='200' y2='355' stroke='#94a3b8' stroke-width='1.5'/><text x='200' y='375' fill='#94a3b8' font-size='12' text-anchor='middle'>10</text><line x1='275' y1='345' x2='275' y2='355' stroke='#94a3b8' stroke-width='1.5'/><text x='275' y='375' fill='#94a3b8' font-size='12' text-anchor='middle'>15</text><line x1='350' y1='345' x2='350' y2='355' stroke='#38bdf8' stroke-width='2'/><text x='350' y='375' fill='#38bdf8' font-size='14' font-weight='bold' text-anchor='middle'>20</text><line x1='45' y1='275' x2='55' y2='275' stroke='#f472b6' stroke-width='2'/><text x='35' y='280' fill='#f472b6' font-size='14' font-weight='bold' text-anchor='end'>5</text><line x1='45' y1='200' x2='55' y2='200' stroke='#94a3b8' stroke-width='1.5'/><text x='35' y='205' fill='#94a3b8' font-size='12' text-anchor='end'>10</text><line x1='45' y1='125' x2='55' y2='125' stroke='#94a3b8' stroke-width='1.5'/><text x='35' y='130' fill='#94a3b8' font-size='12' text-anchor='end'>15</text><line x1='45' y1='50' x2='55' y2='50' stroke='#94a3b8' stroke-width='1.5'/><text x='35' y='55' fill='#94a3b8' font-size='12' text-anchor='end'>20</text><path d='M 80,80 Q 125,275 350,335' fill='none' stroke='#4ade80' stroke-width='3'/><text x='110' y='130' fill='#4ade80' font-size='14' font-weight='bold'>x · y = 100</text><line x1='275' y1='350' x2='425' y2='200' stroke='#38bdf8' stroke-width='3'/><text x='380' y='220' fill='#38bdf8' font-size='14' font-weight='bold'>x - y = 15</text><line x1='350' y1='350' x2='350' y2='275' stroke='#fbbf24' stroke-width='1.5' stroke-dasharray='4'/><line x1='50' y1='275' x2='350' y2='275' stroke='#fbbf24' stroke-width='1.5' stroke-dasharray='4'/><circle cx='350' cy='275' r='6' fill='#fbbf24' stroke='#ffffff' stroke-width='2'/><text x='360' y='265' fill='#fbbf24' font-size='14' font-weight='bold' text-anchor='start'>P(20, 5)</text></svg>",
+      "visualDescription": "Gráfica cartesiana del primer cuadrante. Eje x codificado de 0 a 25, eje y de 0 a 25. Muestra la recta azul x - y = 15 que corta al eje x en (15,0) y sube hacia la derecha, y la curva hipérbola verde x·y = 100 en el primer cuadrante. Ambas se cortan exactamente en el punto P marcado en amarillo con coordenadas x=20 e y=5.",
+      "visualMathLink": "La recta azul representa la ecuación lineal x - y = 15. La curva verde representa la curva de nivel logarítmica x · y = 100. El punto de intersección P(20, 5) muestra geométricamente la solución única del sistema en el primer cuadrante.",
+      "content": "<p><strong>OBJETIVO:</strong> Visualizar geométricamente las ecuaciones del sistema y su punto de intersección.</p><p><strong>CONEXIÓN:</strong> Graficamos las curvas en el primer cuadrante ($x > 0, y > 0$).</p><p><strong>INTERPRETACIÓN:</strong></p><ul><li>La recta de ecuación $x - y = 15$ pasa por $(15, 0)$ y tiene pendiente positiva $m = 1$.</li><li>La curva $x \\cdot y = 100$ es una hipérbola decreciente en el primer cuadrante.</li><li>El único punto de corte entre la recta y la hipérbola en el primer cuadrante es $P(20, 5)$.</li></ul>"
+    },
+    {
+      "title": "Interpretación matemática del resultado",
+      "layout": "centered",
+      "phase": "interpretar",
+      "narration": "Concluimos analizando el significado algebraico y geométrico del resultado obtenido.",
+      "content": "<p><strong>OBJETIVO:</strong> Consolidar el significado del resultado dentro del marco teórico de los sistemas no lineales.</p><p><strong>CONEXIÓN:</strong> Hemos hallado la solución analítica $(20, 5)$ y su correspondiente gráfico de intersección.</p><p><strong>RESULTADO:</strong></p><ul><li><strong>Existencia y unicidad:</strong> Aunque el sistema algebraico equivalente $y^2 + 15y - 100 = 0$ ofrece dos raíces algebraicas, la restricción de dominio impuesta por los logaritmos reales elimina una de las soluciones, garantizando la existencia de una <strong>solución única</strong>.</li><li><strong>Significado geométrico:</strong> La solución representa el único punto del primer cuadrante donde la diferencia entre las coordenadas es 15 y su producto es 100.</li></ul>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos de forma clara los pasos seguidos para resolver cualquier sistema de ecuaciones con logaritmos.",
+      "content": "<p><strong>HOJA DE RUTA GENERAL PARA SISTEMAS LOGARÍTMICOS:</strong></p><ol><li><strong>Dominio:</strong> Establecer las condiciones de existencia $x > 0$, $y > 0$ para los argumentos logarítmicos.</li><li><strong>Propiedades:</strong> Utilizar las leyes de logaritmos (suma a producto, resta a cociente) para condensar las expresiones.</li><li><strong>Forma algebraica:</strong> Aplicar la definición de logaritmo para eliminar la función logarítmica y convertir en un sistema algebraico.</li><li><strong>Resolución:</strong> Resolver el sistema algebraico (generalmente por sustitución).</li><li><strong>Validación:</strong> Filtrar las soluciones algebraicas con el dominio inicial y verificar en las ecuaciones originales.</li></ol><p><strong>Solución final:</strong> $x = 20$, $y = 5$.</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te proponemos un ejercicio con la misma estructura y propiedades, pero con datos numéricos distintos. Inténtalo antes de consultar la respuesta final.",
+      "content": "<p>Resuelve el siguiente sistema de ecuaciones logarítmicas:</p>$$\\begin{cases} x - y = 9 \\\\ \\log x + \\log y = 1 + \\log 2 \\end{cases}$$<p><em>Sugerencia: Simplifica primero el lado derecho de la segunda ecuación antes de transformar la expresión. Inténtalo por ti mismo antes de ver la respuesta.</em></p>",
+      "practiceAnswer": "Dominio: x > 0, y > 0. Segunda ecuación: log(x · y) = log(10) + log(2) = log(20) => x · y = 20. De la primera: x = y + 9. Sustituyendo: (y + 9)y = 20 => y² + 9y - 20 = 0 => (y + 10)(y - 2) = 0. Como y > 0, descartamos y = -10 y tomamos y = 2. Luego x = 2 + 9 = 11. Solución única: x = 11, y = 2."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica el concepto de unificación de logaritmos y restricciones de dominio en un sistema con resta de logaritmos y bases exponenciales.",
+      "content": "<p>Resuelve el siguiente sistema no lineal:</p>$$\\begin{cases} 2^{x+y} = 64 \\\\ \\log_2 x - \\log_2 y = 1 \\end{cases}$$<p><em>Aplica las propiedades de potencias en la primera ecuación y las propiedades de restas de logaritmos en la segunda. Inténtalo por ti mismo antes de verificar el resultado final.</em></p>",
+      "practiceAnswer": "Dominio: x > 0, y > 0. De la primera ecuación: 2^(x+y) = 2^6 => x + y = 6. De la segunda ecuación: log_2(x/y) = 1 => x/y = 2^1 => x = 2y. Sustituyendo en la suma: 2y + y = 6 => 3y = 6 => y = 2. Entonces x = 2(2) = 4. Ambos valores son positivos. Solución única: x = 4, y = 2."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T15:43:41.054Z",
+    "updatedAt": "2026-08-03T15:43:41.054Z",
+    "contentHash": "38ec2a84451bff9e",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "teacher_override",
+    "override": {
+      "confirmed": true,
+      "justification": "Ejercicio bien resuelto",
+      "automaticErrors": [
+        {
+          "title": "Puntos de control",
+          "detail": "Revisa las diapositivas: 2, 5."
+        }
+      ],
+      "approvedAt": "2026-08-03T15:43:41.054Z"
+    }
+  }
+}

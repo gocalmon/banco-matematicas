@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Inecuaciones y sistemas",
+    "exerciseType": "Representación de la región factible",
+    "protocols": [
+      "A",
+      "B"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Representar gráficamente inecuaciones lineales con dos variables.",
+      "Identificar la región solución como intersección de semiplanos.",
+      "Calcular algebraicamente los vértices de la región factible."
+    ],
+    "prerequisites": [
+      "Representación de rectas en el plano cartesiano.",
+      "Resolución de sistemas de ecuaciones lineales bidimensionales."
+    ],
+    "subparts": [
+      {
+        "id": "1",
+        "request": "Representar y resolver gráficamente el sistema propuesto."
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "statementHash": "0e3894b68f677888",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T09:28:57.102Z",
+    "id": "resolucion-grafica-de-un-sistema-de-inecuaciones-lin-23a01db7"
+  },
+  "title": "Resolución Gráfica de un Sistema de Inecuaciones Lineales",
+  "slides": [
+    {
+      "title": "Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Aquí tenemos el sistema de inecuaciones que vamos a resolver. Observa que está compuesto por cuatro desigualdades que deben cumplirse a la vez.",
+      "content": "<p>$$ \\begin{cases} x + y \\geq 1 \\\\ y \\leq 3 \\\\ x \\geq 0 \\\\ x \\leq 4 \\end{cases} $$</p>"
+    },
+    {
+      "title": "Plan de ataque",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Nuestro objetivo es encontrar la región del plano donde se cumplen las cuatro condiciones simultáneamente. Para ello, dibujaremos cada frontera, decidiremos qué lado nos sirve y luego las intersecaremos todas.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar la región del plano que satisface simultáneamente todas las inecuaciones del sistema (región factible) y calcular sus vértices.</p><p><strong>DATOS:</strong> Tenemos cuatro restricciones lineales:</p><ul><li>$x + y \\geq 1$</li><li>$y \\leq 3$</li><li>$x \\geq 0$</li><li>$x \\leq 4$</li></ul><p><strong>MÉTODO:</strong> Trataremos cada inecuación por separado. Primero, encontraremos la recta frontera cambiándola a una igualdad. Después, usaremos un punto de prueba, normalmente el origen, para determinar cuál de los dos semiplanos resultantes es la solución. Finalmente, superpondremos las cuatro zonas; la intersección común será nuestra solución final y calcularemos sus vértices algebraicamente.</p>"
+    },
+    {
+      "title": "Paso 1: Primera restricción",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Empezamos con la primera inecuación. La convertimos en igualdad para dibujar la recta frontera. Como pasa por los puntos uno cero y cero uno, la trazamos continua. Al probar el origen, vemos que la condición es falsa, así que nos quedamos con el semiplano que no lo contiene.",
+      "content": "<p><strong>OBJETIVO:</strong> Representar el semiplano solución para $x + y \\geq 1$.</p><p><strong>CONEXIÓN:</strong> Es la primera de las cuatro condiciones que limitarán nuestra región final.</p><p><strong>MÉTODO:</strong> Convertimos la inecuación en la recta frontera $x + y = 1$ (o $y = 1 - x$). Buscamos sus cortes con los ejes:</p><ul><li>Si $x = 0 \\implies y = 1 \\implies (0, 1)$</li><li>Si $y = 0 \\implies x = 1 \\implies (1, 0)$</li></ul><p>Trazamos la recta de forma continua porque la desigualdad incluye el igual ($\\geq$). Elegimos un punto fuera de la recta, por ejemplo el $(0, 0)$, y sustituimos en la inecuación original: $0 + 0 \\geq 1 \\implies 0 \\geq 1$.</p><p><strong>INTERPRETACIÓN:</strong> Como $0 \\geq 1$ es <strong>falso</strong>, el origen no pertenece a la solución. Sombreamos el semiplano que no contiene al $(0,0)$, es decir, la zona superior derecha.</p>",
+      "theory": "<p>Para representar una inecuación lineal con dos variables, se dibuja su recta frontera y se comprueba un punto exterior a ella (usualmente el origen) para decidir qué semiplano sombrear.</p>",
+      "visual": "<svg viewBox=\"0 0 500 500\" preserveAspectRatio=\"xMidYMid meet\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"500\" height=\"500\" fill=\"#0f172a\" />\n  <g stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\">\n    <line x1=\"125\" y1=\"0\" x2=\"125\" y2=\"500\" />\n    <line x1=\"187.5\" y1=\"0\" x2=\"187.5\" y2=\"500\" />\n    <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"500\" />\n    <line x1=\"312.5\" y1=\"0\" x2=\"312.5\" y2=\"500\" />\n    <line x1=\"375\" y1=\"0\" x2=\"375\" y2=\"500\" />\n    <line x1=\"437.5\" y1=\"0\" x2=\"437.5\" y2=\"500\" />\n    <line x1=\"0\" y1=\"50\" x2=\"500\" y2=\"50\" />\n    <line x1=\"0\" y1=\"100\" x2=\"500\" y2=\"100\" />\n    <line x1=\"0\" y1=\"150\" x2=\"500\" y2=\"150\" />\n    <line x1=\"0\" y1=\"200\" x2=\"500\" y2=\"200\" />\n    <line x1=\"0\" y1=\"250\" x2=\"500\" y2=\"250\" />\n    <line x1=\"0\" y1=\"300\" x2=\"500\" y2=\"300\" />\n    <line x1=\"0\" y1=\"350\" x2=\"500\" y2=\"350\" />\n    <line x1=\"0\" y1=\"400\" x2=\"500\" y2=\"400\" />\n  </g>\n  <line x1=\"0\" y1=\"250\" x2=\"500\" y2=\"250\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <line x1=\"125\" y1=\"0\" x2=\"125\" y2=\"500\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <text x=\"480\" y=\"270\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">X</text>\n  <text x=\"135\" y=\"20\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">Y</text>\n  <g data-math-key=\"r1\" data-region-kind=\"individual\">\n    <polygon points=\"0,125 500,625 500,-100 0,-100\" fill=\"#38bdf8\" opacity=\"0.3\" />\n    <line x1=\"-75\" y1=\"450\" x2=\"550\" y2=\"-175\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n    <text x=\"200\" y=\"160\" fill=\"#38bdf8\" font-family=\"sans-serif\" font-size=\"16\">x + y &#8805; 1</text>\n  </g>\n  <circle cx=\"125\" cy=\"250\" r=\"4\" fill=\"#ef4444\" />\n  <text x=\"110\" y=\"270\" fill=\"#ef4444\" font-family=\"sans-serif\" font-size=\"14\">(0,0) falso</text>\n</svg>",
+      "visualDescription": "Plano cartesiano con la recta x+y=1 en color azul. El semiplano superior derecho está sombreado indicando la región solución. El origen (0,0) está marcado en rojo como punto de prueba que ha fallado.",
+      "visualMathLink": "La recta azul corresponde a la igualdad $x+y=1$. El área azul sombreada representa todos los puntos donde $x+y \\geq 1$."
+    },
+    {
+      "title": "Paso 2: Segunda restricción",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Añadimos ahora la segunda condición, que limita la altura máxima. Trazamos una recta horizontal en ye igual a tres. Como debe ser menor o igual, la zona válida queda por debajo.",
+      "content": "<p><strong>OBJETIVO:</strong> Representar el semiplano solución para $y \\leq 3$.</p><p><strong>CONEXIÓN:</strong> Es la segunda restricción; limitará por arriba la región que estamos construyendo.</p><p><strong>MÉTODO:</strong> La frontera es la recta horizontal $y = 3$. Tomamos un punto de prueba, el $(0, 0)$. Sustituyendo, obtenemos $0 \\leq 3$.</p><p><strong>INTERPRETACIÓN:</strong> Como $0 \\leq 3$ es <strong>verdadero</strong>, el origen pertenece a la solución. Sombreamos la región por debajo de la recta $y=3$. El trazo es continuo por el símbolo $\\leq$.</p>",
+      "visual": "<svg viewBox=\"0 0 500 500\" preserveAspectRatio=\"xMidYMid meet\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"500\" height=\"500\" fill=\"#0f172a\" />\n  <g stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\">\n    <line x1=\"125\" y1=\"0\" x2=\"125\" y2=\"500\" />\n    <line x1=\"187.5\" y1=\"0\" x2=\"187.5\" y2=\"500\" />\n    <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"500\" />\n    <line x1=\"312.5\" y1=\"0\" x2=\"312.5\" y2=\"500\" />\n    <line x1=\"375\" y1=\"0\" x2=\"375\" y2=\"500\" />\n    <line x1=\"437.5\" y1=\"0\" x2=\"437.5\" y2=\"500\" />\n    <line x1=\"0\" y1=\"50\" x2=\"500\" y2=\"50\" />\n    <line x1=\"0\" y1=\"100\" x2=\"500\" y2=\"100\" />\n    <line x1=\"0\" y1=\"150\" x2=\"500\" y2=\"150\" />\n    <line x1=\"0\" y1=\"200\" x2=\"500\" y2=\"200\" />\n    <line x1=\"0\" y1=\"250\" x2=\"500\" y2=\"250\" />\n    <line x1=\"0\" y1=\"300\" x2=\"500\" y2=\"300\" />\n    <line x1=\"0\" y1=\"350\" x2=\"500\" y2=\"350\" />\n    <line x1=\"0\" y1=\"400\" x2=\"500\" y2=\"400\" />\n  </g>\n  <line x1=\"0\" y1=\"250\" x2=\"500\" y2=\"250\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <line x1=\"125\" y1=\"0\" x2=\"125\" y2=\"500\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <g data-math-key=\"r2\" data-region-kind=\"individual\">\n    <polygon points=\"0,100 500,100 500,500 0,500\" fill=\"#f472b6\" opacity=\"0.3\" />\n    <line x1=\"0\" y1=\"100\" x2=\"500\" y2=\"100\" stroke=\"#f472b6\" stroke-width=\"2.5\" />\n    <text x=\"300\" y=\"90\" fill=\"#f472b6\" font-family=\"sans-serif\" font-size=\"16\">y &#8804; 3</text>\n  </g>\n  <circle cx=\"125\" cy=\"250\" r=\"4\" fill=\"#4ade80\" />\n  <text x=\"110\" y=\"270\" fill=\"#4ade80\" font-family=\"sans-serif\" font-size=\"14\">(0,0) verdadero</text>\n</svg>",
+      "visualDescription": "Plano cartesiano con una recta horizontal rosa en y=3. Toda el área inferior está sombreada en rosa indicando la región y menor o igual a 3.",
+      "visualMathLink": "La recta horizontal rosa fija $y=3$. El sombreado inferior asegura que cualquier punto dentro cumple $y \\leq 3$."
+    },
+    {
+      "title": "Paso 3: Tercera y cuarta restricciones",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Las dos últimas inecuaciones nos dicen que x debe estar entre cero y cuatro. Esto delimita una franja vertical entre el eje Y y la recta vertical que pasa por cuatro.",
+      "content": "<p><strong>OBJETIVO:</strong> Representar $x \\geq 0$ y $x \\leq 4$.</p><p><strong>CONEXIÓN:</strong> Estas dos desigualdades acotan la región de forma horizontal, formando una franja vertical.</p><p><strong>MÉTODO:</strong></p><ul><li>Para $x \\geq 0$: la frontera es el eje Y ($x = 0$). Como debe ser mayor, seleccionamos el semiplano de la derecha.</li><li>Para $x \\leq 4$: la frontera es la recta vertical $x = 4$. Sombreamos el semiplano situado a su izquierda.</li></ul><p><strong>INTERPRETACIÓN:</strong> La combinación de estas dos restricciones exige que la solución esté obligatoriamente encajonada en el intervalo cerrado $[0, 4]$ del eje X.</p>",
+      "visual": "<svg viewBox=\"0 0 500 500\" preserveAspectRatio=\"xMidYMid meet\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"500\" height=\"500\" fill=\"#0f172a\" />\n  <g stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\">\n    <line x1=\"125\" y1=\"0\" x2=\"125\" y2=\"500\" />\n    <line x1=\"187.5\" y1=\"0\" x2=\"187.5\" y2=\"500\" />\n    <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"500\" />\n    <line x1=\"312.5\" y1=\"0\" x2=\"312.5\" y2=\"500\" />\n    <line x1=\"375\" y1=\"0\" x2=\"375\" y2=\"500\" />\n    <line x1=\"437.5\" y1=\"0\" x2=\"437.5\" y2=\"500\" />\n    <line x1=\"0\" y1=\"50\" x2=\"500\" y2=\"50\" />\n    <line x1=\"0\" y1=\"100\" x2=\"500\" y2=\"100\" />\n    <line x1=\"0\" y1=\"150\" x2=\"500\" y2=\"150\" />\n    <line x1=\"0\" y1=\"200\" x2=\"500\" y2=\"200\" />\n    <line x1=\"0\" y1=\"250\" x2=\"500\" y2=\"250\" />\n    <line x1=\"0\" y1=\"300\" x2=\"500\" y2=\"300\" />\n    <line x1=\"0\" y1=\"350\" x2=\"500\" y2=\"350\" />\n    <line x1=\"0\" y1=\"400\" x2=\"500\" y2=\"400\" />\n  </g>\n  <line x1=\"0\" y1=\"250\" x2=\"500\" y2=\"250\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <line x1=\"125\" y1=\"0\" x2=\"125\" y2=\"500\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <g data-math-key=\"r34\" data-region-kind=\"individual\">\n    <polygon points=\"125,0 375,0 375,500 125,500\" fill=\"#4ade80\" opacity=\"0.3\" />\n    <line x1=\"125\" y1=\"0\" x2=\"125\" y2=\"500\" stroke=\"#4ade80\" stroke-width=\"2.5\" />\n    <line x1=\"375\" y1=\"0\" x2=\"375\" y2=\"500\" stroke=\"#4ade80\" stroke-width=\"2.5\" />\n    <text x=\"135\" y=\"480\" fill=\"#4ade80\" font-family=\"sans-serif\" font-size=\"16\">0 &#8804; x &#8804; 4</text>\n  </g>\n</svg>",
+      "visualDescription": "Plano cartesiano con una franja verde vertical que abarca desde x=0 hasta x=4. Los límites laterales están marcados con rectas verticales continuas.",
+      "visualMathLink": "El área verde delimita el conjunto de puntos cuyas coordenadas X cumplen simultáneamente $x \\geq 0$ y $x \\leq 4$."
+    },
+    {
+      "title": "Paso 4: Región factible (Intersección)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Al cruzar todas las zonas sombreadas obtenemos un polígono cerrado en algunos lados pero que baja hacia el infinito por la derecha. Esta zona morada oscura es nuestra solución gráfica definitiva.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar la región que cumple simultáneamente las cuatro inecuaciones.</p><p><strong>CONEXIÓN:</strong> Intersecamos geométricamente los semiplanos calculados en los pasos anteriores.</p><p><strong>RESULTADO:</strong> La región factible es el conjunto de puntos que quedan confinados por:</p><ul><li>La recta $x+y=1$ por abajo a la izquierda.</li><li>La recta $y=3$ por arriba.</li><li>El eje Y ($x=0$) por la izquierda.</li><li>La recta $x=4$ por la derecha.</li></ul><p><strong>INTERPRETACIÓN:</strong> Obtenemos un polígono cerrado, delimitado por los cuatro segmentos rectilíneos de las fronteras. Cualquier punto situado dentro de esta región, o sobre sus bordes, es solución del sistema.</p>",
+      "warning": "<p>Cuidado: el enunciado no incluye la restricción $y \\geq 0$. No asumas por costumbre que la región termina en el eje X; en este caso, la zona baja hasta $y = -3$ cuando $x = 4$.</p>",
+      "visual": "<svg viewBox=\"0 0 500 500\" preserveAspectRatio=\"xMidYMid meet\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect width=\"500\" height=\"500\" fill=\"#0f172a\" />\n  <g stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.5\">\n    <line x1=\"125\" y1=\"0\" x2=\"125\" y2=\"500\" />\n    <line x1=\"187.5\" y1=\"0\" x2=\"187.5\" y2=\"500\" />\n    <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"500\" />\n    <line x1=\"312.5\" y1=\"0\" x2=\"312.5\" y2=\"500\" />\n    <line x1=\"375\" y1=\"0\" x2=\"375\" y2=\"500\" />\n    <line x1=\"437.5\" y1=\"0\" x2=\"437.5\" y2=\"500\" />\n    <line x1=\"0\" y1=\"50\" x2=\"500\" y2=\"50\" />\n    <line x1=\"0\" y1=\"100\" x2=\"500\" y2=\"100\" />\n    <line x1=\"0\" y1=\"150\" x2=\"500\" y2=\"150\" />\n    <line x1=\"0\" y1=\"200\" x2=\"500\" y2=\"200\" />\n    <line x1=\"0\" y1=\"250\" x2=\"500\" y2=\"250\" />\n    <line x1=\"0\" y1=\"300\" x2=\"500\" y2=\"300\" />\n    <line x1=\"0\" y1=\"350\" x2=\"500\" y2=\"350\" />\n    <line x1=\"0\" y1=\"400\" x2=\"500\" y2=\"400\" />\n  </g>\n  <line x1=\"0\" y1=\"250\" x2=\"500\" y2=\"250\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <line x1=\"125\" y1=\"0\" x2=\"125\" y2=\"500\" stroke=\"#fbbf24\" stroke-width=\"2.5\" />\n  <g data-math-key=\"final\" data-region-kind=\"final\">\n    <polygon points=\"125,200 125,100 375,100 375,400\" fill=\"#c084fc\" opacity=\"0.5\" />\n    <line x1=\"125\" y1=\"200\" x2=\"375\" y2=\"400\" stroke=\"#38bdf8\" stroke-width=\"2.5\" />\n    <line x1=\"125\" y1=\"100\" x2=\"375\" y2=\"100\" stroke=\"#f472b6\" stroke-width=\"2.5\" />\n    <line x1=\"125\" y1=\"100\" x2=\"125\" y2=\"200\" stroke=\"#4ade80\" stroke-width=\"2.5\" />\n    <line x1=\"375\" y1=\"100\" x2=\"375\" y2=\"400\" stroke=\"#4ade80\" stroke-width=\"2.5\" />\n  </g>\n  <circle cx=\"125\" cy=\"200\" r=\"5\" fill=\"#ffffff\" />\n  <circle cx=\"125\" cy=\"100\" r=\"5\" fill=\"#ffffff\" />\n  <circle cx=\"375\" cy=\"100\" r=\"5\" fill=\"#ffffff\" />\n  <circle cx=\"375\" cy=\"400\" r=\"5\" fill=\"#ffffff\" />\n  <text x=\"100\" y=\"210\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"14\">A</text>\n  <text x=\"100\" y=\"95\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"14\">B</text>\n  <text x=\"385\" y=\"95\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"14\">C</text>\n  <text x=\"385\" y=\"410\" fill=\"#ffffff\" font-family=\"sans-serif\" font-size=\"14\">D</text>\n</svg>",
+      "visualDescription": "Polígono cerrado sombreado en color morado, resultado de la intersección de las condiciones previas. Tiene cuatro vértices etiquetados como A, B, C y D. Las fronteras correspondientes a cada inecuación conservan el color de sus pasos anteriores.",
+      "visualMathLink": "El polígono morado incluye todos los puntos del plano que hacen verdaderas las cuatro inecuaciones simultáneamente. Los vértices blancos A, B, C y D representan las esquinas del área factible."
+    },
+    {
+      "title": "Paso 5: Cálculo analítico de los vértices",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Para completar el ejercicio con rigor analítico, vamos a resolver los pequeños sistemas de ecuaciones que se forman donde se cruzan las fronteras. Esto confirmará matemáticamente las coordenadas de las esquinas que vemos en la gráfica.",
+      "content": "<p><strong>OBJETIVO:</strong> Calcular las coordenadas exactas de los vértices del polígono resolviendo los sistemas formados por las rectas que se cortan.</p><p><strong>CÁLCULO:</strong></p><ul><li><strong>Vértice A:</strong> Intersección de $x = 0$ y $x + y = 1$.<br>Sustituyendo $x=0 \\implies 0 + y = 1 \\implies y = 1$. Punto $A(0, 1)$.</li><li><strong>Vértice B:</strong> Intersección de $x = 0$ y $y = 3$.<br>Directamente obtenemos el punto $B(0, 3)$.</li><li><strong>Vértice C:</strong> Intersección de $x = 4$ y $y = 3$.<br>Directamente obtenemos el punto $C(4, 3)$.</li><li><strong>Vértice D:</strong> Intersección de $x = 4$ y $x + y = 1$.<br>Sustituyendo $x=4 \\implies 4 + y = 1 \\implies y = -3$. Punto $D(4, -3)$.</li></ul><p><strong>COMPROBACIÓN:</strong> Evaluamos el vértice $D(4,-3)$ en todas las restricciones para confirmarlo: $4+(-3)=1 \\geq 1$ (V), $-3 \\leq 3$ (V), $4 \\geq 0$ (V), $4 \\leq 4$ (V).</p><p><strong>RESPUESTA AL APARTADO 1):</strong> La región solución es el polígono cerrado con vértices en $A(0, 1)$, $B(0, 3)$, $C(4, 3)$ y $D(4, -3)$.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Recapitulando: primero transformamos cada desigualdad en una igualdad para dibujar su frontera. Luego probamos puntos para decidir con qué zona quedarnos y finalmente intersecamos todo para hallar la región factible y sus vértices exactos.",
+      "content": "<p>Hemos seguido este método paso a paso para resolver el sistema gráfico:</p><ol><li><strong>Análisis de inecuaciones:</strong> Transformamos cada desigualdad en una igualdad lineal (recta frontera).</li><li><strong>Prueba de semiplanos:</strong> Usamos puntos de control como $(0,0)$ para determinar, analítica y visualmente, en qué lado de cada recta se cumple la inecuación original.</li><li><strong>Intersección (Región factible):</strong> Superponemos todas las condiciones y determinamos la región común, que en este caso resulta ser un polígono cerrado en los cuatro lados (cuadrilátero).</li><li><strong>Verificación algebraica:</strong> Calculamos con precisión los vértices resolviendo sistemas de dos ecuaciones lineales, confirmando las coordenadas $A(0, 1)$, $B(0, 3)$, $C(4, 3)$ y $D(4, -3)$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Intenta aplicar el mismo método a este nuevo sistema antes de comprobar el resultado.",
+      "content": "<p>Representa y resuelve gráficamente el siguiente sistema de inecuaciones. Calcula sus vértices:</p><p>$$ \\begin{cases} 2x + y \\geq 4 \\\\ y \\leq 5 \\\\ x \\geq 0 \\\\ x \\leq 3 \\end{cases} $$</p>",
+      "practiceAnswer": "<p>La región factible es un cuadrilátero cuyos vértices son:</p><ul><li>$A(0, 4)$ (corte entre $x=0$ y $2x+y=4$)</li><li>$B(0, 5)$ (corte entre $x=0$ y $y=5$)</li><li>$C(3, 5)$ (corte entre $x=3$ y $y=5$)</li><li>$D(3, -2)$ (corte entre $x=3$ y $2x+y=4$)</li></ul>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica lo aprendido a un contexto real. Imagina que controlas el aforo y horario de un evento que depende de estas mismas restricciones geométricas.",
+      "content": "<p>En una fábrica de muebles se producen sillas ($x$) y mesas ($y$). Las condiciones de fabricación exigen que la suma de sillas y mesas sea al menos de 10 unidades diarias ($x + y \\geq 10$). Por restricciones logísticas, no pueden fabricarse más de 15 mesas al día ($y \\leq 15$), y el número de sillas debe estar entre 5 y 12 inclusive ($5 \\leq x \\leq 12$).</p><p>Halla las coordenadas que definen la región de producción diaria factible.</p>",
+      "practiceAnswer": "<p>Definimos el sistema de inecuaciones basándonos en las restricciones dadas, asumiendo $x, y \\ge 0$ por ser cantidades físicas, aunque la restricción $5 \\le x \\le 12$ ya acota $x$ positivamente.</p><p>$$ \\begin{cases} x + y \\geq 10 \\\\ y \\leq 15 \\\\ x \\geq 5 \\\\ x \\leq 12 \\end{cases} $$</p><p>La región factible está delimitada por los vértices calculados al intersecarlas:</p><ul><li>$A(5, 5)$ (corte entre $x=5$ y $x+y=10$)</li><li>$B(5, 15)$ (corte entre $x=5$ y $y=15$)</li><li>$C(12, 15)$ (corte entre $x=12$ y $y=15$)</li><li>$D(12, 0)$ (corte entre $x=12$ y $y=0$, al limitar naturalmente las mesas a no negativas, $y \\geq 0$. Si se evalúa solo $x+y=10$, se cortaría en $(12, -2)$, que carece de sentido físico).</li></ul>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T09:29:02.960Z",
+    "updatedAt": "2026-08-03T09:29:02.960Z",
+    "contentHash": "5970638c156aad56",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

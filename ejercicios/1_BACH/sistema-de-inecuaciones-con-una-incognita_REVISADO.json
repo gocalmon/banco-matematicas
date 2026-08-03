@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Sistemas de inecuaciones con una incógnita",
+    "exerciseType": "Resolución de un sistema formado por una inecuación lineal y una cuadrática",
+    "protocols": [
+      "A"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Resolver una inecuación de primer grado determinando su intervalo de soluciones.",
+      "Resolver una inecuación de segundo grado analizando los ceros y signos del polinomio.",
+      "Calcular la intersección de los conjuntos solución para hallar la solución simultánea del sistema."
+    ],
+    "prerequisites": [
+      "Propiedades de las desigualdades algebraicas.",
+      "Factorización de polinomios cuadráticos.",
+      "Operaciones de intersección de intervalos reales."
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "statementHash": "9b08135144a9868f",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T07:39:46.465Z",
+    "id": "sistema-de-inecuaciones-con-una-incognita-2ad48f90"
+  },
+  "title": "Sistema de inecuaciones con una incógnita",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Nos piden resolver el sistema de inecuaciones dado, compuesto por una inecuación lineal y una inecuación cuadrática.",
+      "content": "<p>Resuelve el siguiente sistema de inecuaciones con una incógnita:</p><p>$$\\begin{cases} x + 1 \\le 0 \\\\ x^2 + x > 0 \\end{cases}$$</p>",
+      "hints": [
+        "Resuelve cada inecuación de forma totalmente independiente.",
+        "Busca los valores de x que satisfacen ambas inecuaciones simultáneamente calculando la intersección de sus soluciones."
+      ]
+    },
+    {
+      "title": "Plan de Resolución y Estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver un sistema de inecuaciones, hallaremos el conjunto solución de cada inecuación individualmente y luego buscaremos su intersección en la recta real.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar el conjunto de valores reales de $x$ que cumplen las dos desigualdades al mismo tiempo.</p><p><strong>CONEXIÓN:</strong> Un sistema de inecuaciones representa una conjunción lógica ('Y'). La solución global $S$ es la intersección $S = S_1 \\cap S_2$, donde $S_1$ es la solución de la primera inecuación y $S_2$ la de la segunda.</p><p><strong>MÉTODO:</strong></p><ol><li><strong>Primera inecuación ($x + 1 \\le 0$):</strong> Despejar $x$ directamente para obtener el intervalo $S_1$.</li><li><strong>Segunda inecuación ($x^2 + x > 0$):</strong> Factorizar el polinomio cuadrático, hallar sus raíces y analizar el signo en cada intervalo para obtener $S_2$.</li><li><strong>Intersección ($S_1 \\cap S_2$):</strong> Representar $S_1$ y $S_2$ en la recta real para identificar la región superpuesta.</li></ol><p><strong>INTERPRETACIÓN:</strong> En aplicaciones reales, este tipo de sistemas modela restricciones simultáneas (por ejemplo, límites de capacidad y umbrales mínimos de rentabilidad).</p>"
+    },
+    {
+      "title": "Resolución de la Primera Inecuación",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Despejamos la variable x en la primera inecuación restando uno a ambos lados de la desigualdad.",
+      "content": "<p><strong>OBJETIVO:</strong> Hallar el conjunto solución $S_1$ de la inecuación lineal $x + 1 \\le 0$.</p><p><strong>CONEXIÓN:</strong> Es el primer componente de las dos restricciones del sistema.</p><p><strong>CÁLCULO:</strong></p><p>$$x + 1 \\le 0 \\implies x \\le -1$$</p><p><strong>RESULTADO:</strong> El conjunto solución de la primera inecuación es el intervalo semiinfinito cerrado por la derecha:</p><p>$$S_1 = (-\\infty, -1]$$</p><p><strong>INTERPRETACIÓN:</strong> Todos los números menores o iguales a $-1$ satisfacen la primera desigualdad. El punto $x = -1$ está incluido (círculo relleno).</p>",
+      "theory": "<p>Al sumar o restar un mismo número real a ambos lados de una desigualdad, el sentido de la inecuación se mantiene inalterado.</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 200\" preserveAspectRatio=\"xMidYMid meet\"><rect width=\"100%\" height=\"100%\" fill=\"#0f172a\"/><g data-math-key=\"x\"><line x1=\"50\" y1=\"100\" x2=\"750\" y2=\"100\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"50\" y1=\"100\" x2=\"350\" y2=\"100\" stroke=\"#38bdf8\" stroke-width=\"8\"/><polygon points=\"50,93 35,100 50,107\" fill=\"#38bdf8\"/><circle cx=\"350\" cy=\"100\" r=\"7\" fill=\"#38bdf8\"/><text x=\"350\" y=\"140\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">-1</text><line x1=\"500\" y1=\"90\" x2=\"500\" y2=\"110\" stroke=\"#fbbf24\" stroke-width=\"2\"/><text x=\"500\" y=\"140\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">0</text><text x=\"200\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">S₁ = ( -∞, -1 ]</text></g></svg>",
+      "visualDescription": "Recta numérica con el origen 0 marcado en amarillo. Desde el punto -1 hacia la izquierda, el rayo está remarcado en color azul grueso terminando en un círculo relleno en -1.",
+      "visualMathLink": "El rayo azul representa gráficamente la solución S1 = (-infinito, -1], incluyendo explícitamente el valor -1."
+    },
+    {
+      "title": "Resolución de la Segunda Inecuación",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Factorizamos el polinomio cuadrático de la segunda inecuación y estudiamos sus signos.",
+      "content": "<p><strong>OBJETIVO:</strong> Hallar el conjunto solución $S_2$ de la inecuación cuadrática $x^2 + x > 0$.</p><p><strong>CONEXIÓN:</strong> Es la segunda restricción que debe cumplirse en el sistema.</p><p><strong>CÁLCULO:</strong></p><p>1. Factorizamos extrayendo factor común $x$:</p><p>$$x^2 + x = x(x + 1) > 0$$</p><p>2. Hallamos las raíces de la ecuación asociada $x(x+1) = 0$, que son $x = 0$ y $x = -1$.</p><p>3. Dividimos la recta real en tres intervalos y evaluamos el signo de $x(x+1)$:</p><ul><li>$x \\in (-\\infty, -1)$: por ejemplo $x = -2 \\implies (-2)(-1) = 2 > 0$ <strong>(+)</strong></li><li>$x \\in (-1, 0)$: por ejemplo $x = -0.5 \\implies (-0.5)(0.5) = -0.25 < 0$ <strong>(-)</strong></li><li>$x \\in (0, +\\infty)$: por ejemplo $x = 1 \\implies (1)(2) = 2 > 0$ <strong>(+)</strong></li></ul><p><strong>RESULTADO:</strong> Como buscamos valores estrictamente mayores que $0$ ($>0$):</p><p>$$S_2 = (-\\infty, -1) \\cup (0, +\\infty)$$</p><p><strong>INTERPRETACIÓN:</strong> Los puntos $x = -1$ y $x = 0$ están excluidos (círculos abiertos) pues hacen que el producto sea igual a $0$, no estrictamente mayor.</p>",
+      "warning": "<p>¡Cuidado! No olvides que la desigualdad es estricta ($>0$). Por tanto, los valores $x = -1$ y $x = 0$ no forman parte de $S_2$.</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 200\" preserveAspectRatio=\"xMidYMid meet\"><rect width=\"100%\" height=\"100%\" fill=\"#0f172a\"/><g data-math-key=\"x\"><line x1=\"50\" y1=\"100\" x2=\"750\" y2=\"100\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"50\" y1=\"100\" x2=\"350\" y2=\"100\" stroke=\"#f472b6\" stroke-width=\"8\"/><polygon points=\"50,93 35,100 50,107\" fill=\"#f472b6\"/><circle cx=\"350\" cy=\"100\" r=\"7\" fill=\"#0f172a\" stroke=\"#f472b6\" stroke-width=\"3\"/><text x=\"350\" y=\"140\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">-1</text><line x1=\"500\" y1=\"100\" x2=\"750\" y2=\"100\" stroke=\"#f472b6\" stroke-width=\"8\"/><polygon points=\"750,93 765,100 750,107\" fill=\"#f472b6\"/><circle cx=\"500\" cy=\"100\" r=\"7\" fill=\"#0f172a\" stroke=\"#f472b6\" stroke-width=\"3\"/><text x=\"500\" y=\"140\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">0</text><text x=\"200\" y=\"65\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">( -∞, -1 )</text><text x=\"625\" y=\"65\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">( 0, +∞ )</text></g></svg>",
+      "visualDescription": "Recta numérica con dos rayos en color rosa. Un rayo va desde -1 hacia la izquierda con un círculo abierto en -1. El otro rayo va desde 0 hacia la derecha con un círculo abierto en 0.",
+      "visualMathLink": "Los rayos rosas muestran gráficamente el conjunto S2 = (-infinito, -1) U (0, +infinito), con extremos abiertos en -1 y 0."
+    },
+    {
+      "title": "Intersección de las Soluciones",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Superponemos las soluciones S1 y S2 en la recta numérica para hallar su intersección común.",
+      "content": "<p><strong>OBJETIVO:</strong> Calcular la intersección $S = S_1 \\cap S_2$ para determinar la solución final del sistema.</p><p><strong>CONEXIÓN:</strong> Comparando $S_1 = (-\\infty, -1]$ y $S_2 = (-\\infty, -1) \\cup (0, +\\infty)$, evaluamos qué valores cumplen ambas condiciones simultáneamente.</p><p><strong>CÁLCULO:</strong></p><ul><li>Para $x < -1$: $x$ pertenece tanto a $S_1$ como a $S_2$.</li><li>Para $x = -1$: $-1 \\in S_1$ (porque $-1 + 1 = 0 \\le 0$), pero $-1 \\notin S_2$ (porque $(-1)^2 + (-1) = 0 \\not> 0$). Por lo tanto, $-1 \\notin S_1 \\cap S_2$.</li><li>Para $x \\in (-1, 0]$: no pertenece ni a $S_1$ ni a $S_2$.</li><li>Para $x > 0$: pertenece a $S_2$ pero no a $S_1$.</li></ul><p><strong>RESULTADO:</strong> La intersección exacta de ambos conjuntos es:</p><p>$$S = S_1 \\cap S_2 = (-\\infty, -1)$$</p><p><strong>INTERPRETACIÓN:</strong> La solución consiste en todos los números reales estrictamente menores que $-1$. El valor $x = -1$ queda excluido porque no satisface la segunda inecuación.</p><p><strong>RESPUESTA AL APARTADO:</strong> La solución del sistema de inecuaciones es $x \\in (-\\infty, -1)$.</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 250\" preserveAspectRatio=\"xMidYMid meet\"><rect width=\"100%\" height=\"100%\" fill=\"#0f172a\"/><g data-math-key=\"x\"><line x1=\"50\" y1=\"130\" x2=\"750\" y2=\"130\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"50\" y1=\"80\" x2=\"350\" y2=\"80\" stroke=\"#38bdf8\" stroke-width=\"6\"/><circle cx=\"350\" cy=\"80\" r=\"5\" fill=\"#38bdf8\"/><text x=\"370\" y=\"85\" font-size=\"14\" fill=\"#f8fafc\" font-family=\"sans-serif\">S₁</text><line x1=\"50\" y1=\"105\" x2=\"350\" y2=\"105\" stroke=\"#f472b6\" stroke-width=\"6\"/><circle cx=\"350\" cy=\"105\" r=\"5\" fill=\"#0f172a\" stroke=\"#f472b6\" stroke-width=\"2\"/><line x1=\"500\" y1=\"105\" x2=\"750\" y2=\"105\" stroke=\"#f472b6\" stroke-width=\"6\"/><circle cx=\"500\" cy=\"105\" r=\"5\" fill=\"#0f172a\" stroke=\"#f472b6\" stroke-width=\"2\"/><text x=\"760\" y=\"110\" font-size=\"14\" fill=\"#f8fafc\" font-family=\"sans-serif\">S₂</text><line x1=\"50\" y1=\"150\" x2=\"350\" y2=\"150\" stroke=\"#4ade80\" stroke-width=\"8\"/><polygon points=\"50,143 35,150 50,157\" fill=\"#4ade80\"/><circle cx=\"350\" cy=\"150\" r=\"7\" fill=\"#0f172a\" stroke=\"#4ade80\" stroke-width=\"3\"/><text x=\"350\" y=\"190\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">-1</text><line x1=\"500\" y1=\"130\" x2=\"500\" y2=\"160\" stroke=\"#fbbf24\" stroke-width=\"2\" stroke-dasharray=\"4\"/><text x=\"500\" y=\"190\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">0</text><text x=\"200\" y=\"220\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">S = S₁ ∩ S₂ = ( -∞, -1 )</text></g></svg>",
+      "visualDescription": "Grafico comparativo con tres líneas horizontales. Arriba se muestra S1 en azul que incluye el punto -1. En el medio se muestra S2 en rosa con circulo abierto en -1. Abajo se dibuja en verde la intersección final S que va desde menos infinito hasta -1 con círculo abierto en -1.",
+      "visualMathLink": "La región sombreada en verde abajo representa los valores comunes a S1 y S2, dejando abierto el extremo -1 porque solo pertenecía a S1 pero no a S2."
+    },
+    {
+      "title": "Comprobación Analítica",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Sustituimos valores dentro y fuera del conjunto solución en el sistema original para verificar la coherencia de la respuesta.",
+      "content": "<p><strong>OBJETIVO:</strong> Verificar experimentalmente que los puntos elegidos satisfacen o no el sistema original.</p><p><strong>CONEXIÓN:</strong> Evaluamos el sistema $\\begin{cases} x + 1 \\le 0 \\\\ x^2 + x > 0 \\end{cases}$ en tres puntos de prueba estratégicos.</p><p><strong>COMPROBACIÓN:</strong></p><ul><li><strong>Valor $x = -2 \\in (-\\infty, -1)$:</strong><br/>Inecuación 1: $-2 + 1 = -1 \\le 0 \\quad \\checkmark$<br/>Inecuación 2: $(-2)^2 + (-2) = 4 - 2 = 2 > 0 \\quad \\checkmark$<br/><em>Cumple ambas $\\implies x = -2$ pertenece a la solución.</em></li><li><strong>Valor frontera $x = -1 \\notin S$:</strong><br/>Inecuación 1: $-1 + 1 = 0 \\le 0 \\quad \\checkmark$<br/>Inecuación 2: $(-1)^2 + (-1) = 1 - 1 = 0 \\not> 0 \\quad \\mathbf{\\times}$<br/><em>Falla la segunda $\\implies x = -1$ debe quedar excluido de la solución.</em></li><li><strong>Valor $x = 1 \\notin S$:</strong><br/>Inecuación 1: $1 + 1 = 2 \\not\\le 0 \\quad \\mathbf{\\times}$<br/><em>Falla la primera $\\implies x = 1$ no pertenece a la solución.</em></li></ul><p><strong>INTERPRETACIÓN:</strong> Las verificaciones analíticas confirman que el único intervalo válido para ambas desigualdades a la vez es $(-\\infty, -1)$.</p>",
+      "checkpoint": {
+        "question": "¿Qué ocurre si evaluamos el punto x = 0 en el sistema original?",
+        "options": [
+          {
+            "text": "Satisface ambas inecuaciones y por lo tanto pertenece a la solución.",
+            "correct": false,
+            "feedback": "0 + 1 = 1 no es menor ni igual que 0, por lo que no cumple la primera inecuación."
+          },
+          {
+            "text": "No cumple la primera inecuación (0+1 > 0) ni la segunda (0² + 0 = 0 no es > 0).",
+            "correct": true,
+            "feedback": "¡Correcto! x = 0 no satisface ninguna de las dos desigualdades del sistema."
+          },
+          {
+            "text": "Cumple únicamente la segunda inecuación.",
+            "correct": false,
+            "feedback": "0² + 0 = 0, lo cual no es strictly mayor que 0."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos el procedimiento completo empleado para resolver este sistema de inecuaciones.",
+      "content": "<p><strong>PROCEDIMIENTO DE RESOLUCIÓN PASO A PASO:</strong></p><ol><li><strong>Resolución de la inecuación 1:</strong><br/>$$x + 1 \\le 0 \\implies S_1 = (-\\infty, -1]$$</li><li><strong>Resolución de la inecuación 2:</strong><br/>$$x^2 + x > 0 \\implies x(x+1) > 0 \\implies S_2 = (-\\infty, -1) \\cup (0, +\\infty)$$</li><li><strong>Intersección de soluciones:</strong><br/>Calculamos los puntos comunes $S = S_1 \\cap S_2$.<br/>Como $-1 \\in S_1$ pero $-1 \\notin S_2$, el extremo $-1$ se excluye en la intersección.</li></ol><p><strong>RESULTADO FINAL:</strong> $$x \\in (-\\infty, -1)$$</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te proponemos un sistema idéntico en estructura para que apliques exactamente los mismos pasos.",
+      "content": "<p>Resuelve el siguiente sistema de inecuaciones con una incógnita:</p><p>$$\\begin{cases} x - 2 \\ge 0 \\\\ x^2 - 3x > 0 \\end{cases}$$</p><p><em>Inténtalo por ti mismo resolviendo cada inecuación e intersectando los resultados antes de verificar.</em></p>",
+      "practiceAnswer": "<p><strong>Solución:</strong> $x \\in (3, +\\infty)$.</p><p><strong>Condiciones y detalles:</strong> La inecuación 1 da $S_1 = [2, +\\infty)$. La inecuación 2 da $x(x-3) > 0 \\implies S_2 = (-\\infty, 0) \\cup (3, +\\infty)$. La intersección es $S = S_1 \\cap S_2 = (3, +\\infty)$ con extremo abierto en 3.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica el concepto de intersección de condiciones en la determinación del dominio de una función con raíz y fracción.",
+      "content": "<p>Determina el dominio de definición de la función real de variable real dada por:</p><p>$$f(x) = \\frac{\\sqrt{-x - 1}}{\\sqrt{x^2 + x}}$$</p><p><em>Aplica las condiciones de existencia de los radicales y la restricción del denominador.</em></p>",
+      "practiceAnswer": "<p><strong>Solución:</strong> $\\text{Dom}(f) = (-\\infty, -1)$.</p><p><strong>Condiciones:</strong> Para el numerador se requiere $-x - 1 \\ge 0 \\implies x + 1 \\le 0$. Para el denominador dentro de la raíz y al no poder ser cero se requiere $x^2 + x > 0$. El dominio es exactamente la intersección de ambas condiciones, dando $(-\\infty, -1)$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T07:39:56.828Z",
+    "updatedAt": "2026-08-03T07:39:56.828Z",
+    "contentHash": "9c5a6c042d7e78aa",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones Exponenciales",
+    "exerciseType": "Resolución de ecuación exponencial por igualación de bases",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 10,
+    "learningObjectives": [
+      "Descomponer términos numéricos para reducir ecuaciones exponenciales a una base común.",
+      "Aplicar la propiedad de inyectividad de la función exponencial para igualar exponentes.",
+      "Resolver ecuaciones exponenciales y verificar analíticamente la solución hallada."
+    ],
+    "prerequisites": [
+      "Propiedades de las potencias.",
+      "Descomposición en factores primos.",
+      "Resolución de ecuaciones de primer grado."
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "statementHash": "a21f59d8fb4bc2ea",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T15:47:30.516Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "resolucion-paso-a-paso-ecuacion-exponencial-308c43f8"
+  },
+  "title": "Resolución paso a paso: Ecuación Exponencial",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leemos el enunciado del ejercicio. Se nos presenta una ecuación exponencial donde la incógnita equis se encuentra en el exponente.",
+      "content": "<p>Resuelve la siguiente ecuación exponencial:</p>$$6^{12-3x} = 216$$"
+    },
+    {
+      "title": "Estrategia y plan de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver esta ecuación exponencial, intentaremos expresar ambos miembros con la misma base. Si logramos igualar las bases, podremos igualar directamente los exponentes.",
+      "theory": "<strong>Igualdad de potencias de la misma base:</strong> Para cualquier base $a > 0, a \\neq 1$, se cumple que $a^{f(x)} = a^{g(x)} \\iff f(x) = g(x)$.",
+      "content": "<p><strong>OBJETIVO:</strong> Definir la estrategia algebraica para despejar la incógnita $x$.</p><p><strong>CONEXIÓN:</strong> Partimos de la ecuación dada $6^{12-3x} = 216$.</p><p><strong>DATOS:</strong> El miembro izquierdo tiene base 6 y exponente $12-3x$. El miembro derecho es el número entero 216.</p><p><strong>MÉTODO:</strong> 1) Descomponer el número 216 en factores primos para expresarlo como una potencia de base 6. 2) Igualar los exponentes al tener la misma base. 3) Resolver la ecuación de primer grado resultante. 4) Verificar la solución en la ecuación original.</p><p><strong>INTERPRETACIÓN:</strong> Las ecuaciones exponenciales con bases expresables en potencias comunes son fundamentales en modelos de desintegración radiactiva, crecimiento poblacional y cálculo de interés compuesto.</p>",
+      "checkpoint": {
+        "text": "¿Cuál es la descomposición en factores primos de 216 en términos de base 6?",
+        "options": [
+          {
+            "text": "216 = 6³",
+            "correct": true,
+            "feedback": "¡Exacto! 6 · 6 · 6 = 36 · 6 = 216."
+          },
+          {
+            "text": "216 = 6⁴",
+            "correct": false,
+            "feedback": "Incorrecto. 6⁴ = 1296."
+          },
+          {
+            "text": "216 = 6²",
+            "correct": false,
+            "feedback": "Incorrecto. 6² = 36."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Análisis del dominio y descomposición de la base",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Analizamos el dominio de definición de la función exponencial y expresamos el término constante como potencia de base seis.",
+      "content": "<p><strong>OBJETIVO:</strong> Confirmar el dominio de la ecuación y descomponer el término $216$.</p><p><strong>CONEXIÓN:</strong> La función exponencial $y = a^z$ está definida para todo exponente real $z \\in \\mathbb{R}$.</p><p><strong>CÁLCULO:</strong></p><p>1. Dominio de la ecuación: $\\text{Dom}(x) = \\mathbb{R}$, no existen restricciones ni valores excluidos.</p><p>2. Descomposición de $216$:</p>$$216 = 6 \\times 6 \\times 6 = 6^3$$<p>Reescribimos la ecuación original:</p>$$6^{12-3x} = 6^3$$<p><strong>INTERPRETACIÓN:</strong> Al lograr la misma base en ambos lados de la igualdad, la propiedad inyectiva de la función exponencial nos permite trabajar únicamente con los exponentes.</p>"
+    },
+    {
+      "title": "Igualación de exponentes y resolución lineal",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Igualamos los exponentes de ambas potencias y resolvemos la ecuación lineal de primer grado resultante.",
+      "warning": "<strong>¡Atención!</strong> Al dividir por un número negativo en una ecuación lineal, recuerda conservar el signo en la división: $\\frac{-9}{-3} = +3$.",
+      "content": "<p><strong>OBJETIVO:</strong> Despejar la incógnita $x$ mediante la resolución de la ecuación de primer grado.</p><p><strong>CONEXIÓN:</strong> A partir de la ecuación $6^{12-3x} = 6^3$, igualamos los exponentes.</p><p><strong>CÁLCULO:</strong></p>$$12 - 3x = 3$$<p>Pasamos el término constante $12$ restando al lado derecho:</p>$$-3x = 3 - 12$$$$-3x = -9$$<p>Dividimos ambos miembros entre $-3$:</p>$$x = \\frac{-9}{-3} \\implies x = 3$$<p><strong>RESULTADO:</strong> El valor hallado para la variable es $x = 3$.</p><p><strong>RESPUESTA AL APARTADO a):</strong> La solución de la ecuación exponencial es $x = 3$.</p>"
+    },
+    {
+      "title": "Verificación analítica de la solución",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Sustituimos equis igual a tres en la ecuación inicial para comprobar que se satisface la igualdad exactamente.",
+      "content": "<p><strong>OBJETIVO:</strong> Demostrar la validez de la solución obtenida.</p><p><strong>CONEXIÓN:</strong> Sustituimos $x = 3$ en la expresión original $6^{12-3x} = 216$.</p><p><strong>COMPROBACIÓN:</strong></p>$$\\text{Miembro izquierdo: } 6^{12 - 3(3)} = 6^{12 - 9} = 6^3 = 216$$$$\\text{Miembro derecho: } 216$$<p>Como $216 = 216$, la igualdad se cumple de forma exacta.</p><p><strong>INTERPRETACIÓN:</strong> Queda verificado rigurosamente que $x = 3$ es la única solución real de la ecuación exponencial.</p>"
+    },
+    {
+      "title": "Representación gráfica de la función y la solución",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Visualizamos la función exponencial f de equis igual a seis elevado a doce menos tres equis junto con la recta constante i igual a doscientos dieciséis. El punto de intersección confirma que la solución es equis igual a tres.",
+      "visualVerificationMode": "manual",
+      "visual": "<svg viewBox='0 0 500 400' width='100%' height='100%' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><rect width='500' height='400' fill='#0f172a'/><line x1='50' y1='350' x2='450' y2='350' stroke='#fbbf24' stroke-width='2.5'/><line x1='50' y1='350' x2='50' y2='50' stroke='#fbbf24' stroke-width='2.5'/><polygon points='445,345 455,350 445,355' fill='#fbbf24'/><polygon points='45,55 50,45 55,55' fill='#fbbf24'/><text x='460' y='355' fill='#fbbf24' font-size='16' font-weight='bold'>x</text><text x='50' y='35' fill='#fbbf24' font-size='16' font-weight='bold'>y</text><line x1='125' y1='345' x2='125' y2='355' stroke='#94a3b8' stroke-width='1.5'/><text x='125' y='375' fill='#94a3b8' font-size='12' text-anchor='middle'>1</text><line x1='200' y1='345' x2='200' y2='355' stroke='#94a3b8' stroke-width='1.5'/><text x='200' y='375' fill='#94a3b8' font-size='12' text-anchor='middle'>2</text><line x1='275' y1='345' x2='275' y2='355' stroke='#38bdf8' stroke-width='2'/><text x='275' y='375' fill='#38bdf8' font-size='14' font-weight='bold' text-anchor='middle'>3</text><line x1='350' y1='345' x2='350' y2='355' stroke='#94a3b8' stroke-width='1.5'/><text x='350' y='375' fill='#94a3b8' font-size='12' text-anchor='middle'>4</text><line x1='45' y1='150' x2='55' y2='150' stroke='#f472b6' stroke-width='2'/><text x='35' y='155' fill='#f472b6' font-size='14' font-weight='bold' text-anchor='end'>216</text><line x1='50' y1='150' x2='430' y2='150' stroke='#f472b6' stroke-width='2' stroke-dasharray='5,5'/><text x='360' y='140' fill='#f472b6' font-size='13' font-weight='bold'>y = 216</text><path d='M 180,60 Q 240,110 275,150 Q 310,240 380,340' fill='none' stroke='#38bdf8' stroke-width='3'/><text x='110' y='90' fill='#38bdf8' font-size='14' font-weight='bold'>y = 6^(12-3x)</text><line x1='275' y1='350' x2='275' y2='150' stroke='#fbbf24' stroke-width='1.5' stroke-dasharray='4'/><circle cx='275' cy='150' r='6' fill='#fbbf24' stroke='#ffffff' stroke-width='2'/><text x='285' y='140' fill='#fbbf24' font-size='14' font-weight='bold' text-anchor='start'>P(3, 216)</text></svg>",
+      "visualDescription": "Gráfico cartesiano con el eje x etiquetado de 0 a 5 y el eje y mostrando el valor 216. Muestra la función exponencial decreciente en color azul y=6^(12-3x) y la recta horizontal rosada y=216. Ambas curvas se intersectan en el punto amarillo P de coordenadas x=3 e y=216.",
+      "visualMathLink": "La curva azul decreciente representa la expresión 6^(12-3x), mientras que la línea discontinua rosada marca el valor constante 216. La coincidencia exacta en x=3 confirma analítica y gráficamente la solución única.",
+      "content": "<p><strong>OBJETIVO:</strong> Interpretar la solución $x = 3$ desde el punto de vista gráfico de corte de funciones.</p><p><strong>CONEXIÓN:</strong> Representamos $f(x) = 6^{12-3x}$ y la recta constante $g(x) = 216$.</p><p><strong>INTERPRETACIÓN:</strong></p><ul><li>Dado que la base es $6$ y el coeficiente de $x$ es $-3 < 0$, la función $f(x)$ es strictly decreciente en todo $\\mathbb{R}$.</li><li>Una función estrictamente decreciente corta a una recta horizontal a lo sumo en un punto.</li><li>El punto de intersección $P(3, 216)$ demuestra la existencia y unicidad de la solución.</li></ul>"
+    },
+    {
+      "title": "Interpretación matemática del resultado",
+      "layout": "centered",
+      "phase": "interpretar",
+      "narration": "Concluimos analizando la inyectividad de la función exponencial y la unicidad de la solución hallada.",
+      "content": "<p><strong>OBJETIVO:</strong> Consolidar el significado del resultado dentro de la teoría de funciones exponenciales.</p><p><strong>CONEXIÓN:</strong> Hemos hallado la solución analítica $x = 3$ y su representación gráfica.</p><p><strong>RESULTADO:</strong></p><ul><li><strong>Unicidad:</strong> Al ser la base $6 > 1$ y el exponente una función lineal no constante, la función $f(x) = 6^{12-3x}$ es biyectiva de $\\mathbb{R}$ en $(0, +\\infty)$, lo que garantiza que la solución $x = 3$ es <strong>única</strong>.</li><li><strong>Coherencia de unidades:</strong> El valor $x = 3$ pertenece al dominio real de definición de las potencias sin generar indeterminación alguna.</li></ul>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos el método de igualación de bases para resolver ecuaciones exponenciales.",
+      "content": "<p><strong>HOJA DE RUTA PARA ECUACIONES EXPONENCIALES ELEMENTALES:</strong></p><ol><li><strong>Identificar la base:</strong> Reconocer la base exponencial (en este caso, 6).</li><li><strong>Factorizar la constante:</strong> Descomponer el número del otro miembro ($216 = 6^3$).</li><li><strong>Igualar exponentes:</strong> Aplicar la propiedad $a^{u(x)} = a^k \\implies u(x) = k$.</li><li><strong>Resolver la ecuación lineal:</strong> Despejar la variable $x$ ($12 - 3x = 3 \\implies x = 3$).</li><li><strong>Comprobar:</strong> Sustituir el resultado en la ecuación inicial para confirmar el valor.</li></ol><p><strong>Resultado final:</strong> $x = 3$.</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Practica el mismo procedimiento de igualación de bases con la siguiente ecuación exponencial.",
+      "content": "<p>Resuelve la siguiente ecuación exponencial:</p>$$5^{14-4x} = 125$$<p><em>Sugerencia: Expresa 125 como potencia de base 5 e iguala los exponentes. Inténtalo antes de mirar la solución.</em></p>",
+      "practiceAnswer": "Descomposición: 125 = 5³. Ecuación equivalente: 5^(14-4x) = 5³. Igualando exponentes: 14 - 4x = 3 => -4x = 3 - 14 => -4x = -11 => x = 11/4. Solución única: x = 11/4 (o 2.75)."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica la propiedad de igualación de bases en un contexto donde ambas bases deben transformarse a una base común.",
+      "content": "<p>Resuelve la siguiente ecuación exponencial descomponiendo ambos miembros a una base común:</p>$$4^{2x-1} = 32$$<p><em>Sugerencia: Expresa 4 y 32 como potencias de base 2. Inténtalo por ti mismo antes de ver la respuesta final.</em></p>",
+      "practiceAnswer": "Bases en términos de 2: 4 = 2² y 32 = 2⁵. Sustituyendo: (2²)^(2x-1) = 2⁵ => 2^(4x-2) = 2⁵. Igualando exponentes: 4x - 2 = 5 => 4x = 7 => x = 7/4. Solución única: x = 7/4 (o 1.75)."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T15:49:33.412Z",
+    "updatedAt": "2026-08-03T15:49:33.412Z",
+    "contentHash": "a0c280611c2cae83",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "teacher_override",
+    "override": {
+      "confirmed": true,
+      "justification": "Esta perfectamente resuelto",
+      "automaticErrors": [
+        {
+          "title": "Puntos de control",
+          "detail": "Revisa las diapositivas: 2."
+        }
+      ],
+      "approvedAt": "2026-08-03T15:49:33.412Z"
+    }
+  }
+}

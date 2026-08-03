@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones bicuadradas y racionales",
+    "exerciseType": "Resolución de ecuación racional bicuadrada",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Resolver ecuaciones racionales mediante cambio de variable",
+      "Analizar la existencia de soluciones reales e imaginarias",
+      "Interpretar gráficamente las soluciones como la intersección de dos funciones"
+    ],
+    "prerequisites": [
+      "Ecuaciones de segundo grado",
+      "Propiedades de potencias y radicales",
+      "Concepto de función e intersección en el plano cartesiano"
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "statementHash": "6c2ea6f5d4aaf703",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T09:41:48.080Z",
+    "id": "resolucion-completa-de-la-ecuacion-racional-x-12-x-1-ae4b862d"
+  },
+  "title": "Resolución completa de la ecuación racional x² = 12 / (x² + 1)",
+  "slides": [
+    {
+      "title": "Enunciado del ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Presentamos el enunciado original de la ecuación propuesta para su resolución analítica y representación gráfica.",
+      "content": "<p>Resuelve la siguiente ecuación en el conjunto de los números reales y complejos:</p><p>$$x^2 = \\frac{12}{x^2 + 1}$$</p>",
+      "hints": [
+        "Observa la presencia del término x al cuadrado tanto en el miembro izquierdo como en el denominador del miembro derecho."
+      ]
+    },
+    {
+      "title": "Análisis inicial y estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Analizamos el dominio de definición y planificamos la transformación a una ecuación bicuadrada mediante un cambio de variable.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar el dominio de la expresión y trazar una estrategia algebraicamente rigurosa para resolver la ecuación.</p><p><strong>CONEXIÓN:</strong> Partimos de la igualdad $x^2 = \\frac{12}{x^2 + 1}$.</p><p><strong>DATOS:</strong> La expresión tiene como denominador $x^2 + 1$. Dado que $x^2 \\ge 0$ para todo $x \\in \\mathbb{R}$, tenemos $x^2 + 1 \\ge 1 > 0$, de modo que el denominador jamás se anula en los números reales y el dominio es todo $\\mathbb{R}$.</p><p><strong>INTERPRETACIÓN:</strong> Al multiplicar ambos miembros por $(x^2 + 1)$, obtendremos una ecuación polinómica de cuarto grado bicuadrada. Mediante el cambio de variable $u = x^2$, transformaremos la ecuación en una de segundo grado reducible.</p>",
+      "theory": "<p><strong>Ecuaciones Bicuadradas:</strong> Una ecuación de la forma $a x^4 + b x^2 + c = 0$ se reduce a una cuadrática $a u^2 + b u + c = 0$ mediante la sustitución $u = x^2$.</p>"
+    },
+    {
+      "title": "Paso 1: Transformación en ecuación polinómica",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Multiplicamos ambos miembros por el denominador para eliminar la fracción y reordenar la ecuación a su forma canónica.",
+      "content": "<p><strong>OBJETIVO:</strong> Eliminar la fracción y obtener la forma canónica de la ecuación polinómica.</p><p><strong>CONEXIÓN:</strong> Aplicamos la propiedad distributiva a la igualdad original $x^2 = \\frac{12}{x^2 + 1}$.</p><p><strong>CÁLCULO:</strong> Multiplicamos ambos miembros por $(x^2 + 1)$ (procedimiento válido al ser $x^2 + 1 \\neq 0$):<br/>$$x^2 (x^2 + 1) = 12$$<br/>$$x^4 + x^2 = 12$$<br/>Restamos $12$ en ambos miembros para igualar a cero:<br/>$$x^4 + x^2 - 12 = 0$$</p><p><strong>INTERPRETACIÓN:</strong> Hemos obtenido una ecuación polinómica de cuarto grado que solo contiene potencias pares de $x$, lo que confirma que es una ecuación bicuadrada.</p>",
+      "warning": "<p><strong>Atención:</strong> Multiplicar por una expresión que contiene la variable solo es válido si garantizamos previamente que no puede ser nula. En este caso $x^2 + 1 \\ge 1$, evitando la introducción de soluciones extrañas.</p>"
+    },
+    {
+      "title": "Paso 2: Cambio de variable y resolución cuadrática",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Sustituimos equis al cuadrado por u para resolver la ecuación cuadrática resultante mediante la fórmula general.",
+      "content": "<p><strong>OBJETIVO:</strong> Resolver la ecuación de segundo grado asociada al cambio de variable $u = x^2$.</p><p><strong>CONEXIÓN:</strong> Tomamos la ecuación bicuadrada $x^4 + x^2 - 12 = 0$ obtenida en el paso anterior.</p><p><strong>CÁLCULO:</strong> Definimos $u = x^2$, con lo cual $x^4 = u^2$. La ecuación se transforma en:<br/>$$u^2 + u - 12 = 0$$<br/>Aplicamos la fórmula general para ecuaciones de segundo grado ($a=1, b=1, c=-12$):<br/>$$u = \\frac{-1 \\pm \\sqrt{1^2 - 4(1)(-12)}}{2(1)} = \\frac{-1 \\pm \\sqrt{1 + 48}}{2} = \\frac{-1 \\pm \\sqrt{49}}{2} = \\frac{-1 \\pm 7}{2}$$<br/>Obtenemos las dos soluciones para $u$:<br/>$$u_1 = \\frac{-1 + 7}{2} = \\frac{6}{2} = 3$$<br/>$$u_2 = \\frac{-1 - 7}{2} = \\frac{-8}{2} = -4$$</p><p><strong>INTERPRETACIÓN:</strong> Los valores auxiliares son $u_1 = 3$ y $u_2 = -4$. A continuación, debemos deshacer la sustitución $u = x^2$.</p>",
+      "checkpoint": {
+        "question": "¿Qué implicación tiene la solución u = -4 para los valores reales de x?",
+        "options": [
+          {
+            "text": "No genera soluciones reales, ya que el cuadrado de cualquier número real es mayor o igual a cero.",
+            "correct": true,
+            "feedback": "¡Correcto! En el cuerpo de los números reales R, x² ≥ 0. Por tanto, x² = -4 no aporta soluciones reales (genera dos soluciones complejas imaginarias puras ±2i)."
+          },
+          {
+            "text": "Indica que se ha cometido un error aritmético al aplicar la fórmula cuadrática.",
+            "correct": false,
+            "feedback": "Incorrecto. Obtener un valor negativo para u es perfectamente algebraico y correcto en el proceso de resolución."
+          },
+          {
+            "text": "Proporciona las soluciones reales x = 2 y x = -2.",
+            "correct": false,
+            "feedback": "Incorrecto. Si x² = -4, entonces x = ±√(-4) = ±2i, que son números imaginarios puros, no reales."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Obtención de las soluciones para x",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Deshacemos el cambio de variable para determinar los valores exactos de equis en los números reales y complejos.",
+      "content": "<p><strong>OBJETIVO:</strong> Deshacer el cambio de variable $u = x^2$ para hallar todas las raíces de la ecuación original.</p><p><strong>CONEXIÓN:</strong> Tomamos las soluciones auxiliares $u_1 = 3$ y $u_2 = -4$.</p><p><strong>CÁLCULO:</strong><br/>1) Para $u_1 = 3$:<br/>$$x^2 = 3 \\implies x = \\pm \\sqrt{3}$$<br/>Obtenemos dos soluciones reales exactas: $x_1 = \\sqrt{3} \\approx 1{,}732$ y $x_2 = -\\sqrt{3} \\approx -1{,}732$.<br/><br/>2) Para $u_2 = -4$:<br/>$$x^2 = -4 \\implies x = \\pm \\sqrt{-4} = \\pm 2i$$<br/>Obtenemos dos soluciones complejas imaginarias puras: $x_3 = 2i$ y $x_4 = -2i$.</p><p><strong>RESULTADO:</strong> En el conjunto de los números reales $\\mathbb{R}$, las soluciones son $x = \\sqrt{3}$ y $x = -\\sqrt{3}$. En el conjunto de los números complejos $\\mathbb{C}$, el conjunto solución es $\\{-\\sqrt{3}, \\sqrt{3}, -2i, 2i\\}$.</p>",
+      "theory": "<p><strong>Teorema Fundamental del Álgebra:</strong> Un polinomio de grado 4 posee exactamente 4 raíces en el cuerpo complejo $\\mathbb{C}$, contadas con su multiplicidad.</p>"
+    },
+    {
+      "title": "Representación gráfica e interpretación geométrica",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Representamos la parábola y la curva racional para comprobar que sus puntos de intersección coinciden con las soluciones reales halladas.",
+      "content": "<p><strong>OBJETIVO:</strong> Interpretar geométricamente las soluciones reales como las abscisas de corte de las funciones $f(x) = x^2$ y $g(x) = \\frac{12}{x^2 + 1}$.</p><p><strong>CONEXIÓN:</strong> Igualar $f(x) = g(x)$ equivale a resolver $x^2 = \\frac{12}{x^2 + 1}$.</p><p><strong>MÉTODO:</strong> Representamos $f(x) = x^2$ (en cian) y $g(x) = \\frac{12}{x^2 + 1}$ (en rosa) en el sistema cartesiano.</p><p><strong>INTERPRETACIÓN:</strong> Las curvas se cortan exactamente en dos puntos $P_1(-\\sqrt{3}, 3)$ y $P_2(\\sqrt{3}, 3)$, cuyas ordenadas coinciden en $y = 3$ (valor que corresponde a $u = 3$). Esto confirma visual e inambiguamente la validez de las soluciones reales.</p>",
+      "visual": "<svg viewBox='0 0 600 400' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><rect width='600' height='400' fill='#0f172a'/><path d='M 100 0 V 400 M 150 0 V 400 M 200 0 V 400 M 250 0 V 400 M 350 0 V 400 M 400 0 V 400 M 450 0 V 400 M 500 0 V 400' stroke='#334155' stroke-width='1' opacity='0.5'/><path d='M 0 50 H 600 M 0 105 H 600 M 0 180 H 600 M 0 230 H 600 M 0 280 H 600 M 0 330 H 600' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='30' y1='330' x2='570' y2='330' stroke='#fbbf24' stroke-width='2.5'/><line x1='300' y1='20' x2='300' y2='380' stroke='#fbbf24' stroke-width='2.5'/><text x='580' y='335' fill='#fbbf24' font-size='16' font-weight='bold'>x</text><text x='305' y='20' fill='#fbbf24' font-size='16' font-weight='bold'>y</text><text x='285' y='348' fill='#94a3b8' font-size='14'>0</text><text x='343' y='350' fill='#94a3b8' font-size='12'>√3</text><text x='245' y='350' fill='#94a3b8' font-size='12'>-√3</text><text x='280' y='259' fill='#94a3b8' font-size='12'>3</text><text x='275' y='35' fill='#94a3b8' font-size='12'>12</text><g data-math-key='x'><path d='M 180 25 C 250 250, 270 330, 300 330 C 330 330, 350 250, 420 25' fill='none' stroke='#38bdf8' stroke-width='3'/><text x='425' y='35' fill='#38bdf8' font-size='14' font-weight='bold'>y = x²</text></g><g data-math-key='y'><path d='M 60 325 C 180 320, 240 220, 280 40 C 290 30, 310 30, 320 40 C 360 220, 420 320, 540 325' fill='none' stroke='#f472b6' stroke-width='3'/><text x='430' y='280' fill='#f472b6' font-size='14' font-weight='bold'>y = 12/(x²+1)</text></g><line x1='256.7' y1='255' x2='256.7' y2='330' stroke='#4ade80' stroke-width='1.5' stroke-dasharray='4'/><line x1='343.3' y1='255' x2='343.3' y2='330' stroke='#4ade80' stroke-width='1.5' stroke-dasharray='4'/><line x1='256.7' y1='255' x2='343.3' y2='255' stroke='#4ade80' stroke-width='1.5' stroke-dasharray='4'/><circle cx='256.7' cy='255' r='6' fill='#4ade80'/><circle cx='343.3' cy='255' r='6' fill='#4ade80'/><text x='185' y='245' fill='#4ade80' font-size='13' font-weight='bold'>P1(-√3, 3)</text><text x='350' y='245' fill='#4ade80' font-size='13' font-weight='bold'>P2(√3, 3)</text></svg>",
+      "visualDescription": "Gráfica cartesiana que muestra la parábola y = x^2 en color cian y la curva en forma de campana y = 12/(x^2+1) en color rosa. Ambas funciones se intersecan en los puntos P1(-1.732, 3) y P2(1.732, 3), proyectados hacia los ejes con líneas discontinuas verdes.",
+      "visualMathLink": "Las abscisas de los puntos P1 y P2 coinciden exactamente con las soluciones reales x = -raíz de 3 y x = raíz de 3. La altura y = 3 corresponde a la solución intermedia u = 3."
+    },
+    {
+      "title": "Comprobación analítica de las soluciones",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Sustituimos las soluciones reales en la ecuación inicial para verificar la igualdad analítica.",
+      "content": "<p><strong>OBJETIVO:</strong> Verificar que las soluciones reales $x = \\sqrt{3}$ y $x = -\\sqrt{3}$ satisfacen la ecuación original.</p><p><strong>CONEXIÓN:</strong> Evaluamos ambos miembros de la ecuación $x^2 = \\frac{12}{x^2 + 1}$.</p><p><strong>COMPROBACIÓN:</strong><br/>1) Para $x = \\sqrt{3}$:<br/>$$\\text{Miembro Izquierdo (MI)} = (\\sqrt{3})^2 = 3$$<br/>$$\\text{Miembro Derecho (MD)} = \\frac{12}{(\\sqrt{3})^2 + 1} = \\frac{12}{3 + 1} = \\frac{12}{4} = 3$$<br/>$$\\text{MI} = \\text{MD} = 3 \\quad \\checkmark$$<br/><br/>2) Para $x = -\\sqrt{3}$:<br/>$$\\text{MI} = (-\\sqrt{3})^2 = 3$$<br/>$$\\text{MD} = \\frac{12}{(-\\sqrt{3})^2 + 1} = \\frac{12}{3 + 1} = \\frac{12}{4} = 3$$<br/>$$\\text{MI} = \\text{MD} = 3 \\quad \\checkmark$$</p><p><strong>INTERPRETACIÓN:</strong> Ambos valores satisfacen la igualdad de forma exacta. Por lo tanto, el proceso de resolución es totalmente correcto e impecable.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Sintetizamos el procedimiento general para resolver cualquier ecuación racional bicuadrada de esta estructura.",
+      "content": "<ol><li><strong>Verificación del dominio:</strong> Confirmar que el denominador no se anula en el conjunto de estudio ($x^2 + 1 > 0$).</li><li><strong>Eliminación de denominadores:</strong> Multiplicar por $(x^2 + 1)$ para transformar la expresión en una polinómica cuadrática de cuarto grado ($x^4 + x^2 - 12 = 0$).</li><li><strong>Cambio de variable:</strong> Sustituir $u = x^2$ para convertir la ecuación en cuadrática ($u^2 + u - 12 = 0$).</li><li><strong>Resolución cuadrática:</strong> Aplicar la fórmula general para obtener $u_1 = 3$ y $u_2 = -4$.</li><li><strong>Deshacer el cambio:</strong> Resolver $x = \\pm\\sqrt{u}$, clasificando soluciones en reales ($x = \\pm\\sqrt{3}$) e imaginarias ($x = \\pm 2i$).</li><li><strong>Comprobación e interpretación:</strong> Verificar numéricamente en la expresión original y geométricamente mediante la intersección de las curvas asociadas.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica el mismo procedimiento de cambio de variable para resolver esta ecuación de estructura idéntica.",
+      "content": "<p>Resuelve en el conjunto de los números reales la siguiente ecuación:</p><p>$$x^2 = \\frac{20}{x^2 + 1}$$</p><p><em>Inténtalo por tu cuenta antes de consultar la respuesta final.</em></p>",
+      "practiceAnswer": "<p><strong>Respuesta final:</strong><br/>Multiplicando por $x^2 + 1$ se obtiene $x^4 + x^2 - 20 = 0$. Haciendo $u = x^2$, resulta $u^2 + u - 20 = 0$, con soluciones $u = 4$ y $u = -5$.<br/>Deshaciendo el cambio en $\\mathbb{R}$ ($x^2 = 4 \\implies x = \\pm 2$), las soluciones reales son <strong>$x = 2$</strong> y <strong>$x = -2$</strong>. (En $\\mathbb{C}$ se añaden $x = \\pm i\\sqrt{5}$).</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica el concepto de equilibrio de funciones en un contexto de física teórica utilizando la misma estructura algebraica.",
+      "content": "<p>En un modelo físico de partículas, la energía cinética viene dada por $E(x) = x^2$, mientras que el potencial de interacción es $V(x) = \\frac{8}{x^2 + 2}$, donde $x$ representa la posición en metros.</p><p>Halla las posiciones de equilibrio real $x$ donde la energía cinética es idéntica al potencial de interacción ($E(x) = V(x)$).</p><p><em>Inténtalo por tu cuenta antes de consultar la respuesta final.</em></p>",
+      "practiceAnswer": "<p><strong>Respuesta final:</strong><br/>Igualando $x^2 = \\frac{8}{x^2 + 2} \\implies x^4 + 2x^2 - 8 = 0$.<br/>Haciendo $u = x^2$, la ecuación $u^2 + 2u - 8 = 0$ tiene soluciones $u = 2$ y $u = -4$.<br/>En el dominio real $x^2 \\ge 0$, tomamos $u = 2 \\implies x = \\pm\\sqrt{2}$.<br/>Las posiciones reales de equilibrio son <strong>$x = \\sqrt{2} \\text{ m} \\approx 1{,}414 \\text{ m}$</strong> y <strong>$x = -\\sqrt{2} \\text{ m} \\approx -1{,}414 \\text{ m}$</strong>.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T09:41:53.583Z",
+    "updatedAt": "2026-08-03T09:41:53.583Z",
+    "contentHash": "6282a3103978a1fe",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

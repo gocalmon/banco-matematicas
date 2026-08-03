@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1_Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Inecuaciones racionales",
+    "exerciseType": "Resolución de una inecuación racional de segundo grado en numerador y denominador",
+    "protocols": [
+      "A"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Determinar las raíces del numerador y del denominador para establecer los puntos críticos.",
+      "Restringir el dominio excluyendo los valores que anulan el denominador.",
+      "Estudiar los signos del cociente en los intervalos determinados por los puntos críticos.",
+      "Expresar el conjunto solución en forma de intervalo y de representación gráfica."
+    ],
+    "prerequisites": [
+      "Factorización de polinomios de segundo grado.",
+      "Regla de los signos para multiplicación y división.",
+      "Concepto de dominio de una fracción algebraica."
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "statementHash": "6133bc31ce13db47",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T07:38:47.927Z",
+    "id": "resolucion-de-una-inecuacion-racional-ec0bc3b9"
+  },
+  "title": "Resolución de una inecuación racional",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Presentamos el ejercicio en el que debemos resolver una inecuación racional donde un cociente de polinomios cuadráticos debe ser mayor o igual que cero.",
+      "content": "<p>Resuelve la siguiente inecuación racional:</p><p>$$\\frac{x^2 - 5x + 6}{x^2 - 4x - 5} \\ge 0$$</p>",
+      "hints": [
+        "Identifica por separado los ceros del numerador y del denominador.",
+        "Recuerda que el denominador nunca puede valer cero."
+      ]
+    },
+    {
+      "title": "Plan de Resolución y Estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver esta inecuación racional, primero factorizaremos el numerador y el denominador. Luego hallaremos los puntos críticos, analizaremos las restricciones del dominio y estudiaremos el signo del cociente en cada intervalo.",
+      "content": "<p><strong>OBJETIVO:</strong> Establecer una estrategia rigurosa para determinar todos los valores reales de $x$ que satisfacen la desigualdad.</p><p><strong>CONEXIÓN:</strong> Una inecuación racional exige analizar el comportamiento de los signos de un cociente $\\frac{N(x)}{D(x)}$. El signo global depende de la combinación de signos de $N(x)$ y $D(x)$.</p><p><strong>MÉTODO:</strong></p><ol><li>Factorizar $N(x) = x^2 - 5x + 6$ y $D(x) = x^2 - 4x - 5$.</li><li>Determinar el dominio imponiendo $D(x) \\neq 0$.</li><li>Obtener los puntos críticos (ceros de $N(x)$ y ceros de $D(x)$).</li><li>Dividir la recta real en intervalos y construir una tabla/diagrama de signos.</li><li>Seleccionar los intervalos donde la expresión es mayor o igual que cero, asegurando no incluir las raíces del denominador.</li></ol><p><strong>INTERPRETACIÓN:</strong> Este procedimiento es idéntico al cálculo del dominio de la función $f(x) = \\sqrt{\\frac{x^2 - 5x + 6}{x^2 - 4x - 5}}$, asegurando que el radicando sea no negativo.</p>"
+    },
+    {
+      "title": "Factorización de Numerador y Denominador",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Factorizamos las expresiones cuadráticas del numerador y denominador mediante la fórmula general de segundo grado.",
+      "content": "<p><strong>OBJETIVO:</strong> Expresar el numerador $N(x) = x^2 - 5x + 6$ y el denominador $D(x) = x^2 - 4x - 5$ como producto de factores de primer grado.</p><p><strong>CONEXIÓN:</strong> Para conocer dónde cambia de signo el cociente, debemos encontrar primero los ceros individuales de cada polinomio.</p><p><strong>CÁLCULO:</strong></p><p>1. Raíces del numerador $N(x) = 0$:</p><p>$$x^2 - 5x + 6 = 0 \\implies x = \\frac{-(-5) \\pm \\sqrt{(-5)^2 - 4(1)(6)}}{2(1)} = \\frac{5 \\pm \\sqrt{25 - 24}}{2} = \\frac{5 \\pm 1}{2}$$</p><p>$$x_1 = 3, \\quad x_2 = 2 \\implies N(x) = (x - 2)(x - 3)$$</p><p>2. Raíces del denominador $D(x) = 0$:</p><p>$$x^2 - 4x - 5 = 0 \\implies x = \\frac{-(-4) \\pm \\sqrt{(-4)^2 - 4(1)(-5)}}{2(1)} = \\frac{4 \\pm \\sqrt{16 + 20}}{2} = \\frac{4 \\pm 6}{2}$$</p><p>$$x_3 = 5, \\quad x_4 = -1 \\implies D(x) = (x + 1)(x - 5)$$</p><p><strong>RESULTADO:</strong> La inecuación equivale a $\\frac{(x - 2)(x - 3)}{(x + 1)(x - 5)} \\ge 0$.</p><p><strong>INTERPRETACIÓN:</strong> Los ceros del numerador $x = 2$ y $x = 3$ anulan la fracción entera. Los ceros del denominador $x = -1$ y $x = 5$ son discontinuidades no permitidas.</p>",
+      "theory": "<p>Un polinomio cuadrático $ax^2 + bx + c$ con raíces $r_1, r_2$ se factoriza como $a(x - r_1)(x - r_2)$. Los ceros dividen la recta numérica en zonas donde el polinomio mantiene un signo constante.</p>"
+    },
+    {
+      "title": "Dominio y Puntos Críticos",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Establecemos las restricciones del dominio para evitar la división entre cero y ordenamos todos los puntos críticos sobre la recta numérica.",
+      "content": "<p><strong>OBJETIVO:</strong> Identificar el dominio de definición y clasificar los puntos críticos según sean de inclusión opcional u obligatoria exclusión.</p><p><strong>CONEXIÓN:</strong> Tras factorizar la expresión en $\\frac{(x - 2)(x - 3)}{(x + 1)(x - 5)} \\ge 0$, examinamos la validez de cada punto crítico en la desigualdad.</p><p><strong>DATOS:</strong></p><ul><li><strong>Dominio:</strong> $D(x) \\neq 0 \\implies x \\neq -1$ y $x \\neq 5$. Por tanto, $\\text{Dom} = \\mathbb{R} \\setminus \\{-1, 5\\}$.</li><li><strong>Puntos críticos (ordenados):</strong> $x = -1$ (polo, excluido), $x = 2$ (raíz, incluido), $x = 3$ (raíz, incluido), $x = 5$ (polo, excluido).</li></ul><p><strong>RESULTADO:</strong> Los puntos críticos dividen la recta real en 5 intervalos ajenos:</p><p>$$(-\\infty, -1), \\quad (-1, 2), \\quad (2, 3), \\quad (3, 5), \\quad (5, +\\infty)$$</p><p><strong>INTERPRETACIÓN:</strong> La fracción solo puede cambiar de signo al atravesar uno de estos cuatro puntos críticos. Las raíces del numerador entregan el valor $0$, que satisface el signo $\\ge$.</p>",
+      "warning": "<p>¡Atención! Las raíces del denominador nunca forman parte de la solución de una inecuación, sin importar si el símbolo es $\\ge$ o $>$. Dividir entre cero no existe en $\\mathbb{R}$.</p>",
+      "checkpoint": {
+        "question": "¿Por qué los puntos x = -1 y x = 5 no pueden incluirse en el conjunto solución?",
+        "options": [
+          {
+            "text": "Porque anulan el numerador y la fracción valdría cero.",
+            "correct": false,
+            "feedback": "Anular el numerador daría un valor de 0, el cual sí satisface la condición mayor o igual a cero."
+          },
+          {
+            "text": "Porque anulan el denominador, lo que produce una indeterminación/división por cero no definida.",
+            "correct": true,
+            "feedback": "¡Correcto! Cualquier valor que anule el denominador debe excluirse formalmente del conjunto solución."
+          },
+          {
+            "text": "Porque son valores negativos o impares que alteran el signo global.",
+            "correct": false,
+            "feedback": "El signo numérico de la constante no impide que pertenezca al dominio; lo relevante es no dividir por cero."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Diagrama y Estudio de Signos por Intervalos",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Evaluamos el signo de la fracción eligiendo un valor de prueba en cada uno de los cinco intervalos.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar el signo del cociente $f(x) = \\frac{(x-2)(x-3)}{(x+1)(x-5)}$ en cada intervalo.</p><p><strong>CONEXIÓN:</strong> Dado que el signo no cambia dentro de cada intervalo, basta evaluar un valor arbitrario de prueba en cada uno.</p><p><strong>CÁLCULO:</strong></p><ul><li>$x \\in (-\\infty, -1)$: Probamos $x = -2 \\implies f(-2) = \\frac{(-4)(-5)}{(-1)(-7)} = \\frac{20}{7} > 0$ <strong>(+)</strong></li><li>$x \\in (-1, 2)$: Probamos $x = 0 \\implies f(0) = \\frac{(-2)(-3)}{(1)(-5)} = \\frac{6}{-5} < 0$ <strong>(-)</strong></li><li>$x \\in (2, 3)$: Probamos $x = 2.5 \\implies f(2.5) = \\frac{(0.5)(-0.5)}{(3.5)(-2.5)} = \\frac{-0.25}{-8.75} > 0$ <strong>(+)</strong></li><li>$x \\in (3, 5)$: Probamos $x = 4 \\implies f(4) = \\frac{(2)(1)}{(5)(-1)} = \\frac{2}{-5} < 0$ <strong>(-)</strong></li><li>$x \\in (5, +\\infty)$: Probamos $x = 6 \\implies f(6) = \\frac{(4)(3)}{(7)(1)} = \\frac{12}{7} > 0$ <strong>(+)</strong></li></ul><p><strong>INTERPRETACIÓN:</strong> Los signos alternan en cada punto crítico de multiplicidad impar: $+ , - , + , - , +$.</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 250\" preserveAspectRatio=\"xMidYMid meet\"><rect width=\"100%\" height=\"100%\" fill=\"#0f172a\"/><g data-math-key=\"x\"><line x1=\"50\" y1=\"130\" x2=\"750\" y2=\"130\" stroke=\"#fbbf24\" stroke-width=\"3\"/><polygon points=\"745,123 760,130 745,137\" fill=\"#fbbf24\"/><polygon points=\"55,123 40,130 55,137\" fill=\"#fbbf24\"/><line x1=\"150\" y1=\"120\" x2=\"150\" y2=\"140\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><circle cx=\"150\" cy=\"130\" r=\"6\" fill=\"#0f172a\" stroke=\"#38bdf8\" stroke-width=\"3\"/><text x=\"150\" y=\"165\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">-1</text><text x=\"150\" y=\"185\" text-anchor=\"middle\" font-size=\"14\" fill=\"#f8fafc\" font-family=\"sans-serif\">(Polo)</text><line x1=\"300\" y1=\"120\" x2=\"300\" y2=\"140\" stroke=\"#38bdf8\" stroke-width=\"2\"/><circle cx=\"300\" cy=\"130\" r=\"6\" fill=\"#38bdf8\"/><text x=\"300\" y=\"165\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">2</text><text x=\"300\" y=\"185\" text-anchor=\"middle\" font-size=\"14\" fill=\"#f8fafc\" font-family=\"sans-serif\">(Raíz)</text><line x1=\"420\" y1=\"120\" x2=\"420\" y2=\"140\" stroke=\"#38bdf8\" stroke-width=\"2\"/><circle cx=\"420\" cy=\"130\" r=\"6\" fill=\"#38bdf8\"/><text x=\"420\" y=\"165\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">3</text><text x=\"420\" y=\"185\" text-anchor=\"middle\" font-size=\"14\" fill=\"#f8fafc\" font-family=\"sans-serif\">(Raíz)</text><line x1=\"630\" y1=\"120\" x2=\"630\" y2=\"140\" stroke=\"#38bdf8\" stroke-width=\"2\" stroke-dasharray=\"4\"/><circle cx=\"630\" cy=\"130\" r=\"6\" fill=\"#0f172a\" stroke=\"#38bdf8\" stroke-width=\"3\"/><text x=\"630\" y=\"165\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">5</text><text x=\"630\" y=\"185\" text-anchor=\"middle\" font-size=\"14\" fill=\"#f8fafc\" font-family=\"sans-serif\">(Polo)</text><text x=\"100\" y=\"90\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">+</text><text x=\"225\" y=\"90\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">-</text><text x=\"360\" y=\"90\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">+</text><text x=\"525\" y=\"90\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">-</text><text x=\"690\" y=\"90\" text-anchor=\"middle\" font-size=\"24\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">+</text></g></svg>",
+      "visualDescription": "Diagrama de la recta numérica en color amarillo con los puntos críticos -1, 2, 3 y 5. Los polos -1 y 5 tienen círculos abiertos mientras que las raíces 2 y 3 tienen círculos rellenos. Encima de cada uno de los cinco intervalos se muestra el signo del cociente: positivo para menor que -1, negativo entre -1 y 2, positivo entre 2 y 3, negativo entre 3 y 5, y positivo para mayor que 5.",
+      "visualMathLink": "Cada signo positivo o negativo etiquetado encima de los intervalos de la recta numérica corresponde exactamente con el resultado de evaluar los valores de prueba en la función racional."
+    },
+    {
+      "title": "Construcción de la Solución Final",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Seleccionamos todos los intervalos con signo positivo e incluimos los ceros del numerador para formar la solución completa.",
+      "content": "<p><strong>OBJETIVO:</strong> Unir los intervalos no negativos para obtener el conjunto solución final.</p><p><strong>CONEXIÓN:</strong> La inecuación pide $f(x) \\ge 0$. Esto requiere recopilar las zonas con signo positivo <strong>(+)</strong> y los puntos donde $f(x) = 0$.</p><p><strong>CÁLCULO:</strong></p><ul><li>Intervalos positivos: $(-\\infty, -1)$, $(2, 3)$ y $(5, +\\infty)$.</li><li>Puntos con $f(x) = 0$: $x = 2$ y $x = 3$ (se incluyen con corchetes).</li><li>Puntos excluidos: $x = -1$ y $x = 5$ (permanecen con paréntesis).</li></ul><p><strong>RESULTADO:</strong></p><p>$$x \\in (-\\infty, -1) \\cup [2, 3] \\cup (5, +\\infty)$$</p><p><strong>INTERPRETACIÓN:</strong> La solución abarca todos los números reales menores que -1, el intervalo cerrado de 2 a 3, y todos los números estrictamente mayores que 5.</p><p><strong>RESPUESTA AL APARTADO:</strong> El conjunto solución de la inecuación racional es $x \\in (-\\infty, -1) \\cup [2, 3] \\cup (5, +\\infty)$.</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 250\" preserveAspectRatio=\"xMidYMid meet\"><rect width=\"100%\" height=\"100%\" fill=\"#0f172a\"/><g data-math-key=\"x\"><line x1=\"50\" y1=\"130\" x2=\"750\" y2=\"130\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"50\" y1=\"130\" x2=\"150\" y2=\"130\" stroke=\"#38bdf8\" stroke-width=\"8\"/><polygon points=\"50,123 35,130 50,137\" fill=\"#38bdf8\"/><circle cx=\"150\" cy=\"130\" r=\"7\" fill=\"#0f172a\" stroke=\"#38bdf8\" stroke-width=\"3\"/><text x=\"150\" y=\"170\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">-1</text><line x1=\"300\" y1=\"130\" x2=\"420\" y2=\"130\" stroke=\"#38bdf8\" stroke-width=\"8\"/><circle cx=\"300\" cy=\"130\" r=\"7\" fill=\"#38bdf8\"/><text x=\"300\" y=\"170\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">2</text><circle cx=\"420\" cy=\"130\" r=\"7\" fill=\"#38bdf8\"/><text x=\"420\" y=\"170\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">3</text><line x1=\"630\" y1=\"130\" x2=\"750\" y2=\"130\" stroke=\"#38bdf8\" stroke-width=\"8\"/><polygon points=\"750,123 765,130 750,137\" fill=\"#38bdf8\"/><circle cx=\"630\" cy=\"130\" r=\"7\" fill=\"#0f172a\" stroke=\"#38bdf8\" stroke-width=\"3\"/><text x=\"630\" y=\"170\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">5</text><text x=\"100\" y=\"90\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">( -∞, -1 )</text><text x=\"360\" y=\"90\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">[ 2, 3 ]</text><text x=\"690\" y=\"90\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#f8fafc\" font-family=\"sans-serif\">( 5, +∞ )</text></g></svg>",
+      "visualDescription": "Representación gráfica sobre la recta real en donde los intervalos solución están remarcados con trazos gruesos de color azul. El primer segmento va desde menos infinito hasta -1 con círculo abierto en -1. El segundo segmento cubre de 2 a 3 con puntos rellenos en ambos extremos. El tercer segmento va desde 5 hasta más infinito con círculo abierto en 5.",
+      "visualMathLink": "Los trazos gruesos azules identifican exactamente los valores de x pertenecientes a la solución unificada de la inecuación."
+    },
+    {
+      "title": "Comprobación Analítica y Gráfica",
+      "layout": "split",
+      "phase": "comprobar",
+      "narration": "Verificamos experimentalmente sustituyendo valores dentro y fuera de la solución en la expresión original y observando la gráfica de la función racional.",
+      "content": "<p><strong>OBJETIVO:</strong> Comprobar la coherencia de la solución obtenida evaluando puntos clave.</p><p><strong>CONEXIÓN:</strong> Sustituimos valores representativos en la inecuación original $\\frac{x^2 - 5x + 6}{x^2 - 4x - 5} \\ge 0$.</p><p><strong>COMPROBACIÓN:</strong></p><ul><li>Probar $x = -2 \\in (-\\infty, -1)$:<br/>$\\frac{(-2)^2 - 5(-2) + 6}{(-2)^2 - 4(-2) - 5} = \\frac{4 + 10 + 6}{4 + 8 - 5} = \\frac{20}{7} \\ge 0 \\quad \\checkmark$</li><li>Probar $x = 2 \\in [2, 3]$:<br/>$\\frac{2^2 - 5(2) + 6}{2^2 - 4(2) - 5} = \\frac{0}{-9} = 0 \\ge 0 \\quad \\checkmark$</li><li>Probar $x = 0 \\notin \\text{Solución}$:<br/>$\\frac{0 - 0 + 6}{0 - 0 - 5} = -\\frac{6}{5} \\not\\ge 0 \\quad \\checkmark \\text{ (Se rechaza correctamente)}$</li></ul><p><strong>INTERPRETACIÓN:</strong> Las sustituciones confirman que el conjunto solución es correcto tanto en los extremos como en el interior de los intervalos.</p>",
+      "visual": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 300\" preserveAspectRatio=\"xMidYMid meet\"><rect width=\"100%\" height=\"100%\" fill=\"#0f172a\"/><g data-math-key=\"x\"><line x1=\"50\" y1=\"200\" x2=\"750\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1\"/><line x1=\"50\" y1=\"150\" x2=\"750\" y2=\"150\" stroke=\"#fbbf24\" stroke-width=\"2.5\"/><text x=\"740\" y=\"140\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\" font-family=\"sans-serif\">x</text><line x1=\"250\" y1=\"20\" x2=\"250\" y2=\"280\" stroke=\"#fbbf24\" stroke-width=\"2.5\"/><text x=\"260\" y=\"30\" fill=\"#f8fafc\" font-size=\"16\" font-weight=\"bold\" font-family=\"sans-serif\">y</text><line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"280\" stroke=\"#f472b6\" stroke-width=\"2\" stroke-dasharray=\"5,5\"/><text x=\"140\" y=\"270\" fill=\"#f8fafc\" font-size=\"14\" font-family=\"sans-serif\">x = -1</text><line x1=\"630\" y1=\"20\" x2=\"630\" y2=\"280\" stroke=\"#f472b6\" stroke-width=\"2\" stroke-dasharray=\"5,5\"/><text x=\"620\" y=\"270\" fill=\"#f8fafc\" font-size=\"14\" font-family=\"sans-serif\">x = 5</text><path d=\"M 50,50 Q 120,70 140,20\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/><path d=\"M 165,280 Q 250,220 300,150 Q 360,90 420,150 Q 500,220 615,280\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/><path d=\"M 645,20 Q 660,70 750,100\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"3\"/><circle cx=\"300\" cy=\"150\" r=\"5\" fill=\"#38bdf8\"/><text x=\"300\" y=\"135\" font-size=\"14\" text-anchor=\"middle\" fill=\"#f8fafc\" font-family=\"sans-serif\">(2,0)</text><circle cx=\"420\" cy=\"150\" r=\"5\" fill=\"#38bdf8\"/><text x=\"420\" y=\"135\" font-size=\"14\" text-anchor=\"middle\" fill=\"#f8fafc\" font-family=\"sans-serif\">(3,0)</text></g></svg>",
+      "visualDescription": "Gráfica de la curva de la función racional y = f(x) trazada en azul. Se muestran dos asíntotas verticales rosas en x = -1 y x = 5. La curva está por encima del eje horizontal para x menor que -1, entre 2 y 3, y para x mayor que 5, haciendo contacto con el eje en los puntos (2,0) y (3,0).",
+      "visualMathLink": "Las zonas donde la gráfica azul se sitúa por encima o sobre el eje amarillo representan los valores de y >= 0, coincidiendo de forma exacta con la solución hallada analíticamente."
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos los pasos clave seguidos para resolver cualquier inecuación racional.",
+      "content": "<p><strong>PROCEDIMIENTO DE RESOLUCIÓN PASO A PASO:</strong></p><ol><li><strong>Factorización de Términos:</strong><br/>Factorizamos el numerador y denominador:<br/>$$N(x) = (x-2)(x-3), \\quad D(x) = (x+1)(x-5)$$</li><li><strong>Dominio y Puntos Críticos:</strong><br/>Excluimos del dominio los ceros del denominador ($x \\neq -1, x \\neq 5$). Identificamos los ceros del numerador ($x = 2, x = 3$).</li><li><strong>Análisis de Signos:</strong><br/>Dividimos la recta real en los 5 intervalos determinados por los puntos críticos $-1, 2, 3, 5$ y probamos valores. Los signos del cociente resultantes son: $+ , - , + , - , +$.</li><li><strong>Construcción del Conjunto Solución:</strong><br/>Para $f(x) \\ge 0$, tomamos los intervalos positivos e incluimos las raíces del numerador.</li></ol><p><strong>RESULTADO FINAL:</strong> $$x \\in (-\\infty, -1) \\cup [2, 3] \\cup (5, +\\infty)$$</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te proponemos un ejercicio idéntico en estructura y técnica para poner a prueba lo aprendido.",
+      "content": "<p>Resuelve la siguiente inecuación racional expresando el conjunto solución mediante intervalos:</p><p>$$\\frac{x^2 - 6x + 8}{x^2 - 2x - 3} \\le 0$$</p><p><em>Inténtalo por ti mismo aplicando el método paso a paso antes de comprobar el resultado final.</em></p>",
+      "practiceAnswer": "<p><strong>Solución:</strong> $x \\in (-1, 2] \\cup (3, 4]$.</p><p><strong>Condiciones y detalles:</strong> Al factorizar se obtiene $\\frac{(x-2)(x-4)}{(x+1)(x-3)} \\le 0$. Puntos críticos en $-1, 2, 3, 4$. Dominio $x \\neq -1, x \\neq 3$. El análisis de signos arroja negativo en los intervalos $(-1, 2]$ y $(3, 4]$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica ahora el concepto de estudio de signos de expresiones racionales en la determinación del dominio de una función radical.",
+      "content": "<p>Determina el dominio de definición de la función real $g(x)$ definida por:</p><p>$$g(x) = \\sqrt{\\frac{x^2 - 5x + 6}{x^2 - 4x - 5}}$$</p><p><em>Aplica la condición de existencia de la raíz cuadrada en el campo de los números reales antes de verificar la respuesta.</em></p>",
+      "practiceAnswer": "<p><strong>Solución:</strong> $\\text{Dom}(g) = (-\\infty, -1) \\cup [2, 3] \\cup (5, +\\infty)$.</p><p><strong>Condiciones:</strong> Para que la raíz cuadrada exista en $\\mathbb{R}$, la cantidad radicando debe ser no negativa: $\\frac{x^2 - 5x + 6}{x^2 - 4x - 5} \\ge 0$, restringiendo además que $x^2 - 4x - 5 \\neq 0$. El conjunto resultante es exactamente la solución de la inecuación anterior.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T07:38:55.456Z",
+    "updatedAt": "2026-08-03T07:38:55.456Z",
+    "contentHash": "33177b3b48326e65",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
