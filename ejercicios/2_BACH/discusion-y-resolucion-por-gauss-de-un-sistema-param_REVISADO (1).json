@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "2_Bachillerato",
+    "topic": "Álgebra Lineal",
+    "subtopic": "Sistemas de Ecuaciones Lineales",
+    "exerciseType": "Discusión y resolución de un sistema con parámetro",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Aplicar el método de Gauss matricial a un sistema parametrizado.",
+      "Identificar los valores críticos del parámetro examinando los pivotes de la matriz escalonada.",
+      "Resolver por sustitución regresiva un sistema compatible determinado con expresiones algebraicas."
+    ],
+    "prerequisites": [
+      "Operaciones elementales con filas en matrices.",
+      "Concepto de matriz escalonada.",
+      "Clasificación de sistemas según Rouché-Frobenius o comportamiento en Gauss."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Estudie la existencia y unicidad de soluciones según los valores del parámetro m."
+      },
+      {
+        "id": "b",
+        "request": "Resuelva el sistema de ecuaciones anterior para el caso m=2."
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 17,
+    "statementHash": "086758f79493bc71",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-02T16:35:57.692Z",
+    "id": "discusion-y-resolucion-por-gauss-de-un-sistema-param-e9fa9438"
+  },
+  "title": "Discusión y Resolución por Gauss de un Sistema Parametrizado",
+  "slides": [
+    {
+      "title": "Enunciado original",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Leemos el sistema y distinguimos las dos peticiones: primero discutirlo según el parámetro y después resolver el caso concreto eme igual a dos.",
+      "content": "<p>Dado el sistema de ecuaciones:</p>$$ \\begin{pmatrix} 1 & 1 & m \\\\ 2 & 1 & 0 \\\\ 2 & 2 & 2 \\end{pmatrix} \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 4 \\\\ 3 \\\\ 6 \\end{pmatrix} $$<p><strong>a)</strong> Estudie la existencia y unicidad de soluciones según los valores del parámetro $m$.</p><p><strong>b)</strong> Resuelva el sistema de ecuaciones anterior para el caso $m=2$.</p>"
+    },
+    {
+      "title": "Hoja de ruta estratégica",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para abordar el problema, aplicaremos el método de Gauss. Transformaremos el sistema en su matriz ampliada y haremos ceros por debajo de la diagonal. Al llegar a la forma escalonada, la última fila nos revelará qué valor de eme causa problemas matemáticos y nos permitirá clasificar los distintos casos.",
+      "content": "<p><strong>OBJETIVO:</strong> Responder por separado a los apartados a) y b).</p><p><strong>ESTRATEGIA:</strong> En el apartado a) construiremos la matriz ampliada, aplicaremos Gauss, localizaremos el valor crítico de $m$, clasificaremos cada caso y obtendremos la solución general cuando exista. En el apartado b) sustituiremos $m=2$ en esa solución y comprobaremos el resultado en las tres ecuaciones originales.</p><p><strong>CONTEXTO:</strong> Esta técnica es equivalente a estudiar los rangos del teorema de Rouché-Frobenius, pero el escalonamiento deja además el sistema preparado para la sustitución regresiva.</p>"
+    },
+    {
+      "title": "Paso 1: Traducción a Matriz Ampliada",
+      "layout": "split",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Primero, extraemos los coeficientes del sistema matricial y construimos la matriz ampliada. Vemos que el término superior izquierdo ya es un uno, lo que nos facilita usarlo como pivote para eliminar los doses que tiene debajo.",
+      "content": "<strong>OBJETIVO:</strong> Representar el sistema mediante su matriz ampliada para aplicar operaciones de fila.\n\n<strong>MÉTODO:</strong> Identificamos la matriz de coeficientes $A$ y el vector de términos independientes $B$, y los unimos en una sola estructura separada por una línea vertical.\n\n<strong>RESULTADO:</strong> Obtenemos la matriz inicial donde la incógnita $x$ corresponde a la primera columna, $y$ a la segunda, y $z$ a la tercera. Observamos que nuestro pivote principal en la posición $(1,1)$ es convenientemente un $1$.",
+      "visual": "<svg viewBox=\"0 0 500 250\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid meet\">\n  <rect width=\"100%\" height=\"100%\" fill=\"#0f172a\" />\n  <path d=\"M 60,40 C 40,40 40,210 60,210\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"3\" />\n  <path d=\"M 350,40 C 370,40 370,210 350,210\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"3\" />\n  <line x1=\"280\" y1=\"40\" x2=\"280\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"5,5\" />\n  \n  <text x=\"100\" y=\"70\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">1</text>\n  <text x=\"160\" y=\"70\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">1</text>\n  <text x=\"220\" y=\"70\" fill=\"#bef264\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\" data-math-key=\"m\">m</text>\n  <text x=\"315\" y=\"70\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">4</text>\n  \n  <text x=\"100\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">2</text>\n  <text x=\"160\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">1</text>\n  <text x=\"220\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">0</text>\n  <text x=\"315\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">3</text>\n  \n  <text x=\"100\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">2</text>\n  <text x=\"160\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">2</text>\n  <text x=\"220\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">2</text>\n  <text x=\"315\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">6</text>\n</svg>",
+      "visualDescription": "Matriz ampliada de 3 filas y 4 columnas. Las tres primeras columnas son los coeficientes y la última los términos independientes. El parámetro m aparece en verde en la primera fila, tercera columna.",
+      "visualMathLink": "Esta matriz es la transcripción exacta del producto matricial mostrado en el enunciado. Cada fila equivale a una ecuación del sistema $AX=B$."
+    },
+    {
+      "title": "Paso 2: Primera Operación de Gauss",
+      "layout": "split",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Vamos a hacer un cero en la primera columna de la segunda fila. Como tenemos un 2, le restaremos el doble de la primera fila. Calculamos cada elemento con cuidado, incluyendo el término de eme.",
+      "content": "<strong>OBJETIVO:</strong> Anular el primer elemento de la segunda fila $F_2$.\n\n<strong>CÁLCULO:</strong> Empleamos la operación elemental $F_2 \\rightarrow F_2 - 2F_1$. Calculamos cada entrada afectada:\nColumna 1: $2 - 2(1) = 0$\nColumna 2: $1 - 2(1) = -1$\nColumna 3: $0 - 2(m) = -2m$\nColumna 4: $3 - 2(4) = -5$\n\n<strong>INTERPRETACIÓN:</strong> Hemos eliminado la incógnita $x$ de la segunda ecuación. Ahora esta ecuación depende únicamente de $y$ y $z$.",
+      "visual": "<svg viewBox=\"0 0 500 250\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid meet\">\n  <rect width=\"100%\" height=\"100%\" fill=\"#0f172a\" />\n  <rect x=\"70\" y=\"105\" width=\"270\" height=\"40\" fill=\"#f472b6\" opacity=\"0.1\" rx=\"5\" />\n  <path d=\"M 60,40 C 40,40 40,210 60,210\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"3\" />\n  <path d=\"M 350,40 C 370,40 370,210 350,210\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"3\" />\n  <line x1=\"280\" y1=\"40\" x2=\"280\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"5,5\" />\n  \n  <text x=\"100\" y=\"70\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">1</text>\n  <text x=\"160\" y=\"70\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">1</text>\n  <text x=\"220\" y=\"70\" fill=\"#bef264\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\" data-math-key=\"m\">m</text>\n  <text x=\"315\" y=\"70\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">4</text>\n  \n  <text x=\"100\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">0</text>\n  <text x=\"160\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">-1</text>\n  <text x=\"220\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">-2<tspan fill=\"#bef264\" data-math-key=\"m\">m</tspan></text>\n  <text x=\"315\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">-5</text>\n  <text x=\"390\" y=\"125\" fill=\"#f472b6\" font-size=\"16\" dominant-baseline=\"middle\">F&#8322; → F&#8322; - 2F&#8321;</text>\n  \n  <text x=\"100\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">2</text>\n  <text x=\"160\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">2</text>\n  <text x=\"220\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">2</text>\n  <text x=\"315\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">6</text>\n</svg>",
+      "visualDescription": "Matriz ampliada en la que la segunda fila está sombreada. A su derecha se indica la operación de resta. El valor de la primera columna de esta fila es ahora un 0 y el parámetro m ha bajado a la segunda fila combinado como -2m.",
+      "visualMathLink": "El cambio en los valores de la segunda fila refleja fielmente el cálculo algebraico detallado en el texto. La matriz es un sistema de ecuaciones equivalente al original."
+    },
+    {
+      "title": "Paso 3: Segunda Operación y Escalonamiento",
+      "layout": "split",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Ahora hacemos lo mismo con la tercera fila. Como también tiene un 2 al principio, aplicamos la misma operación: le restamos el doble de la primera fila. Sorprendentemente, con esto conseguimos hacer dos ceros de golpe.",
+      "content": "<strong>OBJETIVO:</strong> Anular el primer elemento de la tercera fila $F_3$ para completar los ceros de la primera columna.\n\n<strong>CÁLCULO:</strong> Empleamos la operación elemental $F_3 \\rightarrow F_3 - 2F_1$. Calculamos las entradas:\nColumna 1: $2 - 2(1) = 0$\nColumna 2: $2 - 2(1) = 0$\nColumna 3: $2 - 2(m) = 2 - 2m$\nColumna 4: $6 - 2(4) = -2$\n\n<strong>INTERPRETACIÓN:</strong> Casualmente, el elemento en la posición $(3,2)$ también se ha anulado. Esto significa que hemos logrado la forma escalonada completa en un solo paso, dejando la tercera ecuación dependiente exclusivamente de la incógnita $z$.",
+      "visual": "<svg viewBox=\"0 0 500 250\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid meet\">\n  <rect width=\"100%\" height=\"100%\" fill=\"#0f172a\" />\n  <rect x=\"70\" y=\"160\" width=\"270\" height=\"40\" fill=\"#4ade80\" opacity=\"0.1\" rx=\"5\" />\n  <path d=\"M 60,40 C 40,40 40,210 60,210\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"3\" />\n  <path d=\"M 350,40 C 370,40 370,210 350,210\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"3\" />\n  <line x1=\"280\" y1=\"40\" x2=\"280\" y2=\"210\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"5,5\" />\n  \n  <text x=\"100\" y=\"70\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">1</text>\n  <text x=\"160\" y=\"70\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">1</text>\n  <text x=\"220\" y=\"70\" fill=\"#bef264\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\" data-math-key=\"m\">m</text>\n  <text x=\"315\" y=\"70\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">4</text>\n  \n  <text x=\"100\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">0</text>\n  <text x=\"160\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">-1</text>\n  <text x=\"220\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">-2<tspan fill=\"#bef264\" data-math-key=\"m\">m</tspan></text>\n  <text x=\"315\" y=\"125\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">-5</text>\n  \n  <text x=\"100\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">0</text>\n  <text x=\"160\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">0</text>\n  <text x=\"220\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">2 - 2<tspan fill=\"#bef264\" data-math-key=\"m\">m</tspan></text>\n  <text x=\"315\" y=\"180\" fill=\"white\" font-size=\"20\" text-anchor=\"middle\" dominant-baseline=\"middle\">-2</text>\n  <text x=\"390\" y=\"180\" fill=\"#4ade80\" font-size=\"16\" dominant-baseline=\"middle\">F&#8323; → F&#8323; - 2F&#8321;</text>\n</svg>",
+      "visualDescription": "Matriz ampliada en la que la tercera fila está sombreada. Tras la operación, los dos primeros elementos de esta fila son 0. El tercer elemento es la expresión 2 - 2m. La matriz ahora tiene forma de triángulo de ceros bajo la diagonal.",
+      "visualMathLink": "El escalonamiento se ha completado en este paso. El término 2-2m corresponde al coeficiente de la variable z en la última ecuación."
+    },
+    {
+      "title": "Paso 4: Análisis de la Matriz Escalonada",
+      "layout": "centered",
+      "phase": "analizar",
+      "subpart": "a",
+      "narration": "Con la matriz escalonada, la clave está en el último renglón. Tenemos la ecuación equis por cero más i por cero más z por una expresión de eme, igual a menos dos. Lo que dicte si el sistema tiene o no solución es precisamente si esa expresión de eme se hace cero.",
+      "content": "<strong>OBJETIVO:</strong> Identificar el valor crítico del parámetro $m$ que modifica el rango de la matriz.\n\n<strong>MÉTODO:</strong> Observamos la tercera fila de la matriz escalonada, que representa la ecuación algebraica:\n$$ (2 - 2m)z = -2 $$\n\n<strong>INTERPRETACIÓN:</strong> Para poder despejar $z$, necesitamos dividir entre su coeficiente $(2 - 2m)$. Si este coeficiente fuera cero, estaríamos ante un problema (división por cero y ecuación absurda). Por ello, el comportamiento del sistema cambia drásticamente cuando:\n$$ 2 - 2m = 0 \\implies 2m = 2 \\implies m = 1 $$\nEsto nos obliga a estudiar dos escenarios: qué ocurre exactamente si $m = 1$, y qué ocurre si $m \\neq 1$.",
+      "checkpoint": {
+        "question": "¿Qué elemento de la matriz escalonada nos indica cuándo el sistema podría dejar de tener solución única?",
+        "options": [
+          {
+            "text": "El término $2-2m$ de la diagonal principal, ya que si se anula, perdemos el tercer pivote.",
+            "correct": true,
+            "feedback": "¡Correcto! Al anularse este término, la fila se queda con todos los coeficientes de las variables a cero frente a un término independiente no nulo."
+          },
+          {
+            "text": "El término $-2m$ de la segunda fila, porque contiene el parámetro $m$.",
+            "correct": false,
+            "feedback": "Incorrecto. Aunque contiene el parámetro, si $-2m=0$ la segunda ecuación sería simplemente $-y = -5$, lo cual no impide encontrar solución."
+          },
+          {
+            "text": "El término independiente $-2$ de la tercera fila, porque es negativo.",
+            "correct": false,
+            "feedback": "Incorrecto. El signo del término independiente no influye en la existencia de solución, sino en su valor numérico."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 5: Resolución del Caso m = 1",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Veamos qué ocurre si eme vale exactamente 1. Sustituimos este uno en la ecuación del último renglón y nos encontramos con un absurdo: cero igual a menos dos. Esto decreta que no hay solución.",
+      "content": "<strong>OBJETIVO:</strong> Determinar el carácter del sistema cuando el parámetro asume su valor crítico.\n\n<strong>MÉTODO:</strong> Sustituimos $m = 1$ en la última ecuación que dedujimos de la matriz escalonada.\n$$ (2 - 2(1))z = -2 $$\n$$ 0z = -2 $$\n\n<strong>INTERPRETACIÓN:</strong> Esta igualdad algebraica indica que $0 = -2$, lo cual es matemáticamente falso. Ningún valor de $z$ puede multiplicar a $0$ y dar un resultado distinto de cero. Por el Teorema de Rouché-Frobenius, esto significa que el Rango de la matriz de coeficientes (2) es menor que el Rango de la matriz ampliada (3).\n\n<strong>RESPUESTA AL CASO m = 1:</strong> El sistema es <strong>Sistema Incompatible (SI)</strong> y carece de solución.",
+      "warning": "Un error muy común es decir que $z = -2/0 = 0$. ¡Cuidado! La división por cero no está definida. La expresión $0 = -2$ simplemente demuestra que las condiciones impuestas chocan entre sí."
+    },
+    {
+      "title": "Paso 6: Resolución del Caso m ≠ 1 (Hallar z)",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Pasamos al caso general, cuando eme es diferente de uno. Como el coeficiente no es cero, lo pasamos dividiendo libremente y obtenemos el valor exacto de la incógnita zeta en función del parámetro.",
+      "content": "<strong>OBJETIVO:</strong> Iniciar la sustitución regresiva para hallar las incógnitas asumiendo que $m \\neq 1$.\n\n<strong>CONEXIÓN:</strong> Volvemos a la tercera ecuación del sistema escalonado.\n\n<strong>CÁLCULO:</strong>\nComo garantizamos que $m \\neq 1$, sabemos que $(2 - 2m) \\neq 0$. Por lo tanto, podemos despejar $z$ dividiendo libremente:\n$$ z = \\frac{-2}{2 - 2m} $$\nPodemos simplificar esta fracción algebraica sacando factor común el $2$ en el denominador:\n$$ z = \\frac{-2}{2(1 - m)} = \\frac{-1}{1 - m} $$\nPara dejar la expresión más limpia (y evitar iniciar con signo negativo), cambiamos el signo al numerador y al denominador simultáneamente:\n$$ z = \\frac{1}{m - 1} $$\n\n<strong>RESULTADO:</strong> Hemos encontrado el valor general de $z$ válido para cualquier $m$ distinto de uno."
+    },
+    {
+      "title": "Paso 7: Resolución del Caso m ≠ 1 (Hallar y)",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Con zeta en el bolsillo, subimos un peldaño hasta la segunda ecuación. Sustituimos nuestra expresión de zeta, operamos un poco las fracciones algebraicas y despejamos la variable i.",
+      "content": "<strong>OBJETIVO:</strong> Continuar la sustitución regresiva para hallar $y$.\n\n<strong>CONEXIÓN:</strong> Tomamos la segunda fila de nuestra matriz escalonada, que representa la ecuación $-y - 2mz = -5$.\n\n<strong>CÁLCULO:</strong>\nDespejamos $y$ para dejarla en positivo:\n$$ y = 5 - 2mz $$\nSustituimos el valor recién hallado $z = \\frac{1}{m - 1}$:\n$$ y = 5 - 2m \\left(\\frac{1}{m - 1}\\right) = 5 - \\frac{2m}{m - 1} $$\nPonemos denominador común:\n$$ y = \\frac{5(m - 1) - 2m}{m - 1} = \\frac{5m - 5 - 2m}{m - 1} $$\nAgrupamos términos semejantes:\n$$ y = \\frac{3m - 5}{m - 1} $$\n\n<strong>RESULTADO:</strong> Hemos determinado la expresión que define a $y$ en función del parámetro $m$."
+    },
+    {
+      "title": "Paso 8: Resolución del Caso m ≠ 1 (Hallar x)",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Finalmente llegamos a la cumbre. Usamos la primera ecuación, introducimos los monstruos fraccionarios de zeta e i, agrupamos todo bajo el mismo denominador y al sumar y restar todo cuadra en un resultado sorprendentemente compacto.",
+      "content": "<strong>OBJETIVO:</strong> Culminar la sustitución regresiva hallando $x$ y cerrar la discusión completa del apartado a).\n\n<strong>CONEXIÓN:</strong> Empleamos la primera fila de la matriz escalonada original: $x + y + mz = 4$.\n\n<strong>CÁLCULO:</strong> Despejamos $x=4-y-mz$ y sustituimos $y=\\frac{3m-5}{m-1}$, $z=\\frac{1}{m-1}$:\n$$ x = \\frac{4(m - 1) - (3m - 5) - m}{m - 1} = \\frac{4m-4-3m+5-m}{m-1}=\\frac{1}{m-1}. $$\n\n<strong>RESPUESTA AL APARTADO a):</strong> Si $m=1$, aparece $0=-2$ y el sistema es incompatible: no existe solución. Si $m\\neq1$, el determinante es $2(m-1)\\neq0$, por lo que el sistema es compatible determinado y posee una única solución:\n$$ (x,y,z)=\\left(\\frac{1}{m-1},\\frac{3m-5}{m-1},\\frac{1}{m-1}\\right). $$"
+    },
+    {
+      "title": "Paso 9: Verificación de la Solución",
+      "layout": "centered",
+      "phase": "comprobar",
+      "subpart": "a",
+      "narration": "Una solución de un sistema debe satisfacer simultáneamente todas sus ecuaciones. Sustituimos las tres expresiones, simplificamos y recuperamos cuatro, tres y seis.",
+      "content": "<p><strong>OBJETIVO:</strong> Confirmar que la solución general cumple las tres ecuaciones originales para $m\\neq1$.</p><p><strong>COMPROBACIÓN:</strong> Primera ecuación:<br>$$x+y+mz=\\frac{1+(3m-5)+m}{m-1}=\\frac{4m-4}{m-1}=4.$$ Segunda ecuación:<br>$$2x+y=\\frac{2+3m-5}{m-1}=\\frac{3m-3}{m-1}=3.$$ Tercera ecuación:<br>$$2x+2y+2z=\\frac{2+2(3m-5)+2}{m-1}=\\frac{6m-6}{m-1}=6.$$</p><p><strong>INTERPRETACIÓN:</strong> Se recuperan los tres términos independientes; la terna satisface simultáneamente todo el sistema cuando $m\\neq1$.</p>"
+    },
+    {
+      "title": "Lectura Geométrica de la Discusión",
+      "layout": "split",
+      "phase": "interpretar",
+      "subpart": "a",
+      "narration": "La interpretación espacial se deduce de las ecuaciones, no de la apariencia. Para eme igual a uno, la primera y la tercera ecuación representan planos paralelos distintos; por eso no puede existir un punto común a los tres.",
+      "content": "<p><strong>OBJETIVO:</strong> Interpretar geométricamente la clasificación comprobando los vectores normales.</p><p><strong>CÁLCULO:</strong> Si $m=1$, el primer plano es $x+y+z=4$. Al dividir la tercera ecuación entre $2$, el tercer plano queda $x+y+z=3$. Ambos tienen el mismo vector normal $(1,1,1)$, pero distintos términos independientes.</p><p><strong>INTERPRETACIÓN:</strong> Para $m=1$, esos dos planos son paralelos y distintos, de modo que la intersección común de los tres planos es vacía. Para $m\\neq1$, los tres planos se cortan en el único punto $P(t,3-2t,t)$, donde $t=\\frac{1}{m-1}\\neq0$; al variar $m$, el punto recorre la recta $z=x$, $y=3-2x$, salvo el punto $(0,3,0)$.</p>",
+      "visual": "<svg viewBox='0 0 500 320' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='500' height='320' fill='#0f172a'/><g data-math-key='m'><polygon points='55,65 300,65 410,135 165,135' fill='#38bdf8' fill-opacity='0.28' stroke='#38bdf8' stroke-width='3'/><polygon points='55,205 300,205 410,275 165,275' fill='#f472b6' fill-opacity='0.28' stroke='#f472b6' stroke-width='3'/><polygon points='225,25 315,25 350,295 260,295' fill='#4ade80' fill-opacity='0.20' stroke='#4ade80' stroke-width='3'/></g><line x1='270' y1='65' x2='285' y2='135' stroke='#f8fafc' stroke-width='4'/><line x1='288' y1='205' x2='304' y2='275' stroke='#f8fafc' stroke-width='4'/><text x='65' y='52' fill='#38bdf8' font-size='17'>P₁: x+y+z=4</text><text x='65' y='196' fill='#f472b6' font-size='17'>P₃: x+y+z=3</text><text x='323' y='45' fill='#4ade80' font-size='17'>P₂: 2x+y=3</text><text x='250' y='312' fill='#cbd5e1' font-size='14' text-anchor='middle'>Esquema de incidencia; no representa distancias</text></svg>",
+      "visualDescription": "Esquema espacial con dos paralelogramos azules y rosas, paralelos y separados, que representan los planos primero y tercero cuando m vale uno. Un tercer plano verde los atraviesa por separado. Las líneas de corte no coinciden.",
+      "visualMathLink": "Los planos primero y tercero comparten el vector normal uno, uno, uno, pero tienen términos independientes cuatro y tres; por eso son paralelos distintos. El segundo plano puede cortar a ambos, pero no puede crear un punto común a los tres."
+    },
+    {
+      "title": "Apartado b): sustitución del valor m = 2",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "b",
+      "narration": "Ahora respondemos literalmente a la segunda pregunta. Sustituimos eme igual a dos en cada componente de la solución general y simplificamos los tres valores.",
+      "content": "<p><strong>OBJETIVO:</strong> Resolver el sistema en el caso particular solicitado, $m=2$.</p><p><strong>CONEXIÓN:</strong> Como $2\\neq1$, podemos emplear la solución única obtenida en el apartado a).</p><p><strong>CÁLCULO:</strong> $$x=\\frac{1}{2-1}=1,\\qquad y=\\frac{3\\cdot2-5}{2-1}=\\frac{1}{1}=1,\\qquad z=\\frac{1}{2-1}=1.$$</p><p><strong>RESPUESTA AL APARTADO b):</strong> Para $m=2$, la solución única es $$(x,y,z)=(1,1,1).$$</p>"
+    },
+    {
+      "title": "Apartado b): comprobación en el sistema original",
+      "layout": "centered",
+      "phase": "comprobar",
+      "subpart": "b",
+      "narration": "Terminamos comprobando uno a uno los tres renglones del sistema con la terna uno, uno, uno y el parámetro igual a dos.",
+      "content": "<p><strong>OBJETIVO:</strong> Verificar directamente la solución particular en las tres ecuaciones originales.</p><p><strong>COMPROBACIÓN:</strong> Primera ecuación: $1+1+2\\cdot1=4$. Segunda ecuación: $2\\cdot1+1=3$. Tercera ecuación: $2\\cdot1+2\\cdot1+2\\cdot1=6$.</p><p><strong>INTERPRETACIÓN:</strong> Las tres igualdades son verdaderas simultáneamente; por tanto, $(1,1,1)$ es efectivamente la solución del sistema para $m=2$.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Cerramos el ejercicio repasando nuestro itinerario. De la matriz inicial a Gauss, de ahí a aislar el parámetro conflictivo, y separar nuestro mundo en dos casos para resolver en paz y en orden.",
+      "content": "<ol><li><strong>Matriz ampliada:</strong> traducimos el sistema y aplicamos $F_2\\to F_2-2F_1$ y $F_3\\to F_3-2F_1$.</li><li><strong>Valor crítico:</strong> la última fila produce $(2-2m)z=-2$; el cambio ocurre en $m=1$.</li><li><strong>RESPUESTA AL APARTADO a):</strong> si $m=1$, aparece $0=-2$ y el sistema es incompatible. Si $m\\neq1$, es compatible determinado y $$(x,y,z)=\\left(\\frac1{m-1},\\frac{3m-5}{m-1},\\frac1{m-1}\\right).$$</li><li><strong>RESPUESTA AL APARTADO b):</strong> al sustituir $m=2$ se obtiene $$(x,y,z)=(1,1,1),$$ resultado comprobado en las tres ecuaciones originales.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te toca. Aquí tienes otro sistema con un parámetro. Sigue los mismos pasos: escalona, busca cuándo la última fila se anula y resuelve cada caso con calma. No mires la solución hasta haberlo peleado.",
+      "content": "<p>Discute en función del parámetro $a$ y resuelve (cuando sea posible) el siguiente sistema de ecuaciones. Intenta aplicar el escalonamiento de Gauss de manera idéntica al ejercicio anterior antes de mirar la solución.</p>\n$$ \\begin{pmatrix} 1 & 1 & 1 \\\\ 2 & a & 0 \\\\ 1 & 0 & -1 \\end{pmatrix} \\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 3 \\\\ 0 \\end{pmatrix} $$",
+      "practiceAnswer": "<ul><li>Si $a = 1$: El sistema es Incompatible (SI). No hay solución.</li><li>Si $a \\neq 1$: El sistema es Compatible Determinado (SCD), y sus soluciones son: $x = \\frac{3-2a}{2-2a}$, $\\quad y = \\frac{1}{a-1}$, $\\quad z = \\frac{3-2a}{2-2a}$.</li></ul>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Las matrices también modelan la vida real. Imagina una planta química ajustando concentraciones para lograr una mezcla exacta. El razonamiento para ver si la mezcla es posible es exactamente el mismo que acabamos de hacer.",
+      "content": "<p>Una planta química mezcla masas (en kg) de tres compuestos $(m_1, m_2, m_3)$ para obtener tres productos distintos. El compuesto 3 tiene una concentración variable dependiente de la pureza $k$. El balance de masas genera este sistema matricial:</p>\n$$ \\begin{pmatrix} 1 & 2 & 1 \\\\ 0 & 1 & k \\\\ 1 & 3 & 2 \\end{pmatrix} \\begin{pmatrix} m_1 \\\\ m_2 \\\\ m_3 \\end{pmatrix} = \\begin{pmatrix} 100 \\\\ 50 \\\\ 150 \\end{pmatrix} $$\n<p>Plantea un modelo de Gauss para estudiar para qué valores de pureza $k$ el balance tiene solución única y hállala. ¡Comprueba si existe alguna pureza que permita infinitas combinaciones!</p>",
+      "practiceAnswer": "<p>Al restar la primera ecuación de la tercera y compararla con la segunda se obtiene $(1-k)m_3=0$.</p><ul><li>Si $k\\neq1$, el sistema es compatible determinado y la única solución es $(m_1,m_2,m_3)=(0,50,0)\\text{ kg}$.</li><li>Si $k=1$, el sistema es compatible indeterminado: $(m_1,m_2,m_3)=(t,50-t,t)\\text{ kg}$. Como representan masas, las soluciones físicamente admisibles cumplen $0\\leq t\\leq50$.</li></ul>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-02T16:37:22.772Z",
+    "updatedAt": "2026-08-02T16:37:22.772Z",
+    "contentHash": "446f0a3f685fd1ad",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

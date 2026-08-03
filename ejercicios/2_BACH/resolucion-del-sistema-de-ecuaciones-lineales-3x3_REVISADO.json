@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "2_Bachillerato",
+    "topic": "Álgebra Lineal",
+    "subtopic": "Sistemas de Ecuaciones Lineales",
+    "exerciseType": "Resolución de un sistema de ecuaciones por el método de Gauss",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 25,
+    "learningObjectives": [
+      "Planteamiento matricial de un sistema de tres ecuaciones con tres incógnitas",
+      "Aplicación rigurosa del método de eliminación de Gauss paso a paso",
+      "Clasificación y resolución mediante sustitución regresiva y comprobación analítica"
+    ],
+    "prerequisites": [
+      "Operaciones elementales por filas en matrices",
+      "Resolución de ecuaciones lineales de primer grado"
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 11,
+    "statementHash": "83787faf82bef335",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T09:43:58.262Z",
+    "id": "resolucion-del-sistema-de-ecuaciones-lineales-3x3-ad913f61"
+  },
+  "title": "Resolución del Sistema de Ecuaciones Lineales 3x3",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Presentamos el sistema de tres ecuaciones lineales con tres incógnitas propuesto para su resolución completa.",
+      "content": "<p>Resuelve el siguiente sistema de ecuaciones lineales:</p>$$\\begin{cases} 2x - y - z = 0 \\\\ x + 2y - z = 1 \\\\ 3x + y + 2z = 2 \\end{cases}$$",
+      "hints": [
+        "Identifica las tres incógnitas ($x, y, z$) y los coeficientes de cada ecuación.",
+        "Expresa el sistema en forma de matriz ampliada para facilitar las operaciones por filas."
+      ]
+    },
+    {
+      "title": "Plan de Resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Explicamos el plan de ataque mediante la eliminación gaussiana para transformar la matriz en forma escalonada.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar el conjunto solución del sistema ($x, y, z$) justificando cada transformación.</p><p><strong>DATOS:</strong> Sistema de 3 ecuaciones lineales con 3 incógnitas ($x, y, z$).</p><p><strong>ESTRATEGIA:</strong></p><ul><li>Expresar el sistema como matriz ampliada $M = (A|B)$.</li><li>Intercambiar la primera y segunda fila para obtener un pivote igual a $1$ en la posición $(1,1)$.</li><li>Aplicar operaciones elementales por filas para hacer ceros por debajo del pivote principal.</li><li>Analizar el rango según el Teorema de Rouché-Frobenius y resolver mediante sustitución regresiva.</li><li>Comprobar analíticamente la solución en las tres ecuaciones originales.</li></ul><p><strong>APLICACIÓN REAL:</strong> Los sistemas $3 \\times 3$ permiten determinar puntos de intersección entre planos en el espacio tridimensional y equilibrar redes de flujo en física e ingeniería.</p>"
+    },
+    {
+      "title": "Paso 1: Construcción e Intercambio de Filas",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Escribimos la matriz ampliada e intercambiamos la primera y la segunda fila para facilitar los cálculos con un pivote unidad.",
+      "content": "<p><strong>OBJETIVO:</strong> Obtener una matriz ampliada con el elemento $(1,1)$ igual a $1$.</p><p><strong>CONEXIÓN:</strong> Partimos del sistema de ecuaciones traducido a su representación matricial $M = (A|B)$.</p><p><strong>MÉTODO:</strong> Intercambiamos la fila 1 y la fila 2 ($F_1 \\leftrightarrow F_2$). La matriz original es:</p>$$\\begin{pmatrix} 2 & -1 & -1 & | & 0 \\\\ 1 & 2 & -1 & | & 1 \\\\ 3 & 1 & 2 & | & 2 \\end{pmatrix}$$<p><strong>RESULTADO:</strong> Al realizar $F_1 \\leftrightarrow F_2$, obtenemos la matriz equivalente mostrada a la derecha.</p><p><strong>INTERPRETACIÓN:</strong> Reordenar las ecuaciones del sistema no altera sus soluciones y nos proporciona un pivote ideal $1$ para la eliminación gaussiana.</p>",
+      "theory": "<p>Un intercambio de filas ($F_i \\leftrightarrow F_j$) transforma una matriz en otra equivalente representando el mismo sistema de ecuaciones.</p>",
+      "hints": [
+        "Un pivote igual a 1 facilita la eliminación sin necesidad de trabajar con fracciones en los primeros pasos."
+      ],
+      "visual": "<svg viewBox='0 0 500 240' preserveAspectRatio='xMidYMid meet'><rect width='500' height='240' fill='#0f172a' rx='10'/><text x='250' y='35' fill='#f8fafc' font-size='16' font-weight='bold' text-anchor='middle'>Matriz Ampliada (F1 ↔ F2)</text><path d='M 110 50 L 90 50 L 90 190 L 110 190' stroke='#38bdf8' stroke-width='3' fill='none'/><path d='M 390 50 L 410 50 L 410 190 L 390 190' stroke='#38bdf8' stroke-width='3' fill='none'/><line x1='330' y1='50' x2='330' y2='190' stroke='#94a3b8' stroke-width='2' stroke-dasharray='4'/><g font-size='22' font-weight='bold' text-anchor='middle'><text x='130' y='90' fill='#a855f7'>1</text><text x='200' y='90' fill='#f8fafc'>2</text><text x='270' y='90' fill='#f8fafc'>-1</text><text x='360' y='90' fill='#f8fafc'>1</text><text x='130' y='135' fill='#f8fafc'>2</text><text x='200' y='135' fill='#f8fafc'>-1</text><text x='270' y='135' fill='#f8fafc'>-1</text><text x='360' y='135' fill='#f8fafc'>0</text><text x='130' y='180' fill='#f8fafc'>3</text><text x='200' y='180' fill='#f8fafc'>1</text><text x='270' y='180' fill='#f8fafc'>2</text><text x='360' y='180' fill='#f8fafc'>2</text></g><text x='250' y='220' fill='#fbbf24' font-size='14' text-anchor='middle'>Fila 1 pivote = 1</text></svg>",
+      "visualDescription": "Matriz ampliada 3x4 delimitada por corchetes azules, con una línea vertical discontinua separando los términos independientes. La primera fila muestra 1, 2, -1 y 1.",
+      "visualMathLink": "Muestra el estado de la matriz tras realizar la operación elemental de intercambio de filas F1 y F2."
+    },
+    {
+      "title": "Paso 2: Eliminación en la Segunda Fila",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Hacemos cero el elemento en la posición dos uno reduciendo la segunda fila mediante la operación fila dos menos dos veces fila uno.",
+      "content": "<p><strong>OBJETIVO:</strong> Anular el coeficiente bajo el pivote en la segunda fila ($a_{21} = 0$).</p><p><strong>CONEXIÓN:</strong> Utilizamos la Fila 1 como fila pivote activa.</p><p><strong>CÁLCULO:</strong> Aplicamos la operación elemental $F_2 \\leftarrow F_2 - 2F_1$:</p>$$\\begin{aligned} F_2: & \\quad (2, \\, -1, \\, -1, \\, | \\, 0) \\\\ -2F_1: & \\quad (-2, \\, -4, \\, 2, \\, | \\, -2) \\\\ \\hline \\text{Nueva } F_2: & \\quad (0, \\, -5, \\, 1, \\, | \\, -2) \\end{aligned}$$<p><strong>RESULTADO:</strong> La nueva segunda fila es $(0, -5, 1, | -2)$.</p><p><strong>INTERPRETACIÓN:</strong> Hemos eliminado la variable $x$ de la segunda ecuación del sistema.</p>",
+      "warning": "<p>Recuerda multiplicar TODOS los elementos de la fila pivote por el escalar, incluyendo el término independiente.</p>",
+      "hints": [
+        "Verifica el signo de cada término: $-1 - 2(2) = -5$ y $-1 - 2(-1) = 1$."
+      ],
+      "visual": "<svg viewBox='0 0 500 240' preserveAspectRatio='xMidYMid meet'><rect width='500' height='240' fill='#0f172a' rx='10'/><text x='250' y='35' fill='#f8fafc' font-size='16' font-weight='bold' text-anchor='middle'>Paso 2: F2 ← F2 - 2·F1</text><path d='M 110 50 L 90 50 L 90 190 L 110 190' stroke='#38bdf8' stroke-width='3' fill='none'/><path d='M 390 50 L 410 50 L 410 190 L 390 190' stroke='#38bdf8' stroke-width='3' fill='none'/><line x1='330' y1='50' x2='330' y2='190' stroke='#94a3b8' stroke-width='2' stroke-dasharray='4'/><g font-size='22' font-weight='bold' text-anchor='middle'><text x='130' y='90' fill='#f8fafc'>1</text><text x='200' y='90' fill='#f8fafc'>2</text><text x='270' y='90' fill='#f8fafc'>-1</text><text x='360' y='90' fill='#f8fafc'>1</text><rect x='110' y='110' width='40' height='35' fill='#ef4444' opacity='0.3' rx='5'/><text x='130' y='135' fill='#4ade80'>0</text><text x='200' y='135' fill='#4ade80'>-5</text><text x='270' y='135' fill='#4ade80'>1</text><text x='360' y='135' fill='#4ade80'>-2</text><text x='130' y='180' fill='#f8fafc'>3</text><text x='200' y='180' fill='#f8fafc'>1</text><text x='270' y='180' fill='#f8fafc'>2</text><text x='360' y='180' fill='#f8fafc'>2</text></g></svg>",
+      "visualDescription": "Matriz ampliada en la cual el elemento de la segunda fila y primera columna se ha transformado en 0, resaltado en verde.",
+      "visualMathLink": "Ilustra el resultado directo de la combinación lineal F2 - 2*F1."
+    },
+    {
+      "title": "Paso 3: Eliminación en la Tercera Fila",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Hacemos cero el elemento en la posición tres uno reduciendo la tercera fila mediante la operación fila tres menos tres veces fila uno.",
+      "content": "<p><strong>OBJETIVO:</strong> Anular el elemento $a_{31}$ para limpiar la primera columna bajo el pivote.</p><p><strong>CONEXIÓN:</strong> Operamos sobre la Fila 3 utilizando nuevamente la Fila 1 como pivote.</p><p><strong>CÁLCULO:</strong> Aplicamos la operación elemental $F_3 \\leftarrow F_3 - 3F_1$:</p>$$\\begin{aligned} F_3: & \\quad (3, \\, 1, \\, 2, \\, | \\, 2) \\\\ -3F_1: & \\quad (-3, \\, -6, \\, 3, \\, | \\, -3) \\\\ \\hline \\text{Nueva } F_3: & \\quad (0, \\, -5, \\, 5, \\, | \\, -1) \\end{aligned}$$<p><strong>RESULTADO:</strong> La nueva tercera fila pasa a ser $(0, -5, 5, | -1)$.</p><p><strong>INTERPRETACIÓN:</strong> Toda la primera columna bajo el primer pivote contiene ahora ceros.</p>",
+      "hints": [
+        "Comprueba minuciosamente los signos: $2 - 3(-1) = 5$ y $2 - 3(1) = -1$."
+      ],
+      "checkpoint": {
+        "question": "¿Cuál es la operación elemental correcta para eliminar el primer elemento de F3 sabiendo que el pivote en F1 es 1?",
+        "options": [
+          {
+            "text": "F3 - 3*F1",
+            "correct": true,
+            "feedback": "Correcto: 3 - 3(1) = 0, lo que elimina el término de la primera columna."
+          },
+          {
+            "text": "F3 + 3*F1",
+            "correct": false,
+            "feedback": "Incorrecto: 3 + 3(1) = 6, no anularía el coeficiente."
+          },
+          {
+            "text": "F3 - F1",
+            "correct": false,
+            "feedback": "Incorrecto: 3 - 1 = 2, el resultado no sería cero."
+          }
+        ]
+      },
+      "visual": "<svg viewBox='0 0 500 240' preserveAspectRatio='xMidYMid meet'><rect width='500' height='240' fill='#0f172a' rx='10'/><text x='250' y='35' fill='#f8fafc' font-size='16' font-weight='bold' text-anchor='middle'>Paso 3: F3 ← F3 - 3·F1</text><path d='M 110 50 L 90 50 L 90 190 L 110 190' stroke='#38bdf8' stroke-width='3' fill='none'/><path d='M 390 50 L 410 50 L 410 190 L 390 190' stroke='#38bdf8' stroke-width='3' fill='none'/><line x1='330' y1='50' x2='330' y2='190' stroke='#94a3b8' stroke-width='2' stroke-dasharray='4'/><g font-size='22' font-weight='bold' text-anchor='middle'><text x='130' y='90' fill='#f8fafc'>1</text><text x='200' y='90' fill='#f8fafc'>2</text><text x='270' y='90' fill='#f8fafc'>-1</text><text x='360' y='90' fill='#f8fafc'>1</text><text x='130' y='135' fill='#f8fafc'>0</text><text x='200' y='135' fill='#f8fafc'>-5</text><text x='270' y='135' fill='#f8fafc'>1</text><text x='360' y='135' fill='#f8fafc'>-2</text><rect x='110' y='155' width='40' height='35' fill='#ef4444' opacity='0.3' rx='5'/><text x='130' y='180' fill='#c084fc'>0</text><text x='200' y='180' fill='#c084fc'>-5</text><text x='270' y='180' fill='#c084fc'>5</text><text x='360' y='180' fill='#c084fc'>-1</text></g></svg>",
+      "visualDescription": "Matriz ampliada con la primera columna completamente triangulada con ceros en las posiciones (2,1) y (3,1).",
+      "visualMathLink": "Muestra el estado de la matriz tras realizar la operación elemental F3 - 3*F1."
+    },
+    {
+      "title": "Paso 4: Triangulación Completa de la Matriz",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Eliminamos el elemento en la posición tres dos restando la segunda fila a la tercera fila para conseguir la forma escalonada.",
+      "content": "<p><strong>OBJETIVO:</strong> Anular el coeficiente $a_{32}$ para obtener una matriz triangular superior.</p><p><strong>CONEXIÓN:</strong> Tomamos el elemento en la posición $(2,2)$, que es $-5$, como nuevo pivote para la Fila 3.</p><p><strong>CÁLCULO:</strong> Restamos la Fila 2 a la Fila 3 ($F_3 \\leftarrow F_3 - F_2$):</p>$$\\begin{aligned} F_3: & \\quad (0, \\, -5, \\, 5, \\, | \\, -1) \\\\ -F_2: & \\quad (0, \\, 5, \\, -1, \\, | \\, 2) \\\\ \\hline \\text{Nueva } F_3: & \\quad (0, \\, 0, \\, 4, \\, | \\, 1) \\end{aligned}$$<p><strong>RESULTADO:</strong> Obtenemos la matriz triangular escalonada final:</p>$$\\begin{pmatrix} 1 & 2 & -1 & | & 1 \\\\ 0 & -5 & 1 & | & -2 \\\\ 0 & 0 & 4 & | & 1 \\end{pmatrix}$$<p><strong>INTERPRETACIÓN:</strong> La matriz está totalmente escalonada. El rango de la matriz de coeficientes $A$ es $3$ y el de la ampliada $M$ es $3$. Por el Teorema de Rouché-Frobenius, el sistema es <strong>Compatible Determinado</strong> (solución única).</p>",
+      "theory": "<p><strong>Teorema de Rouché-Frobenius:</strong> Si $\\text{rango}(A) = \\text{rango}(A|B) = n$ (número de incógnitas), el sistema tiene solución única.</p>",
+      "hints": [
+        "Observa la diagonal principal: ningún elemento de la diagonal es cero, por lo que el sistema tiene 3 pivotes válidos."
+      ],
+      "visual": "<svg viewBox='0 0 500 240' preserveAspectRatio='xMidYMid meet'><rect width='500' height='240' fill='#0f172a' rx='10'/><text x='250' y='35' fill='#f8fafc' font-size='16' font-weight='bold' text-anchor='middle'>Matriz Escalonada Final (F3 ← F3 - F2)</text><path d='M 110 50 L 90 50 L 90 190 L 110 190' stroke='#38bdf8' stroke-width='3' fill='none'/><path d='M 390 50 L 410 50 L 410 190 L 390 190' stroke='#38bdf8' stroke-width='3' fill='none'/><line x1='330' y1='50' x2='330' y2='190' stroke='#94a3b8' stroke-width='2' stroke-dasharray='4'/><g font-size='22' font-weight='bold' text-anchor='middle'><text x='130' y='90' fill='#a855f7'>1</text><text x='200' y='90' fill='#f8fafc'>2</text><text x='270' y='90' fill='#f8fafc'>-1</text><text x='360' y='90' fill='#f8fafc'>1</text><text x='130' y='135' fill='#38bdf8'>0</text><text x='200' y='135' fill='#a855f7'>-5</text><text x='270' y='135' fill='#f8fafc'>1</text><text x='360' y='135' fill='#f8fafc'>-2</text><text x='130' y='180' fill='#38bdf8'>0</text><text x='200' y='180' fill='#38bdf8'>0</text><text x='270' y='180' fill='#a855f7'>4</text><text x='360' y='180' fill='#22d3ee'>1</text></g><polygon points='115,100 185,100 185,145 255,145 255,190 115,190' fill='#fbbf24' opacity='0.15'/></svg>",
+      "visualDescription": "Matriz ampliada 3x4 en forma triangular superior, destacando con ceros en azul la región inferior a la diagonal y los tres pivotes en morado.",
+      "visualMathLink": "Representa el estado escalonado final que nos permite pasar al sistema equivalente y realizar sustitución regresiva."
+    },
+    {
+      "title": "Paso 5: Sustitución Regresiva para Obtener Incógnitas",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Escribimos el sistema triangular resultante y resolvemos desde la tercera ecuación hacia arriba para despejar zeta, efe e y, y equis.",
+      "content": "<p><strong>OBJETIVO:</strong> Calcular los valores exactos de $z$, $y$ y $x$ mediante sustitución regresiva.</p><p><strong>CONEXIÓN:</strong> La matriz escalonada se traduce al sistema equivalente:</p>$$\\begin{cases} x + 2y - z = 1 \\quad & \\text{(Ecuación 1)} \\\\ -5y + z = -2 \\quad & \\text{(Ecuación 2)} \\\\ 4z = 1 \\quad & \\text{(Ecuación 3)} \\end{cases}$$<p><strong>CÁLCULO PASO A PASO:</strong></p><ol><li><strong>Cálculo de $z$:</strong> De la Ecuación 3:$$4z = 1 \\implies z = \\frac{1}{4}$$</li><li><strong>Cálculo de $y$:</strong> Sustituimos $z = \\frac{1}{4}$ en la Ecuación 2:$$-5y + \\frac{1}{4} = -2 \\implies -5y = -2 - \\frac{1}{4} = -\\frac{9}{4} \\implies y = \\frac{-9}{-20} = \\frac{9}{20}$$</li><li><strong>Cálculo de $x$:</strong> Sustituimos $y = \\frac{9}{20}$ y $z = \\frac{1}{4}$ en la Ecuación 1:$$x + 2\\left(\\frac{9}{20}\\right) - \\frac{1}{4} = 1 \\implies x + \\frac{9}{10} - \\frac{1}{4} = 1$$$$x = 1 - \\frac{9}{10} + \\frac{1}{4} = \\frac{20 - 18 + 5}{20} = \\frac{7}{20}$$</li></ol><p><strong>RESULTADO PARCIAL:</strong> $x = \\frac{7}{20}$, $y = \\frac{9}{20}$, $z = \\frac{1}{4}$.</p><p><strong>INTERPRETACIÓN:</strong> Hemos obtenido un único triplete coordenado como candidato a solución.</p>",
+      "hints": [
+        "Asegúrate de expresar todas las fracciones con el común denominador 20 para realizar las sumas algebraicas correctamente."
+      ]
+    },
+    {
+      "title": "Paso 6: Comprobación Analítica de la Solución",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Sustituimos los valores calculados en las tres ecuaciones originales del enunciado para verificar que satisfacen cada una de ellas.",
+      "content": "<p><strong>OBJETIVO:</strong> Verificar la validez de la solución $(x, y, z) = \\left(\\frac{7}{20}, \\frac{9}{20}, \\frac{1}{4}\\right)$ en las ecuaciones iniciales.</p><p><strong>CONEXIÓN:</strong> Expresamos la fracción $z = \\frac{1}{4}$ como $\\frac{5}{20}$ para homogeneizar denominadores.</p><p><strong>COMPROBACIÓN EN CADA ECUACIÓN:</strong></p><ul><li><strong>Primera ecuación ($2x - y - z = 0$):</strong>$$2\\left(\\frac{7}{20}\\right) - \\frac{9}{20} - \\frac{5}{20} = \\frac{14 - 9 - 5}{20} = \\frac{0}{20} = 0 \\quad \\checkmark$$</li><li><strong>Segunda ecuación ($x + 2y - z = 1$):</strong>$$\\frac{7}{20} + 2\\left(\\frac{9}{20}\\right) - \\frac{5}{20} = \\frac{7 + 18 - 5}{20} = \\frac{20}{20} = 1 \\quad \\checkmark$$</li><li><strong>Tercera ecuación ($3x + y + 2z = 2$):</strong>$$3\\left(\\frac{7}{20}\\right) + \\frac{9}{20} + 2\\left(\\frac{5}{20}\\right) = \\frac{21 + 9 + 10}{20} = \\frac{40}{20} = 2 \\quad \\checkmark$$</li></ul><p><strong>RESULTADO:</strong> Se satisfacen las tres ecuaciones de forma exacta.</p><p><strong>RESPUESTA AL APARTADO:</strong> La solución única del sistema es $x = \\frac{7}{20}$, $y = \\frac{9}{20}$, $z = \\frac{1}{4}$.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos el procedimiento algebraico completo en cuatro fases clave para afianzar el método.",
+      "content": "<ol><li><strong>Transcripción Matricial:</strong> Se representó el sistema original mediante la matriz ampliada $M = (A|B)$.</li><li><strong>Escalonamiento Gaussiano:</strong> Mediante operaciones elementales de fila ($F_1 \\leftrightarrow F_2$, $F_2 - 2F_1$, $F_3 - 3F_1$, $F_3 - F_2$), se trianguló la matriz.</li><li><strong>Clasificación:</strong> $\\text{rango}(A) = \\text{rango}(A|B) = 3 = n$, clasificando el sistema como Compatible Determinado.</li><li><strong>Sustitución Regresiva y Verificación:</strong> Se despejaron en orden $z$, $y$ y $x$, verificando posteriormente en las ecuaciones iniciales.</li></ol><p><strong>SOLUCIÓN FINAL:</strong> $$(x, y, z) = \\left(\\frac{7}{20}, \\, \\frac{9}{20}, \\, \\frac{1}{4}\\right)$$</p>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Pon a prueba tus conocimientos resolviendo un sistema equivalente con distintos coeficientes.",
+      "content": "<p>Aplica el método de eliminación de Gauss para resolver el siguiente sistema de ecuaciones lineales:</p>$$\\begin{cases} x + y + z = 6 \\\\ 2x - y + z = 3 \\\\ 3x + 2y - z = 4 \\end{cases}$$<p><em>Intenta resolverlo paso a paso en tu cuaderno antes de comprobar la respuesta final.</em></p>",
+      "practiceAnswer": "<p><strong>Solución exacta:</strong> $x = 1$, $y = 2$, $z = 3$. Sistema Compatible Determinado con solución única.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica la formulación de sistemas lineales en un problema práctico de cálculo de pesos e intersección.",
+      "content": "<p>Tres lingotes de aleación metálica tienen composiciones distintas de Cobre, Plata y Oro. Para fabricar un nuevo componente se requieren exactamente $10\\text{ g}$ de Cobre, $14\\text{ g}$ de Plata y $16\\text{ g}$ de Oro. Determina la cantidad $x, y, z$ (en gramos) necesaria de cada lingote resolviendo el sistema planteado por sus proporciones:</p>$$\\begin{cases} 0{,}5x + 0{,}2y + 0{,}1z = 10 \\\\ 0{,}3x + 0{,}4y + 0{,}3z = 14 \\\\ 0{,}2x + 0{,}4y + 0{,}6z = 16 \\end{cases}$$<p><em>Formula la matriz ampliada y aplica la eliminación gaussiana antes de verificar la respuesta.</em></p>",
+      "practiceAnswer": "<p><strong>Solución exacta:</strong> $x = 10\\text{ g}$, $y = 15\\text{ g}$, $z = 20\\text{ g}$. Muestra la aplicación de sistemas lineales en problemas de mezclas y proporciones.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T09:48:58.558Z",
+    "updatedAt": "2026-08-03T09:48:58.558Z",
+    "contentHash": "877cf1bbffebfc25",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

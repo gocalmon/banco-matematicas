@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "2_Bachillerato",
+    "topic": "Álgebra Lineal",
+    "subtopic": "Sistemas de Ecuaciones Lineales con Parámetros",
+    "exerciseType": "Discusión y resolución de un sistema parametrizado",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 35,
+    "learningObjectives": [
+      "Aplicar el método de Gauss para triangularizar una matriz paramétrica.",
+      "Discutir la compatibilidad de un sistema en función de los valores de un parámetro.",
+      "Resolver sistemas compatibles indeterminados parametrizando las soluciones."
+    ],
+    "prerequisites": [
+      "Operaciones elementales por filas.",
+      "Concepto de rango de una matriz.",
+      "Teorema de Rouché-Capelli."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Demostrar que el sistema tiene solución si K ≠ 8."
+      },
+      {
+        "id": "b",
+        "request": "Resolver el sistema si K = 8."
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 13,
+    "statementHash": "46d60ed28f8ee318",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-02T16:57:52.436Z",
+    "id": "discusion-y-resolucion-de-un-sistema-parametrico-7437ce59"
+  },
+  "title": "Discusión y Resolución de un Sistema Paramétrico",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Vamos a enfrentarnos a un sistema de ecuaciones lineales que contiene un parámetro, una letra ka, cuyo valor desconocemos. Se nos piden dos cosas: primero, demostrar que para cualquier valor distinto de ocho el sistema tiene solución; y segundo, encontrar las soluciones exactas cuando ka vale exactamente ocho.",
+      "content": "<p>Se nos presenta el siguiente ejercicio con un sistema de ecuaciones lineales que depende de un parámetro $K$. Aunque la primera línea de la imagen está parcialmente recortada, el núcleo del problema es perfectamente legible:</p><p>Demostrar que el sistema $$\\begin{cases} x - y + 2z = 2 \\\\ 2x + y + 3z = 2 \\\\ 5x + y + Kz = 6 \\end{cases}$$ tiene solución si $K \\neq 8$.</p><p>Resolver el sistema si $K = 8$.</p>"
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para abordar este problema, la mejor herramienta es el método de eliminación de Gauss. Convertiremos el sistema en una matriz y haremos ceros por debajo de la diagonal. Al final, el comportamiento de la última fila nos dirá todo lo que necesitamos saber sobre la existencia y cantidad de soluciones en función de ka.",
+      "content": "<p><strong>OBJETIVO:</strong> Analizar la compatibilidad del sistema según los valores del parámetro $K$ y resolverlo para un caso concreto.</p><p><strong>DATOS:</strong> Un sistema de 3 ecuaciones con 3 incógnitas ($x, y, z$) y un coeficiente paramétrico $K$ en la tercera ecuación.</p><p><strong>MÉTODO:</strong> Utilizaremos el <strong>Método de Gauss</strong>. Transformaremos el sistema en su matriz ampliada asociada y aplicaremos operaciones elementales por filas para escalonarla (triangularla superiormente). </p><p><strong>JUSTIFICACIÓN:</strong> Escalonar la matriz nos permitirá aplicar de forma visual e inmediata el Teorema de Rouché-Capelli. Observando los elementos de la diagonal principal y los términos independientes, deduciremos el rango de la matriz de coeficientes y de la matriz ampliada en función del parámetro $K$. Esta técnica es el pilar de la programación lineal y los algoritmos de optimización de redes, donde los recursos o restricciones (nuestro parámetro $K$) pueden variar y necesitamos saber si la red sigue siendo viable (tiene solución).</p>"
+    },
+    {
+      "title": "Paso 1: Matriz ampliada del sistema",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "El primer paso indispensable es traducir nuestro sistema de ecuaciones a su forma matricial. Cada columna representará una incógnita: equis, i, y zeta, y la última columna contendrá los términos independientes. Fíjate en cómo colocamos el parámetro ka en la tercera fila.",
+      "content": "<p><strong>OBJETIVO:</strong> Convertir el sistema algebraico en una estructura matricial operable.</p><p><strong>CONEXIÓN:</strong> Para aplicar el método de Gauss propuesto, necesitamos extraer los coeficientes de las incógnitas y los términos independientes.</p><p><strong>DESARROLLO:</strong> Escribimos la matriz de coeficientes $A$ y le adjuntamos la columna de términos independientes para formar la matriz ampliada $A^*$.</p><p>El sistema es:<br>$\\begin{cases} 1x - 1y + 2z = 2 \\\\ 2x + 1y + 3z = 2 \\\\ 5x + 1y + Kz = 6 \\end{cases}$</p><p>Su matriz ampliada $A^*$ se construye colocando los coeficientes de $x$, $y$, y $z$ en las tres primeras columnas, y los términos independientes tras la línea divisoria.</p><p><strong>INTERPRETACIÓN:</strong> Ahora tenemos una matriz de dimensión $3 \\times 4$. Nuestro objetivo en los siguientes pasos será lograr que los elementos por debajo de la diagonal principal (el $2$, el $5$ y el $1$) se conviertan en ceros.</p>",
+      "visual": "<svg viewBox='0 0 550 200' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><path d='M 40,30 L 25,30 L 25,180 L 40,180' fill='none' stroke='#fbbf24' stroke-width='3'/><path d='M 350,30 L 365,30 L 365,180 L 350,180' fill='none' stroke='#fbbf24' stroke-width='3'/><line x1='275' y1='30' x2='275' y2='180' stroke='#334155' stroke-width='2' stroke-dasharray='5,5'/><g font-family='sans-serif' font-size='22' text-anchor='middle'><g data-math-key='x' fill='#38bdf8'><text x='75' y='70'>1</text><text x='75' y='120'>2</text><text x='75' y='170'>5</text></g><g data-math-key='y' fill='#f472b6'><text x='145' y='70'>-1</text><text x='145' y='120'>1</text><text x='145' y='170'>1</text></g><g data-math-key='z' fill='#4ade80'><text x='215' y='70'>2</text><text x='215' y='120'>3</text></g><g data-math-key='K' fill='#fb923c'><text x='215' y='170'>K</text></g><g fill='#f8fafc'><text x='315' y='70'>2</text><text x='315' y='120'>2</text><text x='315' y='170'>6</text></g></g></svg>",
+      "visualDescription": "Matriz ampliada del sistema original. Tres filas y cuatro columnas. La primera columna corresponde a 'x' y tiene los valores 1, 2, 5 coloreados en azul. La segunda a 'y' con -1, 1, 1 en rosa. La tercera a 'z' con 2, 3 en verde y la letra K en naranja. Separados por una línea punteada, los términos independientes son 2, 2, 6 en blanco.",
+      "visualMathLink": "Cada número de la matriz se extrae directamente de los coeficientes de las ecuaciones. El color azul representa la incógnita x, el rosa la y, el verde la z, y el naranja el parámetro K, manteniendo esta coherencia estructural.",
+      "theory": "<p><strong>Operaciones elementales válidas en Gauss:</strong><br>1. Intercambiar dos filas.<br>2. Multiplicar una fila por un número real distinto de cero.<br>3. Sumar a una fila otra fila multiplicada por un número. (Esta es la que más usaremos para hacer ceros).</p>"
+    },
+    {
+      "title": "Paso 2: Primera iteración de Gauss (Eliminar x)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Comenzamos el proceso de escalonamiento. Nuestro objetivo es hacer ceros en la primera columna, debajo del primer elemento. Para eliminar el 2 de la segunda fila, le restaremos el doble de la primera fila.",
+      "content": "<p><strong>OBJETIVO:</strong> Anular el coeficiente de $x$ en la segunda fila.</p><p><strong>CONEXIÓN:</strong> Usaremos la primera fila (cuyo primer elemento es un cómodo $1$, nuestro pivote) para eliminar el $2$ de la posición $(2,1)$.</p><p><strong>CÁLCULO:</strong> La operación elemental será sustituir la Fila 2 ($F_2$) por el resultado de restarle el doble de la Fila 1 ($F_1$).</p><p>$$F_2 \\rightarrow F_2 - 2F_1$$</p><p>Desglosamos el cálculo elemento a elemento para la nueva Fila 2:<br>Col 1 ($x$): $2 - 2(1) = 0$<br>Col 2 ($y$): $1 - 2(-1) = 1 + 2 = 3$<br>Col 3 ($z$): $3 - 2(2) = 3 - 4 = -1$<br>Independiente: $2 - 2(2) = 2 - 4 = -2$</p><p><strong>INTERPRETACIÓN:</strong> Hemos logrado nuestro primer cero estructural. La ecuación equivalente de la segunda fila ahora es $3y - z = -2$, de la cual ha desaparecido la incógnita $x$.</p>",
+      "visual": "<svg viewBox='0 0 550 200' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><path d='M 40,30 L 25,30 L 25,180 L 40,180' fill='none' stroke='#fbbf24' stroke-width='3'/><path d='M 350,30 L 365,30 L 365,180 L 350,180' fill='none' stroke='#fbbf24' stroke-width='3'/><line x1='275' y1='30' x2='275' y2='180' stroke='#334155' stroke-width='2' stroke-dasharray='5,5'/><g font-family='sans-serif' font-size='22' text-anchor='middle'><g data-math-key='x' fill='#38bdf8'><text x='75' y='70'>1</text><text x='75' y='120'>0</text><text x='75' y='170'>5</text></g><g data-math-key='y' fill='#f472b6'><text x='145' y='70'>-1</text><text x='145' y='120'>3</text><text x='145' y='170'>1</text></g><g data-math-key='z' fill='#4ade80'><text x='215' y='70'>2</text><text x='215' y='120'>-1</text></g><g data-math-key='K' fill='#fb923c'><text x='215' y='170'>K</text></g><g fill='#f8fafc'><text x='315' y='70'>2</text><text x='315' y='120'>-2</text><text x='315' y='170'>6</text><text x='450' y='120' font-size='18' fill='#fbbf24'>F_2 → F_2 - 2F_1</text></g></g></svg>",
+      "visualDescription": "Matriz ampliada tras la primera operación. La segunda fila ha cambiado. Ahora es 0 (azul), 3 (rosa), -1 (verde) | -2 (blanco). A la derecha de la matriz se indica la operación realizada en amarillo: F_2 flecha F_2 menos 2F_1. La primera y tercera fila permanecen idénticas a la imagen anterior.",
+      "visualMathLink": "El 0 en la posición (2,1) confirma gráficamente el éxito de la operación F_2 -> F_2 - 2F_1. Los demás elementos de esa fila (3, -1, -2) son el resultado directo de aplicar la misma resta a sus respectivas columnas.",
+      "checkpoint": {
+        "question": "¿Por qué elegimos hacer F2 - 2F1 y no, por ejemplo, multiplicar primero toda la F2 por 1/2?",
+        "options": [
+          {
+            "text": "Porque multiplicar por fracciones siempre genera errores.",
+            "correct": false,
+            "feedback": "Incorrecto. Se pueden usar fracciones, pero introducen mayor complejidad aritmética y riesgo de errores de cálculo, aunque matemáticamente sea válido."
+          },
+          {
+            "text": "Porque usar el pivote 1 de la primera fila evita fracciones y simplifica el cálculo directo.",
+            "correct": true,
+            "feedback": "¡Exacto! Al tener un 1 en la posición (1,1), basta con multiplicar esa fila por el número que queremos anular (el 2) y restarla. Es la forma más eficiente y limpia."
+          },
+          {
+            "text": "Porque el método de Gauss prohíbe multiplicar filas por fracciones.",
+            "correct": false,
+            "feedback": "Incorrecto. El método de Gauss sí permite multiplicar por cualquier escalar distinto de cero (incluidas fracciones). Simplemente evitamos hacerlo por conveniencia operativa."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Paso 3: Segunda iteración de Gauss (Eliminar x en F3)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Continuamos limpiando la primera columna. Ahora queremos un cero en la posición inferior izquierda, donde está el 5. Usaremos de nuevo nuestra primera fila como pivote.",
+      "content": "<p><strong>OBJETIVO:</strong> Anular el coeficiente de $x$ en la tercera fila.</p><p><strong>CONEXIÓN:</strong> Seguimos usando la Fila 1 como herramienta principal para limpiar la primera columna, ya que su primer elemento es $1$.</p><p><strong>CÁLCULO:</strong> La operación elemental será sustituir la Fila 3 ($F_3$) por el resultado de restarle cinco veces la Fila 1 ($F_1$).</p><p>$$F_3 \\rightarrow F_3 - 5F_1$$</p><p>Calculamos los nuevos elementos de la Fila 3:<br>Col 1 ($x$): $5 - 5(1) = 0$<br>Col 2 ($y$): $1 - 5(-1) = 1 + 5 = 6$<br>Col 3 ($z$): $K - 5(2) = K - 10$<br>Independiente: $6 - 5(2) = 6 - 10 = -4$</p><p><strong>INTERPRETACIÓN:</strong> La primera columna ya está completamente triangulada (ceros bajo la diagonal). Observa cómo el parámetro $K$ empieza a transformarse algebraicamente, convirtiéndose en $K-10$.</p>",
+      "visual": "<svg viewBox='0 0 550 200' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><path d='M 40,30 L 25,30 L 25,180 L 40,180' fill='none' stroke='#fbbf24' stroke-width='3'/><path d='M 350,30 L 365,30 L 365,180 L 350,180' fill='none' stroke='#fbbf24' stroke-width='3'/><line x1='275' y1='30' x2='275' y2='180' stroke='#334155' stroke-width='2' stroke-dasharray='5,5'/><g font-family='sans-serif' font-size='22' text-anchor='middle'><g data-math-key='x' fill='#38bdf8'><text x='75' y='70'>1</text><text x='75' y='120'>0</text><text x='75' y='170'>0</text></g><g data-math-key='y' fill='#f472b6'><text x='145' y='70'>-1</text><text x='145' y='120'>3</text><text x='145' y='170'>6</text></g><g data-math-key='z' fill='#4ade80'><text x='215' y='70'>2</text><text x='215' y='120'>-1</text></g><g data-math-key='K' fill='#fb923c'><text x='215' y='170'>K-10</text></g><g fill='#f8fafc'><text x='315' y='70'>2</text><text x='315' y='120'>-2</text><text x='315' y='170'>-4</text><text x='450' y='170' font-size='18' fill='#fbbf24'>F_3 → F_3 - 5F_1</text></g></g></svg>",
+      "visualDescription": "Matriz ampliada tras la segunda operación. La tercera fila ha cambiado. Ahora es 0 (azul), 6 (rosa), K-10 (naranja) | -4 (blanco). A la derecha se indica la operación: F_3 flecha F_3 menos 5F_1. La primera columna ya muestra los ceros deseados bajo el 1.",
+      "visualMathLink": "El término K-10 en naranja ilustra gráficamente que las operaciones por fila afectan a los parámetros algebraicos exactamente igual que a los números constantes. La expresión arrastra la modificación de restar cinco veces el elemento de arriba (2)."
+    },
+    {
+      "title": "Paso 4: Tercera iteración de Gauss (Eliminar y en F3)",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Ya tenemos la primera columna lista. Para terminar de escalonar la matriz, necesitamos un cero en la posición de la tercera fila y segunda columna, donde ahora hay un 6. Ojo aquí: debemos usar la segunda fila para no estropear el cero que ya logramos en la primera columna.",
+      "content": "<p><strong>OBJETIVO:</strong> Anular el coeficiente de $y$ en la tercera fila para conseguir la matriz triangular superior completa.</p><p><strong>CONEXIÓN:</strong> Ahora que la Columna 1 está lista, pasamos a la Columna 2. Para eliminar el $6$ en la posición $(3,2)$, debemos usar obligatoriamente la Fila 2 como pivote (que tiene un $3$). Si usáramos la Fila 1, reintroduciríamos un valor no nulo en la posición $(3,1)$.</p><p><strong>CÁLCULO:</strong> La operación adecuada es restarle a la Fila 3 el doble de la Fila 2.</p><p>$$F_3 \\rightarrow F_3 - 2F_2$$</p><p>Calculamos los elementos de la nueva Fila 3:<br>Col 1 ($x$): $0 - 2(0) = 0$ (El cero se mantiene intacto)<br>Col 2 ($y$): $6 - 2(3) = 6 - 6 = 0$<br>Col 3 ($z$): $(K - 10) - 2(-1) = K - 10 + 2 = K - 8$<br>Independiente: $-4 - 2(-2) = -4 + 4 = 0$</p><p><strong>INTERPRETACIÓN:</strong> Hemos alcanzado la forma escalonada. La matriz final contiene la clave de todo el problema en el término $K - 8$ de la última fila.</p>",
+      "visual": "<svg viewBox='0 0 550 200' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><path d='M 40,30 L 25,30 L 25,180 L 40,180' fill='none' stroke='#fbbf24' stroke-width='3'/><path d='M 350,30 L 365,30 L 365,180 L 350,180' fill='none' stroke='#fbbf24' stroke-width='3'/><line x1='275' y1='30' x2='275' y2='180' stroke='#334155' stroke-width='2' stroke-dasharray='5,5'/><g font-family='sans-serif' font-size='22' text-anchor='middle'><g data-math-key='x' fill='#38bdf8'><text x='75' y='70'>1</text><text x='75' y='120'>0</text><text x='75' y='170'>0</text></g><g data-math-key='y' fill='#f472b6'><text x='145' y='70'>-1</text><text x='145' y='120'>3</text><text x='145' y='170'>0</text></g><g data-math-key='z' fill='#4ade80'><text x='215' y='70'>2</text><text x='215' y='120'>-1</text></g><g data-math-key='K' fill='#fb923c'><text x='215' y='170'>K-8</text></g><g fill='#f8fafc'><text x='315' y='70'>2</text><text x='315' y='120'>-2</text><text x='315' y='170'>0</text><text x='450' y='170' font-size='18' fill='#fbbf24'>F_3 → F_3 - 2F_2</text></g></g></svg>",
+      "visualDescription": "Matriz escalonada final. La última fila es ahora 0, 0, K-8 y 0 como término independiente. El triángulo de ceros bajo la diagonal principal está completo: en las posiciones (2,1), (3,1) y (3,2).",
+      "visualMathLink": "El 0 en la posición (3,2) completa el escalonamiento. La posición (3,3) evoluciona de K-10 a K-8, mostrando cómo la variable paramétrica condensa todas las operaciones acumuladas en esa posición.",
+      "warning": "¡Cuidado! Un error muy común aquí es usar la Fila 1 para hacer el cero en la columna 2. Si hicieras $F_3 \\rightarrow F_3 + 6F_1$, conseguirías el cero en $y$, pero estropearías el cero de $x$ sumándole un $6$."
+    },
+    {
+      "title": "Apartado a): Discusión para K ≠ 8",
+      "layout": "split",
+      "phase": "interpretar",
+      "narration": "Con la matriz ya triangulada, respondemos a la primera pregunta del ejercicio. Nos piden demostrar que si ka no es igual a ocho, el sistema tiene solución. Observemos detenidamente la última fila de nuestra matriz escalonada.",
+      "content": "<p><strong>OBJETIVO:</strong> Demostrar analíticamente que la condición $K \\neq 8$ garantiza la existencia de soluciones (Sistema Compatible).</p><p><strong>CONEXIÓN:</strong> Analizamos la última fila de la matriz escalonada obtenida en el paso anterior: $\\begin{pmatrix} 0 & 0 & K-8 & | & 0 \\end{pmatrix}$. Esta fila representa la ecuación $(K-8)z = 0$.</p><p><strong>DESARROLLO:</strong> Si por hipótesis asumimos que $K \\neq 8$, entonces la expresión $(K - 8)$ es un número distinto de cero.</p><p>Evaluemos los rangos según el Teorema de Rouché-Capelli:<br>* El rango de la matriz de coeficientes $A$ es $3$, ya que su diagonal principal no tiene ceros (los pivotes son $1, 3$ y $K-8 \\neq 0$).<br>* El rango de la matriz ampliada $A^*$ también es $3$.<br>* El número de incógnitas ($x, y, z$) es $3$.</p><p>Como $\\text{rango}(A) = \\text{rango}(A^*) = 3$, el sistema es <strong>Compatible Determinado (SCD)</strong>. Esto significa que tiene una <strong>única solución</strong> (en particular, de la última ecuación $(K-8)z = 0$ deduciríamos que $z = 0$).</p><p><strong>RESPUESTA AL APARTADO a):</strong> Al demostrar que para cualquier valor de $K \\neq 8$ el sistema es Compatible Determinado, queda probado que <strong>el sistema sí tiene solución</strong> (y además, única).</p>",
+      "visual": "<svg viewBox='0 0 550 200' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><path d='M 40,30 L 25,30 L 25,180 L 40,180' fill='none' stroke='#fbbf24' stroke-width='3'/><path d='M 350,30 L 365,30 L 365,180 L 350,180' fill='none' stroke='#fbbf24' stroke-width='3'/><line x1='275' y1='30' x2='275' y2='180' stroke='#334155' stroke-width='2' stroke-dasharray='5,5'/><rect x='200' y='145' width='140' height='35' fill='none' stroke='#ef4444' stroke-width='2' rx='5'/><g font-family='sans-serif' font-size='22' text-anchor='middle'><g fill='#94a3b8'><text x='75' y='70'>1</text><text x='75' y='120'>0</text><text x='75' y='170'>0</text><text x='145' y='70'>-1</text><text x='145' y='120'>3</text><text x='145' y='170'>0</text><text x='215' y='70'>2</text><text x='215' y='120'>-1</text><text x='315' y='70'>2</text><text x='315' y='120'>-2</text></g><g data-math-key='K' fill='#fb923c'><text x='215' y='170' font-weight='bold'>K-8</text></g><g fill='#f8fafc'><text x='315' y='170' font-weight='bold'>0</text></g></g></svg>",
+      "visualDescription": "Matriz escalonada con el resto de números en un gris atenuado, excepto la última fila en la parte de K-8 y 0, que están resaltados y enmarcados en un rectángulo rojo para centrar la atención en la ecuación clave (K-8)z = 0.",
+      "visualMathLink": "El recuadro rojo aísla visualmente la condición crítica de compatibilidad. Al garantizar que la celda naranja (K-8) no se anule, aseguramos un pivote válido para la tercera incógnita, lo que sostiene el rango completo de la matriz."
+    },
+    {
+      "title": "Apartado b): Evaluación del caso K = 8",
+      "layout": "split",
+      "phase": "analizar",
+      "narration": "Ahora vamos a resolver la segunda parte del problema. ¿Qué ocurre exactamente si ka toma el valor de ocho? Volvamos a nuestra matriz escalonada y sustituyamos la letra por el número. Veremos que ocurre un fenómeno matemático muy interesante en la última fila.",
+      "content": "<p><strong>OBJETIVO:</strong> Identificar el tipo de sistema y las ecuaciones resultantes cuando se impone la condición $K = 8$.</p><p><strong>CONEXIÓN:</strong> Retomamos la matriz escalonada del Paso 4 y sustituimos directamente el parámetro $K$ por el valor $8$ solicitado.</p><p><strong>CÁLCULO:</strong> En la última fila teníamos la expresión $K - 8$. Al sustituir:<br>$$8 - 8 = 0$$</p><p>La matriz se transforma en:<br>$\\begin{pmatrix} 1 & -1 & 2 & | & 2 \\\\ 0 & 3 & -1 & | & -2 \\\\ 0 & 0 & 0 & | & 0 \\end{pmatrix}$</p><p><strong>INTERPRETACIÓN:</strong> La última fila es completamente nula ($0x + 0y + 0z = 0$), lo que es una identidad trivial ($0 = 0$). Esto significa que:<br>* $\\text{rango}(A) = 2$ (solo hay dos filas no nulas).<br>* $\\text{rango}(A^*) = 2$.<br>* Como el rango ($2$) es estrictamente menor que el número de incógnitas ($3$), por Rouché-Capelli nos encontramos ante un <strong>Sistema Compatible Indeterminado (SCI)</strong>. El sistema tiene infinitas soluciones y dependerá de $3 - 2 = 1$ parámetro libre.</p>",
+      "visual": "<svg viewBox='0 0 550 200' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><path d='M 40,30 L 25,30 L 25,180 L 40,180' fill='none' stroke='#fbbf24' stroke-width='3'/><path d='M 350,30 L 365,30 L 365,180 L 350,180' fill='none' stroke='#fbbf24' stroke-width='3'/><line x1='275' y1='30' x2='275' y2='180' stroke='#334155' stroke-width='2' stroke-dasharray='5,5'/><g font-family='sans-serif' font-size='22' text-anchor='middle'><g data-math-key='x' fill='#38bdf8'><text x='75' y='70'>1</text><text x='75' y='120'>0</text><text x='75' y='170' opacity='0.3'>0</text></g><g data-math-key='y' fill='#f472b6'><text x='145' y='70'>-1</text><text x='145' y='120'>3</text><text x='145' y='170' opacity='0.3'>0</text></g><g data-math-key='z' fill='#4ade80'><text x='215' y='70'>2</text><text x='215' y='120'>-1</text><text x='215' y='170' font-weight='bold'>0</text></g><g fill='#f8fafc'><text x='315' y='70'>2</text><text x='315' y='120'>-2</text><text x='315' y='170' opacity='0.3'>0</text></g></g><line x1='50' y1='165' x2='340' y2='165' stroke='#ef4444' stroke-width='3' opacity='0.7'/></svg>",
+      "visualDescription": "Matriz tras sustituir K por 8. La última fila está compuesta íntegramente por ceros (0, 0, 0 | 0). Una línea roja semitransparente tacha transversalmente toda la tercera fila para indicar que, al ser 0=0, aporta información redundante y se puede descartar del sistema.",
+      "visualMathLink": "La línea de tachado sobre la tercera fila nula refleja físicamente la pérdida de dimensión del sistema: una de las ecuaciones originales era en realidad combinación lineal de las otras dos cuando K=8, dejándonos con solo dos ecuaciones útiles."
+    },
+    {
+      "title": "Apartado b): Resolución paramétrica para K = 8",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Con solo dos ecuaciones útiles y tres incógnitas, necesitamos usar una variable como comodín o parámetro libre. Llamémosla t. Podemos elegir la zeta, o bien la i, que en este caso concreto nos evitará trabajar con fracciones. Veamos cómo despejar todo en función de este parámetro.",
+      "content": "<p><strong>OBJETIVO:</strong> Expresar las tres variables ($x, y, z$) en función de un único parámetro real para dar las infinitas soluciones.</p><p><strong>CONEXIÓN:</strong> Escribimos el sistema reducido equivalente, proveniente de las dos primeras filas de nuestra última matriz:<br>$\\begin{cases} x - y + 2z = 2 \\\\ 3y - z = -2 \\end{cases}$</p><p><strong>CÁLCULO:</strong> Debemos elegir una variable libre. Podríamos elegir $z = \\lambda$. Sin embargo, si observamos la segunda ecuación, despejar $z$ es mucho más directo y evita fracciones: $z = 3y + 2$. Por tanto, es estratégicamente superior elegir $y$ como variable libre.</p><p>1. Hacemos $y = \\lambda$, donde $\\lambda \\in \\mathbb{R}$.<br>2. Despejamos $z$ en la segunda ecuación:<br>$$3(\\lambda) - z = -2 \\implies z = 3\\lambda + 2$$<br>3. Sustituimos $y$ y $z$ en la primera ecuación para despejar $x$:<br>$$x - \\lambda + 2(3\\lambda + 2) = 2$$<br>$$x - \\lambda + 6\\lambda + 4 = 2$$<br>$$x + 5\\lambda + 4 = 2$$<br>$$x = -5\\lambda - 2$$</p><p><strong>RESPUESTA AL APARTADO b):</strong> Si $K=8$, el sistema es Compatible Indeterminado. Sus infinitas soluciones vienen dadas por la familia paramétrica: $$\\begin{cases} x = -5\\lambda - 2 \\\\ y = \\lambda \\\\ z = 3\\lambda + 2 \\end{cases} \\quad \\text{para todo } \\lambda \\in \\mathbb{R}$$</p>",
+      "theory": "<p><strong>Parametrización libre:</strong> En un Sistema Compatible Indeterminado con 1 grado de libertad, la elección de la variable libre es arbitraria. Elegir $y=\\lambda$ o $z=\\lambda$ dará expresiones de aspecto distinto, pero representarán matemáticamente la misma recta de soluciones en el espacio.</p>"
+    },
+    {
+      "title": "Comprobación de la solución",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "El rigor matemático exige que siempre comprobemos nuestro resultado. Vamos a meter nuestras expresiones dependientes de lambda en el sistema original, y veremos que todo cuadra a la perfección, confirmando que hemos resuelto el problema con éxito.",
+      "content": "<p><strong>OBJETIVO:</strong> Verificar que la parametrización hallada cumple todas las ecuaciones originales del sistema para $K=8$.</p><p><strong>MÉTODO:</strong> Sustituimos $x = -5\\lambda - 2$, $y = \\lambda$, y $z = 3\\lambda + 2$ en las tres ecuaciones iniciales. Debe cumplirse la igualdad independientemente del valor de $\\lambda$.</p><p><strong>COMPROBACIÓN:</strong></p><p><strong>Ecuación 1:</strong> $x - y + 2z = 2$<br>$(-5\\lambda - 2) - (\\lambda) + 2(3\\lambda + 2) = -6\\lambda - 2 + 6\\lambda + 4 = 2$. ¡Se cumple!</p><p><strong>Ecuación 2:</strong> $2x + y + 3z = 2$<br>$2(-5\\lambda - 2) + (\\lambda) + 3(3\\lambda + 2) = -10\\lambda - 4 + \\lambda + 9\\lambda + 6 = 0\\lambda + 2 = 2$. ¡Se cumple!</p><p><strong>Ecuación 3 (con K=8):</strong> $5x + y + 8z = 6$<br>$5(-5\\lambda - 2) + (\\lambda) + 8(3\\lambda + 2) = -25\\lambda - 10 + \\lambda + 24\\lambda + 16 = 0\\lambda + 6 = 6$. ¡Se cumple!</p><p><strong>INTERPRETACIÓN:</strong> Puesto que las tres ecuaciones se satisfacen simultáneamente, nuestro conjunto paramétrico define de forma correcta e irrefutable la recta de soluciones en el espacio tridimensional.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Revisemos nuestro viaje. Planteamos la matriz, triangulamos cuidadosamente haciendo ceros, evaluamos el parámetro para concluir sobre el rango, y por último resolvimos un caso particular con infinitas soluciones comprobando el resultado.",
+      "content": "<p>Repasemos los hitos conceptuales y metodológicos que hemos recorrido:</p><ol><li><strong>Construcción Matricial:</strong> Traducimos el sistema a su matriz ampliada, preservando la posición del parámetro $K$.</li><li><strong>Escalonamiento (Gauss):</strong> Aplicamos tres operaciones elementales de fila conservadoras para hacer ceros bajo la diagonal, obteniendo $K-8$ como pivote clave.</li><li><strong>Discusión de Compatibilidad:</strong> Con la matriz escalonada, aplicamos Rouché-Capelli. Constatamos que si $K-8 \\neq 0$ (es decir, $K \\neq 8$), el rango es máximo ($3$) y por tanto hay solución única (SCD).</li><li><strong>Resolución Singular:</strong> Evaluamos el sistema para el caso anómalo $K=8$, donde se pierde una dimensión.</li><li><strong>Parametrización:</strong> Escogimos la variable más cómoda ($y$) como parámetro libre ($\\lambda$) para evitar fracciones al describir las infinitas soluciones (SCI).</li><li><strong>Verificación:</strong> Comprobamos la solución sustituyendo en el sistema original, garantizando la exactitud del cálculo.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Ahora es tu turno. Intenta aplicar exactamente los mismos pasos a este nuevo sistema con un parámetro ele. Escribe la matriz, haz Gauss, analiza el rango según el parámetro y resuelve para el valor crítico.",
+      "content": "<p>Sigue la misma estructura y razonamiento para resolver este sistema similar. ¡Inténtalo en tu cuaderno antes de mirar la solución!</p><p>Dado el sistema:<br>$$\\begin{cases} x + 2y - z = 3 \\\\ 3x + y + z = 4 \\\\ 5x + 5y + Lz = 10 \\end{cases}$$</p><p><strong>a)</strong> Demuestra que el sistema tiene solución única si $L \\neq -1$.<br><strong>b)</strong> Resuelve el sistema para $L = -1$.</p>",
+      "practiceAnswer": "<p>Tras triangular, la matriz queda con un elemento $(3,3)$ igual a $L+1$ y término independiente $0$. Por tanto, si $L \\neq -1$, el rango de $A$ y $A^*$ es $3$, obteniendo un SCD (solución única). Si $L = -1$, la última fila se anula ($0=0$), siendo un SCI. </p><p><strong>RESPUESTA AL APARTADO b):</strong> Parametrizando con $y = \\lambda$, la solución para $L = -1$ es: $$\\begin{cases} x = \\frac{3\\lambda + 7}{4} \\\\ y = \\lambda \\\\ z = \\frac{11\\lambda + 5}{4} \\end{cases}$$</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Pensemos en cómo este concepto de parámetros que anulan ecuaciones se usa en otros campos. En las ciencias, a menudo balanceamos ecuaciones o regulamos redes, y ciertas configuraciones nos dejan con sistemas indeterminados que debemos parametrizar.",
+      "content": "<p>El análisis de sistemas paramétricos es fundamental en química (estequiometría avanzada) y logística. Piensa en el balance de una reacción donde un coeficiente externo $m$ afecta al comportamiento. ¿Puedes deducir el patrón sin resolverlo mecánicamente paso a paso?</p><p>En una red de tráfico de tres nodos, los flujos internos (vehículos por hora) $f_1, f_2, f_3$ deben cumplir el siguiente balance de conservación, donde una compuerta ajustable permite un flujo de salida parametrizado $m \\cdot f_3$:<br>$$\\begin{cases} f_1 - f_2 + f_3 = 100 \\\\ 2f_1 + f_2 - 2f_3 = 50 \\\\ 3f_1 + m \\cdot f_3 = 150 \\end{cases}$$</p><p>Si para cierto valor crítico de $m$ el sistema de flujos tiene infinitas soluciones, halla dicho valor de $m$ y expresa la solución general de la red usando $f_3 = \\lambda$ como parámetro libre.</p>",
+      "practiceAnswer": "<p>Al sumar la primera y segunda ecuación, obtenemos $3f_1 - f_3 = 150$. Comparándola con la tercera ecuación ($3f_1 + m \\cdot f_3 = 150$), es evidente que si $m = -1$, las ecuaciones son proporcionales (idénticas), perdiéndose un grado de libertad (SCI). </p><p>Para $m = -1$, usando $f_3 = \\lambda$, la ecuación reducida $3f_1 - \\lambda = 150$ da $f_1 = \\frac{150 + \\lambda}{3} = 50 + \\frac{\\lambda}{3}$. Sustituyendo en la primera: $50 + \\frac{\\lambda}{3} - f_2 + \\lambda = 100 \\implies f_2 = \\frac{4\\lambda}{3} - 50$. <br><strong>Solución del flujo:</strong> $f_1 = 50 + \\frac{\\lambda}{3}$, $f_2 = \\frac{4\\lambda}{3} - 50$, $f_3 = \\lambda$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-02T16:58:03.204Z",
+    "updatedAt": "2026-08-02T16:58:03.204Z",
+    "contentHash": "b527b6acf5c27852",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}

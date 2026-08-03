@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "2_Bachillerato",
+    "topic": "Álgebra Lineal",
+    "subtopic": "Sistemas de Ecuaciones Lineales",
+    "exerciseType": "Resolución de sistemas mediante el método de Gauss",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Planteamiento y representación matricial de un sistema de ecuaciones lineales 3x3",
+      "Escalonamiento de la matriz ampliada mediante operaciones elementales por filas (Método de Gauss)",
+      "Clasificación del sistema según el Teorema de Rouché-Frobenius y resolución por sustitución regresiva",
+      "Comprobación rigurosa de las soluciones obtenidas en las ecuaciones originales"
+    ],
+    "prerequisites": [
+      "Operaciones elementales entre filas matriciales",
+      "Resolución de ecuaciones de primer grado",
+      "Conceptos básicos de rango y compatibilidad de sistemas"
+    ],
+    "subparts": [
+      {
+        "id": "1",
+        "request": "Resolver el sistema de ecuaciones lineales: \\begin{cases} x + y - z = 0 \\\\ 2x + y = 2 \\\\ x + 2y + z = 1 \\end{cases}"
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "statementHash": "0338183d96811a7b",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-03T09:55:44.078Z",
+    "id": "resolucion-del-sistema-de-ecuaciones-lineales-3x3-po-38fe2309"
+  },
+  "title": "Resolución del Sistema de Ecuaciones Lineales 3x3 por Gauss",
+  "slides": [
+    {
+      "title": "Transcripción del Enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Presentamos el sistema de tres ecuaciones lineales con tres incógnitas propuesto en el ejercicio.",
+      "content": "<p>Resuelve el siguiente sistema de ecuaciones lineales:</p>$$\\begin{cases} x + y - z = 0 \\\\ 2x + y = 2 \\\\ x + 2y + z = 1 \\end{cases}$$",
+      "hints": [
+        "Identifica los coeficientes de las incógnitas equis, efe y zeta en cada una de las tres ecuaciones.",
+        "Comprueba la presencia o ausencia de términos en cada línea, notando que en la segunda ecuación el coeficiente de zeta es cero."
+      ]
+    },
+    {
+      "title": "Estrategia y Análisis Inicial",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Organizamos el método de resolución matricial por Gauss para determinar la compatibilidad y encontrar la solución única.",
+      "content": "<p><strong>OBJETIVO:</strong> Definir el plan algebraico para discutir y resolver el sistema dado.</p><p><strong>DATOS Y ESTRUCTURA:</strong> Tres ecuaciones lineales con tres incógnitas ($x$, $y$, $z$). En la segunda ecuación, el término en $z$ tiene coeficiente $0$.</p><p><strong>ESTRATEGIA:</strong></p><ol><li>Escribir la matriz ampliada $(A|B)$ del sistema.</li><li>Aplicar transformaciones elementales por filas (método de Gauss) para obtener una matriz triangular superior (forma escalonada).</li><li>Determinar el rango de la matriz de coeficientes $A$ y de la matriz ampliada $(A|B)$ para clasificar el sistema.</li><li>Realizar la sustitución regresiva comenzando por la última ecuación escalonada para hallar los valores exactos de $x$, $y$ y $z$.</li></ol><p><strong>CONEXIÓN MATEMÁTICA:</strong> Geométricamente, cada ecuación representa un plano en el espacio tridimensional. Resolver el sistema equivale a hallar el punto exacto de intersección de los tres planos.</p>"
+    },
+    {
+      "title": "Matriz Ampliada del Sistema",
+      "layout": "split",
+      "phase": "analizar",
+      "subpart": "1",
+      "narration": "Escribimos la matriz ampliada asociada al sistema original con sus coeficientes y términos independientes.",
+      "content": "<p><strong>OBJETIVO:</strong> Representar el sistema en formato de matriz ampliada $(A|B)$.</p><p><strong>CONEXIÓN:</strong> Extraemos directamente los coeficientes de $x$, $y$, $z$ y las constantes numéricas de la derecha.</p><p><strong>MÉTODO:</strong> La primera columna corresponde a $x$, la segunda a $y$, la tercera a $z$ y la cuarta tras la barra a los términos independientes.</p><p><strong>INTERPRETACIÓN:</strong> La matriz contiene toda la información cuantitativa necesaria para operar por filas sin arrastrar las variables.</p>",
+      "theory": "<p>Dado un sistema $AX = B$, la matriz ampliada $(A|B)$ reúne en un único arreglo rectangular los coeficientes del sistema y la columna de términos independientes.</p>",
+      "visualDescription": "Matriz ampliada de dimensiones 3 por 4 encerrada entre corchetes, con una línea vertical divisoria entre la tercera y la cuarta columna. La primera fila contiene 1, 1, -1 y 0. La segunda fila contiene 2, 1, 0 y 2. La tercera fila contiene 1, 2, 1 y 1.",
+      "visualMathLink": "Los elementos de la matriz corresponden ordenadamente a los coeficientes de las variables x, y, z y los términos independientes del sistema inicial.",
+      "visual": "<svg viewBox='0 0 500 240' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><rect width='500' height='240' fill='#0f172a' rx='8'/><path d='M 70 40 L 50 40 L 50 200 L 70 200' stroke='#f8fafc' stroke-width='3' fill='none'/><path d='M 430 40 L 450 40 L 450 200 L 430 200' stroke='#f8fafc' stroke-width='3' fill='none'/><line x1='340' y1='40' x2='340' y2='200' stroke='#94a3b8' stroke-width='2' stroke-dasharray='4,4'/><text x='100' y='80' fill='#38bdf8' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text><text x='180' y='80' fill='#f472b6' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text><text x='260' y='80' fill='#4ade80' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>-1</text><text x='395' y='80' fill='#fb923c' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>0</text><text x='100' y='130' fill='#38bdf8' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>2</text><text x='180' y='130' fill='#f472b6' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text><text x='260' y='130' fill='#4ade80' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>0</text><text x='395' y='130' fill='#fb923c' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>2</text><text x='100' y='180' fill='#38bdf8' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text><text x='180' y='180' fill='#f472b6' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>2</text><text x='260' y='180' fill='#4ade80' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text><text x='395' y='180' fill='#fb923c' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text></svg>"
+    },
+    {
+      "title": "Primer paso de Gauss: Ceros en la primera columna",
+      "layout": "split",
+      "phase": "resolver",
+      "subpart": "1",
+      "narration": "Utilizamos el pivote uno de la primera fila para hacer ceros por debajo en la primera columna.",
+      "content": "<p><strong>OBJETIVO:</strong> Anular los elementos $a_{21}$ y $a_{31}$ mediante transformaciones de fila.</p><p><strong>CONEXIÓN:</strong> Tomamos como pivote el elemento $a_{11} = 1$.</p><p><strong>CÁLCULO:</strong></p><ul><li>Fila 2 nueva: $F_2 \\rightarrow F_2 - 2F_1$<br/>$[2-2(1), 1-2(1), 0-2(-1) \\mid 2-2(0)] = [0, -1, 2 \\mid 2]$</li><li>Fila 3 nueva: $F_3 \\rightarrow F_3 - F_1$<br/>$[1-1, 2-1, 1-(-1) \\mid 1-0] = [0, 1, 2 \\mid 1]$</li></ul><p><strong>RESULTADO PARCIAL:</strong> Obtenemos ceros debajo del primer pivote.</p>",
+      "theory": "<p>Las operaciones elementales $F_i \\rightarrow F_i + k F_j$ producen sistemas equivalentes con exactamente el mismo conjunto de soluciones.</p>",
+      "hints": [
+        "Multiplica la primera fila por dos y réstala de la segunda fila para eliminar la variable equis de esa ecuación.",
+        "Resta directamente la primera fila de la tercera para eliminar la variable equis de la última ecuación."
+      ],
+      "visualDescription": "Matriz de 3 por 4 tras el primer paso de Gauss. La primera fila se mantiene en 1, 1, -1, 0. La segunda fila pasa a ser 0, -1, 2, 2. La tercera fila pasa a ser 0, 1, 2, 1. Se muestran al lado las operaciones F2 menos 2F1 y F3 menos F1.",
+      "visualMathLink": "Los ceros en la primera columna de las filas 2 y 3 reflejan la eliminación de la variable x en las dos últimas ecuaciones.",
+      "visual": "<svg viewBox='0 0 500 240' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><rect width='500' height='240' fill='#0f172a' rx='8'/><path d='M 70 40 L 50 40 L 50 200 L 70 200' stroke='#f8fafc' stroke-width='3' fill='none'/><path d='M 430 40 L 450 40 L 450 200 L 430 200' stroke='#f8fafc' stroke-width='3' fill='none'/><line x1='340' y1='40' x2='340' y2='200' stroke='#94a3b8' stroke-width='2' stroke-dasharray='4,4'/><text x='100' y='80' fill='#38bdf8' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text><text x='180' y='80' fill='#f472b6' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text><text x='260' y='80' fill='#4ade80' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>-1</text><text x='395' y='80' fill='#fb923c' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>0</text><text x='100' y='130' fill='#38bdf8' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>0</text><text x='180' y='130' fill='#f472b6' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>-1</text><text x='260' y='130' fill='#4ade80' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>2</text><text x='395' y='130' fill='#fb923c' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>2</text><text x='100' y='180' fill='#38bdf8' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>0</text><text x='180' y='180' fill='#f472b6' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text><text x='260' y='180' fill='#4ade80' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>2</text><text x='395' y='180' fill='#fb923c' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text></svg>"
+    },
+    {
+      "title": "Segundo paso de Gauss: Matriz Escalonada",
+      "layout": "split",
+      "phase": "resolver",
+      "subpart": "1",
+      "narration": "Sumamos la segunda y tercera fila para eliminar la incógnita efe de la tercera ecuación.",
+      "content": "<p><strong>OBJETIVO:</strong> Anular el elemento $a_{32}$ para conseguir la forma escalonada triangular superior.</p><p><strong>CONEXIÓN:</strong> Usamos el pivote $a_{22} = -1$ de la segunda fila.</p><p><strong>CÁLCULO:</strong></p><ul><li>Fila 3 nueva: $F_3 \\rightarrow F_3 + F_2$<br/>$[0+0, 1+(-1), 2+2 \\mid 1+2] = [0, 0, 4 \\mid 3]$</li></ul><p><strong>INTERPRETACIÓN:</strong> Rango($A$) = $3$ y Rango($A|B$) = $3$. Como el número de incógnitas es $3$, por el Teorema de Rouché-Frobenius el sistema es <strong>Compatible Determinado</strong> (solución única).</p>",
+      "warning": "<p>Al operar con filas, ten cuidado con los signos al sumar números negativos para evitar arrastrar errores numéricos a la resolución final.</p>",
+      "checkpoint": {
+        "question": "¿Qué conclusión se deduce al obtener tres pivotes no nulos en una matriz 3x3 escalonada?",
+        "options": [
+          {
+            "text": "El sistema es Compatible Determinado con solución única.",
+            "correct": true,
+            "feedback": "¡Correcto! Rango(A) = Rango(A|B) = 3 (número de incógnitas), por lo que existe una única solución."
+          },
+          {
+            "text": "El sistema es Incompatible porque la última fila no tiene ceros a la derecha.",
+            "correct": false,
+            "feedback": "Incorrecto. Un sistema es incompatible únicamente cuando aparece una fila del tipo 0 = k con k != 0."
+          },
+          {
+            "text": "El sistema es Compatible Indeterminado con infinitas soluciones.",
+            "correct": false,
+            "feedback": "Incorrecto. Para tener infinitas soluciones, el rango debería ser menor que el número de incógnitas."
+          }
+        ]
+      },
+      "visualDescription": "Matriz escalonada resultante. Fila 1: 1, 1, -1, 0. Fila 2: 0, -1, 2, 2. Fila 3: 0, 0, 4, 3. Se observa una estructura triangular superior con ceros debajo de la diagonal principal.",
+      "visualMathLink": "Los tres valores pivote no nulos (1 en fila 1, -1 en fila 2, 4 en fila 3) demuestran que el rango de la matriz es 3.",
+      "visual": "<svg viewBox='0 0 500 240' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'><rect width='500' height='240' fill='#0f172a' rx='8'/><path d='M 70 40 L 50 40 L 50 200 L 70 200' stroke='#f8fafc' stroke-width='3' fill='none'/><path d='M 430 40 L 450 40 L 450 200 L 430 200' stroke='#f8fafc' stroke-width='3' fill='none'/><line x1='340' y1='40' x2='340' y2='200' stroke='#94a3b8' stroke-width='2' stroke-dasharray='4,4'/><text x='100' y='80' fill='#38bdf8' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text><text x='180' y='80' fill='#f472b6' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>1</text><text x='260' y='80' fill='#4ade80' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>-1</text><text x='395' y='80' fill='#fb923c' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>0</text><text x='100' y='130' fill='#38bdf8' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>0</text><text x='180' y='130' fill='#f472b6' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>-1</text><text x='260' y='130' fill='#4ade80' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>2</text><text x='395' y='130' fill='#fb923c' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>2</text><text x='100' y='180' fill='#38bdf8' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>0</text><text x='180' y='180' fill='#f472b6' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>0</text><text x='260' y='180' fill='#4ade80' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>4</text><text x='395' y='180' fill='#fb923c' font-family='sans-serif' font-size='22' font-weight='bold' text-anchor='middle'>3</text></svg>"
+    },
+    {
+      "title": "Sustitución Regresiva y Cálculo de Incógnitas",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "1",
+      "narration": "Reconstruimos el sistema triangular de ecuaciones para despejar progresivamente zeta, efe y equis.",
+      "content": "<p><strong>OBJETIVO:</strong> Determinar los valores exactos de $z$, $y$ y $x$ mediante sustitución desde la última ecuación hacia la primera.</p><p><strong>CONEXIÓN:</strong> Reescribimos la matriz escalonada en forma de sistema de ecuaciones:</p>$$\\begin{cases} x + y - z = 0 \\quad &(1) \\\\ -y + 2z = 2 \\quad &(2) \\\\ 4z = 3 \\quad &(3) \\end{cases}$$<p><strong>CÁLCULO DESGLOSADO:</strong></p><ul><li> De la ecuación (3): $$4z = 3 \\implies z = \\frac{3}{4}$$</li><li> Sustituyendo $z$ en la ecuación (2): $$-y + 2\\left(\\frac{3}{4}\\right) = 2 \\implies -y + \\frac{3}{2} = 2 \\implies -y = 2 - \\frac{3}{2} = \\frac{1}{2} \\implies y = -\\frac{1}{2}$$</li><li> Sustituyendo $y$ y $z$ en la ecuación (1): $$x + \\left(-\\frac{1}{2}\\right) - \\frac{3}{4} = 0 \\implies x - \\frac{2}{4} - \\frac{3}{4} = 0 \\implies x - \\frac{5}{4} = 0 \\implies x = \\frac{5}{4}$$</li></ul><p><strong>RESPUESTA AL APARTADO 1):</strong> La solución única del sistema es $x = \\frac{5}{4}$, $y = -\\frac{1}{2}$, $z = \\frac{3}{4}$, o en forma de punto tridimensional $(x,y,z) = \\left(\\frac{5}{4}, -\\frac{1}{2}, \\frac{3}{4}\\right)$.</p>"
+    },
+    {
+      "title": "Comprobación Analítica de la Solución",
+      "layout": "centered",
+      "phase": "comprobar",
+      "subpart": "1",
+      "narration": "Sustituimos el triplete obtenido en las tres ecuaciones originales para verificar que satisface cada una exactamente.",
+      "content": "<p><strong>OBJETIVO:</strong> Comprobar cuantitativamente la validez de la solución $(x, y, z) = \\left(\\frac{5}{4}, -\\frac{1}{2}, \\frac{3}{4}\\right)$.</p><p><strong>VERIFICACIÓN EN CADA ECUACIÓN ORIGINAL:</strong></p><ul><li><strong>Ecuación 1:</strong> $x + y - z = 0$<br/>$$\\frac{5}{4} + \\left(-\\frac{1}{2}\\right) - \\frac{3}{4} = \\frac{5}{4} - \\frac{2}{4} - \\frac{3}{4} = \\frac{0}{4} = 0 \\quad \\checkmark$$</li><li><strong>Ecuación 2:</strong> $2x + y = 2$<br/>$$2\\left(\\frac{5}{4}\\right) + \\left(-\\frac{1}{2}\\right) = \\frac{5}{2} - \\frac{1}{2} = \\frac{4}{2} = 2 \\quad \\checkmark$$</li><li><strong>Ecuación 3:</strong> $x + 2y + z = 1$<br/>$$\\frac{5}{4} + 2\\left(-\\frac{1}{2}\\right) + \\frac{3}{4} = \\frac{5}{4} - 1 + \\frac{3}{4} = \\frac{8}{4} - 1 = 2 - 1 = 1 \\quad \\checkmark$$</li></ul><p><strong>RESULTADO:</strong> Todas las igualdades se cumplen de manera exacta. La solución encontrada es totalmente correcta.</p>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos el procedimiento completo seguido para resolver el sistema de ecuaciones por Gauss.",
+      "content": "<ol><li><strong>Formulación matricial:</strong> Escribimos la matriz ampliada $(A|B)$ a partir de las ecuaciones dadas.</li><li><strong>Escalonamiento por filas:</strong> Aplicamos las transformaciones $F_2 \\rightarrow F_2 - 2F_1$, $F_3 \\rightarrow F_3 - F_1$ y finalmente $F_3 \\rightarrow F_3 + F_2$.</li><li><strong>Clasificación:</strong> Constatamos que $\\text{Rango}(A) = \\text{Rango}(A|B) = 3$ (Sistema Compatible Determinado).</li><li><strong>Sustitución regresiva:</strong> Despejamos consecutivamente $z = \\frac{3}{4}$, $y = -\\frac{1}{2}$ y $x = \\frac{5}{4}$.</li><li><strong>Comprobación:</strong> Confirmamos la satisfacción simultánea de las tres ecuaciones originales.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te proponemos un sistema similar con la misma estructura para que afiances el método de Gauss.",
+      "content": "<p>Aplica el método de escalonamiento de Gauss para discutir y resolver el siguiente sistema de ecuaciones lineales:</p>$$\\begin{cases} x + y - z = 1 \\\\ 2x + y = 3 \\\\ x + 2y + z = 4 \\end{cases}$$<p><em>Intenta resolver el ejercicio de forma autónoma antes de consultar la respuesta final.</em></p>",
+      "practiceAnswer": "<p><strong>Solución exacta:</strong> $x = \\frac{7}{4}$, $y = -\\frac{1}{2}$, $z = \\frac{1}{4}$. Es un Sistema Compatible Determinado con solución única $\\left(\\frac{7}{4}, -\\frac{1}{2}, \\frac{1}{4}\\right)$.</p>"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica el concepto de sistemas lineales en un contexto de producción con tres tipos de artículos.",
+      "content": "<p>Una fábrica elabora tres productos $P_1$, $P_2$ y $P_3$. Para la producción de cada unidad se requieren horas en tres máquinas distintas según la siguiente tabla:</p><ul><li><strong>Producto $P_1$:</strong> 1 h en Máquina A, 2 h en Máquina B, 1 h en Máquina C.</li><li><strong>Producto $P_2$:</strong> 1 h en Máquina A, 1 h en Máquina B, 2 h en Máquina C.</li><li><strong>Producto $P_3$:</strong> -1 h (ajuste/insumo) en Máquina A, 0 h en B, 1 h en C.</li></ul><p>Si la Máquina A ha funcionado $0$ horas netas de balance, la B $2$ horas y la C $1$ hora, determina las unidades producidas $(x, y, z)$ resolviendo el sistema correspondiente.</p><p><em>Plantea el sistema matricial equivalente e inténtalo antes de verificar.</em></p>",
+      "practiceAnswer": "<p><strong>Respuesta:</strong> Corresponde exactamente al sistema planteado en el ejercicio principal, por lo que la cantidad producida es $x = \\frac{5}{4}$ unidades de $P_1$, $y = -\\frac{1}{2}$ unidades de $P_2$ y $z = \\frac{3}{4}$ unidades de $P_3$.</p>"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-03T09:55:51.238Z",
+    "updatedAt": "2026-08-03T09:55:51.238Z",
+    "contentHash": "174730b4acdbc9e6",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    }
+  }
+}
