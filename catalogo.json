@@ -2,9 +2,9 @@
   "schemaVersion": "1.0",
   "exerciseSchemaVersion": "4.0",
   "taxonomyVersion": "1.0",
-  "generatedAt": "2026-08-08T13:52:45.778Z",
+  "generatedAt": "2026-08-26T10:24:45.256Z",
   "basePath": "ejercicios/",
-  "exerciseCount": 94,
+  "exerciseCount": 106,
   "filters": {
     "stages": [
       "Bachillerato",
@@ -12,6 +12,7 @@
     ],
     "courses": [
       "1_Bachillerato",
+      "1.º Bachillerato",
       "1º Bachillerato",
       "2_Bachillerato",
       "2_ESO",
@@ -55,8 +56,13 @@
       "Cálculo analítico de intersecciones en funciones racionales",
       "Cálculo analítico sin calculadora",
       "Cálculo de asíntotas y esbozo de gráfica",
+      "Cálculo de derivada de función racional",
+      "Cálculo de la recta tangente a una curva exponencial",
+      "Cálculo de la recta tangente conocida su pendiente",
       "Cálculo de m.c.d. y m.c.m.",
       "Cálculo de parámetros",
+      "Cálculo de parámetros en funciones a trozos",
+      "Cálculo de parámetros para asegurar la continuidad",
       "Cálculo de parámetros para garantizar la continuidad",
       "Cálculo de pendiente y ecuación explícita a partir de dos puntos",
       "Cálculo de raíces y factorización",
@@ -74,8 +80,11 @@
       "Determinación de características a partir de puntos extremos",
       "Determinación de parámetros",
       "Determinación de parámetros de una parábola a partir de puntos",
+      "Determinación de parámetros para garantizar continuidad",
       "Discusión y resolución de un sistema con parámetro",
       "Discusión y resolución de un sistema parametrizado",
+      "Estudio de continuidad y derivabilidad de función a trozos",
+      "Estudio de discontinuidad evitable en función racional",
       "Estudio de la pendiente y la ordenada en el origen",
       "Estudio del dominio y evaluación de imágenes",
       "Estudio y representación de función cuadrática",
@@ -89,7 +98,9 @@
       "Modelización mediante una función lineal de la forma H(t) = mt + n",
       "Obtención de la ecuación explícita a partir de la pendiente y un punto",
       "Operaciones combinadas con fracciones algebraicas",
-      "Optimización y modelización con funciones",
+      "Optimización con restricciones geométricas",
+      "Optimización en contexto económico",
+      "Optimización y Representación Gráfica",
       "Problema aplicado",
       "Problema aplicado de acústica",
       "Problema aplicado de depreciación",
@@ -98,6 +109,8 @@
       "Problema de aplicación del producto de polinomios y evaluación",
       "Problema de modelización",
       "Problema de optimización con parábolas",
+      "Problema de optimización cuadrática aplicada",
+      "Problema de optimización geométrica",
       "Representación de la región factible",
       "Representación gráfica y cálculo de vértices (Programación Lineal)",
       "Resolución analítica",
@@ -1515,6 +1528,113 @@
       "url": "ejercicios/1_BACH/optimizacion-cuadratica-maximizando-el-rendimiento_REVISADO.json"
     },
     {
+      "id": "estudio-de-dominio-continuidad-y-redefinicion-contin-661516a0",
+      "title": "Estudio de dominio, continuidad y redefinición continua de f(x)",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1.º Bachillerato",
+      "topic": "Funciones y análisis",
+      "subtopic": "Continuidad, límites y asíntotas",
+      "exerciseType": "Estudio de discontinuidad evitable en función racional",
+      "protocols": [
+        "B",
+        "H"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 12,
+      "learningObjectives": [
+        "Determinar el dominio de definición de una función racional igualando el denominador a cero.",
+        "Identificar los puntos de discontinuidad de una función racional fuera de su dominio.",
+        "Resolver indeterminaciones del tipo cero entre cero mediante factorización para redefinir la función y restituir la continuidad."
+      ],
+      "prerequisites": [
+        "Concepto de dominio en funciones racionales.",
+        "Factorización de trinomios de segundo grado.",
+        "Cálculo de límites de funciones y definición formal de continuidad."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-20T08:41:57.566Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "21b1c65e0bc539c8",
+      "statementHash": "51badd7b8a7468a9",
+      "url": "ejercicios/1_BACH/estudio-de-dominio-continuidad-y-redefinicion-contin_REVISADO.json"
+    },
+    {
+      "id": "optimizacion-del-costo-de-construccion-de-un-tanque--c7fe7d06",
+      "title": "Optimización del Costo de Construcción de un Tanque Rectangular",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1.º Bachillerato",
+      "topic": "Modelización y optimización",
+      "subtopic": "Optimización y modelización",
+      "exerciseType": "Optimización con restricciones geométricas",
+      "protocols": [
+        "G",
+        "H"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Expresar la función de costo de un cuerpo geométrico 3D en función de una sola variable independiente.",
+        "Aplicar la restricción del volumen para relacionar las dimensiones del paralelepípedo.",
+        "Hallar el mínimo de costo mediante el cálculo de derivadas primera y segunda.",
+        "Determinar las dimensiones geométricas y el costo total mínimo en un contexto real de ingeniería."
+      ],
+      "prerequisites": [
+        "Cálculo de volúmenes y áreas superficiales de prismas rectangulares.",
+        "Derivación de funciones polinómicas y racionales simples.",
+        "Criterio de la primera y segunda derivada para extremos relativos."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 11,
+      "reviewedAt": "2026-08-20T11:04:43.220Z",
+      "approvalMode": "teacher_override",
+      "contentHash": "7b50f7377240effd",
+      "statementHash": "5cf5a8760a36a0e0",
+      "url": "ejercicios/1_BACH/optimizacion-del-costo-de-construccion-de-un-tanque-_REVISADO.json"
+    },
+    {
+      "id": "optimizacion-del-costo-medio-de-construccion-830c1521",
+      "title": "Optimización del Costo Medio de Construcción",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1.º Bachillerato",
+      "topic": "Modelización y optimización",
+      "subtopic": "Optimización y modelización",
+      "exerciseType": "Optimización en contexto económico",
+      "protocols": [
+        "B",
+        "H"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Formular funciones de costo medio a partir de funciones de costo total.",
+        "Optimizar funciones racional-polinómicas mediante el cálculo de derivadas.",
+        "Resolver problemas de optimización discreta seleccionando el valor entero adecuado.",
+        "Interpretar los resultados cuantitativos en contextos económicos reales."
+      ],
+      "prerequisites": [
+        "Derivación de funciones polinómicas y racionales simples.",
+        "Criterio de la primera y segunda derivada para extremos relativos.",
+        "Manejo de modelos de costos en economía."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 11,
+      "reviewedAt": "2026-08-20T10:59:26.617Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "221ffbf19d09b1f7",
+      "statementHash": "f8b9d9f65cdf50f4",
+      "url": "ejercicios/1_BACH/optimizacion-del-costo-medio-de-construccion_REVISADO.json"
+    },
+    {
       "id": "resolucion-de-ecuacion-exponencial-por-factorizacion-9717c2f4",
       "title": "Resolución de Ecuación Exponencial por Factorización",
       "subject": "Matemáticas",
@@ -1716,6 +1836,280 @@
       "contentHash": "38ec2a84451bff9e",
       "statementHash": "caabae2187021db7",
       "url": "ejercicios/1_BACH/resolucion-paso-a-paso-sistema-de-ecuaciones-logarit_REVISADO.json"
+    },
+    {
+      "id": "asegurando-la-continuidad-analisis-parametrico-8d0452c5",
+      "title": "Asegurando la Continuidad: Análisis Paramétrico",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Funciones y análisis",
+      "subtopic": "Continuidad, límites y asíntotas",
+      "exerciseType": "Determinación de parámetros para garantizar continuidad",
+      "protocols": [
+        "B",
+        "C",
+        "H"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 25,
+      "learningObjectives": [
+        "Aplicar la definición de continuidad en un punto mediante límites laterales.",
+        "Plantear y resolver sistemas de ecuaciones para hallar parámetros desconocidos.",
+        "Interpretar gráfica y analíticamente el empalme continuo de ramas funcionales."
+      ],
+      "prerequisites": [
+        "Cálculo fluido de límites de funciones polinómicas en un punto.",
+        "Resolución de sistemas de ecuaciones lineales.",
+        "Comprensión geométrica del concepto de continuidad."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 12,
+      "reviewedAt": "2026-08-20T09:39:50.866Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "870409139a47234d",
+      "statementHash": "7b28afc7526e637d",
+      "url": "ejercicios/1_BACH/asegurando-la-continuidad-analisis-parametrico_REVISADO.json"
+    },
+    {
+      "id": "calculo-de-la-derivada-de-una-funcion-racional-3e638a18",
+      "title": "Cálculo de la derivada de una función racional",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Funciones y análisis",
+      "subtopic": "Derivadas y aplicaciones",
+      "exerciseType": "Cálculo de derivada de función racional",
+      "protocols": [
+        "H"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 10,
+      "learningObjectives": [
+        "Aplicar la regla de derivación del cociente.",
+        "Comprender la alternativa del uso de la regla de la cadena con exponente negativo.",
+        "Simplificar expresiones algebraicas resultantes de la derivación."
+      ],
+      "prerequisites": [
+        "Reglas básicas de derivación polinómica.",
+        "Concepto de derivada como función.",
+        "Regla del cociente para derivadas."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-20T09:50:59.871Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "c8e7a74fadcd1d35",
+      "statementHash": "4b6d254f28b80531",
+      "url": "ejercicios/1_BACH/calculo-de-la-derivada-de-una-funcion-racional_REVISADO.json"
+    },
+    {
+      "id": "calculo-de-parametros-para-continuidad-y-derivabilid-abe93d00",
+      "title": "Cálculo de parámetros para continuidad y derivabilidad",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Funciones y análisis",
+      "subtopic": "Continuidad, límites y asíntotas",
+      "exerciseType": "Cálculo de parámetros en funciones a trozos",
+      "protocols": [
+        "H"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 18,
+      "learningObjectives": [
+        "Determinar los límites laterales para garantizar la continuidad de una función a trozos.",
+        "Calcular las derivadas laterales para asegurar la derivabilidad en un punto de frontera.",
+        "Plantear y resolver sistemas de ecuaciones lineales derivados de condiciones analíticas."
+      ],
+      "prerequisites": [
+        "Concepto de límites laterales y continuidad en un punto.",
+        "Reglas de derivación de funciones polinómicas.",
+        "Resolución de sistemas de ecuaciones lineales 2x2."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-20T09:54:21.817Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "c7529203ef06b09d",
+      "statementHash": "84b51bede7fa7243",
+      "url": "ejercicios/1_BACH/calculo-de-parametros-para-continuidad-y-derivabilid_REVISADO.json"
+    },
+    {
+      "id": "estudio-de-continuidad-y-derivabilidad-de-una-funcio-36fe8044",
+      "title": "Estudio de continuidad y derivabilidad de una función a trozos",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Funciones y análisis",
+      "subtopic": "Continuidad, límites y asíntotas",
+      "exerciseType": "Estudio de continuidad y derivabilidad de función a trozos",
+      "protocols": [
+        "H"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Analizar la continuidad de una función definida a trozos mediante límites laterales.",
+        "Estudiar la derivabilidad de una función calculando las derivadas laterales en el punto de cambio de rama.",
+        "Justificar la continuidad y derivabilidad de funciones compuestas elementales en intervalos abiertos."
+      ],
+      "prerequisites": [
+        "Concepto y condiciones de continuidad en un punto.",
+        "Reglas de derivación de funciones exponenciales, polinómicas y logarítmicas.",
+        "Cálculo de límites laterales al tender a cero."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-20T09:56:21.785Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "d9fe8484b99695ca",
+      "statementHash": "644be92e744ea504",
+      "url": "ejercicios/1_BACH/estudio-de-continuidad-y-derivabilidad-de-una-funcio_REVISADO.json"
+    },
+    {
+      "id": "calculo-de-la-recta-tangente-a-una-funcion-exponenci-1de8d9ef",
+      "title": "Cálculo de la recta tangente a una función exponencial",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Geometría y trigonometría",
+      "subtopic": "Trigonometría y resolución de triángulos",
+      "exerciseType": "Cálculo de la recta tangente a una curva exponencial",
+      "protocols": [
+        "H"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 10,
+      "learningObjectives": [
+        "Determinar el punto de corte de una función exponencial con el eje de ordenadas.",
+        "Calcular la derivada de una función exponencial compuesta mediante la regla de la cadena.",
+        "Obtener la ecuación punto-pendiente y explícita de la recta tangente a una curva."
+      ],
+      "prerequisites": [
+        "Derivada de la función exponencial $e^{u(x)}$.",
+        "Interpretación geométrica de la derivada como pendiente de la recta tangente.",
+        "Ecuación punto-pendiente de la recta $y - y_0 = m(x - x_0)$."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-20T10:16:35.636Z",
+      "approvalMode": "teacher_override",
+      "contentHash": "8c86a95c7827c40e",
+      "statementHash": "1b4ce0f3b44fc6e9",
+      "url": "ejercicios/1_BACH/calculo-de-la-recta-tangente-a-una-funcion-exponenci_REVISADO.json"
+    },
+    {
+      "id": "calculo-de-la-recta-tangente-dada-su-pendiente-431f4bef",
+      "title": "Cálculo de la recta tangente dada su pendiente",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Geometría y trigonometría",
+      "subtopic": "Trigonometría y resolución de triángulos",
+      "exerciseType": "Cálculo de la recta tangente conocida su pendiente",
+      "protocols": [
+        "H"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 10,
+      "learningObjectives": [
+        "Relacionar la pendiente dada de la recta tangente con la primera derivada de la función.",
+        "Determinar las coordenadas del punto de tangencia a partir del valor de la pendiente.",
+        "Escribir la ecuación de la recta tangente en sus formas explícita e implícita."
+      ],
+      "prerequisites": [
+        "Reglas de derivación de funciones polinómicas básicas.",
+        "Significado geométrico de la derivada como pendiente de la recta tangente.",
+        "Ecuación punto-pendiente de una recta $y - y_0 = m(x - x_0)$."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-20T10:19:14.509Z",
+      "approvalMode": "teacher_override",
+      "contentHash": "a6d76dd46463cbd2",
+      "statementHash": "c3d2a4e0dd178676",
+      "url": "ejercicios/1_BACH/calculo-de-la-recta-tangente-dada-su-pendiente_REVISADO.json"
+    },
+    {
+      "id": "optimizacion-del-aforo-de-una-discoteca-6f928a4b",
+      "title": "Optimización del aforo de una discoteca",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Modelización y optimización",
+      "subtopic": "Optimización y modelización",
+      "exerciseType": "Problema de optimización cuadrática aplicada",
+      "protocols": [
+        "H"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 12,
+      "learningObjectives": [
+        "Calcular el máximo de una función cuadrática mediante la primera derivada.",
+        "Interpretar la variable independiente en un contexto temporal de la vida real.",
+        "Resolver ecuaciones de segundo grado para determinar puntos de corte y momentos de anulación."
+      ],
+      "prerequisites": [
+        "Derivación de funciones polinómicas simples.",
+        "Resolución de ecuaciones de segundo grado incompletas.",
+        "Operaciones básicas con horas en formato 24 horas."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 8,
+      "reviewedAt": "2026-08-20T10:12:08.213Z",
+      "approvalMode": "teacher_override",
+      "contentHash": "3d5dec93a4e82e11",
+      "statementHash": "4e5d86e2ebd494d0",
+      "url": "ejercicios/1_BACH/optimizacion-del-aforo-de-una-discoteca_REVISADO.json"
+    },
+    {
+      "id": "optimizacion-del-volumen-de-una-caja-rectangular-ed3afa33",
+      "title": "Optimización del volumen de una caja rectangular",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Modelización y optimización",
+      "subtopic": "Optimización y modelización",
+      "exerciseType": "Problema de optimización geométrica",
+      "protocols": [
+        "H"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 18,
+      "learningObjectives": [
+        "Plantear la función objetivo y la ecuación de ligadura a partir de un enunciado geométrico.",
+        "Expresar la función a optimizar en términos de una sola variable independiente.",
+        "Calcular extremos relativos utilizando el criterio de la primera y segunda derivada."
+      ],
+      "prerequisites": [
+        "Formulación de ecuaciones algebraicas a partir de enunciados verbales.",
+        "Reglas de derivación de funciones polinómicas.",
+        "Criterios de la primera y segunda derivada para la búsqueda de máximos y mínimos."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 9,
+      "reviewedAt": "2026-08-20T10:08:33.059Z",
+      "approvalMode": "teacher_override",
+      "contentHash": "832a364798b9c551",
+      "statementHash": "52f6a850dbcc9136",
+      "url": "ejercicios/1_BACH/optimizacion-del-volumen-de-una-caja-rectangular_REVISADO.json"
     },
     {
       "id": "discusion-y-resolucion-de-un-sistema-parametrico-7437ce59",
@@ -1957,6 +2351,77 @@
       "contentHash": "b4dcaded4be3323f",
       "statementHash": "b321e94313c09619",
       "url": "ejercicios/2_BACH/resolucion-de-un-sistema-de-ecuaciones-lineales-medi_REVISADO.json"
+    },
+    {
+      "id": "calculo-de-parametros-a-b-y-c-para-la-continuidad-de-998c05c0",
+      "title": "Cálculo de parámetros a, b y c para la continuidad de f(x) en R",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "2.º Bachillerato",
+      "topic": "Funciones y análisis",
+      "subtopic": "Continuidad, límites y asíntotas",
+      "exerciseType": "Cálculo de parámetros para asegurar la continuidad",
+      "protocols": [
+        "B",
+        "H"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Aplicar la definición de continuidad en un punto mediante límites laterales y valor de la función.",
+        "Analizar funciones definidas a trozos e identificar puntos críticos de empalme.",
+        "Determinar parámetros desconocidos resolviendo un sistema desacoplado de ecuaciones de primer grado."
+      ],
+      "prerequisites": [
+        "Límites laterales de funciones polinómicas de primer grado.",
+        "Definición formal de continuidad en un punto.",
+        "Resolución de sistemas de ecuaciones lineales."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 12,
+      "reviewedAt": "2026-08-20T08:38:24.674Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "cba546ec684c50ee",
+      "statementHash": "e8d53b84534ba6ae",
+      "url": "ejercicios/2_BACH/calculo-de-parametros-a-b-y-c-para-la-continuidad-de_REVISADO.json"
+    },
+    {
+      "id": "optimizacion-de-la-densidad-y-bosquejo-del-volumen-d-45519f88",
+      "title": "Optimización de la Densidad y Bosquejo del Volumen del Agua",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "2.º Bachillerato",
+      "topic": "Modelización y optimización",
+      "subtopic": "Optimización y modelización",
+      "exerciseType": "Optimización y Representación Gráfica",
+      "protocols": [
+        "B",
+        "H"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Relacionar la maximización de un cociente con la minimización de su denominador.",
+        "Calcular puntos críticos utilizando derivadas de funciones polinómicas.",
+        "Verificar la naturaleza de los extremos mediante el criterio de la segunda derivada.",
+        "Bosquejar funciones a partir de sus puntos notables y comportamiento analítico."
+      ],
+      "prerequisites": [
+        "Derivación de funciones polinómicas de grado 3.",
+        "Resolución de ecuaciones cuadráticas con coeficientes decimales.",
+        "Criterio de la primera y segunda derivada para extremos relativos."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 10,
+      "reviewedAt": "2026-08-20T11:02:46.398Z",
+      "approvalMode": "teacher_override",
+      "contentHash": "3c2883041d9439ea",
+      "statementHash": "65c36ffac60b73c8",
+      "url": "ejercicios/2_BACH/optimizacion-de-la-densidad-y-bosquejo-del-volumen-d_REVISADO.json"
     },
     {
       "id": "resolucion-de-un-sistema-3x3-por-gauss-0f02c0a0",
@@ -3014,41 +3479,6 @@
       "contentHash": "4c1c9df5f133b047",
       "statementHash": "a67c0c7744d331ad",
       "url": "ejercicios/4_ESO/sistema-de-inecuaciones-lineales_REVISADO.json"
-    },
-    {
-      "id": "aforo-de-la-discoteca-maximizando-la-noche-1986fbad",
-      "title": "Aforo de la discoteca: Maximizando la noche",
-      "subject": "Matemáticas",
-      "stage": "ESO",
-      "course": "4_ESO",
-      "topic": "Funciones y análisis",
-      "subtopic": "Representación y propiedades de funciones",
-      "exerciseType": "Optimización y modelización con funciones",
-      "protocols": [
-        "B",
-        "H"
-      ],
-      "difficulty": "media",
-      "estimatedMinutes": 25,
-      "learningObjectives": [
-        "Interpretar los coeficientes y puntos notables de una función cuadrática en un contexto real.",
-        "Calcular analíticamente el vértice (máximo) y las raíces (ceros) de una parábola.",
-        "Convertir unidades de tiempo relativas (horas transcurridas) a horas del reloj absoluto."
-      ],
-      "prerequisites": [
-        "Resolución de ecuaciones de segundo grado.",
-        "Concepto de derivada o fórmula del vértice de una parábola.",
-        "Sistemas horarios de 24 horas."
-      ],
-      "hasVisualSupport": true,
-      "hasNearTransfer": true,
-      "hasFarTransfer": true,
-      "slideCount": 10,
-      "reviewedAt": "2026-08-02T08:30:08.896Z",
-      "approvalMode": "legacy_review",
-      "contentHash": "24fd7d6babb65f21",
-      "statementHash": "4e5d86e2ebd494d0",
-      "url": "ejercicios/4_ESO/aforo-de-la-discoteca-maximizando-la-noche_REVISADO.json"
     },
     {
       "id": "calculo-de-valores-de-la-funcion-logaritmica-f-x-log-4370292e",
