@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "2.º Bachillerato",
+    "topic": "Análisis Matemático",
+    "subtopic": "Optimización y Estudio de Funciones",
+    "exerciseType": "Optimización y Representación Gráfica",
+    "protocols": [
+      "B",
+      "H"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Relacionar la maximización de un cociente con la minimización de su denominador.",
+      "Calcular puntos críticos utilizando derivadas de funciones polinómicas.",
+      "Verificar la naturaleza de los extremos mediante el criterio de la segunda derivada.",
+      "Bosquejar funciones a partir de sus puntos notables y comportamiento analítico."
+    ],
+    "prerequisites": [
+      "Derivación de funciones polinómicas de grado 3.",
+      "Resolución de ecuaciones cuadráticas con coeficientes decimales.",
+      "Criterio de la primera y segunda derivada para extremos relativos."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Encuentra la temperatura T para la cual la densidad ρ del agua es máxima."
+      },
+      {
+        "id": "b",
+        "request": "Bosqueja V(t) para 0 <= T <= 10."
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "statementHash": "65c36ffac60b73c8",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-20T11:01:02.614Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "optimizacion-de-la-densidad-y-bosquejo-del-volumen-d-45519f88"
+  },
+  "title": "Optimización de la Densidad y Bosquejo del Volumen del Agua",
+  "slides": [
+    {
+      "title": "Enunciado del Problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Comenzamos transcribiendo con total fidelidad el enunciado. Nos dan la función de volumen V de T para una masa m de agua en el intervalo de temperatura de 0 a 10 grados Celsius y nos piden hallar la temperatura de densidad máxima y bosquejar la función de volumen.",
+      "content": "La masa **m** de agua que a $0^\\circ\\text{C}$ ocupa un volumen de $1\\text{ litro}$, ocupará a **T** $^\\circ\\text{C}$ un volumen **V** en litros dado por la expresión:\n\n$$V(T) = 10^{-5} \\left( -6,8 \\cdot 10^{-3} T^3 + 8,5 \\cdot 10^{-1} T^2 - 6,4 T + 10^5 \\right) \\quad 0 \\le T \\le 10$$\n\nRecordando que la densidad **$\\rho$** de una sustancia homogénea es:\n\n$$\\rho = \\frac{m}{V}$$\n\na) Encuentra la temperatura **T** para la cual la densidad **$\\rho$** del agua es **máxima**.\n\nb) Bosqueja **V(t)** para $0 \\le T \\le 10$."
+    },
+    {
+      "title": "Plan Estratégico de Resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Trazamos la estrategia. Como la densidad ro es igual a la masa dividida por el volumen y la masa es constante, ro es máxima exactamente cuando el volumen V es mínimo. Bastará con minimizar V de T mediante derivadas.",
+      "content": "<strong>OBJETIVO:</strong> Establecer la ruta analítica para hallar la temperatura de máxima densidad y bosquejar la curva de volumen.\n\n<strong>MÉTODO Y ESTRATEGIA:</strong>\n* <strong>Paso 1 (Apartado a):</strong> Analizar la relación inversa $\\rho(T) = \\frac{m}{V(T)}$. Como la masa $m > 0$ es constante, $\\rho(T)$ alcanza su máximo cuando $V(T)$ alcanza su mínimo en $[0, 10]$.\n* <strong>Paso 2 (Apartado a):</strong> Calcular la primera derivada $V'(T)$, resolver $V'(T) = 0$ para encontrar el punto crítico e identificar el mínimo mediante $V''(T) > 0$.\n* <strong>Paso 3 (Apartado b):</strong> Evaluar $V(T)$ en los extremos $T=0$, $T=10$ y en el mínimo $T \\approx 3{,}95^\\circ\\text{C}$ para realizar un bosquejo gráfico riguroso.\n\n<strong>APLICACIÓN REAL:</strong> Este problema modela la conocida <em>anomalía térmica del agua</em>. A diferencia de casi todas las sustancias, el agua se contrae al calentarse entre $0^\\circ\\text{C}$ y $\\approx 4^\\circ\\text{C}$. Esto hace que alcance su máxima densidad alrededor de los $4^\\circ\\text{C}$, permitiendo que lagos y ríos se congelen desde la superficie hacia abajo y preservando la vida acuática en las profundidades durante el invierno."
+    },
+    {
+      "title": "Apartado a): Relación entre Densidad y Volumen",
+      "layout": "centered",
+      "phase": "analizar",
+      "subpart": "a",
+      "theory": "Si $m > 0$ es constante, la función $\\rho(T) = \\frac{m}{V(T)}$ es inversamente proporcional a $V(T)$. Por tanto, el máximo absoluto de $\\rho(T)$ ocurre en el mismo punto donde $V(T)$ alcanza su mínimo absoluto.",
+      "narration": "Analizamos la relación entre la densidad y el volumen. Al derivar la densidad respecto a la temperatura, se comprueba que el punto crítico de la densidad coincide exactamente con el punto crítico del volumen.",
+      "content": "<strong>OBJETIVO:</strong> Demostrar que maximizar la densidad $\\rho(T)$ equivale a minimizar el volumen $V(T)$.\n\n<strong>CONEXIÓN:</strong> Partimos de la definición dada $\\rho = \\frac{m}{V}$, donde la masa $m > 0$ no cambia con la temperatura.\n\n<strong>MÉTODO:</strong> Derivamos $\\rho(T)$ con respecto a la temperatura $T$ aplicando la regla de la cadena:\n$$\\frac{d\\rho}{dT} = \\frac{d}{dT}\\left(m \\cdot [V(T)]^{-1}\\right) = -m \\cdot [V(T)]^{-2} \\cdot V'(T) = -\\frac{m}{[V(T)]^2} \\cdot V'(T)$$\n\nPuesto que $m > 0$ y $[V(T)]^2 > 0$, el factor $-\\frac{m}{[V(T)]^2}$ es estrictamente negativo. Por consiguiente:\n$$\\frac{d\\rho}{dT} = 0 \\iff V'(T) = 0$$\nAdemás, cuando $V'(T)$ pasa de negativo a positivo (mínimo de volumen), $\\rho'(T)$ pasa de positivo a negativo (máximo de densidad).\n\n<strong>INTERPRETACIÓN:</strong> Para hallar la temperatura $T$ de densidad máxima, basta con encontrar el punto de mínimo absoluto de la función de volumen $V(T)$ en el intervalo $0 \\le T \\le 10$."
+    },
+    {
+      "title": "Apartado a): Derivación y Búsqueda de Puntos Críticos",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "theory": "Los puntos críticos de una función derivable $f(x)$ satisfacen $f'(x) = 0$. Para un polinomio de tercer grado $f(x) = ax^3 + bx^2 + cx + d$, su derivada es una ecuación cuadrática $f'(x) = 3ax^2 + 2bx + c = 0$.",
+      "narration": "Expresamos la función V de T multiplicando por 10 a la menos 5. Luego hallamos su primera derivada e igualamos a cero para obtener una ecuación de segundo grado.",
+      "content": "<strong>OBJETIVO:</strong> Obtener la derivada $V'(T)$ y resolver $V'(T) = 0$ para hallar el punto crítico en $0 \\le T \\le 10$.\n\n<strong>CONEXIÓN:</strong> Multiplicando el factor $10^{-5}$ por los términos del paréntesis:\n$$V(T) = -6{,}8 \\cdot 10^{-8} T^3 + 8{,}5 \\cdot 10^{-6} T^2 - 6{,}4 \\cdot 10^{-5} T + 1$$\n\n<strong>CÁLCULO:</strong> Derivamos $V(T)$ respecto a $T$:\n$$V'(T) = 10^{-5} \\left( -3 \\cdot 6{,}8 \\cdot 10^{-3} T^2 + 2 \\cdot 8{,}5 \\cdot 10^{-1} T - 6{,}4 \\right)$$\n$$V'(T) = 10^{-5} \\left( -0{,}0204 T^2 + 1{,}7 T - 6{,}4 \\right)$$\n\nIgualamos la derivada a cero:\n$$-0{,}0204 T^2 + 1{,}7 T - 6{,}4 = 0 \\implies 0{,}0204 T^2 - 1{,}7 T + 6{,}4 = 0$$\n\nAplicamos la fórmula general para ecuaciones cuadráticas $a T^2 + b T + c = 0$:\n$$T = \\frac{-(-1{,}7) \\pm \\sqrt{(-1{,}7)^2 - 4(0{,}0204)(6{,}4)}}{2(0{,}0204)} = \\frac{1{,}7 \\pm \\sqrt{2{,}89 - 0{,}52224}}{0{,}0408}$$\n$$T = \\frac{1{,}7 \\pm \\sqrt{2{,}36776}}{0{,}0408} \\approx \\frac{1{,}7 \\pm 1{,}53875}{0{,}0408}$$\n\nObtenemos dos soluciones analíticas:\n* $T_1 = \\frac{1{,}7 - 1{,}53875}{0{,}0408} \\approx 3{,}9521^\\circ\\text{C}$\n* $T_2 = \\frac{1{,}7 + 1{,}53875}{0{,}0408} \\approx 79{,}3812^\\circ\\text{C}$ (fuera del dominio $[0, 10]$).\n\n<strong>INTERPRETACIÓN:</strong> El único punto crítico perteneciente al dominio físico $[0, 10]$ es $T \\approx 3{,}95^\\circ\\text{C}$."
+    },
+    {
+      "title": "Apartado a): Verificación del Mínimo de Volumen y Respuesta",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "checkpoint": {
+        "question": "¿Cómo se confirma rigurosamente que $T \\approx 3{,}95^\\circ\\text{C}$ corresponde a un mínimo de $V(T)$ y no a un máximo?",
+        "options": [
+          {
+            "text": "Evaluando la segunda derivada $V''(T)$ en $T \\approx 3{,}95$; si $V''(3{,}95) > 0$, la curva es cóncava hacia arriba y se trata de un mínimo.",
+            "correct": true,
+            "feedback": "¡Correcto! Una segunda derivada estrictamente positiva en un punto crítico garantiza analíticamente la presencia de un mínimo local."
+          },
+          {
+            "text": "Comprobando simplemente que $V'(3{,}95) = 0$.",
+            "correct": false,
+            "feedback": "Incorrecto. Una primera derivada nula solo indica la existencia de un punto crítico, pero no distingue entre máximo, mínimo o punto de inflexión."
+          },
+          {
+            "text": "Verificando que $T = 3{,}95$ es menor que $10$.",
+            "correct": false,
+            "feedback": "Incorrecto. Estar dentro del dominio no determina el tipo de extremo relativo."
+          }
+        ]
+      },
+      "content": "<strong>OBJETIVO:</strong> Aplicar el criterio de la segunda derivada para confirmar el mínimo de $V(T)$ y declarar la respuesta final del apartado a).\n\n<strong>CONEXIÓN:</strong> Tomamos la primera derivada $V'(T) = 10^{-5} (-0{,}0204 T^2 + 1{,}7 T - 6{,}4)$.\n\n<strong>CÁLCULO:</strong> Calculamos la segunda derivada $V''(T)$:\n$$V''(T) = \\frac{d}{dT}\\left(10^{-5} (-0{,}0204 T^2 + 1{,}7 T - 6{,}4)\\right) = 10^{-5} (-0{,}0408 T + 1{,}7)$$\n\nEvaluamos en $T_1 \\approx 3{,}9521$:\n$$V''(3{,}9521) = 10^{-5} (-0{,}0408 \\cdot 3{,}9521 + 1{,}7) = 10^{-5} (-0{,}1612 + 1{,}7) = 1{,}5388 \\cdot 10^{-5} > 0$$\n\nComo $V''(3{,}9521) > 0$, el volumen $V(T)$ presenta un **mínimo estricto** en $T \\approx 3{,}95^\\circ\\text{C}$.\nPor la relación inversa $\\rho = \\frac{m}{V}$, la densidad $\\rho(T)$ alcanza su **máximo absoluto** en este mismo punto.\n\n<strong>INTERPRETACIÓN:</strong> Se confirma matemáticamente que la densidad del agua es máxima a aproximadamente $3{,}95^\\circ\\text{C}$ (o redondeado usualmente a $4^\\circ\\text{C}$).\n\n<strong>RESPUESTA AL APARTADO a):</strong> La temperatura para la cual la densidad $\\rho$ del agua es máxima es $T \\approx 3{,}95^\\circ\\text{C}$ (aproximadamente $4^\\circ\\text{C}$)."
+    },
+    {
+      "title": "Apartado b): Evaluación de Puntos Clave de V(T)",
+      "layout": "centered",
+      "phase": "analizar",
+      "subpart": "b",
+      "theory": "Para bosquejar una función continua en un intervalo cerrado $[a, b]$, evaluamos la función en los extremos del dominio $f(a)$ y $f(b)$, y en los puntos críticos $f(x_c)$ del interior.",
+      "narration": "Para preparar el bosquejo de V de T en el apartado b, calculamos los valores del volumen en los extremos T igual a 0 y T igual a 10, y en el mínimo T aproximadamente igual a 3.95.",
+      "content": "<strong>OBJETIVO:</strong> Calcular las coordenadas numéricas de los puntos fundamentales para construir el bosquejo de $V(T)$.\n\n<strong>CONEXIÓN:</strong> Evaluamos la función $V(T) = 10^{-5} (-6{,}8 \\cdot 10^{-3} T^3 + 8{,}5 \\cdot 10^{-1} T^2 - 6{,}4 T + 10^5)$ en $T = 0$, $T = 3{,}9521$ y $T = 10$.\n\n<strong>CÁLCULO:</strong>\n* <strong>Extremo inicial ($T = 0^\\circ\\text{C}$):</strong>\n  $$V(0) = 10^{-5}(10^5) = 1{,}000000\\text{ litros}$$\n* <strong>Mínimo absoluto ($T = 3{,}9521^\\circ\\text{C}$):</strong>\n  $$V(3{,}9521) = 10^{-5} \\left( -6{,}8 \\cdot 10^{-3}(61{,}74) + 0{,}85(15{,}62) - 6{,}4(3{,}9521) + 100000 \\right)$$\n  $$V(3{,}9521) = 10^{-5} \\left( -0{,}42 + 13{,}28 - 25{,}29 + 100000 \\right) = 10^{-5}(99987{,}57) \\approx 0{,}999876\\text{ litros}$$\n* <strong>Extremo final ($T = 10^\\circ\\text{C}$):</strong>\n  $$V(10) = 10^{-5} \\left( -6{,}8 \\cdot 10^{-3}(1000) + 0{,}85(100) - 6{,}4(10) + 100000 \\right)$$\n  $$V(10) = 10^{-5} \\left( -6{,}8 + 85 - 64 + 100000 \\right) = 10^{-5}(100014{,}2) = 1{,}000142\\text{ litros}$$\n\n<strong>INTERPRETACIÓN:</strong> El volumen comienza en $1\\text{ L}$, disminuye hasta un mínimo de $0{,}999876\\text{ L}$ a $3{,}95^\\circ\\text{C}$, y luego aumenta hasta $1{,}000142\\text{ L}$ a $10^\\circ\\text{C}$."
+    },
+    {
+      "title": "Apartado b): Bosquejo Gráfico de V(T)",
+      "layout": "split",
+      "phase": "representar",
+      "subpart": "b",
+      "visualVerificationMode": "manual",
+      "visual": "<svg viewBox='0 0 500 350' preserveAspectRatio='xMidYMid meet' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect x='0' y='0' width='500' height='350' fill='#0f172a' rx='12'/><line x1='60' y1='290' x2='460' y2='290' stroke='#fbbf24' stroke-width='2.5'/><line x1='60' y1='40' x2='60' y2='290' stroke='#fbbf24' stroke-width='2.5'/><text x='430' y='320' fill='#fbbf24' font-size='14' font-weight='bold'>T (&#176;C)</text><text x='15' y='35' fill='#fbbf24' font-size='14' font-weight='bold'>V(T) (L)</text><line x1='60' y1='140' x2='450' y2='140' stroke='#334155' stroke-width='1' stroke-dasharray='4' opacity='0.5'/><text x='10' y='145' fill='#94a3b8' font-size='11'>1.00000</text><line x1='60' y1='230' x2='450' y2='230' stroke='#334155' stroke-width='1' stroke-dasharray='4' opacity='0.5'/><text x='10' y='235' fill='#94a3b8' font-size='11'>0.99988</text><line x1='60' y1='60' x2='450' y2='60' stroke='#334155' stroke-width='1' stroke-dasharray='4' opacity='0.5'/><text x='10' y='65' fill='#94a3b8' font-size='11'>1.00014</text><line x1='60' y1='290' x2='60' y2='295' stroke='#fbbf24' stroke-width='2'/><text x='56' y='312' fill='#f8fafc' font-size='12'>0</text><line x1='214' y1='290' x2='214' y2='295' stroke='#fbbf24' stroke-width='2'/><text x='200' y='312' fill='#4ade80' font-size='12'>3.95</text><line x1='430' y1='290' x2='430' y2='295' stroke='#fbbf24' stroke-width='2'/><text x='422' y='312' fill='#f8fafc' font-size='12'>10</text><path d='M 60,140 C 120,200 170,230 214,230 C 290,230 380,150 430,60' fill='none' stroke='#38bdf8' stroke-width='3.5'/><circle cx='60' cy='140' r='5' fill='#f97316'/><circle cx='214' cy='230' r='6' fill='#4ade80'/><circle cx='430' cy='60' r='5' fill='#c084fc'/><rect x='250' y='195' width='210' height='80' fill='#1e293b' stroke='#475569' rx='8'/><circle cx='265' cy='213' r='4' fill='#f97316'/><text x='278' y='217' fill='#f8fafc' font-size='11'>V(0) = 1.00000 L</text><circle cx='265' cy='233' r='4' fill='#4ade80'/><text x='278' y='237' fill='#f8fafc' font-size='11'>M&#237;nimo V(3.95) = 0.99988 L</text><circle cx='265' cy='253' r='4' fill='#c084fc'/><text x='278' y='257' fill='#f8fafc' font-size='11'>V(10) = 1.00014 L</text></svg>",
+      "visualDescription": "Bosquejo cartesiano del volumen V(T) respecto a la temperatura T en grados Celsius para el intervalo de 0 a 10. El eje horizontal T va de 0 a 10 y el eje vertical representa V(T) magnificado en torno a 1 litro. En T=0, V=1.00000 L. La curva desciende suavemente hasta alcanzar su punto mínimo en T=3.95 grados Celsius con V=0.99988 L, marcado en verde. A partir de allí asciende hasta T=10 grados Celsius con V=1.00014 L.",
+      "visualMathLink": "La curva representa la función V(T) en el intervalo [0, 10]. La escala vertical está amplificada para visibilizar el decrecimiento entre T=0 y T=3.95 (anomalía térmica) y el posterior crecimiento hasta T=10.",
+      "narration": "Mostramos el bosquejo gráfico de V de T. Hemos amplificado la escala vertical alrededor de un litro para apreciar la curvatura: la función decrece suavemente desde 1 litro en T igual a 0 hasta el mínimo en 3.95 grados y luego crece hasta T igual a 10.",
+      "content": "<strong>OBJETIVO:</strong> Representar visualmente la curva del volumen $V(T)$ en el dominio $[0, 10]^\\circ\\text{C}$.\n\n<strong>CONEXIÓN:</strong> Unimos los puntos clave $(0; 1{,}00000)$, $(3{,}95; 0{,}99988)$ y $(10; 1{,}00014)$ respetando la concavidad dada por $V''(T) > 0$.\n\n<strong>MÉTODO:</strong> El gráfico amplifica el eje vertical alrededor de $1\\text{ L}$ para visibilizar la ligera variación del volumen de agua.\n\n<strong>INTERPRETACIÓN:</strong> En el tramo $[0; 3{,}95]^\\circ\\text{C}$ el agua experimenta contracción térmica anómala. A partir de $3{,}95^\\circ\\text{C}$, se dilata de manera convencional.\n\n<strong>RESPUESTA AL APARTADO b):</strong> La gráfica de $V(T)$ es una curva cóncava hacia arriba que decrece desde $(0; 1)$ hasta el mínimo en $(3{,}95; 0{,}99988)$ y asciende hasta $(10; 1{,}00014)$."
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos el procedimiento analítico seguido: deducción de la condición de mínimo volumen, cálculo de la derivada, verificación de la segunda derivada y bosquejo de los puntos notables.",
+      "content": "<strong>RESUMEN DE RESOLUCIÓN: HOJA DE RUTA</strong>\n\n* <strong>1. Equivalencia Física:</strong>\n  $$\\rho(T) = \\frac{m}{V(T)} \\quad (m > 0 \\text{ constante}) \\implies \\max \\rho(T) \\iff \\min V(T)$$\n\n* <strong>2. Puntos Críticos ($V'(T) = 0$):</strong>\n  $$V'(T) = 10^{-5} (-0{,}0204 T^2 + 1{,}7 T - 6{,}4) = 0 \\implies T \\approx 3{,}95^\\circ\\text{C}$$\n\n* <strong>3. Verificación de Mínimo:</strong>\n  $$V''(3{,}95) = 10^{-5} (-0{,}0408 \\cdot 3{,}95 + 1{,}7) = 1{,}54 \\cdot 10^{-5} > 0 \\implies \\text{Mínimo estricto}$$\n\n* <strong>4. Puntos Notables para el Bosquejo:</strong>\n  * Extremo inicial: $V(0) = 1{,}00000\\text{ L}$\n  * Mínimo absoluto: $V(3{,}95) \\approx 0{,}99988\\text{ L}$\n  * Extremo final: $V(10) \\approx 1{,}00014\\text{ L}$"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Practica con un modelo simplificado de la variación de volumen de un fluido en función de la temperatura en un intervalo cerrado.",
+      "content": "La masa $m$ de un cierto fluido que a $0^\\circ\\text{C}$ ocupa un volumen de $1\\text{ litro}$, experimenta variaciones de volumen según la función de temperatura:\n\n$$V(T) = 1 - 8 \\cdot 10^{-5} T + 10^{-5} T^2 \\quad (0 \\le T \\le 8)$$\n\na) Encuentra la temperatura $T$ para la cual la densidad $\\rho = \\frac{m}{V}$ del fluido es máxima.\n\nb) Bosqueja $V(T)$ para $0 \\le T \\le 8$.\n\n<em>Inténtalo por ti mismo antes de consultar la respuesta final.</em>",
+      "practiceAnswer": "a) Como la densidad es inversamente proporcional al volumen, se minimiza V(T): V'(T) = -8·10⁻⁵ + 2·10⁻⁵ T = 0 ⟹ T = 4 °C. Puesto que V''(4) = 2·10⁻⁵ > 0, T = 4 °C es un mínimo de volumen y por lo tanto el máximo absoluto de densidad.\nb) Puntos clave: V(0) = 1 L, mínimo V(4) = 0.99984 L, y V(8) = 1 L. La gráfica es una parábola cóncava hacia arriba decreciente en [0, 4] y creciente simétricamente en [4, 8]."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica el concepto de optimizar una función dada como el cociente inversamente proporcional a otra variable en un modelo de costo unitario industrial.",
+      "content": "El costo unitario $C_u(x)$ por tonelada de mercancía transportada a una velocidad $x$ (en km/h) por una flota logística es inversamente proporcional a la eficiencia energética $E(x)$ del vehículo, de modo que:\n\n$$C_u(x) = \\frac{k}{E(x)}$$\n\ndonde $k > 0$ es una constante y la eficiencia $E(x)$ viene dada por la función $E(x) = -0{,}1 x^2 + 16 x - 100$ para $20 \\le x \\le 100$.\n\na) Encuentra la velocidad $x$ que minimiza el costo unitario $C_u(x)$.\n\nb) Explica la relación matemática entre la maximización de la eficiencia $E(x)$ y la minimización del costo unitario $C_u(x)$.\n\n<em>Inténtalo por ti mismo antes de consultar la respuesta final.</em>",
+      "practiceAnswer": "a) Para k > 0, minimizar C_u(x) equivale a maximizar E(x). Derivando E(x): E'(x) = -0.2 x + 16 = 0 ⟹ x = 80 km/h. Como E''(80) = -0.2 < 0, E(80) = 540 es el máximo absoluto de eficiencia y x = 80 km/h minimiza el costo unitario.\nb) Al ser C_u(x) inversamente proporcional a E(x), cualquier incremento en la eficiencia energética reduce el costo unitario de transporte, alcanzando el óptimo económico exactamente en la velocidad de máxima eficiencia técnica."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-20T11:02:46.398Z",
+    "updatedAt": "2026-08-20T11:02:46.398Z",
+    "contentHash": "3c2883041d9439ea",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "teacher_override",
+    "override": {
+      "confirmed": true,
+      "justification": "se da por bueno el resultado",
+      "automaticErrors": [
+        {
+          "title": "Estructura básica de diapositivas",
+          "detail": "D5: narration"
+        },
+        {
+          "title": "Cobertura explícita de apartados",
+          "detail": "apartado a: su respuesta no aparece identificada en la síntesis final · apartado b: su respuesta no aparece identificada en la síntesis final"
+        }
+      ],
+      "approvedAt": "2026-08-20T11:02:46.398Z"
+    }
+  }
+}
