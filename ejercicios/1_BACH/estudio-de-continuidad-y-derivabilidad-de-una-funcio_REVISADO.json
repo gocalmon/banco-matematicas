@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "visualContractVersion": "1.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Análisis Matemático",
+    "subtopic": "Continuidad y Derivabilidad",
+    "exerciseType": "Estudio de continuidad y derivabilidad de función a trozos",
+    "protocols": [
+      "H"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Analizar la continuidad de una función definida a trozos mediante límites laterales.",
+      "Estudiar la derivabilidad de una función calculando las derivadas laterales en el punto de cambio de rama.",
+      "Justificar la continuidad y derivabilidad de funciones compuestas elementales en intervalos abiertos."
+    ],
+    "prerequisites": [
+      "Concepto y condiciones de continuidad en un punto.",
+      "Reglas de derivación de funciones exponenciales, polinómicas y logarítmicas.",
+      "Cálculo de límites laterales al tender a cero."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Estudiar la continuidad y la derivabilidad de la función siguiente: f(x) = \\begin{cases} e^x - 3x^2 & \\text{si } x \\le 0 \\\\ 2x^2 + \\ln(1+x) + 1 & \\text{si } x > 0 \\end{cases}"
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "statementHash": "644be92e744ea504",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-20T09:55:16.433Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "estudio-de-continuidad-y-derivabilidad-de-una-funcio-36fe8044"
+  },
+  "title": "Estudio de continuidad y derivabilidad de una función a trozos",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "content": "<strong>Problema 375</strong> Estudiar la continuidad y la derivabilidad de la función siguiente\n\n$$ f(x) = \\begin{cases} e^x - 3x^2 & \\text{si } x \\le 0 \\\\ 2x^2 + \\ln(1+x) + 1 & \\text{si } x > 0 \\end{cases} $$",
+      "narration": "Transcribimos de forma exacta el problema trescientos setenta y cinco. Debemos analizar la continuidad y la derivabilidad de la función definida a trozos en todo su dominio, prestando especial atención al punto de cambio x igual a cero."
+    },
+    {
+      "title": "Planificación de la estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "content": "<strong>OBJETIVO:</strong> Determinar la continuidad y derivabilidad de la función $f(x)$ en todo su dominio $\\mathbb{R}$, identificando si existen puntos de discontinuidad o no derivabilidad.\n\n<strong>DATOS:</strong> Función definida a trozos con dos ramas:\n- Rama 1 ($x \\le 0$): $f_1(x) = e^x - 3x^2$ (exponencial y polinómica).\n- Rama 2 ($x > 0$): $f_2(x) = 2x^2 + \\ln(1+x) + 1$ (polinómica y logarítmica).\n\n<strong>MÉTODO:</strong>\n1. **Estudio interior a los intervalos:** Analizar la continuidad y derivabilidad de cada rama en $(-\\infty, 0)$ y $(0, +\\infty)$.\n2. **Continuidad en $x = 0$:** Calcular $f(0)$, $\\lim_{x \\to 0^-} f(x)$ y $\\lim_{x \\to 0^+} f(x)$ y comparar los tres valores.\n3. **Derivabilidad en $x = 0$:** Si es continua, calcular las derivadas de las ramas $f'_1(x)$ y $f'_2(x)$ y evaluar las derivadas laterales $f'(0^-)$ y $f'(0^+)$.\n\n<strong>APLICACIÓN REAL:</strong> La continuidad y derivabilidad garantizan transiciones suaves en modelos de cambio de régimen en economía y física, como la evolución de la temperatura o la velocidad de un móvil sometido a fuerzas cambiantes sin sacudidas.",
+      "narration": "Para estudiar la continuidad y derivabilidad de una función a trozos, dividimos el estudio en dos partes: primero, el comportamiento en el interior de cada tramo, y segundo, el análisis detallado en el punto frontera x igual a cero mediante límites laterales y derivadas laterales."
+    },
+    {
+      "title": "Continuidad y derivabilidad en los intervalos abiertos",
+      "layout": "centered",
+      "phase": "analizar",
+      "subpart": "a",
+      "theory": "Las funciones compuestas por sumas, productos o composiciones de funciones elementales (polinómicas, exponenciales, logarítmicas) son continuas y derivables en todos los puntos de su dominio de definición.",
+      "content": "<strong>OBJETIVO:</strong> Estudiar la continuidad y derivabilidad de $f(x)$ en el interior de los intervalos $(-\\infty, 0)$ y $(0, +\\infty)$.\n\n<strong>CONEXIÓN:</strong> Analizamos cada expresión algebraica de manera independiente según su dominio de definición.\n\n<strong>DATOS:</strong>\n- **Intervalo $(-\\infty, 0)$:** La rama $f_1(x) = e^x - 3x^2$ es la diferencia entre una función exponencial ($e^x$) y una función polinómica ($3x^2$). Ambas son continuas y derivables en todo $\\mathbb{R}$. Por tanto, $f(x)$ es **continua y derivable en $(-\\infty, 0)$**.\n- **Intervalo $(0, +\\infty)$:** La rama $f_2(x) = 2x^2 + \\ln(1+x) + 1$ consta de polinomios y un término logarítmico $\\ln(1+x)$. El argumento del logaritmo $1+x > 1 > 0$ para todo $x > 0$, por lo que está perfectamente definido. Por tanto, $f(x)$ es **continua y derivable en $(0, +\\infty)$**.\n\n<strong>INTERPRETACIÓN:</strong> Los únicos posibles puntos donde la función podría no ser continua o derivable se reducen exclusivamente al punto de empalme $x = 0$.",
+      "narration": "Analizamos el comportamiento de las ramas por separado. Para equis menor que cero, la combinación de exponencial y polinomio es continua y derivable en todo ese intervalo. Para equis mayor que cero, el logaritmo de uno más equis está perfectamente definido porque su argumento es siempre positivo. Así pues, el único punto crítico a examinar es equis igual a cero."
+    },
+    {
+      "title": "Estudio de la continuidad en $x = 0$",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "warning": "Es obligatorio calcular tanto el límite por la izquierda como el límite por la derecha y el valor de la función $f(0)$. No basta con calcular solo los límites laterales.",
+      "content": "<strong>OBJETIVO:</strong> Determinar si $f(x)$ es continua en el punto de frontera $x = 0$.\n\n<strong>CONEXIÓN:</strong> Para que $f(x)$ sea continua en $x = 0$, se debe cumplir $\\lim_{x \\to 0^-} f(x) = \\lim_{x \\to 0^+} f(x) = f(0)$.\n\n<strong>CÁLCULO:</strong>\n1. **Valor de la función y límite por la izquierda ($x \\le 0$):**\n$$ f(0) = \\lim_{x \\to 0^-} (e^x - 3x^2) = e^0 - 3(0)^2 = 1 - 0 = 1 $$\n\n2. **Límite por la derecha ($x > 0$):**\n$$ \\lim_{x \\to 0^+} f(x) = \\lim_{x \\to 0^+} [2x^2 + \\ln(1+x) + 1] = 2(0)^2 + \\ln(1+0) + 1 = 0 + 0 + 1 = 1 $$\n\n3. **Comparación:**\n$$ \\lim_{x \\to 0^-} f(x) = \\lim_{x \\to 0^+} f(x) = f(0) = 1 $$\n\n<strong>RESULTADO:</strong> La función $f(x)$ es **continua en $x = 0$**.\n\n<strong>INTERPRETACIÓN:</strong> Dado que es continua en el punto de empalme y en los intervalos abiertos, concluimos que $f(x)$ es continua en todo $\\mathbb{R}$.",
+      "narration": "Evaluamos la continuidad en cero. El valor de la función y el límite por la izquierda valen uno. El límite por la derecha también vale uno, ya que el logaritmo de uno es cero. Dado que los tres valores coinciden en uno, la función es continua en equis igual a cero y por tanto en toda la recta real."
+    },
+    {
+      "title": "Estudio de la derivabilidad en $x = 0$",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "checkpoint": {
+        "question": "¿Qué condición debe cumplirse para que una función continua en x = 0 sea derivable en x = 0?",
+        "options": [
+          {
+            "text": "Las derivadas laterales f'(0⁻) y f'(0⁺) deben existir y ser iguales.",
+            "correct": true,
+            "feedback": "Correcto. La derivabilidad en un punto de empalme requiere la coincidencia exacta de las derivadas por la izquierda y por la derecha."
+          },
+          {
+            "text": "Basta con que la función sea continua en x = 0.",
+            "correct": false,
+            "feedback": "Incorrecto. La continuidad es una condición necesaria pero no suficiente; la función podría presentar un pico o esquina en x = 0 (como el valor absoluto)."
+          },
+          {
+            "text": "El valor f(0) debe ser igual a cero.",
+            "correct": false,
+            "feedback": "Incorrecto. El valor f(0) no necesita ser cero; lo que importa es que el límite del cociente incremental sea único."
+          }
+        ]
+      },
+      "content": "<strong>OBJETIVO:</strong> Calcular las derivadas laterales en $x = 0$ para analizar la derivabilidad.\n\n<strong>CONEXIÓN:</strong> Puesto que $f(x)$ es continua en $x = 0$, podemos obtener las derivadas laterales tomando el límite de las funciones derivadas de cada rama cuando $x \\to 0$.\n\n<strong>CÁLCULO:</strong>\n1. **Derivada de la rama izquierda ($x < 0$):**\n$$ f'_1(x) = \\frac{d}{dx}(e^x - 3x^2) = e^x - 6x $$\n$$ f'(0^-) = \\lim_{x \\to 0^-} (e^x - 6x) = e^0 - 6(0) = 1 - 0 = 1 $$\n\n2. **Derivada de la rama derecha ($x > 0$):**\n$$ f'_2(x) = \\frac{d}{dx}[2x^2 + \\ln(1+x) + 1] = 4x + \\frac{1}{1+x} $$\n$$ f'(0^+) = \\lim_{x \\to 0^+} \\left( 4x + \\frac{1}{1+x} \\right) = 4(0) + \\frac{1}{1+0} = 0 + 1 = 1 $$\n\n3. **Comparación:**\n$$ f'(0^-) = f'(0^+) = 1 $$\n\n<strong>RESULTADO:</strong> La derivada existe en $x = 0$ y su valor es $f'(0) = 1$.\n\n<strong>RESPUESTA AL APARTADO a):</strong> La función $f(x)$ es **continua y derivable en todo $\\mathbb{R}$**, siendo en particular continua y derivable en $x = 0$ con $f(0) = 1$ y $f'(0) = 1$.",
+      "narration": "Procedemos con la derivabilidad. Derivamos la rama izquierda obteniendo e a la equis menos seis equis, que en cero vale uno. Derivamos la rama derecha obteniendo cuatro equis más uno partido por uno más equis, que en cero también vale uno. Como ambas derivadas laterales coinciden en uno, la función es derivable en cero y su derivada vale uno. Así, la función es continua y derivable en todo el conjunto de los números reales."
+    },
+    {
+      "title": "Representación gráfica de la función y la recta tangente",
+      "layout": "split",
+      "phase": "representar",
+      "subpart": "a",
+      "visualVerificationMode": "manual",
+      "visual": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='50' y1='50' x2='350' y2='50'/><line x1='50' y1='100' x2='350' y2='100'/><line x1='50' y1='150' x2='350' y2='150'/><line x1='50' y1='200' x2='350' y2='200'/><line x1='50' y1='250' x2='350' y2='250'/><line x1='100' y1='30' x2='100' y2='270'/><line x1='150' y1='30' x2='150' y2='270'/><line x1='200' y1='30' x2='200' y2='270'/><line x1='250' y1='30' x2='250' y2='270'/><line x1='300' y1='30' x2='300' y2='270'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='50' y1='200' x2='350' y2='200'/><line x1='200' y1='30' x2='200' y2='270'/><polygon points='350,200 340,195 340,205' fill='#fbbf24'/><polygon points='200,30 195,40 205,40' fill='#fbbf24'/></g><text x='340' y='220' fill='#fbbf24' font-family='sans-serif' font-size='14'>x</text><text x='210' y='45' fill='#fbbf24' font-family='sans-serif' font-size='14'>y</text><line x1='50' y1='275' x2='350' y2='50' stroke='#c084fc' stroke-width='2' stroke-dasharray='6,4'/><text x='270' y='80' fill='#c084fc' font-family='sans-serif' font-size='12'>y = x + 1 (tangente)</text><path d='M 60,260 Q 120,240 200,150' fill='none' stroke='#38bdf8' stroke-width='3'/><path d='M 200,150 Q 260,100 340,40' fill='none' stroke='#f472b6' stroke-width='3'/><circle cx='200' cy='150' r='5' fill='#4ade80'/><text x='212' y='150' fill='#4ade80' font-family='sans-serif' font-size='13'>P(0, 1)</text><text x='80' y='240' fill='#38bdf8' font-family='sans-serif' font-size='13'>f₁(x) = e^x - 3x²</text><text x='260' y='120' fill='#f472b6' font-family='sans-serif' font-size='13'>f₂(x) = 2x² + ln(1+x) + 1</text></svg>",
+      "visualDescription": "Plano cartesiano con ejes principales amarillos. El origen x=0 está en el eje vertical central. Para x <= 0, la rama azul f1(x) asciende suavemente hasta el punto verde P(0, 1). Para x > 0, la rama rosa f2(x) continúa ascendiendo de forma fluida desde P(0, 1). Una recta morada discontinua y = x + 1 pasa tangencialmente por el punto P(0, 1) compartiendo la misma pendiente m = 1 con ambas ramas.",
+      "visualMathLink": "El gráfico muestra el empalme perfecto en P(0, 1), lo que verifica f(0) = 1 y la continuidad. La recta tangente común y = x + 1 con pendiente m = 1 en x = 0 confirma visualmente que f'(0^-) = f'(0^+) = 1, demostrando la derivabilidad sin picos ni angulosidades.",
+      "content": "<strong>OBJETIVO:</strong> Representar la función $f(x)$ y verificar de forma visual la suavidad del empalme en $x = 0$.\n\n<strong>COMPROBACIÓN:</strong>\n- Ambas ramas se unen exactamente en el punto verde $P(0, 1)$.\n- La recta tangente común en $x = 0$ tiene ecuación $y - f(0) = f'(0)(x - 0) \\implies y - 1 = 1(x - 0) \\implies y = x + 1$ (línea morada discontinua).\n\n<strong>INTERPRETACIÓN:</strong> La transición entre la rama azul ($x \\le 0$) y la rama rosa ($x > 0$) es completamente fluida. La existencia de una única recta tangente demuestra gráficamente que la función es derivable en $x = 0$ sin vértices ni angulosidades.",
+      "narration": "En la representación gráfica comprobamos el comportamiento de ambas ramas alrededor de cero. La rama azul a la izquierda y la rosa a la derecha se conectan limpiamente en el punto P cero coma uno. La recta tangente morada discontinua muestra una pendiente única de uno en ese punto, garantizando geométricamente que no hay ningún pico o esquina."
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "content": "Esquema numerado del procedimiento seguido para analizar continuidad y derivabilidad en funciones a trozos:\n\n1. **Dominio e intervalos abiertos:** Justificar que cada rama es continua y derivable en $(-\\infty, 0)$ y $(0, +\\infty)$ por estar compuestas de funciones elementales.\n2. **Continuidad en la frontera $x = 0$:**\n   - Calcular $f(0) = 1$.\n   - Calcular $\\lim_{x \\to 0^-} f(x) = 1$ y $\\lim_{x \\to 0^+} f(x) = 1$.\n   - Comprobar $\\lim_{x \\to 0^-} f(x) = \\lim_{x \\to 0^+} f(x) = f(0) \\implies$ **Continua en $x = 0$**.\n3. **Derivabilidad en la frontera $x = 0$:**\n   - Derivar cada rama: $f'_1(x) = e^x - 6x$ y $f'_2(x) = 4x + \\frac{1}{1+x}$.\n   - Calcular derivadas laterales: $f'(0^-) = 1$ y $f'(0^+) = 1$.\n   - Comprobar $f'(0^-) = f'(0^+) = 1 \\implies$ **Derivable en $x = 0$** con $f'(0) = 1$.\n4. **Conclusión global:** La función $f(x)$ es continua y derivable en todo $\\mathbb{R}$.",
+      "narration": "En síntesis, primero aseguramos la continuidad y derivabilidad en los intervalos abiertos. Luego verificamos la continuidad en cero comparando los tres valores límites. Al confirmar la continuidad, derivamos cada tramo e igualamos las derivadas laterales para probar la derivabilidad global."
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "content": "Intenta estudiar la continuidad y derivabilidad del siguiente ejercicio aplicando los mismos pasos antes de consultar la respuesta final.\n\nEstudie la continuidad y derivabilidad en $x = 0$ de la función:\n$$ g(x) = \\begin{cases} e^{2x} - 2x & \\text{si } x \\le 0 \\\\ x^3 + \\ln(1+2x) + 1 & \\text{si } x > 0 \\end{cases} $$",
+      "practiceAnswer": "La función $g(x)$ es continua y derivable en todo $\\mathbb{R}$ (en particular en $x = 0$), con $g(0) = 1$ y $g'(0) = 0$.",
+      "narration": "Te propongo un ejercicio idéntico en estructura. Comprueba la continuidad y derivabilidad en cero con esta función que combina exponentes y logaritmos. ¡Inténtalo antes de ver la solución!"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "content": "Un sensor térmico registra la variación de temperatura $T(t)$ en grados Celsius de un reactor químico durante los primeros instantes de una reacción ($t$ en minutos):\n$$ T(t) = \\begin{cases} 20 e^{0.1t} & \\text{si } 0 \\le t \\le 5 \\\\ 20 e^{0.5} + 2e^{0.5} (t - 5) - (t - 5)^2 & \\text{si } t > 5 \\end{cases} $$\n\nPara verificar que el sistema no sufre choques térmicos ni cambios bruscos de aceleración térmica en $t = 5$ minutos, analiza si el perfil de temperatura $T(t)$ es continuo y derivable en $t = 5$.",
+      "practiceAnswer": "La función $T(t)$ es continua en $t = 5$ con $T(5) = 20e^{0.5} \\approx 32.97 \\, ^{\\circ}\\text{C}$, y es derivable en $t = 5$ con $T'(5) = 2e^{0.5} \\approx 3.30 \\, ^{\\circ}\\text{C/min}$.",
+      "narration": "En ingeniería de procesos químicos, evitar choques térmicos requiere que la temperatura varíe de forma continua y derivable en los momentos de cambio de fase o control. Aplica los límites y derivadas laterales para comprobar este perfil térmico."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-20T09:56:21.785Z",
+    "updatedAt": "2026-08-20T09:56:21.785Z",
+    "contentHash": "d9fe8484b99695ca",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "automatic_checks_passed"
+  }
+}

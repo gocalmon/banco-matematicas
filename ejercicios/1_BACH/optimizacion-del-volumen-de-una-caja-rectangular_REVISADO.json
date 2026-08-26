@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "visualContractVersion": "1.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Análisis Matemático",
+    "subtopic": "Optimización de Funciones",
+    "exerciseType": "Problema de optimización geométrica",
+    "protocols": [
+      "H"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 18,
+    "learningObjectives": [
+      "Plantear la función objetivo y la ecuación de ligadura a partir de un enunciado geométrico.",
+      "Expresar la función a optimizar en términos de una sola variable independiente.",
+      "Calcular extremos relativos utilizando el criterio de la primera y segunda derivada."
+    ],
+    "prerequisites": [
+      "Formulación de ecuaciones algebraicas a partir de enunciados verbales.",
+      "Reglas de derivación de funciones polinómicas.",
+      "Criterios de la primera y segunda derivada para la búsqueda de máximos y mínimos."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Calcula las medidas que debe tener la caja y cuál será su volumen."
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "statementHash": "52f6a850dbcc9136",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-20T10:05:53.367Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "optimizacion-del-volumen-de-una-caja-rectangular-ed3afa33"
+  },
+  "title": "Optimización del volumen de una caja rectangular",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "content": "Se quiere fabricar una caja de volumen máximo que sea el doble de larga que de ancha y que, además, la suma del ancho más el largo más el alto sea igual a un metro.\n\nCalcula las medidas que debe tener la caja y cuál será su volumen.",
+      "narration": "Transcribimos fielmente el enunciado del problema de optimización. Se nos pide determinar las tres dimensiones de una caja para maximizar su volumen, sabiendo que el largo es el doble del ancho y que la suma de sus tres dimensiones es igual a un metro."
+    },
+    {
+      "title": "Planificación de la estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "content": "<strong>OBJETIVO:</strong> Maximizar la función volumen $V(x, y, z) = x \\cdot y \\cdot z$ sujeta a las condiciones geométricas del enunciado.\n\n<strong>DATOS Y VARIABLES:</strong>\n- Ancho: $x$ (en metros)\n- Largo: $y$ (en metros)\n- Alto: $z$ (en metros)\n\n<strong>CONDICIONES DE LIGADURA:</strong>\n1. Relación entre largo y ancho: $y = 2x$\n2. Suma de las tres dimensiones: $x + y + z = 1$\n\n<strong>MÉTODO:</strong>\n1. Expresar $y$ y $z$ en función de la variable única $x$.\n2. Construir la función objetivo $V(x)$ y definir su dominio con sentido físico.\n3. Derivar $V(x)$, hallar los puntos críticos y confirmar el máximo mediante la segunda derivada $V''(x)$.\n\n<strong>APLICACIÓN REAL:</strong> El cálculo del volumen máximo bajo restricciones lineales de dimensiones es la base del diseño de empaquetado en logística e industria, optimizando el espacio de carga en paquetería postal.",
+      "narration": "Para abordar este problema de optimización, identificaremos las tres dimensiones como equis, eñe y zeta. Utilizaremos las relaciones dadas para expresar el volumen como una función dependiente de una sola variable, y luego aplicaremos derivadas para hallar el máximo."
+    },
+    {
+      "title": "Planteamiento algebraico de la función objetivo",
+      "layout": "centered",
+      "phase": "analizar",
+      "subpart": "a",
+      "theory": "En problemas de optimización, las relaciones de ligadura permiten reducir una función de varias variables a una función de una única variable independiente $V(x)$.",
+      "content": "<strong>OBJETIVO:</strong> Obtener la función $V(x)$ dependiente únicamente del ancho $x$.\n\n<strong>CONEXIÓN:</strong> Sustituimos las condiciones de ligadura en la fórmula del volumen de un paralelepípedo $V = x \\cdot y \\cdot z$.\n\n<strong>DESARROLLO ALGEBRAICO:</strong>\n- Expresamos el largo: $y = 2x$\n- Sustituimos $y$ en la restricción de la suma:\n$$ x + 2x + z = 1 \\implies 3x + z = 1 \\implies z = 1 - 3x $$\n\n- Construimos la función volumen $V(x)$:\n$$ V(x) = x \\cdot (2x) \\cdot (1 - 3x) = 2x^2 (1 - 3x) = 2x^2 - 6x^3 $$\n\n<strong>DOMINIO DE LA FUNCIÓN:</strong>\nLas dimensiones deben ser estrictamente positivas ($x > 0$, $y > 0$, $z > 0$):\n$$ z > 0 \\implies 1 - 3x > 0 \\implies x < \\frac{1}{3} $$\nPor lo tanto, el dominio con sentido físico es $x \\in \\left(0, \\frac{1}{3}\\right)$.",
+      "narration": "Expresamos primero el largo como dos equis y el alto como uno menos tres equis. Al multiplicar las tres dimensiones obtenemos la función objetivo del volumen: dos equis al cuadrado menos seis equis al cubo. El dominio válido para la variable equis comprende valores mayores que cero y menores que un tercio."
+    },
+    {
+      "title": "Cálculo de puntos críticos mediante la derivada",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "warning": "Descarta siempre las soluciones de la derivada que queden fuera del dominio físico del problema (como dimensiones nulas o negativas).",
+      "content": "<strong>OBJETIVO:</strong> Determinar los puntos críticos de $V(x)$ e identificar el máximo absoluto.\n\n<strong>CÁLCULO:</strong>\n1. **Primera derivada de $V(x)$:**\n$$ V'(x) = \\frac{d}{dx}\\left(2x^2 - 6x^3\\right) = 4x - 18x^2 $$\n\n2. **Búsqueda de puntos críticos ($V'(x) = 0$):**\n$$ 4x - 18x^2 = 0 \\implies 2x(2 - 9x) = 0 $$\n- Opción 1: $x = 0$ (descartada por no ser una dimensión física válida).\n- Opción 2: $2 - 9x = 0 \\implies x = \\frac{2}{9} \\text{ m}$\n\n3. **Verificación con la segunda derivada:**\n$$ V''(x) = \\frac{d}{dx}(4x - 18x^2) = 4 - 36x $$\n$$ V''\\left(\\frac{2}{9}\\right) = 4 - 36\\left(\\frac{2}{9}\\right) = 4 - 8 = -4 < 0 $$\n\n<strong>INTERPRETACIÓN:</strong> Al ser $V''\\left(\\frac{2}{9}\\right) < 0$, confirmamos que en $x = \\frac{2}{9}$ existe un **máximo relativo y absoluto**.",
+      "narration": "Derivamos la función volumen obteniendo cuatro equis menos dieciocho equis al cuadrado. Igualamos a cero para hallar el punto crítico en equis igual a dos novenos. Calculamos la segunda derivada, que resulta ser negativa, lo que confirma que en este punto el volumen alcanza su valor máximo."
+    },
+    {
+      "title": "Cálculo de las dimensiones y del volumen máximo",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "checkpoint": {
+        "question": "¿Cuál es la medida del alto z de la caja cuando el ancho x es igual a 2/9 de metro?",
+        "options": [
+          {
+            "text": "1/3 de metro (aprox. 0.333 m)",
+            "correct": true,
+            "feedback": "¡Correcto! Sustituyendo x = 2/9 en z = 1 - 3x obtenemos z = 1 - 3(2/9) = 1 - 2/3 = 1/3 m."
+          },
+          {
+            "text": "4/9 de metro (aprox. 0.444 m)",
+            "correct": false,
+            "feedback": "Incorrecto. 4/9 m corresponde al largo y de la caja (y = 2x)."
+          },
+          {
+            "text": "2/9 de metro (aprox. 0.222 m)",
+            "correct": false,
+            "feedback": "Incorrecto. 2/9 m corresponde al ancho x de la caja."
+          }
+        ]
+      },
+      "content": "<strong>OBJETIVO:</strong> Obtener los valores numéricos exactos de las tres dimensiones y del volumen máximo.\n\n<strong>CÁLCULO DE DIMENSIONES:</strong>\n- **Ancho ($x$):**\n$$ x = \\frac{2}{9} \\text{ m} \\approx 0.222 \\text{ m} $$\n- **Largo ($y = 2x$):**\n$$ y = 2 \\cdot \\left(\\frac{2}{9}\\right) = \\frac{4}{9} \\text{ m} \\approx 0.444 \\text{ m} $$\n- **Alto ($z = 1 - 3x$):**\n$$ z = 1 - 3 \\cdot \\left(\\frac{2}{9}\\right) = 1 - \\frac{2}{3} = \\frac{1}{3} \\text{ m} \\approx 0.333 \\text{ m} $$\n\n<strong>CÁLCULO DEL VOLUMEN MÁXIMO:</strong>\n$$ V_{máx} = x \\cdot y \\cdot z = \\frac{2}{9} \\cdot \\frac{4}{9} \\cdot \\frac{1}{3} = \\frac{8}{243} \\text{ m}^3 \\approx 0.03292 \\text{ m}^3 $$\n\nConvertido a litros ($1 \\text{ m}^3 = 1000 \\text{ dm}^3 = 1000 \\text{ L}$):\n$$ V_{máx} \\approx 32.92 \\text{ litros} $$\n\n<strong>COMPROBACIÓN DE RESTRICCIONES:</strong>\n$$ x + y + z = \\frac{2}{9} + \\frac{4}{9} + \\frac{3}{9} = \\frac{9}{9} = 1 \\text{ m} \\quad \\checkmark $$",
+      "narration": "Con el valor del ancho sustituimos para obtener el largo de cuatro novenos de metro y el alto de un tercio de metro. La multiplicación de las tres dimensiones nos da un volumen máximo exacto de ocho partido por doscientos cuarenta y tres metros cúbicos, equivalente a unos treinta y dos comas noventa y dos litros."
+    },
+    {
+      "title": "Representación gráfica de la función volumen",
+      "layout": "split",
+      "phase": "representar",
+      "subpart": "a",
+      "visualVerificationMode": "manual",
+      "visual": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='50' y1='50' x2='350' y2='50'/><line x1='50' y1='100' x2='350' y2='100'/><line x1='50' y1='150' x2='350' y2='150'/><line x1='50' y1='200' x2='350' y2='200'/><line x1='50' y1='230' x2='350' y2='230'/><line x1='50' y1='30' x2='50' y2='250'/><line x1='150' y1='30' x2='150' y2='250'/><line x1='250' y1='30' x2='250' y2='250'/><line x1='350' y1='30' x2='350' y2='250'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='40' y1='230' x2='370' y2='230'/><line x1='50' y1='20' x2='50' y2='250'/><polygon points='370,230 360,225 360,235' fill='#fbbf24'/><polygon points='50,20 45,30 55,30' fill='#fbbf24'/></g><text x='360' y='250' fill='#fbbf24' font-family='sans-serif' font-size='14'>x (m)</text><text x='60' y='35' fill='#fbbf24' font-family='sans-serif' font-size='14'>V(m³)</text><path d='M 50,230 C 120,220 180,80 250,80 C 290,80 320,150 350,230' fill='none' stroke='#38bdf8' stroke-width='3'/><circle cx='250' cy='80' r='5' fill='#4ade80'/><line x1='250' y1='80' x2='250' y2='230' stroke='#4ade80' stroke-width='1.5' stroke-dasharray='4,4'/><line x1='50' y1='80' x2='250' y2='80' stroke='#4ade80' stroke-width='1.5' stroke-dasharray='4,4'/><text x='215' y='65' fill='#4ade80' font-family='sans-serif' font-size='12'>Máx (2/9, 8/243)</text><text x='235' y='248' fill='#cbd5e1' font-family='sans-serif' font-size='11'>2/9</text><text x='335' y='248' fill='#cbd5e1' font-family='sans-serif' font-size='11'>1/3</text><text x='15' y='85' fill='#cbd5e1' font-family='sans-serif' font-size='11'>8/243</text></svg>",
+      "visualDescription": "Plano cartesiano donde el eje horizontal representa el ancho x y el eje vertical representa el volumen V. La curva azul V(x) parte del origen (0,0), sube hasta un pico máximo verde en x = 2/9 con un valor de V = 8/243, y desciende suavemente hasta volver a cero en x = 1/3.",
+      "visualMathLink": "Visualmente, la cima de la curva azul marcada en verde confirma el punto crítico en x = 2/9 m donde la tangente es horizontal V'(2/9) = 0 y la concavidad es hacia abajo V''(2/9) < 0.",
+      "content": "<strong>OBJETIVO:</strong> Representar e interpretar visualmente la curva de volumen $V(x) = 2x^2 - 6x^3$.\n\n<strong>ELEMENTOS CLAVE EN LA GRÁFICA:</strong>\n- **Punto de corte inicial:** $(0, 0)$ (caja de ancho nulo).\n- **Máximo absoluto (Punto verde):** $\\left(\\frac{2}{9}, \\frac{8}{243}\\right) \\approx (0.222, 0.0329)$.\n- **Punto de corte final:** $\\left(\\frac{1}{3}, 0\\right)$ (caja de alto nulo).\n\n<strong>CONCLUSIÓN VISUAL:</strong> La gráfica muestra claramente que para cualquier valor del ancho distinto de $2/9 \\text{ m}$ dentro del intervalo $(0, 1/3)$, el volumen de la caja es estrictamente inferior al máximo hallado.",
+      "narration": "En la gráfica observamos la curva del volumen en función del ancho. Comienza en cero, alcanza su cima exactamente en el punto verde dos novenos con un volumen de ocho partido por doscientos cuarenta y tres, y cae de nuevo a cero cuando el ancho alcanza un tercio."
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "content": "Resumen sintético del procedimiento seguido para optimizar la caja:\n\n1. **Planteamiento de ligaduras:**\n   - Largo: $y = 2x$\n   - Alto: $z = 1 - 3x$\n2. **Construcción de la función volumen:**\n   - $V(x) = x(2x)(1 - 3x) = 2x^2 - 6x^3$ para $x \\in \\left(0, \\frac{1}{3}\\right)$.\n3. **Cálculo de la primera derivada e igualación a cero:**\n   - $V'(x) = 4x - 18x^2 = 0 \\implies x = \\frac{2}{9} \\text{ m}$.\n4. **Confirmación con la segunda derivada:**\n   - $V''\\left(\\frac{2}{9}\\right) = -4 < 0 \\implies$ **Máximo verificado**.\n5. **Solución final:**\n   - **Ancho:** $\\frac{2}{9} \\text{ m}$ | **Largo:** $\\frac{4}{9} \\text{ m}$ | **Alto:** $\\frac{1}{3} \\text{ m}$\n   - **Volumen máximo:** $\\frac{8}{243} \\text{ m}^3 \\approx 32.92 \\text{ litros}$.",
+      "narration": "En resumen: definimos las ecuaciones de ligadura, construimos la función objetivo en una variable, derivamos e igualamos a cero para obtener el ancho óptimo, y confirmamos el volumen máximo de ocho doscientos cuarenta y tresavos de metro cúbico."
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "content": "Intenta resolver el siguiente problema análogo aplicando la misma metodología antes de verificar la solución.\n\nSe quiere fabricar una caja de volumen máximo que sea **el triple de larga que de ancha** y tal que la suma del ancho más el largo más el alto sea igual a **2 metros**.\n\nCalcula las dimensiones de la caja y su volumen máximo.",
+      "practiceAnswer": "Ancho x = 1/3 m, Largo y = 1 m, Alto z = 2/3 m. Volumen máximo V = 2/9 m³ ≈ 0.222 m³ (222.2 litros).",
+      "narration": "Prueba a resolver este ejercicio con la misma estructura pero cambiando las proporciones: el triple de larga que de ancha y una suma total de dos metros. ¡Aplica la plantilla de optimización antes de comprobar la respuesta!"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "content": "Una empresa de mensajería urgente impone una restricción tarifaria para el transporte de paquetes en forma de cilindro recto:\n**La suma del radio de la base más la altura del cilindro no debe superar los $60 \\text{ cm}$.**\n\nDetermina las dimensiones (radio $r$ y altura $h$) de un paquete cilíndrico para que su volumen sea máximo.",
+      "practiceAnswer": "Radio r = 40 cm, Altura h = 20 cm. Volumen máximo V = 32000π cm³ ≈ 100.53 litros.",
+      "narration": "En este caso de aplicación lejana en transporte y logística, aplicamos la optimización al volumen de un cilindro en lugar de un prisma. Intenta plantear la función volumen en términos del radio y maximizarla dentro de la restricción dada."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-20T10:08:33.059Z",
+    "updatedAt": "2026-08-20T10:08:33.059Z",
+    "contentHash": "832a364798b9c551",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "teacher_override",
+    "override": {
+      "confirmed": true,
+      "justification": "Ejercico correcto salvo eso",
+      "automaticErrors": [
+        {
+          "title": "Cobertura explícita de apartados",
+          "detail": "apartado a: falta «RESPUESTA AL APARTADO a)» con su conclusión explícita"
+        }
+      ],
+      "approvedAt": "2026-08-20T10:08:33.059Z"
+    }
+  }
+}

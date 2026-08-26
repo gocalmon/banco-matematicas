@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "visualContractVersion": "1.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Análisis Matemático",
+    "subtopic": "Derivadas",
+    "exerciseType": "Cálculo de derivada de función racional",
+    "protocols": [
+      "H"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 10,
+    "learningObjectives": [
+      "Aplicar la regla de derivación del cociente.",
+      "Comprender la alternativa del uso de la regla de la cadena con exponente negativo.",
+      "Simplificar expresiones algebraicas resultantes de la derivación."
+    ],
+    "prerequisites": [
+      "Reglas básicas de derivación polinómica.",
+      "Concepto de derivada como función.",
+      "Regla del cociente para derivadas."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Derive las siguientes funciones: a) f(x) = \\frac{1}{x^3 - 2x}"
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "statementHash": "4b6d254f28b80531",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-20T09:50:07.956Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "calculo-de-la-derivada-de-una-funcion-racional-3e638a18"
+  },
+  "title": "Cálculo de la derivada de una función racional",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "content": "<u>Ejercicios.</u>\nDerive las siguientes funciones:\n\na) $$ f(x) = \\frac{1}{x^3 - 2x} $$",
+      "narration": "Vamos a resolver el ejercicio propuesto. Se nos pide calcular la función derivada de una función racional, específicamente el apartado a."
+    },
+    {
+      "title": "Estrategia de resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "content": "<strong>OBJETIVO:</strong> Determinar la expresión algebraica de la derivada $f'(x)$.\n\n<strong>DATOS:</strong> Tenemos la función $f(x) = \\frac{1}{x^3 - 2x}$, que es un cociente donde el numerador es una constante y el denominador es un polinomio.\n\n<strong>MÉTODO:</strong> Existen dos enfoques equivalentes para resolverlo:\n1.  **Regla del cociente:** Aplicar la fórmula general de derivación para $\\frac{u}{v}$.\n2.  **Regla de la potencia y cadena:** Reescribir la función como $f(x) = (x^3 - 2x)^{-1}$ y derivar usando la regla de la cadena.\n\nUtilizaremos la **regla del cociente** por ser el método general más estandarizado para fracciones, aunque ambos conducen al mismo resultado.",
+      "narration": "Para derivar esta función tenemos dos caminos principales. Podemos tratarla como una división de funciones y usar la regla del cociente, o podemos subir el denominador con exponente negativo y usar la regla de la cadena. Vamos a optar por la regla del cociente, que es la más directa para fracciones."
+    },
+    {
+      "title": "Análisis del dominio",
+      "layout": "centered",
+      "phase": "analizar",
+      "subpart": "a",
+      "content": "<strong>OBJETIVO:</strong> Identificar los puntos donde la función (y por tanto su derivada) no está definida.\n\n<strong>CÁLCULO:</strong> El denominador no puede ser cero:\n$$ x^3 - 2x \\neq 0 $$\nFactorizamos la expresión:\n$$ x(x^2 - 2) \\neq 0 $$\n\nEsto nos da tres restricciones:\n1. $x \\neq 0$\n2. $x^2 - 2 \\neq 0 \\implies x \\neq \\sqrt{2} \\text{ y } x \\neq -\\sqrt{2}$\n\n<strong>INTERPRETACIÓN:</strong> La función es continua y derivable en todo su dominio, que es $\\mathbb{R} \\setminus \\{-\\sqrt{2}, 0, \\sqrt{2}\\}$. La derivada que calculemos solo tendrá sentido en este mismo dominio.",
+      "narration": "Antes de derivar a ciegas, es una buena práctica matemática ver dónde existe nuestra función. Como tenemos un denominador, debemos asegurar que no sea cero. Igualando a cero descubrimos tres puntos conflictivos. Nuestra futura derivada no existirá en esos puntos."
+    },
+    {
+      "title": "Aplicación de la regla del cociente",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "theory": "La regla de derivación para un cociente de funciones $\\frac{u(x)}{v(x)}$ es:\n$$ f'(x) = \\frac{u'(x) \\cdot v(x) - u(x) \\cdot v'(x)}{[v(x)]^2} $$",
+      "content": "<strong>OBJETIVO:</strong> Identificar las componentes del cociente y calcular sus derivadas individuales.\n\n<strong>CONEXIÓN:</strong> Aplicaremos la regla teórica a nuestro caso concreto.\n\n<strong>MÉTODO:</strong> Asignamos $u(x)$ al numerador y $v(x)$ al denominador:\n- Numerador: $u(x) = 1 \\implies u'(x) = 0$ (la derivada de una constante es cero).\n- Denominador: $v(x) = x^3 - 2x \\implies v'(x) = 3x^2 - 2$.\n\nSustituimos estas piezas en la fórmula de la regla del cociente:\n$$ f'(x) = \\frac{0 \\cdot (x^3 - 2x) - 1 \\cdot (3x^2 - 2)}{(x^3 - 2x)^2} $$",
+      "narration": "Planteamos la regla del cociente. Nuestro numerador es uno, cuya derivada es cero. El denominador es un polinomio sencillo de derivar. Colocamos cada pieza en su sitio dentro de la fórmula."
+    },
+    {
+      "title": "Simplificación y resultado final",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "warning": "Es fundamental no olvidar el signo negativo que precede al término $u(x) \\cdot v'(x)$ en la regla del cociente. Este signo afecta a todo el polinomio $v'(x)$.",
+      "content": "<strong>OBJETIVO:</strong> Simplificar la expresión obtenida para llegar al resultado final.\n\n<strong>CONEXIÓN:</strong> Tomamos la expresión de la diapositiva anterior y realizamos las operaciones algebraicas en el numerador.\n\n<strong>CÁLCULO:</strong>\nPartimos de:\n$$ f'(x) = \\frac{0 - (3x^2 - 2)}{(x^3 - 2x)^2} $$\n\nDistribuimos el signo negativo en el numerador:\n$$ f'(x) = \\frac{-3x^2 + 2}{(x^3 - 2x)^2} $$\n\nReordenamos para mayor claridad (opcional):\n$$ f'(x) = \\frac{2 - 3x^2}{(x^3 - 2x)^2} $$\n\n<strong>RESULTADO:</strong> La derivada está completamente simplificada.\n\n<strong>RESPUESTA AL APARTADO a):</strong> La derivada de la función es $$ f'(x) = \\frac{2 - 3x^2}{(x^3 - 2x)^2} $$.",
+      "narration": "El término que se multiplica por cero desaparece. Nos queda el signo menos afectando a la derivada del denominador. Repartimos ese signo menos y ordenamos los términos para que quede más elegante. ¡Y ya tenemos nuestra derivada!"
+    },
+    {
+      "title": "Comprobación analítica de puntos críticos",
+      "layout": "split",
+      "phase": "comprobar",
+      "subpart": "a",
+      "visualVerificationMode": "manual",
+      "visual": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid meet\">\n  <rect width=\"400\" height=\"300\" fill=\"#0f172a\"/>\n  <g stroke=\"#334155\" stroke-width=\"1\">\n    <line x1=\"0\" y1=\"150\" x2=\"400\" y2=\"150\"/>\n    <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\"/>\n  </g>\n  <g stroke=\"#fbbf24\" stroke-width=\"2.5\">\n    <line x1=\"0\" y1=\"150\" x2=\"400\" y2=\"150\"/>\n    <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\"/>\n    <polygon points=\"400,150 390,145 390,155\" fill=\"#fbbf24\"/>\n    <polygon points=\"200,0 195,10 205,10\" fill=\"#fbbf24\"/>\n  </g>\n  <text x=\"380\" y=\"170\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">x</text>\n  <text x=\"210\" y=\"20\" fill=\"#fbbf24\" font-family=\"sans-serif\" font-size=\"14\">y</text>\n  \n  <!-- Asíntotas -->\n  <line x1=\"130\" y1=\"0\" x2=\"130\" y2=\"300\" stroke=\"#4ade80\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\" opacity=\"0.6\"/>\n  <line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"300\" stroke=\"#4ade80\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\" opacity=\"0.6\"/>\n  \n  <!-- Puntos críticos -->\n  <circle cx=\"160\" cy=\"105\" r=\"4\" fill=\"#f472b6\"/>\n  <circle cx=\"240\" cy=\"195\" r=\"4\" fill=\"#f472b6\"/>\n  \n  <!-- Curva f(x) simplificada ilustrativa -->\n  <path d=\"M 40,148 Q 100,140 125,-20 M 135,320 Q 150,105 160,105 Q 170,105 185,320 M 215,-20 Q 230,195 240,195 Q 250,195 265,-20 M 275,320 Q 300,160 360,152\" fill=\"none\" stroke=\"#38bdf8\" stroke-width=\"2.5\"/>\n  \n  <text x=\"40\" y=\"130\" fill=\"#38bdf8\" font-family=\"sans-serif\" font-size=\"14\">f(x)</text>\n  <text x=\"165\" y=\"95\" fill=\"#f472b6\" font-family=\"sans-serif\" font-size=\"12\">Máx loc.</text>\n  <text x=\"245\" y=\"215\" fill=\"#f472b6\" font-family=\"sans-serif\" font-size=\"12\">Mín loc.</text>\n</svg>",
+      "visualDescription": "Gráfico cartesiano. El eje Y vertical y el eje X horizontal en amarillo. Se observan dos asíntotas verticales en verde punteado alrededor de x = -1.4 y x = 1.4. La función f(x) está dibujada en azul. Tiene tres ramas principales debido a las asíntotas. Se destacan dos puntos críticos en color rosa: un máximo local en la rama central izquierda y un mínimo local en la rama central derecha, donde la pendiente (derivada) es cero.",
+      "visualMathLink": "Los puntos rosas marcados en la gráfica de f(x) corresponden a los máximos y mínimos locales. Analíticamente, ocurren donde f'(x) = 0. En nuestra fórmula, el numerador 2 - 3x^2 se anula exactamente en x = ±√(2/3), lo que justifica geométricamente la existencia de estos extremos relativos visibles en la curva.",
+      "content": "<strong>OBJETIVO:</strong> Comprobar la coherencia geométrica de la derivada hallada buscando los puntos de tangente horizontal.\n\n<strong>COMPROBACIÓN:</strong> \nPara hallar los extremos relativos, igualamos la derivada a cero:\n$$ f'(x) = 0 \\implies \\frac{2 - 3x^2}{(x^3 - 2x)^2} = 0 $$\n\nEsto se cumple solo si el numerador es cero:\n$$ 2 - 3x^2 = 0 \\implies 3x^2 = 2 \\implies x^2 = \\frac{2}{3} \\implies x = \\pm\\sqrt{\\frac{2}{3}} $$\nEstos valores ($x \\approx \\pm 0.816$) caen dentro del dominio de la función.\n\n<strong>INTERPRETACIÓN:</strong> La existencia de estos dos puntos donde $f'(x) = 0$ indica que la gráfica original $f(x)$ posee dos extremos relativos (un máximo y un mínimo locales), lo cual concuerda con la forma cualitativa de una función racional cúbica con tres asíntotas verticales.",
+      "narration": "Para comprobar que nuestra derivada tiene sentido, busquemos dónde vale cero. Igualar una fracción a cero es igualar su numerador a cero. Obtenemos dos valores para equis. Si miramos el gráfico de la función original, efectivamente vemos un pico hacia arriba y un valle hacia abajo exactamente en esos valores. ¡Nuestra derivada predice perfectamente estos puntos críticos!"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "content": "Pasos seguidos para la derivación de la función:\n\n1.  **Identificación del modelo:** Se reconoce la estructura de cociente $f(x) = \\frac{u}{v}$.\n2.  **Derivación de componentes:** \n    *   Derivada del numerador constante ($u=1 \\implies u'=0$).\n    *   Derivada del denominador polinómico ($v=x^3-2x \\implies v'=3x^2-2$).\n3.  **Aplicación de la fórmula:** Se sustituye en la regla del cociente: $\\frac{u'v - uv'}{v^2}$.\n4.  **Simplificación algebraica:** Se agrupan términos y se operan los signos cuidadosamente, en especial el signo negativo del término $-uv'$.\n5.  **Obtención del resultado:** Se expresa el cociente simplificado final.",
+      "narration": "En resumen: reconocemos que es una división, derivamos por separado arriba y abajo, armamos el puzle de la regla del cociente con mucho cuidado con los signos, y simplificamos para obtener nuestra expresión definitiva."
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "content": "Intenta derivar la siguiente función aplicando los mismos pasos (regla del cociente para numerador constante) antes de comprobar la respuesta.\n\nDeriva la función:\n$$ g(x) = \\frac{1}{x^4 - 4x^2} $$",
+      "practiceAnswer": "La derivada es $$ g'(x) = \\frac{8x - 4x^3}{(x^4 - 4x^2)^2} $$.",
+      "narration": "Ahora te toca a ti. Deriva esta nueva función racional. Es casi idéntica, solo cambian los exponentes. Aplica tu nueva hoja de ruta y comprueba si llegas al mismo resultado."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "content": "La misma estructura matemática aparece en la física elemental. La magnitud de la fuerza gravitatoria $F$ entre dos masas fijas decae con el cuadrado de la distancia $r$ entre ellas, modelándose como:\n$$ F(r) = \\frac{k}{r^2} $$\n(donde $k$ es una constante).\n\nCalcula el ritmo de cambio instantáneo de la fuerza gravitatoria con respecto a la distancia, es decir, la derivada $F'(r)$.",
+      "practiceAnswer": "El ritmo de cambio de la fuerza gravitatoria es $$ F'(r) = \\frac{-2k}{r^3} $$.",
+      "narration": "Vamos a llevar esto al terreno de la física. La fuerza de la gravedad se comporta como una fracción donde la variable está en el denominador. ¿Eres capaz de hallar su ritmo de cambio derivando respecto a la distancia usando la misma lógica? Inténtalo."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-20T09:50:59.871Z",
+    "updatedAt": "2026-08-20T09:50:59.871Z",
+    "contentHash": "c8e7a74fadcd1d35",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "automatic_checks_passed"
+  }
+}

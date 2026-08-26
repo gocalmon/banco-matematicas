@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "1.º Bachillerato",
+    "topic": "Análisis matemático",
+    "subtopic": "Dominio, continuidad y discontinuidades evitables",
+    "exerciseType": "Estudio de discontinuidad evitable en función racional",
+    "protocols": [
+      "B",
+      "H"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 12,
+    "learningObjectives": [
+      "Determinar el dominio de definición de una función racional igualando el denominador a cero.",
+      "Identificar los puntos de discontinuidad de una función racional fuera de su dominio.",
+      "Resolver indeterminaciones del tipo cero entre cero mediante factorización para redefinir la función y restituir la continuidad."
+    ],
+    "prerequisites": [
+      "Concepto de dominio en funciones racionales.",
+      "Factorización de trinomios de segundo grado.",
+      "Cálculo de límites de funciones y definición formal de continuidad."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Determina su dominio."
+      },
+      {
+        "id": "b",
+        "request": "Calcula los puntos donde no sea continua."
+      },
+      {
+        "id": "c",
+        "request": "¿Qué valor habría que darle a la función en x = -1 para que sea continua en dicho punto?"
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 9,
+    "statementHash": "51badd7b8a7468a9",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-20T08:40:40.174Z",
+    "hasVerifiedVisualSupport": true,
+    "id": "estudio-de-dominio-continuidad-y-redefinicion-contin-661516a0"
+  },
+  "title": "Estudio de dominio, continuidad y redefinición continua de f(x)",
+  "slides": [
+    {
+      "title": "Transcripción y comprensión del enunciado",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Se presenta una función racional con un polinomio de segundo grado en el numerador y un polinomio lineal en el denominador. Debemos hallar su dominio, identificar sus puntos de discontinuidad y determinar el valor necesario en menos uno para que la función sea continua.",
+      "content": "Dada la función $f(x) = \\frac{x^2 + 4x + 3}{x + 1}:$\n\na) Determina su dominio.\n\nb) Calcula los puntos donde no sea continua.\n\nc) ¿Qué valor habría que darle a la función en $x = -1$ para que sea continua en dicho punto?"
+    },
+    {
+      "title": "Estrategia de resolución y condiciones de continuidad",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para abordar este tipo de función racional, primero identificamos los valores que anulan el denominador. Esos valores quedan excluidos del dominio y son los únicos candidatos a puntos de discontinuidad.",
+      "content": "<strong>OBJETIVO:</strong> Establecer la hoja de ruta matemática para responder a los tres apartados.\n\n<strong>CONEXIÓN:</strong> La función dada $f(x) = \\frac{x^2 + 4x + 3}{x + 1}$ es el cociente de dos polinomios. Las funciones polinómicas son continuas en todo $\\mathbb{R}$, por lo que las únicas anomalías de $f(x)$ ocurren donde el denominador se anula.\n\n<strong>MÉTODO:</strong>\n1. <strong>Dominio:</strong> Excluir los valores que hacen cero el denominador.\n2. <strong>Continuidad:</strong> Probar la continuidad en el dominio y analizar el comportamiento límite en los puntos excluidos.\n3. <strong>Redefinición:</strong> Calcular el límite finito para eliminar la discontinuidad evitable asignando $f(x_0) = \\lim_{x \\to x_0} f(x)$.\n\n<strong>APLICACIÓN REAL:</strong> En física e ingeniería, la redefinición de discontinuidades evitables se utiliza para extender funciones de densidad o campo en puntos singulares donde la fórmula analítica original presenta indeterminaciones $0/0$.",
+      "theory": "Una función racional es continua en todo su dominio. Si un valor $x_0$ anula el denominador pero existe el límite finito $\\lim_{x \\to x_0} f(x) = L$, la función presenta una discontinuidad evitable en $x_0$."
+    },
+    {
+      "subpart": "a",
+      "title": "Apartado a): Cálculo del dominio de la función",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Para hallar el dominio de una función racional, igualamos el denominador a cero para encontrar los valores donde la división por cero no está definida.",
+      "content": "<strong>OBJETIVO:</strong> Determinar el conjunto de números reales para los cuales $f(x)$ está bien definida.\n\n<strong>CONEXIÓN:</strong> Una fracción algebraica no está definida cuando su denominador es igual a cero, ya que la división entre cero es una operación no permitida en $\\mathbb{R}$.\n\n<strong>CÁLCULO:</strong> Igualamos el denominador a cero:\n$$x + 1 = 0 \\implies x = -1$$\n\n<strong>RESULTADO:</strong> El único valor que no pertenece al dominio es $x = -1$.\n\n<strong>INTERPRETACIÓN:</strong> La función puede evaluarse en cualquier número real excepto en $x = -1$. Por tanto, expresamos el dominio como la recta real menos dicho punto o como unión de intervalos abiertos.\n\n<strong>RESPUESTA AL APARTADO a):</strong> El dominio de la función es $\\text{Dom}(f) = \\mathbb{R} \\setminus \\{-1\\} = (-\\infty, -1) \\cup (-1, +\\infty)$."
+    },
+    {
+      "subpart": "b",
+      "title": "Apartado b): Identificación de los puntos de discontinuidad",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Como las funciones racionales son continuas en todo su dominio, el único punto donde la función no es continua es equis igual a menos uno.",
+      "content": "<strong>OBJETIVO:</strong> Determinar los puntos de discontinuidad de $f(x)$ y clasificar el tipo de discontinuidad.\n\n<strong>CONEXIÓN:</strong> Por propiedades de las funciones elementales, las funciones racionales son continuas en todos los puntos de su dominio. Por tanto, el único punto donde $f(x)$ no es continua es $x = -1$.\n\n<strong>CÁLCULO:</strong> Analizamos el límite cuando $x \\to -1$:\n$$\\lim_{x \\to -1} f(x) = \\lim_{x \\to -1} \\frac{x^2 + 4x + 3}{x + 1}$$\nSustituyendo directamente obtendríamos $\\frac{(-1)^2 + 4(-1) + 3}{-1 + 1} = \\frac{0}{0}$ (indeterminación). Factorizamos el numerador $x^2 + 4x + 3 = (x + 1)(x + 3)$:\n$$\\lim_{x \\to -1} \\frac{(x + 1)(x + 3)}{x + 1} = \\lim_{x \\to -1} (x + 3) = -1 + 3 = 2$$\n\n<strong>INTERPRETACIÓN:</strong> Puesto que el límite existe y es igual a $2$, pero $f(-1)$ no existe, en $x = -1$ hay una <strong>discontinuidad evitable</strong>.\n\n<strong>RESPUESTA AL APARTADO b):</strong> El único punto donde la función no es continua es <strong>$x = -1$</strong>, donde presenta una discontinuidad evitable.",
+      "warning": "Confundir una discontinuidad evitable con una asíntota vertical es un error común. Ocurre una asíntota cuando el límite tiende a infinito, no cuando existe un límite finito tras simplificar la indeterminación 0/0.",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "cartesian2d",
+        "viewport": {
+          "xMin": "-4",
+          "xMax": "2",
+          "yMin": "-1",
+          "yMax": "5",
+          "equalScale": true
+        },
+        "objects": [
+          {
+            "id": "f_line",
+            "type": "polynomial",
+            "label": "y = x + 3 (x ≠ -1)",
+            "coefficients": [
+              "3",
+              "1"
+            ],
+            "domain": [
+              "-4",
+              "2"
+            ]
+          },
+          {
+            "id": "p_hole",
+            "type": "point",
+            "label": "Punto excluido (-1, 2)",
+            "coordinates": [
+              "-1",
+              "2"
+            ]
+          }
+        ],
+        "relations": [
+          {
+            "type": "pointOnPolynomial",
+            "point": "p_hole",
+            "polynomial": "f_line"
+          }
+        ]
+      },
+      "visualDescription": "Representación de la recta y igual a equis más tres en el plano cartesiano, destacando el punto marcado en (-1, 2) que representa el hueco o discontinuidad evitable de f(x).",
+      "visualMathLink": "La simplificación de la expresión racional muestra que f(x) se comporta como la recta x + 3 para todo valor distinto de -1, dejando un agujero en la coordenada (-1, 2).",
+      "visual": "<svg viewBox='0 0 640 440' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='cartesian2d' data-visual-contract='1.0' data-verification-status='verified'><rect x='0' y='0' width='640' height='440' rx='14' fill='#0f172a'/><line x1='154.00' y1='386.00' x2='154.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='209.33' y1='386.00' x2='209.33' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='264.67' y1='386.00' x2='264.67' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='320.00' y1='386.00' x2='320.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='375.33' y1='386.00' x2='375.33' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='430.67' y1='386.00' x2='430.67' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='486.00' y1='386.00' x2='486.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='386.00' x2='486.00' y2='386.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='330.67' x2='486.00' y2='330.67' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='275.33' x2='486.00' y2='275.33' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='220.00' x2='486.00' y2='220.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='164.67' x2='486.00' y2='164.67' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='109.33' x2='486.00' y2='109.33' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='54.00' x2='486.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='330.67' x2='486.00' y2='330.67' stroke='#fbbf24' stroke-width='2.5'/><text x='474.00' y='322.67' fill='#fbbf24' font-size='15'>x</text><line x1='375.33' y1='386.00' x2='375.33' y2='54.00' stroke='#fbbf24' stroke-width='2.5'/><text x='383.33' y='70.00' fill='#fbbf24' font-size='15'>y</text><polyline points='154.00,386.00 155.04,384.96 156.08,383.93 157.11,382.89 158.15,381.85 159.19,380.81 160.22,379.78 161.26,378.74 162.30,377.70 163.34,376.66 164.38,375.63 165.41,374.59 166.45,373.55 167.49,372.51 168.53,371.47 169.56,370.44 170.60,369.40 171.64,368.36 172.68,367.32 173.71,366.29 174.75,365.25 175.79,364.21 176.83,363.18 177.86,362.14 178.90,361.10 179.94,360.06 180.97,359.03 182.01,357.99 183.05,356.95 184.09,355.91 185.13,354.88 186.16,353.84 187.20,352.80 188.24,351.76 189.28,350.72 190.31,349.69 191.35,348.65 192.39,347.61 193.43,346.57 194.46,345.54 195.50,344.50 196.54,343.46 197.58,342.43 198.61,341.39 199.65,340.35 200.69,339.31 201.72,338.27 202.76,337.24 203.80,336.20 204.84,335.16 205.88,334.13 206.91,333.09 207.95,332.05 208.99,331.01 210.03,329.97 211.06,328.94 212.10,327.90 213.14,326.86 214.18,325.82 215.21,324.79 216.25,323.75 217.29,322.71 218.32,321.68 219.36,320.64 220.40,319.60 221.44,318.56 222.47,317.52 223.51,316.49 224.55,315.45 225.59,314.41 226.63,313.38 227.66,312.34 228.70,311.30 229.74,310.26 230.78,309.22 231.81,308.19 232.85,307.15 233.89,306.11 234.93,305.07 235.96,304.04 237.00,303.00 238.04,301.96 239.07,300.93 240.11,299.89 241.15,298.85 242.19,297.81 243.22,296.77 244.26,295.74 245.30,294.70 246.34,293.66 247.38,292.63 248.41,291.59 249.45,290.55 250.49,289.51 251.53,288.47 252.56,287.44 253.60,286.40 254.64,285.36 255.68,284.32 256.71,283.29 257.75,282.25 258.79,281.21 259.82,280.18 260.86,279.14 261.90,278.10 262.94,277.06 263.98,276.02 265.01,274.99 266.05,273.95 267.09,272.91 268.13,271.88 269.16,270.84 270.20,269.80 271.24,268.76 272.28,267.72 273.31,266.69 274.35,265.65 275.39,264.61 276.43,263.57 277.46,262.54 278.50,261.50 279.54,260.46 280.58,259.42 281.61,258.39 282.65,257.35 283.69,256.31 284.73,255.28 285.76,254.24 286.80,253.20 287.84,252.16 288.88,251.13 289.91,250.09 290.95,249.05 291.99,248.01 293.02,246.97 294.06,245.94 295.10,244.90 296.14,243.86 297.18,242.82 298.21,241.79 299.25,240.75 300.29,239.71 301.33,238.67 302.36,237.64 303.40,236.60 304.44,235.56 305.48,234.53 306.51,233.49 307.55,232.45 308.59,231.41 309.63,230.38 310.66,229.34 311.70,228.30 312.74,227.26 313.77,226.22 314.81,225.19 315.85,224.15 316.89,223.11 317.93,222.07 318.96,221.04 320.00,220.00 321.04,218.96 322.08,217.92 323.11,216.89 324.15,215.85 325.19,214.81 326.23,213.78 327.26,212.74 328.30,211.70 329.34,210.66 330.38,209.63 331.41,208.59 332.45,207.55 333.49,206.51 334.52,205.47 335.56,204.44 336.60,203.40 337.64,202.36 338.68,201.32 339.71,200.29 340.75,199.25 341.79,198.21 342.83,197.17 343.86,196.14 344.90,195.10 345.94,194.06 346.98,193.03 348.01,191.99 349.05,190.95 350.09,189.91 351.13,188.88 352.16,187.84 353.20,186.80 354.24,185.76 355.27,184.72 356.31,183.69 357.35,182.65 358.39,181.61 359.43,180.57 360.46,179.54 361.50,178.50 362.54,177.46 363.58,176.42 364.61,175.39 365.65,174.35 366.69,173.31 367.73,172.28 368.76,171.24 369.80,170.20 370.84,169.16 371.88,168.13 372.91,167.09 373.95,166.05 374.99,165.01 376.02,163.97 377.06,162.94 378.10,161.90 379.14,160.86 380.18,159.82 381.21,158.79 382.25,157.75 383.29,156.71 384.32,155.68 385.36,154.64 386.40,153.60 387.44,152.56 388.48,151.53 389.51,150.49 390.55,149.45 391.59,148.41 392.63,147.38 393.66,146.34 394.70,145.30 395.74,144.26 396.78,143.22 397.81,142.19 398.85,141.15 399.89,140.11 400.93,139.07 401.96,138.04 403.00,137.00 404.04,135.96 405.07,134.93 406.11,133.89 407.15,132.85 408.19,131.81 409.23,130.78 410.26,129.74 411.30,128.70 412.34,127.66 413.38,126.63 414.41,125.59 415.45,124.55 416.49,123.51 417.53,122.47 418.56,121.44 419.60,120.40 420.64,119.36 421.68,118.32 422.71,117.29 423.75,116.25 424.79,115.21 425.82,114.18 426.86,113.14 427.90,112.10 428.94,111.06 429.98,110.02 431.01,108.99 432.05,107.95 433.09,106.91 434.13,105.88 435.16,104.84 436.20,103.80 437.24,102.76 438.28,101.72 439.31,100.69 440.35,99.65 441.39,98.61 442.43,97.57 443.46,96.54 444.50,95.50 445.54,94.46 446.57,93.43 447.61,92.39 448.65,91.35 449.69,90.31 450.73,89.27 451.76,88.24 452.80,87.20 453.84,86.16 454.88,85.13 455.91,84.09 456.95,83.05 457.99,82.01 459.03,80.97 460.06,79.94 461.10,78.90 462.14,77.86 463.18,76.82 464.21,75.79 465.25,74.75 466.29,73.71 467.32,72.68 468.36,71.64 469.40,70.60 470.44,69.56 471.48,68.52 472.51,67.49 473.55,66.45 474.59,65.41 475.63,64.38 476.66,63.34 477.70,62.30 478.74,61.26 479.78,60.22 480.81,59.19 481.85,58.15 482.89,57.11 483.93,56.07 484.96,55.04 486.00,54.00' fill='none' stroke='#38bdf8' stroke-width='3' data-object-id='f_line' data-sampled-from-exact-polynomial='true' data-run='1'/><circle cx='320.00' cy='220.00' r='6' fill='#f472b6' stroke='#ffffff' stroke-width='2' data-object-id='p_hole' data-exact-coordinates='-1,2'/><text x='329.00' y='211.00' fill='#f472b6' font-size='15'>Punto excluido (-1, 2)</text><text x='18' y='424' fill='#94a3b8' font-size='13'>Gráfico reconstruido por el visor desde datos matemáticos declarados.</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "cartesian2d",
+        "analysis": {
+          "objectCount": 2,
+          "equalScale": true,
+          "relationsVerified": 1
+        }
+      }
+    },
+    {
+      "subpart": "c",
+      "title": "Apartado c): Redefinición continua de la función en x = -1",
+      "layout": "split",
+      "phase": "resolver",
+      "narration": "Para eliminar la discontinuidad evitable en menos uno y hacer la función continua, debemos asignar a la función en ese punto exactamente el valor del límite, es decir, dos.",
+      "content": "<strong>OBJETIVO:</strong> Determinar el valor que debe asignarse a $f(-1)$ para redefinir la función y lograr que sea continua en $x = -1$.\n\n<strong>CONEXIÓN:</strong> Para que una función sea continua en un punto $x_0$, es necesario que exista el límite $L = \\lim_{x \\to x_0} f(x)$, que exista $f(x_0)$ y que ambos coincidan: $f(x_0) = L$.\n\n<strong>CÁLCULO:</strong> Como hemos calculado en el apartado anterior:\n$$\\lim_{x \\to -1} f(x) = 2$$\nPara restituir la continuidad, definimos $f(-1) = 2$. La función redefinida $F(x)$ queda de la forma:\n$$F(x) = \\begin{cases} \\frac{x^2 + 4x + 3}{x + 1} & \\text{si } x \\neq -1 \\\\[2ex] 2 & \\text{si } x = -1 \\end{cases}$$\n\n<strong>INTERPRETACIÓN:</strong> Asignar el valor $2$ rellena el punto faltante en la gráfica, convirtiendo la función discontinua original en la recta continua $y = x + 3$ para todo $\\mathbb{R}$.\n\n<strong>RESPUESTA AL APARTADO c):</strong> Para que la función sea continua en $x = -1$, habría que darle a la función el valor <strong>$f(-1) = 2$</strong>.",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "cartesian2d",
+        "viewport": {
+          "xMin": "-4",
+          "xMax": "2",
+          "yMin": "-1",
+          "yMax": "5",
+          "equalScale": true
+        },
+        "objects": [
+          {
+            "id": "f_cont",
+            "type": "polynomial",
+            "label": "F(x) = x + 3",
+            "coefficients": [
+              "3",
+              "1"
+            ],
+            "domain": [
+              "-4",
+              "2"
+            ]
+          },
+          {
+            "id": "p_fill",
+            "type": "point",
+            "label": "F(-1) = 2",
+            "coordinates": [
+              "-1",
+              "2"
+            ]
+          }
+        ],
+        "relations": [
+          {
+            "type": "pointOnPolynomial",
+            "point": "p_fill",
+            "polynomial": "f_cont"
+          }
+        ]
+      },
+      "visualDescription": "Plano cartesiano mostrando la recta continua y igual a equis más tres sin interrupciones, con el punto (-1, 2) completamente integrado en la recta.",
+      "visualMathLink": "Al definir F(-1) igual a dos, se rellena la discontinuidad evitable y la gráfica se convierte en una línea recta continua sin ningún salto.",
+      "visual": "<svg viewBox='0 0 640 440' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='cartesian2d' data-visual-contract='1.0' data-verification-status='verified'><rect x='0' y='0' width='640' height='440' rx='14' fill='#0f172a'/><line x1='154.00' y1='386.00' x2='154.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='209.33' y1='386.00' x2='209.33' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='264.67' y1='386.00' x2='264.67' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='320.00' y1='386.00' x2='320.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='375.33' y1='386.00' x2='375.33' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='430.67' y1='386.00' x2='430.67' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='486.00' y1='386.00' x2='486.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='386.00' x2='486.00' y2='386.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='330.67' x2='486.00' y2='330.67' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='275.33' x2='486.00' y2='275.33' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='220.00' x2='486.00' y2='220.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='164.67' x2='486.00' y2='164.67' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='109.33' x2='486.00' y2='109.33' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='54.00' x2='486.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='154.00' y1='330.67' x2='486.00' y2='330.67' stroke='#fbbf24' stroke-width='2.5'/><text x='474.00' y='322.67' fill='#fbbf24' font-size='15'>x</text><line x1='375.33' y1='386.00' x2='375.33' y2='54.00' stroke='#fbbf24' stroke-width='2.5'/><text x='383.33' y='70.00' fill='#fbbf24' font-size='15'>y</text><polyline points='154.00,386.00 155.04,384.96 156.08,383.93 157.11,382.89 158.15,381.85 159.19,380.81 160.22,379.78 161.26,378.74 162.30,377.70 163.34,376.66 164.38,375.63 165.41,374.59 166.45,373.55 167.49,372.51 168.53,371.47 169.56,370.44 170.60,369.40 171.64,368.36 172.68,367.32 173.71,366.29 174.75,365.25 175.79,364.21 176.83,363.18 177.86,362.14 178.90,361.10 179.94,360.06 180.97,359.03 182.01,357.99 183.05,356.95 184.09,355.91 185.13,354.88 186.16,353.84 187.20,352.80 188.24,351.76 189.28,350.72 190.31,349.69 191.35,348.65 192.39,347.61 193.43,346.57 194.46,345.54 195.50,344.50 196.54,343.46 197.58,342.43 198.61,341.39 199.65,340.35 200.69,339.31 201.72,338.27 202.76,337.24 203.80,336.20 204.84,335.16 205.88,334.13 206.91,333.09 207.95,332.05 208.99,331.01 210.03,329.97 211.06,328.94 212.10,327.90 213.14,326.86 214.18,325.82 215.21,324.79 216.25,323.75 217.29,322.71 218.32,321.68 219.36,320.64 220.40,319.60 221.44,318.56 222.47,317.52 223.51,316.49 224.55,315.45 225.59,314.41 226.63,313.38 227.66,312.34 228.70,311.30 229.74,310.26 230.78,309.22 231.81,308.19 232.85,307.15 233.89,306.11 234.93,305.07 235.96,304.04 237.00,303.00 238.04,301.96 239.07,300.93 240.11,299.89 241.15,298.85 242.19,297.81 243.22,296.77 244.26,295.74 245.30,294.70 246.34,293.66 247.38,292.63 248.41,291.59 249.45,290.55 250.49,289.51 251.53,288.47 252.56,287.44 253.60,286.40 254.64,285.36 255.68,284.32 256.71,283.29 257.75,282.25 258.79,281.21 259.82,280.18 260.86,279.14 261.90,278.10 262.94,277.06 263.98,276.02 265.01,274.99 266.05,273.95 267.09,272.91 268.13,271.88 269.16,270.84 270.20,269.80 271.24,268.76 272.28,267.72 273.31,266.69 274.35,265.65 275.39,264.61 276.43,263.57 277.46,262.54 278.50,261.50 279.54,260.46 280.58,259.42 281.61,258.39 282.65,257.35 283.69,256.31 284.73,255.28 285.76,254.24 286.80,253.20 287.84,252.16 288.88,251.13 289.91,250.09 290.95,249.05 291.99,248.01 293.02,246.97 294.06,245.94 295.10,244.90 296.14,243.86 297.18,242.82 298.21,241.79 299.25,240.75 300.29,239.71 301.33,238.67 302.36,237.64 303.40,236.60 304.44,235.56 305.48,234.53 306.51,233.49 307.55,232.45 308.59,231.41 309.63,230.38 310.66,229.34 311.70,228.30 312.74,227.26 313.77,226.22 314.81,225.19 315.85,224.15 316.89,223.11 317.93,222.07 318.96,221.04 320.00,220.00 321.04,218.96 322.08,217.92 323.11,216.89 324.15,215.85 325.19,214.81 326.23,213.78 327.26,212.74 328.30,211.70 329.34,210.66 330.38,209.63 331.41,208.59 332.45,207.55 333.49,206.51 334.52,205.47 335.56,204.44 336.60,203.40 337.64,202.36 338.68,201.32 339.71,200.29 340.75,199.25 341.79,198.21 342.83,197.17 343.86,196.14 344.90,195.10 345.94,194.06 346.98,193.03 348.01,191.99 349.05,190.95 350.09,189.91 351.13,188.88 352.16,187.84 353.20,186.80 354.24,185.76 355.27,184.72 356.31,183.69 357.35,182.65 358.39,181.61 359.43,180.57 360.46,179.54 361.50,178.50 362.54,177.46 363.58,176.42 364.61,175.39 365.65,174.35 366.69,173.31 367.73,172.28 368.76,171.24 369.80,170.20 370.84,169.16 371.88,168.13 372.91,167.09 373.95,166.05 374.99,165.01 376.02,163.97 377.06,162.94 378.10,161.90 379.14,160.86 380.18,159.82 381.21,158.79 382.25,157.75 383.29,156.71 384.32,155.68 385.36,154.64 386.40,153.60 387.44,152.56 388.48,151.53 389.51,150.49 390.55,149.45 391.59,148.41 392.63,147.38 393.66,146.34 394.70,145.30 395.74,144.26 396.78,143.22 397.81,142.19 398.85,141.15 399.89,140.11 400.93,139.07 401.96,138.04 403.00,137.00 404.04,135.96 405.07,134.93 406.11,133.89 407.15,132.85 408.19,131.81 409.23,130.78 410.26,129.74 411.30,128.70 412.34,127.66 413.38,126.63 414.41,125.59 415.45,124.55 416.49,123.51 417.53,122.47 418.56,121.44 419.60,120.40 420.64,119.36 421.68,118.32 422.71,117.29 423.75,116.25 424.79,115.21 425.82,114.18 426.86,113.14 427.90,112.10 428.94,111.06 429.98,110.02 431.01,108.99 432.05,107.95 433.09,106.91 434.13,105.88 435.16,104.84 436.20,103.80 437.24,102.76 438.28,101.72 439.31,100.69 440.35,99.65 441.39,98.61 442.43,97.57 443.46,96.54 444.50,95.50 445.54,94.46 446.57,93.43 447.61,92.39 448.65,91.35 449.69,90.31 450.73,89.27 451.76,88.24 452.80,87.20 453.84,86.16 454.88,85.13 455.91,84.09 456.95,83.05 457.99,82.01 459.03,80.97 460.06,79.94 461.10,78.90 462.14,77.86 463.18,76.82 464.21,75.79 465.25,74.75 466.29,73.71 467.32,72.68 468.36,71.64 469.40,70.60 470.44,69.56 471.48,68.52 472.51,67.49 473.55,66.45 474.59,65.41 475.63,64.38 476.66,63.34 477.70,62.30 478.74,61.26 479.78,60.22 480.81,59.19 481.85,58.15 482.89,57.11 483.93,56.07 484.96,55.04 486.00,54.00' fill='none' stroke='#38bdf8' stroke-width='3' data-object-id='f_cont' data-sampled-from-exact-polynomial='true' data-run='1'/><circle cx='320.00' cy='220.00' r='6' fill='#f472b6' stroke='#ffffff' stroke-width='2' data-object-id='p_fill' data-exact-coordinates='-1,2'/><text x='329.00' y='211.00' fill='#f472b6' font-size='15'>F(-1) = 2</text><text x='18' y='424' fill='#94a3b8' font-size='13'>Gráfico reconstruido por el visor desde datos matemáticos declarados.</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "cartesian2d",
+        "analysis": {
+          "objectCount": 2,
+          "equalScale": true,
+          "relationsVerified": 1
+        }
+      }
+    },
+    {
+      "title": "Comprobación analítica de la redefinición",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Verificamos que con f de menos uno igual a dos se cumplen rigurosamente las tres condiciones de continuidad en equis igual a menos uno.",
+      "content": "<strong>OBJETIVO:</strong> Comprobar formalmente los requisitos de continuidad en $x = -1$ con la función redefinida $F(x)$.\n\n<strong>CONEXIÓN:</strong> Revisamos las tres condiciones fundamentales de la continuidad en un punto:\n1. <strong>Existencia del valor en el punto:</strong> $F(-1) = 2$.\n2. <strong>Existencia del límite:</strong> $\\lim_{x \\to -1} F(x) = \\lim_{x \\to -1} (x + 3) = 2$.\n3. <strong>Coincidencia de ambos:</strong> $F(-1) = \\lim_{x \\to -1} F(x) = 2$.\n\n<strong>COMPROBACIÓN:</strong> Las tres condiciones se satisfacen plenamente. Por tanto, la redefinición elimina la discontinuidad y la función se vuelve continua en todo $\\mathbb{R}$.\n\n<strong>INTERPRETACIÓN:</strong> La comprobación confirma que la única obstrucción a la continuidad era la falta de definición en $x = -1$, la cual queda perfectamente resuelta."
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Revisamos los pasos seguidos para analizar y resolver las discontinuidades evitables en funciones racionales.",
+      "content": "<strong>Resumen de Resolución: Hoja de Ruta</strong>\n\n1. <strong>Determinar el dominio:</strong> Anular el denominador $x + 1 = 0 \\implies x = -1$. El dominio es $\\mathbb{R} \\setminus \\{-1\\}$.\n2. <strong>Identificar puntos de discontinuidad:</strong> Por ser función racional, la única discontinuidad ocurre fuera del dominio, en $x = -1$.\n3. <strong>Clasificar la discontinuidad:</strong> Resolver el límite $\\lim_{x \\to -1} \\frac{x^2+4x+3}{x+1} = \\lim_{x \\to -1} (x+3) = 2$. Como el límite es finito, la discontinuidad es evitable.\n4. <strong>Redefinir para restablecer continuidad:</strong> Asignar $f(-1) = 2$ para que el valor de la función coincida con el límite.\n\n<strong>Respuestas finales:</strong>\na) $\\text{Dom}(f) = \\mathbb{R} \\setminus \\{-1\\}$\nb) Discontinua en $x = -1$ (evitable)\nc) $f(-1) = 2$"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica exactamente el mismo procedimiento para analizar el dominio, la discontinuidad y la redefinición de esta nueva función racional.",
+      "content": "Dada la función $g(x) = \\frac{x^2 + 5x + 6}{x + 2}:$\n\na) Determina su dominio.\nb) Calcula los puntos donde no sea continua y clasifica la discontinuidad.\nc) ¿Qué valor habría que darle a la función en $x = -2$ para que sea continua en dicho punto?\n\n<i>Inténtalo por ti mismo factorizando el numerador antes de comprobar la solución.</i>",
+      "practiceAnswer": "a) Dom(g) = R \\ {-2}; b) Discontinua en x = -2 (discontinuidad evitable); c) g(-2) = 1"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "En este caso práctico de ingeniería química, calcula la concentración límite extendiendo de forma continua una fórmula de tasa de reacción que presenta una indeterminación cero entre cero.",
+      "content": "En un reactor químico, la tasa de reacción relativa $R(t)$ en función del tiempo $t$ (en minutos) viene dada por el modelo:\n\n$$R(t) = \\frac{t^2 - 9}{t - 3}$$\n\na) ¿Para qué instante de tiempo $t$ no está definida directamente la fórmula del modelo?\nb) ¿Qué valor de tasa de reacción $R(3)$ debe programarse en el sistema de control automatizado para que la medición sea continua en el instante $t = 3$ min?",
+      "practiceAnswer": "a) t = 3 min; b) R(3) = 6 unidades de tasa"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-20T08:41:57.566Z",
+    "updatedAt": "2026-08-20T08:41:57.566Z",
+    "contentHash": "21b1c65e0bc539c8",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "automatic_checks_passed"
+  }
+}

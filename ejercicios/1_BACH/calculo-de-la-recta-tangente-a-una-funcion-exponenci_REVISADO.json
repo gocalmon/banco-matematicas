@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "visualContractVersion": "1.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Análisis Matemático",
+    "subtopic": "Recta Tangente y Derivación",
+    "exerciseType": "Cálculo de la recta tangente a una curva exponencial",
+    "protocols": [
+      "H"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 10,
+    "learningObjectives": [
+      "Determinar el punto de corte de una función exponencial con el eje de ordenadas.",
+      "Calcular la derivada de una función exponencial compuesta mediante la regla de la cadena.",
+      "Obtener la ecuación punto-pendiente y explícita de la recta tangente a una curva."
+    ],
+    "prerequisites": [
+      "Derivada de la función exponencial $e^{u(x)}$.",
+      "Interpretación geométrica de la derivada como pendiente de la recta tangente.",
+      "Ecuación punto-pendiente de la recta $y - y_0 = m(x - x_0)$."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Escribe la ecuación de la tangente a la curva $f(x) = e^{2-x}$ en el punto donde corta el eje de ordenadas."
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "statementHash": "1b4ce0f3b44fc6e9",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-20T10:14:35.182Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "calculo-de-la-recta-tangente-a-una-funcion-exponenci-1de8d9ef"
+  },
+  "title": "Cálculo de la recta tangente a una función exponencial",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "content": "Escribe la ecuación de la tangente a la curva $f(x) = e^{2-x}$ en el punto donde corta el eje de ordenadas.",
+      "narration": "Transcribimos fielmente el enunciado del problema. Se nos pide calcular la ecuación de la recta tangente a la función exponencial e elevado a dos menos equis en el punto de corte con el eje de ordenadas."
+    },
+    {
+      "title": "Planificación de la estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "content": "<strong>OBJETIVO:</strong> Obtener la ecuación de la recta tangente de la forma $y - y_0 = m(x - x_0)$ o $y = mx + n$.\n\n<strong>DATOS Y RESTRICCIONES:</strong>\n- Función: $f(x) = e^{2-x}$\n- Condición del punto: Corte con el eje de ordenadas (eje $Y$), lo cual exige $x_0 = 0$.\n\n<strong>PASOS DE RESOLUCIÓN:</strong>\n1. Hallar la ordenada $y_0 = f(0)$ para definir el punto de tangencia $P(x_0, y_0)$.\n2. Derivar la función $f(x)$ para obtener la expresión de la pendiente instantánea.\n3. Evaluar la derivada en $x_0 = 0$ para encontrar la pendiente $m = f'(0)$.\n4. Formular la ecuación de la recta tangente.\n\n<strong>APLICACIÓN REAL:</strong> Las rectas tangentes a funciones exponenciales permiten calcular la velocidad instantánea de cambio en modelos de enfriamiento, desintegración radiactiva o modelos macroeconómicos.",
+      "narration": "Para determinar la recta tangente, primero identificamos que el corte con el eje de ordenadas se da en equis igual a cero. Evaluamos la función para hallar el punto, calculamos la derivada para obtener la pendiente y armamos la ecuación."
+    },
+    {
+      "title": "Paso 1: Punto de tangencia y cálculo de la pendiente",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "theory": "Cualquier curva corta el eje de ordenadas en $x = 0$. La pendiente $m$ de la recta tangente en $x_0$ coincide con el valor de la primera derivada $f'(x_0)$.",
+      "content": "<strong>OBJETIVO:</strong> Determinar el punto $P(x_0, y_0)$ y la pendiente $m$.\n\n<strong>1. Punto de tangencia ($x_0 = 0$):**\nEvaluamos $f(x)$ en $x_0 = 0$:\n$$ y_0 = f(0) = e^{2-0} = e^2 $$\nEl punto de tangencia es **$P(0, e^2)$** (aprox. $(0, 7.389)$).\n\n<strong>2. Derivada de la función $f(x) = e^{2-x}$:**\nAplicando la regla de la cadena $\\frac{d}{dx}\\left(e^{u(x)}\\right) = u'(x) \\cdot e^{u(x)}$ con $u(x) = 2 - x \\implies u'(x) = -1$:\n$$ f'(x) = -e^{2-x} $$\n\n<strong>3. Pendiente de la recta tangente ($m$):**\nEvaluamos la derivada en $x_0 = 0$:\n$$ m = f'(0) = -e^{2-0} = -e^2 $$",
+      "narration": "En primer lugar, sustituimos equis igual a cero en la función obteniendo la ordenada e al cuadrado. A continuación, derivamos mediante la regla de la cadena obteniendo menos e elevado a dos menos equis, por lo que la pendiente en cero vale menos e al cuadrado."
+    },
+    {
+      "title": "Paso 2: Ecuación de la recta tangente",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "warning": "No olvides el signo negativo proveniente de la derivada interna de $2 - x$. De omitirlo, obtendrías una pendiente positiva errónea.",
+      "checkpoint": {
+        "question": "¿Cuál es la ecuación explícita de la recta tangente hallada?",
+        "options": [
+          {
+            "text": "y = -e² x + e²",
+            "correct": true,
+            "feedback": "¡Correcto! Al ser x₀ = 0, la ordenada en el origen es n = e² y la pendiente es m = -e², por lo que y = -e²x + e²."
+          },
+          {
+            "text": "y = e² x + e²",
+            "correct": false,
+            "feedback": "Incorrecto. Recuerda que la derivada de 2 - x aporta un signo negativo (-1) a la pendiente."
+          },
+          {
+            "text": "y = -e² x",
+            "correct": false,
+            "feedback": "Incorrecto. Falta sumar el término independiente y₀ = e² (la ordenada en el origen)."
+          }
+        ]
+      },
+      "content": "<strong>OBJETIVO:</strong> Escribir la ecuación de la recta tangente en sus formas habituales.\n\n<strong>ELEMENTOS CALCULADOS:</strong>\n- Abscisa: $x_0 = 0$\n- Ordenada: $y_0 = e^2$\n- Pendiente: $m = -e^2$\n\n<strong>ECUACIÓN PUNTO-PENDIENTE:</strong>\n$$ y - y_0 = m(x - x_0) \\implies y - e^2 = -e^2(x - 0) $$\n\n<strong>ECUACIÓN EXPLÍCITA:</strong>\n$$ y = -e^2 x + e^2 \\quad \\text{o sacando factor común:} \\quad y = e^2(1 - x) $$\n\n<strong>ECUACIÓN GENERAL O IMPLÍCITA:</strong>\n$$ e^2 x + y - e^2 = 0 $$",
+      "narration": "Sustituyendo el punto cero, e al cuadrado y la pendiente menos e al cuadrado en la ecuación punto-pendiente, obtenemos la forma explícita: y igual a menos e al cuadrado por equis más e al cuadrado."
+    },
+    {
+      "title": "Representación gráfica de la curva y la tangente",
+      "layout": "split",
+      "phase": "representar",
+      "subpart": "a",
+      "visualVerificationMode": "manual",
+      "visual": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='40' y1='60' x2='360' y2='60'/><line x1='40' y1='110' x2='360' y2='110'/><line x1='40' y1='160' x2='360' y2='160'/><line x1='40' y1='220' x2='360' y2='220'/><line x1='120' y1='20' x2='120' y2='260'/><line x1='170' y1='20' x2='170' y2='260'/><line x1='220' y1='20' x2='220' y2='260'/><line x1='270' y1='20' x2='270' y2='260'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='30' y1='220' x2='370' y2='220'/><line x1='120' y1='20' x2='120' y2='260'/><polygon points='370,220 360,215 360,225' fill='#fbbf24'/><polygon points='120,20 115,30 125,30' fill='#fbbf24'/></g><text x='360' y='240' fill='#fbbf24' font-family='sans-serif' font-size='14'>x</text><text x='130' y='35' fill='#fbbf24' font-family='sans-serif' font-size='14'>y</text><path d='M 80,10 C 100,20 110,40 120,72 C 140,115 170,165 220,200 C 270,213 320,218 360,219' fill='none' stroke='#38bdf8' stroke-width='3'/><line x1='100' y1='12.8' x2='175' y2='234.8' stroke='#f472b6' stroke-width='2.5'/><circle cx='120' cy='72' r='5' fill='#4ade80'/><circle cx='170' cy='220' r='4' fill='#f472b6'/><text x='128' y='68' fill='#4ade80' font-family='sans-serif' font-size='12'>P(0, e²)</text><text x='175' y='212' fill='#f472b6' font-family='sans-serif' font-size='11'>(1, 0)</text><text x='225' y='235' fill='#cbd5e1' font-family='sans-serif' font-size='11'>2</text></svg>",
+      "visualDescription": "Plano cartesiano con la función exponencial azul f(x) = e^(2-x) descendiendo de izquierda a derecha. En el punto verde sobre el eje Y (0, e² ≈ 7.39), la recta tangente rosa roza la curva de manera perfecta, cortando al eje X en la posición (1,0).",
+      "visualMathLink": "Gráficamente, la recta rosa comparte con la curva azul el punto (0, e²) y posee exactamente la misma inclinación dada por la pendiente negativa m = -e².",
+      "content": "<strong>OBJETIVO:</strong> Visualizar la tangencia geométrica entre la curva exponencial y la recta resultante.\n\n<strong>ASPECTOS DESTACADOS EN LA GRÁFICA:</strong>\n- **Punto de tangencia (Verde):** $P(0, e^2) \\approx (0, 7.39)$ situado en el corte con el eje $Y$.\n- **Corte con el eje $X$ (Rosa):** En $(1, 0)$, obtenido al hacer $y = 0 \\implies 0 = -e^2 x + e^2 \\implies x = 1$.\n- **Comportamiento:** La función exponencial azul es decreciente y la recta tangente rosa posee inclinación negativa $m = -e^2$.",
+      "narration": "En la representación gráfica observamos la función exponencial en azul. En el punto verde sobre el eje de ordenadas, cero coma e al cuadrado, la recta rosa roza la curva con una inclinación negativa, cortando al eje equis en uno."
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "content": "Pasos clave para hallar la tangente en el eje de ordenadas:\n\n1. **Establecer la abscisa:** Corte con el eje $Y \\implies x_0 = 0$.\n2. **Calcular la ordenada:** $y_0 = f(0) = e^{2-0} = e^2 \\implies P(0, e^2)$.\n3. **Derivar la función:** $f'(x) = -e^{2-x}$.\n4. **Obtener la pendiente:** $m = f'(0) = -e^2$.\n5. **Formular la recta:** $y - e^2 = -e^2(x - 0) \\implies y = -e^2 x + e^2$.",
+      "narration": "En resumen: fijamos equis cero en cero, calculamos la ordenada e al cuadrado, derivamos para hallar la pendiente menos e al cuadrado y formamos la recta tangente en su expresión explícita."
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "content": "Resuelve este problema análogo aplicando los mismos pasos analíticos:\n\nEscribe la ecuación de la recta tangente a la curva $f(x) = e^{3-2x}$ en el punto donde corta el eje de ordenadas.",
+      "practiceAnswer": "Punto de tangencia P(0, e³), derivada f'(x) = -2e^(3-2x), pendiente m = -2e³. Ecuación explícita: y = -2e³ x + e³.",
+      "narration": "Prueba a resolver este ejercicio de estructura idéntica con la función e elevado a tres menos dos equis. ¡Aplica la regla de la cadena para obtener la pendiente correcta!"
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "content": "La temperatura $T(t)$ en grados Celsius de una taza de café recién servida evoluciona según la función $T(t) = 20 + 60e^{-0.5t}$, donde $t$ representa el tiempo en minutos transcurridos ($t \\ge 0$).\n\nObtén la ecuación de la recta tangente a la curva de temperatura en el instante inicial $t = 0$ e interpreta el valor numérico de su pendiente en términos físicos.",
+      "practiceAnswer": "Punto inicial (0, 80 °C), derivada T'(t) = -30e^(-0.5t), pendiente m = -30 °C/min. Ecuación: T = -30t + 80. La pendiente (-30 °C/min) representa la velocidad instantánea de enfriamiento en el instante inicial.",
+      "narration": "En esta aplicación física de enfriamiento, utilizamos la recta tangente para modelar la velocidad instantánea de cambio de temperatura en el momento de servir la bebida. ¡Aplica la derivación para interpretar su pendiente!"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-20T10:16:35.636Z",
+    "updatedAt": "2026-08-20T10:16:35.636Z",
+    "contentHash": "8c86a95c7827c40e",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "teacher_override",
+    "override": {
+      "confirmed": true,
+      "justification": "Todo correcto.... ...se puede aprobar",
+      "automaticErrors": [
+        {
+          "title": "Cobertura explícita de apartados",
+          "detail": "apartado a: falta «RESPUESTA AL APARTADO a)» con su conclusión explícita"
+        }
+      ],
+      "approvedAt": "2026-08-20T10:16:35.636Z"
+    }
+  }
+}

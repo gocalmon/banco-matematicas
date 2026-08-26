@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "1.º Bachillerato",
+    "topic": "Análisis Matemático",
+    "subtopic": "Optimización y Costo Medio",
+    "exerciseType": "Optimización en contexto económico",
+    "protocols": [
+      "B",
+      "H"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Formular funciones de costo medio a partir de funciones de costo total.",
+      "Optimizar funciones racional-polinómicas mediante el cálculo de derivadas.",
+      "Resolver problemas de optimización discreta seleccionando el valor entero adecuado.",
+      "Interpretar los resultados cuantitativos en contextos económicos reales."
+    ],
+    "prerequisites": [
+      "Derivación de funciones polinómicas y racionales simples.",
+      "Criterio de la primera y segunda derivada para extremos relativos.",
+      "Manejo de modelos de costos en economía."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Expresa el costo medio por piso Cm en función de n."
+      },
+      {
+        "id": "b",
+        "request": "Calcula el número de pisos a construir para que el costo medio por piso sea mínimo. La respuesta deberá ser un número entero."
+      },
+      {
+        "id": "c",
+        "request": "Si C está expresado en miles de dólares, calcula el costo total del edificio."
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 11,
+    "statementHash": "f8b9d9f65cdf50f4",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-20T10:58:27.152Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "optimizacion-del-costo-medio-de-construccion-830c1521"
+  },
+  "title": "Optimización del Costo Medio de Construcción",
+  "slides": [
+    {
+      "title": "Enunciado del Problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Comenzamos leyendo atentamente el enunciado del problema. Nos dan la función de costo total C en función del número de pisos n y tres preguntas concretas sobre el costo medio y la optimización del número de pisos.",
+      "content": "El costo total C de construcción de un edificio de n pisos está expresado por:\n\n$$C(n) = 2 n^2 + 300 n + 320$$\n\na) Expresa el costo medio por piso Cm en función de n.\n\nb) Calcula el número de pisos a construir para que el costo medio por piso sea mínimo.\nLa respuesta deberá ser un número entero.\n\nc) Si C está expresado en miles de dólares, calcula el costo total del edificio."
+    },
+    {
+      "title": "Plan Estratégico de Resolución",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para resolver este problema, organizamos una estrategia clara en tres pasos: primero derivamos la expresión del costo medio dividiendo entre n, luego buscamos el mínimo mediante cálculo diferencial evaluando en los enteros vecinos, y finalmente hallamos el costo total sustituyendo en la función inicial.",
+      "content": "<strong>OBJETIVO:</strong> Diseñar una ruta de resolución rigurosa para optimizar el costo medio de construcción.\n\n<strong>MÉTODO Y ESTRATEGIA:</strong>\n* <strong>Paso 1 (Apartado a):</strong> Definir la función de costo medio $Cm(n) = \\frac{C(n)}{n}$, dividiendo cada término del polinomio entre $n$.\n* <strong>Paso 2 (Apartado b):</strong> Aplicar derivadas para hallar el óptimo continuo $Cm'(n) = 0$, verificar que es un mínimo con $Cm''(n) > 0$ y evaluar los dos números enteros más cercanos ($n=12$ y $n=13$) para determinar la solución discreta real.\n* <strong>Paso 3 (Apartado c):</strong> Evaluar $C(13)$ en la función de costo total original y convertir el resultado a dólares teniendo en cuenta que $C$ está expresado en miles de dólares.\n\n<strong>APLICACIÓN REAL:</strong> Este modelo refleja el principio económico de economías de escala frente a costos marginales crecientes. A medida que un edificio gana altura, los costos fijos (terreno, licencias, maquinaria) se reparten entre más pisos, pero los costos de cimentación y estructura aumentan cuadráticamente."
+    },
+    {
+      "title": "Apartado a): Formulación del Costo Medio",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "theory": "El costo medio por unidad producida $Cm(n)$ es el cociente entre el costo total $C(n)$ y la cantidad de unidades $n$: $Cm(n) = \\frac{C(n)}{n}$.",
+      "narration": "Para el apartado a, dividimos la función de costo total cuadrática entre n. Al simplificar cada término obtenemos una expresión racional muy sencilla de manejar.",
+      "content": "<strong>OBJETIVO:</strong> Obtener la expresión algebraica del costo medio por piso $Cm(n)$.\n\n<strong>CONEXIÓN:</strong> Partimos de la función dada $C(n) = 2n^2 + 300n + 320$.\n\n<strong>CÁLCULO:</strong> Dividimos el costo total entre el número de pisos $n$:\n$$Cm(n) = \\frac{C(n)}{n} = \\frac{2n^2 + 300n + 320}{n}$$\nDividiendo cada término individualmente:\n$$Cm(n) = \\frac{2n^2}{n} + \\frac{300n}{n} + \\frac{320}{n} = 2n + 300 + \\frac{320}{n}$$\n\n<strong>INTERPRETACIÓN:</strong> La función consta de un término proporcional al número de pisos ($2n$), un costo fijo por piso ($300$) y el reparto de los costos fijos iniciales ($\\frac{320}{n}$).\n\n<strong>RESPUESTA AL APARTADO a):</strong> La expresión del costo medio por piso en función de $n$ es $Cm(n) = 2n + 300 + \\frac{320}{n}$ miles de dólares por piso (para $n > 0$)."
+    },
+    {
+      "title": "Apartado b): Optimización Continua mediante Derivadas",
+      "layout": "centered",
+      "phase": "analizar",
+      "subpart": "b",
+      "theory": "Para minimizar una función derivable $f(x)$, buscamos sus puntos críticos resolviendo $f'(x) = 0$. Si $f''(x) > 0$ en el punto crítico, se trata de un mínimo relativo estricto.",
+      "narration": "Tratamos primero a n como una variable continua para utilizar herramientas del cálculo diferencial. Hallamos la primera derivada de Cm respecto a n, la igualamos a cero y verificamos la segunda derivada.",
+      "content": "<strong>OBJETIVO:</strong> Encontrar el valor crítico que minimiza el costo medio en el dominio continuo.\n\n<strong>CONEXIÓN:</strong> Partimos de la función $Cm(n) = 2n + 300 + 320n^{-1}$ obtenida en el apartado a.\n\n<strong>CÁLCULO:</strong> Calculamos la primera derivada $Cm'(n)$:\n$$Cm'(n) = \\frac{d}{dn}\\left(2n + 300 + 320n^{-1}\\right) = 2 - \\frac{320}{n^2}$$\nIgualamos a cero para hallar el punto crítico en el intervalo $n > 0$:\n$$2 - \\frac{320}{n^2} = 0 \\implies 2 = \\frac{320}{n^2} \\implies n^2 = 160 \\implies n = \\sqrt{160} \\approx 12{,}6491$$\nVerificamos la condición de mínimo con la segunda derivada:\n$$Cm''(n) = \\frac{640}{n^3} > 0 \\quad \\text{para todo } n > 0$$\nAl ser positiva, $n = \\sqrt{160} \\approx 12{,}65$ es un mínimo absoluto en $(0, \\infty)$.\n\n<strong>INTERPRETACIÓN:</strong> El mínimo teórico continuo ocurre en aproximadamente $12{,}65$ pisos. Dado que el número de pisos debe ser entero, la solución discreta óptima se encuentra en uno de los enteros adyacentes, $12$ o $13$."
+    },
+    {
+      "title": "Apartado b): Representación Gráfica del Costo Medio",
+      "layout": "split",
+      "phase": "representar",
+      "subpart": "b",
+      "visualVerificationMode": "manual",
+      "visual": "<svg viewBox='0 0 500 350' preserveAspectRatio='xMidYMid meet' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect x='0' y='0' width='500' height='350' fill='#0f172a' rx='12'/><line x1='50' y1='300' x2='460' y2='300' stroke='#fbbf24' stroke-width='2.5'/><line x1='50' y1='40' x2='50' y2='300' stroke='#fbbf24' stroke-width='2.5'/><text x='430' y='290' fill='#fbbf24' font-size='14' font-weight='bold'>n (pisos)</text><text x='15' y='35' fill='#fbbf24' font-size='14' font-weight='bold'>Cm(n)</text><line x1='50' y1='100' x2='460' y2='100' stroke='#334155' stroke-width='1' stroke-dasharray='4' opacity='0.5'/><line x1='50' y1='180' x2='460' y2='180' stroke='#334155' stroke-width='1' stroke-dasharray='4' opacity='0.5'/><line x1='50' y1='260' x2='460' y2='260' stroke='#334155' stroke-width='1' stroke-dasharray='4' opacity='0.5'/><path d='M 50,100 C 100,180 170,258 236,262 C 300,262 380,220 450,166' fill='none' stroke='#38bdf8' stroke-width='3.5'/><line x1='236' y1='262' x2='236' y2='300' stroke='#4ade80' stroke-width='1.5' stroke-dasharray='3'/><circle cx='236' cy='262' r='5' fill='#4ade80'/><text x='215' y='318' fill='#4ade80' font-size='12'>n=12.65</text><line x1='210' y1='260' x2='210' y2='300' stroke='#f97316' stroke-width='1.5' stroke-dasharray='3'/><circle cx='210' cy='260' r='5' fill='#f97316'/><text x='195' y='338' fill='#f97316' font-size='13' font-weight='bold'>n=12</text><line x1='250' y1='261' x2='250' y2='300' stroke='#c084fc' stroke-width='1.5' stroke-dasharray='3'/><circle cx='250' cy='261' r='6' fill='#c084fc'/><text x='240' y='338' fill='#c084fc' font-size='13' font-weight='bold'>n=13</text><rect x='280' y='50' width='190' height='90' fill='#1e293b' stroke='#475569' rx='8'/><circle cx='295' cy='70' r='4' fill='#4ade80'/><text x='308' y='74' fill='#f8fafc' font-size='12'>Mínimo continuo (12.65)</text><circle cx='295' cy='90' r='4' fill='#f97316'/><text x='308' y='94' fill='#f8fafc' font-size='12'>Cm(12) = 350.67</text><circle cx='295' cy='110' r='4' fill='#c084fc'/><text x='308' y='114' fill='#f8fafc' font-size='12'>Cm(13) = 350.62 (Óptimo)</text></svg>",
+      "visualDescription": "Gráfica cartesiana de la función de costo medio Cm(n) frente al número de pisos n. Se observa una curva con forma de U sobre el cuadrante positivo. Muestra el mínimo continuo en n igual a raíz de 160 (aproximadamente 12.65) con Cm igual a 350.62. Se destacan los puntos enteros contiguos: n=12 con Cm=350.67 y n=13 con Cm=350.62, donde n=13 alcanza la menor altura entre los valores enteros.",
+      "visualMathLink": "La curva representa Cm(n) = 2n + 300 + 320/n. El punto verde marca el óptimo continuo n = 12.65. Los puntos naranja y morado representan las evaluaciones en los enteros inmediatos n=12 y n=13, ilustrando gráficamente que Cm(13) es menor que Cm(12).",
+      "narration": "Observamos la gráfica del costo medio. La curva continua alcanza su punto más bajo en 12,65 pisos. Al comparar los valores enteros 12 y 13, vemos claramente que 13 está más cerca del fondo del valle y produce un costo medio menor.",
+      "content": "<strong>OBJETIVO:</strong> Ilustrar geométricamente la convexidad de la curva de costo medio y visualizar la solución en el conjunto de los números enteros.\n\n<strong>CONEXIÓN:</strong> La curva continua $Cm(n)$ sirve de guía para identificar cuál de los dos valores enteros adyacentes ($12$ o $13$) produce el menor costo por piso.\n\n<strong>MÉTODO:</strong> Graficamos la función $Cm(n) = 2n + 300 + \\frac{320}{n}$ en el intervalo $n \\in [8, 18]$. Se señalan el mínimo analítico en $n \\approx 12{,}65$ y los dos puntos discretos $n = 12$ y $n = 13$.\n\n<strong>INTERPRETACIÓN:</strong> La representación visual hace evidente que el punto correspondiente a $n = 13$ está posicionado más abajo en la curva que el punto $n = 12$, confirmando visualmente el resultado algebraico."
+    },
+    {
+      "title": "Apartado b): Evaluación de Enteros y Selección Final",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "b",
+      "narration": "Sustituimos n igual a 12 y n igual a 13 en la función de costo medio. Comprobamos que con 13 pisos el costo medio es de 350,615 miles de dólares, inferior a los 350,667 miles de dólares que se obtendrían con 12 pisos.",
+      "checkpoint": {
+        "question": "¿Por qué no basta con redondear automáticamente el valor $12{,}649$ al entero más próximo $13$ sin calcular ambos valores?",
+        "options": [
+          {
+            "text": "Porque la función no es simétrica respecto al mínimo, por lo que la curva puede crecer más rápido hacia un lado que hacia el otro.",
+            "correct": true,
+            "feedback": "¡Exacto! Las funciones racionales o no simétricas no garantizan que el entero más cercano al óptimo continuo sea siempre el que minimice la función; la evaluación explícita asegura el rigor."
+          },
+          {
+            "text": "Porque el número de pisos siempre debe redondearse hacia abajo para no sobrepasar el presupuesto inicial.",
+            "correct": false,
+            "feedback": "Incorrecto. Redondear hacia abajo no garantiza la minimización del costo medio por piso."
+          },
+          {
+            "text": "Porque el cálculo diferencial no es aplicable a problemas con variables discretas.",
+            "correct": false,
+            "feedback": "Incorrecto. El cálculo diferencial proporciona una excelente cota para reducir la búsqueda a los enteros adyacentes."
+          }
+        ]
+      },
+      "content": "<strong>OBJETIVO:</strong> Determinar con precisión matemática el número entero de pisos $n$ que minimiza el costo medio.\n\n<strong>CONEXIÓN:</strong> Comparamos los dos enteros adyacentes al óptimo continuo $n \\approx 12{,}6491$.\n\n<strong>CÁLCULO:</strong> Evaluamos $Cm(n)$ en $n = 12$ y $n = 13$:\n\n* Para $n = 12$:\n$$Cm(12) = 2(12) + 300 + \\frac{320}{12} = 24 + 300 + \\frac{80}{3} = 324 + 26{,}6667 = 350{,}6667$$\n\n* Para $n = 13$:\n$$Cm(13) = 2(13) + 300 + \\frac{320}{13} = 26 + 300 + \\frac{320}{13} = 326 + 24{,}6154 = 350{,}6154$$\n\nComparamos numéricamente ambos costos medios:\n$$350{,}6154 < 350{,}6667 \\implies Cm(13) < Cm(12)$$\n\n<strong>INTERPRETACIÓN:</strong> Construir 13 pisos logra el costo promedio por piso más bajo ($350{,}615$ miles de dólares por piso, o $350.615{,}38$ dólares por piso).\n\n<strong>RESPUESTA AL APARTADO b):</strong> El número entero de pisos a construir para que el costo medio por piso sea mínimo es $n = 13$ pisos."
+    },
+    {
+      "title": "Apartado c): Cálculo del Costo Total del Edificio",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "c",
+      "narration": "Para resolver el apartado c, sustituimos n igual a 13 en la función de costo total inicial. Obtenemos 4558 miles de dólares, que equivale a 4.558.000 dólares.",
+      "content": "<strong>OBJETIVO:</strong> Calcular el costo total de construcción para el edificio óptimo de 13 pisos.\n\n<strong>CONEXIÓN:</strong> Tomamos el resultado $n = 13$ del apartado b y lo sustituimos en la función original $C(n) = 2n^2 + 300n + 320$.\n\n<strong>CÁLCULO:</strong> Desarrollamos las operaciones aritméticas:\n$$C(13) = 2(13)^2 + 300(13) + 320$$\n$$C(13) = 2(169) + 3900 + 320$$\n$$C(13) = 338 + 3900 + 320 = 4558$$\nPuesto que $C$ expresa el costo en <strong>miles de dólares</strong>, multiplicamos por $1000$:\n$$\\text{Costo Total Real} = 4558 \\times 1000 = 4\\,558\\,000\\text{ dólares}$$\n\n<strong>INTERPRETACIÓN:</strong> La inversión global para construir el edificio de 13 pisos asciende a 4.558.000 dólares americanos (o 4558 miles de dólares).\n\n<strong>RESPUESTA AL APARTADO c):</strong> Si $C$ está expresado en miles de dólares, el costo total de construcción del edificio es de $4558$ miles de dólares, es decir, $\\$4\\,558\\,000$ dólares."
+    },
+    {
+      "title": "Comprobación y Análisis Marginal Económico",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Verificamos los resultados analizando el costo marginal. En economía, la curva de costo marginal corta a la curva de costo medio en su punto mínimo. Confirmamos que para 13 pisos el costo marginal es ligeramente superior al medio, lo que confirma que estamos en la zona óptima.",
+      "warning": "Asegúrate de multiplicar por mil cuando la variable dependiente venga expresada en miles de unidades monetarias, para evitar errores de interpretación presupuestaria.",
+      "content": "<strong>OBJETIVO:</strong> Verificar la coherencia económica y analítica de los resultados obtenidos.\n\n<strong>CONEXIÓN:</strong> Según la teoría económica, el costo medio se minimiza en el punto de intersección con la función de costo marginal $C'(n)$.\n\n<strong>COMPROBACIÓN:</strong> Calculamos la función de costo marginal derivando $C(n)$:\n$$C'(n) = \\frac{d}{dn}\\left(2n^2 + 300n + 320\\right) = 4n + 300$$\nIgualamos costo marginal y costo medio:\n$$4n + 300 = 2n + 300 + \\frac{320}{n} \\implies 2n = \\frac{320}{n} \\implies n^2 = 160 \\implies n = \\sqrt{160} \\approx 12{,}65$$\nEvaluamos ambas funciones en $n = 13$:\n* Costo marginal: $C'(13) = 4(13) + 300 = 352$ miles de dólares por piso adicional.\n* Costo medio: $Cm(13) = 350{,}615$ miles de dólares por piso.\n\n<strong>INTERPRETACIÓN:</strong> Como el costo marginal del piso 13 ($352$) es apenas superior al medio ($350{,}615$), se confirma que $n = 13$ es el último piso cuya adición mantiene el costo medio en su nivel óptimo."
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Sintetizamos la resolución en tres pasos principales, detallando las fórmulas aplicadas y las respuestas finales para cada apartado.",
+      "content": "<strong>RESUMEN DE RESOLUCIÓN: HOJA DE RUTA</strong>\n\n* <strong>1. Formulación del Costo Medio (Apartado a):</strong>\n  Divide la función cuadrática entre $n$:\n  $$Cm(n) = \\frac{2n^2 + 300n + 320}{n} = 2n + 300 + \\frac{320}{n}$$\n\n* <strong>2. Minimización Discreta (Apartado b):</strong>\n  Deriva e iguala a cero para obtener el óptimo continuo:\n  $$Cm'(n) = 2 - \\frac{320}{n^2} = 0 \\implies n = \\sqrt{160} \\approx 12{,}65$$\n  Compara los enteros vecinos: $Cm(12) \\approx 350{,}67$ y $Cm(13) \\approx 350{,}62$.\n  <strong>Resultado: $n = 13$ pisos.</strong>\n\n* <strong>3. Costo Total en Dólares (Apartado c):</strong>\n  Sustituye $n = 13$ en $C(n)$:\n  $$C(13) = 2(13)^2 + 300(13) + 320 = 4558\\text{ miles de dólares}$$\n  <strong>Resultado: $\\$4\\,558\\,000$ dólares.</strong>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Te proponemos un ejercicio con la misma estructura y razonamiento pero con coeficientes distintos. Inténtalo por ti mismo antes de verificar la solución.",
+      "content": "El costo total $C$ de construcción de un edificio de $n$ pisos está expresado por:\n\n$$C(n) = 3n^2 + 200n + 243$$\n\na) Expresa el costo medio por piso $Cm$ en función de $n$.\n\nb) Calcula el número de pisos a construir para que el costo medio por piso sea mínimo. La respuesta deberá ser un número entero.\n\nc) Si $C$ está expresado en miles de dólares, calcula el costo total del edificio.\n\n<em>Inténtalo por ti mismo antes de consultar la respuesta final.</em>",
+      "practiceAnswer": "a) Costo medio: $Cm(n) = 3n + 200 + \\frac{243}{n}$ miles de dólares por piso.\nb) Número óptimo de pisos: $n = 9$ pisos (mínimo exacto continuo en $n = \\sqrt{\\frac{243}{3}} = \\sqrt{81} = 9$).\nc) Costo total: $C(9) = 3(9)^2 + 200(9) + 243 = 2286$ miles de dólares, equivalente a $\\$2\\,286\\,000$ dólares."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica ahora el mismo concepto de optimización de costo medio en un contexto de producción industrial de componentes electrónicos.",
+      "content": "Una planta industrial produce $q$ miles de unidades de un componente electrónico con un costo total $C(q)$ en euros expresado por:\n\n$$C(q) = 0{,}5q^2 + 50q + 1800$$\n\na) Obtén la función de costo unitario por millar de componentes $Cu(q) = \\frac{C(q)}{q}$.\n\nb) Determina el volumen de producción $q$ (en miles de unidades) que minimiza el costo unitario de producción.\n\nc) Calcula el costo unitario mínimo y el costo total de la empresa para dicha producción.\n\n<em>Inténtalo por ti mismo antes de consultar la respuesta final.</em>",
+      "practiceAnswer": "a) Costo unitario: $Cu(q) = 0{,}5q + 50 + \\frac{1800}{q}$ euros por millar de componentes.\nb) Producción óptima: $q = 60$ miles de unidades (mínimo en $q = \\sqrt{\\frac{1800}{0{,}5}} = \\sqrt{3600} = 60$).\nc) Costo unitario mínimo: $Cu(60) = 110$ euros por millar; Costo total: $C(60) = 6600$ euros."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-20T10:59:26.617Z",
+    "updatedAt": "2026-08-20T10:59:26.617Z",
+    "contentHash": "221ffbf19d09b1f7",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "automatic_checks_passed"
+  }
+}

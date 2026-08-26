@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "visualContractVersion": "1.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Análisis Matemático",
+    "subtopic": "Optimización y Estudio de Funciones",
+    "exerciseType": "Problema de optimización cuadrática aplicada",
+    "protocols": [
+      "H"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 12,
+    "learningObjectives": [
+      "Calcular el máximo de una función cuadrática mediante la primera derivada.",
+      "Interpretar la variable independiente en un contexto temporal de la vida real.",
+      "Resolver ecuaciones de segundo grado para determinar puntos de corte y momentos de anulación."
+    ],
+    "prerequisites": [
+      "Derivación de funciones polinómicas simples.",
+      "Resolución de ecuaciones de segundo grado incompletas.",
+      "Operaciones básicas con horas en formato 24 horas."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "¿A qué hora el número de clientes es máximo? ¿Cuántos clientes hay en ese momento?"
+      },
+      {
+        "id": "b",
+        "request": "¿A qué hora cerrará la discoteca?"
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 8,
+    "statementHash": "4e5d86e2ebd494d0",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-20T10:10:28.626Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "optimizacion-del-aforo-de-una-discoteca-6f928a4b"
+  },
+  "title": "Optimización del aforo de una discoteca",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "content": "Una discoteca abre a las 10 de la noche y cierra cuando se han marchado todos sus clientes. La expresión que representa el número de clientes en función del número de horas que lleva abierta, $t$, es $N(t) = 80t - 10t^2$.\n\na) ¿A qué hora el número de clientes es máximo? ¿Cuántos clientes hay en ese momento?\nb) ¿A qué hora cerrará la discoteca?",
+      "narration": "Transcribimos de forma exacta el enunciado. Se analiza el aforo de una discoteca mediante una función cuadrática que depende del tiempo t en horas transcurridas desde las 10 de la noche. Se pide la hora de máxima afluencia, el número máximo de clientes y la hora de cierre."
+    },
+    {
+      "title": "Planificación de la estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "content": "<strong>OBJETIVO:</strong> Determinar la hora de aforo máximo, el número de clientes en ese pico y la hora exacta de cierre de la discoteca.\n\n<strong>DATOS Y VARIABLES:</strong>\n- Hora de apertura: $22:00$ ($t = 0$).\n- Variable $t$: horas transcurridas desde la apertura ($t \\ge 0$).\n- Función de aforo: $N(t) = 80t - 10t^2$.\n\n<strong>MÉTODO:</strong>\n1. **Apartado a:** Derivar $N(t)$ para hallar el punto crítico que maximiza la función. Calcular la hora sumando $t$ a las $22:00$ y evaluar $N(t)$ para conocer los clientes.\n2. **Apartado b:** Resolver $N(t) = 0$ para $t > 0$ para encontrar el instante en que no quedan personas en el local.\n\n<strong>APLICACIÓN REAL:</strong> La modelización del flujo de clientes permite gestionar la seguridad, la dotación de personal y el consumo energético en establecimientos de ocio y eventos masivos.",
+      "narration": "Para resolver el ejercicio, relacionamos t con la hora real comenzando a las 22:00. Utilizaremos la primera derivada para hallar el pico máximo de asistencia y resolveremos la ecuación N de t igual a cero para hallar la hora de cierre."
+    },
+    {
+      "title": "Apartado a) Hora de aforo máximo y número de clientes",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "theory": "En una parábola $N(t) = -at^2 + bt$, el máximo se alcanza en el vértice donde la derivada primera es nula: $N'(t) = 0$.",
+      "content": "<strong>OBJETIVO:</strong> Calcular el número máximo de clientes y la hora exacta en la que se alcanza.\n\n<strong>CÁLCULO:</strong>\n1. **Derivada primera de $N(t)$:**\n$$ N'(t) = \\frac{d}{dt}(80t - 10t^2) = 80 - 20t $$\n\n2. **Punto crítico ($N'(t) = 0$):**\n$$ 80 - 20t = 0 \\implies 20t = 80 \\implies t = 4 \\text{ horas} $$\n\n3. **Comprobación de máximo ($N''(t)$):**\n$$ N''(t) = -20 < 0 \\implies \\text{Confirmado máximo en } t = 4 $$\n\n4. **Cálculo de la hora y cantidad de clientes:**\n- **Hora exacta:** $22:00 + 4 \\text{ horas} = 02:00 \\text{ (2:00 AM)}$\n- **Número máximo de clientes:**\n$$ N(4) = 80(4) - 10(4)^2 = 320 - 160 = 160 \\text{ clientes} $$\n\n<strong>RESPUESTA AL APARTADO a):</strong> El aforo es máximo a las **$02:00$ de la madrugada** con un total de **$160$ clientes**.",
+      "narration": "Para el apartado a, derivamos N de t obteniendo ochenta menos veinte t. Igualando a cero, hallamos t igual a cuatro horas. Sumando cuatro horas a las diez de la noche obtenemos las dos de la madrugada. Evaluando en la función obtenemos un pico máximo de ciento sesenta clientes."
+    },
+    {
+      "title": "Apartado b) Hora de cierre de la discoteca",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "b",
+      "warning": "Recuerda que t representa el tiempo transcurrido, por lo que debes sumar la solución t = 8 a la hora de apertura inicial (22:00).",
+      "content": "<strong>OBJETIVO:</strong> Determinar la hora en que cierra el local ($N(t) = 0$ para $t > 0$).\n\n<strong>CONEXIÓN:</strong> La discoteca cierra cuando todos sus clientes se han marchado, es decir, cuando el aforo regresa a cero.\n\n<strong>CÁLCULO:</strong>\n$$ N(t) = 0 \\implies 80t - 10t^2 = 0 $$\nFactorizamos la ecuación de segundo grado incompleta:\n$$ 10t(8 - t) = 0 $$\n\n- **Primera solución:** $t = 0$ (hora de apertura, $22:00$).\n- **Segunda solución:** $8 - t = 0 \\implies t = 8 \\text{ horas}$.\n\n<strong>CÁLCULO DE LA HORA DE CIERRE:</strong>\n$$ \\text{Hora de cierre} = 22:00 + 8 \\text{ horas} = 06:00 \\text{ (6:00 AM)} $$\n\n<strong>RESPUESTA AL APARTADO b):</strong> La discoteca cerrará a las **$06:00$ de la mañana**.",
+      "narration": "Para el apartado b, igualamos la función a cero. Factorizando diez t por ocho menos t, encontramos que t es igual a ocho horas. Añadiendo ocho horas a la hora de apertura obtenemos que la discoteca cierra a las seis de la mañana."
+    },
+    {
+      "title": "Representación gráfica de la evolución del aforo $N(t)$",
+      "layout": "split",
+      "phase": "representar",
+      "subpart": "a",
+      "visualVerificationMode": "manual",
+      "visual": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet'><rect width='400' height='300' fill='#0f172a'/><g stroke='#334155' stroke-width='1' opacity='0.5'><line x1='50' y1='50' x2='350' y2='50'/><line x1='50' y1='100' x2='350' y2='100'/><line x1='50' y1='150' x2='350' y2='150'/><line x1='50' y1='200' x2='350' y2='200'/><line x1='50' y1='230' x2='350' y2='230'/><line x1='50' y1='30' x2='50' y2='250'/><line x1='125' y1='30' x2='125' y2='250'/><line x1='200' y1='30' x2='200' y2='250'/><line x1='275' y1='30' x2='275' y2='250'/><line x1='350' y1='30' x2='350' y2='250'/></g><g stroke='#fbbf24' stroke-width='2.5'><line x1='40' y1='230' x2='370' y2='230'/><line x1='50' y1='20' x2='50' y2='250'/><polygon points='370,230 360,225 360,235' fill='#fbbf24'/><polygon points='50,20 45,30 55,30' fill='#fbbf24'/></g><text x='360' y='250' fill='#fbbf24' font-family='sans-serif' font-size='14'>t (h)</text><text x='60' y='35' fill='#fbbf24' font-family='sans-serif' font-size='14'>N(clientes)</text><path d='M 50,230 Q 200,30 350,230' fill='none' stroke='#38bdf8' stroke-width='3'/><circle cx='200' cy='70' r='5' fill='#4ade80'/><line x1='200' y1='70' x2='200' y2='230' stroke='#4ade80' stroke-width='1.5' stroke-dasharray='4,4'/><line x1='50' y1='70' x2='200' y2='70' stroke='#4ade80' stroke-width='1.5' stroke-dasharray='4,4'/><text x='155' y='55' fill='#4ade80' font-family='sans-serif' font-size='12'>Máx(4 h, 160 clientes)</text><circle cx='50' cy='230' r='4' fill='#38bdf8'/><circle cx='350' cy='230' r='4' fill='#f472b6'/><text x='30' y='248' fill='#cbd5e1' font-family='sans-serif' font-size='11'>0 (22:00)</text><text x='185' y='248' fill='#cbd5e1' font-family='sans-serif' font-size='11'>4 (02:00)</text><text x='330' y='248' fill='#cbd5e1' font-family='sans-serif' font-size='11'>8 (06:00)</text><text x='15' y='75' fill='#cbd5e1' font-family='sans-serif' font-size='11'>160</text></svg>",
+      "visualDescription": "Plano cartesiano con el tiempo en el eje horizontal y el aforo en el eje vertical. Una parábola simétrica de color azul parte del origen en t=0 (22:00) con 0 clientes, asciende hasta su punto máximo verde en t=4 (02:00) con 160 clientes, y desciende simétricamente hasta tocar el eje en t=8 (06:00) con 0 clientes.",
+      "visualMathLink": "Gráficamente, el vértice en (4, 160) confirma que el punto crítico de la primera derivada corresponde al máximo absoluto, y la intersección positiva con el eje t en (8, 0) indica la hora exacta de cierre.",
+      "content": "<strong>OBJETIVO:</strong> Interpretar la trayectoria parabólica del aforo $N(t) = 80t - 10t^2$.\n\n<strong>PUNTOS CLAVE EN LA GRÁFICA:</strong>\n- **Apertura ($t = 0$):** $22:00 \\implies N(0) = 0$ clientes.\n- **Pico máximo (Punto verde):** $t = 4 \\text{ h} \\implies 02:00 \\text{ AM}$ con $160$ personas.\n- **Cierre (Punto rosa):** $t = 8 \\text{ h} \\implies 06:00 \\text{ AM}$ con $0$ personas.\n\n<strong>CONCLUSIÓN:</strong> La curva es simétrica respecto a $t = 4$, tardando exactamente 4 horas en llenarse hasta el máximo y otras 4 horas en vaciarse por completo.",
+      "narration": "En la gráfica apreciamos la simetría de la función. La discoteca abre a las diez de la noche, alcanza su aforo máximo de ciento sesenta personas a las dos de la madrugada y se vacía por completo a las seis de la mañana."
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "content": "Esquema resumido de los pasos aplicados:\n\n1. **Definición de variables temporales:**\n   - $t = 0 \\implies 22:00$.\n2. **Aforo máximo (Derivada igual a cero):**\n   - $N'(t) = 80 - 20t = 0 \\implies t = 4 \\text{ horas}$.\n   - Hora pico: $22:00 + 4 \\text{ h} = 02:00 \\text{ AM}$.\n   - Aforo máximo: $N(4) = 160 \\text{ clientes}$.\n3. **Hora de cierre (Aforo igual a cero):**\n   - $N(t) = 80t - 10t^2 = 0 \\implies 10t(8-t) = 0 \\implies t = 8 \\text{ horas}$.\n   - Hora de cierre: $22:00 + 8 \\text{ h} = 06:00 \\text{ AM}$.",
+      "narration": "En resumen: la primera derivada nos da las cuatro horas transcurridas para el máximo de ciento sesenta clientes a las dos de la mañana, y la ecuación de aforo nulo nos da las ocho horas necesarias para el cierre a las seis de la mañana."
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "content": "Aplica exactamente el mismo procedimiento para resolver el siguiente ejercicio:\n\nUn pub abre a las **20:00 (8 de la tarde)** y cierra cuando se marchan todos sus clientes. El número de personas en el local viene dado por $N(t) = 60t - 15t^2$, donde $t$ es el tiempo en horas desde la apertura.\n\na) ¿A qué hora alcanza el aforo máximo y cuántos clientes hay en ese momento?\nb) ¿A qué hora cierra el pub?",
+      "practiceAnswer": "a) Aforo máximo de 60 clientes a las 22:00 (t = 2 h). b) Cierra a las 00:00 medianoche (t = 4 h).",
+      "narration": "Te propongo un ejercicio idéntico. Calcula la hora del aforo máximo y la hora de cierre para este pub que abre a las ocho de la tarde con la función sesenta t menos quince t al cuadrado."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "content": "La tasa de evaporación de agua $E(t)$ en milímetros por hora en un embalse durante un día caluroso, desde las **08:00 de la mañana ($t = 0$)**, viene modelada por:\n$$ E(t) = 12t - 1.2t^2 \\quad (0 \\le t \\le 10) $$\n\nDetermina la hora del día de mayor intensidad de evaporación (y su valor máximo) y la hora en la que cesa por completo la evaporación ($E(t) = 0$).",
+      "practiceAnswer": "Máxima evaporación de 30 mm/h a las 13:00 (t = 5 h). Cesa la evaporación a las 18:00 (t = 10 h).",
+      "narration": "En este caso de transferencia lejana aplicamos la función cuadrática a la evaporación ambiental. Determina la hora pico de evaporación y el momento en que cesa el proceso aplicando exactamente las mismas reglas analíticas."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-20T10:12:08.213Z",
+    "updatedAt": "2026-08-20T10:12:08.213Z",
+    "contentHash": "3d5dec93a4e82e11",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "teacher_override",
+    "override": {
+      "confirmed": true,
+      "justification": "todo ok. no problem.",
+      "automaticErrors": [
+        {
+          "title": "Cobertura explícita de apartados",
+          "detail": "apartado a: su respuesta no aparece identificada en la síntesis final · apartado b: su respuesta no aparece identificada en la síntesis final"
+        }
+      ],
+      "approvedAt": "2026-08-20T10:12:08.213Z"
+    }
+  }
+}

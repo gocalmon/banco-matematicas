@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "visualContractVersion": "1.0",
+    "subject": "Matemáticas",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Análisis Matemático",
+    "subtopic": "Continuidad y Derivabilidad",
+    "exerciseType": "Cálculo de parámetros en funciones a trozos",
+    "protocols": [
+      "H"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 18,
+    "learningObjectives": [
+      "Determinar los límites laterales para garantizar la continuidad de una función a trozos.",
+      "Calcular las derivadas laterales para asegurar la derivabilidad en un punto de frontera.",
+      "Plantear y resolver sistemas de ecuaciones lineales derivados de condiciones analíticas."
+    ],
+    "prerequisites": [
+      "Concepto de límites laterales y continuidad en un punto.",
+      "Reglas de derivación de funciones polinómicas.",
+      "Resolución de sistemas de ecuaciones lineales 2x2."
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Calcular los parámetros a y b, de manera que la función f(x) sea continua y derivable en x = 2."
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 10,
+    "statementHash": "84b51bede7fa7243",
+    "metadataSource": "provided",
+    "importedAt": "2026-08-20T09:51:53.076Z",
+    "hasVerifiedVisualSupport": true,
+    "id": "calculo-de-parametros-para-continuidad-y-derivabilid-abe93d00"
+  },
+  "title": "Cálculo de parámetros para continuidad y derivabilidad",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "content": "<strong>Problema 370</strong> Dada la función\n\n$$ f(x) = \\begin{cases} \\frac{3ax^2}{2} - bx + 1 & \\text{si } x \\le 2 \\\\ ax^3 + bx^2 & \\text{si } x > 2 \\end{cases} $$\n\nCalcular los parámetros $a$ y $b$, de manera que la función $f(x)$ sea continua y derivable en $x = 2$.",
+      "narration": "Transcribimos fielmente el enunciado del problema trescientos setenta. Se nos da una función definida a trozos por dos expresiones polinómicas y debemos determinar los valores de a y b para que la función sea continua y derivable en x igual a dos."
+    },
+    {
+      "title": "Planificación de la estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "content": "<strong>OBJETIVO:</strong> Determinar los valores exactos de los parámetros $a$ y $b$ para garantizar continuidad y derivabilidad en el punto de cambio de rama $x = 2$.\n\n<strong>DATOS:</strong> Función definida a trozos por dos expresiones polinómicas que dependen de los parámetros reales $a$ y $b$.\n\n<strong>MÉTODO:</strong>\n1. **Condición de Continuidad:** Exigiremos que el límite por la izquierda y el límite por la derecha en $x = 2$ coincidan entre sí y con $f(2)$. Esto proporcionará la primera ecuación lineal en $a$ y $b$.\n2. **Condición de Derivabilidad:** Exigiremos que la derivada lateral izquierda y la derivada lateral derecha en $x = 2$ sean iguales. Esto proporcionará la segunda ecuación lineal.\n3. **Resolución:** Resolveremos el sistema $2 \\times 2$ resultante.\n\n<strong>APLICACIÓN REAL:</strong> El diseño de empalmes suaves sin esquinas ni picos (clase $C^1$) es fundamental en ingeniería civil para el trazado de vías de tren, carreteras y montañas rusas, evitando fuerzas de aceleración bruscas.",
+      "narration": "Para resolver este problema, impondremos dos condiciones analíticas en el punto de empalme x igual a dos. Primero, la continuidad igualando los límites laterales, lo que nos dará una ecuación. Segundo, la derivabilidad igualando las derivadas laterales, lo que nos dará una segunda ecuación. Finalmente, resolveremos el sistema formado por ambas."
+    },
+    {
+      "title": "Condición 1: Continuidad en $x = 2$",
+      "layout": "centered",
+      "phase": "analizar",
+      "subpart": "a",
+      "theory": "Una función $f(x)$ es continua en $x = c$ si y solo si los límites laterales existen y coinciden con el valor de la función: $\\lim_{x \\to c^-} f(x) = \\lim_{x \\to c^+} f(x) = f(c)$.",
+      "content": "<strong>OBJETIVO:</strong> Obtener la primera ecuación planteando la continuidad de $f(x)$ en $x = 2$.\n\n<strong>CONEXIÓN:</strong> Evaluamos las dos ramas en el punto de frontera $x = 2$.\n\n<strong>CÁLCULO:</strong>\n- **Valor de la función y límite por la izquierda ($x \\le 2$):**\n$$ \\lim_{x \\to 2^-} f(x) = f(2) = \\frac{3a(2)^2}{2} - b(2) + 1 = \\frac{12a}{2} - 2b + 1 = 6a - 2b + 1 $$\n\n- **Límite por la derecha ($x > 2$):**\n$$ \\lim_{x \\to 2^+} f(x) = a(2)^3 + b(2)^2 = 8a + 4b $$\n\nIgualamos ambos límites para asegurar la continuidad:\n$$ 6a - 2b + 1 = 8a + 4b $$\n\nReordenamos la ecuación agrupando términos en $a$ y $b$:\n$$ 1 = 8a - 6a + 4b + 2b \\implies 2a + 6b = 1 \\quad \\text{(Ecuación 1)} $$\n\n<strong>INTERPRETACIÓN:</strong> Para que no haya saltos en $x = 2$, los parámetros $a$ y $b$ deben cumplir la condición lineal $2a + 6b = 1$.",
+      "narration": "Comenzamos con la continuidad. Calculamos el límite por la izquierda sustituyendo dos en la primera rama, lo que nos da seis a menos dos b más uno. Luego calculamos el límite por la derecha en la segunda rama, obteniendo ocho a más cuatro b. Igualando ambas expresiones y simplificando, obtenemos nuestra primera ecuación: dos a más seis b igual a uno."
+    },
+    {
+      "title": "Condición 2: Derivabilidad en $x = 2$",
+      "layout": "centered",
+      "phase": "analizar",
+      "subpart": "a",
+      "theory": "Una función continua en $x = c$ es derivable en $x = c$ si sus derivadas laterales existen y coinciden: $f'(c^-) = f'(c^+)$.",
+      "content": "<strong>OBJETIVO:</strong> Obtener la segunda ecuación imponiendo la derivabilidad en $x = 2$.\n\n<strong>CONEXIÓN:</strong> Derivamos cada rama respecto a $x$ y calculamos los límites de las derivadas en $x = 2$.\n\n<strong>CÁLCULO:</strong>\nDerivamos de forma independiente cada tramo polinómico:\n$$ f'(x) = \\begin{cases} 3ax - b & \\text{si } x < 2 \\\\ 3ax^2 + 2bx & \\text{si } x > 2 \\end{cases} $$\n\nCalculamos las derivadas laterales en $x = 2$:\n- **Derivada lateral izquierda:**\n$$ f'(2^-) = 3a(2) - b = 6a - b $$\n\n- **Derivada lateral derecha:**\n$$ f'(2^+) = 3a(2)^2 + 2b(2) = 12a + 4b $$\n\nIgualamos las derivadas laterales para garantizar un empalme suave sin esquinas:\n$$ 6a - b = 12a + 4b \\implies 0 = 6a + 5b \\quad \\text{(Ecuación 2)} $$\n\n<strong>INTERPRETACIÓN:</strong> La derivabilidad exige que la pendiente de la recta tangente sea idéntica por ambos lados en $x = 2$, imponiendo la condición $6a + 5b = 0$.",
+      "narration": "Pasamos ahora a la derivabilidad. Derivamos la primera rama obteniendo tres a equis menos b, cuya derivada lateral en dos es seis a menos b. Derivamos la segunda rama obteniendo tres a equis cuadrado más dos b equis, cuya derivada lateral en dos vale doce a más cuatro b. Igualando ambas derivadas laterales obtenemos la segunda ecuación: seis a más cinco b igual a cero."
+    },
+    {
+      "title": "Resolución del sistema de ecuaciones",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "warning": "Al despejar fracciones en sistemas numéricos, simplifica antes de multiplicar para evitar incoherencias operativas o errores de signo.",
+      "content": "<strong>OBJETIVO:</strong> Resolver el sistema de dos ecuaciones lineales con dos incógnitas para hallar $a$ y $b$.\n\n<strong>CONEXIÓN:</strong> Agrupamos la Ecuación 1 (continuidad) y la Ecuación 2 (derivabilidad).\n\n<strong>CÁLCULO:</strong>\n$$ \\begin{cases} 2a + 6b = 1 \\quad \\text{(1)} \\\\ 6a + 5b = 0 \\quad \\text{(2)} \\end{cases} $$\n\nDe la Ecuación (2), expresamos $6a$ en función de $b$:\n$$ 6a = -5b \\implies a = -\\frac{5}{6}b $$\n\nMultiplicamos la Ecuación (1) por $3$ para relacionar fácilmente el término $6a$:\n$$ 3 \\cdot (2a + 6b) = 3 \\cdot 1 \\implies 6a + 18b = 3 $$\n\nSustituimos $6a = -5b$ en la ecuación anterior:\n$$ -5b + 18b = 3 \\implies 13b = 3 \\implies b = \\frac{3}{13} $$\n\nSustituimos el valor de $b$ para determinar $a$:\n$$ a = -\\frac{5}{6} \\cdot \\left(\\frac{3}{13}\\right) = -\\frac{15}{78} = -\\frac{5}{26} $$\n\n<strong>RESULTADO:</strong> Obtenemos las soluciones exactas $a = -\\frac{5}{26}$ y $b = \\frac{3}{13}$.",
+      "narration": "Con las dos ecuaciones planteadas, resolvemos el sistema de ecuaciones lineales. De la segunda ecuación despejamos seis a igual a menos cinco b. Sustituyendo en la primera ecuación multiplicada por tres, obtenemos que trece b es igual a tres, por lo que b vale tres treceavos. Con este valor, calculamos a que resulta ser menos cinco veintiseisavos."
+    },
+    {
+      "title": "Comprobación analítica",
+      "layout": "centered",
+      "phase": "comprobar",
+      "subpart": "a",
+      "content": "<strong>OBJETIVO:</strong> Verificar analíticamente que con $a = -\\frac{5}{26}$ y $b = \\frac{3}{13}$ se cumplen la continuidad y derivabilidad en $x = 2$.\n\n<strong>CONEXIÓN:</strong> Sustituimos los valores obtenidos en las expresiones analíticas de las ramas y sus derivadas.\n\n<strong>COMPROBACIÓN:</strong>\n1. **Verificación de la continuidad:**\n- $f(2^-) = 6\\left(-\\frac{5}{26}\\right) - 2\\left(\\frac{3}{13}\\right) + 1 = -\\frac{15}{13} - \\frac{6}{13} + \\frac{13}{13} = -\\frac{8}{13}$\n- $f(2^+) = 8\\left(-\\frac{5}{26}\\right) + 4\\left(\\frac{3}{13}\\right) = -\\frac{20}{13} + \\frac{12}{13} = -\\frac{8}{13}$\nCoinciden: $f(2^-) = f(2^+) = -\\frac{8}{13}$. ¡Continuidad verificada!\n\n2. **Verificación de la derivabilidad:**\n- $f'(2^-) = 6\\left(-\\frac{5}{26}\\right) - \\frac{3}{13} = -\\frac{15}{13} - \\frac{3}{13} = -\\frac{18}{13}$\n- $f'(2^+) = 12\\left(-\\frac{5}{26}\\right) + 4\\left(\\frac{3}{13}\\right) = -\\frac{30}{13} + \\frac{12}{13} = -\\frac{18}{13}$\nCoinciden: $f'(2^-) = f'(2^+) = -\\frac{18}{13}$. ¡Derivabilidad verificada!\n\n<strong>RESPUESTA AL APARTADO a):</strong> Los parámetros buscados son $$a = -\\frac{5}{26}$$ y $$b = \\frac{3}{13}$$.",
+      "narration": "Comprobamos minuciosamente nuestros resultados sustituyendo los parámetros a y b en las expresiones originales. Vemos que los dos límites laterales dan exactamente menos ocho treceavos, confirmando la continuidad. Asimismo, ambas derivadas laterales resultan en menos dieciocho treceavos, confirmando que la función es perfectamente derivable."
+    },
+    {
+      "title": "Representación gráfica del empalme suave",
+      "layout": "split",
+      "phase": "representar",
+      "subpart": "a",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "cartesian2d",
+        "viewport": {
+          "xMin": -1,
+          "xMax": 5,
+          "yMin": -3,
+          "yMax": 2,
+          "equalScale": false
+        },
+        "objects": [
+          {
+            "id": "rama1",
+            "type": "polynomial",
+            "label": "f1(x)",
+            "coefficients": [
+              "1",
+              "-3/13",
+              "-15/52"
+            ],
+            "domain": [
+              -1,
+              2
+            ]
+          },
+          {
+            "id": "rama2",
+            "type": "polynomial",
+            "label": "f2(x)",
+            "coefficients": [
+              "0",
+              "0",
+              "3/13",
+              "-5/26"
+            ],
+            "domain": [
+              2,
+              5
+            ]
+          },
+          {
+            "id": "empalme",
+            "type": "point",
+            "label": "P(2, -8/13)",
+            "coordinates": [
+              "2",
+              "-8/13"
+            ]
+          }
+        ],
+        "relations": [
+          {
+            "type": "pointOnPolynomial",
+            "point": "empalme",
+            "polynomial": "rama1"
+          },
+          {
+            "type": "pointOnPolynomial",
+            "point": "empalme",
+            "polynomial": "rama2"
+          }
+        ]
+      },
+      "visualDescription": "Plano cartesiano con ejes en amarillo y cuadrícula. Muestra dos tramos polinómicos que se unen en el punto P de coordenadas x=2, y=-8/13. La primera rama f1(x) a la izquierda de x=2 desciende de forma suave, y la segunda rama f2(x) a la derecha de x=2 continúa el descenso con la misma pendiente sin presentar picos, saltos ni esquinas en el punto de cambio x=2.",
+      "visualMathLink": "El punto de empalme P(2, -8/13) satisface ambas ramas polinómicas. La transición fluida en x=2 demuestra gráficamente que la derivada lateral izquierda y derecha coinciden en el valor -18/13, respaldando geométricamente los parámetros calculados a = -5/26 y b = 3/13.",
+      "content": "<strong>OBJETIVO:</strong> Visualizar el modelo gráfico resultante comprobando geométricamente la unión continua y sin picos.\n\n<strong>MÉTODO:</strong> Con los parámetros calculados $a = -\\frac{5}{26}$ y $b = \\frac{3}{13}$, la función queda definida como:\n$$ f(x) = \\begin{cases} -\\frac{15}{52}x^2 - \\frac{3}{13}x + 1 & \\text{si } x \\le 2 \\\\ -\\frac{5}{26}x^3 + \\frac{3}{13}x^2 & \\text{si } x > 2 \\end{cases} $$\n\n<strong>INTERPRETACIÓN:</strong> En la gráfica se observa claramente cómo la parábola (rama izquierda) y la curva cúbica (rama derecha) se unen exactamente en $P\\left(2, -\\frac{8}{13}\\right)$ compartiendo la misma recta tangente de pendiente $m = -\\frac{18}{13}$.",
+      "narration": "En la gráfica podemos apreciar el resultado geométrico del problema. Las dos ramas de la función se unen suavemente en el punto P con coordenadas dos y menos ocho treceavos. No hay ningun salto ni ninguna esquina en equis igual a dos, lo que evidencia la continuidad y derivabilidad alcanzadas.",
+      "visual": "<svg viewBox='0 0 640 440' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='cartesian2d' data-visual-contract='1.0' data-verification-status='verified'><rect x='0' y='0' width='640' height='440' rx='14' fill='#0f172a'/><line x1='54.00' y1='386.00' x2='54.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='142.67' y1='386.00' x2='142.67' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='231.33' y1='386.00' x2='231.33' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='320.00' y1='386.00' x2='320.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='408.67' y1='386.00' x2='408.67' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='497.33' y1='386.00' x2='497.33' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='586.00' y1='386.00' x2='586.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='54.00' y1='386.00' x2='586.00' y2='386.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='54.00' y1='319.60' x2='586.00' y2='319.60' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='54.00' y1='253.20' x2='586.00' y2='253.20' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='54.00' y1='186.80' x2='586.00' y2='186.80' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='54.00' y1='120.40' x2='586.00' y2='120.40' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='54.00' y1='54.00' x2='586.00' y2='54.00' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='54.00' y1='186.80' x2='586.00' y2='186.80' stroke='#fbbf24' stroke-width='2.5'/><text x='574.00' y='178.80' fill='#fbbf24' font-size='15'>x</text><line x1='142.67' y1='386.00' x2='142.67' y2='54.00' stroke='#fbbf24' stroke-width='2.5'/><text x='150.67' y='70.00' fill='#fbbf24' font-size='15'>y</text><polyline points='54.00,124.23 54.83,124.02 55.66,123.81 56.49,123.60 57.32,123.40 58.16,123.20 58.99,123.00 59.82,122.80 60.65,122.61 61.48,122.43 62.31,122.24 63.14,122.06 63.98,121.89 64.81,121.71 65.64,121.54 66.47,121.38 67.30,121.21 68.13,121.05 68.96,120.90 69.79,120.74 70.63,120.59 71.46,120.45 72.29,120.30 73.12,120.17 73.95,120.03 74.78,119.90 75.61,119.77 76.44,119.64 77.28,119.52 78.11,119.40 78.94,119.28 79.77,119.17 80.60,119.06 81.43,118.95 82.26,118.85 83.09,118.75 83.93,118.66 84.76,118.56 85.59,118.47 86.42,118.39 87.25,118.31 88.08,118.23 88.91,118.15 89.74,118.08 90.58,118.01 91.41,117.94 92.24,117.88 93.07,117.82 93.90,117.77 94.73,117.71 95.56,117.67 96.39,117.62 97.23,117.58 98.06,117.54 98.89,117.50 99.72,117.47 100.55,117.44 101.38,117.42 102.21,117.40 103.04,117.38 103.88,117.36 104.71,117.35 105.54,117.34 106.37,117.34 107.20,117.34 108.03,117.34 108.86,117.34 109.69,117.35 110.53,117.36 111.36,117.38 112.19,117.40 113.02,117.42 113.85,117.44 114.68,117.47 115.51,117.50 116.34,117.54 117.18,117.58 118.01,117.62 118.84,117.67 119.67,117.71 120.50,117.77 121.33,117.82 122.16,117.88 122.99,117.94 123.83,118.01 124.66,118.08 125.49,118.15 126.32,118.23 127.15,118.31 127.98,118.39 128.81,118.47 129.64,118.56 130.48,118.66 131.31,118.75 132.14,118.85 132.97,118.95 133.80,119.06 134.63,119.17 135.46,119.28 136.29,119.40 137.13,119.52 137.96,119.64 138.79,119.77 139.62,119.90 140.45,120.03 141.28,120.17 142.11,120.30 142.94,120.45 143.78,120.59 144.61,120.74 145.44,120.90 146.27,121.05 147.10,121.21 147.93,121.38 148.76,121.54 149.59,121.71 150.43,121.89 151.26,122.06 152.09,122.24 152.92,122.43 153.75,122.61 154.58,122.80 155.41,123.00 156.24,123.20 157.08,123.40 157.91,123.60 158.74,123.81 159.57,124.02 160.40,124.23 161.23,124.45 162.06,124.67 162.89,124.89 163.73,125.12 164.56,125.35 165.39,125.58 166.22,125.82 167.05,126.06 167.88,126.31 168.71,126.55 169.54,126.80 170.38,127.06 171.21,127.32 172.04,127.58 172.87,127.84 173.70,128.11 174.53,128.38 175.36,128.65 176.19,128.93 177.03,129.21 177.86,129.50 178.69,129.79 179.52,130.08 180.35,130.37 181.18,130.67 182.01,130.97 182.84,131.28 183.68,131.58 184.51,131.90 185.34,132.21 186.17,132.53 187.00,132.85 187.83,133.17 188.66,133.50 189.49,133.83 190.33,134.17 191.16,134.51 191.99,134.85 192.82,135.20 193.65,135.54 194.48,135.90 195.31,136.25 196.14,136.61 196.98,136.97 197.81,137.34 198.64,137.71 199.47,138.08 200.30,138.45 201.13,138.83 201.96,139.21 202.79,139.60 203.63,139.99 204.46,140.38 205.29,140.78 206.12,141.17 206.95,141.58 207.78,141.98 208.61,142.39 209.44,142.80 210.28,143.22 211.11,143.64 211.94,144.06 212.77,144.49 213.60,144.92 214.43,145.35 215.26,145.79 216.09,146.22 216.93,146.67 217.76,147.11 218.59,147.56 219.42,148.02 220.25,148.47 221.08,148.93 221.91,149.39 222.74,149.86 223.58,150.33 224.41,150.80 225.24,151.28 226.07,151.76 226.90,152.24 227.73,152.73 228.56,153.22 229.39,153.71 230.23,154.21 231.06,154.71 231.89,155.21 232.72,155.72 233.55,156.23 234.38,156.74 235.21,157.26 236.04,157.78 236.88,158.30 237.71,158.83 238.54,159.36 239.37,159.89 240.20,160.43 241.03,160.97 241.86,161.52 242.69,162.06 243.53,162.61 244.36,163.17 245.19,163.72 246.02,164.28 246.85,164.85 247.68,165.42 248.51,165.99 249.34,166.56 250.18,167.14 251.01,167.72 251.84,168.30 252.67,168.89 253.50,169.48 254.33,170.08 255.16,170.67 255.99,171.27 256.83,171.88 257.66,172.49 258.49,173.10 259.32,173.71 260.15,174.33 260.98,174.95 261.81,175.58 262.64,176.20 263.48,176.84 264.31,177.47 265.14,178.11 265.97,178.75 266.80,179.39 267.63,180.04 268.46,180.69 269.29,181.35 270.13,182.01 270.96,182.67 271.79,183.33 272.62,184.00 273.45,184.67 274.28,185.35 275.11,186.03 275.94,186.71 276.78,187.39 277.61,188.08 278.44,188.77 279.27,189.47 280.10,190.17 280.93,190.87 281.76,191.58 282.59,192.28 283.43,193.00 284.26,193.71 285.09,194.43 285.92,195.15 286.75,195.88 287.58,196.61 288.41,197.34 289.24,198.08 290.08,198.81 290.91,199.56 291.74,200.30 292.57,201.05 293.40,201.80 294.23,202.56 295.06,203.32 295.89,204.08 296.73,204.85 297.56,205.62 298.39,206.39 299.22,207.17 300.05,207.95 300.88,208.73 301.71,209.51 302.54,210.30 303.38,211.10 304.21,211.89 305.04,212.69 305.87,213.50 306.70,214.30 307.53,215.11 308.36,215.92 309.19,216.74 310.03,217.56 310.86,218.38 311.69,219.21 312.52,220.04 313.35,220.87 314.18,221.71 315.01,222.55 315.84,223.39 316.68,224.24 317.51,225.09 318.34,225.94 319.17,226.80 320.00,227.66' fill='none' stroke='#38bdf8' stroke-width='3' data-object-id='rama1' data-sampled-from-exact-polynomial='true' data-run='1'/><polyline points='320.00,227.66 320.83,228.53 321.66,229.41 322.49,230.30 323.33,231.20 324.16,232.11 324.99,233.03 325.82,233.96 326.65,234.91 327.48,235.86 328.31,236.83 329.14,237.81 329.98,238.80 330.81,239.80 331.64,240.81 332.47,241.84 333.30,242.87 334.13,243.92 334.96,244.98 335.79,246.05 336.63,247.14 337.46,248.24 338.29,249.34 339.12,250.46 339.95,251.60 340.78,252.74 341.61,253.90 342.44,255.07 343.28,256.25 344.11,257.44 344.94,258.65 345.77,259.87 346.60,261.10 347.43,262.35 348.26,263.61 349.09,264.88 349.93,266.16 350.76,267.46 351.59,268.77 352.42,270.09 353.25,271.43 354.08,272.78 354.91,274.14 355.74,275.52 356.58,276.91 357.41,278.32 358.24,279.73 359.07,281.16 359.90,282.61 360.73,284.07 361.56,285.54 362.39,287.03 363.23,288.53 364.06,290.04 364.89,291.57 365.72,293.11 366.55,294.67 367.38,296.24 368.21,297.83 369.04,299.43 369.88,301.04 370.71,302.67 371.54,304.32 372.37,305.97 373.20,307.65 374.03,309.34 374.86,311.04 375.69,312.76 376.53,314.49 377.36,316.24 378.19,318.00 379.02,319.78 379.85,321.57 380.68,323.38 381.51,325.21 382.34,327.05 383.18,328.90 384.01,330.77 384.84,332.66 385.67,334.56 386.50,336.48 387.33,338.41 388.16,340.36 388.99,342.33 389.83,344.31 390.66,346.31 391.49,348.32 392.32,350.35 393.15,352.40 393.98,354.46 394.81,356.54 395.64,358.64 396.48,360.75 397.31,362.88 398.14,365.02 398.97,367.18 399.80,369.36 400.63,371.56 401.46,373.77 402.29,376.00 403.13,378.25 403.96,380.51 404.79,382.79 405.62,385.09' fill='none' stroke='#f472b6' stroke-width='3' data-object-id='rama2' data-sampled-from-exact-polynomial='true' data-run='1'/><circle cx='320.00' cy='227.66' r='6' fill='#4ade80' stroke='#ffffff' stroke-width='2' data-object-id='empalme' data-exact-coordinates='2,-8/13'/><text x='329.00' y='218.66' fill='#4ade80' font-size='15'>P(2, -8/13)</text><text x='18' y='424' fill='#94a3b8' font-size='13'>Gráfico reconstruido por el visor desde datos matemáticos declarados.</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "cartesian2d",
+        "analysis": {
+          "objectCount": 3,
+          "equalScale": false,
+          "relationsVerified": 4
+        }
+      }
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "content": "Esquema sintético del procedimiento para hallar parámetros en funciones a trozos:\n\n1. **Condición de Continuidad:**\n   - Calcular los límites laterales $\\lim_{x \\to c^-} f(x)$ y $\\lim_{x \\to c^+} f(x)$.\n   - Igualar ambos límites para obtener la primera ecuación: $2a + 6b = 1$.\n2. **Condición de Derivabilidad:**\n   - Derivar analíticamente cada rama respecto a $x$.\n   - Calcular las derivadas laterales $\\lim_{x \\to c^-} f'(x)$ y $\\lim_{x \\to c^+} f'(x)$.\n   - Igualar ambas derivadas laterales para obtener la segunda ecuación: $6a + 5b = 0$.\n3. **Resolución del Sistema $2 \\times 2$:**\n   - Resolver el sistema lineal mediante sustitución o reducción.\n   - Obtener los valores exactos: $a = -\\frac{5}{26}$ y $b = \\frac{3}{13}$.\n4. **Verificación Analítica y Gráfica:**\n   - Comprobar la coincidencia de valores y pendientes en el punto de empalme.",
+      "narration": "Para resumir la hoja de ruta: en primer lugar imponemos la continuidad igualando límites laterales para obtener la primera ecuación. En segundo lugar imponemos la derivabilidad igualando derivadas laterales para obtener la segunda ecuación. Finalmente resolvemos el sistema lineal resultante y verificamos la solución."
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "content": "Intenta resolver el siguiente ejercicio aplicando exactamente la misma metodología antes de consultar la respuesta final.\n\nDada la función a trozos:\n$$ f(x) = \\begin{cases} 2ax^2 + bx & \\text{si } x \\le 1 \\\\ ax^3 + bx^2 + 1 & \\text{si } x > 1 \\end{cases} $$\n\nCalcula los valores de $a$ y $b$ para que la función $f(x)$ sea continua y derivable en $x = 1$.",
+      "practiceAnswer": "Los parámetros requeridos son $a = 1$ y $b = 1$.",
+      "narration": "Te propongo un ejercicio de transferencia cercana con la misma estructura. Calcula la continuidad y derivabilidad en el punto uno, plantea el sistema dos por dos y comprueba si obtienes como resultado a igual a uno y b igual a uno."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "content": "Un perfilador de vías de tren diseña una sección compuesta por dos curvas spline. La cota vertical de la vía $h(x)$ en metros en función de la posición horizontal $x$ viene dada por:\n$$ h(x) = \\begin{cases} k x^2 + 10 & \\text{si } x \\le 10 \\\\ m x^3 & \\text{si } x > 10 \\end{cases} $$\n\nPara garantizar un viaje suave y evitar descarrilamientos por cambios bruscos de inclinación en el perfil, la función $h(x)$ debe ser continua y derivable en $x = 10$.\n\nDetermina los valores de los parámetros físicos $k$ y $m$.",
+      "practiceAnswer": "Los parámetros requeridos son $k = -\\frac{3}{10} = -0.3$ y $m = -\\frac{1}{50} = -0.02$.",
+      "narration": "En este caso de transferencia lejana, aplicamos la misma idea al diseño de vías de tren en ingeniería. Para evitar sacudidas o descarrilamientos, la altura de la vía debe ser continua y derivable en la transición. Intenta hallar los parámetros ka y eme antes de revisar la respuesta."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-08-20T09:54:21.817Z",
+    "updatedAt": "2026-08-20T09:54:21.817Z",
+    "contentHash": "c7529203ef06b09d",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "automatic_checks_passed"
+  }
+}
