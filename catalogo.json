@@ -2,9 +2,9 @@
   "schemaVersion": "1.0",
   "exerciseSchemaVersion": "4.0",
   "taxonomyVersion": "1.0",
-  "generatedAt": "2026-08-26T10:24:45.256Z",
+  "generatedAt": "2026-09-24T16:03:14.445Z",
   "basePath": "ejercicios/",
-  "exerciseCount": 106,
+  "exerciseCount": 112,
   "filters": {
     "stages": [
       "Bachillerato",
@@ -125,12 +125,14 @@
       "Resolución de ecuación exponencial por igualación de bases",
       "Resolución de ecuación exponencial por manipulación algebraica",
       "Resolución de ecuación factorizada",
+      "Resolución de ecuación irracional con radicales anidados",
       "Resolución de ecuación racional bicuadrada",
       "Resolución de ecuaciones de grado superior a 2",
       "Resolución de Ecuaciones Logarítmicas con Radicales",
       "Resolución de inecuación racional mediante tabla de signos",
       "Resolución de inecuaciones racionales",
       "Resolución de problemas con funciones lineales",
+      "Resolución de sistema 3x3 por Gauss",
       "Resolución de sistema 3x3 por método de Gauss",
       "Resolución de sistema de ecuaciones no lineales",
       "Resolución de sistema de inecuaciones de segundo grado",
@@ -139,13 +141,17 @@
       "Resolución de sistemas mediante el método de Gauss",
       "Resolución de sistemas no lineales",
       "Resolución de sistemas no lineales logarítmicos",
+      "Resolución de sistemas por el método de Gauss",
       "Resolución de un problema de programación lineal con dos variables",
       "Resolución de un sistema de ecuaciones por el método de Gauss",
       "Resolución de un sistema formado por una inecuación lineal y una cuadrática",
       "Resolución de una inecuación racional de segundo grado en numerador y denominador",
       "Resolución gráfica de una inecuación lineal con dos incógnitas",
       "Resolución gráfica y analítica",
+      "Resolución y Clasificación de Sistemas 3x3 por el Método de Gauss",
+      "Resolución y Clasificación de Sistemas de Ecuaciones Lineales",
       "Resolución y Clasificación de Sistemas mediante el Método de Gauss",
+      "Resolución y discusión de un sistema de 3 ecuaciones lineales con 3 incógnitas por el método de Gauss",
       "Resta de fracciones algebraicas",
       "Simplificación algebraica",
       "Simplificación y factor común",
@@ -1528,6 +1534,110 @@
       "url": "ejercicios/1_BACH/optimizacion-cuadratica-maximizando-el-rendimiento_REVISADO.json"
     },
     {
+      "id": "resolucion-completa-de-ecuacion-irracional-con-radic-56ebea71",
+      "title": "Resolución completa de ecuación irracional con radicales anidados",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1.º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Ecuaciones algebraicas",
+      "exerciseType": "Resolución de ecuación irracional con radicales anidados",
+      "protocols": [
+        "B",
+        "C"
+      ],
+      "difficulty": "avanzada",
+      "estimatedMinutes": 20,
+      "learningObjectives": [
+        "Determinar el dominio de existencia de expresiones algebraicas con múltiples radicales.",
+        "Aplicar la técnica de aislamiento de radicales y elevaciones sucesivas al cuadrado.",
+        "Identificar y descartar soluciones extrañas o falsas mediante comprobación analítica directa."
+      ],
+      "prerequisites": [
+        "Propiedades de las raíces cuadradas y del producto notable cuadrado de un binomio.",
+        "Resolución rigurosa de ecuaciones cuadráticas mediante la fórmula general.",
+        "Análisis de dominios e intersección de desigualdades en los números reales."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 12,
+      "reviewedAt": "2026-09-16T06:37:20.275Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "91e773aee7534c08",
+      "statementHash": "4bc4588ba57b4ad1",
+      "url": "ejercicios/1_BACH/resolucion-completa-de-ecuacion-irracional-con-radic_REVISADO.json"
+    },
+    {
+      "id": "resolucion-completa-del-sistema-de-ecuaciones-lineal-3a11813d",
+      "title": "Resolución completa del sistema de ecuaciones lineales",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1.º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Matrices, determinantes y álgebra lineal",
+      "exerciseType": "Resolución y Clasificación de Sistemas 3x3 por el Método de Gauss",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Plantear la matriz ampliada asociada a un sistema de ecuaciones lineales 3x3.",
+        "Aplicar el método de eliminación de Gauss mediante operaciones elementales por filas.",
+        "Clasificar el sistema mediante el Teorema de Rouché-Frobenius a partir de los rangos obtenidos.",
+        "Obtener e interpretar la solución general del sistema paramétricamente y comprobar su validez."
+      ],
+      "prerequisites": [
+        "Operaciones aritméticas con números enteros y fracciones.",
+        "Concepto de ecuaciones lineales y matrices asociadas.",
+        "Transformaciones equivalentes por filas en matrices."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 12,
+      "reviewedAt": "2026-09-24T11:32:46.990Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "8ea49f02164a1174",
+      "statementHash": "643aad44505ffa8e",
+      "url": "ejercicios/1_BACH/resolucion-completa-del-sistema-de-ecuaciones-lineal_REVISADO.json"
+    },
+    {
+      "id": "resolucion-y-discusion-de-un-sistema-de-ecuaciones-l-f714be5f",
+      "title": "Resolución y Discusión de un Sistema de Ecuaciones Lineales 3x3 por Gauss",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1.º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Matrices, determinantes y álgebra lineal",
+      "exerciseType": "Resolución y discusión de un sistema de 3 ecuaciones lineales con 3 incógnitas por el método de Gauss",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Discutir un sistema de ecuaciones lineales empleando el método de Gauss.",
+        "Clasificar el sistema según el Teorema de Rouché-Fröbenius.",
+        "Obtener la solución paramétrica de un sistema compatible indeterminado e interpretarla geométricamente."
+      ],
+      "prerequisites": [
+        "Operaciones elementales por filas en matrices.",
+        "Teorema de Rouché-Fröbenius.",
+        "Concepto de rango de una matriz."
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 14,
+      "reviewedAt": "2026-09-24T12:00:45.656Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "0db5b2db84bea089",
+      "statementHash": "ffe74f8c7922ae06",
+      "url": "ejercicios/1_BACH/resolucion-y-discusion-de-un-sistema-de-ecuaciones-l_REVISADO.json"
+    },
+    {
       "id": "estudio-de-dominio-continuidad-y-redefinicion-contin-661516a0",
       "title": "Estudio de dominio, continuidad y redefinición continua de f(x)",
       "subject": "Matemáticas",
@@ -1667,6 +1777,74 @@
       "contentHash": "c954a106e2b1d510",
       "statementHash": "747c97f097fb6a66",
       "url": "ejercicios/1_BACH/resolucion-de-ecuacion-exponencial-por-factorizacion_REVISADO.json"
+    },
+    {
+      "id": "resolucion-de-sistema-de-ecuaciones-lineales-3x3-por-fcbc932c",
+      "title": "Resolución de Sistema de Ecuaciones Lineales 3x3 por el Método de Gauss",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Matrices, determinantes y álgebra lineal",
+      "exerciseType": "Resolución de sistemas por el método de Gauss",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Expresar un sistema de ecuaciones lineales en forma matricial y construir su matriz ampliada.",
+        "Aplicar transformaciones elementales por filas para obtener la forma escalonada de Gauss.",
+        "Clasificar el sistema mediante el Teorema de Rouché-Frobenius y resolverlo por sustitución regresiva."
+      ],
+      "prerequisites": [
+        "Operaciones aritméticas con números racionales",
+        "Resolución de ecuaciones lineales de primer grado"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 13,
+      "reviewedAt": "2026-09-24T11:42:47.353Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "9800c7d9f94dde7b",
+      "statementHash": "ab58a57ba935cfe9",
+      "url": "ejercicios/1_BACH/resolucion-de-sistema-de-ecuaciones-lineales-3x3-por_REVISADO%20(1).json"
+    },
+    {
+      "id": "resolucion-de-sistema-de-ecuaciones-lineales-mediant-b8ce7293",
+      "title": "Resolución de Sistema de Ecuaciones Lineales mediante el Método de Gauss",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Matrices, determinantes y álgebra lineal",
+      "exerciseType": "Resolución y Clasificación de Sistemas de Ecuaciones Lineales",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "basica",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Expresar un sistema de ecuaciones lineales en forma matricial ampliada",
+        "Aplicar las transformaciones elementales por filas para la triangulación por Gauss",
+        "Clasificar el sistema mediante el Teorema de Rouché-Frobenius",
+        "Resolver el sistema mediante sustitución regresiva y comprobar analíticamente la solución"
+      ],
+      "prerequisites": [
+        "Operaciones aritméticas básicas con fracciones",
+        "Resolución de ecuaciones lineales de primer grado",
+        "Concepto de matriz y determinante de orden 3"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 13,
+      "reviewedAt": "2026-09-24T11:51:17.863Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "3737d07c5621a7ea",
+      "statementHash": "53a1cadf29753f25",
+      "url": "ejercicios/1_BACH/resolucion-de-sistema-de-ecuaciones-lineales-mediant_REVISADO.json"
     },
     {
       "id": "resolucion-de-un-sistema-de-ecuaciones-exponenciales-167ee3f4",
@@ -1836,6 +2014,41 @@
       "contentHash": "38ec2a84451bff9e",
       "statementHash": "caabae2187021db7",
       "url": "ejercicios/1_BACH/resolucion-paso-a-paso-sistema-de-ecuaciones-logarit_REVISADO.json"
+    },
+    {
+      "id": "resolucion-rigurosa-de-un-sistema-de-ecuaciones-line-03f6d592",
+      "title": "Resolución Rigurosa de un Sistema de Ecuaciones Lineales 3x3 por Gauss",
+      "subject": "Matemáticas",
+      "stage": "Bachillerato",
+      "course": "1º Bachillerato",
+      "topic": "Álgebra",
+      "subtopic": "Matrices, determinantes y álgebra lineal",
+      "exerciseType": "Resolución de sistema 3x3 por Gauss",
+      "protocols": [
+        "C"
+      ],
+      "difficulty": "media",
+      "estimatedMinutes": 15,
+      "learningObjectives": [
+        "Formular la matriz ampliada a partir de un sistema de ecuaciones de 3x3",
+        "Aplicar las transformaciones elementales por filas del método de Gauss para obtener la forma escalonada",
+        "Clasificar el sistema mediante el teorema de Rouché-Fröbenius analizando los rangos",
+        "Resolver mediante sustitución regresiva y comprobar rigurosamente la solución en las ecuaciones originales"
+      ],
+      "prerequisites": [
+        "Operaciones elementales de sustitución y combinación lineal entre filas de una matriz",
+        "Concepto de rango y enunciado del teorema de Rouché-Fröbenius",
+        "Resolución e interpretación geométrica de ecuaciones de planos en el espacio"
+      ],
+      "hasVisualSupport": true,
+      "hasNearTransfer": true,
+      "hasFarTransfer": true,
+      "slideCount": 12,
+      "reviewedAt": "2026-09-24T12:01:52.929Z",
+      "approvalMode": "automatic_checks_passed",
+      "contentHash": "5db58f8eefebfcf0",
+      "statementHash": "378bacb83f13ce52",
+      "url": "ejercicios/1_BACH/resolucion-rigurosa-de-un-sistema-de-ecuaciones-line_REVISADO.json"
     },
     {
       "id": "asegurando-la-continuidad-analisis-parametrico-8d0452c5",
