@@ -1,0 +1,461 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "1º Bachillerato",
+    "topic": "Álgebra Lineal",
+    "subtopic": "Sistemas de Ecuaciones Lineales y Método de Gauss",
+    "exerciseType": "Resolución y Clasificación de Sistemas de Ecuaciones Lineales",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "basica",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Expresar un sistema de ecuaciones lineales en forma matricial ampliada",
+      "Aplicar las transformaciones elementales por filas para la triangulación por Gauss",
+      "Clasificar el sistema mediante el Teorema de Rouché-Frobenius",
+      "Resolver el sistema mediante sustitución regresiva y comprobar analíticamente la solución"
+    ],
+    "prerequisites": [
+      "Operaciones aritméticas básicas con fracciones",
+      "Resolución de ecuaciones lineales de primer grado",
+      "Concepto de matriz y determinante de orden 3"
+    ],
+    "subparts": [
+      {
+        "id": "a",
+        "request": "Resolver y clasificar el sistema de ecuaciones lineales: \\begin{cases} x + y + z = 4 \\\\ x - y + z = 2 \\\\ 3x + y - z = 1 \\end{cases}"
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 13,
+    "statementHash": "53a1cadf29753f25",
+    "metadataSource": "provided",
+    "importedAt": "2026-09-24T11:51:09.539Z",
+    "hasVerifiedVisualSupport": true,
+    "id": "resolucion-de-sistema-de-ecuaciones-lineales-mediant-b8ce7293"
+  },
+  "title": "Resolución de Sistema de Ecuaciones Lineales mediante el Método de Gauss",
+  "slides": [
+    {
+      "title": "Enunciado del Ejercicio",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Presentamos el sistema de tres ecuaciones lineales con tres incognitas que debemos analizar y resolver.",
+      "content": "Dado el sistema de ecuaciones lineales:\n$$\\begin{cases} x + y + z = 4 \\\\ x - y + z = 2 \\\\ 3x + y - z = 1 \\end{cases}$$\n\nSe pide clasificar y resolver el sistema hallando los valores exactos de $x$, $y$ y $z$."
+    },
+    {
+      "title": "Organización de Datos y Representación Matricial",
+      "layout": "split",
+      "phase": "analizar",
+      "subpart": "a",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "matrix",
+        "label": "A*",
+        "matrixRole": "augmented",
+        "coefficientColumns": 3,
+        "rightHandColumns": 1,
+        "augmentedAfter": 3,
+        "rows": [
+          [
+            "1",
+            "1",
+            "1",
+            "4"
+          ],
+          [
+            "1",
+            "-1",
+            "1",
+            "2"
+          ],
+          [
+            "3",
+            "1",
+            "-1",
+            "1"
+          ]
+        ]
+      },
+      "visualDescription": "Matriz ampliada A* asociada al sistema, de tamaño 3x4. Las columnas 1, 2 y 3 contienen los coeficientes de x, y, z respectivamente, y la columna 4 contiene los términos independientes [4, 2, 1].",
+      "visualMathLink": "Cada fila de la matriz ampliada corresponde directamente a los coeficientes y términos independientes de las ecuaciones 1, 2 y 3 del sistema original.",
+      "narration": "Escribimos el sistema en su forma matricial ampliada para poder aplicar el metodo de Gauss.",
+      "content": "<strong>OBJETIVO:</strong> Expresar el sistema de ecuaciones lineales en forma matricial ampliada $A^*=(A|B)$.<br><br><strong>CONEXIÓN:</strong> A partir de las ecuaciones del enunciado, extraemos los coeficientes de las variables y los términos independientes.<br><br><strong>DATOS:</strong> El sistema consta de 3 ecuaciones lineales y 3 incógnitas ($x, y, z$). Matriz de coeficientes $A$ y matriz ampliada $A^*$:<br>$$A = \\begin{pmatrix} 1 & 1 & 1 \\\\ 1 & -1 & 1 \\\\ 3 & 1 & -1 \\end{pmatrix}, \\quad A^* = \\begin{pmatrix} 1 & 1 & 1 & | & 4 \\\\ 1 & -1 & 1 & | & 2 \\\\ 3 & 1 & -1 & | & 1 \\end{pmatrix}$$<br><br><strong>INTERPRETACIÓN:</strong> La representación matricial preserva toda la información del sistema y permite realizar transformaciones elementales por filas conservando el conjunto solución.",
+      "visual": "<svg viewBox='0 0 440 246' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='matrix' data-visual-contract='1.0' data-verification-status='verified' data-matrix-dimensions='3x4' data-matrix-operation-count='0'><rect x='0' y='0' width='440' height='246' rx='14' fill='#0f172a'/><text x='18' y='25' fill='#38bdf8' font-size='15' font-weight='700'>Matriz A*</text><path d='M 72 34 H 58 V 218 H 72' fill='none' stroke='#94a3b8' stroke-width='3'/><path d='M 368 34 H 382 V 218 H 368' fill='none' stroke='#94a3b8' stroke-width='3'/><line x1='298' y1='34' x2='298' y2='218' stroke='#fbbf24' stroke-width='2.5' stroke-dasharray='7 5'/><text x='103' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='1'>1</text><text x='181' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='2'>1</text><text x='259' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='3'>1</text><text x='337' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='4'>4</text><text x='103' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='1'>1</text><text x='181' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='2'>-1</text><text x='259' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='3'>1</text><text x='337' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='4'>2</text><text x='103' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='1'>3</text><text x='181' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='2'>1</text><text x='259' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='3'>-1</text><text x='337' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='4'>1</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "matrix",
+        "analysis": {
+          "rows": 3,
+          "columns": 4,
+          "entryCount": 12,
+          "augmentedAfter": 3,
+          "augmentedDividerCorrected": false,
+          "matrixChanged": false,
+          "rowOperationCount": 0,
+          "rowOperationSource": "none",
+          "rowOperationsVerified": false
+        }
+      }
+    },
+    {
+      "title": "Estrategia de Resolución: Método de Gauss",
+      "layout": "centered",
+      "phase": "planificar",
+      "theory": "Un sistema lineal no cambia su conjunto solución si realizamos operaciones elementales por filas: intercambiar filas, multiplicar una fila por un número no nulo, o sumar a una fila un múltiplo de otra.",
+      "narration": "Planificamos la estrategia mediante el metodo de triangulacion de Gauss para obtener una matriz escalonada.",
+      "content": "<strong>OBJETIVO:</strong> Elegir y justificar el método de resolución más eficiente.<br><br><strong>CONEXIÓN:</strong> Teniendo la matriz ampliada $A^*$, transformaremos el sistema en uno triangular equivalente.<br><br><strong>MÉTODO:</strong> Utilizaremos la eliminación gaussiana mediante operaciones elementales por filas:<br>1. Triangular la matriz ampliada obteniendo ceros por debajo de la diagonal principal.<br>2. Clasificar el sistema aplicando el Teorema de Rouché-Frobenius.<br>3. Obtener la solución mediante sustitución regresiva.<br><br><strong>APLICACIÓN REAL Y MATEMÁTICA:</strong> Este método es la base del álgebra lineal computacional y se aplica en el cálculo de circuitos eléctricos (Leyes de Kirchhoff), análisis estructural en ingeniería y modelos de equilibrio económico.<br><br><strong>INTERPRETACIÓN:</strong> La triangulación simplifica el sistema manteniendo la equivalencia estricta en cada paso."
+    },
+    {
+      "title": "Paso 1 de Gauss: Anulación del Coeficiente en la Segunda Fila",
+      "layout": "split",
+      "phase": "resolver",
+      "subpart": "a",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "matrix",
+        "label": "A*",
+        "matrixRole": "augmented",
+        "coefficientColumns": 3,
+        "rightHandColumns": 1,
+        "augmentedAfter": 3,
+        "rowOperations": [
+          {
+            "type": "replace",
+            "target": 2,
+            "source": 1,
+            "multiplier": "-1"
+          }
+        ],
+        "rows": [
+          [
+            "1",
+            "1",
+            "1",
+            "4"
+          ],
+          [
+            "0",
+            "-2",
+            "0",
+            "-2"
+          ],
+          [
+            "3",
+            "1",
+            "-1",
+            "1"
+          ]
+        ]
+      },
+      "visualDescription": "Matriz ampliada A* tras la transformación F2 -> F2 - F1. La fila 2 pasa a ser [0, -2, 0, -2].",
+      "visualMathLink": "La operación F2 -> F2 - F1 elimina la variable x de la segunda ecuación, obteniendo un cero en la posición (2,1).",
+      "warning": "Es fundamental restar los términos independientes con el mismo criterio que los coeficientes para mantener la equivalencia.",
+      "narration": "Restamos la primera fila a la segunda fila para eliminar el termino en equis de la segunda ecuacion.",
+      "content": "<strong>OBJETIVO:</strong> Hacer cero el elemento en la posición $(2,1)$ de la matriz ampliada.<br><br><strong>CONEXIÓN:</strong> Tomamos como pivote el elemento $a_{11} = 1$ de la primera fila.<br><br><strong>CÁLCULO:</strong> Aplicamos la operación elemental $F_2 \\to F_2 - F_1$:<br>$$\\begin{aligned} &\\text{Fila 2 original:} & &(1, -1, 1, 2) \\\\ - &\\text{Fila 1:} & &(1, 1, 1, 4) \\\\ \\hline = &\\text{Nueva Fila 2:} & &(0, -2, 0, -2) \\end{aligned}$$<br>Cálculo entrada a entrada: $1-1=0$, $-1-1=-2$, $1-1=0$, $2-4=-2$.<br><br><strong>INTERPRETACIÓN:</strong> La segunda ecuación se reduce a $-2y = -2$, equivalente a la original pero independiente de $x$.",
+      "visual": "<svg viewBox='0 0 440 273' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='matrix' data-visual-contract='1.0' data-verification-status='verified' data-matrix-dimensions='3x4' data-matrix-operation-count='1'><rect x='0' y='0' width='440' height='273' rx='14' fill='#0f172a'/><text x='18' y='25' fill='#38bdf8' font-size='15' font-weight='700'>Matriz A*</text><path d='M 72 34 H 58 V 218 H 72' fill='none' stroke='#94a3b8' stroke-width='3'/><path d='M 368 34 H 382 V 218 H 368' fill='none' stroke='#94a3b8' stroke-width='3'/><line x1='298' y1='34' x2='298' y2='218' stroke='#fbbf24' stroke-width='2.5' stroke-dasharray='7 5'/><text x='103' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='1'>1</text><text x='181' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='2'>1</text><text x='259' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='3'>1</text><text x='337' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='4'>4</text><text x='103' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='1'>0</text><text x='181' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='2'>-2</text><text x='259' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='3'>0</text><text x='337' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='4'>-2</text><text x='103' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='1'>3</text><text x='181' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='2'>1</text><text x='259' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='3'>-1</text><text x='337' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='4'>1</text><text x='24' y='246' fill='#7dd3fc' font-size='16' font-weight='700'>Operación de fila: F2 → F2 − F1</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "matrix",
+        "analysis": {
+          "rows": 3,
+          "columns": 4,
+          "entryCount": 12,
+          "augmentedAfter": 3,
+          "augmentedDividerCorrected": false,
+          "matrixChanged": true,
+          "rowOperationCount": 1,
+          "rowOperationSource": "structured",
+          "rowOperationsVerified": true
+        }
+      }
+    },
+    {
+      "title": "Paso 2 de Gauss: Anulación del Coeficiente en la Tercera Fila",
+      "layout": "split",
+      "phase": "resolver",
+      "subpart": "a",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "matrix",
+        "label": "A*",
+        "matrixRole": "augmented",
+        "coefficientColumns": 3,
+        "rightHandColumns": 1,
+        "augmentedAfter": 3,
+        "rowOperations": [
+          {
+            "type": "replace",
+            "target": 3,
+            "source": 1,
+            "multiplier": "-3"
+          }
+        ],
+        "rows": [
+          [
+            "1",
+            "1",
+            "1",
+            "4"
+          ],
+          [
+            "0",
+            "-2",
+            "0",
+            "-2"
+          ],
+          [
+            "0",
+            "-2",
+            "-4",
+            "-11"
+          ]
+        ]
+      },
+      "visualDescription": "Matriz ampliada A* tras la transformación F3 -> F3 - 3*F1. La fila 3 pasa a ser [0, -2, -4, -11].",
+      "visualMathLink": "La operación F3 -> F3 - 3*F1 elimina la variable x de la tercera ecuación, obteniendo un cero en la posición (3,1).",
+      "narration": "Restamos tres veces la primera fila a la tercera fila para eliminar la variable equis de la tercera ecuacion.",
+      "content": "<strong>OBJETIVO:</strong> Hacer cero el elemento en la posición $(3,1)$ de la matriz ampliada.<br><br><strong>CONEXIÓN:</strong> Continuamos usando como pivote el elemento $a_{11} = 1$ para limpiar la primera columna.<br><br><strong>CÁLCULO:</strong> Aplicamos la operación elemental $F_3 \\to F_3 - 3F_1$:<br>$$\\begin{aligned} &\\text{Fila 3 original:} & &(3, 1, -1, 1) \\\\ - 3\\times &\\text{Fila 1:} & &(3, 3, 3, 12) \\\\ \\hline = &\\text{Nueva Fila 3:} & &(0, -2, -4, -11) \\end{aligned}$$<br>Cálculo entrada a entrada: $3-3(1)=0$, $1-3(1)=-2$, $-1-3(1)=-4$, $1-3(4)=-11$.<br><br><strong>INTERPRETACIÓN:</strong> Ambas ecuaciones inferiores ($F_2$ y $F_3$) quedan ahora expresadas únicamente en función de $y$ y $z$.",
+      "visual": "<svg viewBox='0 0 440 273' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='matrix' data-visual-contract='1.0' data-verification-status='verified' data-matrix-dimensions='3x4' data-matrix-operation-count='1'><rect x='0' y='0' width='440' height='273' rx='14' fill='#0f172a'/><text x='18' y='25' fill='#38bdf8' font-size='15' font-weight='700'>Matriz A*</text><path d='M 72 34 H 58 V 218 H 72' fill='none' stroke='#94a3b8' stroke-width='3'/><path d='M 368 34 H 382 V 218 H 368' fill='none' stroke='#94a3b8' stroke-width='3'/><line x1='298' y1='34' x2='298' y2='218' stroke='#fbbf24' stroke-width='2.5' stroke-dasharray='7 5'/><text x='103' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='1'>1</text><text x='181' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='2'>1</text><text x='259' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='3'>1</text><text x='337' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='4'>4</text><text x='103' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='1'>0</text><text x='181' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='2'>-2</text><text x='259' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='3'>0</text><text x='337' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='4'>-2</text><text x='103' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='1'>0</text><text x='181' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='2'>-2</text><text x='259' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='3'>-4</text><text x='337' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='4'>-11</text><text x='24' y='246' fill='#7dd3fc' font-size='16' font-weight='700'>Operación de fila: F3 → F3 − 3F1</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "matrix",
+        "analysis": {
+          "rows": 3,
+          "columns": 4,
+          "entryCount": 12,
+          "augmentedAfter": 3,
+          "augmentedDividerCorrected": false,
+          "matrixChanged": true,
+          "rowOperationCount": 1,
+          "rowOperationSource": "structured",
+          "rowOperationsVerified": true
+        }
+      }
+    },
+    {
+      "title": "Paso 3 de Gauss: Obtención de la Forma Escalonada Triangular",
+      "layout": "split",
+      "phase": "resolver",
+      "subpart": "a",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "matrix",
+        "label": "A*",
+        "matrixRole": "augmented",
+        "coefficientColumns": 3,
+        "rightHandColumns": 1,
+        "augmentedAfter": 3,
+        "rowOperations": [
+          {
+            "type": "replace",
+            "target": 3,
+            "source": 2,
+            "multiplier": "-1"
+          }
+        ],
+        "rows": [
+          [
+            "1",
+            "1",
+            "1",
+            "4"
+          ],
+          [
+            "0",
+            "-2",
+            "0",
+            "-2"
+          ],
+          [
+            "0",
+            "0",
+            "-4",
+            "-9"
+          ]
+        ]
+      },
+      "visualDescription": "Matriz ampliada A* en forma escalonada triangular tras la transformación F3 -> F3 - F2. La fila 3 pasa a ser [0, 0, -4, -9].",
+      "visualMathLink": "La operación F3 -> F3 - F2 elimina la variable y de la tercera ecuación, completando la triangulación de la matriz.",
+      "checkpoint": {
+        "question": "¿Cuál es el rango de la matriz de coeficientes A y de la matriz ampliada A* tras completar la triangulación?",
+        "options": [
+          {
+            "text": "Rango(A) = 3 y Rango(A*) = 3",
+            "correct": true,
+            "feedback": "¡Correcto! Ambas matrices tienen 3 filas no nulas en su forma escalonada, por lo que su rango es 3."
+          },
+          {
+            "text": "Rango(A) = 2 y Rango(A*) = 3",
+            "correct": false,
+            "feedback": "Incorrecto. En la matriz de coeficientes A no hay ninguna fila completamente nula; los elementos diagonales son 1, -2 y -4."
+          },
+          {
+            "text": "Rango(A) = 3 y Rango(A*) = 4",
+            "correct": false,
+            "feedback": "Incorrecto. El rango de una matriz con 3 filas nunca puede superar 3."
+          }
+        ]
+      },
+      "narration": "Restamos la segunda fila a la tercera fila para hacer cero el termino de la posicion tres dos.",
+      "content": "<strong>OBJETIVO:</strong> Hacer cero el elemento en la posición $(3,2)$ para obtener una matriz escalonada triangular superior.<br><br><strong>CONEXIÓN:</strong> Utilizamos como pivote el elemento $a_{22} = -2$ de la nueva segunda fila.<br><br><strong>CÁLCULO:</strong> Aplicamos la operación elemental $F_3 \\to F_3 - F_2$:<br>$$\\begin{aligned} &\\text{Fila 3 actual:} & &(0, -2, -4, -11) \\\\ - &\\text{Fila 2 actual:} & &(0, -2, 0, -2) \\\\ \\hline = &\\text{Nueva Fila 3:} & &(0, 0, -4, -9) \\end{aligned}$$<br>Cálculo entrada a entrada: $0-0=0$, $-2-(-2)=0$, $-4-0=-4$, $-11-(-2)=-9$.<br><br><strong>INTERPRETACIÓN:</strong> Se ha alcanzado la forma triangular. El sistema escalonado equivalente consta de 3 pivotes no nulos.",
+      "visual": "<svg viewBox='0 0 440 273' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='matrix' data-visual-contract='1.0' data-verification-status='verified' data-matrix-dimensions='3x4' data-matrix-operation-count='1'><rect x='0' y='0' width='440' height='273' rx='14' fill='#0f172a'/><text x='18' y='25' fill='#38bdf8' font-size='15' font-weight='700'>Matriz A*</text><path d='M 72 34 H 58 V 218 H 72' fill='none' stroke='#94a3b8' stroke-width='3'/><path d='M 368 34 H 382 V 218 H 368' fill='none' stroke='#94a3b8' stroke-width='3'/><line x1='298' y1='34' x2='298' y2='218' stroke='#fbbf24' stroke-width='2.5' stroke-dasharray='7 5'/><text x='103' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='1'>1</text><text x='181' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='2'>1</text><text x='259' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='3'>1</text><text x='337' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='4'>4</text><text x='103' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='1'>0</text><text x='181' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='2'>-2</text><text x='259' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='3'>0</text><text x='337' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='4'>-2</text><text x='103' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='1'>0</text><text x='181' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='2'>0</text><text x='259' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='3'>-4</text><text x='337' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='4'>-9</text><text x='24' y='246' fill='#7dd3fc' font-size='16' font-weight='700'>Operación de fila: F3 → F3 − F2</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "matrix",
+        "analysis": {
+          "rows": 3,
+          "columns": 4,
+          "entryCount": 12,
+          "augmentedAfter": 3,
+          "augmentedDividerCorrected": false,
+          "matrixChanged": true,
+          "rowOperationCount": 1,
+          "rowOperationSource": "structured",
+          "rowOperationsVerified": true
+        }
+      }
+    },
+    {
+      "title": "Clasificación del Sistema mediante Teorema de Rouché-Frobenius",
+      "layout": "centered",
+      "phase": "analizar",
+      "subpart": "a",
+      "theory": "Teorema de Rouché-Frobenius: Un sistema lineal de $n$ incógnitas es compatible determinado (solución única) si y solo si $\\text{rg}(A) = \\text{rg}(A^*) = n$.",
+      "narration": "Clasificamos el sistema comparando el rango de la matriz de coeficientes con el rango de la matriz ampliada.",
+      "content": "<strong>OBJETIVO:</strong> Determinar la existencia y unicidad de soluciones mediante el Teorema de Rouché-Frobenius.<br><br><strong>CONEXIÓN:</strong> Analizamos la matriz escalonada obtenida en la fase anterior.<br><br><strong>ANÁLISIS DE RANGOS:</strong><br>- Matriz de coeficientes $A$: posee 3 filas no nulas, luego $\\text{rg}(A) = 3$.<br>- Matriz ampliada $A^*$: posee 3 filas no nulas, luego $\\text{rg}(A^*) = 3$.<br>- Número de incógnitas: $n = 3$ ($x, y, z$).<br><br><strong>RESULTADO:</strong> Dado que $\\text{rg}(A) = \\text{rg}(A^*) = 3 = n$, el sistema es <strong>Sistema Compatible Determinado (SCD)</strong>.<br><br><strong>INTERPRETACIÓN:</strong> El sistema posee una solución única $(x, y, z)$, lo que geométricamente representa tres planos que se cortan en un único punto del espacio tridimensional."
+    },
+    {
+      "title": "Resolución por Sustitución Regresiva",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "a",
+      "narration": "Despejamos sucesivamente las incognitas comenzando por zeta en la tercera ecuacion e iterando hacia arriba.",
+      "content": "<strong>OBJETIVO:</strong> Calcular los valores exactos de $z$, $y$ y $x$ a partir del sistema escalonado equivalente.<br><br><strong>CONEXIÓN:</strong> El sistema escalonado equivalente es:<br>$$\\begin{cases} x + y + z = 4 \\\\ -2y = -2 \\\\ -4z = -9 \\end{cases}$$<br><br><strong>CÁLCULO:</strong><br>1. De la 3ª ecuación (despeje de $z$):<br>$$-4z = -9 \\implies z = \\frac{-9}{-4} = \\frac{9}{4}$$<br>2. De la 2ª ecuación (despeje de $y$):<br>$$-2y = -2 \\implies y = \\frac{-2}{-2} = 1$$<br>3. De la 1ª ecuación (sustitución de $y$ y $z$ para despejar $x$):<br>$$x + 1 + \\frac{9}{4} = 4 \\implies x + \\frac{13}{4} = 4 \\implies x = 4 - \\frac{13}{4} = \\frac{3}{4}$$<br><br><strong>RESULTADO:</strong> La solución única del sistema es $x = \\frac{3}{4}$, $y = 1$, $z = \\frac{9}{4}$.<br><br><strong>INTERPRETACIÓN:</strong> Hemos determinado algebraicamente las coordenadas exactas de la única solución del sistema.<br><br><strong>RESPUESTA AL APARTADO a):</strong> La solución única del sistema es el triplete $x = \\frac{3}{4}$, $y = 1$, $z = \\frac{9}{4}$ (o en decimales $x = 0.75$, $y = 1$, $z = 2.25$)."
+    },
+    {
+      "title": "Comprobación Analítica de las Soluciones",
+      "layout": "centered",
+      "phase": "comprobar",
+      "subpart": "a",
+      "narration": "Sustituimos la solucion obtenida en cada una de las tres ecuaciones originales para verificar su validez.",
+      "content": "<strong>OBJETIVO:</strong> Verificar rigurosamente que la solución $(x, y, z) = \\left(\\frac{3}{4}, 1, \\frac{9}{4}\\right)$ satisface de forma simultánea todas las ecuaciones iniciales.<br><br><strong>CONEXIÓN:</strong> Evaluamos el valor numérico en el miembro izquierdo de cada ecuación dada en el enunciado.<br><br><strong>COMPROBACIÓN:</strong><br>1. Primera ecuación ($x + y + z = 4$):<br>$$\\frac{3}{4} + 1 + \\frac{9}{4} = \\frac{12}{4} + 1 = 3 + 1 = 4 \\quad \\checkmark \\text{ (Coincide)}$$<br>2. Segunda ecuación ($x - y + z = 2$):<br>$$\\frac{3}{4} - 1 + \\frac{9}{4} = \\frac{12}{4} - 1 = 3 - 1 = 2 \\quad \\checkmark \\text{ (Coincide)}$$<br>3. Tercera ecuación ($3x + y - z = 1$):<br>$$3\\left(\\frac{3}{4}\\right) + 1 - \\frac{9}{4} = \\frac{9}{4} + 1 - \\frac{9}{4} = 1 \\quad \\checkmark \\text{ (Coincide)}$$<br><br><strong>INTERPRETACIÓN:</strong> Las tres igualdades numéricas resultan verdaderas de forma simultánea, certificando que no existen errores algebraicos ni operacionales."
+    },
+    {
+      "title": "Interpretación Geométrica: Intersección de Planos en R3",
+      "layout": "split",
+      "phase": "interpretar",
+      "subpart": "a",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "planes3d",
+        "expectedClassification": "SCD",
+        "planes": [
+          {
+            "id": "pi1",
+            "label": "π1",
+            "coefficients": [
+              "1",
+              "1",
+              "1",
+              "4"
+            ]
+          },
+          {
+            "id": "pi2",
+            "label": "π2",
+            "coefficients": [
+              "1",
+              "-1",
+              "1",
+              "2"
+            ]
+          },
+          {
+            "id": "pi3",
+            "label": "π3",
+            "coefficients": [
+              "3",
+              "1",
+              "-1",
+              "1"
+            ]
+          }
+        ]
+      },
+      "visualDescription": "Representación tridimensional de los tres planos pi1 (x+y+z=4), pi2 (x-y+z=2) y pi3 (3x+y-z=1) intersecándose en el punto único P(3/4, 1, 9/4).",
+      "visualMathLink": "Cada ecuación lineal representa un plano en R3. La solución única del sistema SCD corresponde a las coordenadas del punto común P donde convergen los tres planos.",
+      "narration": "Visualizamos los tres planos asociados a las ecuaciones del sistema y su punto de corte comun.",
+      "content": "<strong>OBJETIVO:</strong> Interpretar la solución algebraica desde una perspectiva geométrica en el espacio tridimensional.<br><br><strong>CONEXIÓN:</strong> Cada una de las tres ecuaciones lineales con tres variables representa la ecuación implícita de un plano en $\\mathbb{R}^3$.<br><br><strong>ANÁLISIS GEOMÉTRICO:</strong><br>- Plano $\\pi_1$: $x + y + z = 4$, vector normal $\\vec{n}_1 = (1, 1, 1)$.<br>- Plano $\\pi_2$: $x - y + z = 2$, vector normal $\\vec{n}_2 = (1, -1, 1)$.<br>- Plano $\\pi_3$: $3x + y - z = 1$, vector normal $\\vec{n}_3 = (3, 1, -1)$.<br>Los tres vectores normales son linealmente independientes (el determinante de la matriz formada por ellos es $-4 \\neq 0$).<br><br><strong>INTERPRETACIÓN:</strong> Los planos no son paralelos dos a dos ni coinciden. La clasificación como SCD garantiza que la intersección de los tres planos es el punto $P\\left(\\frac{3}{4}, 1, \\frac{9}{4}\\right)$.",
+      "visual": "<svg viewBox='0 0 660 470' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='three-planes' data-visual-contract='1.0' data-verification-status='verified' data-classification='SCD' data-incidence-rendering='centered-certified'><rect x='0' y='0' width='660' height='470' rx='14' fill='#0f172a'/><text x='18' y='28' fill='#e2e8f0' font-size='15' font-weight='700'>Vista 3D calculada y certificada · rang(A)=3; rang(A*)=3; SCD</text><line x1='330.77' y1='203.70' x2='353.15' y2='350.56' stroke='#fbbf24' stroke-width='1.7' opacity='0.72'/><circle cx='353.15' cy='350.56' r='2.6' fill='#fbbf24'/><text x='358.15' y='343.56' fill='#fbbf24' font-size='15' font-weight='700'>x</text><line x1='495.21' y1='271.77' x2='188.71' y2='282.49' stroke='#fbbf24' stroke-width='1.7' opacity='0.72'/><circle cx='188.71' cy='282.49' r='2.6' fill='#fbbf24'/><text x='193.71' y='275.49' fill='#fbbf24' font-size='15' font-weight='700'>y</text><line x1='341.96' y1='412.00' x2='341.96' y2='142.26' stroke='#fbbf24' stroke-width='1.7' opacity='0.72'/><circle cx='341.96' cy='142.26' r='2.6' fill='#fbbf24'/><text x='346.96' y='135.26' fill='#fbbf24' font-size='15' font-weight='700'>z</text><polygon points='458.77,220.47 268.04,395 164.79,232.52 355.51,58' fill='#38bdf8' fill-opacity='0.18' stroke='#38bdf8' stroke-width='2.5' stroke-dasharray='' data-plane-id='pi1' data-plane-equation='1,1,1,4'/><polygon points='368.67,391.48 177.95,230.3 254.88,61.52 445.61,222.7' fill='#f472b6' fill-opacity='0.18' stroke='#f472b6' stroke-width='2.5' stroke-dasharray='9 6' data-plane-id='pi2' data-plane-equation='1,-1,1,2'/><polygon points='201.15,297.96 207.38,113.64 422.4,155.04 416.18,339.36' fill='#4ade80' fill-opacity='0.18' stroke='#4ade80' stroke-width='2.5' stroke-dasharray='3 5' data-plane-id='pi3' data-plane-equation='3,1,-1,1'/><g aria-label='Leyenda de planos'><rect x='18' y='42' width='164' height='86' rx='8' fill='#0f172a' fill-opacity='0.94' stroke='#475569' stroke-width='1.5'/><line x1='30' y1='63' x2='60' y2='63' stroke='#38bdf8' stroke-width='3.5' stroke-dasharray=''/><text x='70' y='68' fill='#38bdf8' font-size='14' font-weight='700'>π1 </text><line x1='30' y1='87' x2='60' y2='87' stroke='#f472b6' stroke-width='3.5' stroke-dasharray='9 6'/><text x='70' y='92' fill='#f472b6' font-size='14' font-weight='700'>π2 </text><line x1='30' y1='111' x2='60' y2='111' stroke='#4ade80' stroke-width='3.5' stroke-dasharray='3 5'/><text x='70' y='116' fill='#4ade80' font-size='14' font-weight='700'>π3 </text></g><g data-solution-point='3/4,1,9/4' aria-label='Punto perteneciente a los tres planos'><circle cx='311.78' cy='226.50' r='13' fill='none' stroke='#38bdf8' stroke-width='3'/><circle cx='311.78' cy='226.50' r='9' fill='none' stroke='#f472b6' stroke-width='3'/><circle cx='311.78' cy='226.50' r='5' fill='#fb923c' stroke='#4ade80' stroke-width='3'/><text x='328.78' y='213.50' fill='#fb923c' font-size='15' font-weight='700'>P ∈ π1 ∩ π2 ∩ π3</text></g><rect x='358' y='42' width='284' height='50' rx='8' fill='#0f172a' fill-opacity='0.94' stroke='#fb923c' stroke-width='1.5'/><text x='370' y='64' fill='#fb923c' font-size='14' font-weight='700'>π1 ∩ π2 ∩ π3 = {P}</text><text x='370' y='84' fill='#e2e8f0' font-size='13'>P = (3/4, 1, 9/4)</text><rect x='12' y='433' width='636' height='27' rx='7' fill='#0f172a' fill-opacity='0.92'/><text x='330' y='452' text-anchor='middle' fill='#cbd5e1' font-size='12.5'>Los parches son recortes visuales; ecuaciones, rangos e incidencia se verifican con cálculo exacto.</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "planes3d",
+        "analysis": {
+          "classification": "SCD",
+          "rankA": 3,
+          "rankAugmented": 3,
+          "dimension": 0,
+          "incidenceVerified": true,
+          "projectionLineVisibility": 1,
+          "projectionMinimumFaceVisibility": 0.6666,
+          "projectionPlaneSeparation": 0
+        }
+      }
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos el metodo global paso a paso para fijar el aprendizaje.",
+      "content": "<strong>MÉTODO DE RESOLUCIÓN PASO A PASO:</strong><br>1. <strong>Formulación Matricial:</strong> Se extraen las matrices de coeficientes $A$ y ampliada $A^*$.<br>2. <strong>Triangulación de Gauss:</strong> Mediante operaciones elementales $F_2 \\to F_2 - F_1$, $F_3 \\to F_3 - 3F_1$ y $F_3 \\to F_3 - F_2$, se obtiene la forma escalonada triangular.<br>3. <strong>Clasificación:</strong> $\\text{rg}(A) = \\text{rg}(A^*) = 3 = n$, clasificando el sistema como Compatible Determinado (SCD).<br>4. <strong>Sustitución Regresiva:</strong> Se calculan $z = \\frac{9}{4}$, $y = 1$, $x = \\frac{3}{4}$.<br>5. <strong>Comprobación:</strong> Se verifica el cumplimiento de las 3 ecuaciones originales.<br>6. <strong>Interpretación Geométrica:</strong> Punto de corte único de tres planos no paralelos.<br><br><strong>RESULTADO FINAL:</strong>\n$$x = \\frac{3}{4}, \\quad y = 1, \\quad z = \\frac{9}{4}$$"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica exactamente las mismas operaciones del metodo de Gauss a este sistema con datos numericos modificados.",
+      "content": "Resuelve y clasifica mediante el método de Gauss el siguiente sistema de ecuaciones lineales de estructura idéntica:\n$$\\begin{cases} x + y + z = 6 \\\\ x - y + z = 2 \\\\ 2x + y - z = 3 \\end{cases}$$\n\nInténtalo de forma independiente aplicando las mismas transformaciones por filas antes de comprobar la respuesta.",
+      "practiceAnswer": "Sistema Compatible Determinado (SCD) con solución única exacta: x = 5/3, y = 2, z = 7/3."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica el concepto de resolucion de sistemas lineales a un problema de contexto real de distribucion de recursos.",
+      "content": "Un taller produce tres tipos de productos ($A, B, C$). Cada unidad de $A$ requiere 1 hora de corte, 1 de ensamblaje y 3 de acabado. Cada unidad de $B$ requiere 1 hora de corte, 1 de ensamblaje (y -1 de acabado en balance de horas de proceso). Cada unidad de $C$ requiere 1 hora de corte, 1 de ensamblaje y -1 de acabado. Si se dispone en total de 4 horas de corte, 2 de ensamblaje y 1 hora neta de acabado, plantea y resuelve el sistema para hallar las unidades producidas de cada tipo.",
+      "practiceAnswer": "Sistema de ecuaciones: x + y + z = 4, x - y + z = 2, 3x + y - z = 1. Solución única: x = 3/4 unidades del producto A, y = 1 unidad del producto B, z = 9/4 unidades del producto C."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-09-24T11:51:17.863Z",
+    "updatedAt": "2026-09-24T11:51:17.863Z",
+    "contentHash": "3737d07c5621a7ea",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "automatic_checks_passed"
+  }
+}

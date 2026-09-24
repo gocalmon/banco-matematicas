@@ -1,0 +1,452 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "1.º Bachillerato",
+    "topic": "Álgebra Lineal",
+    "subtopic": "Sistemas de Ecuaciones Lineales",
+    "exerciseType": "Resolución y Clasificación de Sistemas 3x3 por el Método de Gauss",
+    "protocols": [
+      "C"
+    ],
+    "difficulty": "media",
+    "estimatedMinutes": 15,
+    "learningObjectives": [
+      "Plantear la matriz ampliada asociada a un sistema de ecuaciones lineales 3x3.",
+      "Aplicar el método de eliminación de Gauss mediante operaciones elementales por filas.",
+      "Clasificar el sistema mediante el Teorema de Rouché-Frobenius a partir de los rangos obtenidos.",
+      "Obtener e interpretar la solución general del sistema paramétricamente y comprobar su validez."
+    ],
+    "prerequisites": [
+      "Operaciones aritméticas con números enteros y fracciones.",
+      "Concepto de ecuaciones lineales y matrices asociadas.",
+      "Transformaciones equivalentes por filas en matrices."
+    ],
+    "subparts": [
+      {
+        "id": "1",
+        "request": "Clasificar y resolver el sistema de ecuaciones lineales: \\begin{cases} x - y + z = 1 \\\\ 2x + y - 2z = 2 \\\\ x + 2y - 3z = 1 \\end{cases}"
+      }
+    ],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 12,
+    "statementHash": "643aad44505ffa8e",
+    "metadataSource": "provided",
+    "importedAt": "2026-09-24T11:32:32.080Z",
+    "hasVerifiedVisualSupport": true,
+    "id": "resolucion-completa-del-sistema-de-ecuaciones-lineal-3a11813d"
+  },
+  "title": "Resolución completa del sistema de ecuaciones lineales",
+  "slides": [
+    {
+      "title": "Enunciado del problema",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "En esta primera diapositiva presentamos el sistema de ecuaciones lineales tal como aparece planteado en el ejercicio original. Se trata de un sistema de tres ecuaciones con tres incógnitas que debemos resolver y clasificar.",
+      "content": "<p>Resuelve y clasifica el siguiente sistema de ecuaciones lineales de tres incógnitas:</p>$$\\begin{cases} x - y + z = 1 \\\\ 2x + y - 2z = 2 \\\\ x + 2y - 3z = 1 \\end{cases}$$"
+    },
+    {
+      "title": "Estrategia y planificación",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Para abordar este problema, utilizaremos el método de eliminación de Gauss transformando la matriz ampliada asociada al sistema. Esto nos permitirá escalonar la matriz, aplicar el Teorema de Rouché-Frobenius para determinar el tipo de sistema y hallar su conjunto solución.",
+      "content": "<p><strong>1. ¿Qué se pide?</strong> Clasificar el sistema de ecuaciones lineales (determinar si es SCD, SCI o SI) y obtener su conjunto solución algebraico.</p><p><strong>2. Datos principales:</strong> Tres ecuaciones lineales con tres incógnitas ($x$, $y$, $z$).</p><p><strong>3. Estrategia metodológica:</strong></p><ul><li>Expresar el sistema mediante su matriz ampliada $A^*$.</li><li>Aplicar operaciones elementales por filas para transformar $A^*$ en una matriz escalonada por filas.</li><li>Analizar el rango de la matriz de coeficientes $A$ y de la matriz ampliada $A^*$.</li><li>Aplicar el Teorema de Rouché-Frobenius para clasificar y parametrizar las soluciones.</li></ul><p><strong>4. Aplicación práctica / contextual:</strong> Los sistemas de ecuaciones lineales 3x3 modelan problemas de equilibrio en física, asignación de recursos en economía e intersección de superficies planas en geometría tridimensional y gráficos por ordenador.</p>",
+      "theory": "<strong>Teorema de Rouché-Frobenius:</strong> Un sistema $A \\cdot X = B$ con $n$ incógnitas es compatible si y solo si $\\text{rg}(A) = \\text{rg}(A^*)$. Es <em>determinado</em> (solución única) si $\\text{rg}(A) = n$, y <em>indeterminado</em> (infinitas soluciones) si $\\text{rg}(A) < n$. Si $\\text{rg}(A) \\neq \\text{rg}(A^*)$, el sistema es incompatible."
+    },
+    {
+      "title": "Paso 1: Construcción de la matriz ampliada",
+      "layout": "split",
+      "phase": "analizar",
+      "subpart": "1",
+      "narration": "Comenzamos extrayendo los coeficientes y términos independientes del sistema para formar la matriz ampliada A estrella de dimensión tres por cuatro.",
+      "content": "<p><strong>OBJETIVO:</strong> Representar el sistema lineal mediante su matriz ampliada asociada $A^*$.</p><p><strong>CONEXIÓN:</strong> Partimos de la forma implícita de las tres ecuaciones dadas en el enunciado.</p><p><strong>DATOS:</strong> Ordenamos los coeficientes de las variables $x$, $y$, $z$ en las columnas 1, 2 y 3, y los términos independientes en la columna 4:</p>$$\\begin{array}{rcccl} x & - & y & + & z = 1 \\\\ 2x & + & y & - & 2z = 2 \\\\ x & + & 2y & - & 3z = 1 \\end{array} \\implies A^* = \\begin{pmatrix} 1 & -1 & 1 & | & 1 \\\\ 2 & 1 & -2 & | & 2 \\\\ 1 & 2 & -3 & | & 1 \\end{pmatrix}$$<p><strong>INTERPRETACIÓN:</strong> La primera fila representa la primera ecuación, la segunda fila la segunda ecuación y la tercera fila la tercera ecuación. El pivote $a_{11} = 1$ facilitará la eliminación de la variable $x$ en las siguientes filas.</p>",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "matrix",
+        "label": "A*",
+        "matrixRole": "augmented",
+        "coefficientColumns": 3,
+        "rightHandColumns": 1,
+        "augmentedAfter": 3,
+        "rows": [
+          [
+            "1",
+            "-1",
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "1",
+            "-2",
+            "2"
+          ],
+          [
+            "1",
+            "2",
+            "-3",
+            "1"
+          ]
+        ]
+      },
+      "visualDescription": "Matriz ampliada inicial de tres filas y cuatro columnas. Las tres primeras columnas forman la matriz de coeficientes A con entradas en la fila 1: 1, -1, 1; fila 2: 2, 1, -2; fila 3: 1, 2, -3. La cuarta columna separada por una barra contiene los términos independientes: 1, 2, 1.",
+      "visualMathLink": "Muestra la estructura matricial inicial del sistema antes de comenzar la eliminación gaussiana.",
+      "visual": "<svg viewBox='0 0 440 246' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='matrix' data-visual-contract='1.0' data-verification-status='verified' data-matrix-dimensions='3x4' data-matrix-operation-count='0'><rect x='0' y='0' width='440' height='246' rx='14' fill='#0f172a'/><text x='18' y='25' fill='#38bdf8' font-size='15' font-weight='700'>Matriz A*</text><path d='M 72 34 H 58 V 218 H 72' fill='none' stroke='#94a3b8' stroke-width='3'/><path d='M 368 34 H 382 V 218 H 368' fill='none' stroke='#94a3b8' stroke-width='3'/><line x1='298' y1='34' x2='298' y2='218' stroke='#fbbf24' stroke-width='2.5' stroke-dasharray='7 5'/><text x='103' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='1'>1</text><text x='181' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='2'>-1</text><text x='259' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='3'>1</text><text x='337' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='4'>1</text><text x='103' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='1'>2</text><text x='181' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='2'>1</text><text x='259' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='3'>-2</text><text x='337' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='4'>2</text><text x='103' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='1'>1</text><text x='181' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='2'>2</text><text x='259' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='3'>-3</text><text x='337' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='4'>1</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "matrix",
+        "analysis": {
+          "rows": 3,
+          "columns": 4,
+          "entryCount": 12,
+          "augmentedAfter": 3,
+          "augmentedDividerCorrected": false,
+          "matrixChanged": false,
+          "rowOperationCount": 0,
+          "rowOperationSource": "none",
+          "rowOperationsVerified": false
+        }
+      }
+    },
+    {
+      "title": "Paso 2: Eliminación en la segunda fila (F2)",
+      "layout": "split",
+      "phase": "resolver",
+      "subpart": "1",
+      "narration": "Para hacer cero el primer elemento de la segunda fila, restamos a la segunda fila el doble de la primera fila. Calculamos cada entrada minuciosamente.",
+      "content": "<p><strong>OBJETIVO:</strong> Eliminar el coeficiente de $x$ en la segunda fila ($F_2$).</p><p><strong>CONEXIÓN:</strong> Utilizamos el pivote $a_{11} = 1$ ubicado en la primera fila $F_1$.</p><p><strong>CÁLCULO:</strong> Aplicamos la operación elemental $F_2 \\to F_2 - 2F_1$. Calculamos término a término:</p><ul><li>Columna 1: $2 - 2(1) = 2 - 2 = 0$</li><li>Columna 2: $1 - 2(-1) = 1 + 2 = 3$</li><li>Columna 3: $-2 - 2(1) = -2 - 2 = -4$</li><li>Término independiente: $2 - 2(1) = 2 - 2 = 0$</li></ul><p>Resulta la nueva fila $F_2 = (0, 3, -4, 0)$.</p><p><strong>INTERPRETACIÓN:</strong> La segunda ecuación se ha transformado en la ecuación equivalente $3y - 4z = 0$, independiente de $x$.</p>",
+      "warning": "<strong>Atención con los signos:</strong> Al calcular $1 - 2(-1)$, el doble negativo se convierte en suma $1 + 2 = 3$. Un error de signo en esta etapa alteraría toda la resolución posterior.",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "matrix",
+        "label": "A*",
+        "matrixRole": "augmented",
+        "coefficientColumns": 3,
+        "rightHandColumns": 1,
+        "augmentedAfter": 3,
+        "rows": [
+          [
+            "1",
+            "-1",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "3",
+            "-4",
+            "0"
+          ],
+          [
+            "1",
+            "2",
+            "-3",
+            "1"
+          ]
+        ],
+        "rowOperations": [
+          {
+            "type": "replace",
+            "target": 2,
+            "source": 1,
+            "multiplier": "-2"
+          }
+        ]
+      },
+      "visualDescription": "Matriz ampliada tras transformar la segunda fila mediante F2 reemplazada por F2 menos dos F1. La segunda fila pasa a ser 0, 3, -4 | 0. Las filas 1 y 3 permanecen inalteradas.",
+      "visualMathLink": "Muestra el estado de la matriz tras hacer cero el primer elemento de la segunda fila.",
+      "visual": "<svg viewBox='0 0 440 273' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='matrix' data-visual-contract='1.0' data-verification-status='verified' data-matrix-dimensions='3x4' data-matrix-operation-count='1'><rect x='0' y='0' width='440' height='273' rx='14' fill='#0f172a'/><text x='18' y='25' fill='#38bdf8' font-size='15' font-weight='700'>Matriz A*</text><path d='M 72 34 H 58 V 218 H 72' fill='none' stroke='#94a3b8' stroke-width='3'/><path d='M 368 34 H 382 V 218 H 368' fill='none' stroke='#94a3b8' stroke-width='3'/><line x1='298' y1='34' x2='298' y2='218' stroke='#fbbf24' stroke-width='2.5' stroke-dasharray='7 5'/><text x='103' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='1'>1</text><text x='181' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='2'>-1</text><text x='259' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='3'>1</text><text x='337' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='4'>1</text><text x='103' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='1'>0</text><text x='181' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='2'>3</text><text x='259' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='3'>-4</text><text x='337' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='4'>0</text><text x='103' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='1'>1</text><text x='181' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='2'>2</text><text x='259' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='3'>-3</text><text x='337' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='4'>1</text><text x='24' y='246' fill='#7dd3fc' font-size='16' font-weight='700'>Operación de fila: F2 → F2 − 2F1</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "matrix",
+        "analysis": {
+          "rows": 3,
+          "columns": 4,
+          "entryCount": 12,
+          "augmentedAfter": 3,
+          "augmentedDividerCorrected": false,
+          "matrixChanged": true,
+          "rowOperationCount": 1,
+          "rowOperationSource": "structured",
+          "rowOperationsVerified": true
+        }
+      }
+    },
+    {
+      "title": "Paso 3: Eliminación en la tercera fila (F3)",
+      "layout": "split",
+      "phase": "resolver",
+      "subpart": "1",
+      "narration": "A continuación, eliminamos la variable x de la tercera fila restando la primera fila a la tercera fila.",
+      "content": "<p><strong>OBJETIVO:</strong> Anular el primer coeficiente de la tercera fila ($F_3$).</p><p><strong>CONEXIÓN:</strong> Continuamos usando el pivote $a_{11} = 1$ de la primera fila $F_1$.</p><p><strong>CÁLCULO:</strong> Aplicamos la operación elemental $F_3 \\to F_3 - F_1$. Operamos entrada a entrada:</p><ul><li>Columna 1: $1 - 1 = 0$</li><li>Columna 2: $2 - (-1) = 2 + 1 = 3$</li><li>Columna 3: $-3 - 1 = -4$</li><li>Término independiente: $1 - 1 = 0$</li></ul><p>Obtenemos la nueva tercera fila $F_3 = (0, 3, -4, 0)$.</p><p><strong>INTERPRETACIÓN:</strong> La tercera ecuación equivale ahora a $3y - 4z = 0$, idéntica a la segunda ecuación obtenida en el paso anterior.</p>",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "matrix",
+        "label": "A*",
+        "matrixRole": "augmented",
+        "coefficientColumns": 3,
+        "rightHandColumns": 1,
+        "augmentedAfter": 3,
+        "rows": [
+          [
+            "1",
+            "-1",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "3",
+            "-4",
+            "0"
+          ],
+          [
+            "0",
+            "3",
+            "-4",
+            "0"
+          ]
+        ],
+        "rowOperations": [
+          {
+            "type": "replace",
+            "target": 3,
+            "source": 1,
+            "multiplier": "-1"
+          }
+        ]
+      },
+      "visualDescription": "Matriz ampliada tras la operación F3 menos F1. La tercera fila se convierte en 0, 3, -4 | 0, mostrando valores idénticos a la segunda fila.",
+      "visualMathLink": "Muestra la matriz escalonada en su penúltima etapa, donde las filas 2 y 3 son idénticas.",
+      "visual": "<svg viewBox='0 0 440 273' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='matrix' data-visual-contract='1.0' data-verification-status='verified' data-matrix-dimensions='3x4' data-matrix-operation-count='1'><rect x='0' y='0' width='440' height='273' rx='14' fill='#0f172a'/><text x='18' y='25' fill='#38bdf8' font-size='15' font-weight='700'>Matriz A*</text><path d='M 72 34 H 58 V 218 H 72' fill='none' stroke='#94a3b8' stroke-width='3'/><path d='M 368 34 H 382 V 218 H 368' fill='none' stroke='#94a3b8' stroke-width='3'/><line x1='298' y1='34' x2='298' y2='218' stroke='#fbbf24' stroke-width='2.5' stroke-dasharray='7 5'/><text x='103' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='1'>1</text><text x='181' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='2'>-1</text><text x='259' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='3'>1</text><text x='337' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='4'>1</text><text x='103' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='1'>0</text><text x='181' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='2'>3</text><text x='259' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='3'>-4</text><text x='337' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='4'>0</text><text x='103' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='1'>0</text><text x='181' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='2'>3</text><text x='259' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='3'>-4</text><text x='337' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='4'>0</text><text x='24' y='246' fill='#7dd3fc' font-size='16' font-weight='700'>Operación de fila: F3 → F3 − F1</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "matrix",
+        "analysis": {
+          "rows": 3,
+          "columns": 4,
+          "entryCount": 12,
+          "augmentedAfter": 3,
+          "augmentedDividerCorrected": false,
+          "matrixChanged": true,
+          "rowOperationCount": 1,
+          "rowOperationSource": "structured",
+          "rowOperationsVerified": true
+        }
+      }
+    },
+    {
+      "title": "Paso 4: Escalonamiento completo de la matriz",
+      "layout": "split",
+      "phase": "resolver",
+      "subpart": "1",
+      "narration": "Para completar la forma escalonada, restamos la segunda fila a la tercera fila, lo que produce una fila completamente nula.",
+      "content": "<p><strong>OBJETIVO:</strong> Obtener la forma triangular o escalonada definitiva de la matriz ampliada.</p><p><strong>CONEXIÓN:</strong> Observamos que la fila $F_2$ y la fila $F_3$ son idénticas en el estado anterior.</p><p><strong>CÁLCULO:</strong> Aplicamos $F_3 \\to F_3 - F_2$:</p><ul><li>Columna 1: $0 - 0 = 0$</li><li>Columna 2: $3 - 3 = 0$</li><li>Columna 3: $-4 - (-4) = 0$</li><li>Término independiente: $0 - 0 = 0$</li></ul><p>La nueva tercera fila queda en ceros: $F_3 = (0, 0, 0, 0)$.</p><p><strong>INTERPRETACIÓN:</strong> Al obtener $0 = 0$, confirmamos que la tercera ecuación era combinación lineal de las dos primeras (ecuación redundante).</p>",
+      "checkpoint": {
+        "question": "¿Qué indica la presencia de una fila completa de ceros (0 | 0) en la matriz escalonada?",
+        "options": [
+          {
+            "text": "Que el sistema no tiene ningún tipo de solución (es incompatible).",
+            "correct": false,
+            "feedback": "Incorrecto. Una fila 0 = 0 es una identidad siempre cierta (0 = 0), no una contradicción como 0 = 5."
+          },
+          {
+            "text": "Que existe al menos una ecuación linealmente dependiente y el sistema no es incompatible.",
+            "correct": true,
+            "feedback": "¡Correcto! Una fila nula 0 = 0 indica redundancia, lo que reduce el número de ecuaciones independientes."
+          },
+          {
+            "text": "Que la única solución posible es la solución trivial x = y = z = 0.",
+            "correct": false,
+            "feedback": "Incorrecto. Al reducirse el rango a 2 con 3 incógnitas, hay infinitas soluciones paramétricas."
+          }
+        ]
+      },
+      "visualModel": {
+        "version": "1.0",
+        "kind": "matrix",
+        "label": "A*",
+        "matrixRole": "augmented",
+        "coefficientColumns": 3,
+        "rightHandColumns": 1,
+        "augmentedAfter": 3,
+        "rows": [
+          [
+            "1",
+            "-1",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "3",
+            "-4",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "rowOperations": [
+          {
+            "type": "replace",
+            "target": 3,
+            "source": 2,
+            "multiplier": "-1"
+          }
+        ]
+      },
+      "visualDescription": "Matriz ampliada en forma escalonada final. Fila 1: 1, -1, 1 | 1; Fila 2: 0, 3, -4 | 0; Fila 3: 0, 0, 0 | 0.",
+      "visualMathLink": "Muestra el estado final reducido de Gauss con rango de A igual a 2 y rango de A estrella igual a 2.",
+      "visual": "<svg viewBox='0 0 440 273' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='matrix' data-visual-contract='1.0' data-verification-status='verified' data-matrix-dimensions='3x4' data-matrix-operation-count='1'><rect x='0' y='0' width='440' height='273' rx='14' fill='#0f172a'/><text x='18' y='25' fill='#38bdf8' font-size='15' font-weight='700'>Matriz A*</text><path d='M 72 34 H 58 V 218 H 72' fill='none' stroke='#94a3b8' stroke-width='3'/><path d='M 368 34 H 382 V 218 H 368' fill='none' stroke='#94a3b8' stroke-width='3'/><line x1='298' y1='34' x2='298' y2='218' stroke='#fbbf24' stroke-width='2.5' stroke-dasharray='7 5'/><text x='103' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='1'>1</text><text x='181' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='2'>-1</text><text x='259' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='3'>1</text><text x='337' y='68' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='1' data-matrix-column='4'>1</text><text x='103' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='1'>0</text><text x='181' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='2'>3</text><text x='259' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='3'>-4</text><text x='337' y='126' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='2' data-matrix-column='4'>0</text><text x='103' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='1'>0</text><text x='181' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='2'>0</text><text x='259' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='3'>0</text><text x='337' y='184' text-anchor='middle' dominant-baseline='middle' fill='#f8fafc' font-size='22' data-matrix-row='3' data-matrix-column='4'>0</text><text x='24' y='246' fill='#7dd3fc' font-size='16' font-weight='700'>Operación de fila: F3 → F3 − F2</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "matrix",
+        "analysis": {
+          "rows": 3,
+          "columns": 4,
+          "entryCount": 12,
+          "augmentedAfter": 3,
+          "augmentedDividerCorrected": false,
+          "matrixChanged": true,
+          "rowOperationCount": 1,
+          "rowOperationSource": "structured",
+          "rowOperationsVerified": true
+        }
+      }
+    },
+    {
+      "title": "Paso 5: Clasificación y obtención de la solución general",
+      "layout": "centered",
+      "phase": "resolver",
+      "subpart": "1",
+      "narration": "Analizamos los rangos obtenidos: el rango de A y el de A estrella valen dos, menor que el número de incógnitas tres. Por tanto, el sistema es compatible indeterminado y tiene infinitas soluciones expresadas en función de un parámetro.",
+      "content": "<p><strong>OBJETIVO:</strong> Aplicar el Teorema de Rouché-Frobenius y hallar la familia de soluciones del sistema.</p><p><strong>CONEXIÓN:</strong> Utilizamos la matriz escalonada reducida obtenida en el paso anterior.</p><p><strong>CÁLCULO:</strong></p><p>1. <em>Análisis de rangos:</em></p><ul><li>Número de filas no nulas en $A$: $\\text{rg}(A) = 2$.</li><li>Número de filas no nulas en $A^*$: $\\text{rg}(A^*) = 2$.</li><li>Número de incógnitas: $n = 3$ ($x, y, z$).</li></ul><p>Como $\\text{rg}(A) = \\text{rg}(A^*) = 2 < 3$, el sistema es <strong>Compatible Indeterminado (SCI)</strong> con $3 - 2 = 1$ grado de libertad.</p><p>2. <em>Obtención de la solución en función del parámetro $\\lambda$:</em></p><ul><li>Asignamos la variable libre $z = \\lambda$ con $\\lambda \\in \\mathbb{R}$.</li><li>De la fila 2 ($3y - 4z = 0$): $$3y - 4\\lambda = 0 \\implies 3y = 4\\lambda \\implies y = \\frac{4}{3}\\lambda$$</li><li>De la fila 1 ($x - y + z = 1$): $$x - \\frac{4}{3}\\lambda + \\lambda = 1 \\implies x - \\frac{1}{3}\\lambda = 1 \\implies x = 1 + \\frac{1}{3}\\lambda$$</li></ul><p><strong>RESULTADO:</strong> La solución general del sistema es:</p>$$\\begin{cases} x = 1 + \\dfrac{1}{3}\\lambda \\\\[6pt] y = \\dfrac{4}{3}\\lambda \\\\[6pt] z = \\lambda \\end{cases} \\quad (\\lambda \\in \\mathbb{R})$$<p><strong>INTERPRETACIÓN:</strong> Las soluciones forman una recta en el espacio tridimensional $\\mathbb{R}^3$, caracterizada por el punto de paso $(1, 0, 0)$ y el vector director $\\mathbf{v} = \\left(\\frac{1}{3}, \\frac{4}{3}, 1\\right)$ o expresado equivalentemente $(1, 4, 3)$.</p><p><strong>RESPUESTA AL APARTADO 1):</strong> El sistema es <strong>Compatible Indeterminado (SCI)</strong>. Su conjunto de infinitas soluciones viene dado de forma paramétrica por $(x, y, z) = \\left(1 + \\frac{1}{3}\\lambda, \\frac{4}{3}\\lambda, \\lambda\\right)$ para cualquier $\\lambda \\in \\mathbb{R}$.</p>"
+    },
+    {
+      "title": "Paso 6: Comprobación analítica rigurosa",
+      "layout": "centered",
+      "phase": "comprobar",
+      "subpart": "1",
+      "narration": "Verificamos la solución sustituyendo las expresiones paramétricas de x, y, z en las tres ecuaciones originales del sistema para asegurar que se satisfacen idénticamente para todo valor de lambda.",
+      "content": "<p><strong>OBJETIVO:</strong> Comprobar algebraicamente que la solución paramétrica satisface las tres ecuaciones originales.</p><p><strong>CONEXIÓN:</strong> Tomamos las expresiones $x = 1 + \\frac{1}{3}\\lambda$, $y = \\frac{4}{3}\\lambda$, $z = \\lambda$ e introducimos cada una en las ecuaciones iniciales.</p><p><strong>COMPROBACIÓN:</strong></p><ul><li><strong>Ecuación 1 ($x - y + z = 1$):</strong> $$\\left(1 + \\frac{1}{3}\\lambda\\right) - \\left(\\frac{4}{3}\\lambda\\right) + \\lambda = 1 + \\left(\\frac{1}{3} - \\frac{4}{3} + 1\\right)\\lambda = 1 + 0\\cdot\\lambda = 1 \\quad \\checkmark$$</li><li><strong>Ecuación 2 ($2x + y - 2z = 2$):</strong> $$2\\left(1 + \\frac{1}{3}\\lambda\\right) + \\left(\\frac{4}{3}\\lambda\\right) - 2\\lambda = 2 + \\frac{2}{3}\\lambda + \\frac{4}{3}\\lambda - 2\\lambda = 2 + \\left(\\frac{6}{3} - 2\\right)\\lambda = 2 + 0\\cdot\\lambda = 2 \\quad \\checkmark$$</li><li><strong>Ecuación 3 ($x + 2y - 3z = 1$):</strong> $$\\left(1 + \\frac{1}{3}\\lambda\\right) + 2\\left(\\frac{4}{3}\\lambda\\right) - 3\\lambda = 1 + \\frac{1}{3}\\lambda + \\frac{8}{3}\\lambda - 3\\lambda = 1 + \\left(\\frac{9}{3} - 3\\right)\\lambda = 1 + 0\\cdot\\lambda = 1 \\quad \\checkmark$$</li></ul><p><strong>INTERPRETACIÓN:</strong> Las tres ecuaciones se reducen a identidades verdaderas independientemente del valor de $\\lambda$. Esto garantiza la validez absoluta de la solución paramétrica obtenida.</p>"
+    },
+    {
+      "title": "Paso 7: Interpretación geométrica tridimensional",
+      "layout": "split",
+      "phase": "interpretar",
+      "subpart": "1",
+      "narration": "En el espacio tridimensional, cada una de las tres ecuaciones representa un plano. Como el sistema es compatible indeterminado con un grado de libertad, los tres planos se cortan a lo largo de una misma recta común.",
+      "content": "<p><strong>OBJETIVO:</strong> Interpretar la solución del sistema desde la geometría analítica en $\\mathbb{R}^3$.</p><p><strong>CONEXIÓN:</strong> Relacionamos la clasificación algebraica (SCI) con la posición relativa de tres planos en el espacio.</p><p><strong>MÉTODO:</strong></p><ul><li>Plano $\\pi_1: x - y + z = 1$ (vector normal $\\mathbf{n}_1 = (1, -1, 1)$).</li><li>Plano $\\pi_2: 2x + y - 2z = 2$ (vector normal $\\mathbf{n}_2 = (2, 1, -2)$).</li><li>Plano $\\pi_3: x + 2y - 3z = 1$ (vector normal $\\mathbf{n}_3 = (1, 2, -3)$).</li></ul><p>Ningún par de planos es paralelo porque sus vectores normales no son proporcionales. Al cortarse en pares, los planos definen rectas de intersección que coinciden en una única recta común $r$.</p><p><strong>INTERPRETACIÓN:</strong> El conjunto de puntos que pertenece simultáneamente a los tres planos es la recta de solución $r: (x, y, z) = (1, 0, 0) + \\lambda\\left(\\frac{1}{3}, \\frac{4}{3}, 1\\right)$.</p>",
+      "visualModel": {
+        "version": "1.0",
+        "kind": "planes3d",
+        "expectedClassification": "SCI",
+        "planes": [
+          {
+            "id": "pi1",
+            "label": "π1",
+            "coefficients": [
+              "1",
+              "-1",
+              "1",
+              "1"
+            ]
+          },
+          {
+            "id": "pi2",
+            "label": "π2",
+            "coefficients": [
+              "2",
+              "1",
+              "-2",
+              "2"
+            ]
+          },
+          {
+            "id": "pi3",
+            "label": "π3",
+            "coefficients": [
+              "1",
+              "2",
+              "-3",
+              "1"
+            ]
+          }
+        ]
+      },
+      "visualDescription": "Representación geométrica tridimensional con los tres planos pi1, pi2 y pi3. Los tres planos se intersecan a lo largo de una recta común, correspondiente a la clasificación SCI.",
+      "visualMathLink": "Ilustra que la solución del sistema SCI representa geométricamente la recta común de intersección entre los tres planos en el espacio R3.",
+      "visual": "<svg viewBox='0 0 660 470' preserveAspectRatio='xMidYMid meet' role='img' data-geometry-kind='three-planes' data-visual-contract='1.0' data-verification-status='verified' data-classification='SCI' data-incidence-rendering='centered-certified'><rect x='0' y='0' width='660' height='470' rx='14' fill='#0f172a'/><text x='18' y='28' fill='#e2e8f0' font-size='15' font-weight='700'>Vista 3D calculada y certificada · rang(A)=2; rang(A*)=2; SCI</text><line x1='184.33' y1='233.92' x2='412.33' y2='235.61' stroke='#fbbf24' stroke-width='1.7' opacity='0.72'/><circle cx='412.33' cy='235.61' r='2.6' fill='#fbbf24'/><text x='417.33' y='228.61' fill='#fbbf24' font-size='15' font-weight='700'>x</text><line x1='176.30' y1='235.56' x2='420.37' y2='233.97' stroke='#fbbf24' stroke-width='1.7' opacity='0.72'/><circle cx='420.37' cy='233.97' r='2.6' fill='#fbbf24'/><text x='425.37' y='226.97' fill='#fbbf24' font-size='15' font-weight='700'>y</text><line x1='298.33' y1='401.76' x2='298.33' y2='67.77' stroke='#fbbf24' stroke-width='1.7' opacity='0.72'/><circle cx='298.33' cy='67.77' r='2.6' fill='#fbbf24'/><text x='303.33' y='60.77' fill='#fbbf24' font-size='15' font-weight='700'>z</text><polygon points='285.06,412 544.85,194.85 374.94,58 115.15,275.15' fill='#38bdf8' fill-opacity='0.18' stroke='#38bdf8' stroke-width='2.5' stroke-dasharray='' data-plane-id='pi1' data-plane-equation='1,-1,1,1'/><polygon points='187.03,397.86 446.82,180.71 472.97,72.14 213.18,289.29' fill='#f472b6' fill-opacity='0.18' stroke='#f472b6' stroke-width='2.5' stroke-dasharray='9 6' data-plane-id='pi2' data-plane-equation='2,1,-2,2'/><polygon points='150.3,355.42 410.09,138.27 509.7,114.58 249.91,331.73' fill='#4ade80' fill-opacity='0.18' stroke='#4ade80' stroke-width='2.5' stroke-dasharray='3 5' data-plane-id='pi3' data-plane-equation='1,2,-3,1'/><line x1='244.28' y1='379.16' x2='504.07' y2='162.00' stroke='#38bdf8' stroke-width='1.6' stroke-dasharray='5 4' opacity='0.62'/><line x1='155.93' y1='308.00' x2='415.72' y2='90.84' stroke='#38bdf8' stroke-width='1.6' stroke-dasharray='5 4' opacity='0.62'/><line x1='193.31' y1='371.80' x2='453.10' y2='154.65' stroke='#f472b6' stroke-width='1.6' stroke-dasharray='9 6' opacity='0.62'/><line x1='206.90' y1='315.35' x2='466.69' y2='98.20' stroke='#f472b6' stroke-width='1.6' stroke-dasharray='9 6' opacity='0.62'/><line x1='174.20' y1='349.74' x2='434.00' y2='132.59' stroke='#4ade80' stroke-width='1.6' stroke-dasharray='3 5' opacity='0.62'/><line x1='226.00' y1='337.41' x2='485.80' y2='120.26' stroke='#4ade80' stroke-width='1.6' stroke-dasharray='3 5' opacity='0.62'/><g aria-label='Leyenda de planos'><rect x='18' y='42' width='164' height='86' rx='8' fill='#0f172a' fill-opacity='0.94' stroke='#475569' stroke-width='1.5'/><line x1='30' y1='63' x2='60' y2='63' stroke='#38bdf8' stroke-width='3.5' stroke-dasharray=''/><text x='70' y='68' fill='#38bdf8' font-size='14' font-weight='700'>π1 ⊃ r</text><line x1='30' y1='87' x2='60' y2='87' stroke='#f472b6' stroke-width='3.5' stroke-dasharray='9 6'/><text x='70' y='92' fill='#f472b6' font-size='14' font-weight='700'>π2 ⊃ r</text><line x1='30' y1='111' x2='60' y2='111' stroke='#4ade80' stroke-width='3.5' stroke-dasharray='3 5'/><text x='70' y='116' fill='#4ade80' font-size='14' font-weight='700'>π3 ⊃ r</text></g><g data-solution-line='true' data-line-point='1,0,0' data-line-direction='1/3,4/3,1' aria-label='Una única recta contenida en los tres planos'><line x1='200.10' y1='343.58' x2='459.90' y2='126.42' stroke='#0f172a' stroke-width='18'/><line x1='200.10' y1='343.58' x2='459.90' y2='126.42' stroke='#38bdf8' stroke-width='14'/><line x1='200.10' y1='343.58' x2='459.90' y2='126.42' stroke='#f472b6' stroke-width='10'/><line x1='200.10' y1='343.58' x2='459.90' y2='126.42' stroke='#4ade80' stroke-width='6'/><line x1='200.10' y1='343.58' x2='459.90' y2='126.42' stroke='#fb923c' stroke-width='3.5'/><circle cx='330.00' cy='235.00' r='12' fill='none' stroke='#38bdf8' stroke-width='2.5'/><circle cx='330.00' cy='235.00' r='8.5' fill='none' stroke='#f472b6' stroke-width='2.5'/><circle cx='330.00' cy='235.00' r='5' fill='#fb923c' stroke='#4ade80' stroke-width='2.5'/><text x='467.90' y='118.42' fill='#fb923c' font-size='16' font-weight='800'>r</text></g><rect x='330' y='42' width='312' height='76' rx='8' fill='#0f172a' fill-opacity='0.95' stroke='#fb923c' stroke-width='1.5'/><text x='342' y='63' fill='#fb923c' font-size='14' font-weight='800'>π1 ∩ π2 ∩ π3 = r</text><text x='342' y='84' fill='#e2e8f0' font-size='13'>P₀ = (1, 0, 0)</text><text x='342' y='104' fill='#e2e8f0' font-size='13'>d = (1/3, 4/3, 1)</text><rect x='12' y='433' width='636' height='27' rx='7' fill='#0f172a' fill-opacity='0.92'/><text x='330' y='452' text-anchor='middle' fill='#cbd5e1' font-size='12.5'>La banda concéntrica es UNA sola recta: sus colores certifican r ⊂ π1, r ⊂ π2 y r ⊂ π3.</text></svg>",
+      "visualVerification": {
+        "version": "1.0",
+        "status": "verified",
+        "kind": "planes3d",
+        "analysis": {
+          "classification": "SCI",
+          "rankA": 2,
+          "rankAugmented": 2,
+          "dimension": 1,
+          "incidenceVerified": true,
+          "projectionLineVisibility": 0.9216,
+          "projectionMinimumFaceVisibility": 0.1752,
+          "projectionPlaneSeparation": 0.7905
+        }
+      }
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Sintetizamos la secuencia de pasos ejecutada para resolver este tipo de ejercicios: desde el planteamiento matricial inicial hasta la clasificación y parametrización de la solución.",
+      "content": "<ol><li><strong>Planteamiento Matricial:</strong> Construir la matriz ampliada $A^*$ ordenando adecuadamente coeficientes y términos independientes.</li><li><strong>Eliminación de Gauss:</strong> Utilizar el pivote $a_{11}=1$ para hacer ceros bajo él mediante operaciones elementales ($F_2 \\to F_2 - 2F_1$ y $F_3 \\to F_3 - F_1$).</li><li><strong>Escalonamiento y Simplificación:</strong> Reducir la tercera fila ($F_3 \\to F_3 - F_2$) para alcanzar la matriz en forma escalonada.</li><li><strong>Discusión de Rangos (Rouché-Frobenius):</strong> Calcular $\\text{rg}(A)=2$ y $\\text{rg}(A^*)=2$. Al ser $\\text{rg}(A)=\\text{rg}(A^*)=2 < 3$ (número de incógnitas), el sistema se clasifica como <strong>Compatible Indeterminado (SCI)</strong>.</li><li><strong>Parametrización y Sustitución Regresiva:</strong> Asignar la variable libre $z=\\lambda$ y despejar $y$ y $x$ en función de $\\lambda$.</li><li><strong>Comprobación e Interpretación:</strong> Verificar la identidad en las ecuaciones originales y visualizar geométricamente la recta común de intersección de tres planos en $\\mathbb{R}^3$.</li></ol>"
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Aplica exactamente la misma metodología de eliminación gaussiana y análisis de Rouché Frobenius en este ejercicio similar con nuevos datos numéricos. Inténtalo por ti mismo antes de consultar el resultado final.",
+      "content": "<p>Clasifica y resuelve mediante el método de Gauss el siguiente sistema de ecuaciones lineales:</p>$$\\begin{cases} x - y + 2z = 2 \\\\ 2x + y - z = 1 \\\\ x + 2y - 3z = -1 \\end{cases}$$<p><em>Inténtalo por ti mismo antes de verificar la respuesta.</em></p>",
+      "practiceAnswer": "El sistema es Compatible Indeterminado (SCI). Solución general: x = 1 - (1/3)μ, y = -1 + (5/3)μ, z = μ, para cualquier μ perteneciente a R."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplica los conceptos de sistemas compatibles indeterminados en un problema de modelización empresarial de producción con restricciones reales de no negatividad.",
+      "content": "<p>Una fábrica produce tres modelos de productos $A$, $B$ y $C$. El consumo de horas en tres departamentos de producción genera las siguientes ecuaciones para las cantidades $x$, $y$, $z$ a producir de cada modelo:</p>$$\\begin{cases} x + y + z = 100 \\\\ 2x + 3y + z = 250 \\\\ 3x + 4y + 2z = 350 \\end{cases}$$<p>a) Clasifica y resuelve el sistema en función del parámetro $z$.<br>b) Determina el rango de valores realizables para $z$ sabiendo que las producciones no pueden ser negativas ($x \\ge 0, y \\ge 0, z \\ge 0$).</p><p><em>Inténtalo por ti mismo antes de verificar la respuesta.</em></p>",
+      "practiceAnswer": "a) El sistema es Compatible Indeterminado (SCI). Solución en función de z: x = 50 - 2z, y = 50 + z, z. b) Restricciones de no negatividad: x >= 0 implica z <= 25; y >= 0 y z >= 0 implican z >= 0. Rango viable: z pertenece al intervalo [0, 25] (o z entero entre 0 y 25 si las unidades son discretas)."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-09-24T11:32:46.990Z",
+    "updatedAt": "2026-09-24T11:32:46.990Z",
+    "contentHash": "8ea49f02164a1174",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "automatic_checks_passed"
+  }
+}

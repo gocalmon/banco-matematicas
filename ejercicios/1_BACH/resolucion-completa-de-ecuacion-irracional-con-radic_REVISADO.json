@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "schemaVersion": "4.0",
+    "subject": "Matemáticas",
+    "visualContractVersion": "1.0",
+    "stage": "Bachillerato",
+    "course": "1.º Bachillerato",
+    "topic": "Álgebra",
+    "subtopic": "Ecuaciones irracionales",
+    "exerciseType": "Resolución de ecuación irracional con radicales anidados",
+    "protocols": [
+      "B",
+      "C"
+    ],
+    "difficulty": "avanzada",
+    "estimatedMinutes": 20,
+    "learningObjectives": [
+      "Determinar el dominio de existencia de expresiones algebraicas con múltiples radicales.",
+      "Aplicar la técnica de aislamiento de radicales y elevaciones sucesivas al cuadrado.",
+      "Identificar y descartar soluciones extrañas o falsas mediante comprobación analítica directa."
+    ],
+    "prerequisites": [
+      "Propiedades de las raíces cuadradas y del producto notable cuadrado de un binomio.",
+      "Resolución rigurosa de ecuaciones cuadráticas mediante la fórmula general.",
+      "Análisis de dominios e intersección de desigualdades en los números reales."
+    ],
+    "subparts": [],
+    "hasVisualSupport": true,
+    "hasNearTransfer": true,
+    "hasFarTransfer": true,
+    "slideCount": 12,
+    "statementHash": "4bc4588ba57b4ad1",
+    "metadataSource": "provided",
+    "importedAt": "2026-09-16T06:35:47.817Z",
+    "hasVerifiedVisualSupport": false,
+    "id": "resolucion-completa-de-ecuacion-irracional-con-radic-56ebea71"
+  },
+  "title": "Resolución completa de ecuación irracional con radicales anidados",
+  "slides": [
+    {
+      "title": "Enunciado de la ecuación irracional",
+      "layout": "centered",
+      "phase": "comprender",
+      "narration": "Presentamos la ecuación irracional dada en la imagen con radicales anidados que debemos resolver paso a paso.",
+      "content": "Dada la siguiente ecuación con radicales anidados:<br><br>$$\\sqrt{\\sqrt{2x - 1} + \\sqrt{x + 4}} = 6$$<br><br>Se pide hallar todas las soluciones reales de la variable $x$ que satisfagan la igualdad, analizando el dominio y comprobando rigurosamente la validez de cada candidato."
+    },
+    {
+      "title": "Plan de resolución y estrategia",
+      "layout": "centered",
+      "phase": "planificar",
+      "narration": "Analizamos la estrategia general para despejar ecuaciones con varios radicales y evitar errores comunes con soluciones extrañas.",
+      "content": "<strong>OBJETIVO:</strong> Trazar una estrategia algebraica metódica para eliminar la estructura de raíces anidadas y obtener el valor exacto de $x$.<br><br><strong>CONEXIÓN:</strong> En ecuaciones irracionales, elevar ambos miembros a una potencia par elimina radicales pero puede introducir soluciones extrañas (no válidas en la ecuación original).<br><br><strong>MÉTODO:</strong><br>1. Determinar el dominio de definición real de cada radical.<br>2. Elevar sucesivamente al cuadrado, aislando un radical en cada etapa.<br>3. Desarrollar la ecuación polinómica cuadrática resultante.<br>4. Comprobar obligatoriamente todas las soluciones halladas en la ecuación original.<br><br><strong>APLICACIÓN Y CONTEXTO:</strong> Las ecuaciones con radicales anidados aparecen en física al calcular tiempos de trayectoria con aceleraciones variables, en ingeniería estructural para la optimización de catenarias o cerchas, y en geometría cartesiana al determinar distancias compuestas."
+    },
+    {
+      "title": "Dominio de definición de los radicales",
+      "layout": "centered",
+      "phase": "analizar",
+      "narration": "Calculamos los valores de equis para los cuales las expresiones dentro de los radicales existen en los números reales.",
+      "content": "<strong>OBJETIVO:</strong> Determinar el dominio numérico real en el que la ecuación tiene sentido operativo.<br><br><strong>CONEXIÓN:</strong> Para que las raíces cuadradas devuelvan valores reales, los radicandos deben ser mayores o iguales a cero.<br><br><strong>DATOS:</strong> Analizamos las condiciones para cada expresión bajo un radical:<br>1) $2x - 1 \\ge 0 \\implies 2x \\ge 1 \\implies x \\ge \\frac{1}{2}$<br>2) $x + 4 \\ge 0 \\implies x \\ge -4$<br><br>La intersección de ambas condiciones exige $x \\ge \\frac{1}{2}$. Para cualquier $x \\ge \\frac{1}{2}$, la suma $\\sqrt{2x-1} + \\sqrt{x+4}$ es estrictamente positiva, por lo que el radical exterior está perfectamente definido.<br><br><strong>INTERPRETACIÓN:</strong> El dominio de existencia es $D = [1/2, +\\infty)$. Cualquier solución admisible debe cumplir $x \\ge 0.5$.",
+      "theory": "Para cualquier expresión $\\sqrt{g(x)}$ en $\\mathbb{R}$, se requiere $g(x) \\ge 0$. La intersección de los dominios de cada radical determina el dominio global de la ecuación."
+    },
+    {
+      "title": "Eliminación del radical principal exterior",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Elevamos al cuadrado ambos lados de la igualdad para eliminar la raíz cuadrada principal.",
+      "content": "<strong>OBJETIVO:</strong> Simplificar la estructura del miembro izquierdo eliminando el radical exterior.<br><br><strong>CONEXIÓN:</strong> Partimos de la ecuación original $\\sqrt{\\sqrt{2x - 1} + \\sqrt{x + 4}} = 6$ en el dominio $x \\ge 1/2$.<br><br><strong>CÁLCULO:</strong> Elevamos al cuadrado ambos miembros de la ecuación:<br>$$\\left(\\sqrt{\\sqrt{2x - 1} + \\sqrt{x + 4}}\\right)^2 = 6^2$$<br>$$\\sqrt{2x - 1} + \\sqrt{x + 4} = 36$$<br><br><strong>RESULTADO:</strong> Obtenemos una ecuación irracional no anidada con dos radicales independientes.",
+      "warning": "Al elevar ambos lados al cuadrado en $A = B \\implies A^2 = B^2$, se conservan las soluciones verdaderas pero se pueden agregar soluciones falsas si $A$ o $B$ pudieran ser negativos."
+    },
+    {
+      "title": "Aislamiento del primer radical e igualación",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Despejamos una de las raíces a un lado de la igualdad y volvemos a elevar al cuadrado.",
+      "content": "<strong>OBJETIVO:</strong> Aislar uno de los términos con radical para prepararlo para la siguiente elevación al cuadrado.<br><br><strong>CONEXIÓN:</strong> Partimos de la ecuación $\\sqrt{2x - 1} + \\sqrt{x + 4} = 36$.<br><br><strong>CÁLCULO:</strong> Pasamos el término $\\sqrt{x + 4}$ restando al miembro derecho:<br>$$\\sqrt{2x - 1} = 36 - \\sqrt{x + 4}$$<br><br>Elevamos ambos miembros al cuadrado:<br>$$(\\sqrt{2x - 1})^2 = (36 - \\sqrt{x + 4})^2$$<br>$$2x - 1 = 36^2 - 2 \\cdot 36 \\cdot \\sqrt{x + 4} + (\\sqrt{x + 4})^2$$<br>$$2x - 1 = 1296 - 72\\sqrt{x + 4} + (x + 4)$$<br>$$2x - 1 = 1300 + x - 72\\sqrt{x + 4}$$<br><br><strong>RESULTADO:</strong> La ecuación resultante conserva únicamente un término con radical, $72\\sqrt{x + 4}$.",
+      "checkpoint": {
+        "question": "¿Por qué es necesario aislar un radical antes de volver a elevar al cuadrado?",
+        "options": [
+          {
+            "text": "Porque si elevamos una suma de raíces directamente, el doble producto genera de nuevo un producto de raíces sin eliminar radicales.",
+            "correct": true,
+            "feedback": "¡Correcto! Elevar $(a+b)^2 = a^2 + 2ab + b^2$ mantiene radicales en $2ab$. Al aislar una raíz, reducimos progresivamente la cantidad de radicales."
+          },
+          {
+            "text": "Porque no está permitido matemáticamente elevar al cuadrado una suma de tres o más términos.",
+            "correct": false,
+            "feedback": "Incorrecto. Se puede elevar al cuadrado cualquier expresión, pero hacerlo sin aislar no simplifica los radicales."
+          },
+          {
+            "text": "Porque aislar el radical elimina automáticamente todas las soluciones extrañas.",
+            "correct": false,
+            "feedback": "Incorrecto. Elevar al cuadrado siempre puede introducir soluciones extrañas que deben comprobarse al final."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Aislamiento del último radical y obtención de la cuadrática",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Aislamos la última raíz cuadrada y elevamos al cuadrado por tercera vez para obtener la ecuación polinómica.",
+      "content": "<strong>OBJETIVO:</strong> Eliminar el último radical restante y obtener una ecuación cuadrática en $x$.<br><br><strong>CONEXIÓN:</strong> Partimos de la igualdad $2x - 1 = 1300 + x - 72\\sqrt{x + 4}$.<br><br><strong>CÁLCULO:</strong> Reordenamos los términos despejando $72\\sqrt{x + 4}$:<br>$$72\\sqrt{x + 4} = 1300 + x - 2x + 1$$<br>$$72\\sqrt{x + 4} = 1301 - x$$<br><br>Elevamos al cuadrado ambos miembros:<br>$$(72\\sqrt{x + 4})^2 = (1301 - x)^2$$<br>$$5184(x + 4) = 1301^2 - 2 \\cdot 1301 \\cdot x + x^2$$<br>$$5184x + 20736 = 1692601 - 2602x + x^2$$<br><br>Llevamos todos los términos al miembro derecho:<br>$$x^2 - 2602x - 5184x + 1692601 - 20736 = 0$$<br>$$x^2 - 7786x + 1671865 = 0$$<br><br><strong>RESULTADO:</strong> Obtenemos la ecuación de segundo grado $x^2 - 7786x + 1671865 = 0$."
+    },
+    {
+      "title": "Resolución de la ecuación cuadrática",
+      "layout": "centered",
+      "phase": "resolver",
+      "narration": "Aplicamos la fórmula general para resolver la ecuación cuadrática y obtener los dos valores candidatos.",
+      "content": "<strong>OBJETIVO:</strong> Resolver la ecuación de segundo grado $x^2 - 7786x + 1671865 = 0$.<br><br><strong>CONEXIÓN:</strong> Aplicamos la fórmula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$ con $a=1, b=-7786, c=1671865$.<br><br><strong>CÁLCULO:</strong><br>Discriminante $\\Delta = (-7786)^2 - 4(1)(1671865)$<br>$\\Delta = 60621796 - 6687460 = 53934336$<br><br>Calculamos la raíz cuadrada exacta del discriminante:<br>$$\\sqrt{53934336} = 7344$$<br><br>Sustituimos en la fórmula general:<br>$$x = \\frac{7786 \\pm 7344}{2}$$<br>$$x_1 = \\frac{7786 + 7344}{2} = \\frac{15130}{2} = 7565$$<br>$$x_2 = \\frac{7786 - 7344}{2} = \\frac{442}{2} = 221$$<br><br><strong>RESULTADO:</strong> Las soluciones candidatas obtenidas son $x_1 = 7565$ y $x_2 = 221$."
+    },
+    {
+      "title": "Comprobación de las soluciones candidatas",
+      "layout": "centered",
+      "phase": "comprobar",
+      "narration": "Verificamos cada valor candidato en la ecuación original para descartar las soluciones extrañas introducidas al elevar al cuadrado.",
+      "content": "<strong>OBJETIVO:</strong> Comprobar qué candidatos satisfacen la ecuación original $\\sqrt{\\sqrt{2x - 1} + \\sqrt{x + 4}} = 6$.<br><br><strong>CONEXIÓN:</strong> Dado que elevamos al cuadrado repetidamente, debemos verificar ambas soluciones.<br><br><strong>COMPROBACIÓN:</strong><br>1) Para $x_1 = 7565$:<br>$$\\sqrt{2(7565) - 1} = \\sqrt{15129} = 123$$<br>$$\\sqrt{7565 + 4} = \\sqrt{7569} = 87$$<br>$$\\sqrt{123 + 87} = \\sqrt{210} \\approx 14.491 \\neq 6$$<br>Por tanto, $x_1 = 7565$ es una <strong>solución extraña</strong> (falsa) y se descarta.<br><br>2) Para $x_2 = 221$:<br>$$\\sqrt{2(221) - 1} = \\sqrt{442 - 1} = \\sqrt{441} = 21$$<br>$$\\sqrt{221 + 4} = \\sqrt{225} = 15$$<br>$$\\sqrt{21 + 15} = \\sqrt{36} = 6$$<br>$$6 = 6 \\quad \\text{(Cumple exactamente)}$$<br><br><strong>RESULTADO:</strong> La única solución real válida es $x = 221$."
+    },
+    {
+      "title": "Representación gráfica e interpretación del punto de intersección",
+      "layout": "split",
+      "phase": "representar",
+      "narration": "Representamos la función del miembro izquierdo frente a la recta horizontal e identificamos su único punto de corte en equis igual a doscientos veintiuno.",
+      "content": "<strong>OBJETIVO:</strong> Visualizar geométricamente la ecuación como la intersección de dos funciones $f(x) = \\sqrt{\\sqrt{2x - 1} + \\sqrt{x + 4}}$ y $g(x) = 6$.<br><br><strong>CONEXIÓN:</strong> La curva $y = f(x)$ es estrictamente creciente para $x \\ge 1/2$, por lo que corta a la recta constante $y = 6$ en un único punto.<br><br><strong>INTERPRETACIÓN:</strong> En la gráfica se observa cómo la curva $y = f(x)$ comienza en $(0.5, 1.45)$ y crece de forma continua hasta alcanzar la altura $y = 6$ exactamente en $x = 221$. El candidato descartado $x = 7565$ correspondería a resolver la ecuación habiendo introducido signos negativos no válidos en las raíces primarias.",
+      "visualVerificationMode": "manual",
+      "visualDescription": "Gráfica cartesiana con el eje horizontal de x de 0 a 300 y eje vertical de y de 0 a 8. Curva suave creciente de color azul que representa la función f(x), comenzando cerca del origen y pasando exactamente por el punto (221, 6) destacado con un círculo rosa. Una recta horizontal discontinua de color amarillo representa y = 6.",
+      "visualMathLink": "La intersección entre la curva f(x) y la recta horizontal y = 6 en las coordenadas (221, 6) confirma de forma analítico-gráfica que x = 221 es la única solución real de la ecuación.",
+      "visual": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 350' width='100%' height='100%' preserveAspectRatio='xMidYMid meet'><rect width='500' height='350' fill='#0f172a'/><path d='M 50 50 L 50 300 M 150 50 L 150 300 M 250 50 L 250 300 M 350 50 L 350 300 M 450 50 L 450 300' stroke='#334155' stroke-width='1' opacity='0.5'/><path d='M 50 300 L 450 300 M 50 225 L 450 225 M 50 150 L 450 150 M 50 75 L 450 75' stroke='#334155' stroke-width='1' opacity='0.5'/><line x1='40' y1='300' x2='470' y2='300' stroke='#fbbf24' stroke-width='2.5'/><line x1='50' y1='310' x2='50' y2='40' stroke='#fbbf24' stroke-width='2.5'/><line x1='50' y1='120' x2='450' y2='120' stroke='#facc15' stroke-width='2' stroke-dasharray='6,4'/><text x='400' y='110' fill='#facc15' font-size='14' font-weight='bold'>y = 6</text><line x1='344.7' y1='300' x2='344.7' y2='120' stroke='#f472b6' stroke-width='1.5' stroke-dasharray='4,4'/><path d='M 50.7 256.3 C 80 210, 130 170, 183.3 152.1 C 250 136.5, 300 127, 344.7 120 C 380 115, 400 112, 423.3 109.1' fill='none' stroke='#38bdf8' stroke-width='3' data-math-key='x'/><circle cx='344.7' cy='120' r='6' fill='#f472b6' stroke='#ffffff' stroke-width='2'/><text x='315' y='95' fill='#f472b6' font-size='14' font-weight='bold'>(221, 6)</text><text x='330' y='320' fill='#38bdf8' font-size='14'>221</text><text x='30' y='125' fill='#fbbf24' font-size='14'>6</text><text x='30' y='305' fill='#fbbf24' font-size='14'>0</text><text x='460' y='325' fill='#fbbf24' font-size='14'>x</text><text x='25' y='45' fill='#fbbf24' font-size='14'>y</text><text x='110' y='160' fill='#38bdf8' font-size='14' font-weight='bold'>y = f(x)</text></svg>"
+    },
+    {
+      "title": "Resumen de Resolución: Hoja de Ruta",
+      "layout": "centered",
+      "phase": "sintetizar",
+      "narration": "Resumimos de forma esquemática la secuencia de pasos ejecutada para resolver la ecuación irracional.",
+      "content": "<strong>1. Dominio de Existencia:</strong> Exigencia $2x - 1 \\ge 0 \\implies x \\in [1/2, +\\infty)$.<br><br><strong>2. Despeje de Radicales por Elevación Sucesiva:</strong><br>• 1.ª Elevación: $\\sqrt{2x-1} + \\sqrt{x+4} = 36$<br>• Aislamiento: $\\sqrt{2x-1} = 36 - \\sqrt{x+4}$<br>• 2.ª Elevación: $2x-1 = 1300 + x - 72\\sqrt{x+4}$<br>• Aislamiento: $72\\sqrt{x+4} = 1301 - x$<br>• 3.ª Elevación: $5184(x+4) = (1301-x)^2$<br><br><strong>3. Ecuación Cuadrática Resultante:</strong> $x^2 - 7786x + 1671865 = 0$<br><br><strong>4. Obtención de Candidatos:</strong> $x_1 = 7565$ y $x_2 = 221$.<br><br><strong>5. Comprobación y Solución Final:</strong> $x_1 = 7565$ es extraña; $x_2 = 221$ es la <strong>única solución real válida</strong>."
+    },
+    {
+      "title": "🎯 Transferencia cercana: practica el método",
+      "layout": "centered",
+      "phase": "transferencia_cercana",
+      "transferType": "near",
+      "narration": "Pon a prueba lo aprendido resolviendo una ecuación irracional anidada con la misma estructura pero diferentes valores numéricos.",
+      "content": "Resuelve completamente la siguiente ecuación irracional utilizando la técnica de aislamiento de radicales y elevaciones al cuadrado:<br><br>$$\\sqrt{\\sqrt{3x + 4} + \\sqrt{x + 21}} = 3$$<br><br><i>Intenta resolverla paso a paso en tu cuaderno antes de consultar la respuesta final.</i>",
+      "practiceAnswer": "Solución única real: x = 4. (Al resolver se obtiene también x = 175, la cual resulta ser una solución extraña que se descarta tras verificar en la ecuación original)."
+    },
+    {
+      "title": "🚀 Transferencia lejana: aplica la idea",
+      "layout": "centered",
+      "phase": "transferencia_lejana",
+      "transferType": "far",
+      "narration": "Aplicamos el concepto de aislamiento de radicales y verificación de condiciones en un contexto geométrico de distancias o señales.",
+      "content": "En un diseño de óptica física, el desfase de señal $D(x)$ a lo largo de un canal depende del parámetro $x$ según la ley $D(x) = \\sqrt{\\sqrt{12x + 13} + \\sqrt{x + 1}}$. Si la especificación del sistema exige que el desfase medido sea exactamente igual a $3$, halla el valor válido del parámetro de ajuste $x$.<br><br><i>Intenta plantear y resolver la ecuación en tu cuaderno antes de consultar la respuesta.</i>",
+      "practiceAnswer": "Solución única real: x = 3. (El valor secundario obtenido algebraicamente x = 1479/121 ≈ 12.22 es una solución extraña que se descarta al comprobar en la ecuación original)."
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewer": "",
+    "reviewedAt": "2026-09-16T06:37:20.275Z",
+    "updatedAt": "2026-09-16T06:37:20.275Z",
+    "contentHash": "91e773aee7534c08",
+    "manualChecklist": {
+      "statement": true,
+      "mathematics": true,
+      "completeness": true,
+      "protocol": true,
+      "visuals": true,
+      "pedagogy": true,
+      "transfers": true,
+      "metadata": true
+    },
+    "approvalMode": "automatic_checks_passed"
+  }
+}
